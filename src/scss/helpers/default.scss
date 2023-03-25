@@ -1,0 +1,162 @@
+ *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+	all: unset;
+	display: revert;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+a, button {
+	cursor: revert;
+}
+
+ol, ul, menu {
+	list-style: none;
+}
+
+img {
+	max-inline-size: 100%;
+	max-block-size: 100%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+textarea {
+	white-space: revert;
+}
+
+::placeholder {
+	color: unset;
+}
+
+::marker {
+	content: "";
+}
+
+:where([hidden]) {
+	display: none;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+	-moz-user-modify: read-write;
+	-webkit-user-modify: read-write;
+	overflow-wrap: break-word;
+}
+
+:where([draggable="true"]) {
+	-webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+	all: revert;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+	-webkit-box-shadow:0 0 0 30px #27304c inset !important;
+}
+input:-webkit-autofill{
+	-webkit-text-fill-color: #fff !important;
+}
+
+html,
+body {
+	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+	background: #000;
+	overflow-x: hidden;
+	max-width: 100%;
+	font-size: calc(100vw / 120);
+	@media (max-width: 1024px) {
+		font-size: calc(100vw / 90);
+	}
+	@media (max-width: 768px) {
+		font-size: calc(100vw / 60);
+	}
+	@media (max-width: 480px) {
+		font-size: calc(100vw / 45);
+	}
+}
+
+main {
+	position: relative;
+	z-index: 1;
+}
+
+.container {
+	width: 100%;
+	max-width: 1750px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.visually-hidden-mob {
+	@media (max-width: 768px) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
+	}
+}
+
+.no-click {
+	pointer-events: none;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.page {
+	position: fixed;
+	top: rem(146px);
+	bottom: 0;
+	right: 0;
+	left: 0;
+	max-height: calc(100vh - #{rem(145px)});
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+	overflow-x: hidden;
+	padding-left: rem(100px);
+	padding-right: rem(20px);
+}
+
+section,
+.select {
+	position: relative;
+}

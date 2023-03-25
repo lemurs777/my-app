@@ -1,0 +1,201 @@
+.sports {
+    max-width: rem(1442px);
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: rem(40px);
+        background: linear-gradient(180deg, #000000 0%, #121212 37.5%, #262626 100%);
+        padding: rem(22px 20px);
+        margin-bottom: 2px;
+    }
+
+    &__item {
+        &:first-child {
+            .sports__item-link {
+                padding: 0;
+                font-size: 0;
+                width: rem(24px);
+                &:hover {
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item-link {
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #676767;
+        text-transform: uppercase;
+        padding-left: rem(34px);
+        position: relative;
+        transition: .3s;
+        display: flex;
+        align-items: center;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: rem(24px);
+            height: rem(24px);
+            transform: translateY(-50%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            opacity: .6;
+            transition: .3s;
+        }
+
+        &:hover {
+            color: #fff;
+            &:before {
+                opacity: 1;
+            }
+        }
+
+        &--top {
+            &:before {
+                background-image: url("../../images/svg/sports-list-top.svg");
+            }
+        }
+
+        &--bookmarks {
+            &:before {
+                background-image: url("../../images/svg/sports-list-bookmarks.svg");
+            }
+        }
+
+        &--soccer {
+            &:before {
+                background-image: url("../../images/svg/sports-list-soccer.svg");
+            }
+        }
+
+        &--hockey {
+            &:before {
+                background-image: url("../../images/svg/sports-list-hockey.svg");
+            }
+        }
+
+        &--basketball {
+            &:before {
+                background-image: url("../../images/svg/sports-list-basketball.svg");
+            }
+        }
+
+        &--tennis {
+            &:before {
+                background-image: url("../../images/svg/sports-list-tennis.svg"); 
+            }
+        }
+
+        &--regby {
+            &:before {
+                background-image: url("../../images/svg/sports-list-regby.svg");  
+            }
+        }
+
+        &--volleyball {
+            &:before {
+                background-image: url("../../images/svg/sports-list-volleyball.svg");  
+            }
+        }
+
+        &--mma {
+            &:before {
+                background-image: url("../../images/svg/sports-list-mma.svg");
+            }
+        }
+    }
+
+    &__best {
+        padding: rem(20px 15px);
+        background: #262626;
+    }
+
+    &__best-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #fff;
+        margin-bottom: rem(20px);
+    }
+
+    &__best-list {
+        display: flex;
+        gap: rem(10px);
+    }
+
+    &__best-link {
+        display: flex;
+        flex-direction: column;
+        min-width: rem(188px);
+        width: rem(188px);
+        background: #000;
+        border-radius: 12px;
+        padding: rem(10px);
+        color: #fff;
+
+        &--soccet {
+            background: #1D7E3A;
+        }
+
+        &--hockey {
+            background: #0E7AFF;
+        }
+
+        &--basketball {
+            background: #EA7E29;;
+        }
+
+        &--volleyball {
+            background: #C9BF08;
+        }
+    }
+
+    &__best-link-title {
+        font-size: rem(18px);
+        line-height: rem(21px);
+        margin-bottom: rem(21px);
+    }
+
+    &__best-link-title-one {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: rem(6px);
+    }
+
+    &__best-link-live {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding-left: rem(30px);
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: rem(24px);
+            height: rem(24px);
+            transform: translateY(-50%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            opacity: .6;
+            transition: .3s;
+            background-image: url("../../images/svg/sports-best-live.svg");
+        }
+    }
+} 
