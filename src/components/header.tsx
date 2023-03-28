@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import HeaderBest from '../assets/images/header-best.png';
+
 function Header() {
   return (
       <header className="header">
@@ -26,7 +28,7 @@ function Header() {
             </svg>
           </Link>
           <div className="header__best">
-            <img className="header__best-img" width="60" height="60" alt="Best of the best" />
+            <img className="header__best-img" src={HeaderBest} width="60" height="60" alt="Best of the best" />
             <div className="header__best-text">
               <span className="header__best-text-accent">Лучший</span> Онлайн&nbsp;букмекер
             </div>
