@@ -1,17 +1,19 @@
 import React from 'react';
-import Header from '../components/Header';
-import Menu from '../components/Menu';
+import { 
+	Header,
+	Menu,
+} from '../components/';
 
 type MyComponentProps = React.PropsWithChildren<{}>
 
-function MainLayout({ children}:  MyComponentProps) {
-  return (
-    <>
-      <Header />
-        {children}
-      <Menu />
-    </>
-  );
+function MainLayout( {children}:  MyComponentProps) {
+	return (
+		<>
+			<Header />
+			<Menu />
+			{children}
+		</>
+	);
 };
 
 export default MainLayout;
