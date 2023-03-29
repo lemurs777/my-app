@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.05b95753.css",
-    "main.js": "/my-app/static/js/main.60d8f776.js",
+    "main.css": "/my-app/static/css/main.4f54c5da.css",
+    "main.js": "/my-app/static/js/main.bbc88e93.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/header-app-android.svg": "/my-app/static/media/header-app-android.5a812c8b43e0ed05ec55.svg",
@@ -33,12 +33,12 @@
     "static/media/sports-list-bookmarks.svg": "/my-app/static/media/sports-list-bookmarks.14576d2c32eb0c5b167a.svg",
     "static/media/menu-more.svg": "/my-app/static/media/menu-more.7896bc8a69ac1353e130.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
-    "main.05b95753.css.map": "/my-app/static/css/main.05b95753.css.map",
-    "main.60d8f776.js.map": "/my-app/static/js/main.60d8f776.js.map",
+    "main.4f54c5da.css.map": "/my-app/static/css/main.4f54c5da.css.map",
+    "main.bbc88e93.js.map": "/my-app/static/js/main.bbc88e93.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05b95753.css",
-    "static/js/main.60d8f776.js"
+    "static/css/main.4f54c5da.css",
+    "static/js/main.bbc88e93.js"
   ]
 }
