@@ -1,8 +1,10 @@
-import React from 'react';
 import clsx from 'clsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
+import "swiper/css/navigation";
+
+import { Autoplay, Navigation } from "swiper";
 
 import HelloBanner1 from '../assets/images/hello-banner-x2.min.png';
 
@@ -42,6 +44,13 @@ function MainSlider() {
 		<section className="main-slider">
 			<Swiper
 				slidesPerView={1}
+				loop={true} 
+                autoplay={{
+                    delay: 2500,
+                }}
+				speed={500}
+				modules={[Autoplay, Navigation]}
+                navigation={true}
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}
 				className="main-slider__swiper"

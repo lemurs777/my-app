@@ -117,6 +117,58 @@
     &__best {
         padding: rem(20px 15px);
         background: #262626;
+        position: relative;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            opacity: .3;
+            transition: .3s;
+            top: 0;
+            margin: 0;
+            &:after {
+                display: none;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .swiper-button-next {
+            position: absolute;
+            right: rem(20px);
+            width: rem(30px);
+            height: rem(40px);
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: rem(8px);
+                height: rem(14px);
+                transform: translate(-50%, -50%);
+                background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
+                background-size: rem(8px) rem(14px);
+            }
+        }
+
+        .swiper-button-prev {
+            position: absolute;
+            left: auto;
+            right: rem(60px);
+            width: rem(30px);
+            height: rem(40px);
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: rem(8px);
+                height: rem(14px);
+                transform: translate(-50%, -50%);
+                background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
+            }
+        }
     }
 
     &__best-title {
@@ -125,12 +177,20 @@
         font-size: rem(18px);
         line-height: rem(21px);
         color: #fff;
-        margin-bottom: rem(20px);
+        margin-bottom: rem(-30px);
     }
 
     &__best-list {
         display: flex;
         gap: rem(10px);
+        padding-top: rem(60px);
+        margin-right: rem(-15px);
+        position: relative;
+    }
+
+    &__best-item {
+        width: rem(198px);
+        padding-right: rem(10px);
     }
 
     &__best-link {
@@ -155,7 +215,7 @@
             background: #EA7E29;;
         }
 
-        &--volleyball {
+        &--tennis {
             background: #C9BF08;
         }
     }
