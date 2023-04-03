@@ -36,7 +36,7 @@ function Header() {
           <nav className="header__nav">
             <menu className="header__nav-menu">
               <li className="header__nav-item">
-                <Link className="header__nav-link header__nav-link--active" to="/">Спорт </Link>
+                <Link className="header__nav-link header__nav-link--active" to="/"> Спорт</Link>
               </li>
               <li className="header__nav-item">
                 <Link className="header__nav-link" to="/">Киберспорт</Link>
