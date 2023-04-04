@@ -193,6 +193,87 @@ function Sports() {
 				))}
 			</Swiper>
         </div>
+
+        <div className="sports__games-list">
+            <div className="sports__games-item">
+                <div className="sports__games-top sports__games-top--soccer">
+                    <h3 className="sports__games-title sports__games-title">
+                        Soccer
+                    </h3>
+                    <div className="sports__games-info-wrapper">
+                        <div className="sports__games-info">1</div>
+                        <div className="sports__games-info">X</div>
+                        <div className="sports__games-info">2</div>
+                        <div className="sports__games-info">T</div>
+                        <div className="sports__games-info">O</div>
+                        <div className="sports__games-info">U</div>
+                        <div className="sports__games-info">OVER</div>
+                        <div className="sports__games-info">UNDER</div>
+                        <div className="sports__games-info">HAND.</div>
+                        <div className="sports__games-info">ODD</div>
+                    </div>
+                </div>
+                <div className="sports__games-table">
+                    <div className="sports__game-row">
+                        <div className="sports__game-row-name-wrapper">
+                            <span className="sports__game-row-name">Spain. Primera</span>
+                        </div>
+                        <div className="sports__game-row-wrapper">
+                            <div className="sports__game-row-date-time">
+                                <div className="sports__game-row-time">18:15</div>
+                                <div className="sports__game-row-date">21 Aug</div>
+                            </div>
+                            <div className="sports__game-row-names">
+                                <div className="sports__game-row-name">Sevilla</div>
+                                <div className="sports__game-row-name">Atletico Madrid</div>
+                            </div>
+                            <div className="sports__games-row-numbers">
+                                <div className="sports__games-row-number sports__games-row-number--up">9.1</div>
+                                <div className="sports__games-row-number sports__games-row-number--down">9.1</div>
+                                <div className="sports__games-row-number sports__games-row-number--disable">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">+21</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="sports__game-row">
+                        <div className="sports__game-row-name-wrapper">
+                            <span className="sports__game-row-name">Испания. Примера</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="sports__games-item">
+                <div className="sports__games-top sports__games-top--hockey">
+                    <h3 className="sports__games-title sports__games-title">
+                        Hockey
+                    </h3>
+                    <div className="sports__games-info-wrapper">
+                        <div className="sports__games-info">1</div>
+                        <div className="sports__games-info">X</div>
+                        <div className="sports__games-info">2</div>
+                        <div className="sports__games-info">T</div>
+                        <div className="sports__games-info">O</div>
+                        <div className="sports__games-info">U</div>
+                        <div className="sports__games-info">OVER</div>
+                        <div className="sports__games-info">UNDER</div>
+                        <div className="sports__games-info">HAND.</div>
+                        <div className="sports__games-info">ODD</div>
+                    </div>
+                </div>
+                <div className="sports__games-table">
+                    <div className="sports__game-row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     );
 }
