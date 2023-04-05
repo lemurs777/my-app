@@ -246,6 +246,29 @@ function Sports() {
                         <div className="sports__game-row-name-wrapper">
                             <span className="sports__game-row-name">Испания. Примера</span>
                         </div>
+                        <div className="sports__game-row-wrapper">
+                            <div className="sports__game-row-date-time">
+                                <div className="sports__game-row-time">18:15</div>
+                                <div className="sports__game-row-date">21 Aug</div>
+                            </div>
+                            <div className="sports__game-row-names">
+                                <div className="sports__game-row-name">Севилья</div>
+                                <div className="sports__game-row-name">Атлетико Мадрид</div>
+                            </div>
+                            <div className="sports__games-row-numbers">
+                                <div className="sports__games-row-number sports__games-row-number--up">9.1</div>
+                                <div className="sports__games-row-number sports__games-row-number--down">9.1</div>
+                                <div className="sports__games-row-number sports__games-row-number--disable">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">+21</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -269,7 +292,60 @@ function Sports() {
                 </div>
                 <div className="sports__games-table">
                     <div className="sports__game-row">
-
+                        <div className="sports__game-row-name-wrapper">
+                            <span className="sports__game-row-name">Испания. Примера</span>
+                        </div>
+                        <div className="sports__game-row-wrapper">
+                            <div className="sports__game-row-date-time">
+                                <div className="sports__game-row-time">18:15</div>
+                                <div className="sports__game-row-date">21 Aug</div>
+                            </div>
+                            <div className="sports__game-row-names">
+                                <div className="sports__game-row-name">Севилья</div>
+                                <div className="sports__game-row-name">Атлетико Мадрид</div>
+                            </div>
+                            <div className="sports__games-row-numbers">
+                                <div className="sports__games-row-number sports__games-row-number--up">9.1</div>
+                                <div className="sports__games-row-number sports__games-row-number--down">9.1</div>
+                                <div className="sports__games-row-number sports__games-row-number--disable">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">+21</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="sports__game-row">
+                        <div className="sports__game-row-name-wrapper">
+                            <span className="sports__game-row-name">Испания. Примера</span>
+                        </div>
+                        <div className="sports__game-row-wrapper">
+                            <div className="sports__game-row-date-time">
+                                <div className="sports__game-row-time">18:15</div>
+                                <div className="sports__game-row-date">21 Aug</div>
+                            </div>
+                            <div className="sports__game-row-names">
+                                <div className="sports__game-row-name">Севилья</div>
+                                <div className="sports__game-row-name">Атлетико Мадрид</div>
+                            </div>
+                            <div className="sports__games-row-numbers">
+                                <div className="sports__games-row-number sports__games-row-number--up">9.1</div>
+                                <div className="sports__games-row-number sports__games-row-number--down">9.1</div>
+                                <div className="sports__games-row-number sports__games-row-number--disable">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">9.1</div>
+                                <div className="sports__games-row-number">+21</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

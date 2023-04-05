@@ -153,7 +153,25 @@ main {
 	z-index: 2;
 	overflow-x: hidden;
 	padding-left: rem(100px);
-	padding-right: rem(20px);
+	padding-right: rem(5px);
+
+	&--index {
+		max-width: rem(1442px);
+		
+		&::-webkit-scrollbar {
+			width: rem(5px);
+		}
+		 
+		&::-webkit-scrollbar-track {
+			background-color: #28293e;
+			border-radius: rem(5px);
+		}
+		
+		&::-webkit-scrollbar-thumb {
+			border-radius: rem(5px);
+			background: #8b8b97;
+		}
+	}
 }
 
 section,
