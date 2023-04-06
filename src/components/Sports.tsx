@@ -144,6 +144,441 @@ function Sports() {
 		},
     ];
 
+    const sportsGameList = [
+        {
+			nameKindsOfSports: 'Soccer',
+            nameClassKindsOfSports: 'sports__games-top--soccer',
+            sportsGamesInfoArr: [
+                { 
+                    sportsGamesInfoItem: '1',
+                },
+                { 
+                    sportsGamesInfoItem: 'X',
+                },
+                { 
+                    sportsGamesInfoItem: '2',
+                },
+                { 
+                    sportsGamesInfoItem: 'T',
+                },
+                { 
+                    sportsGamesInfoItem: 'O',
+                },
+                { 
+                    sportsGamesInfoItem: 'U',
+                },
+                { 
+                    sportsGamesInfoItem: 'OVER',
+                },
+                { 
+                    sportsGamesInfoItem: 'UNDER',
+                },
+                { 
+                    sportsGamesInfoItem: 'HAND.',
+                },
+                { 
+                    sportsGamesInfoItem: 'ODD',
+                },
+            ],
+            sportsGamesRowArr : [
+                {
+                    sportsGamesRowName: 'Испания. Примера',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Севилья',
+                    sportsGamesRowNameTwo: 'Атлетико Мадрид',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+            ],
+		},
+        {
+			nameKindsOfSports: 'Hockey',
+            nameClassKindsOfSports: 'sports__games-top--hockey',
+            sportsGamesInfoArr: [
+                { 
+                    sportsGamesInfoItem: '1',
+                },
+                { 
+                    sportsGamesInfoItem: 'X',
+                },
+                { 
+                    sportsGamesInfoItem: '2',
+                },
+                { 
+                    sportsGamesInfoItem: 'T',
+                },
+                { 
+                    sportsGamesInfoItem: 'O',
+                },
+                { 
+                    sportsGamesInfoItem: 'U',
+                },
+                { 
+                    sportsGamesInfoItem: 'OVER',
+                },
+                { 
+                    sportsGamesInfoItem: 'UNDER',
+                },
+                { 
+                    sportsGamesInfoItem: 'HAND.',
+                },
+                { 
+                    sportsGamesInfoItem: 'ODD',
+                },
+            ],
+            sportsGamesRowArr : [
+                {
+                    sportsGamesRowName: 'Испания. Примера',
+                    sportsGamesRowTime: '19:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Севилья',
+                    sportsGamesRowNameTwo: 'Атлетико Мадрид',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '3.5',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '02:15',
+                    sportsGamesRowDate: '12 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '2.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '10.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '2.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+121',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+            ],
+		},
+        {
+			nameKindsOfSports: 'Basketball',
+            nameClassKindsOfSports: 'sports__games-top--basketball',
+            sportsGamesInfoArr: [
+                { 
+                    sportsGamesInfoItem: '1',
+                },
+                { 
+                    sportsGamesInfoItem: 'X',
+                },
+                { 
+                    sportsGamesInfoItem: '2',
+                },
+                { 
+                    sportsGamesInfoItem: 'T',
+                },
+                { 
+                    sportsGamesInfoItem: 'O',
+                },
+                { 
+                    sportsGamesInfoItem: 'U',
+                },
+                { 
+                    sportsGamesInfoItem: 'OVER',
+                },
+                { 
+                    sportsGamesInfoItem: 'UNDER',
+                },
+                { 
+                    sportsGamesInfoItem: 'HAND.',
+                },
+                { 
+                    sportsGamesInfoItem: 'ODD',
+                },
+            ],
+            sportsGamesRowArr : [
+                {
+                    sportsGamesRowName: 'Испания. Примера',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Севилья',
+                    sportsGamesRowNameTwo: 'Атлетико Мадрид',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+            ],
+		},
+    ];
+
     return (
     <section className="sports">
         <ul className="sports__list">
@@ -195,160 +630,50 @@ function Sports() {
         </div>
 
         <div className="sports__games-list">
-            <div className="sports__games-item">
-                <div className="sports__games-top sports__games-top--soccer">
-                    <h3 className="sports__games-title sports__games-title">
-                        Soccer
-                    </h3>
-                    <div className="sports__games-info-wrapper">
-                        <div className="sports__games-info">1</div>
-                        <div className="sports__games-info">X</div>
-                        <div className="sports__games-info">2</div>
-                        <div className="sports__games-info">T</div>
-                        <div className="sports__games-info">O</div>
-                        <div className="sports__games-info">U</div>
-                        <div className="sports__games-info">OVER</div>
-                        <div className="sports__games-info">UNDER</div>
-                        <div className="sports__games-info">HAND.</div>
-                        <div className="sports__games-info">ODD</div>
+            {sportsGameList.map((sportsGameItem, index) => (
+                <div className="sports__games-item" key={index}>
+                    <div className={clsx(
+                            'sports__games-top',
+                            sportsGameItem.nameClassKindsOfSports,
+                    )}>
+                        <h3 className='sports__games-title'>
+                            {sportsGameItem.nameKindsOfSports}
+                        </h3>
+                        <div className="sports__games-info-wrapper">
+                            {sportsGameItem.sportsGamesInfoArr.map((sportsGameInfoItem, index) => (
+                                <div className="sports__games-info" key={index}>{sportsGameInfoItem.sportsGamesInfoItem}</div>
+                            ))}
+                        </div>
                     </div>
+                    {sportsGameItem.sportsGamesRowArr.map((sportsGameRowItem, index) => (
+                        <div className="sports__game-row" key={index}>
+                            <div className="sports__game-row-name-wrapper">
+                                <span className="sports__game-row-name">{sportsGameRowItem.sportsGamesRowName}</span>
+                            </div>
+                            <div className="sports__game-row-wrapper">
+                                <div className="sports__game-row-date-time">
+                                    <div className="sports__game-row-time">{sportsGameRowItem.sportsGamesRowTime}</div>
+                                    <div className="sports__game-row-date">{sportsGameRowItem.sportsGamesRowDate}</div>
+                                </div>
+                                <div className="sports__game-row-names">
+                                    <div className="sports__game-row-name">{sportsGameRowItem.sportsGamesRowNameOne}</div>
+                                    <div className="sports__game-row-name">{sportsGameRowItem.sportsGamesRowNameTwo}</div>
+                                </div>
+                                <div className="sports__games-row-numbers">
+                                    {sportsGameRowItem.sportsGamesRowNumbers.map((sportsGameRowNumber, index) => (
+                                        <div key={index} className={clsx(
+                                            'sports__games-row-number',
+                                            sportsGameRowNumber.sportsGamesRowNumberClass,
+                                        )}>
+                                            {sportsGameRowNumber.sportsGamesRowNumber}
+                                        </div>
+                                    ))}    
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                <div className="sports__games-table">
-                    <div className="sports__game-row">
-                        <div className="sports__game-row-name-wrapper">
-                            <span className="sports__game-row-name">Spain. Primera</span>
-                        </div>
-                        <div className="sports__game-row-wrapper">
-                            <div className="sports__game-row-date-time">
-                                <div className="sports__game-row-time">18:15</div>
-                                <div className="sports__game-row-date">21 Aug</div>
-                            </div>
-                            <div className="sports__game-row-names">
-                                <div className="sports__game-row-name">Sevilla</div>
-                                <div className="sports__game-row-name">Atletico Madrid</div>
-                            </div>
-                            <div className="sports__games-row-numbers">
-                                <div className="sports__games-row-number sports__games-row-number--up">9.1</div>
-                                <div className="sports__games-row-number sports__games-row-number--down">9.1</div>
-                                <div className="sports__games-row-number sports__games-row-number--disable">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">+21</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="sports__game-row">
-                        <div className="sports__game-row-name-wrapper">
-                            <span className="sports__game-row-name">Испания. Примера</span>
-                        </div>
-                        <div className="sports__game-row-wrapper">
-                            <div className="sports__game-row-date-time">
-                                <div className="sports__game-row-time">18:15</div>
-                                <div className="sports__game-row-date">21 Aug</div>
-                            </div>
-                            <div className="sports__game-row-names">
-                                <div className="sports__game-row-name">Севилья</div>
-                                <div className="sports__game-row-name">Атлетико Мадрид</div>
-                            </div>
-                            <div className="sports__games-row-numbers">
-                                <div className="sports__games-row-number sports__games-row-number--up">9.1</div>
-                                <div className="sports__games-row-number sports__games-row-number--down">9.1</div>
-                                <div className="sports__games-row-number sports__games-row-number--disable">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">+21</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="sports__games-item">
-                <div className="sports__games-top sports__games-top--hockey">
-                    <h3 className="sports__games-title sports__games-title">
-                        Hockey
-                    </h3>
-                    <div className="sports__games-info-wrapper">
-                        <div className="sports__games-info">1</div>
-                        <div className="sports__games-info">X</div>
-                        <div className="sports__games-info">2</div>
-                        <div className="sports__games-info">T</div>
-                        <div className="sports__games-info">O</div>
-                        <div className="sports__games-info">U</div>
-                        <div className="sports__games-info">OVER</div>
-                        <div className="sports__games-info">UNDER</div>
-                        <div className="sports__games-info">HAND.</div>
-                        <div className="sports__games-info">ODD</div>
-                    </div>
-                </div>
-                <div className="sports__games-table">
-                    <div className="sports__game-row">
-                        <div className="sports__game-row-name-wrapper">
-                            <span className="sports__game-row-name">Испания. Примера</span>
-                        </div>
-                        <div className="sports__game-row-wrapper">
-                            <div className="sports__game-row-date-time">
-                                <div className="sports__game-row-time">18:15</div>
-                                <div className="sports__game-row-date">21 Aug</div>
-                            </div>
-                            <div className="sports__game-row-names">
-                                <div className="sports__game-row-name">Севилья</div>
-                                <div className="sports__game-row-name">Атлетико Мадрид</div>
-                            </div>
-                            <div className="sports__games-row-numbers">
-                                <div className="sports__games-row-number sports__games-row-number--up">9.1</div>
-                                <div className="sports__games-row-number sports__games-row-number--down">9.1</div>
-                                <div className="sports__games-row-number sports__games-row-number--disable">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">+21</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="sports__game-row">
-                        <div className="sports__game-row-name-wrapper">
-                            <span className="sports__game-row-name">Испания. Примера</span>
-                        </div>
-                        <div className="sports__game-row-wrapper">
-                            <div className="sports__game-row-date-time">
-                                <div className="sports__game-row-time">18:15</div>
-                                <div className="sports__game-row-date">21 Aug</div>
-                            </div>
-                            <div className="sports__game-row-names">
-                                <div className="sports__game-row-name">Севилья</div>
-                                <div className="sports__game-row-name">Атлетико Мадрид</div>
-                            </div>
-                            <div className="sports__games-row-numbers">
-                                <div className="sports__games-row-number sports__games-row-number--up">9.1</div>
-                                <div className="sports__games-row-number sports__games-row-number--down">9.1</div>
-                                <div className="sports__games-row-number sports__games-row-number--disable">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">9.1</div>
-                                <div className="sports__games-row-number">+21</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            ))}
         </div>
     </section>
     );
