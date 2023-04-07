@@ -577,6 +577,506 @@ function Sports() {
                 },
             ],
 		},
+        {
+			nameKindsOfSports: 'Basketball',
+            nameClassKindsOfSports: 'sports__games-top--basketball',
+            sportsGamesInfoArr: [
+                { 
+                    sportsGamesInfoItem: '1',
+                },
+                { 
+                    sportsGamesInfoItem: 'X',
+                },
+                { 
+                    sportsGamesInfoItem: '2',
+                },
+                { 
+                    sportsGamesInfoItem: 'T',
+                },
+                { 
+                    sportsGamesInfoItem: 'O',
+                },
+                { 
+                    sportsGamesInfoItem: 'U',
+                },
+                { 
+                    sportsGamesInfoItem: 'OVER',
+                },
+                { 
+                    sportsGamesInfoItem: 'UNDER',
+                },
+                { 
+                    sportsGamesInfoItem: 'HAND.',
+                },
+                { 
+                    sportsGamesInfoItem: 'ODD',
+                },
+            ],
+            sportsGamesRowArr : [
+                {
+                    sportsGamesRowName: 'Испания. Примера',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Севилья',
+                    sportsGamesRowNameTwo: 'Атлетико Мадрид',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+            ],
+		},
+        {
+			nameKindsOfSports: 'Tennis',
+            nameClassKindsOfSports: 'sports__games-top--tennis',
+            sportsGamesInfoArr: [
+                { 
+                    sportsGamesInfoItem: '1',
+                },
+                { 
+                    sportsGamesInfoItem: 'X',
+                },
+                { 
+                    sportsGamesInfoItem: '2',
+                },
+                { 
+                    sportsGamesInfoItem: 'T',
+                },
+                { 
+                    sportsGamesInfoItem: 'O',
+                },
+                { 
+                    sportsGamesInfoItem: 'U',
+                },
+                { 
+                    sportsGamesInfoItem: 'OVER',
+                },
+                { 
+                    sportsGamesInfoItem: 'UNDER',
+                },
+                { 
+                    sportsGamesInfoItem: 'HAND.',
+                },
+                { 
+                    sportsGamesInfoItem: 'ODD',
+                },
+            ],
+            sportsGamesRowArr : [
+                {
+                    sportsGamesRowName: 'Испания. Примера',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Севилья',
+                    sportsGamesRowNameTwo: 'Атлетико Мадрид',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+21',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '-14',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+                {
+                    sportsGamesRowName: 'Spain. Primera',
+                    sportsGamesRowTime: '18:15',
+                    sportsGamesRowDate: '21 Aug',
+                    sportsGamesRowNameOne: 'Sevilla',
+                    sportsGamesRowNameTwo: 'Atletico Madrid',
+                    sportsGamesRowNumbers: [
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--up',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--down',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: 'sports__games-row-number--disable',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '9.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '1.1',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '10.5',
+                            sportsGamesRowNumberClass: '',
+                        },
+                        {
+                            sportsGamesRowNumber: '+777',
+                            sportsGamesRowNumberClass: '',
+                        },
+                    ],
+                },
+            ],
+		},
     ];
 
     return (
