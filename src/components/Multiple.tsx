@@ -4,7 +4,7 @@ function Multiple() {
             <div className="multiple__light-bg">
                 <div className="multiple__header">
                     <button className="multiple__header-btn  multiple__header-btn--settings">Settings</button>
-                    <h2 className="multiple__header-title">Broadcast</h2>
+                    <h2 className="multiple__header-title">MULTIPLE (3)</h2>
                     <button className="multiple__header-btn  multiple__header-btn--delete">Delete</button>
                 </div>
                 <ul className="multiple__list">
