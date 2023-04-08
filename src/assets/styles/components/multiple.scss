@@ -1,0 +1,108 @@
+.multiple {
+    background: #0D0D0D;
+
+    &__light-bg {
+        background: #1A1A1A;
+        padding: rem(15px 15px 54px);
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        background: #1A1A1A;
+    }
+
+    &__header-title {
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__header-btn {
+        display: inline-block;
+        position: relative;
+        font-size: 0;
+        width: rem(16px);
+        height: rem(20px);
+        cursor: pointer;
+
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: .3s;
+            opacity: .6;
+        }
+
+        &--settings {
+            &:before {
+                width: rem(20px);
+                height: rem(20px);
+                background-image: url("../../images/svg/multiple-settings.svg");
+            }
+        }
+
+        &--delete {
+            &:before {
+                width: rem(20px);
+                height: rem(20px);
+                background-image: url("../../images/svg/multiple-delete.svg");
+            }
+        }
+    }
+
+    &__list {
+        margin-top: rem(38px);
+        display: flex;
+        flex-direction: column;
+        gap: rem(5px);
+    }
+
+    &__item {
+        background: #262626;
+    }
+
+    &__item-top {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #303030;
+        padding: rem(11px 12px);
+        gap: rem(10px);
+    }
+
+    &__item-top-btn {
+        display: inline-block;
+        width: rem(20px);
+        height: rem(20px);
+        font-size: 0;
+        cursor: pointer;
+
+        &--check {
+            background: #9E9E9E;
+            border-radius: 2px;
+        }
+    }
+
+    &__item-top-names {
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(16px);        
+        color: #fff;
+        margin-right: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

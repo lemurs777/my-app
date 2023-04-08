@@ -1172,6 +1172,7 @@ function Sports() {
                             </div>
                         </div>
                     ))}
+                    <button className="sports__games-btn-more">More events</button>
                 </div>
             ))}
         </div>

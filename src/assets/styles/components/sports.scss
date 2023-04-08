@@ -523,4 +523,25 @@
             }
         } 
     }
+
+    &__games-btn-more {
+        display: inline-block;
+        width: 100%;
+        background: #151515;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        color: #7A7A7A;
+        cursor: pointer;
+        transition: .3s;
+        padding: rem(13px 10px 14px);
+
+        &:hover {
+            color: #fff;
+        }
+    }
 }

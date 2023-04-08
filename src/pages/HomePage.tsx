@@ -2,6 +2,8 @@ import MainLayout from '../layouts/MainLayout';
 import { 
 	MainBanner, 
 	Sports,
+	Broadcast,
+	Multiple, 
 } from '../components/';
 
 function HomePage(){
@@ -11,6 +13,10 @@ function HomePage(){
 				<MainBanner />
 				<Sports />
 			</main>
+			<aside className="aside aside--index">
+				<Broadcast />
+				<Multiple />
+			</aside>
 		</MainLayout> 
 	);
 };
