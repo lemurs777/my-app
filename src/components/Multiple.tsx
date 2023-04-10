@@ -1,3 +1,4 @@
+
 function Multiple() {
 	return (
 		<div className="multiple">
@@ -10,7 +11,7 @@ function Multiple() {
                 <ul className="multiple__list">
                     <li className="multiple__item">
                         <div className="multiple__item-top">
-                            <button className="multiple__item-top-btn  multiple__item-top-btn--check">Check</button>
+                            <button className="multiple__item-top-btn multiple__item-top-btn--check">Check</button>
                             <div className="multiple__item-top-names">Bayern Munich - Eintracht Frankfurt</div>
                             <button className="multiple__item-top-btn  multiple__item-top-btn--close">Close</button>
                         </div>
@@ -24,7 +25,7 @@ function Multiple() {
                     </li>
                     <li className="multiple__item">
                         <div className="multiple__item-top">
-                            <button className="multiple__item-top-btn  multiple__item-top-btn--check">Check</button>
+                            <button className="multiple__item-top-btn multiple__item-top-btn--check multiple__item-top-btn--check-ok">Check</button>
                             <div className="multiple__item-top-names">Stuttgart - Cologne</div>
                             <button className="multiple__item-top-btn  multiple__item-top-btn--close">Close</button>
                         </div>
