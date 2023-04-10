@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.fcd5abd8.css",
-    "main.js": "/my-app/static/js/main.c9f9ef11.js",
+    "main.css": "/my-app/static/css/main.a89f94fb.css",
+    "main.js": "/my-app/static/js/main.cb082066.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/header-app-android.svg": "/my-app/static/media/header-app-android.5a812c8b43e0ed05ec55.svg",
@@ -33,18 +33,20 @@
     "index.html": "/my-app/index.html",
     "static/media/header-flag-ru.svg": "/my-app/static/media/header-flag-ru.5f67b7152dac327143aa.svg",
     "static/media/header-search.svg": "/my-app/static/media/header-search.651e6073bab417e33b4f.svg",
+    "static/media/multiple-close.svg": "/my-app/static/media/multiple-close.da0cbcb05217167eca00.svg",
     "static/media/multiple-delete.svg": "/my-app/static/media/multiple-delete.e67463ad6f5e3d4839b6.svg",
     "static/media/sports-best-live.svg": "/my-app/static/media/sports-best-live.d025587e74a698068750.svg",
     "static/media/sports-list-bookmarks.svg": "/my-app/static/media/sports-list-bookmarks.14576d2c32eb0c5b167a.svg",
+    "static/media/multiple-go.svg": "/my-app/static/media/multiple-go.c12aef274bef2701488a.svg",
     "static/media/menu-more.svg": "/my-app/static/media/menu-more.7896bc8a69ac1353e130.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.fcd5abd8.css.map": "/my-app/static/css/main.fcd5abd8.css.map",
-    "main.c9f9ef11.js.map": "/my-app/static/js/main.c9f9ef11.js.map",
+    "main.a89f94fb.css.map": "/my-app/static/css/main.a89f94fb.css.map",
+    "main.cb082066.js.map": "/my-app/static/js/main.cb082066.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcd5abd8.css",
-    "static/js/main.c9f9ef11.js"
+    "static/css/main.a89f94fb.css",
+    "static/js/main.cb082066.js"
   ]
 }
