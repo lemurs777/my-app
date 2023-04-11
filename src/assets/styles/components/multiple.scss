@@ -138,4 +138,106 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    &__item-bottom {
+        display: flex;
+        align-items: center;
+        gap: rem(25px);
+        padding: rem(12px 12px 12px 42px);
+    }
+
+    &__item-bottom-left {
+        display: flex;
+        flex-direction: column;
+        gap: rem(3px);
+        max-width: calc(100% - rem(85px));
+    }
+
+    &__item-bottom-left-title {
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        color: #fff;
+        max-width: 100%;
+
+        &--live {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: rem(-28px);
+                transform: translateY(-50%);
+                width: rem(16px);
+                height: rem(16px);
+                border-radius: 50%;
+                background: #E71E30;
+                border: rem(4px) solid #77222A;
+            }
+        }
+    }
+
+    &__item-bottom-left-info {
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        color: #909090;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__item-bottom-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: rem(60px);
+        gap: rem(3px);
+        margin-left: auto;
+        text-align: right;
+    }
+
+    &__item-bottom-right-coefficient {
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #fff;
+        position: relative;
+
+        &--upp {
+            &:before {
+                content: "";
+                position: absolute;
+                top: rem(-2px);
+                left: rem(-20px);
+                height: 0;
+                width: 0;
+                border: rem(7px) solid transparent;
+                border-bottom-color: #1D7E3A;
+            }
+        }
+
+        &--down {
+            &:before {
+                content: "";
+                position: absolute;
+                top: rem(8px);
+                left: rem(-20px);
+                height: 0;
+                width: 0;
+                border: rem(7px) solid transparent;
+                border-top-color: #D60019;
+            }
+        }
+    }
+
+    &__item-bottom-right-old-coefficient {
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        color: #909090;
+        text-decoration-line: line-through;
+    }
 }

@@ -181,6 +181,7 @@ main {
     right: 0;
     max-height: calc(100vh - 9.0625rem);
 	padding: rem(0 15px 15px);
+	overflow-y: auto;
 
 	&--index {
 		width: rem(373px);
