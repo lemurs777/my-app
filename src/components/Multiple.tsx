@@ -40,14 +40,14 @@ function Multiple() {
                         <div className="multiple__item-bottom">
                             <div className="multiple__item-bottom-left">
                                 <div className="multiple__item-bottom-left-title multiple__item-bottom-left-title--live">
-                                    Сток Сити (-1.0)
+                                    Stoke City (-50.0)
                                 </div>
                                 <div className="multiple__item-bottom-left-info">
-                                    1st card: Who will destroy the next.
+                                    Exact score
                                 </div>                          
                             </div>
                             <div className="multiple__item-bottom-right">
-                                <div className="multiple__item-bottom-right-coefficient multiple__item-bottom-right-coefficient--upp">
+                                <div className="multiple__item-bottom-right-coefficient multiple__item-bottom-right-coefficient--down">
                                     2.63
                                 </div>
                                 <div className="multiple__item-bottom-right-old-coefficient">
@@ -65,32 +65,7 @@ function Multiple() {
                         <div className="multiple__item-bottom">
                             <div className="multiple__item-bottom-left">
                                 <div className="multiple__item-bottom-left-title multiple__item-bottom-left-title--live">
-                                    Сток Сити (-1.0)
-                                </div>
-                                <div className="multiple__item-bottom-left-info">
-                                    1st card: Who will destroy the next.
-                                </div>                          
-                            </div>
-                            <div className="multiple__item-bottom-right">
-                                <div className="multiple__item-bottom-right-coefficient multiple__item-bottom-right-coefficient--upp">
-                                    2.63
-                                </div>
-                                <div className="multiple__item-bottom-right-old-coefficient">
-                                    1122.10
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="multiple__item">
-                        <div className="multiple__item-top">
-                            <button className="multiple__item-top-btn  multiple__item-top-btn--check">Check</button>
-                            <div className="multiple__item-top-names">Borussia Dortmund - Schalke</div>
-                            <button className="multiple__item-top-btn  multiple__item-top-btn--close">Close</button>
-                        </div>
-                        <div className="multiple__item-bottom">
-                            <div className="multiple__item-bottom-left">
-                                <div className="multiple__item-bottom-left-title multiple__item-bottom-left-title--live">
-                                    Сток Сити (-1.0)
+                                    Stoke City (-1.0)
                                 </div>
                                 <div className="multiple__item-bottom-left-info">
                                     1st card: Who will destroy the next.
@@ -101,11 +76,11 @@ function Multiple() {
                                     992.63
                                 </div>
                                 <div className="multiple__item-bottom-right-old-coefficient">
-                                    1122.10
+                                    22.10
                                 </div>
                             </div>
                         </div>
-                    </li> 
+                    </li>
                     <li className="multiple__item">
                         <div className="multiple__item-top">
                             <button className="multiple__item-top-btn multiple__item-top-btn--check multiple__item-top-btn--check-ok">Check</button>
@@ -130,6 +105,31 @@ function Multiple() {
                     </li>
                 </ul>
 			</div>
+            <div className="multiple__total-wrapper">
+                <div className="multiple__total-content">
+                    <div className="multiple__total-bonus">
+                        <div className="multiple__total-bonus-text">Multiples bonus</div>
+                        <div className="multiple__total-bonus-count">1.5</div>
+                    </div>
+                    <div className="multiple__total">
+                        <div className="multiple__total-text">Total odds:</div>
+                        <div className="multiple__total-count">21.06</div>
+                    </div>
+                </div>
+            </div>
+            <div className="multiple__bet-payout">
+                <div className="multiple__bet">
+                    <div className="multiple__bet-text">Bet amount</div>
+                    <div className="multiple__bet-count">500 €</div>
+                </div>
+                <div className="multiple__payout">
+                    <div className="multiple__payout-text">Payout up to</div>
+                    <div className="multiple__payout-count">10530 €</div>
+                </div>
+            </div>
+            <div className="multiple__btn-bet-wrapper">
+                <button className="multiple__btn-bet">Place a bet</button>
+            </div>
 		</div>
 	);
 }

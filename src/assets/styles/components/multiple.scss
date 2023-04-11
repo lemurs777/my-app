@@ -1,15 +1,17 @@
 .multiple {
     background: #0D0D0D;
+    padding-bottom: rem(15px);
 
     &__light-bg {
         background: #1A1A1A;
-        padding: rem(15px 15px 54px);
+        padding: rem(15px 7px 54px);
     }
 
     &__header {
         display: flex;
         justify-content: space-between;
         background: #1A1A1A;
+        padding: rem(0 8px);
     }
 
     &__header-title {
@@ -239,5 +241,145 @@
         line-height: rem(16px);
         color: #909090;
         text-decoration-line: line-through;
+    }
+
+    &__total-wrapper {
+        padding: rem(0 7px);
+        margin: rem( -38px 0 16px);
+    }
+
+    &__total-content {
+        background: #1C1C1C;
+    }
+
+    &__total-bonus {
+        display: flex;
+        align-items: center;
+        padding: rem(10px 12px 10px 41px);
+    }
+
+    &__total-bonus-text {
+        font-weight: 400;
+        font-size: rem(15px);
+        line-height: rem(18px);
+        color: #999;
+        position: relative;
+        margin-right: auto;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: rem(18px);
+            height: rem(18px);
+            left: rem(-30px);
+            top: 50%;
+            transform: translateY(-50%);
+            background: url("../../images/svg/multiple-bonus.svg") no-repeat 50% 50% /contain;
+        }
+    }
+
+    &__total-bonus-count {
+        font-weight: 500;
+        font-size: rem(15px);
+        line-height: rem(18px);
+        color: #fff;
+    }
+
+    &__total {
+        display: flex;
+        align-items: center;
+        padding: rem(10px 12px);
+    }
+
+    &__total-text {
+        font-weight: 400;
+        font-size: rem(15px);
+        line-height: rem(18px);
+        color: #999;
+        margin-right: auto;
+    }
+
+    &__total-count {
+        font-weight: 500;
+        font-size: rem(15px);
+        line-height: rem(18px);
+        color: #fff;
+    }
+
+    &__bet-payout {
+        margin-bottom: rem(21px);
+        display: flex;
+        gap: rem(4px);
+        padding: rem(0 15px);
+    }
+
+    &__bet {
+        width: calc(50%);
+    }
+
+    &__payout {
+        width: calc(50%);
+    }
+
+    &__bet-text,
+    &__payout-text {
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        text-align: center;
+        color: #9E9E9E;
+        margin-bottom: rem(13px);
+    }
+
+    &__bet-count,
+    &__payout-count {
+        font-weight: 700;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        text-align: center;
+        padding: rem(11px 15px);
+        background: #1C1C1C;
+        position: relative;
+    }
+
+    &__payout-count {
+        color: #fff;
+        border: 1px solid #1C1C1C;
+    }
+
+    &__bet-count {
+        color: #F7FF13;
+        border: 1px solid #2E2E2E;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: rem(24px);
+            height: rem(24px);
+            top: 50%;
+            right: rem(-14px);
+            transform: translateY(-50%);
+            background: url("../../images/svg/multiple-bet.svg") no-repeat 50% 50% /contain;
+            z-index: 2;
+        }
+    }
+
+    &__btn-bet-wrapper {
+        padding: rem(0 15px);
+    }
+
+    &__btn-bet {
+        display: inline-block;
+        width: 100%;
+        padding: rem(13px 20px);
+        font-weight: 700;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        text-align: center;
+        color: #1A1A1A;
+        text-transform: uppercase;
+        cursor: pointer;
+        background: #F7FF13;
+        border-radius: rem(2px);
     }
 }
