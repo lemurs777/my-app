@@ -1,5 +1,41 @@
 
 function Multiple() {
+
+    const betsInfo = {
+        betsArr : [
+            {
+                nameOne: 'Bayern Munich',
+                nameTwo: 'Eintracht Frankfurt',
+                betInfo: '3:2',
+                betInfoLive: false,
+                betInfoMore: 'Exact score',
+                betInfoCoefficient: '3.05',
+            },
+            {
+                nameOne: 'Borussia Dortmund',
+                nameTwo: 'Schalke',
+                betInfo: 'Stoke City (-1.0)',
+                betInfoLive: true,
+                betInfoMore: '1st card: Who will destroy the next.',
+                betInfoCoefficient: '2.63',
+                betInfoCoefficientOld: '2.10',
+            },
+            {
+                nameOne: 'Stuttgart',
+                nameTwo: 'Cologne',
+                betInfo: 'X2',
+                betInfoLive: false,
+                betInfoMore: 'Double outcome',
+                betInfoCoefficient: '1.75',
+            },
+        ],
+        bonus: '1.5',
+        bet: '500',
+        betCurrency: '€',
+    };
+
+    console.log(betsInfo);
+
 	return (
 		<div className="multiple">
             <div className="multiple__light-bg">
