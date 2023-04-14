@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from "react-router-dom";
 import { 
 	Header,
 	Menu,
@@ -12,6 +13,7 @@ function MainLayout( {children}:  MyComponentProps) {
 			<Header />
 			<Menu />
 			{children}
+			<Outlet />
 		</>
 	);
 };
