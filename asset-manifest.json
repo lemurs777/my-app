@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.ef103191.css",
-    "main.js": "/my-app/static/js/main.9e1f6fd8.js",
+    "main.css": "/my-app/static/css/main.d8285f1e.css",
+    "main.js": "/my-app/static/js/main.8776dca4.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/multiple-bonus.svg": "/my-app/static/media/multiple-bonus.69ff98c575e08696029a.svg",
@@ -19,6 +19,7 @@
     "static/media/sports-list-regby.svg": "/my-app/static/media/sports-list-regby.38adcd65a5c2b779f50a.svg",
     "static/media/menu-soccer.svg": "/my-app/static/media/menu-soccer.83ba280d9914359ff5cc.svg",
     "static/media/sports-list-soccer.svg": "/my-app/static/media/sports-list-soccer.8e8dc93b37839aada685.svg",
+    "static/media/exit-btn.svg": "/my-app/static/media/exit-btn.e1081cecd6d270f50659.svg",
     "static/media/sports-list-basketball.svg": "/my-app/static/media/sports-list-basketball.712d23d7a894854e5bc8.svg",
     "static/media/menu-chess.svg": "/my-app/static/media/menu-chess.6fc11e5671b3c8a57c23.svg",
     "static/media/menu-volleyball.svg": "/my-app/static/media/menu-volleyball.a9d93dd1649172f24c50.svg",
@@ -43,12 +44,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.ef103191.css.map": "/my-app/static/css/main.ef103191.css.map",
-    "main.9e1f6fd8.js.map": "/my-app/static/js/main.9e1f6fd8.js.map",
+    "main.d8285f1e.css.map": "/my-app/static/css/main.d8285f1e.css.map",
+    "main.8776dca4.js.map": "/my-app/static/js/main.8776dca4.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef103191.css",
-    "static/js/main.9e1f6fd8.js"
+    "static/css/main.d8285f1e.css",
+    "static/js/main.8776dca4.js"
   ]
 }
