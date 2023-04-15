@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.d8285f1e.css",
-    "main.js": "/my-app/static/js/main.8776dca4.js",
+    "main.css": "/my-app/static/css/main.6f42454d.css",
+    "main.js": "/my-app/static/js/main.f183122c.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
+    "static/media/faq-title.svg": "/my-app/static/media/faq-title.51f64c65d97f76026a63.svg",
     "static/media/multiple-bonus.svg": "/my-app/static/media/multiple-bonus.69ff98c575e08696029a.svg",
     "static/media/header-app-android.svg": "/my-app/static/media/header-app-android.5a812c8b43e0ed05ec55.svg",
     "static/media/menu-top.svg": "/my-app/static/media/menu-top.e6b49a6cd331c3de0601.svg",
+    "static/media/balance-update.svg": "/my-app/static/media/balance-update.977f486892d87b945afb.svg",
     "static/media/sports-list-top.svg": "/my-app/static/media/sports-list-top.3649414376a5f556fa8c.svg",
     "static/media/broadcast-lock.svg": "/my-app/static/media/broadcast-lock.8b9f37b0bba09f620356.svg",
     "static/media/menu-cricket.svg": "/my-app/static/media/menu-cricket.b375ea1868ef0435c6be.svg",
@@ -30,9 +32,11 @@
     "static/media/sports-list-volleyball.svg": "/my-app/static/media/sports-list-volleyball.94666243fbbc4981623a.svg",
     "static/media/sports-list-hockey.svg": "/my-app/static/media/sports-list-hockey.0eb14d35744b029fd60a.svg",
     "static/media/menu-hockey.svg": "/my-app/static/media/menu-hockey.464f75395dfbf40cddea.svg",
+    "static/media/balance-show.svg": "/my-app/static/media/balance-show.6260efe9c70ff973e5b0.svg",
     "static/media/menu-mma.svg": "/my-app/static/media/menu-mma.8d620823689048cfa687.svg",
     "static/media/sports-list-mma.svg": "/my-app/static/media/sports-list-mma.a5106279eb60bc6e4bff.svg",
     "index.html": "/my-app/index.html",
+    "static/media/balance-copy.svg": "/my-app/static/media/balance-copy.9aee55472046126f1cf1.svg",
     "static/media/header-flag-ru.svg": "/my-app/static/media/header-flag-ru.5f67b7152dac327143aa.svg",
     "static/media/header-search.svg": "/my-app/static/media/header-search.651e6073bab417e33b4f.svg",
     "static/media/multiple-close.svg": "/my-app/static/media/multiple-close.da0cbcb05217167eca00.svg",
@@ -44,12 +48,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.d8285f1e.css.map": "/my-app/static/css/main.d8285f1e.css.map",
-    "main.8776dca4.js.map": "/my-app/static/js/main.8776dca4.js.map",
+    "main.6f42454d.css.map": "/my-app/static/css/main.6f42454d.css.map",
+    "main.f183122c.js.map": "/my-app/static/js/main.f183122c.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8285f1e.css",
-    "static/js/main.8776dca4.js"
+    "static/css/main.6f42454d.css",
+    "static/js/main.f183122c.js"
   ]
 }
