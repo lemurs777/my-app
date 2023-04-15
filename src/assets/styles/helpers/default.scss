@@ -149,15 +149,36 @@ main {
 	left: 0;
 	max-height: calc(100vh - #{rem(145px)});
 	display: flex;
-	flex-direction: column;
 	z-index: 2;
 	overflow-x: hidden;
-	padding-left: rem(100px);
-	padding-right: rem(5px);
 
 	&--index {
 		max-width: rem(1542px);
+		padding-left: rem(100px);
+		padding-right: rem(5px);
+		flex-direction: column;
 		
+		&::-webkit-scrollbar {
+			width: rem(5px);
+		}
+		 
+		&::-webkit-scrollbar-track {
+			background-color: #28293e;
+			border-radius: rem(5px);
+		}
+		
+		&::-webkit-scrollbar-thumb {
+			border-radius: rem(5px);
+			background: #8b8b97;
+		}
+	}
+
+	&--profile {
+		max-width: rem(1482px);
+		padding: rem(0 20px);
+		margin: 0 auto;
+		gap: rem(31px);
+
 		&::-webkit-scrollbar {
 			width: rem(5px);
 		}

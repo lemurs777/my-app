@@ -1,0 +1,24 @@
+.column-left {
+    &--profile {
+        min-width: rem(390px);
+        max-width: rem(390px);
+        width: rem(390px);
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: #151515;
+            right: rem(-16px);
+        }
+    }
+}
+
+.column-right {
+    &--profile {
+        width: 100%;
+    }
+}

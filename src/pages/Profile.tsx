@@ -1,7 +1,21 @@
+import { 
+	Balance,
+	Faq,
+	Exit,
+	MyProfile,
+} from '../components/';
+
 function Profile(){
 	return (
 		<main className="page page--profile">
-			<h1 style={{color: "white"}}>Profile</h1>
+			<div className="column-left column-left--profile">
+				<Balance />
+				<Faq />
+				<Exit />
+			</div>
+			<div className="column-right column-right--profile">
+				<MyProfile />
+			</div>
 		</main>
 	);
 };

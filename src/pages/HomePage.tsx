@@ -3,11 +3,13 @@ import {
 	Sports,
 	Broadcast,
 	Multiple, 
+	Menu, 
 } from '../components/';
 
 function HomePage(){
 	return (
 		<>
+			<Menu />
 			<main className="page page--index">
 				<MainBanner />
 				<Sports />

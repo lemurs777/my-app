@@ -1,0 +1,35 @@
+.exit {
+    background: #1B1B1B;
+    border-radius: 3px;
+    padding: rem(13px 26px 13px 49px);
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(19px);
+    color: #9A9A9A;
+    transition: .3s;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: rem(17px);
+        width: rem(20px);
+        height: rem(20px);
+        transform: translateY(-50%);
+        background: url("../../images/svg/exit-btn.svg") no-repeat 50% 50% /contain;
+        opacity: .6;
+        transition: .3s;
+    }
+
+    &:hover {
+        color: #fff;
+
+        &:before {
+            opacity: 1;
+        }
+    }
+}
