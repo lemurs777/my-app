@@ -181,7 +181,7 @@
         margin-bottom: rem(-30px);
     }
 
-    &__best-list {
+    &__best-list.swiper {
         display: flex;
         gap: rem(10px);
         padding-top: rem(60px);
@@ -189,7 +189,7 @@
         position: relative;
     }
 
-    &__best-item {
+    &__best-item.swiper-slide {
         width: rem(198px);
         padding-right: rem(10px);
     }
