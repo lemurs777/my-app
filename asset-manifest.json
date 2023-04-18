@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.6f42454d.css",
-    "main.js": "/my-app/static/js/main.f183122c.js",
+    "main.css": "/my-app/static/css/main.489afc42.css",
+    "main.js": "/my-app/static/js/main.d60054c4.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/faq-title.svg": "/my-app/static/media/faq-title.51f64c65d97f76026a63.svg",
     "static/media/multiple-bonus.svg": "/my-app/static/media/multiple-bonus.69ff98c575e08696029a.svg",
     "static/media/header-app-android.svg": "/my-app/static/media/header-app-android.5a812c8b43e0ed05ec55.svg",
+    "static/media/profile-personal-data.svg": "/my-app/static/media/profile-personal-data.d7d52bd09cba2885c930.svg",
     "static/media/menu-top.svg": "/my-app/static/media/menu-top.e6b49a6cd331c3de0601.svg",
     "static/media/balance-update.svg": "/my-app/static/media/balance-update.977f486892d87b945afb.svg",
     "static/media/sports-list-top.svg": "/my-app/static/media/sports-list-top.3649414376a5f556fa8c.svg",
@@ -17,6 +18,7 @@
     "static/media/menu-tennis.svg": "/my-app/static/media/menu-tennis.a4de555741d18c75527d.svg",
     "static/media/menu-racing.svg": "/my-app/static/media/menu-racing.0d62810c344ff2ce64dd.svg",
     "static/media/menu-basketball.svg": "/my-app/static/media/menu-basketball.42d27428f6d9d86e1ad6.svg",
+    "static/media/profile-top-down.svg": "/my-app/static/media/profile-top-down.b65bb8946739c95f916c.svg",
     "static/media/menu-rugby.svg": "/my-app/static/media/menu-rugby.2ffd5c06d3f290ece34a.svg",
     "static/media/sports-list-regby.svg": "/my-app/static/media/sports-list-regby.38adcd65a5c2b779f50a.svg",
     "static/media/menu-soccer.svg": "/my-app/static/media/menu-soccer.83ba280d9914359ff5cc.svg",
@@ -33,6 +35,7 @@
     "static/media/sports-list-hockey.svg": "/my-app/static/media/sports-list-hockey.0eb14d35744b029fd60a.svg",
     "static/media/menu-hockey.svg": "/my-app/static/media/menu-hockey.464f75395dfbf40cddea.svg",
     "static/media/balance-show.svg": "/my-app/static/media/balance-show.6260efe9c70ff973e5b0.svg",
+    "static/media/profile-down.svg": "/my-app/static/media/profile-down.8b0a71cbb49c454febe7.svg",
     "static/media/menu-mma.svg": "/my-app/static/media/menu-mma.8d620823689048cfa687.svg",
     "static/media/sports-list-mma.svg": "/my-app/static/media/sports-list-mma.a5106279eb60bc6e4bff.svg",
     "index.html": "/my-app/index.html",
@@ -48,12 +51,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.6f42454d.css.map": "/my-app/static/css/main.6f42454d.css.map",
-    "main.f183122c.js.map": "/my-app/static/js/main.f183122c.js.map",
+    "main.489afc42.css.map": "/my-app/static/css/main.489afc42.css.map",
+    "main.d60054c4.js.map": "/my-app/static/js/main.d60054c4.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f42454d.css",
-    "static/js/main.f183122c.js"
+    "static/css/main.489afc42.css",
+    "static/js/main.d60054c4.js"
   ]
 }
