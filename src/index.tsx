@@ -9,7 +9,7 @@ import Profile from './pages/Profile';
 import NoPage from './pages/NoPage';
 import HistoryOfConclusions from './pages/HistoryOfConclusions';
 import HistoryBetting from './pages/HistoryBetting';
-import Verification from './pages/Verification';
+import VerificationPage from './pages/VerificationPage';
 
 export default function App() {
 	return (
@@ -21,7 +21,7 @@ export default function App() {
 				</Route>
 				<Route path="/profile/" element={<ProfileLayout />}>
 					<Route index element={<Profile />} />
-					<Route path="verification" element={<Verification />} />
+					<Route path="verification" element={<VerificationPage />} />
 					<Route path="conclusions" element={<HistoryOfConclusions />} />
 					<Route path="betting" element={<HistoryBetting />} />
 				</Route>

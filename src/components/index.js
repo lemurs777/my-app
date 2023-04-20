@@ -8,3 +8,4 @@ export { default as Balance } from './Balance';
 export { default as Faq } from './Faq';
 export { default as Exit } from './Exit';
 export { default as MyProfile } from './MyProfile';
+export { default as Verification } from './Verification';
