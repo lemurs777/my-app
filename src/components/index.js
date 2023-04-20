@@ -9,3 +9,5 @@ export { default as Faq } from './Faq';
 export { default as Exit } from './Exit';
 export { default as MyProfile } from './MyProfile';
 export { default as Verification } from './Verification';
+export { default as Betting } from './Betting';
+export { default as Conclusions } from './Conclusions';

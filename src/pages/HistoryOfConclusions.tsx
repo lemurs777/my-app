@@ -1,6 +1,10 @@
+import { 
+	Conclusions,
+} from '../components/';
+
 function HistoryOfConclusions(){
 	return (
-        <h1 style={{color: "white"}}>conclusions</h1>
+        <Conclusions />
 	);
 };
 

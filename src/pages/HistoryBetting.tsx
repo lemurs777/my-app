@@ -1,6 +1,10 @@
+import { 
+	Betting,
+} from '../components/';
+
 function HistoryBetting(){
 	return (
-        <h1 style={{color: "white"}}>Betting</h1>
+        <Betting />
 	);
 };
 
