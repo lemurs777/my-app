@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.489afc42.css",
-    "main.js": "/my-app/static/js/main.d60054c4.js",
+    "main.js": "/my-app/static/js/main.f67fd0f2.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/faq-title.svg": "/my-app/static/media/faq-title.51f64c65d97f76026a63.svg",
@@ -52,11 +52,11 @@
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
     "main.489afc42.css.map": "/my-app/static/css/main.489afc42.css.map",
-    "main.d60054c4.js.map": "/my-app/static/js/main.d60054c4.js.map",
+    "main.f67fd0f2.js.map": "/my-app/static/js/main.f67fd0f2.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.489afc42.css",
-    "static/js/main.d60054c4.js"
+    "static/js/main.f67fd0f2.js"
   ]
 }
