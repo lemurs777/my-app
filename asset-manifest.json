@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.9cd3de59.css",
-    "main.js": "/my-app/static/js/main.e64ac01c.js",
+    "main.css": "/my-app/static/css/main.c51684e3.css",
+    "main.js": "/my-app/static/js/main.03b66835.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/faq-title.svg": "/my-app/static/media/faq-title.51f64c65d97f76026a63.svg",
@@ -28,6 +28,7 @@
     "static/media/menu-chess.svg": "/my-app/static/media/menu-chess.6fc11e5671b3c8a57c23.svg",
     "static/media/menu-volleyball.svg": "/my-app/static/media/menu-volleyball.a9d93dd1649172f24c50.svg",
     "static/media/profile-left.svg": "/my-app/static/media/profile-left.2767e368f3506b5b42af.svg",
+    "static/media/profile-right.svg": "/my-app/static/media/profile-right.2dad150632f55be0f8e3.svg",
     "static/media/sports-next.svg": "/my-app/static/media/sports-next.dde68f99d3d6ccf438c2.svg",
     "static/media/sports-prev.svg": "/my-app/static/media/sports-prev.ee2dac40561d91b2c6c9.svg",
     "static/media/menu-athletics.svg": "/my-app/static/media/menu-athletics.e5d25e4d4bb8cc86d726.svg",
@@ -52,12 +53,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.9cd3de59.css.map": "/my-app/static/css/main.9cd3de59.css.map",
-    "main.e64ac01c.js.map": "/my-app/static/js/main.e64ac01c.js.map",
+    "main.c51684e3.css.map": "/my-app/static/css/main.c51684e3.css.map",
+    "main.03b66835.js.map": "/my-app/static/js/main.03b66835.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cd3de59.css",
-    "static/js/main.e64ac01c.js"
+    "static/css/main.c51684e3.css",
+    "static/js/main.03b66835.js"
   ]
 }
