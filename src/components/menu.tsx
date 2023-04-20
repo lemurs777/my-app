@@ -8,13 +8,13 @@ function Header() {
 				<Link className="menu__item-link menu__item-link--top menu__item-link--active" to="/profile">Top</Link>
 			</li>
 			<li className="menu__item">
-				<Link className="menu__item-link menu__item-link--soccer menu__item-link--live" to="/">Soccer</Link>
+				<Link className="menu__item-link menu__item-link--soccer menu__item-link--live" to="/profile/verification">Soccer</Link>
 			</li>
 			<li className="menu__item">
-				<Link className="menu__item-link menu__item-link--hockey menu__item-link--live" to="/">Hockey</Link>
+				<Link className="menu__item-link menu__item-link--hockey menu__item-link--live" to="/profile/conclusions">Hockey</Link>
 			</li>
 			<li className="menu__item">
-				<Link className="menu__item-link menu__item-link--basketball" to="/">Basketball</Link>
+				<Link className="menu__item-link menu__item-link--basketball" to="/profile/beting">Basketball</Link>
 			</li>
 			<li className="menu__item">
 				<Link className="menu__item-link menu__item-link--tennis" to="/">Tennis</Link>
