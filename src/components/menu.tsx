@@ -17,10 +17,10 @@ function Header() {
 				<Link className="menu__item-link menu__item-link--basketball" to="/profile/betting">Basketball</Link>
 			</li>
 			<li className="menu__item">
-				<Link className="menu__item-link menu__item-link--tennis" to="/">Tennis</Link>
+				<Link className="menu__item-link menu__item-link--tennis" to="/profile/promo">Tennis</Link>
 			</li>
 			<li className="menu__item">
-				<Link className="menu__item-link menu__item-link--rugby menu__item-link--live" to="/">Rugby</Link>
+				<Link className="menu__item-link menu__item-link--rugby menu__item-link--live" to="/profile/deposit">Rugby</Link>
 			</li>
 			<li className="menu__item">
 				<Link className="menu__item-link menu__item-link--volleyball" to="/">Volleyball</Link>

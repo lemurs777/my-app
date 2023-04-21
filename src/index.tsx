@@ -10,6 +10,8 @@ import NoPage from './pages/NoPage';
 import HistoryOfConclusions from './pages/HistoryOfConclusions';
 import HistoryBetting from './pages/HistoryBetting';
 import VerificationPage from './pages/VerificationPage';
+import MyPromo from './pages/MyPromo';
+import DepositPage from './pages/DepositPage';
 
 export default function App() {
 	return (
@@ -24,6 +26,8 @@ export default function App() {
 					<Route path="verification" element={<VerificationPage />} />
 					<Route path="conclusions" element={<HistoryOfConclusions />} />
 					<Route path="betting" element={<HistoryBetting />} />
+					<Route path="promo" element={<MyPromo />} />
+					<Route path="deposit" element={<DepositPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

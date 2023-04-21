@@ -9,7 +9,7 @@ import {
 
 type MyComponentProps = React.PropsWithChildren<{}>
 
-function MainLayout( {children}:  MyComponentProps) {
+function ProfileLayout( {children}:  MyComponentProps) {
 	return (
 		<>
 			<Header />
@@ -28,4 +28,4 @@ function MainLayout( {children}:  MyComponentProps) {
 	);
 };
 
-export default MainLayout;
+export default ProfileLayout;

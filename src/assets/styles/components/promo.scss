@@ -1,0 +1,70 @@
+.promo {
+    &__header {
+        padding: rem(6px 0 27px);
+        display: flex;
+        align-items: center;
+    }
+
+    &__header-btn {
+        width: rem(34px);
+        height: rem(34px);
+        background: #3D3D3D;
+        border-radius: rem(10px);
+        position: relative;
+        cursor: pointer;
+        margin-right: rem(15px);
+        font-size: 0;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: rem(8px);
+            height: rem(12px);
+            background: url("../../images/svg/profile-left.svg") no-repeat 50% 50% /contain;
+            transition: .3s;
+            opacity: .6;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__header-title {
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        color: #fff;
+    }
+
+    &__content {
+        background: #1B1B1B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: rem(126px 50px 200px);
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);        
+        color: #fff;
+        margin-bottom: rem(14px);
+        text-align: center;
+    }
+
+    &__info {
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        color: #919191;
+        text-align: center;
+    }
+}

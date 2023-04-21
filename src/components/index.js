@@ -11,3 +11,5 @@ export { default as MyProfile } from './MyProfile';
 export { default as Verification } from './Verification';
 export { default as Betting } from './Betting';
 export { default as Conclusions } from './Conclusions';
+export { default as NoPromo } from './NoPromo';
+export { default as Deposit } from './Deposit';
