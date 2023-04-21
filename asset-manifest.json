@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.c51684e3.css",
-    "main.js": "/my-app/static/js/main.03b66835.js",
+    "main.css": "/my-app/static/css/main.3de2a4a4.css",
+    "main.js": "/my-app/static/js/main.31f09501.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/faq-title.svg": "/my-app/static/media/faq-title.51f64c65d97f76026a63.svg",
@@ -53,12 +53,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.c51684e3.css.map": "/my-app/static/css/main.c51684e3.css.map",
-    "main.03b66835.js.map": "/my-app/static/js/main.03b66835.js.map",
+    "main.3de2a4a4.css.map": "/my-app/static/css/main.3de2a4a4.css.map",
+    "main.31f09501.js.map": "/my-app/static/js/main.31f09501.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c51684e3.css",
-    "static/js/main.03b66835.js"
+    "static/css/main.3de2a4a4.css",
+    "static/js/main.31f09501.js"
   ]
 }
