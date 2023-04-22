@@ -1,10 +1,10 @@
 import {
-	NoPromo,
+	Promo,
 } from '../components/';
 
 function MyPromo(){
 	return (
-        <NoPromo />
+        <Promo />
 	);
 };
 

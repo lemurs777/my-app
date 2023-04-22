@@ -77,6 +77,39 @@ function Conclusions() {
                             <div className="conclusions__table-item-cell">- 83 096,25 руб.</div>
                             <div className="conclusions__table-item-cell">Обрабатывается</div>
                         </li>
+                        <li className="conclusions__table-item">
+                            <div className="conclusions__table-item-cell">187323</div>
+                            <div className="conclusions__table-item-cell">
+                                <div className="conclusions__table-item-cell-top">Visa Platinum</div>
+                                <div className="conclusions__table-item-cell-bottom">**** 5534</div>
+                            </div>
+                            <div className="conclusions__table-item-cell">2023-03-31</div>
+                            <div className="conclusions__table-item-cell">20:31:41</div>
+                            <div className="conclusions__table-item-cell">- 83 096,25 руб.</div>
+                            <div className="conclusions__table-item-cell">Обрабатывается</div>
+                        </li>
+                        <li className="conclusions__table-item">
+                            <div className="conclusions__table-item-cell">187323</div>
+                            <div className="conclusions__table-item-cell">
+                                <div className="conclusions__table-item-cell-top">Visa Platinum</div>
+                                <div className="conclusions__table-item-cell-bottom">**** 5534</div>
+                            </div>
+                            <div className="conclusions__table-item-cell">2023-03-31</div>
+                            <div className="conclusions__table-item-cell">20:31:41</div>
+                            <div className="conclusions__table-item-cell">- 83 096,25 руб.</div>
+                            <div className="conclusions__table-item-cell">Обрабатывается</div>
+                        </li>
+                        <li className="conclusions__table-item">
+                            <div className="conclusions__table-item-cell">187323</div>
+                            <div className="conclusions__table-item-cell">
+                                <div className="conclusions__table-item-cell-top">Visa Platinum</div>
+                                <div className="conclusions__table-item-cell-bottom">**** 5534</div>
+                            </div>
+                            <div className="conclusions__table-item-cell">2023-03-31</div>
+                            <div className="conclusions__table-item-cell">20:31:41</div>
+                            <div className="conclusions__table-item-cell">- 83 096,25 руб.</div>
+                            <div className="conclusions__table-item-cell">Обрабатывается</div>
+                        </li>
                     </ul>
                 </div>
             </div>

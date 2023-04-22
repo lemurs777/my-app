@@ -20,5 +20,7 @@
 .column-right {
     &--profile {
         width: 100%;
+        overflow-x: hidden;
+        padding-right: rem(10px);
     }
 }

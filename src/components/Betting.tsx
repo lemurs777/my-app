@@ -62,6 +62,30 @@ function Betting() {
                             <div className="betting__table-item-cell">500 руб.</div>
                             <div className="betting__table-item-cell">Линия</div>
                         </li>
+                        <li className="betting__table-item">
+                            <div className="betting__table-item-cell">Проигрыш</div>
+                            <div className="betting__table-item-cell">29847938</div>
+                            <div className="betting__table-item-cell">2023-03-31</div>
+                            <div className="betting__table-item-cell">20:31:41</div>
+                            <div className="betting__table-item-cell">500 руб.</div>
+                            <div className="betting__table-item-cell">Линия</div>
+                        </li>
+                        <li className="betting__table-item">
+                            <div className="betting__table-item-cell">Проигрыш</div>
+                            <div className="betting__table-item-cell">29847938</div>
+                            <div className="betting__table-item-cell">2023-03-31</div>
+                            <div className="betting__table-item-cell">20:31:41</div>
+                            <div className="betting__table-item-cell">2500 руб.</div>
+                            <div className="betting__table-item-cell">Линия</div>
+                        </li>
+                        <li className="betting__table-item">
+                            <div className="betting__table-item-cell">Проигрыш</div>
+                            <div className="betting__table-item-cell">29847938</div>
+                            <div className="betting__table-item-cell">2023-03-31</div>
+                            <div className="betting__table-item-cell">20:31:41</div>
+                            <div className="betting__table-item-cell">500 руб.</div>
+                            <div className="betting__table-item-cell">Линия</div>
+                        </li>
                     </ul>
                 </div>
             </div>

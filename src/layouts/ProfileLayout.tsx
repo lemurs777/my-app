@@ -19,7 +19,7 @@ function ProfileLayout( {children}:  MyComponentProps) {
 				<Faq />
 				<Exit />
 			</div>
-			<div className="column-right column-right--profile">
+			<div className="column-right column-right--profile scroll">
                 {children}
                 <Outlet />
 			</div>

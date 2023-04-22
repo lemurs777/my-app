@@ -14,7 +14,7 @@ function HomePage(){
 				<MainBanner />
 				<Sports />
 			</main>
-			<aside className="aside aside--index">
+			<aside className="aside aside--index scroll">
 				<Broadcast />
 				<Multiple />
 			</aside>
