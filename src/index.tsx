@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from "./layouts/MainLayout";
 import ProfileLayout from "./layouts/ProfileLayout";
+import AppsLayout from "./layouts/AppsLayout";
 import HomePage from './pages/HomePage';
 import Profile from './pages/Profile';
 import NoPage from './pages/NoPage';
@@ -12,6 +13,7 @@ import HistoryBetting from './pages/HistoryBetting';
 import VerificationPage from './pages/VerificationPage';
 import MyPromo from './pages/MyPromo';
 import DepositPage from './pages/DepositPage';
+import AppsPage from './pages/AppsPage';
 
 export default function App() {
 	return (
@@ -28,6 +30,9 @@ export default function App() {
 					<Route path="betting" element={<HistoryBetting />} />
 					<Route path="promo" element={<MyPromo />} />
 					<Route path="deposit" element={<DepositPage />} />
+				</Route>
+				<Route path="/apps/" element={<AppsLayout />}>
+					<Route index element={<AppsPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

@@ -14,16 +14,16 @@ function ProfileLayout( {children}:  MyComponentProps) {
 		<>
 			<Header />
             <main className="page page--profile">
-			<div className="column-left column-left--profile">
-				<Balance />
-				<Faq />
-				<Exit />
-			</div>
-			<div className="column-right column-right--profile scroll">
-                {children}
-                <Outlet />
-			</div>
-		</main>
+				<div className="column-left column-left--profile">
+					<Balance />
+					<Faq />
+					<Exit />
+				</div>
+				<div className="column-right column-right--profile scroll">
+					{children}
+					<Outlet />
+				</div>
+			</main>
 		</>
 	);
 };
