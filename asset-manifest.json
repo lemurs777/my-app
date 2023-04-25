@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.2c0d8848.css",
-    "main.js": "/my-app/static/js/main.30f06661.js",
+    "main.css": "/my-app/static/css/main.f2b7e26e.css",
+    "main.js": "/my-app/static/js/main.9f709b61.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/profile-promo-banner-1-x2.min.jpg": "/my-app/static/media/profile-promo-banner-1-x2.min.ce3788d41d6610fc23a8.jpg",
@@ -63,12 +63,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.2c0d8848.css.map": "/my-app/static/css/main.2c0d8848.css.map",
-    "main.30f06661.js.map": "/my-app/static/js/main.30f06661.js.map",
+    "main.f2b7e26e.css.map": "/my-app/static/css/main.f2b7e26e.css.map",
+    "main.9f709b61.js.map": "/my-app/static/js/main.9f709b61.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c0d8848.css",
-    "static/js/main.30f06661.js"
+    "static/css/main.f2b7e26e.css",
+    "static/js/main.9f709b61.js"
   ]
 }
