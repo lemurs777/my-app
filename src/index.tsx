@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from "./layouts/MainLayout";
 import ProfileLayout from "./layouts/ProfileLayout";
 import AppsLayout from "./layouts/AppsLayout";
+import PromotionsLayout from "./layouts/PromotionsLayout";
 import HomePage from './pages/HomePage';
 import Profile from './pages/Profile';
 import NoPage from './pages/NoPage';
@@ -14,6 +15,7 @@ import VerificationPage from './pages/VerificationPage';
 import MyPromo from './pages/MyPromo';
 import DepositPage from './pages/DepositPage';
 import AppsPage from './pages/AppsPage';
+import PromotionsPage from './pages/PromotionsPage';
 
 export default function App() {
 	return (
@@ -33,6 +35,9 @@ export default function App() {
 				</Route>
 				<Route path="/apps/" element={<AppsLayout />}>
 					<Route index element={<AppsPage />} />
+				</Route>
+				<Route path="/promotions/" element={<PromotionsLayout />}>
+					<Route index element={<PromotionsPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

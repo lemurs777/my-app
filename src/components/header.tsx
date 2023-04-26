@@ -51,7 +51,7 @@ function Header() {
                 <Link className="header__nav-link" to="/">Виртуальный спорт</Link>
               </li>
               <li className="header__nav-item">
-                <Link className="header__nav-link" to="/">Акции</Link>
+                <Link className="header__nav-link" to="/promotions/">Акции</Link>
               </li>
               <li className="header__nav-item">
                 <button className="header__nav-btn-show-more-link">
