@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.f2b7e26e.css",
-    "main.js": "/my-app/static/js/main.9f709b61.js",
+    "main.css": "/my-app/static/css/main.58385985.css",
+    "main.js": "/my-app/static/js/main.5efd9119.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/profile-promo-banner-1-x2.min.jpg": "/my-app/static/media/profile-promo-banner-1-x2.min.ce3788d41d6610fc23a8.jpg",
     "static/media/profile-promo-banner-3-x2.min.jpg": "/my-app/static/media/profile-promo-banner-3-x2.min.cfbc2574d250dade86a1.jpg",
     "static/media/profile-promo-banner-2-x2.min.jpg": "/my-app/static/media/profile-promo-banner-2-x2.min.87d806a7c667f332d94d.jpg",
+    "static/media/apps-qr-x2.min.png": "/my-app/static/media/apps-qr-x2.min.dec78dbd11842cc2788f.png",
+    "static/media/apps-btn-app-store.svg": "/my-app/static/media/apps-btn-app-store.677f1752c1a514a4412f.svg",
+    "static/media/apps-btn-google-play.svg": "/my-app/static/media/apps-btn-google-play.4c924e6db6b51b84d846.svg",
     "static/media/faq-title.svg": "/my-app/static/media/faq-title.51f64c65d97f76026a63.svg",
     "static/media/profile-support.svg": "/my-app/static/media/profile-support.72f25a6ff06026df39e0.svg",
     "static/media/multiple-bonus.svg": "/my-app/static/media/multiple-bonus.69ff98c575e08696029a.svg",
@@ -51,6 +55,7 @@
     "static/media/sports-list-mma.svg": "/my-app/static/media/sports-list-mma.a5106279eb60bc6e4bff.svg",
     "index.html": "/my-app/index.html",
     "static/media/balance-copy.svg": "/my-app/static/media/balance-copy.9aee55472046126f1cf1.svg",
+    "static/media/apps-item.svg": "/my-app/static/media/apps-item.293af6e7860c2465a567.svg",
     "static/media/header-flag-ru.svg": "/my-app/static/media/header-flag-ru.5f67b7152dac327143aa.svg",
     "static/media/header-search.svg": "/my-app/static/media/header-search.651e6073bab417e33b4f.svg",
     "static/media/profile-arrow-right.svg": "/my-app/static/media/profile-arrow-right.eeabfb75d757e44c5b8f.svg",
@@ -63,12 +68,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.f2b7e26e.css.map": "/my-app/static/css/main.f2b7e26e.css.map",
-    "main.9f709b61.js.map": "/my-app/static/js/main.9f709b61.js.map",
+    "main.58385985.css.map": "/my-app/static/css/main.58385985.css.map",
+    "main.5efd9119.js.map": "/my-app/static/js/main.5efd9119.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2b7e26e.css",
-    "static/js/main.9f709b61.js"
+    "static/css/main.58385985.css",
+    "static/js/main.5efd9119.js"
   ]
 }
