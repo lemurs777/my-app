@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.255b2a2d.css",
-    "main.js": "/my-app/static/js/main.5efd9119.js",
+    "main.css": "/my-app/static/css/main.72a34f4e.css",
+    "main.js": "/my-app/static/js/main.08a90bb1.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/profile-promo-banner-1-x2.min.jpg": "/my-app/static/media/profile-promo-banner-1-x2.min.ce3788d41d6610fc23a8.jpg",
+    "static/media/promo-banner-2-x2.min.jpg": "/my-app/static/media/promo-banner-2-x2.min.da71f4581461e23eeb07.jpg",
+    "static/media/promo-banner-1-x2.min.jpg": "/my-app/static/media/promo-banner-1-x2.min.dc0d5703a94afef6cd79.jpg",
     "static/media/profile-promo-banner-3-x2.min.jpg": "/my-app/static/media/profile-promo-banner-3-x2.min.cfbc2574d250dade86a1.jpg",
     "static/media/profile-promo-banner-2-x2.min.jpg": "/my-app/static/media/profile-promo-banner-2-x2.min.87d806a7c667f332d94d.jpg",
     "static/media/apps-qr-x2.min.png": "/my-app/static/media/apps-qr-x2.min.dec78dbd11842cc2788f.png",
@@ -39,6 +41,7 @@
     "static/media/menu-chess.svg": "/my-app/static/media/menu-chess.6fc11e5671b3c8a57c23.svg",
     "static/media/profile-bets.svg": "/my-app/static/media/profile-bets.ea09fed0778f7945b42a.svg",
     "static/media/menu-volleyball.svg": "/my-app/static/media/menu-volleyball.a9d93dd1649172f24c50.svg",
+    "static/media/promotions-time.svg": "/my-app/static/media/promotions-time.c1da82090587499a9f84.svg",
     "static/media/profile-left.svg": "/my-app/static/media/profile-left.2767e368f3506b5b42af.svg",
     "static/media/profile-right.svg": "/my-app/static/media/profile-right.2dad150632f55be0f8e3.svg",
     "static/media/sports-next.svg": "/my-app/static/media/sports-next.dde68f99d3d6ccf438c2.svg",
@@ -68,12 +71,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.255b2a2d.css.map": "/my-app/static/css/main.255b2a2d.css.map",
-    "main.5efd9119.js.map": "/my-app/static/js/main.5efd9119.js.map",
+    "main.72a34f4e.css.map": "/my-app/static/css/main.72a34f4e.css.map",
+    "main.08a90bb1.js.map": "/my-app/static/js/main.08a90bb1.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.255b2a2d.css",
-    "static/js/main.5efd9119.js"
+    "static/css/main.72a34f4e.css",
+    "static/js/main.08a90bb1.js"
   ]
 }
