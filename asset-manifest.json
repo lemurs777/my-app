@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.58385985.css",
+    "main.css": "/my-app/static/css/main.255b2a2d.css",
     "main.js": "/my-app/static/js/main.5efd9119.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
@@ -68,12 +68,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.58385985.css.map": "/my-app/static/css/main.58385985.css.map",
+    "main.255b2a2d.css.map": "/my-app/static/css/main.255b2a2d.css.map",
     "main.5efd9119.js.map": "/my-app/static/js/main.5efd9119.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58385985.css",
+    "static/css/main.255b2a2d.css",
     "static/js/main.5efd9119.js"
   ]
 }
