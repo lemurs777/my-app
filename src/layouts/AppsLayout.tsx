@@ -10,7 +10,7 @@ function AppsLayout( {children}:  MyComponentProps) {
 	return (
 		<>
 			<HeaderTop />
-            <main className="page page-apps scroll">
+            <main className="page page--apps scroll">
                 {children}
                 <Outlet />
             </main>

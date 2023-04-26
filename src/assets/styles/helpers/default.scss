@@ -180,6 +180,15 @@ main {
 		margin: 0 auto;
 		gap: rem(31px);
 	}
+
+	&--apps {
+		top: rem(80px);
+		max-height: calc(100vh - #{rem(79px)});
+		background-image: url("../../images/apps-bg-x2.min.png");
+		background-repeat: no-repeat;
+		background-size: rem(1225px) rem(786px);
+		background-position: 0 rem(100px);
+	}
 }
 
 .aside {
