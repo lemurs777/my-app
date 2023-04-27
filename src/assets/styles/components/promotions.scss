@@ -6,7 +6,102 @@
 
     &__banner {
         margin-bottom: rem(40px);
+        display: flex;
     }
+
+    &__banner-left {
+        width: rem(390px);
+    }
+
+    &__info-wrapper {
+        position: relative;
+        height: rem(430px);
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            height: rem(4px);
+            background: radial-gradient(50% 50% at 50% 50%, #F7FF13 0%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            height: rem(361px);
+            background: radial-gradient(63.59% 100% at 50% 0%, #494B02 0%, rgba(69, 71, 13, 0.571) 41.15%, rgba(49, 50, 9, 0.34) 72.92%, rgba(79, 82, 10, 0) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+
+    &__info-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: rem(371px);
+        padding: rem(54px 54px 0 15px);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-date {
+        padding-left: rem(28px);
+        margin-bottom: rem(20px);
+        font-weight: 400;
+        font-size: rem(13px);
+        line-height: rem(15px);
+        color: #9C9C9C;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 35%;
+            left: 0;
+            width: rem(18px);
+            height: rem(18px);
+            background: url("../../images/svg/promotions-time.svg") no-repeat 50% 50% /contain;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__info-title {
+        font-weight: 500;
+        font-size: rem(26px);
+        line-height: rem(30px);        
+        color: #fff;
+        margin-bottom: rem(15px);
+    }
+
+    &__info-text {
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(18px);        
+        color: #8F8F8F;
+        margin-bottom: auto;
+    }
+
+    &__banner-right {
+        width: rem(1030px);
+    }
+
+    &__img-wrapper {
+        height: rem(430px);
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     
     &__info {
         padding-bottom: rem(50px);
@@ -22,6 +117,7 @@
 
     &__list {
         display: flex;
+        justify-content: space-between;
         gap: rem(100px);
     }
 
