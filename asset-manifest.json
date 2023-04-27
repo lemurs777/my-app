@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.72a34f4e.css",
-    "main.js": "/my-app/static/js/main.08a90bb1.js",
+    "main.css": "/my-app/static/css/main.2bde7935.css",
+    "main.js": "/my-app/static/js/main.5c00eec8.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
+    "static/media/promo-main-banner-1-x2.min.jpg": "/my-app/static/media/promo-main-banner-1-x2.min.c1775e1874a823f08040.jpg",
     "static/media/profile-promo-banner-1-x2.min.jpg": "/my-app/static/media/profile-promo-banner-1-x2.min.ce3788d41d6610fc23a8.jpg",
     "static/media/promo-banner-2-x2.min.jpg": "/my-app/static/media/promo-banner-2-x2.min.da71f4581461e23eeb07.jpg",
     "static/media/promo-banner-1-x2.min.jpg": "/my-app/static/media/promo-banner-1-x2.min.dc0d5703a94afef6cd79.jpg",
@@ -71,12 +72,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.72a34f4e.css.map": "/my-app/static/css/main.72a34f4e.css.map",
-    "main.08a90bb1.js.map": "/my-app/static/js/main.08a90bb1.js.map",
+    "main.2bde7935.css.map": "/my-app/static/css/main.2bde7935.css.map",
+    "main.5c00eec8.js.map": "/my-app/static/js/main.5c00eec8.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72a34f4e.css",
-    "static/js/main.08a90bb1.js"
+    "static/css/main.2bde7935.css",
+    "static/js/main.5c00eec8.js"
   ]
 }
