@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
-import clsx from 'clsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
+import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-import { Autoplay, Navigation } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 import PromoMainBanner1 from '../assets/images/promo-main-banner-1-x2.min.jpg';
 import PromoBanner1 from '../assets/images/promo-banner-1-x2.min.jpg';
@@ -22,22 +22,28 @@ function PromotionsPage(){
 			dateEnd: '03.07.2020',
 			title: 'Ставь на киберспорт и выиграй спец. призы',
 			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык',
+			linkOne: '/promotions/',
+			linkTwo: '/promotions/',
 		},
 		{
 			img: PromoMainBanner1,
 			alt: 'Banner 2',
 			dateStart: '02.08.2020',
 			dateEnd: '03.08.2020',
-			title: 'Ставь на киберспорт и выиграй спец. призы',
-			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык',
+			title: 'Ставь на киберспорт и выиграй спец. призы призы призы',
+			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык на русский язык',
+			linkOne: '/promotions/',
+			linkTwo: '/promotions/',
 		},
 		{
 			img: PromoMainBanner1,
 			alt: 'Banner 3',
 			dateStart: '02.09.2020',
 			dateEnd: '03.09.2020',
-			title: 'Ставь на киберспорт и выиграй спец. призы',
+			title: 'Ставь на киберспорт и выиграй спец. призы и выиграй спец. призы',
 			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык',
+			linkOne: '/promotions/',
+			linkTwo: '/promotions/',
 		},
 		{
 			img: PromoMainBanner1,
@@ -45,15 +51,19 @@ function PromotionsPage(){
 			dateStart: '02.10.2021',
 			dateEnd: '03.10.2021',
 			title: 'Ставь на киберспорт и выиграй спец. призы',
-			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык',
+			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык, но я его ещё не перевел на русский язык',
+			linkOne: '/promotions/',
+			linkTwo: '/promotions/',
 		},
 		{
 			img: PromoMainBanner1,
 			alt: 'Banner 5',
 			dateStart: '02.11.2022',
 			dateEnd: '03.11.2022',
-			title: 'Ставь на киберспорт и выиграй спец. призы',
-			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык',
+			title: 'Ставь на киберспорт и выиграй спец. призы  и выиграй спец. призы',
+			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык язык',
+			linkOne: '/promotions/',
+			linkTwo: '/promotions/',
 		},
 	];
 
@@ -63,12 +73,10 @@ function PromotionsPage(){
 				<div className="promotions__banner-left">
 					<Swiper
 						slidesPerView={1}
-						loop={true} 
-						autoplay={{
-							delay: 25000,
-						}}
-						speed={5000}
-						modules={[Autoplay, Navigation]}
+						loop={true}
+						modules={[Navigation, Pagination]} 
+						navigation={true}
+						pagination={{ clickable: true }}
 						onSlideChange={() => console.log('slide change')}
 						onSwiper={(swiper) => console.log(swiper)}
 						className="promotions__banner-info-swiper"
@@ -80,6 +88,10 @@ function PromotionsPage(){
 										<div className="promotions__info-date"><span>{banner.dateStart}</span> - <span>{banner.dateEnd}</span></div>
 										<h2 className="promotions__info-title">{banner.title}</h2>
 										<p className="promotions__info-text">{banner.text}</p>
+										<div className="promotions__info-btn-wrapper">
+											<Link className="promotions__info-btn promotions__info-btn--accent" to={banner.linkOne}>Участвовать</Link>
+											<Link className="promotions__info-btn" to={banner.linkTwo}>Подробнее</Link>
+										</div>
 									</div>
 								</div>
 							</SwiperSlide>
@@ -89,12 +101,7 @@ function PromotionsPage(){
 				<div className="promotions__banner-right">
 					<Swiper
 						slidesPerView={1}
-						loop={true} 
-						autoplay={{
-							delay: 2500,
-						}}
-						speed={500}
-						modules={[Autoplay]}
+						loop={true}
 						onSlideChange={() => console.log('slide change')}
 						onSwiper={(swiper) => console.log(swiper)}
 						className="promotions__banner-swiper"
