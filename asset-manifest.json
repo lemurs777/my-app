@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.8b0ac13a.css",
-    "main.js": "/my-app/static/js/main.e2a4986f.js",
+    "main.css": "/my-app/static/css/main.e776e1d8.css",
+    "main.js": "/my-app/static/js/main.9380e2cd.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -72,12 +72,12 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.8b0ac13a.css.map": "/my-app/static/css/main.8b0ac13a.css.map",
-    "main.e2a4986f.js.map": "/my-app/static/js/main.e2a4986f.js.map",
+    "main.e776e1d8.css.map": "/my-app/static/css/main.e776e1d8.css.map",
+    "main.9380e2cd.js.map": "/my-app/static/js/main.9380e2cd.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b0ac13a.css",
-    "static/js/main.e2a4986f.js"
+    "static/css/main.e776e1d8.css",
+    "static/js/main.9380e2cd.js"
   ]
 }
