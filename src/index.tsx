@@ -16,6 +16,7 @@ import MyPromo from './pages/MyPromo';
 import DepositPage from './pages/DepositPage';
 import AppsPage from './pages/AppsPage';
 import PromotionsPage from './pages/PromotionsPage';
+import PromotionPage from './pages/PromotionPage';
 
 export default function App() {
 	return (
@@ -38,6 +39,7 @@ export default function App() {
 				</Route>
 				<Route path="/promotions/" element={<PromotionsLayout />}>
 					<Route index element={<PromotionsPage />} />
+					<Route path="promo" element={<PromotionPage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

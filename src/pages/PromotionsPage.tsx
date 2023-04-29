@@ -22,8 +22,8 @@ function PromotionsPage(){
 			dateEnd: '03.07.2020',
 			title: 'Ставь на киберспорт и выиграй спец. призы',
 			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык',
-			linkOne: '/promotions/',
-			linkTwo: '/promotions/',
+			linkOne: '/promotions/promo',
+			linkTwo: '/promotions/promo',
 		},
 		{
 			img: PromoMainBanner1,
@@ -32,8 +32,8 @@ function PromotionsPage(){
 			dateEnd: '03.08.2020',
 			title: 'Ставь на киберспорт и выиграй спец. призы призы призы',
 			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык на русский язык',
-			linkOne: '/promotions/',
-			linkTwo: '/promotions/',
+			linkOne: '/promotions/promo',
+			linkTwo: '/promotions/promo',
 		},
 		{
 			img: PromoMainBanner1,
@@ -42,8 +42,8 @@ function PromotionsPage(){
 			dateEnd: '03.09.2020',
 			title: 'Ставь на киберспорт и выиграй спец. призы и выиграй спец. призы',
 			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык',
-			linkOne: '/promotions/',
-			linkTwo: '/promotions/',
+			linkOne: '/promotions/promo',
+			linkTwo: '/promotions/promo',
 		},
 		{
 			img: PromoMainBanner1,
@@ -52,8 +52,8 @@ function PromotionsPage(){
 			dateEnd: '03.10.2021',
 			title: 'Ставь на киберспорт и выиграй спец. призы',
 			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык, но я его ещё не перевел на русский язык',
-			linkOne: '/promotions/',
-			linkTwo: '/promotions/',
+			linkOne: '/promotions/promo',
+			linkTwo: '/promotions/promo',
 		},
 		{
 			img: PromoMainBanner1,
@@ -62,8 +62,8 @@ function PromotionsPage(){
 			dateEnd: '03.11.2022',
 			title: 'Ставь на киберспорт и выиграй спец. призы  и выиграй спец. призы',
 			text: 'Здесь должно быть описание акции, но я его ещё не перевел на русский язык язык',
-			linkOne: '/promotions/',
-			linkTwo: '/promotions/',
+			linkOne: '/promotions/promo',
+			linkTwo: '/promotions/promo',
 		},
 	];
 
