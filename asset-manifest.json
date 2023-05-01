@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.e776e1d8.css",
-    "main.js": "/my-app/static/js/main.9380e2cd.js",
+    "main.css": "/my-app/static/css/main.4756ea72.css",
+    "main.js": "/my-app/static/js/main.31a310fa.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -67,17 +67,19 @@
     "static/media/multiple-delete.svg": "/my-app/static/media/multiple-delete.e67463ad6f5e3d4839b6.svg",
     "static/media/sports-best-live.svg": "/my-app/static/media/sports-best-live.d025587e74a698068750.svg",
     "static/media/sports-list-bookmarks.svg": "/my-app/static/media/sports-list-bookmarks.14576d2c32eb0c5b167a.svg",
+    "static/media/events-flag-bundesliga.svg": "/my-app/static/media/events-flag-bundesliga.9385f75dcb3b5dd7f995.svg",
     "static/media/multiple-go.svg": "/my-app/static/media/multiple-go.c12aef274bef2701488a.svg",
     "static/media/menu-more.svg": "/my-app/static/media/menu-more.7896bc8a69ac1353e130.svg",
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
+    "static/media/events-flag-champions-league.svg": "/my-app/static/media/events-flag-champions-league.200b7e2b3c9f9ca4245d.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.e776e1d8.css.map": "/my-app/static/css/main.e776e1d8.css.map",
-    "main.9380e2cd.js.map": "/my-app/static/js/main.9380e2cd.js.map",
+    "main.4756ea72.css.map": "/my-app/static/css/main.4756ea72.css.map",
+    "main.31a310fa.js.map": "/my-app/static/js/main.31a310fa.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e776e1d8.css",
-    "static/js/main.9380e2cd.js"
+    "static/css/main.4756ea72.css",
+    "static/js/main.31a310fa.js"
   ]
 }
