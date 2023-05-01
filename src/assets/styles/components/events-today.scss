@@ -1,0 +1,157 @@
+.events-today {
+    max-width: rem(332px);
+    width: 100%;
+    overflow-y: auto;
+
+    &__content {
+        background: #000;
+        padding: rem(30px 0);
+    }
+
+    &__title {
+        padding: rem(0 15px);
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__league-header {
+        display: flex;
+        align-items: center;
+        padding: rem(0 15px);
+        margin-bottom: rem(15px);
+        margin-top: rem(30px);
+    }
+
+    &__league-name {
+        position: relative;
+        padding-left: rem(37px);
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #fff;
+        margin-right: auto;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: rem(24px);
+            height: rem(16px);
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+        }
+
+        &--bundesliga {
+            &:before {
+                background-image: url("../../images/svg/events-flag-bundesliga.svg");
+            }
+        }
+
+        &--champions-league {
+            &:before {
+                background-image: url("../../images/svg/events-flag-champions-league.svg");
+            }
+        }
+    }
+
+    &__league-count {
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #838383;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        color: #969696;
+        padding: rem(15px);
+        border-bottom: 2px solid #181818;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover,
+        &--active {
+            border-bottom: 2px solid transparent;
+            background: linear-gradient(90deg, #262626 0%, #000000 100%);
+            color: #fff;
+
+            .events-today__coefficient {
+                background: #343434;
+            }
+        }
+    }
+
+    &__about {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(13px);
+    }
+
+    &__about-names {
+        display: flex;
+        flex-direction: column;
+        gap: rem(6px);
+        font-weight: 400;
+        font-size: rem(19px);
+        line-height: rem(22px);
+        margin-right: auto;
+    }
+
+    &__about-info {
+        display: flex;
+        flex-direction: column;
+        gap: rem(6px);
+        text-align: right;
+        margin-left: rem(15px);
+    }
+
+    &__about-score {
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);
+    }
+
+    &__about-minutes-and-half {
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        display: flex;
+        gap: rem(5px);
+    }
+
+    &__about-half {
+        color: #969696;
+    }
+
+    &__coefficients {
+        display: flex;
+        gap: rem(4px);
+    }
+
+    &__coefficient {
+        width: 32%;
+        display: flex;
+        background: #202020;
+        padding: rem(9px 12px 9px 10px);
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #fff;
+    }
+
+    &__coefficient-name {
+        color: #8C8C8C;
+        margin-right: auto;
+        font-weight: 500;
+    }
+}

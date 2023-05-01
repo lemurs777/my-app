@@ -15,3 +15,4 @@ export { default as Conclusions } from './Conclusions';
 export { default as Promo } from './Promo';
 export { default as Deposit } from './Deposit';
 export { default as Apps } from './Apps';
+export { default as EventsToday } from './EventsToday';

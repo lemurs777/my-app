@@ -23,7 +23,7 @@ function Header() {
 				<Link className="menu__item-link menu__item-link--rugby menu__item-link--live" to="/profile/deposit">Rugby</Link>
 			</li>
 			<li className="menu__item">
-				<Link className="menu__item-link menu__item-link--volleyball" to="/">Volleyball</Link>
+				<Link className="menu__item-link menu__item-link--volleyball" to="/events/">Volleyball</Link>
 			</li>
 			<li className="menu__item">
 				<Link className="menu__item-link menu__item-link--mma" to="/">MMA</Link>

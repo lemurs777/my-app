@@ -10,7 +10,7 @@ function HomePage(){
 	return (
 		<>
 			<Menu />
-			<main className="page page--index">
+			<main className="page page--index scroll">
 				<MainBanner />
 				<Sports />
 			</main>

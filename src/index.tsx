@@ -17,6 +17,7 @@ import DepositPage from './pages/DepositPage';
 import AppsPage from './pages/AppsPage';
 import PromotionsPage from './pages/PromotionsPage';
 import PromotionPage from './pages/PromotionPage';
+import EventsPage from './pages/EventsPage';
 
 export default function App() {
 	return (
@@ -41,6 +42,9 @@ export default function App() {
 					<Route index element={<PromotionsPage />} />
 					<Route path="promo" element={<PromotionPage />} />
 				</Route>
+				<Route path="/events/" element={<MainLayout />}>
+					<Route index element={<EventsPage />} />
+				</Route>	
 			</Routes>
 		</BrowserRouter>
 	);
