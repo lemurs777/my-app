@@ -1,0 +1,253 @@
+.events-info {
+    max-width: rem(1100px);
+    width: 100%;
+    overflow-y: auto;
+
+    &__live {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__live-top {
+        width: 100%;
+        position: relative;
+        padding: rem(15px 20px 17px);
+        background: #177d51 url("../../images/events-info-live-top-bg-x2.min.jpg") no-repeat 50% 50% /cover;
+        height: rem(200px);
+        display: flex;
+        justify-content: center;
+        gap: rem(50px);
+    }
+
+    &__live-top-link {
+        display: inline-block;
+        position: absolute;
+        top: rem(20px);
+        width: rem(48px);
+        height: rem(48px);
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8.5px);
+        border-radius: rem(16px);
+        font-size: 0;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: rem(18px);
+            height: rem(18px);
+            transform: translate(-50%, -50%);
+            transition: .3s;
+            opacity: .6;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+        }
+
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+
+        &--home {
+            left: rem(20px);
+            &:before {
+                background-image: url("../../images/svg/events-info-left.svg");
+            }
+        }
+
+        &--add {
+            right: rem(20px);
+            &:before {
+                background-image: url("../../images/svg/events-info-add.svg");
+            }
+        }
+    }
+
+    &__live-top-left,
+    &__live-top-right {
+        width: 100%;
+        max-width: rem(300px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__live-top-center {
+        width: 100%;
+        max-width: rem(70px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: rem(13px);
+    }
+
+    &__live-top-center-time {
+        padding: rem(5px 15px 3px);
+        background: #E02020;
+        border-radius: rem(20px);
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        color: #fff;
+        margin-bottom: rem(21px);
+    }
+
+    &__live-top-center-score {
+        font-weight: 500;
+        font-size: rem(29px);
+        line-height: rem(34px);
+        color: #fff;
+        margin-bottom: rem(10px);
+    }
+
+    &__live-top-center-half {
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #ACACAC;
+    }
+
+    &__live-top-left {
+        align-items: flex-end;
+    }
+
+    &__live-top-right {
+        align-items: flex-start;
+    }
+
+    &__live-top-logo {
+        display: block;
+        width: rem(52px);
+        height: rem(52px);
+        margin-bottom: rem(10px);
+    }
+
+    &__live-top-name {
+        font-weight: 500;
+        font-size: rem(24px);
+        line-height: rem(28px);
+        color: #fff;
+        margin-bottom: rem(10px);
+    }
+
+    &__live-top-statistics {
+        display: flex;
+        gap: rem(16px);
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #B3B3B3;
+        text-align: center;
+    }
+
+    &__live-top-statistic {
+        padding-top: rem(28px);
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: rem(50%);
+            width: rem(24px);
+            height: rem(24px);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+            transform: translateX(-50%);
+        }
+
+        &--yellow {
+            &:before {
+                background-image: url("../../images/svg/events-info-yellow.svg");
+            }
+        }
+
+        &--red {
+            &:before {
+                background-image: url("../../images/svg/events-info-red.svg");
+            }
+        }
+
+        &--corner {
+            &:before {
+                background-image: url("../../images/svg/events-info-corner.svg");
+            }
+        }
+
+        &--shot-on-goal {
+            &:before {
+                background-image: url("../../images/svg/events-info-shot-on-goal.svg");
+            }
+        }
+    }
+
+    &__live-bottom {
+        display: flex;
+        background: #222222;
+    }
+
+    &__live-bottom-uniforms {
+        width: rem(124px);
+        border-right: 1px solid #2E2E2E;
+        display: flex;
+        flex-direction: column;
+        gap: rem(27px);
+        padding: rem(24px 30px 24px 51px);
+    }
+
+    &__live-bottom-uniform-name {
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #8D8D8D;
+        text-transform: uppercase;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: rem(-36px);
+            transform: translateY(-50%);
+            width: rem(24px);
+            height: rem(24px);
+            background: url("../../images/svg/events-info-uniform.svg") no-repeat 50% 50% /contain;
+        }
+    }
+
+    &__categoty-list-wrapper {
+        overflow-x: auto;
+        background: linear-gradient(180deg, #000000 0%, #121212 37.5%, #262626 100%);
+        max-width: 100%;
+        padding: rem(13px 10px 12px);
+        margin-bottom: 2px;
+    }
+
+    &__categoty-list {
+        display: flex;
+        gap: rem(10px);
+    }
+
+    &__categoty-item-btn {
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        padding: rem(10px);
+        color: #676767;
+        text-transform: uppercase;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: .3s;
+
+        &:hover,
+        &--active {
+            color: #F7FF13;
+        }
+    }
+}

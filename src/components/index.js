@@ -16,3 +16,4 @@ export { default as Promo } from './Promo';
 export { default as Deposit } from './Deposit';
 export { default as Apps } from './Apps';
 export { default as EventsToday } from './EventsToday';
+export { default as EventsInfo } from './EventsInfo';

@@ -1,6 +1,7 @@
 import {  
 	Menu,
     EventsToday,
+	EventsInfo,
 } from '../components/';
 
 function EventsPage(){
@@ -9,6 +10,7 @@ function EventsPage(){
 			<Menu />
 			<main className="page page--events">
                 <EventsToday />
+				<EventsInfo />
 			</main>
 		</>	
 	);

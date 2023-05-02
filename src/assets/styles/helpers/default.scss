@@ -219,3 +219,20 @@ section,
 		background: #8b8b97;
 	}
 }
+
+.scroll-horizontal {
+	&::-webkit-scrollbar {
+		height: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+		cursor: pointer;
+	}
+}
