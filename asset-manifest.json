@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.4756ea72.css",
-    "main.js": "/my-app/static/js/main.31a310fa.js",
+    "main.css": "/my-app/static/css/main.5ad8c3e8.css",
+    "main.js": "/my-app/static/js/main.e7eab874.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/promo-main-banner-1-x2.min.jpg": "/my-app/static/media/promo-main-banner-1-x2.min.c1775e1874a823f08040.jpg",
+    "static/media/events-info-live-top-bg-x2.min.jpg": "/my-app/static/media/events-info-live-top-bg-x2.min.05f63d27f9ae3000b9ef.jpg",
     "static/media/profile-promo-banner-1-x2.min.jpg": "/my-app/static/media/profile-promo-banner-1-x2.min.ce3788d41d6610fc23a8.jpg",
     "static/media/promo-banner-2-x2.min.jpg": "/my-app/static/media/promo-banner-2-x2.min.da71f4581461e23eeb07.jpg",
     "static/media/promo-banner-1-x2.min.jpg": "/my-app/static/media/promo-banner-1-x2.min.dc0d5703a94afef6cd79.jpg",
@@ -14,11 +15,13 @@
     "static/media/apps-qr-x2.min.png": "/my-app/static/media/apps-qr-x2.min.dec78dbd11842cc2788f.png",
     "static/media/apps-btn-app-store.svg": "/my-app/static/media/apps-btn-app-store.677f1752c1a514a4412f.svg",
     "static/media/apps-btn-google-play.svg": "/my-app/static/media/apps-btn-google-play.4c924e6db6b51b84d846.svg",
+    "static/media/events-info-shot-on-goal.svg": "/my-app/static/media/events-info-shot-on-goal.58de0504c38b94cac8f3.svg",
     "static/media/faq-title.svg": "/my-app/static/media/faq-title.51f64c65d97f76026a63.svg",
     "static/media/profile-support.svg": "/my-app/static/media/profile-support.72f25a6ff06026df39e0.svg",
     "static/media/multiple-bonus.svg": "/my-app/static/media/multiple-bonus.69ff98c575e08696029a.svg",
     "static/media/profile-promo.svg": "/my-app/static/media/profile-promo.03cea47e5bd35d14a0d2.svg",
     "static/media/header-app-android.svg": "/my-app/static/media/header-app-android.5a812c8b43e0ed05ec55.svg",
+    "static/media/events-info-corner.svg": "/my-app/static/media/events-info-corner.202e34591bd98baceacd.svg",
     "static/media/menu-top.svg": "/my-app/static/media/menu-top.e6b49a6cd331c3de0601.svg",
     "static/media/profile-info.svg": "/my-app/static/media/profile-info.7510450b86967b0bd4d0.svg",
     "static/media/balance-update.svg": "/my-app/static/media/balance-update.977f486892d87b945afb.svg",
@@ -40,6 +43,7 @@
     "static/media/exit-btn.svg": "/my-app/static/media/exit-btn.e1081cecd6d270f50659.svg",
     "static/media/sports-list-basketball.svg": "/my-app/static/media/sports-list-basketball.712d23d7a894854e5bc8.svg",
     "static/media/menu-chess.svg": "/my-app/static/media/menu-chess.6fc11e5671b3c8a57c23.svg",
+    "static/media/events-info-uniform.svg": "/my-app/static/media/events-info-uniform.b624f81d884887a10702.svg",
     "static/media/profile-bets.svg": "/my-app/static/media/profile-bets.ea09fed0778f7945b42a.svg",
     "static/media/menu-volleyball.svg": "/my-app/static/media/menu-volleyball.a9d93dd1649172f24c50.svg",
     "static/media/promotions-time.svg": "/my-app/static/media/promotions-time.c1da82090587499a9f84.svg",
@@ -47,6 +51,7 @@
     "static/media/profile-right.svg": "/my-app/static/media/profile-right.2dad150632f55be0f8e3.svg",
     "static/media/sports-next.svg": "/my-app/static/media/sports-next.dde68f99d3d6ccf438c2.svg",
     "static/media/sports-prev.svg": "/my-app/static/media/sports-prev.ee2dac40561d91b2c6c9.svg",
+    "static/media/events-info-left.svg": "/my-app/static/media/events-info-left.ae503012fce0595fddfb.svg",
     "static/media/menu-athletics.svg": "/my-app/static/media/menu-athletics.e5d25e4d4bb8cc86d726.svg",
     "static/media/header-app-iphone.svg": "/my-app/static/media/header-app-iphone.7d3156c6c1709e400980.svg",
     "static/media/sports-list-volleyball.svg": "/my-app/static/media/sports-list-volleyball.94666243fbbc4981623a.svg",
@@ -60,6 +65,7 @@
     "index.html": "/my-app/index.html",
     "static/media/balance-copy.svg": "/my-app/static/media/balance-copy.9aee55472046126f1cf1.svg",
     "static/media/apps-item.svg": "/my-app/static/media/apps-item.293af6e7860c2465a567.svg",
+    "static/media/events-info-add.svg": "/my-app/static/media/events-info-add.726930180810a7accc94.svg",
     "static/media/header-flag-ru.svg": "/my-app/static/media/header-flag-ru.5f67b7152dac327143aa.svg",
     "static/media/header-search.svg": "/my-app/static/media/header-search.651e6073bab417e33b4f.svg",
     "static/media/profile-arrow-right.svg": "/my-app/static/media/profile-arrow-right.eeabfb75d757e44c5b8f.svg",
@@ -74,12 +80,14 @@
     "static/media/events-flag-champions-league.svg": "/my-app/static/media/events-flag-champions-league.200b7e2b3c9f9ca4245d.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
-    "main.4756ea72.css.map": "/my-app/static/css/main.4756ea72.css.map",
-    "main.31a310fa.js.map": "/my-app/static/js/main.31a310fa.js.map",
+    "static/media/events-info-red.svg": "/my-app/static/media/events-info-red.199da5addbcf084339aa.svg",
+    "static/media/events-info-yellow.svg": "/my-app/static/media/events-info-yellow.b698b4f852d6530195f1.svg",
+    "main.5ad8c3e8.css.map": "/my-app/static/css/main.5ad8c3e8.css.map",
+    "main.e7eab874.js.map": "/my-app/static/js/main.e7eab874.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4756ea72.css",
-    "static/js/main.31a310fa.js"
+    "static/css/main.5ad8c3e8.css",
+    "static/js/main.e7eab874.js"
   ]
 }
