@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.5ad8c3e8.css",
-    "main.js": "/my-app/static/js/main.e7eab874.js",
+    "main.css": "/my-app/static/css/main.bc791651.css",
+    "main.js": "/my-app/static/js/main.e6fdee4c.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -82,12 +82,12 @@
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
     "static/media/events-info-red.svg": "/my-app/static/media/events-info-red.199da5addbcf084339aa.svg",
     "static/media/events-info-yellow.svg": "/my-app/static/media/events-info-yellow.b698b4f852d6530195f1.svg",
-    "main.5ad8c3e8.css.map": "/my-app/static/css/main.5ad8c3e8.css.map",
-    "main.e7eab874.js.map": "/my-app/static/js/main.e7eab874.js.map",
+    "main.bc791651.css.map": "/my-app/static/css/main.bc791651.css.map",
+    "main.e6fdee4c.js.map": "/my-app/static/js/main.e6fdee4c.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ad8c3e8.css",
-    "static/js/main.e7eab874.js"
+    "static/css/main.bc791651.css",
+    "static/js/main.e6fdee4c.js"
   ]
 }
