@@ -250,4 +250,10 @@
             color: #F7FF13;
         }
     }
+
+    &__accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
 }

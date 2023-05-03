@@ -1,0 +1,78 @@
+.accordion-item {
+    width: 100%;
+    background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
+
+    &--open {
+        .accordion-item__container {
+            height: auto;
+        }
+    }
+
+    &__title {
+        padding: rem(10px 15px 5px);
+        position: relative;
+        text-align: center;
+        font-weight: 400;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        color: #fff;
+    }
+
+    &__btn {
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: rem(10px 15px);
+    }
+
+    &__container {
+        overflow: hidden;
+        height: 0;
+        transition: .3s;
+    }
+
+    &__table {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        padding: rem(0 15px 15px);
+    }
+
+    &__row {
+        width: 100%;
+        display: grid;
+        gap: 1px;
+
+        &--1 {
+            grid-template-columns: 1fr;
+        }
+        &--2 {
+            grid-template-columns: 1fr 1fr;
+        }
+        &--3 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    &__cell {
+        background: rgba(255, 255, 255, 0.07);
+        padding: rem(19px 15px 18px);
+        display: flex;
+        gap: rem(10px);
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #ADADAD;
+        margin-right: auto;
+    }
+
+    &__count {
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #fff;
+    }
+}
