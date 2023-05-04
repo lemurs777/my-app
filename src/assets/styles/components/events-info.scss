@@ -221,6 +221,52 @@
         }
     }
 
+    &__live-bottom-timeline-wrapper {
+        width: calc(100% - 124rem);
+        flex-grow: 1;
+        overflow-x: auto;
+    }
+
+    &__live-bottom-timeline {
+        width: rem(966px);
+        height: rem(120px);
+        position: relative;
+        background: url("../../images/svg/events-time.svg") no-repeat 50% 50% /contain;
+    }
+
+    &__live-bottom-goal {
+        content: "";
+        position: absolute;
+        top: rem(12px);
+        width: rem(30px);
+        height: rem(48px);
+        background: url("../../images/svg/events-goal.svg") no-repeat 50% 50% /contain;
+
+        &:nth-child(1) {
+            left: rem(100px);
+        }
+        &:nth-child(2) {
+            left: rem(430px);
+        }
+        &:nth-child(3) {
+            left: rem(730px);
+        }
+        &:nth-child(4) {
+            left: rem(220px);
+        }
+        &:nth-child(5) {
+            left: rem(550px);
+        }
+        &:nth-child(6) {
+            left: rem(880px);
+        }
+
+        &--bottom {
+            transform-origin: 50% 100%;
+            transform: rotate(180deg);
+        }
+    }
+
     &__categoty-list-wrapper {
         overflow-x: auto;
         background: linear-gradient(180deg, #000000 0%, #121212 37.5%, #262626 100%);

@@ -10,12 +10,24 @@ function EventsInfo() {
 const accordionItems = [
 	{
 		title: 'Результат',
+		favourite: true,
 		arrInfo: [
 			{
 				arrRow: [
 					{
 						name: 'Бавария',
 						count: '2.4',
+						class: 'accordion-item__cell--up', 
+					},
+					{
+						name: 'Ничья',
+						count: '2.4',
+						class: '',
+					},
+					{
+						name: 'Бавария',
+						count: '2.4',
+						class: 'accordion-item__cell--down',
 					},
 				],
 			},
@@ -23,72 +35,210 @@ const accordionItems = [
 	},
 	{
 		title: 'Двойной исход',
+		favourite: true,
 		arrInfo: [
 			{
 				arrRow: [
 					{
 						name: 'Бавария',
 						count: '2.4',
+						class: 'accordion-item__cell--up', 
 					},
 					{
-						name: 'Айнтрахт Франкфурт',
+						name: 'Ничья',
 						count: '2.4',
-					}
+						class: '',
+					},
+					{
+						name: 'Бавария',
+						count: '2.4',
+						class: 'accordion-item__cell--down',
+					},
 				],
 			},
 		],
 	},
 	{
 		title: 'Гандикап',
+		favourite: true,
 		arrInfo: [
 			{
 				arrRow: [
 					{
 						name: 'Бавария',
 						count: '2.4',
+						class: 'accordion-item__cell--up', 
 					},
 					{
 						name: 'Ничья',
 						count: '2.4',
+						class: '',
 					},
-					{
-						name: 'Айнтрахт Франкфурт',
-						count: '2.4',
-					}
-				],
-			},
-			{
-				arrRow: [
 					{
 						name: 'Бавария',
 						count: '2.4',
+						class: 'accordion-item__cell--down',
 					},
-					{
-						name: 'Ничья',
-						count: '2.4',
-					},
-					{
-						name: 'Айнтрахт Франкфурт',
-						count: '2.4',
-					}
-				],
-			},
-			{
-				arrRow: [
-					{
-						name: 'Бавария',
-						count: '2.4',
-					},
-					{
-						name: 'Ничья',
-						count: '2.4',
-					},
-					{
-						name: 'Айнтрахт Франкфурт',
-						count: '2.4',
-					}
 				],
 			},			
+		],
+	},
+	{
+		title: 'Тотал',
+		favourite: false,
+		arrInfo: [
+			{
+				arrRow: [
+					{
+						name: 'Больше (1.5)',
+						count: '2.4',
+						class: '', 
+					},
+					{
+						name: 'Меньше (1.5)',
+						count: '5.9',
+						class: '',
+					},
+				],
+			},
+			{
+				arrRow: [
+					{
+						name: 'Больше (2)',
+						count: '2.4',
+						class: '', 
+					},
+					{
+						name: 'Меньше (2)',
+						count: '5.9',
+						class: '',
+					},
+				],
+			},
+			{
+				arrRow: [
+					{
+						name: 'Больше (2.5)',
+						count: '2.4',
+						class: '', 
+					},
+					{
+						name: 'Меньше (2.5)',
+						count: '5.9',
+						class: '',
+					},
+				],
+			},
+			{
+				arrRow: [
+					{
+						name: 'Больше (3)',
+						count: '2.4',
+						class: '', 
+					},
+					{
+						name: 'Меньше (3)',
+						count: '5.9',
+						class: '',
+					},
+				],
+			},
+			{
+				arrRow: [
+					{
+						name: 'Больше (3.5)',
+						count: '2.4',
+						class: '', 
+					},
+					{
+						name: 'Меньше (3.5)',
+						count: '5.9',
+						class: '',
+					},
+				],
+			},		
+		],
+	},
+	{
+		title: 'Точный счёт',
+		favourite: false,
+		arrInfo: [
+			{
+				arrRow: [
+					{
+						name: '1:0',
+						count: '2.4',
+						class: 'accordion-item__cell--up', 
+					},
+					{
+						name: '1:1',
+						count: '2.4',
+						class: '',
+					},
+					{
+						name: '0:1',
+						count: '2.4',
+						class: 'accordion-item__cell--down',
+					},
+				],
+			},
+			{
+				arrRow: [
+					{
+						name: '2:0',
+						count: '2.4',
+						class: 'accordion-item__cell--up', 
+					},
+					{
+						name: '2:2',
+						count: '2.4',
+						class: '',
+					},
+					{
+						name: '0:2',
+						count: '2.4',
+						class: 'accordion-item__cell--down',
+					},
+				],
+			},
+			{
+				arrRow: [
+					{
+						name: '2:1',
+						count: '2.4',
+						class: 'accordion-item__cell--up', 
+					},
+					{
+						name: '3:3',
+						count: '2.4',
+						class: '',
+					},
+					{
+						name: '1:2',
+						count: '2.4',
+						class: 'accordion-item__cell--down',
+					},
+				],
+			},
+			{
+				arrRow: [
+					{
+						name: '3:1',
+						count: '2.4',
+						class: 'accordion-item__cell--up', 
+					},
+					{
+						name: '4:4',
+						count: '2.4',
+						class: '',
+					},
+					{
+						name: '1:3',
+						count: '2.4',
+						class: 'accordion-item__cell--down',
+					},
+				],
+			},		
 		],
 	},
 ];
@@ -134,6 +284,16 @@ return (
 				<div className="events-info__live-bottom-uniforms">
 					<div className="events-info__live-bottom-uniform-name">BMU</div>
 					<div className="events-info__live-bottom-uniform-name">FRA</div>
+				</div>
+				<div className="events-info__live-bottom-timeline-wrapper scroll-horizontal">
+					<div className="events-info__live-bottom-timeline">
+						<div className="events-info__live-bottom-goal"></div>
+						<div className="events-info__live-bottom-goal"></div>
+						<div className="events-info__live-bottom-goal"></div>
+						<div className="events-info__live-bottom-goal events-info__live-bottom-goal--bottom"></div>
+						<div className="events-info__live-bottom-goal events-info__live-bottom-goal--bottom"></div>
+						<div className="events-info__live-bottom-goal events-info__live-bottom-goal--bottom"></div>
+					</div>
 				</div>
 			</div>
 			<div className="events-info__categoty-list-wrapper scroll-horizontal">

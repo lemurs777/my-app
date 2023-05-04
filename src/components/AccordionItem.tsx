@@ -1,9 +1,13 @@
+import clsx from 'clsx';
+
 type AccordionData = {
-	title: string;
+	title: string,
+	favourite: boolean,
 	arrInfo: Array<{ 
 		arrRow: Array<{
 			name: string,
 			count: string,
+			class: string,
 		}>
 	}>;
 };
@@ -21,25 +25,32 @@ function AccordionItem (
 
 return (
 	<li className={`accordion-item ${isOpen ? 'accordion-item--open' : ''}`}>
-	<h2 className="accordion-item__title">
-		<button className="accordion-item__btn" onClick={btnOnClick}>
-		{data.title}
-		</button>
-	</h2>
-	<div className="accordion-item__container">
-		<div className="accordion-item__table">
-			{data.arrInfo.map((info, index) => (
-				<div key={index} className={`accordion-item__row accordion-item__row--${info.arrRow.length}`}>
-					{info.arrRow.map((row, indexCell) => (
-						<div key={indexCell} className="accordion-item__cell">
-							<div className="accordion-item__name">{row.name}</div>
-							<div className="accordion-item__count">{row.count}</div>
-						</div>
-					))}
+		<button className={clsx(
+				'accordion-item__btn-favourite',
+				{'accordion-item__btn-favourite--active': data.favourite},
+		)}>Favourite</button>
+		<h2 className="accordion-item__title">
+			<button className="accordion-item__btn" onClick={btnOnClick}>
+			{data.title}
+			</button>
+		</h2>
+		<div className="accordion-item__container">
+			<div className="accordion-item__table">
+				{data.arrInfo.map((info, index) => (
+					<div key={index} className={`accordion-item__row accordion-item__row--${info.arrRow.length}`}>
+						{info.arrRow.map((row, indexCell) => (
+							<div key={indexCell} className={clsx(
+								'accordion-item__cell',
+								row.class,
+							)}>
+								<div className="accordion-item__name">{row.name}</div>
+								<div className="accordion-item__count">{row.count}</div>
+							</div>
+						))}
+					</div>
+				))}
 				</div>
-			))}
-			</div>
-	</div>
+		</div>
 	</li>
 );
 }
