@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.906e5736.css",
-    "main.js": "/my-app/static/js/main.128d34c6.js",
+    "main.css": "/my-app/static/css/main.533bd84f.css",
+    "main.js": "/my-app/static/js/main.73ad6b07.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -10,6 +10,10 @@
     "static/media/profile-promo-banner-1-x2.min.jpg": "/my-app/static/media/profile-promo-banner-1-x2.min.ce3788d41d6610fc23a8.jpg",
     "static/media/promo-banner-2-x2.min.jpg": "/my-app/static/media/promo-banner-2-x2.min.da71f4581461e23eeb07.jpg",
     "static/media/promo-banner-1-x2.min.jpg": "/my-app/static/media/promo-banner-1-x2.min.dc0d5703a94afef6cd79.jpg",
+    "static/media/broadcast-live-x2.min.jpg": "/my-app/static/media/broadcast-live-x2.min.c0318c2945acb670650a.jpg",
+    "static/media/broadcast-live-best-3.min.jpg": "/my-app/static/media/broadcast-live-best-3.min.ae07da6aee87c8ac3373.jpg",
+    "static/media/broadcast-live-best-1.min.jpg": "/my-app/static/media/broadcast-live-best-1.min.5a347cf7cb0ea4b292f1.jpg",
+    "static/media/broadcast-live-best-2.min.jpg": "/my-app/static/media/broadcast-live-best-2.min.ad460d5f8eebb6130f9e.jpg",
     "static/media/profile-promo-banner-3-x2.min.jpg": "/my-app/static/media/profile-promo-banner-3-x2.min.cfbc2574d250dade86a1.jpg",
     "static/media/profile-promo-banner-2-x2.min.jpg": "/my-app/static/media/profile-promo-banner-2-x2.min.87d806a7c667f332d94d.jpg",
     "static/media/events-time.svg": "/my-app/static/media/events-time.3e4d03bea481ca035291.svg",
@@ -86,12 +90,12 @@
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
     "static/media/events-info-red.svg": "/my-app/static/media/events-info-red.199da5addbcf084339aa.svg",
     "static/media/events-info-yellow.svg": "/my-app/static/media/events-info-yellow.b698b4f852d6530195f1.svg",
-    "main.906e5736.css.map": "/my-app/static/css/main.906e5736.css.map",
-    "main.128d34c6.js.map": "/my-app/static/js/main.128d34c6.js.map",
+    "main.533bd84f.css.map": "/my-app/static/css/main.533bd84f.css.map",
+    "main.73ad6b07.js.map": "/my-app/static/js/main.73ad6b07.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.906e5736.css",
-    "static/js/main.128d34c6.js"
+    "static/css/main.533bd84f.css",
+    "static/js/main.73ad6b07.js"
   ]
 }
