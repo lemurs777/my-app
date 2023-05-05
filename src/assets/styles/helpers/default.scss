@@ -179,6 +179,8 @@ main {
 	&--events {
 		padding-left: rem(86px);
 		overflow: hidden;
+		gap: rem(20px);
+		max-width: rem(1540px);
 	}
 }
 
@@ -196,6 +198,12 @@ main {
 		display: flex;
 		flex-direction: column;
 		gap: rem(20px);
+	}
+
+	&--events {
+		width: rem(380px);
+		display: flex;
+		flex-direction: column;
 	}
 }
 

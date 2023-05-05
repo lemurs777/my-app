@@ -2,6 +2,8 @@ import {
 	Menu,
     EventsToday,
 	EventsInfo,
+	Multiple,
+	Broadcast
 } from '../components/';
 
 function EventsPage(){
@@ -12,6 +14,10 @@ function EventsPage(){
                 <EventsToday />
 				<EventsInfo />
 			</main>
+			<aside className="aside aside--events scroll">
+				<Broadcast />
+				<Multiple />
+			</aside>
 		</>	
 	);
 };

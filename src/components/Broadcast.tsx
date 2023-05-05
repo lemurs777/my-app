@@ -1,22 +1,52 @@
 import clsx from 'clsx';
 
+import BroadcastLive from '../assets/images/broadcast-live-x2.min.jpg';
+import broadcastLiveBest1 from '../assets/images/broadcast-live-best-1.min.jpg';
+import broadcastLiveBest2 from '../assets/images/broadcast-live-best-2.min.jpg';
+import broadcastLiveBest3 from '../assets/images/broadcast-live-best-3.min.jpg';
+
 function Broadcast() {
 
 	const gamesArr = [
 		{
-			nameOne: 'Spartak Moscow',
-			nameTwo: 'Lokomotiv Moscow',
+			nameOne: 'Бавария',
+			nameTwo: 'Айнтрахт Франкфурт',
 			isLive: true,
 		},
+	];
+
+	const liveBestArr = [
 		{
-			nameOne: 'Spartak Moscow',
-			nameTwo: 'Zenit',
-			isLive: false,
+			img: broadcastLiveBest1,
+			alt: 'Best Moment',
 		},
 		{
-			nameOne: 'Dinamo Moscow',
-			nameTwo: 'Lokomotiv Moscow',
-			isLive: true,
+			img: broadcastLiveBest2,
+			alt: 'Best Moment',
+		},
+		{
+			img: broadcastLiveBest3,
+			alt: 'Best Moment',
+		},
+		{
+			img: broadcastLiveBest2,
+			alt: 'Best Moment',
+		},
+		{
+			img: broadcastLiveBest1,
+			alt: 'Best Moment',
+		},
+		{
+			img: broadcastLiveBest3,
+			alt: 'Best Moment',
+		},
+		{
+			img: broadcastLiveBest2,
+			alt: 'Best Moment',
+		},
+		{
+			img: broadcastLiveBest3,
+			alt: 'Best Moment',
 		},
 	];
 
@@ -37,7 +67,40 @@ function Broadcast() {
 					</li>
 				))}
 			</ul>
-			<button className="broadcast__btn-more">+ 5 MORE</button>
+			<img className="broadcast__live-img" src={BroadcastLive} alt="Live" />
+			<div className="broadcast__best">
+				<h3 className="broadcast__statistics-title">Лучшие моменты</h3>
+			</div>
+			<div className="broadcast__statistics">
+				<h3 className="broadcast__statistics-title">Статистика</h3>
+				<ul className="broadcast__statistics-list">
+					<li className="broadcast__statistics-item">
+						<span className="broadcast__statistics-count broadcast__statistics-count--accent">64</span>
+						<span className="broadcast__statistics-name">Удары</span>
+						<span className="broadcast__statistics-count">63</span>
+					</li>
+					<li className="broadcast__statistics-item">
+						<span className="broadcast__statistics-count">16</span>
+						<span className="broadcast__statistics-name">В цель</span>
+						<span className="broadcast__statistics-count broadcast__statistics-count--accent">17</span>
+					</li>
+					<li className="broadcast__statistics-item">
+						<span className="broadcast__statistics-count">36</span>
+						<span className="broadcast__statistics-name">Владение %</span>
+						<span className="broadcast__statistics-count broadcast__statistics-count--accent">64</span>
+					</li>
+					<li className="broadcast__statistics-item">
+						<span className="broadcast__statistics-count">0</span>
+						<span className="broadcast__statistics-name">Угловые</span>
+						<span className="broadcast__statistics-count broadcast__statistics-count--accent">1</span>
+					</li>
+					<li className="broadcast__statistics-item">
+						<span className="broadcast__statistics-count broadcast__statistics-count--accent">3</span>
+						<span className="broadcast__statistics-name">Офсайды</span>
+						<span className="broadcast__statistics-count">1</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	);
 }

@@ -110,8 +110,8 @@
         background: #1A1A1A;
         border-radius: 2px;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: rem(12px);
+        line-height: rem(14px);
         text-align: center;
         color: #909090;
         transition: .3s;
@@ -124,5 +124,72 @@
         &:hover {
             color: #fff;
         }
+    }
+
+    &__live-img {
+        display: inline-block;
+        margin-left: rem(-15px);
+        margin-right: rem(-15px);
+        min-width: calc(100% + rem(30px));
+        height: rem(184px);
+        margin-bottom: rem(20px);
+    }
+
+    &__statistics {
+        padding-bottom: rem(10px);
+    }
+
+    &__statistics-title {
+        margin-bottom: rem(20px);
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__statistics-list {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16px);
+    }
+
+    &__statistics-item {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__statistics-count {
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #fff;
+
+        &--accent {
+            color: #F7FF13;
+        }
+    }
+
+    &__statistics-name {
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        text-align: center;
+        color: #A3A3A3;
+    }
+
+    &__best {
+        margin-bottom: rem(23px);
+    }
+
+    &__best-title {
+        margin-bottom: rem(15px);
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        text-transform: uppercase;
+        color: #fff;
     }
 }
