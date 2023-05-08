@@ -18,6 +18,7 @@ import AppsPage from './pages/AppsPage';
 import PromotionsPage from './pages/PromotionsPage';
 import PromotionPage from './pages/PromotionPage';
 import EventsPage from './pages/EventsPage';
+import StatisticsPageOne from './pages/StatisticsPageOne';
 
 export default function App() {
 	return (
@@ -44,7 +45,10 @@ export default function App() {
 				</Route>
 				<Route path="/events/" element={<MainLayout />}>
 					<Route index element={<EventsPage />} />
-				</Route>	
+				</Route>
+				<Route path="/statistics/" element={<MainLayout />}>
+					<Route index element={<StatisticsPageOne />} />
+				</Route>
 			</Routes>
 		</BrowserRouter>
 	);

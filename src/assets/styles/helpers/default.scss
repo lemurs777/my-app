@@ -182,6 +182,13 @@ main {
 		gap: rem(20px);
 		max-width: rem(1540px);
 	}
+
+	&--statistics-one {
+		padding-left: rem(88px);
+		overflow-y: auto;
+		max-width: 100%;
+		padding-right: rem(25px);
+	}
 }
 
 .aside {

@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 
 import BroadcastLive from '../assets/images/broadcast-live-x2.min.jpg';
-import broadcastLiveBest1 from '../assets/images/broadcast-live-best-1.min.jpg';
+/*import broadcastLiveBest1 from '../assets/images/broadcast-live-best-1.min.jpg';
 import broadcastLiveBest2 from '../assets/images/broadcast-live-best-2.min.jpg';
-import broadcastLiveBest3 from '../assets/images/broadcast-live-best-3.min.jpg';
+import broadcastLiveBest3 from '../assets/images/broadcast-live-best-3.min.jpg';*/
 
 function Broadcast() {
 
@@ -15,7 +15,7 @@ function Broadcast() {
 		},
 	];
 
-	const liveBestArr = [
+	/*const liveBestArr = [
 		{
 			img: broadcastLiveBest1,
 			alt: 'Best Moment',
@@ -48,7 +48,7 @@ function Broadcast() {
 			img: broadcastLiveBest3,
 			alt: 'Best Moment',
 		},
-	];
+	];*/
 
 	return (
 		<div className="broadcast">
