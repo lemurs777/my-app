@@ -19,6 +19,7 @@ import PromotionsPage from './pages/PromotionsPage';
 import PromotionPage from './pages/PromotionPage';
 import EventsPage from './pages/EventsPage';
 import StatisticsPageOne from './pages/StatisticsPageOne';
+import StatisticsPageTwo from './pages/StatisticsPageTwo';
 
 export default function App() {
 	return (
@@ -48,6 +49,7 @@ export default function App() {
 				</Route>
 				<Route path="/statistics/" element={<MainLayout />}>
 					<Route index element={<StatisticsPageOne />} />
+					<Route path="big-v-2023" element={<StatisticsPageTwo />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
