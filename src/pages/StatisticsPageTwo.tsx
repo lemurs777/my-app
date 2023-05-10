@@ -7,7 +7,7 @@ function StatisticsPageTwo(){
    return (
        <>
            <Menu />
-           <main className="page page--statistics-one scroll">
+           <main className="page page--statistics-two scroll">
                <StatisticsTwo />
            </main>
        </>	
