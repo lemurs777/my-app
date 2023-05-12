@@ -310,6 +310,89 @@ function StatisticsTwo() {
 		},
 	]
 
+	const arrRowFour = [
+		{
+			number: 1,
+			name: 'Маккиннон Кугарс',
+			game: 4,
+			win: 4,
+			percent: 100,
+			points: 93.25,
+		},
+		{
+			number: 2,
+			name: 'Wyndham Basketball',
+			game: 4,
+			win: 4,
+			percent: 100,
+			points: 105.5,
+		},
+		{
+			number: 3,
+			name: 'Melbourne Uni Bball',
+			game: 4,
+			win: 4,
+			percent: 100,
+			points: 96.5,
+		},
+		{
+			number: 4,
+			name: 'Camberwell Dragons',
+			game: 4,
+			win: 4,
+			percent: 80,
+			points: 87.2,
+		},
+		{
+			number: 5,
+			name: 'Хьюм Сити',
+			game: 4,
+			win: 3,
+			percent: 75,
+			points: 94.25,
+		},
+		{
+			number: 6,
+			name: 'Western Port Steelers',
+			game: 4,
+			win: 4,
+			percent: 75,
+			points: 79.75,
+		},
+		{
+			number: 7,
+			name: 'Keysborough',
+			game: 4,
+			win: 3,
+			percent: 75,
+			points: 89.75,
+		},
+		{
+			number: 8,
+			name: 'Sunbury Jets',
+			game: 3,
+			win: 2,
+			percent: 66.67,
+			points: 87.33,
+		},
+		{
+			number: 9,
+			name: 'Bellarine',
+			game: 4,
+			win: 2,
+			percent: 50,
+			points: 73.25,
+		},
+		{
+			number: 10,
+			name: 'Блэкберн Викингс',
+			game: 5,
+			win: 2,
+			percent: 50,
+			points: 70.5,
+		},
+	]
+
 	return (
 		<div className="statistics-two">
 			<div className="statistics-two__wrapper">
@@ -477,6 +560,39 @@ function StatisticsTwo() {
 						</div>
 					</div>
 				</div>
+				<h1 className="statistics-two__title">бол/мен</h1>
+				<div className="statistics-two__filter-wrapper">
+					<button className="statistics-two__filter-btn">Все игры</button>
+					<button className="statistics-two__filter-btn statistics-two__filter-btn--active">Домашние игры</button>
+					<button className="statistics-two__filter-btn">Матчи на выезде</button>
+				</div>
+				<div className="statistics-two__table-three">
+					<div className="statistics-two__table-three-header">
+						<div className="statistics-two__table-three-header-cell">Поз.</div>
+						<div className="statistics-two__table-three-header-cell">Команда</div>
+						<div className="statistics-two__table-three-header-cell">Сыграно</div>
+						<div className="statistics-two__table-three-header-cell statistics-two__table-three-header-cell--up">Больше</div>
+						<div className="statistics-two__table-three-header-cell statistics-two__table-three-header-cell--up-down">Меньше</div>
+						<div className="statistics-two__table-three-header-cell">Сред. очки/матч</div>
+					</div>
+					{arrRowFour.map((item, index) => (
+						<div key={index} className="statistics-two__table-three-row">
+							<div className="statistics-two__table-three-cell">{item.number}</div>
+							<div className="statistics-two__table-three-cell">{item.name}</div>
+							<div className="statistics-two__table-three-cell">{item.game}</div>
+							<div className="statistics-two__table-three-cell">{item.win}</div>
+							<div className="statistics-two__table-three-cell">
+								<div className="statistics-two__table-three-cell-percent-one">{`${item.percent}%`}</div>
+								<div className="statistics-two__table-three-cell-percent">
+									<div className="statistics-two__table-three-cell-percent-percent-show"></div>
+								</div>
+								<div className="statistics-two__table-three-cell-percent-two">{`${100 - item.percent}%`}</div>
+								<div className="statistics-two__table-three-cell-percent-info">{`${item.game - item.win}`}</div>
+							</div>
+							<div className="statistics-two__table-three-cell">{item.points}</div>
+						</div>
+					))}
+				</div>	
 			</div>
 		</div>
 	);
