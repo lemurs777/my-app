@@ -20,6 +20,8 @@ import PromotionPage from './pages/PromotionPage';
 import EventsPage from './pages/EventsPage';
 import StatisticsPageOne from './pages/StatisticsPageOne';
 import StatisticsPageTwo from './pages/StatisticsPageTwo';
+import StatisticsPageThree from './pages/StatisticsPageThree';
+import SiteMapPage from './pages/SiteMapPage';
 
 export default function App() {
 	return (
@@ -27,6 +29,7 @@ export default function App() {
 			<Routes>
 				<Route path="/" element={<MainLayout />}>
 					<Route index element={<HomePage />} />
+					<Route path="/sitemap" element={<SiteMapPage/>} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 				<Route path="/profile/" element={<ProfileLayout />}>
@@ -50,6 +53,7 @@ export default function App() {
 				<Route path="/statistics/" element={<MainLayout />}>
 					<Route index element={<StatisticsPageOne />} />
 					<Route path="big-v-2023" element={<StatisticsPageTwo />} />
+					<Route path="calendar" element={<StatisticsPageThree />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

@@ -32,7 +32,7 @@ function Header() {
 				<Link className="menu__item-link menu__item-link--cricket" to="/statistics/big-v-2023">Cricket</Link>
 			</li>
 			<li className="menu__item">
-				<Link className="menu__item-link menu__item-link--racing" to="/">Racing</Link>
+				<Link className="menu__item-link menu__item-link--racing" to="/statistics/calendar">Racing</Link>
 			</li>
 			<li className="menu__item">
 				<Link className="menu__item-link menu__item-link--chess" to="/">Chess</Link>

@@ -1,0 +1,13 @@
+.sitemap {
+    padding: rem(30px 40px);
+    display: flex;
+    flex-direction: column;
+    gap: rem(20px);
+
+    &__link {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+    }
+}

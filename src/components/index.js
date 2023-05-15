@@ -20,3 +20,5 @@ export { default as EventsInfo } from './EventsInfo';
 export { default as AccordionItem } from './AccordionItem';
 export { default as StatisticsOne } from './StatisticsOne';
 export { default as StatisticsTwo } from './StatisticsTwo';
+export { default as StatisticsThree } from './StatisticsThree';
+export { default as SiteMap } from './SiteMap';

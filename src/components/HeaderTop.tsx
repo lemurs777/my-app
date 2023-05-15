@@ -27,12 +27,12 @@ function HeaderTop() {
               </defs>
             </svg>
           </Link>
-          <div className="header__best">
+          <Link to="/sitemap" className="header__best">
             <img className="header__best-img" src={HeaderBest} width="60" height="60" alt="Best of the best" />
             <div className="header__best-text">
               <span className="header__best-text-accent">Лучший</span> Онлайн&nbsp;букмекер
             </div>
-          </div>
+          </Link>
           <nav className="header__nav">
             <menu className="header__nav-menu">
               <li className="header__nav-item">

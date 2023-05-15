@@ -189,6 +189,14 @@ main {
 		max-width: 100%;
 		padding-right: rem(25px);
 	}
+
+	&--site-map,
+	&--statistics-three {
+		padding-left: rem(25px);
+		overflow-y: auto;
+		max-width: 100%;
+		padding-right: rem(25px);
+	}
 }
 
 .aside {
