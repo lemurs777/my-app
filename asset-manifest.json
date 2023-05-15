@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.779337fa.css",
-    "main.js": "/my-app/static/js/main.25650724.js",
+    "main.css": "/my-app/static/css/main.549bbcd7.css",
+    "main.js": "/my-app/static/js/main.5b6a1872.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -94,12 +94,12 @@
     "static/media/events-info-red.svg": "/my-app/static/media/events-info-red.199da5addbcf084339aa.svg",
     "static/media/events-info-yellow.svg": "/my-app/static/media/events-info-yellow.b698b4f852d6530195f1.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.779337fa.css.map": "/my-app/static/css/main.779337fa.css.map",
-    "main.25650724.js.map": "/my-app/static/js/main.25650724.js.map",
+    "main.549bbcd7.css.map": "/my-app/static/css/main.549bbcd7.css.map",
+    "main.5b6a1872.js.map": "/my-app/static/js/main.5b6a1872.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.779337fa.css",
-    "static/js/main.25650724.js"
+    "static/css/main.549bbcd7.css",
+    "static/js/main.5b6a1872.js"
   ]
 }
