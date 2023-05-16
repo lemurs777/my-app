@@ -21,6 +21,7 @@ import EventsPage from './pages/EventsPage';
 import StatisticsPageOne from './pages/StatisticsPageOne';
 import StatisticsPageTwo from './pages/StatisticsPageTwo';
 import StatisticsPageThree from './pages/StatisticsPageThree';
+import StatisticsPageFour from './pages/StatisticsPageFour';
 import SiteMapPage from './pages/SiteMapPage';
 
 export default function App() {
@@ -54,6 +55,7 @@ export default function App() {
 					<Route index element={<StatisticsPageOne />} />
 					<Route path="big-v-2023" element={<StatisticsPageTwo />} />
 					<Route path="calendar" element={<StatisticsPageThree />} />
+					<Route path="table" element={<StatisticsPageFour />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

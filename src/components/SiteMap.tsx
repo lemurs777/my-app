@@ -59,6 +59,10 @@ function SiteMap() {
 			name : 'Статистика - Календарь',
             link : '/statistics/calendar'
         },
+        {
+			name : 'Статистика - Таблица',
+            link : '/statistics/table'
+        },
         
 	]
 
