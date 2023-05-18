@@ -1,89 +1,89 @@
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
-function Menu() {
+function MenuGame() {
 
 const arrLinks = [
 	{
 		name: 'Top',
 		class: 'top',
 		link: '/',
-		live: false,
+		live: true,
 		active: true,
 	},
 	{
-		name: 'Soccer',
-		class: 'soccer',
+		name: 'CS:GO',
+		class: 'cs-go',
 		link: '/',
 		live: true,
 		active: false,
 	},
 	{
-		name: 'Hockey',
-		class: 'hockey',
+		name: 'Dota 2',
+		class: 'dota-2',
 		link: '/',
 		live: true,
 		active: false,
 	},
 	{
-		name: 'Basketball',
-		class: 'basketball',
+		name: 'Overwatch',
+		class: 'overwatch',
 		link: '/',
 		live: false,
 		active: false,
 	},
 	{
-		name: 'Tennis',
-		class: 'tennis',
-		link: '/',
-		live: false,
-		active: false,
-	},
-	{
-		name: 'Rugby',
-		class: 'rugby',
+		name: 'LoL',
+		class: 'lol',
 		link: '/',
 		live: true,
 		active: false,
 	},
 	{
-		name: 'Volleyball',
-		class: 'volleyball',
+		name: 'Valorant',
+		class: 'valorant',
 		link: '/',
 		live: false,
 		active: false,
 	},
 	{
-		name: 'MMA',
-		class: 'mma',
+		name: 'StarCraft I',
+		class: 'starcraft-1',
 		link: '/',
 		live: false,
 		active: false,
 	},
 	{
-		name: 'Cricket',
-		class: 'cricket',
+		name: 'StarCraft II',
+		class: 'starcraft-2',
 		link: '/',
 		live: false,
 		active: false,
 	},
 	{
-		name: 'Racing',
-		class: 'racing',
+		name: 'Hearthstone',
+		class: 'hearthstone',
 		link: '/',
 		live: false,
 		active: false,
 	},
 	{
-		name: 'Chess',
-		class: 'chess',
+		name: 'Call Of Duty',
+		class: 'call-of-duty',
 		link: '/',
 		live: false,
 		active: false,
 	},
 	{
-		name: 'Athletics',
-		class: 'athletics',
+		name: 'TF2',
+		class: 'tf2',
+		link: '/',
+		live: false,
+		active: false,
+	},
+	{
+		name: 'HoS',
+		class: 'hos',
 		link: '/',
 		live: false,
 		active: false,
@@ -98,6 +98,7 @@ return (
             <li key={index} className="menu__item">
                 <Link to={item.link} className={clsx(
 					'menu__item-link',
+                    'menu__item-link--game',
 					`menu__item-link--${item.class}`,
 					{'menu__item-link--live': item.live},
 					{'menu__item-link--active': item.active},
@@ -110,4 +111,4 @@ return (
 );
 }
 
-export default Menu;
+export default MenuGame;

@@ -23,6 +23,7 @@ import StatisticsPageTwo from './pages/StatisticsPageTwo';
 import StatisticsPageThree from './pages/StatisticsPageThree';
 import StatisticsPageFour from './pages/StatisticsPageFour';
 import SiteMapPage from './pages/SiteMapPage';
+import HomePageGames from './pages/HomePageGames';
 
 export default function App() {
 	return (
@@ -30,6 +31,7 @@ export default function App() {
 			<Routes>
 				<Route path="/" element={<MainLayout />}>
 					<Route index element={<HomePage />} />
+					<Route path="/cybersport" element={<HomePageGames/>} />
 					<Route path="/sitemap" element={<SiteMapPage/>} />
 					<Route path="*" element={<NoPage />} />
 				</Route>

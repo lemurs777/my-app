@@ -54,7 +54,7 @@ function Broadcast() {
 		<div className="broadcast">
 			<div className="broadcast__header">
 				<button className="broadcast__header-btn  broadcast__header-btn--lock">Lock</button>
-				<h2 className="broadcast__header-title">Broadcast</h2>
+				<h2 className="broadcast__header-title">Трансляция</h2>
 				<button className="broadcast__header-btn  broadcast__header-btn--arrow">Open</button>
 			</div>
 			<ul className="broadcast__list">

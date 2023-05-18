@@ -198,6 +198,14 @@ main {
 		max-width: 100%;
 		padding-right: rem(25px);
 	}
+
+	&--game {
+		overflow: hidden;
+		max-width: rem(1542px);
+		padding-left: rem(86px);
+		padding-right: rem(5px);
+		gap: rem(20px);
+	}
 }
 
 .aside {

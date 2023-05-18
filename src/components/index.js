@@ -1,6 +1,7 @@
 export { default as Header } from './Header';
 export { default as HeaderTop } from './HeaderTop';
 export { default as Menu } from './Menu';
+export { default as MenuGame } from './MenuGame';
 export { default as MainBanner } from './MainBanner';
 export { default as Sports } from './Sports';
 export { default as Broadcast } from './Broadcast';
@@ -23,3 +24,4 @@ export { default as StatisticsTwo } from './StatisticsTwo';
 export { default as StatisticsThree } from './StatisticsThree';
 export { default as StatisticsFour } from './StatisticsFour';
 export { default as SiteMap } from './SiteMap';
+export { default as GameInfo } from './GameInfo';

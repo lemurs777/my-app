@@ -63,7 +63,10 @@ function SiteMap() {
 			name : 'Статистика - Таблица',
             link : '/statistics/table'
         },
-        
+        {
+            name: 'Киберспорт',
+            link: '/cybersport'
+        },        
 	]
 
 	return (

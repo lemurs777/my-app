@@ -39,6 +39,14 @@
     &__item {
         display: flex;
         justify-content: center;
+
+        &:nth-child(1) {
+            .menu__item-link--game {
+                &:before {
+                    background-size: contain;
+                }
+            }
+        }
     }
 
     &__item-link {
@@ -49,8 +57,9 @@
         font-size: rem(12px);
         line-height: rem(14px);
         text-align: center;
-        max-width: rem(52px);
-        width: 100%;
+        margin-left: rem(-5px);
+        margin-right: rem(-5px);
+        width: calc(100% + rem(10px));
         padding-top: rem(55px);
         position: relative;
 
@@ -58,8 +67,8 @@
             content: "";
             position: absolute;
             top: 0;
-            left: 0;
-            right: 0;
+            width: rem(52px);
+            left: 50%;
             height: rem(52px);
             border-radius: rem(16px);
             background-color: #161616;
@@ -69,6 +78,14 @@
             opacity: .6;
             transition: .3s;
             border: 2px solid transparent;
+            transform: translateX(-50%);
+        }
+
+        &--game {
+            &:before {
+                background-size: rem(34px), rem(34px);
+                opacity: 1;
+            }
         }
 
         &--top {
@@ -140,6 +157,72 @@
         &--athletics {
             &:before {
                 background-image: url("../../images/svg/menu-athletics.svg");
+            }
+        }
+
+        &--cs-go {
+            &:before {
+                background-image: url("../../images/svg/menu-cs-go.svg");
+            }
+        }
+
+        &--dota-2 {
+            &:before {
+                background-image: url("../../images/svg/menu-dota-2.svg");
+            }
+        }
+
+        &--overwatch {
+            &:before {
+                background-image: url("../../images/svg/menu-overwatch.svg");
+            }
+        }
+
+        &--lol {
+            &:before {
+                background-image: url("../../images/svg/menu-lol.svg");
+            }
+        }
+
+        &--valorant {
+            &:before {
+                background-image: url("../../images/svg/menu-valorant.svg");
+            }
+        }
+
+        &--starcraft-1 {
+            &:before {
+                background-image: url("../../images/svg/menu-starcraft-1.svg");
+            }
+        }
+
+        &--starcraft-2 {
+            &:before {
+                background-image: url("../../images/svg/menu-starcraft-2.svg");
+            }
+        }
+
+        &--hearthstone {
+            &:before {
+                background-image: url("../../images/svg/menu-hearthstone.svg");
+            }
+        }
+
+        &--call-of-duty {
+            &:before {
+                background-image: url("../../images/svg/menu-call-of-duty.svg");
+            }
+        }
+
+        &--tf2 {
+            &:before {
+                background-image: url("../../images/svg/menu-tf2.svg");
+            }
+        }
+
+        &--hos {
+            &:before {
+                background-image: url("../../images/svg/menu-hos.svg");
             }
         }
 
