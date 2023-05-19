@@ -166,7 +166,7 @@ function StatisticsOne() {
                         }
                         <div className="statistics-one__table-cell">{row.info}</div>
                     </div>
-                ))};
+                ))}
             </div>
 		</div>
 	);

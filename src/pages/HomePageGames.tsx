@@ -1,5 +1,7 @@
 import {
 	GameInfo,
+	GameBanner,
+	Sports,
 	Broadcast,
 	Multiple, 
 	MenuGame, 
@@ -11,6 +13,10 @@ function HomePageGames(){
 			<MenuGame />
 			<main className="page page--game">
 				<GameInfo />
+				<div className="game-wrapper scroll">
+					<GameBanner />
+					<Sports />
+				</div>
 			</main>
 			<aside className="aside aside--index scroll">
 				<Broadcast />

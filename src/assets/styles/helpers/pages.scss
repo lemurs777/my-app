@@ -1,3 +1,10 @@
+.game-wrapper {
+    width: rem(1110px);
+    height: calc(100vh - #{rem(146px)});
+    max-height: calc(100vh - #{rem(146px)});
+    overflow-y: auto;
+}
+
 .column-left {
     &--profile {
         min-width: rem(390px);

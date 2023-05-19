@@ -129,10 +129,10 @@ function MyProfile() {
 											{'profile__link--problem': infoItem.isProbem}
 										)} to={infoItem.link}>{infoItem.name}</Link>
 								</li>
-							))};
+							))}
 						</ul>	
 					</li>	
-				))};
+				))}
 			</ul>
 		</div>
 	);

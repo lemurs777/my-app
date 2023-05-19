@@ -25,3 +25,4 @@ export { default as StatisticsThree } from './StatisticsThree';
 export { default as StatisticsFour } from './StatisticsFour';
 export { default as SiteMap } from './SiteMap';
 export { default as GameInfo } from './GameInfo';
+export { default as GameBanner } from './GameBanner';

@@ -72,7 +72,7 @@ function MainSlider() {
 											<span className="main-slider__info-coefficient">{infoItem.coefficient}</span>
 										</button>
 									</li>
-								))};
+								))}
 							</ul>
 						</div>
 					</SwiperSlide>
