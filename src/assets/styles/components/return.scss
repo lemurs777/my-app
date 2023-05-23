@@ -1,0 +1,51 @@
+.return {
+    padding: rem(10px 10px 30px 20px);
+
+    &__title {
+        font-weight: 500;
+        font-size: rem(24px);
+        line-height: rem(28px);
+        color: #fff;
+        margin-bottom: rem(40px);
+    }
+    
+    &__tab-list {
+        display: flex;
+        margin-bottom: rem(24px);
+        gap: rem(40px);
+        margin-bottom: rem(27px);
+    }
+
+    &__tab-item-btn {
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        color: #fff;
+        position: relative;
+        cursor: pointer;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: rem(-5px);
+            left: 0;
+            right: 0;
+            height: rem(3px);
+            width: 100%;
+            transition: .3s;
+        }
+
+        &:hover,
+        &--active {
+            &:before {
+                background: #fff;
+            }
+        }
+    }
+
+    &__tab-content-item {
+        height: rem(300px);
+        background: #1B1B1B;
+        padding: rem(16px 20px);
+    }
+}

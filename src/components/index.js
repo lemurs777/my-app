@@ -26,3 +26,4 @@ export { default as StatisticsFour } from './StatisticsFour';
 export { default as SiteMap } from './SiteMap';
 export { default as GameInfo } from './GameInfo';
 export { default as GameBanner } from './GameBanner';
+export { default as ReturnList } from './ReturnList';

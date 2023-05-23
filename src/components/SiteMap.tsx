@@ -5,68 +5,72 @@ function SiteMap() {
 	const arrLinks = [
 		{
 			name : 'Главная',
-            link : '/'
+            link : '/',
         },
         {
 			name : 'Профиль',
-            link : '/profile'
+            link : '/profile',
         },
         {
 			name : 'Профиль - Верификация аккаунта',
-            link : '/profile/verification'
+            link : '/profile/verification',
         },
         {
 			name : 'Профиль - Транзакции',
-            link : '/profile/conclusions'
+            link : '/profile/conclusions',
         },
         {
 			name : 'Профиль - Мои ставки',
-            link : '/profile/betting'
+            link : '/profile/betting',
         },
         {
 			name : 'Профиль - Мои промокоды',
-            link : '/profile/promo'
+            link : '/profile/promo',
         },
         {
 			name : 'Профиль - Пополнение счёта',
-            link : '/profile/deposit'
+            link : '/profile/deposit',
         },
         {
 			name : 'События',
-            link : '/events'
+            link : '/events',
         },
         {
             name: 'Акции - разводящая',
-            link: '/promotions'
+            link: '/promotions',
         },
         {
             name: 'Акции - внутренняя',
-            link: '/promotions/promo'
+            link: '/promotions/promo',
         },
         {
             name: 'Приожения',
-            link: '/apps'
+            link: '/apps',
         },
         {
 			name : 'Статистика',
-            link : '/statistics'
+            link : '/statistics',
         },
         {
 			name : 'Статистика - Big V 2023',
-            link : '/statistics/big-v-2023'
+            link : '/statistics/big-v-2023',
         },
         {
 			name : 'Статистика - Календарь',
-            link : '/statistics/calendar'
+            link : '/statistics/calendar',
         },
         {
 			name : 'Статистика - Таблица',
-            link : '/statistics/table'
+            link : '/statistics/table',
         },
         {
             name: 'Киберспорт',
-            link: '/cybersport'
-        },        
+            link: '/cybersport',
+        },
+        {
+            name: 'Ответная игра(3)',
+            link: '/profile/return',
+        }, 
 	]
 
 	return (

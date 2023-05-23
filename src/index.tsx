@@ -24,6 +24,7 @@ import StatisticsPageThree from './pages/StatisticsPageThree';
 import StatisticsPageFour from './pages/StatisticsPageFour';
 import SiteMapPage from './pages/SiteMapPage';
 import HomePageGames from './pages/HomePageGames';
+import ReturnProfile from './pages/ReturnProfile';
 
 export default function App() {
 	return (
@@ -42,6 +43,7 @@ export default function App() {
 					<Route path="betting" element={<HistoryBetting />} />
 					<Route path="promo" element={<MyPromo />} />
 					<Route path="deposit" element={<DepositPage />} />
+					<Route path="return" element={<ReturnProfile />} />
 				</Route>
 				<Route path="/apps/" element={<AppsLayout />}>
 					<Route index element={<AppsPage />} />
