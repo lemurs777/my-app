@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.7f2fc671.css",
-    "main.js": "/my-app/static/js/main.3de07450.js",
+    "main.css": "/my-app/static/css/main.9106ef8a.css",
+    "main.js": "/my-app/static/js/main.e1381cb5.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -24,6 +24,7 @@
     "static/media/menu-starcraft-2.svg": "/my-app/static/media/menu-starcraft-2.dec95a404c02020f8a06.svg",
     "static/media/events-info-shot-on-goal.svg": "/my-app/static/media/events-info-shot-on-goal.58de0504c38b94cac8f3.svg",
     "static/media/menu-call-of-duty.svg": "/my-app/static/media/menu-call-of-duty.10e19621d1ec2e5a994b.svg",
+    "static/media/return-hand.svg": "/my-app/static/media/return-hand.1fd1f744d271bbf43f9d.svg",
     "static/media/menu-tf2.svg": "/my-app/static/media/menu-tf2.99a7f8ae443e10cd88aa.svg",
     "static/media/menu-cs-go.svg": "/my-app/static/media/menu-cs-go.7eeca2913ee72557a793.svg",
     "static/media/faq-title.svg": "/my-app/static/media/faq-title.51f64c65d97f76026a63.svg",
@@ -87,13 +88,16 @@
     "index.html": "/my-app/index.html",
     "static/media/balance-copy.svg": "/my-app/static/media/balance-copy.9aee55472046126f1cf1.svg",
     "static/media/statistics-time.svg": "/my-app/static/media/statistics-time.b8fe80015c5bf0448e9e.svg",
+    "static/media/return-select-two.svg": "/my-app/static/media/return-select-two.dc2ae55477fa111e23c0.svg",
     "static/media/statistics-arrow-points.svg": "/my-app/static/media/statistics-arrow-points.8200ae3b17bb37ab4086.svg",
     "static/media/apps-item.svg": "/my-app/static/media/apps-item.293af6e7860c2465a567.svg",
     "static/media/events-info-add.svg": "/my-app/static/media/events-info-add.726930180810a7accc94.svg",
     "static/media/statistics-arrow.svg": "/my-app/static/media/statistics-arrow.cef789403575dc1857cb.svg",
     "static/media/header-flag-ru.svg": "/my-app/static/media/header-flag-ru.5f67b7152dac327143aa.svg",
+    "static/media/return-checkbox-active.svg": "/my-app/static/media/return-checkbox-active.032f5488191d3058168f.svg",
     "static/media/header-search.svg": "/my-app/static/media/header-search.651e6073bab417e33b4f.svg",
     "static/media/profile-arrow-right.svg": "/my-app/static/media/profile-arrow-right.eeabfb75d757e44c5b8f.svg",
+    "static/media/return-checkbox.svg": "/my-app/static/media/return-checkbox.a468cad133282fb761e2.svg",
     "static/media/statistics-select.svg": "/my-app/static/media/statistics-select.dbdb485ffa9c7eb7b84d.svg",
     "static/media/multiple-close.svg": "/my-app/static/media/multiple-close.da0cbcb05217167eca00.svg",
     "static/media/multiple-delete.svg": "/my-app/static/media/multiple-delete.e67463ad6f5e3d4839b6.svg",
@@ -109,16 +113,17 @@
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
     "static/media/game-info-arrow.svg": "/my-app/static/media/game-info-arrow.cb60faf595c72e49b446.svg",
+    "static/media/return-select-arrow.svg": "/my-app/static/media/return-select-arrow.2bff5e935ed92475455a.svg",
     "static/media/events-info-red.svg": "/my-app/static/media/events-info-red.199da5addbcf084339aa.svg",
     "static/media/events-info-yellow.svg": "/my-app/static/media/events-info-yellow.b698b4f852d6530195f1.svg",
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.7f2fc671.css.map": "/my-app/static/css/main.7f2fc671.css.map",
-    "main.3de07450.js.map": "/my-app/static/js/main.3de07450.js.map",
+    "main.9106ef8a.css.map": "/my-app/static/css/main.9106ef8a.css.map",
+    "main.e1381cb5.js.map": "/my-app/static/js/main.e1381cb5.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f2fc671.css",
-    "static/js/main.3de07450.js"
+    "static/css/main.9106ef8a.css",
+    "static/js/main.e1381cb5.js"
   ]
 }
