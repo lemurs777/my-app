@@ -205,6 +205,11 @@ main {
 		padding-left: rem(86px);
 		gap: rem(20px);
 	}
+
+	&--site-map {
+		display: block;
+		padding-bottom: rem(50px);
+	}
 }
 
 .aside {

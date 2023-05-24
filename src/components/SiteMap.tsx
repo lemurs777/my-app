@@ -68,9 +68,9 @@ function SiteMap() {
             link: '/cybersport',
         },
         {
-            name: 'Ответная игра(3)',
+            name: 'Ответная игра - Самоограничения, Лимиты на пополнение, Лимиты игровой сессии',
             link: '/profile/return',
-        }, 
+        },
 	]
 
 	return (
