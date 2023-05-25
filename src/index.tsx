@@ -22,6 +22,7 @@ import StatisticsPageOne from './pages/StatisticsPageOne';
 import StatisticsPageTwo from './pages/StatisticsPageTwo';
 import StatisticsPageThree from './pages/StatisticsPageThree';
 import StatisticsPageFour from './pages/StatisticsPageFour';
+import StatisticsPageFive from './pages/StatisticsPageFive';
 import SiteMapPage from './pages/SiteMapPage';
 import HomePageGames from './pages/HomePageGames';
 import ReturnProfile from './pages/ReturnProfile';
@@ -60,6 +61,7 @@ export default function App() {
 					<Route path="big-v-2023" element={<StatisticsPageTwo />} />
 					<Route path="calendar" element={<StatisticsPageThree />} />
 					<Route path="table" element={<StatisticsPageFour />} />
+					<Route path="detailed" element={<StatisticsPageFive />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

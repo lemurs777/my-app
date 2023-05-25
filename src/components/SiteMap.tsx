@@ -71,6 +71,10 @@ function SiteMap() {
             name: 'Ответная игра - Самоограничения, Лимиты на пополнение, Лимиты игровой сессии',
             link: '/profile/return',
         },
+        {
+            name: 'Статистика - Детали',
+            link: '/statistics/detailed',
+        },
 	]
 
 	return (
