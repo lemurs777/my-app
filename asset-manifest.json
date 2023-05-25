@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.24df28f1.css",
-    "main.js": "/my-app/static/js/main.9ddcac66.js",
+    "main.css": "/my-app/static/css/main.1220749d.css",
+    "main.js": "/my-app/static/js/main.11b3b509.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -111,6 +111,8 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/events-flag-champions-league.svg": "/my-app/static/media/events-flag-champions-league.200b7e2b3c9f9ca4245d.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
+    "static/media/statistics-triangle-down.svg": "/my-app/static/media/statistics-triangle-down.967a7c1c1cd96c981407.svg",
+    "static/media/statistics-triangle-up.svg": "/my-app/static/media/statistics-triangle-up.0339edb4ef4ab2831f7e.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
     "static/media/game-info-arrow.svg": "/my-app/static/media/game-info-arrow.cb60faf595c72e49b446.svg",
     "static/media/return-select-arrow.svg": "/my-app/static/media/return-select-arrow.2bff5e935ed92475455a.svg",
@@ -118,12 +120,12 @@
     "static/media/events-info-yellow.svg": "/my-app/static/media/events-info-yellow.b698b4f852d6530195f1.svg",
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.24df28f1.css.map": "/my-app/static/css/main.24df28f1.css.map",
-    "main.9ddcac66.js.map": "/my-app/static/js/main.9ddcac66.js.map",
+    "main.1220749d.css.map": "/my-app/static/css/main.1220749d.css.map",
+    "main.11b3b509.js.map": "/my-app/static/js/main.11b3b509.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24df28f1.css",
-    "static/js/main.9ddcac66.js"
+    "static/css/main.1220749d.css",
+    "static/js/main.11b3b509.js"
   ]
 }
