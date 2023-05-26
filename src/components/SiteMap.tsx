@@ -75,6 +75,10 @@ function SiteMap() {
             name: 'Статистика - Детали',
             link: '/statistics/detailed',
         },
+        {
+            name: 'Статистика - Очные',
+            link: '/statistics/face-to-face',
+        },
 	]
 
 	return (

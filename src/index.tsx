@@ -26,6 +26,7 @@ import StatisticsPageFive from './pages/StatisticsPageFive';
 import SiteMapPage from './pages/SiteMapPage';
 import HomePageGames from './pages/HomePageGames';
 import ReturnProfile from './pages/ReturnProfile';
+import StatisticsPageSix from './pages/StatisticsPageSix';
 
 export default function App() {
 	return (
@@ -62,6 +63,7 @@ export default function App() {
 					<Route path="calendar" element={<StatisticsPageThree />} />
 					<Route path="table" element={<StatisticsPageFour />} />
 					<Route path="detailed" element={<StatisticsPageFive />} />
+					<Route path="face-to-face" element={<StatisticsPageSix />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

@@ -24,6 +24,7 @@ export { default as StatisticsTwo } from './StatisticsTwo';
 export { default as StatisticsThree } from './StatisticsThree';
 export { default as StatisticsFour } from './StatisticsFour';
 export { default as StatisticsFive } from './StatisticsFive';
+export { default as StatisticsSix } from './StatisticsSix';
 export { default as SiteMap } from './SiteMap';
 export { default as GameInfo } from './GameInfo';
 export { default as GameBanner } from './GameBanner';
