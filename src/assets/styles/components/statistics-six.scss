@@ -458,4 +458,158 @@
 		color: #fff;
 		text-align: center;
 	}
+
+	&__table-one {
+		margin-bottom: rem(40px);
+	}
+
+	&__table-one-header-row {
+		display: flex;
+		background: rgba(255, 255, 255, .14);
+		border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+		padding: rem(0 20px);
+	}
+
+	&__table-one-header-cell {
+		padding: rem(18px 10px 19px);
+		font-weight: 400;
+		font-size: rem(20px);
+		line-height: rem(23px);
+		color: #fff;
+
+		&:nth-child(1) {
+			padding-left: rem(45px);
+			width: rem(340px);
+		}
+
+		&:nth-child(2) {
+			width: rem(200px);
+		}
+
+		&:nth-child(3) {
+			text-align: center;
+			width: rem(950px);
+		}
+
+		&:nth-child(4) {
+			width: rem(330px);
+			padding-right: 0;
+		}
+	}
+
+	&__table-one-row {
+		display: flex;
+		background: rgba(255, 255, 255, .07);
+		padding: rem(0 20px);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	&__table-one-cell {
+		padding: rem(18px 10px 17px);
+		font-weight: 400;
+		font-size: rem(20px);
+		line-height: rem(23px);
+		color: #fff;
+
+		&:nth-child(1) {
+			padding-left: rem(45px);
+			width: rem(340px);
+		}
+	
+		&:nth-child(2) {
+			width: rem(200px);
+		}
+	
+		&:nth-child(3) {
+			display: flex;
+			gap: rem(20px);
+			width: rem(950px);
+		}
+	
+		&:nth-child(4) {
+			width: rem(330px);
+			padding-right: 0;
+		}
+	}
+
+	&__table-one-cell-text {
+		
+		&:nth-child(1) {
+			width: rem(280px);
+		}
+
+		&:nth-child(2) {
+			flex-grow: 1;
+			text-align: center;
+		}
+
+		&:nth-child(3) {
+			width: rem(280px);
+		}
+
+		&--accent {
+			color: #F7FF13;
+		}
+	}
+
+	&__table-one-cell-text-small {
+		&--accent {
+			color: #F7FF13;
+		}
+	}
+
+	&__score {
+		margin-bottom: rem(40px);
+	}
+
+	&__score-title {
+		font-weight: 500;
+		font-size: rem(48px);
+		line-height: rem(56px);
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		margin-bottom: rem(24px);
+	}
+
+	&__score-wrapper {
+		position: relative;
+	}
+
+	&__score-colors {
+		display: flex;
+	}
+
+	&__score-color {
+		height: rem(50px);
+
+		&:nth-child(1) {
+			background: #1D7E3A;
+		}
+
+		&:nth-child(2) {
+			background: #52B205;
+		}
+	}
+
+	&__score-percent {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		padding: rem(0 60px);
+		justify-content: space-between;
+	}
+
+	&__score-percent-text {
+		font-weight: 500;
+		font-size: rem(24px);
+		line-height: rem(28px);
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+	}
 }

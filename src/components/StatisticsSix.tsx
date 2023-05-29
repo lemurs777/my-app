@@ -1,10 +1,69 @@
-//import clsx from 'clsx';
+import clsx from 'clsx';
 
 function StatisticsSix() {
 
-	// const arrInfo = [
-		
-	// ]
+	const arrRowsOne = [
+		{
+            date: '10/07/22',
+            round: 15,
+            nameOne: 'Western Port Steelers',
+            winOne: true,
+            scoreOne: 77,
+            scoreTwo: 61,
+            scoreInfo: '(Р)',
+            nameTwo: 'Блэкберн Викингс',
+            tournament: 'Биг V (Викториан Стейт Чемпионшип)',
+        },
+        {
+            date: '19/06/22',
+            round: 12,
+            nameOne: 'Western Port Steelers',
+            winOne: false,
+            scoreOne: 797,
+            scoreTwo: 103,
+            scoreInfo: '(Р)',
+            nameTwo: 'Блэкберн Викингс',
+            tournament: 'Биг V (Викториан Стейт Чемпионшип)',
+        },
+        {
+            date: '23/04/22',
+            round: 5,
+            nameOne: 'Блэкберн Викингс',
+            winOne: false,
+            scoreOne: 88,
+            scoreTwo: 106,
+            scoreInfo: '(Р)',
+            nameTwo: 'Western Port Steelers',
+            tournament: 'Биг V (Викториан Стейт Чемпионшип)',
+        },
+        {
+            date: '01/08/21',
+            round: 11,
+            nameOne: 'Блэкберн Викингс',
+            winOne: false,
+            scoreOne: 82,
+            scoreTwo: 85,
+            scoreInfo: '(Р)',
+            nameTwo: 'Western Port Steelers',
+            tournament: 'Биг V (Викториан Стейт Чемпионшип)',
+        },
+        {
+            date: '10/07/21',
+            round: 16,
+            nameOne: 'Western Port Steelers',
+            winOne: true,
+            scoreOne: 92,
+            scoreTwo: 85,
+            scoreInfo: '(Р)',
+            nameTwo: 'Блэкберн Викингс',
+            tournament: 'Биг V (Викториан Стейт Чемпионшип)',
+        },
+	];
+
+    const Score = {
+        win: 4,
+        game: 5,
+    }
 
 	return (
 		<div className="statistics-six">
@@ -100,16 +159,16 @@ function StatisticsSix() {
                                         d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                                     />
                                     <path className="statistics-six__table-col-three-info-circle-two-more"
-                                        strokeDasharray="35, 100"
+                                        strokeDasharray="40, 100"
                                         d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                                     />
                                     <path className="statistics-six__table-col-three-info-circle-two"
-                                        strokeDasharray="33, 100"
+                                        strokeDasharray="38, 100"
                                         d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                                     />
                                 </svg>
                                 <div className="statistics-six__table-col-three-info-content">
-                                    <div className="statistics-six__table-col-three-info-content-num">33%</div>
+                                    <div className="statistics-six__table-col-three-info-content-num">38%</div>
                                     <div className="statistics-six__table-col-three-info-content-text">Результативность</div>
                                 </div>
                             </div>
@@ -171,6 +230,60 @@ function StatisticsSix() {
                                 <div className="statistics-six__table-col-one-mini-table-num statistics-six__table-col-one-mini-table-num--right" style={{bottom: '33.3%'}}>#6</div>
                             </div>
                             <div className="statistics-six__table-col-one-info">0.333%</div>
+                        </div>
+                    </div>
+                </div>
+                <h2 className="statistics-six__name-accent">Следующие матчи</h2>
+                <div className="statistics-six__table-one">
+                    <div className="statistics-six__table-one-header-row">
+                        <div className="statistics-six__table-one-header-cell">Дата</div>
+                        <div className="statistics-six__table-one-header-cell">Раунд</div>
+                        <div className="statistics-six__table-one-header-cell">Матч</div>
+                        <div className="statistics-six__table-one-header-cell">Турнир</div>
+                    </div>
+                    {arrRowsOne.map((item, index) => (
+                        <div key={index} className="statistics-six__table-one-row">
+                            <div className="statistics-six__table-one-cell">{item.date}</div>
+                            <div className="statistics-six__table-one-cell">{item.round}</div>
+                            <div className="statistics-six__table-one-cell">
+                                <div className={clsx(
+                                    'statistics-six__table-one-cell-text',
+                                    {'statistics-six__table-one-cell-text--accent': item.winOne}
+                                )}>{item.nameOne}</div>
+                                <div className="statistics-six__table-one-cell-text">
+                                    <span className={clsx(
+                                        'statistics-six__table-one-cell-text-small',
+                                        {'statistics-six__table-one-cell-text-small--accent': item.winOne}
+                                    )}>{item.scoreOne}</span>&nbsp;:&nbsp;
+                                    <span className={clsx(
+                                        'statistics-six__table-one-cell-text-small',
+                                        {'statistics-six__table-one-cell-text-small--accent': !item.winOne}
+                                    )}>{item.scoreTwo}</span>&nbsp;
+                                    <span className="statistics-six__table-one-cell-text-small">{item.scoreInfo}</span>
+                                </div>
+                                <div className={clsx(
+                                    'statistics-six__table-one-cell-text',
+                                    {'statistics-six__table-one-cell-text--accent': !item.winOne}
+                                )}>{item.nameTwo}</div>
+                            </div>    
+                            <div className="statistics-six__table-one-cell">{item.tournament}</div>
+                        </div>
+                    ))}
+                </div>
+                <div className="statistics-six__score">
+                    <h2 className="statistics-six__score-title">Общий счёт</h2>
+                    <div className="statistics-six__score-wrapper">
+                        <div className="statistics-six__score-colors">
+                            <div className="statistics-six__score-color" style={{width: `${Score.win/Score.game*100}%`}}></div>
+                            <div className="statistics-six__score-color" style={{width: `${100 - (Score.win/Score.game*100)}%`}}></div>
+                        </div>
+                        <div className="statistics-six__score-percent">
+                            <div className="statistics-six__score-percent-text">
+                                <span className="statistics-six__score-percent-text-win">{Score.win} ({Score.win/Score.game*100}%)</span>
+                            </div>
+                            <div className="statistics-six__score-percent-text">
+                                <span className="statistics-six__score-percent-text-win">{Score.game - Score.win} ({100 - (Score.win/Score.game*100)}%)</span>
+                            </div>
                         </div>
                     </div>
                 </div>
