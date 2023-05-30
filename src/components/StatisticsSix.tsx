@@ -63,7 +63,235 @@ function StatisticsSix() {
     const Score = {
         win: 4,
         game: 5,
-    }
+    };
+
+    const arrRowTwo = [
+		{
+			title: 'БигV(3)',
+			nameOne: 'Western Port Steelers',
+			winOne: false,
+			date: '02/04/23',
+			score: '76:112 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Wyndham Basketball',
+		},
+		{
+			title: 'БигV(3)',
+			nameOne: 'Bellarine',
+			winOne: false,
+			date: '01/04/23',
+			score: '81:88 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Western Port Steelers',
+		},
+		{
+			title: 'БигV(2)',
+			nameOne: 'Western Port Steelers',
+			winOne: false,
+			date: '26/03/23',
+			score: '60:82 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Keysborough',
+		},
+		{
+			title: 'БигV(1)',
+			nameOne: 'Western Port Steelers',
+			winOne: false,
+			date: '19/03/23',
+			score: '95:104 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Camberwell Dragons',
+		},
+		{
+			title: 'БигV(18)',
+			nameOne: 'Bellarine',
+			winOne: true,
+			date: '30/07/22',
+			score: '95:85 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Camberwell Dragons',
+		},
+		{
+			title: 'БигV(16)',
+			nameOne: 'Melbourne Uni Bball',
+			winOne: false,
+			date: '02/04/23',
+			score: '84:92 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Sunbury Jets',
+		}
+	]
+
+    const arrRowThree = [
+		{
+			title: 'БигV(3)',
+			nameOne: 'Блэкберн Викингс',
+			winOne: false,
+			date: '01/04/23',
+			score: '67:82 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Camberwell Dragons',
+		},
+		{
+			title: 'БигV(2)',
+			nameOne: 'Блэкберн Викингс',
+			winOne: false,
+			date: '26/03/23',
+			score: '67:82 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Melbourne Uni Bball',
+		},
+		{
+			title: 'БигV(1)',
+			nameOne: 'Блэкберн Викингс',
+			winOne: false,
+			date: '19/03/23',
+			score: '81:111 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Sunbury Jets',
+		},
+		{
+			title: 'БигV(1)',
+			nameOne: 'Bellarine',
+			winOne: false,
+			date: '18/03/23',
+			score: '60:66 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Блэкберн Викингс',
+		},
+		{
+			title: 'БигV(18)',
+			nameOne: 'Блэкберн Викингс',
+			winOne: false,
+			date: '30/07/22',
+			score: '73:108 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Маккиннон Кугарс',
+		},
+		{
+			title: 'БигV(17)',
+			nameOne: 'Sunbury Jets',
+			winOne: true,
+			date: '23/07/22',
+			score: '92:57 (Р)',
+			scoreAccent: true,
+			nameTwo: 'Блэкберн Викингс',
+		}
+	]
+
+	const arrRowFour = [
+		{
+			title: 'БигV(4)',
+			nameOne: 'Western Port Steelers',
+			nameAccent: false,
+			date: '15/04/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Блэкберн Викингс',
+		},
+		{
+			title: 'БигV(5)',
+			nameOne: 'Wyndham Basketball',
+			nameAccent: false,
+			date: '22/04/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Маккиннон Кугарс',
+		},
+		{
+			title: 'БигV(7)',
+			nameOne: 'Хьюм Сити',
+			nameAccent: false,
+			date: '06/05/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Western Port Steelers',
+		},
+		{
+			title: 'БигV(7)',
+			nameOne: 'Western Port Steelers',
+			nameAccent: false,
+			date: '07/05/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Melbourne Uni Bball',
+		},
+		{
+			title: 'БигV(8)',
+			nameOne: 'Bellarine',
+			nameAccent: false,
+			date: '13/05/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Western Port Steelers',
+		},
+		{
+			title: 'БигV(9)',
+			nameOne: 'Western Port Steelers',
+			nameAccent: false,
+			date: '20/05/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Camberwell Dragons',
+		},
+	]
+
+    const arrRowFive = [
+		{
+			title: 'БигV(4)',
+			nameOne: 'Western Port Steelers',
+			nameAccent: false,
+			date: '02/04/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Блэкберн Викингс',
+		},
+		{
+			title: 'БигV(5)',
+			nameOne: 'Блэкберн Викингс',
+			nameAccent: false,
+			date: '02/04/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Хьюм Сити',
+		},
+		{
+			title: 'БигV(45)',
+			nameOne: 'Блэкберн Викингс',
+			nameAccent: false,
+			date: '02/04/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Keysborough',
+		},
+		{
+			title: 'БигV(6)',
+			nameOne: 'Melbourne Uni Bball',
+			nameAccent: false,
+			date: '02/04/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Блэкберн Викингс',
+		},
+		{
+			title: 'БигV(7)',
+			nameOne: 'Wyndham Basketball',
+			nameAccent: false,
+			date: '01/04/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Блэкберн Викингс',
+		},
+		{
+			title: 'БигV(8)',
+			nameOne: 'Блэкберн Викингс',
+			nameAccent: false,
+			date: '01/04/23',
+			score: '- : -',
+			scoreAccent: false,
+			nameTwo: 'Melbourne Uni Bball',
+		},
+	]
 
 	return (
 		<div className="statistics-six">
@@ -283,6 +511,135 @@ function StatisticsSix() {
                             </div>
                             <div className="statistics-six__score-percent-text">
                                 <span className="statistics-six__score-percent-text-win">{Score.game - Score.win} ({100 - (Score.win/Score.game*100)}%)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 className="statistics-six__name-accent">Последние матчи</h2>
+                <div className="statistics-two__two-table-columns-wrapper">
+                    <div className="statistics-two__two-table-columns">
+                        <div className="statistics-two__table-two-wrapper">
+                            <div className="statistics-two__table-two">
+                                <div className="statistics-two__table-two-header">
+                                    <div className="statistics-two__table-two-header-cell">ТУ/Р</div>
+                                    <div className="statistics-two__table-two-header-cell">Матч</div>
+                                </div>
+                                {arrRowTwo.map((item, index) => (
+                                    <div key={index} className="statistics-two__table-two-row">
+                                        <div className="statistics-two__table-two-cell">{item.title}</div>
+                                        <div className={clsx(
+                                            'statistics-two__table-two-cell',
+                                            {'statistics-two__table-two-cell--accent': item.winOne}
+                                        )}>{item.nameOne}</div>
+                                        <div className="statistics-two__table-two-cell">
+                                            <div className="statistics-two__table-two-cell-text">{item.date}</div>
+                                            <div className={clsx(
+                                                'statistics-two__table-two-cell-text',
+                                                {'statistics-two__table-two-cell-text--accent': item.scoreAccent}
+                                            )}>{item.score}</div>
+                                        </div>
+                                        <div className={clsx(
+                                            'statistics-two__table-two-cell',
+                                            {'statistics-two__table-two-cell--accent': !item.winOne}
+                                        )}>{item.nameTwo}</div>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="statistics-two__table-two-btn-wrapper">
+                                <button className="statistics-two__table-two-btn">Показать еще</button>
+                            </div>
+                        </div>
+                        <div className="statistics-two__table-two-wrapper">
+                            <div className="statistics-two__table-two">
+                                <div className="statistics-two__table-two-header">
+                                    <div className="statistics-two__table-two-header-cell">ТУ/Р</div>
+                                    <div className="statistics-two__table-two-header-cell">Матч</div>
+                                </div>
+                                {arrRowThree.map((item, index) => (
+                                    <div key={index} className="statistics-two__table-two-row">
+                                        <div className="statistics-two__table-two-cell">{item.title}</div>
+                                        <div className={clsx(
+                                            'statistics-two__table-two-cell',
+                                            {'statistics-two__table-two-cell--accent': item.winOne}
+                                        )}>{item.nameOne}</div>
+                                        <div className="statistics-two__table-two-cell">
+                                            <div className="statistics-two__table-two-cell-text">{item.date}</div>
+                                            <div className={clsx(
+                                                'statistics-two__table-two-cell-text',
+                                                {'statistics-two__table-two-cell-text--accent': item.scoreAccent}
+                                            )}>{item.score}</div>
+                                        </div>
+                                        <div className={clsx(
+                                            'statistics-two__table-two-cell',
+                                            {'statistics-two__table-two-cell--accent': !item.winOne}
+                                        )}>{item.nameTwo}</div>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="statistics-two__table-two-btn-wrapper">
+                                <button className="statistics-two__table-two-btn">Показать еще</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 className="statistics-six__name-accent">Следующие матчи</h2>
+                <div className="statistics-two__two-table-columns-wrapper">
+                    <div className="statistics-two__two-table-columns">
+                        <div className="statistics-two__table-two-wrapper">
+                            <div className="statistics-two__table-two">
+                                <div className="statistics-two__table-two-header">
+                                    <div className="statistics-two__table-two-header-cell">ТУ/Р</div>
+                                    <div className="statistics-two__table-two-header-cell">Матч</div>
+                                </div>
+                                {arrRowFour.map((item, index) => (
+                                    <div key={index} className="statistics-two__table-two-row">
+                                        <div className="statistics-two__table-two-cell">{item.title}</div>
+                                        <div className={clsx(
+                                            'statistics-two__table-two-cell',
+                                            {'statistics-two__table-two-cell--accent': item.nameAccent}
+                                        )}>{item.nameOne}</div>
+                                        <div className="statistics-two__table-two-cell">
+                                            <div className="statistics-two__table-two-cell-text">{item.date}</div>
+                                            <div className={clsx(
+                                                'statistics-two__table-two-cell-text',
+                                                {'statistics-two__table-two-cell-text--accent': item.scoreAccent}
+                                            )}>{item.score}</div>
+                                        </div>
+                                        <div className="statistics-two__table-two-cell">{item.nameTwo}</div>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="statistics-two__table-two-btn-wrapper">
+                                <button className="statistics-two__table-two-btn">Показать еще</button>
+                            </div>
+                        </div>
+                        <div className="statistics-two__table-two-wrapper">
+                            <div className="statistics-two__table-two">
+                                <div className="statistics-two__table-two-header">
+                                    <div className="statistics-two__table-two-header-cell">ТУ/Р</div>
+                                    <div className="statistics-two__table-two-header-cell">Матч</div>
+                                </div>
+                                {arrRowFive.map((item, index) => (
+                                    <div key={index} className="statistics-two__table-two-row">
+                                        <div className="statistics-two__table-two-cell">{item.title}</div>
+                                        <div className={clsx(
+                                            'statistics-two__table-two-cell',
+                                            {'statistics-two__table-two-cell--accent': item.nameAccent}
+                                        )}>{item.nameOne}</div>
+                                        <div className="statistics-two__table-two-cell">
+                                            <div className="statistics-two__table-two-cell-text">{item.date}</div>
+                                            <div className={clsx(
+                                                'statistics-two__table-two-cell-text',
+                                                {'statistics-two__table-two-cell-text--accent': item.scoreAccent}
+                                            )}>{item.score}</div>
+                                        </div>
+                                        <div className="statistics-two__table-two-cell">{item.nameTwo}</div>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="statistics-two__table-two-btn-wrapper">
+                                <button className="statistics-two__table-two-btn">Показать еще</button>
                             </div>
                         </div>
                     </div>

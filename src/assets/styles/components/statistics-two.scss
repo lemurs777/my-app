@@ -330,6 +330,11 @@
         width: calc(65% - rem(10px));
     }
 
+    &__two-table-columns-wrapper {
+        max-width: rem(1346px);
+        margin: 0 auto;
+    }
+
     &__two-table-columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -423,14 +428,10 @@
         font-size: rem(14px);
         line-height: rem(16px);
         color: #fff;
+        text-align: center;
 
         &--accent {
             color: #F7FF13;
-        }
-
-        &--center {
-            width: rem(52px);
-            text-align: center;
         }
     }
 

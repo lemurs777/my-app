@@ -547,7 +547,7 @@ function StatisticsTwo() {
 									<div className="statistics-two__table-two-cell">
 										<div className="statistics-two__table-two-cell-text">{item.date}</div>
 										<div className={clsx(
-											'statistics-two__table-two-cell-text statistics-two__table-two-cell-text--center',
+											'statistics-two__table-two-cell-text',
 											{'statistics-two__table-two-cell-text--accent': item.scoreAccent}
 										)}>{item.score}</div>
 									</div>
