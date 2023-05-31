@@ -179,6 +179,10 @@
 
     &__table-one-info {
         margin-bottom: rem(54px);
+
+        &--hidden {
+            display: none;
+        }
     }
 
     &__table-one-info-text {
