@@ -614,6 +614,12 @@
 	}
 
 	&__pos {
-		margin-bottom: rem(42px);
+		height: rem(800px);
+		margin-bottom: rem(40px);
+	}
+
+	&__table-two-btn-wrapper {
+		text-align: center;
+		margin-bottom: rem(40px);
 	}
 }

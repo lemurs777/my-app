@@ -4,7 +4,6 @@ import clsx from 'clsx';
 function StatisticsSix() {
 
     const [showTable, setShowTable] = useState(false);
-    const [showTableTwo, setShowTableTwo] = useState(false);
 
 	const arrRowsOne = [
 		{
@@ -501,6 +500,25 @@ function StatisticsSix() {
 		},
 	]
 
+    const arrRowSeven = [
+		{
+			number: 6,
+			name: 'Western Port Steelers',
+			game: 4,
+			win: 3,
+			percent: 75,
+			points: 79.75,
+		},
+		{
+			number: 10,
+			name: 'Блэкберн Викингс',
+			game: 5,
+			win: 2,
+			percent: 25,
+			points: 70.5,
+		},
+	]
+
 	return (
 		<div className="statistics-six">
             <div className="statistics-six__wrapper">
@@ -913,7 +931,7 @@ function StatisticsSix() {
                             <li className="statistics-two__table-one-info-item">Квалификация, Плей-офф</li>
                         </ul>
                     </div>
-                    <div className="statistics-two__table-two-btn-wrapper">
+                    <div className="statistics-six__table-two-btn-wrapper">
                         <button 
                             className="statistics-two__table-two-btn"
                             onClick={() => setShowTable((showTable) => !showTable)}
@@ -922,8 +940,48 @@ function StatisticsSix() {
                             : 'Показать всю таблицу'
                         }</button>
                     </div>
-                </div>
+                </div>   
                 <div className="statistics-two__two-table-columns-wrapper">
+                    <h2 className="statistics-two__title">бол/мен</h2>
+                    <div className="statistics-two__filter-wrapper">
+                        <button className="statistics-two__filter-btn statistics-two__filter-btn--active">Все игры</button>
+                        <button className="statistics-two__filter-btn">Домашние игры</button>
+                        <button className="statistics-two__filter-btn">Матчи на выезде</button>
+                    </div>
+                    <div className="statistics-two__filter-two-wrapper">
+                        <button className="statistics-two__filter-two-btn statistics-two__filter-two-btn--less">Less</button>
+                        <div className="statistics-two__filter-two-select">
+                            <span className="statistics-two__filter-two-select-test">165.5</span>
+                        </div>
+                        <button className="statistics-two__filter-two-btn statistics-two__filter-two-btn--more">More</button>
+                    </div>
+                    <div className="statistics-two__table-three">
+                        <div className="statistics-two__table-three-header">
+                            <div className="statistics-two__table-three-header-cell">Поз.</div>
+                            <div className="statistics-two__table-three-header-cell">Команда</div>
+                            <div className="statistics-two__table-three-header-cell">Сыграно</div>
+                            <div className="statistics-two__table-three-header-cell statistics-two__table-three-header-cell--up">Больше</div>
+                            <div className="statistics-two__table-three-header-cell statistics-two__table-three-header-cell--up-down">Меньше</div>
+                            <div className="statistics-two__table-three-header-cell">Сред. очки/матч</div>
+                        </div>
+                        {arrRowSeven.map((item, index) => (
+                            <div key={index} className="statistics-two__table-three-row">
+                                <div className="statistics-two__table-three-cell">{item.number}</div>
+                                <div className="statistics-two__table-three-cell">{item.name}</div>
+                                <div className="statistics-two__table-three-cell">{item.game}</div>
+                                <div className="statistics-two__table-three-cell">{item.win}</div>
+                                <div className="statistics-two__table-three-cell">
+                                    <div className="statistics-two__table-three-cell-percent-one">{`${item.percent}%`}</div>
+                                    <div className="statistics-two__table-three-cell-percent">
+                                        <div className="statistics-two__table-three-cell-percent-percent-show" style={{width: `${item.percent}%`}}></div>
+                                    </div>
+                                    <div className="statistics-two__table-three-cell-percent-two">{`${100 - item.percent}%`}</div>
+                                    <div className="statistics-two__table-three-cell-percent-info">{`${item.game - item.win}`}</div>
+                                </div>
+                                <div className="statistics-two__table-three-cell">{item.points}</div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 		</div>

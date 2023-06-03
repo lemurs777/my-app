@@ -560,7 +560,7 @@ function StatisticsTwo() {
 						</div>
 					</div>
 				</div>
-				<h1 className="statistics-two__title">бол/мен</h1>
+				<h2 className="statistics-two__title">бол/мен</h2>
 				<div className="statistics-two__filter-wrapper">
 					<button className="statistics-two__filter-btn">Все игры</button>
 					<button className="statistics-two__filter-btn statistics-two__filter-btn--active">Домашние игры</button>
@@ -584,7 +584,7 @@ function StatisticsTwo() {
 							<div className="statistics-two__table-three-cell">
 								<div className="statistics-two__table-three-cell-percent-one">{`${item.percent}%`}</div>
 								<div className="statistics-two__table-three-cell-percent">
-									<div className="statistics-two__table-three-cell-percent-percent-show"></div>
+									<div className="statistics-two__table-three-cell-percent-percent-show" style={{width: `${item.percent}%`}}></div>
 								</div>
 								<div className="statistics-two__table-three-cell-percent-two">{`${100 - item.percent}%`}</div>
 								<div className="statistics-two__table-three-cell-percent-info">{`${item.game - item.win}`}</div>
