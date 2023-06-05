@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import clsx from 'clsx';
 
+import PositionsChart from './PositionsChart';
+
 function StatisticsSix() {
 
     const [showTable, setShowTable] = useState(false);
@@ -872,6 +874,7 @@ function StatisticsSix() {
                 </div>
                 <div className="statistics-six__pos">
                     <h2 className="statistics-six__name-accent">Позиция команды</h2>
+                    <PositionsChart></PositionsChart>
                 </div>
                 <div className="statistics-two__two-table-columns-wrapper">
                     <h2 className="statistics-six__name-accent">Биг V (Викториан Стейт Чемпионшип)</h2>

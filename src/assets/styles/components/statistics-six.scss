@@ -614,8 +614,11 @@
 	}
 
 	&__pos {
-		height: rem(800px);
 		margin-bottom: rem(40px);
+	}
+
+	&__content {
+		width: 100%;
 	}
 
 	&__table-two-btn-wrapper {
