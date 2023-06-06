@@ -14,10 +14,8 @@ ChartJS.register(
 	LineElement,
 );
 
-const arrPosOne = [4, 4, 6, 5, 2, 2, 1, 3, 4];
-const arrPosTwo = [7, 8, 8, 9, 10, 8, 8, 5, 8];
-const arrPosVertically = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const arrPosHorizontally = [1, 3, 5, 6, 9, 11, 13, 15, 17, 19, 21];
+const arrPosVertically: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arrPosHorizontally: number[] = [1, 3, 5, 6, 9, 11, 13, 15, 17, 19, 21];
 
 export const options = {
 	responsive: true,
@@ -42,23 +40,35 @@ export const options = {
 
 const labels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
 
-export const data = {
-	labels,
-	datasets: [
-		{
-			data: arrPosOne,
-			borderColor: '#F7FF13',
-			backgroundColor: '#000',
-		},
-		{
-			data: arrPosTwo,
-			borderColor: '#F7FF13',
-			backgroundColor: '#F7FF13',
-		},
-	],
+type PositionsChartData = {
+	nameOne: string,
+	arrOne: Array<number>,
+	nameTwo: string,
+	arrTwo: Array<number>,
 };
 
-function PositionsChart() {
+function PositionsChart({ props } : { props: PositionsChartData }) {
+
+	const arrPosOne: number[] = props.arrOne;
+	const arrPosTwo: number[] = props.arrTwo;
+	const nameOne: string = props.nameOne;
+	const nameTwo: string = props.nameTwo;
+
+	const data = {
+		labels,
+		datasets: [
+			{
+				data: arrPosOne,
+				borderColor: '#F7FF13',
+				backgroundColor: '#000',
+			},
+			{
+				data: arrPosTwo,
+				borderColor: '#F7FF13',
+				backgroundColor: '#F7FF13',
+			},
+		],
+	};
 
 	return (
 		<div className="pos-chart">
@@ -81,8 +91,12 @@ function PositionsChart() {
 					</div>
 					<Line className="pos-chart__content" options={options} data={data} />
 					<div className="pos-chart__content-bg">
-						<div className="pos-chart__content-line" style={{top: `${((arrPosOne[arrPosOne.length - 1]) / 10) * 99}%`, left: `${(100 / (labels.length - 1)) * (arrPosOne.length - 1)}%`}}></div>
+						{ (arrPosOne.length !== 0) ? (
+							<div className="pos-chart__content-line" style={{top: `${((arrPosOne[arrPosOne.length - 1]) / 10) * 99}%`, left: `${(100 / (labels.length - 1)) * (arrPosOne.length - 1)}%`}}></div>
+						) : null }
+						{ (arrPosTwo.length !== 0) ? (
 						<div className="pos-chart__content-line" style={{top: `${((arrPosTwo[arrPosTwo.length - 1]) / 10) * 99}%`, left: `${(100 / (labels.length - 1)) * (arrPosOne.length - 1)}%`}}></div>
+						) : null }
 					</div>
 				</div>
 				<div className="pos-chart__info">
@@ -91,8 +105,12 @@ function PositionsChart() {
 						<li className="pos-chart__info-item pos-chart__info-item--qualification">Квалификация, Плей-офф (2-5)</li>
 					</ul>
 					<ul className="pos-chart__info-list">
-						<li className="pos-chart__info-item pos-chart__info-item--team-one">Блэкберн Викингс</li>
-						<li className="pos-chart__info-item pos-chart__info-item--team-two">Western Port Steelers</li>
+						{ (nameOne !== '') ? (
+						<li className="pos-chart__info-item pos-chart__info-item--team-one">{nameOne}</li>
+						) : null }
+						{ (nameTwo !== '') ? (
+						<li className="pos-chart__info-item pos-chart__info-item--team-two">{nameTwo}</li>
+						) : null }
 					</ul>
 				</div>
 			</div>

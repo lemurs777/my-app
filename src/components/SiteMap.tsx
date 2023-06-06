@@ -79,6 +79,10 @@ function SiteMap() {
             name: 'Статистика - Очные',
             link: '/statistics/face-to-face',
         },
+        {
+            name: 'Статистика - Положение команды',
+            link: '/statistics/standings',
+        },
 	]
 
 	return (

@@ -70,6 +70,13 @@ function StatisticsSix() {
         game: 5,
     };
 
+    const PositionsChartData = {
+        nameOne: 'Блэкберн Викингс',
+        arrOne: [4, 4, 6, 5, 2, 2, 1, 3, 4],
+        nameTwo: 'Western Port Steelers',
+        arrTwo: [7, 8, 8, 9, 10, 8, 8, 5, 8]
+    }
+
     const arrRowTwo = [
 		{
 			title: 'БигV(3)',
@@ -874,7 +881,7 @@ function StatisticsSix() {
                 </div>
                 <div className="statistics-six__pos">
                     <h2 className="statistics-six__name-accent">Позиция команды</h2>
-                    <PositionsChart></PositionsChart>
+                    <PositionsChart props={PositionsChartData}/>
                 </div>
                 <div className="statistics-two__two-table-columns-wrapper">
                     <h2 className="statistics-six__name-accent">Биг V (Викториан Стейт Чемпионшип)</h2>
@@ -917,10 +924,8 @@ function StatisticsSix() {
                                     }
                                 </div>
                             </div>
-
-                        ) : null
-                    
-                        )}
+                            ) : null )
+                        }
                     </div>
                     <div className={clsx(
                         'statistics-two__table-one-info',

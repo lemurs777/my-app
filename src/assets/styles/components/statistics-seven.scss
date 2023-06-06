@@ -1,0 +1,164 @@
+.statistics-seven {
+	width: 100%;
+	padding: rem(25px);
+
+	&__wrapper {
+		width: 100%;
+	}
+
+	&__title {
+		padding: rem(14px 20px 13px);
+		font-weight: 500;
+		font-size: rem(20px);
+		line-height: rem(23px);
+		color: #000;
+		background: #F7FF13;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+		text-align: center;
+	}
+
+	&__filter {
+		display: flex;
+		justify-content: center;
+		gap: rem(40px);
+		padding: rem(15px 20px 14px);
+		background: rgba(247, 255, 19, 0.15);
+		margin-bottom: rem(24px);
+		font-weight: 400;
+		font-size: rem(20px);
+		line-height: rem(23px);
+		color: #fff;
+	}
+
+	&__filter-name {
+		padding: rem(9px 20px);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+	}
+
+	&__filter-command {
+		padding: rem(9px 46px 9px 20px);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		cursor: pointer;
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			right: rem(15px);
+			top: 50%;
+			width: rem(16px);
+			height: rem(16px);
+			background: url("../../images/svg/statistics-name-arrow.svg") no-repeat 50% 50% /contain;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__main-tittle {
+		font-weight: 700;
+		font-size: rem(36px);
+		line-height: rem(42px);
+		color: #fff;
+		padding-bottom: rem(24px);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		margin-bottom: rem(24px);
+	}
+
+	&__main-info {
+		max-width: rem(1346px);
+		margin: 0 auto;
+		margin-bottom: rem(24px);
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__main-info-game {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: rem(10px);
+	}
+
+	&__main-info-game-title {
+		font-weight: 500;
+		font-size: rem(24px);
+		line-height: rem(28px);
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	&__main-info-game-forms {
+		display: flex;
+        gap: rem(10px);
+        overflow: hidden;
+        padding-left: rem(15px);
+        background: url(../../images/svg/statistics-arrow.svg) no-repeat 0% 50%;
+        background-size: rem(300px) rem(16px);
+	}
+
+	&__main-info-game-form {
+        width: rem(30px);
+        height: rem(30px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+
+        &--win {
+            color: #000;
+            background: #F7FF13;
+        }
+
+        &--loss {
+            color: #fff;
+            background: #1D7E3A;
+        }
+    }
+
+	&__main-info-win {
+		display: flex;
+		gap: rem(24px);
+		align-items: flex-end;
+	}
+
+	&__main-info-win-wrapper {
+		width: rem(50px);
+		height: rem(94px);
+		position: relative;
+	}
+
+	&__main-info-win-show {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #F7FF13;
+	}
+
+	&__main-info-win-percent-wrapper {
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	&__main-info-win-percent {
+		font-weight: 700;
+		font-size: rem(48px);
+		line-height: rem(56px);
+	}
+	
+	&__main-info-win-percent-text {
+		font-weight: 500;
+		font-size: rem(24px);
+		line-height: rem(28px);
+	}
+
+	&__table-wrapper {
+		max-width: rem(1346px);
+		margin: 0 auto rem(40px);
+
+		.statistics-two__table-one {
+			margin-bottom: 0;
+		}
+	}
+}
