@@ -83,6 +83,10 @@ function SiteMap() {
             name: 'Статистика - Положение команды',
             link: '/statistics/standings',
         },
+        {
+            name: 'Выбор вида спорта',
+            link: '/choice-of-sport',
+        },
 	]
 
 	return (

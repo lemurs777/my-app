@@ -28,6 +28,7 @@ import HomePageGames from './pages/HomePageGames';
 import ReturnProfile from './pages/ReturnProfile';
 import StatisticsPageSix from './pages/StatisticsPageSix';
 import StatisticsPageSeven from './pages/StatisticsPageSeven';
+import ChoiceSportPage from './pages/ChoiceSportPage';
 
 export default function App() {
 	return (
@@ -36,6 +37,7 @@ export default function App() {
 				<Route path="/" element={<MainLayout />}>
 					<Route index element={<HomePage />} />
 					<Route path="/cybersport" element={<HomePageGames/>} />
+					<Route path="/choice-of-sport" element={<ChoiceSportPage/>} />
 					<Route path="/sitemap" element={<SiteMapPage/>} />
 					<Route path="*" element={<NoPage />} />
 				</Route>

@@ -31,3 +31,4 @@ export { default as GameInfo } from './GameInfo';
 export { default as GameBanner } from './GameBanner';
 export { default as ReturnList } from './ReturnList';
 export { default as PositionsChart } from './PositionsChart';
+export { default as ChoiceSport } from './ChoiceSport';
