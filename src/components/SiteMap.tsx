@@ -87,6 +87,10 @@ function SiteMap() {
             name: 'Выбор вида спорта',
             link: '/choice-of-sport',
         },
+        {
+            name: 'Вопросы и ответы',
+            link: '/faq',
+        },
 	]
 
 	return (

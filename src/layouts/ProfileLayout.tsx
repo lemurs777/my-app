@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import { 
 	Header,
     Balance,
-	Faq,
+	FaqSmallList,
 	Exit,
 } from '../components/';
 
@@ -16,7 +16,7 @@ function ProfileLayout( {children}:  MyComponentProps) {
             <main className="page page--profile">
 				<div className="column-left column-left--profile">
 					<Balance />
-					<Faq />
+					<FaqSmallList />
 					<Exit />
 				</div>
 				<div className="column-right column-right--profile scroll">

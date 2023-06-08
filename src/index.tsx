@@ -29,6 +29,7 @@ import ReturnProfile from './pages/ReturnProfile';
 import StatisticsPageSix from './pages/StatisticsPageSix';
 import StatisticsPageSeven from './pages/StatisticsPageSeven';
 import ChoiceSportPage from './pages/ChoiceSportPage';
+import FAQPage from './pages/FAQPage';
 
 export default function App() {
 	return (
@@ -38,6 +39,7 @@ export default function App() {
 					<Route index element={<HomePage />} />
 					<Route path="/cybersport" element={<HomePageGames/>} />
 					<Route path="/choice-of-sport" element={<ChoiceSportPage/>} />
+					<Route path="/faq" element={<FAQPage/>} />
 					<Route path="/sitemap" element={<SiteMapPage/>} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
