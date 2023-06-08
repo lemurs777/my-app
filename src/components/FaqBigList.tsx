@@ -1,29 +1,53 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import clsx from 'clsx';
 
 function FaqSmallList() {
+
+	const [isCategory, setIsCategory] = useState("bet");
+
+	const updateCategory = (category: string) => {
+		setIsCategory((currentValue) => (currentValue = category));
+	};
+
+	const categoryList = [
+		{
+			name: "Ставки",
+			category: "bet",
+		},
+		{
+			name: "Технические вопросы",
+			category: "technical",
+		},
+		{
+			name: "Личные данные",
+			category: "personal",
+		},
+	];
+
 	const faqList = [
 		{
 			question: "Как сделать ставку?",
 			category: "bet",
 		},
 		{
-			question: "Как сделать ставку?",
+			question: "На что можно ставить в PARI?",
 			category: "bet",
 		},
 		{
-			question: "Как сделать ставку?",
+			question: "Как выбирать тип ставки?",
 			category: "bet",
 		},
 		{
-			question: "Как сделать ставку?",
+			question: "Как продать ставку? Как продать ставку? Как продать ставку?",
 			category: "bet",
 		},
 		{
-			question: "Как сделать ставку?",
+			question: "Можно ли отменить ставку?",
 			category: "bet",
 		},
 		{
-			question: "Как сделать ставку?",
+			question: "Каков минимальный и максимальный размер ставки?",
 			category: "bet",
 		},
 		{
@@ -37,6 +61,18 @@ function FaqSmallList() {
 		{
 			question: "Как задать технический вопрос 3?",
 			category: "technical",
+		},
+		{
+			question: "Как изменить личные данные 1?",
+			category: "personal",
+		},
+		{
+			question: "Как изменить личные данные 2?",
+			category: "personal",
+		},
+		{
+			question: "Как изменить личные данные 3?",
+			category: "personal",
 		},
 	];
 
@@ -53,30 +89,26 @@ function FaqSmallList() {
 			<Link className="faq-big-list__main-nav-link" to="/sitemap">Задать вопрос</Link>
 		</div>
 		<ul className="faq-big-list__filters">
-			<li className="faq-big-list__filter">
-				<button className="faq-big-list__filter-btn faq-big-list__filter-btn--active">Ставки</button>
-			</li>
-			<li className="faq-big-list__filter">
-				<button className="faq-big-list__filter-btn">Технические вопросы</button>
-			</li>
-			<li className="faq-big-list__filter">
-				<button className="faq-big-list__filter-btn">Личные данные</button>
-			</li>
+			{categoryList.map((categoryItem, index) =>( 
+				<li key={index} className="faq-big-list__filter">
+					<button className={clsx(
+						'faq-big-list__filter-btn',
+						{'faq-big-list__filter-btn--active': categoryItem.category === isCategory}
+					)} onClick={() => updateCategory(categoryItem.category)}>{categoryItem.name}</button>
+				</li>
+			))}
 		</ul>
 		<div className="faq-big-list__wrapper">
 			<ul className="faq-big-list__list">
-				<li className="faq-big-list__item">
-					<button className="faq-big-list__item-btn faq-big-list__item-btn--active">
-						<div className="faq-big-list__item-btn-title">Как сделать ставку?</div>
-						<div className="faq-big-list__item-btn-icon"></div>
-					</button>
-				</li>
-				<li className="faq-big-list__item">
-					<button className="faq-big-list__item-btn">
-						<div className="faq-big-list__item-btn-title">Как выбирать тип ставки?</div>
-						<div className="faq-big-list__item-btn-icon"></div>
-					</button>
-				</li>
+				{faqList.map((faqItem, index) => (faqItem.category === isCategory) ? ( 
+					<li key={index}className="faq-big-list__item">
+						<button className="faq-big-list__item-btn">
+							<div className="faq-big-list__item-btn-title">{faqItem.question}</div>
+							<div className="faq-big-list__item-btn-icon"></div>
+						</button>
+					</li>
+					) : null
+				)}
 			</ul>
 		</div>
 	</div>
