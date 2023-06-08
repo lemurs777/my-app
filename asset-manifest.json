@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.68194a8e.css",
-    "main.js": "/my-app/static/js/main.45debc63.js",
+    "main.css": "/my-app/static/css/main.41e2b0da.css",
+    "main.js": "/my-app/static/js/main.a80b6994.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -101,6 +101,7 @@
     "static/media/sports-list-tennis.svg": "/my-app/static/media/sports-list-tennis.5656c9dea0be83bfe909.svg",
     "static/media/menu-tennis.svg": "/my-app/static/media/menu-tennis.a4de555741d18c75527d.svg",
     "static/media/menu-racing.svg": "/my-app/static/media/menu-racing.0d62810c344ff2ce64dd.svg",
+    "static/media/faq-add-question-icon.svg": "/my-app/static/media/faq-add-question-icon.c4ef7a20769fd541a271.svg",
     "static/media/snooker-hover.svg": "/my-app/static/media/snooker-hover.8f59d602292c14aecce2.svg",
     "static/media/snooker.svg": "/my-app/static/media/snooker.638ab48c7b8015d2b5d4.svg",
     "static/media/rugby-hover.svg": "/my-app/static/media/rugby-hover.ddd5908d5e12d7489320.svg",
@@ -121,6 +122,7 @@
     "static/media/profile-bets.svg": "/my-app/static/media/profile-bets.ea09fed0778f7945b42a.svg",
     "static/media/menu-volleyball.svg": "/my-app/static/media/menu-volleyball.a9d93dd1649172f24c50.svg",
     "static/media/promotions-time.svg": "/my-app/static/media/promotions-time.c1da82090587499a9f84.svg",
+    "static/media/faq-arrow.svg": "/my-app/static/media/faq-arrow.cef857d572d17b6e0216.svg",
     "static/media/profile-left.svg": "/my-app/static/media/profile-left.2767e368f3506b5b42af.svg",
     "static/media/profile-right.svg": "/my-app/static/media/profile-right.2dad150632f55be0f8e3.svg",
     "static/media/sports-next.svg": "/my-app/static/media/sports-next.dde68f99d3d6ccf438c2.svg",
@@ -176,12 +178,12 @@
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-mini-table-line.svg": "/my-app/static/media/statistics-mini-table-line.72268d04cde6db52e453.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.68194a8e.css.map": "/my-app/static/css/main.68194a8e.css.map",
-    "main.45debc63.js.map": "/my-app/static/js/main.45debc63.js.map",
+    "main.41e2b0da.css.map": "/my-app/static/css/main.41e2b0da.css.map",
+    "main.a80b6994.js.map": "/my-app/static/js/main.a80b6994.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68194a8e.css",
-    "static/js/main.45debc63.js"
+    "static/css/main.41e2b0da.css",
+    "static/js/main.a80b6994.js"
   ]
 }
