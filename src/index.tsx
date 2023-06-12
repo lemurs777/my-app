@@ -6,6 +6,7 @@ import MainLayout from "./layouts/MainLayout";
 import ProfileLayout from "./layouts/ProfileLayout";
 import AppsLayout from "./layouts/AppsLayout";
 import PromotionsLayout from "./layouts/PromotionsLayout";
+import RequestsLayout from "./layouts/RequestsLayout";
 import HomePage from './pages/HomePage';
 import Profile from './pages/Profile';
 import NoPage from './pages/NoPage';
@@ -30,6 +31,7 @@ import StatisticsPageSix from './pages/StatisticsPageSix';
 import StatisticsPageSeven from './pages/StatisticsPageSeven';
 import ChoiceSportPage from './pages/ChoiceSportPage';
 import FAQPage from './pages/FAQPage';
+import RequestsPage from './pages/RequestsPage';
 
 export default function App() {
 	return (
@@ -51,6 +53,9 @@ export default function App() {
 					<Route path="promo" element={<MyPromo />} />
 					<Route path="deposit" element={<DepositPage />} />
 					<Route path="return" element={<ReturnProfile />} />
+				</Route>
+				<Route path="/requests/" element={<RequestsLayout />}>
+					<Route index element={<RequestsPage />} />
 				</Route>
 				<Route path="/apps/" element={<AppsLayout />}>
 					<Route index element={<AppsPage />} />

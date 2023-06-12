@@ -22,9 +22,17 @@
             right: rem(-16px);
         }
     }
+
+    &--requests {
+        min-width: rem(390px);
+        max-width: rem(390px);
+        width: rem(390px);
+        position: relative;
+    }
 }
 
 .column-right {
+    &--requests,
     &--profile {
         width: 100%;
         overflow-x: hidden;

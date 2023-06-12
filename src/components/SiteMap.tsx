@@ -91,6 +91,10 @@ function SiteMap() {
             name: 'Вопросы и ответы',
             link: '/faq',
         },
+        {
+            name: 'Запросы',
+            link: '/requests'
+        },
 	]
 
 	return (

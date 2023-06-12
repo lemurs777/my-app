@@ -33,3 +33,5 @@ export { default as ReturnList } from './ReturnList';
 export { default as PositionsChart } from './PositionsChart';
 export { default as ChoiceSport } from './ChoiceSport';
 export { default as FaqBigList } from './FaqBigList';
+export { default as Requests } from './Requests';
+export { default as RequestsMenu } from './RequestsMenu';
