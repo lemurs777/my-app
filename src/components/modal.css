@@ -1,0 +1,115 @@
+.modal-overlay {
+    z-index: 9999;
+    width: 100vw;
+    height: calc(100vh - rem(78px));
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(30px 10px);
+}
+
+.modal-request {
+    position: relative;
+    padding: rem(30px 20px 45px);
+    background: #1B1B1B;
+    width: rem(800px);
+    max-width: 100%;
+
+    &__title {
+        padding-left: rem(50px);
+        margin-bottom: rem(30px);
+        font-weight: 700;
+        font-size: rem(32px);
+        line-height: rem(38px);
+        color: #fff;
+    }
+
+    &__item-btn-close {
+        position: absolute;
+		width: rem(38px);
+		height: rem(38px);
+		top: rem(30px);
+		right: rem(16px);
+		font-size: 0;
+		background: url("../../images/svg/request-close.svg") no-repeat 50% 50% / rem(20px 20px);
+		cursor: pointer;
+		transition: .3s;
+
+		&:hover {
+			opacity: .7;
+		}
+    }
+
+    &__select {
+		max-width: rem(634px);
+		margin: 0 auto rem(30px);
+	}
+
+	&__select-input {
+		display: inline-block;
+		width: 100%;
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding: rem(20px);
+		background: rgba(255, 255, 255, 0.14);
+		color: #fff;
+		font-weight: 700;
+		font-size: rem(24px);
+		line-height: rem(28px);
+
+		&::placeholder {
+			color: #898989;
+		}
+	}
+
+    &__select-list {
+        background: #2B2B2B;
+    }
+
+    &__select-item-btn {
+        display: inline;
+        width: 100%;
+        padding: rem(13px 20px);
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #fff;
+        cursor: pointer;
+        transition: .3s;
+
+		&:hover {
+			opacity: .7;
+		}
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: rem(60px);
+    }
+
+    &__btn {
+        display: inline-block;
+        min-width: rem(140px);
+        background: #FAFE13;
+        font-weight: 700;
+        font-size: rem(17px);
+        line-height: rem(20px);
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: rem(12px);
+
+        &[disabled] {
+            color: #fff;
+            background: rgba(250, 254, 19, 0.15);
+            pointer-events: none;
+        }
+    }
+}

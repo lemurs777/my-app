@@ -35,3 +35,4 @@ export { default as ChoiceSport } from './ChoiceSport';
 export { default as FaqBigList } from './FaqBigList';
 export { default as Requests } from './Requests';
 export { default as RequestsMenu } from './RequestsMenu';
+export { default as Modal } from './Modal';
