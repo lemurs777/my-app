@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.32f9a683.css",
-    "main.js": "/my-app/static/js/main.6ffe015f.js",
+    "main.css": "/my-app/static/css/main.48a077b8.css",
+    "main.js": "/my-app/static/js/main.79bb514c.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -176,6 +176,7 @@
     "static/media/events-flag-bundesliga.svg": "/my-app/static/media/events-flag-bundesliga.9385f75dcb3b5dd7f995.svg",
     "static/media/game-info-germany.svg": "/my-app/static/media/game-info-germany.a5509537c738eca56c83.svg",
     "static/media/multiple-go.svg": "/my-app/static/media/multiple-go.c12aef274bef2701488a.svg",
+    "static/media/request-close.svg": "/my-app/static/media/request-close.ee7c3d6406f3490d73be.svg",
     "static/media/menu-more.svg": "/my-app/static/media/menu-more.7896bc8a69ac1353e130.svg",
     "static/media/pos-chart-line.svg": "/my-app/static/media/pos-chart-line.e14d1f57447a9db1f145.svg",
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
@@ -192,12 +193,12 @@
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-mini-table-line.svg": "/my-app/static/media/statistics-mini-table-line.72268d04cde6db52e453.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.32f9a683.css.map": "/my-app/static/css/main.32f9a683.css.map",
-    "main.6ffe015f.js.map": "/my-app/static/js/main.6ffe015f.js.map",
+    "main.48a077b8.css.map": "/my-app/static/css/main.48a077b8.css.map",
+    "main.79bb514c.js.map": "/my-app/static/js/main.79bb514c.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32f9a683.css",
-    "static/js/main.6ffe015f.js"
+    "static/css/main.48a077b8.css",
+    "static/js/main.79bb514c.js"
   ]
 }
