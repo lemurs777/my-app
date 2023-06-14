@@ -24,7 +24,7 @@ function RequestsMenu() {
 		},
 		{
 			name: 'Запросы',
-			link: '/',
+			link: '/requests/',
 			icon: 'requests',
 			active: true,
 		},

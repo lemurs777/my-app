@@ -95,13 +95,30 @@ function SiteMap() {
             name: 'Запросы',
             link: '/requests'
         },
+        {
+            name: 'Отдельный запрос',
+            link: '/requests/request',
+            param: 1
+        },
 	]
 
 	return (
 		<ul className="sitemap">
             {arrLinks.map((item, index) => (
             <li key={index} className="sitemap__item">
-                <Link to={item.link} className="sitemap__link">{item.name}</Link>
+                { (item.param) ? 
+                    (
+                        <Link 
+                            to = "/requests/request"
+                            state = {{ numRequest: item.param }}
+                            className="sitemap__link">
+                                {item.name}
+                        </Link>
+                    ) : (
+                        <Link to={item.link} className="sitemap__link">{item.name}</Link>
+                    )
+                
+                }
             </li>
             ))}
 		</ul>
