@@ -579,7 +579,7 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 						<button className={clsx(
 							'faq-big-list__item-btn',
 							{'faq-big-list__item-btn--active': index === showContent}
-						)}onClick={() => updateContent(index)}>
+						)} onClick={() => updateContent(index)}>
 							<div className="faq-big-list__item-btn-title">{faqItem.question}</div>
 							<div className="faq-big-list__item-btn-icon"></div>
 						</button>

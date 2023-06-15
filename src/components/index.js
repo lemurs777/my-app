@@ -37,3 +37,4 @@ export { default as Requests } from './Requests';
 export { default as RequestsMenu } from './RequestsMenu';
 export { default as Modal } from './Modal';
 export { default as Request } from './Request';
+export { default as CategoryList } from './CategoryList';

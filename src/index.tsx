@@ -33,6 +33,7 @@ import ChoiceSportPage from './pages/ChoiceSportPage';
 import FAQPage from './pages/FAQPage';
 import RequestsPage from './pages/RequestsPage';
 import RequestPage from './pages/RequestPage';
+import EventsDetailedPage from './pages/EventsDetailedPage';
 
 export default function App() {
 	return (
@@ -68,6 +69,7 @@ export default function App() {
 				</Route>
 				<Route path="/events/" element={<MainLayout />}>
 					<Route index element={<EventsPage />} />
+					<Route path="detailed" element={<EventsDetailedPage />} />
 				</Route>
 				<Route path="/statistics/" element={<MainLayout />}>
 					<Route index element={<StatisticsPageOne />} />

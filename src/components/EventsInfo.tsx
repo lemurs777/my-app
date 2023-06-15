@@ -1,11 +1,23 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import AccordionItem from './AccordionItem';
+import {  
+	CategoryList,
+    AccordionItem,
+} from '../components/';
 
 import Logo1 from '../assets/images/events-info-live-logo-fc-bayern-x2.min.png';
 import Logo2 from '../assets/images/events-info-live-logo-fc-frankfurt-x2.min.png';
 
-function EventsInfo() {
+function EventsInfo(
+	{
+		dataCategory
+	}: {
+		dataCategory: Array<{
+			name: string,
+			active: boolean,
+		}>;
+	}
+) {
 
 const accordionItems = [
 	{
@@ -296,40 +308,7 @@ return (
 					</div>
 				</div>
 			</div>
-			<div className="events-info__categoty-list-wrapper scroll-horizontal">
-				<ul className="events-info__categoty-list">
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn events-info__categoty-item-btn--active">ВСЕ</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">ДВОЙНОЙ ИСХОД</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">ГАНДИКАП</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">ТОТАЛ</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">ТОЧНЫЙ СЧЁТ</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">КТО ЗАБЬЁТ ПЕРВЫЙ</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">1-Й ТАЙМ: 1X2</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">1-Й ТАЙМ: ГАНДИКАП</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">2-Й ТАЙМ: 1X2</button>
-					</li>
-					<li className="events-info__categoty-item">
-						<button className="events-info__categoty-item-btn">2-Й ТАЙМ: ГАНДИКАП</button>
-					</li>
-				</ul>
-			</div>
+			<CategoryList categoryList={dataCategory}/>
 		</div>
 		<ul className="events-info__accordion">
 			{accordionItems.map((item, idx) => (

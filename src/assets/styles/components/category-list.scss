@@ -1,0 +1,29 @@
+.categoty-list {
+	overflow-x: auto;
+	background: linear-gradient(180deg, #000000 0%, #121212 37.5%, #262626 100%);
+	max-width: 100%;
+	padding: rem(13px 10px 12px);
+	margin-bottom: 2px;
+
+	&__list {
+		display: flex;
+		gap: rem(10px);
+	}
+
+	&__item-btn {
+		font-weight: 500;
+		font-size: rem(20px);
+		line-height: rem(23px);
+		padding: rem(10px);
+		color: #676767;
+		text-transform: uppercase;
+		cursor: pointer;
+		white-space: nowrap;
+		transition: .3s;
+
+		&:hover,
+		&--active {
+			color: #F7FF13;
+		}
+	}
+}

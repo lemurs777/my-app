@@ -100,6 +100,10 @@ function SiteMap() {
             link: '/requests/request',
             param: 1
         },
+        {
+            name: 'Событие - Детали',
+            link: '/events/detailed'
+        },
 	]
 
 	return (
