@@ -18,6 +18,7 @@ export { default as Deposit } from './Deposit';
 export { default as Apps } from './Apps';
 export { default as EventsToday } from './EventsToday';
 export { default as EventsInfo } from './EventsInfo';
+export { default as AccordionList } from './AccordionList';
 export { default as AccordionItem } from './AccordionItem';
 export { default as StatisticsOne } from './StatisticsOne';
 export { default as StatisticsTwo } from './StatisticsTwo';

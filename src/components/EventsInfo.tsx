@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import {  
 	CategoryList,
-    AccordionItem,
+    AccordionList,
 } from '../components/';
 
 import Logo1 from '../assets/images/events-info-live-logo-fc-bayern-x2.min.png';
@@ -10,255 +9,27 @@ import Logo2 from '../assets/images/events-info-live-logo-fc-frankfurt-x2.min.pn
 
 function EventsInfo(
 	{
-		dataCategory
+		dataCategory,
+		dataItems,
 	}: {
 		dataCategory: Array<{
 			name: string,
 			active: boolean,
-		}>;
+		}>,
+		dataItems: Array<{
+			title: string,
+			favourite: boolean,
+			arrInfo: Array<{
+				arrRow: Array<{
+					name: string,
+					countOne: string,
+					countTwo: string | null,
+					class: string,
+				}>,
+			}>,
+		}>,
 	}
 ) {
-
-const accordionItems = [
-	{
-		title: 'Результат',
-		favourite: true,
-		arrInfo: [
-			{
-				arrRow: [
-					{
-						name: 'Бавария',
-						count: '2.4',
-						class: 'accordion-item__cell--up', 
-					},
-					{
-						name: 'Ничья',
-						count: '2.4',
-						class: '',
-					},
-					{
-						name: 'Бавария',
-						count: '2.4',
-						class: 'accordion-item__cell--down',
-					},
-				],
-			},
-		],
-	},
-	{
-		title: 'Двойной исход',
-		favourite: true,
-		arrInfo: [
-			{
-				arrRow: [
-					{
-						name: 'Бавария',
-						count: '2.4',
-						class: 'accordion-item__cell--up', 
-					},
-					{
-						name: 'Ничья',
-						count: '2.4',
-						class: '',
-					},
-					{
-						name: 'Бавария',
-						count: '2.4',
-						class: 'accordion-item__cell--down',
-					},
-				],
-			},
-		],
-	},
-	{
-		title: 'Гандикап',
-		favourite: true,
-		arrInfo: [
-			{
-				arrRow: [
-					{
-						name: 'Бавария',
-						count: '2.4',
-						class: 'accordion-item__cell--up', 
-					},
-					{
-						name: 'Ничья',
-						count: '2.4',
-						class: '',
-					},
-					{
-						name: 'Бавария',
-						count: '2.4',
-						class: 'accordion-item__cell--down',
-					},
-				],
-			},			
-		],
-	},
-	{
-		title: 'Тотал',
-		favourite: false,
-		arrInfo: [
-			{
-				arrRow: [
-					{
-						name: 'Больше (1.5)',
-						count: '2.4',
-						class: '', 
-					},
-					{
-						name: 'Меньше (1.5)',
-						count: '5.9',
-						class: '',
-					},
-				],
-			},
-			{
-				arrRow: [
-					{
-						name: 'Больше (2)',
-						count: '2.4',
-						class: '', 
-					},
-					{
-						name: 'Меньше (2)',
-						count: '5.9',
-						class: '',
-					},
-				],
-			},
-			{
-				arrRow: [
-					{
-						name: 'Больше (2.5)',
-						count: '2.4',
-						class: '', 
-					},
-					{
-						name: 'Меньше (2.5)',
-						count: '5.9',
-						class: '',
-					},
-				],
-			},
-			{
-				arrRow: [
-					{
-						name: 'Больше (3)',
-						count: '2.4',
-						class: '', 
-					},
-					{
-						name: 'Меньше (3)',
-						count: '5.9',
-						class: '',
-					},
-				],
-			},
-			{
-				arrRow: [
-					{
-						name: 'Больше (3.5)',
-						count: '2.4',
-						class: '', 
-					},
-					{
-						name: 'Меньше (3.5)',
-						count: '5.9',
-						class: '',
-					},
-				],
-			},		
-		],
-	},
-	{
-		title: 'Точный счёт',
-		favourite: false,
-		arrInfo: [
-			{
-				arrRow: [
-					{
-						name: '1:0',
-						count: '2.4',
-						class: 'accordion-item__cell--up', 
-					},
-					{
-						name: '1:1',
-						count: '2.4',
-						class: '',
-					},
-					{
-						name: '0:1',
-						count: '2.4',
-						class: 'accordion-item__cell--down',
-					},
-				],
-			},
-			{
-				arrRow: [
-					{
-						name: '2:0',
-						count: '2.4',
-						class: 'accordion-item__cell--up', 
-					},
-					{
-						name: '2:2',
-						count: '2.4',
-						class: '',
-					},
-					{
-						name: '0:2',
-						count: '2.4',
-						class: 'accordion-item__cell--down',
-					},
-				],
-			},
-			{
-				arrRow: [
-					{
-						name: '2:1',
-						count: '2.4',
-						class: 'accordion-item__cell--up', 
-					},
-					{
-						name: '3:3',
-						count: '2.4',
-						class: '',
-					},
-					{
-						name: '1:2',
-						count: '2.4',
-						class: 'accordion-item__cell--down',
-					},
-				],
-			},
-			{
-				arrRow: [
-					{
-						name: '3:1',
-						count: '2.4',
-						class: 'accordion-item__cell--up', 
-					},
-					{
-						name: '4:4',
-						count: '2.4',
-						class: '',
-					},
-					{
-						name: '1:3',
-						count: '2.4',
-						class: 'accordion-item__cell--down',
-					},
-				],
-			},		
-		],
-	},
-];
-
-const [currentIdx, setCurrentIdx] = useState(-1);
-const btnOnClick = (idx: number) => {
-	setCurrentIdx((currentValue) => (currentValue !== idx ? idx : -1));
-};
 
 return (
 	<div className="events-info scroll">
@@ -310,16 +81,7 @@ return (
 			</div>
 			<CategoryList categoryList={dataCategory}/>
 		</div>
-		<ul className="events-info__accordion">
-			{accordionItems.map((item, idx) => (
-				<AccordionItem
-					key={idx}
-					data={item}
-					isOpen={idx === currentIdx}
-					btnOnClick={() => btnOnClick(idx)}
-				/>
-			))}
-	  	</ul>
+		<AccordionList dataItems={dataItems}/>
 	</div>
 );
 }

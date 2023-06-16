@@ -132,5 +132,12 @@
         font-size: rem(18px);
         line-height: rem(21px);
         color: #fff;
+
+        &--ind {
+            min-width: rem(100px);
+            padding-left: rem(15px);
+            padding-right: rem(15px);
+            text-align: center;
+        }
     }
 }
