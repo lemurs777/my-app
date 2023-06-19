@@ -30,6 +30,7 @@ import ReturnProfile from './pages/ReturnProfile';
 import StatisticsPageSix from './pages/StatisticsPageSix';
 import StatisticsPageSeven from './pages/StatisticsPageSeven';
 import ChoiceSportPage from './pages/ChoiceSportPage';
+import ChoiceCountryPage from './pages/ChoiceCountryPage';
 import FAQPage from './pages/FAQPage';
 import RequestsPage from './pages/RequestsPage';
 import RequestPage from './pages/RequestPage';
@@ -43,6 +44,7 @@ export default function App() {
 					<Route index element={<HomePage />} />
 					<Route path="/cybersport" element={<HomePageGames/>} />
 					<Route path="/choice-of-sport" element={<ChoiceSportPage/>} />
+					<Route path="/choice-of-country" element={<ChoiceCountryPage/>} />
 					<Route path="/faq" element={<FAQPage/>} />
 					<Route path="/sitemap" element={<SiteMapPage/>} />
 					<Route path="*" element={<NoPage />} />

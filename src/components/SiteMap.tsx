@@ -84,10 +84,6 @@ function SiteMap() {
             link: '/statistics/standings',
         },
         {
-            name: 'Выбор вида спорта',
-            link: '/choice-of-sport',
-        },
-        {
             name: 'Вопросы и ответы',
             link: '/faq',
         },
@@ -104,6 +100,15 @@ function SiteMap() {
             name: 'Событие - Детали',
             link: '/events/detailed'
         },
+        {
+            name: 'Выбор вида спорта',
+            link: '/choice-of-sport',
+        },
+        {
+            name: 'Выбор страны',
+            link: '/choice-of-country',
+            param: 2,
+        },
 	]
 
 	return (
@@ -113,7 +118,7 @@ function SiteMap() {
                 { (item.param) ? 
                     (
                         <Link 
-                            to = "/requests/request"
+                            to={item.link}
                             state = {{ numRequest: item.param }}
                             className="sitemap__link">
                                 {item.name}
