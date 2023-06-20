@@ -1,5 +1,9 @@
-import clsx from 'clsx';
-import PositionsChart from './PositionsChart';
+import { 
+	TableNextPrevGames,
+	PositionsChart,
+} from '../components';
+
+import arrTables from '../data/dataStatisticsSeven';
 
 function StatisticsSeven() {
 
@@ -13,206 +17,11 @@ function StatisticsSeven() {
         arrTwo: []
     }
 
-	const arrRowOne = [
-		{
-			number: 1,
-			playTournamentClass: '',
-			directionClass: '',
-			name: 'Хьюм Сити',
-			game: 4,
-			win: 4,
-			loss: 0,
-			scored: 403,
-			conceded: 335,
-			ratio: 1.203,
-			pct: 1,
-			points: 12,
-		},
-		{
-			number: 2,
-			playTournamentClass: '',
-			directionClass: '',
-			name: 'Wyndham Basketball',
-			game: 3,
-			win: 3,
-			loss: 0,
-			scored: 326,
-			conceded: 232,
-			ratio: 1.405,
-			pct: 1,
-			points: 9,
-		},
-		{
-			number: 3,
-			playTournamentClass: '',
-			directionClass: '',
-			name: 'Camberwell Dragons',
-			game: 5,
-			win: 3,
-			loss: 2,
-			scored: 436,
-			conceded: 467,
-			ratio: 0.934,
-			pct: 0.6,
-			points: 9,
-		},
-		{
-			number: 1,
-			playTournamentClass: '',
-			directionClass: '',
-			name: 'Хьюм Сити',
-			game: 4,
-			win: 4,
-			loss: 0,
-			scored: 403,
-			conceded: 335,
-			ratio: 1.203,
-			pct: 1,
-			points: 12,
-		},
-		{
-			number: 2,
-			playTournamentClass: '',
-			directionClass: '',
-			name: 'Wyndham Basketball',
-			game: 3,
-			win: 3,
-			loss: 0,
-			scored: 326,
-			conceded: 232,
-			ratio: 1.405,
-			pct: 1,
-			points: 9,
-		},
-		{
-			number: 3,
-			playTournamentClass: '',
-			directionClass: '',
-			name: 'Camberwell Dragons',
-			game: 5,
-			win: 3,
-			loss: 2,
-			scored: 436,
-			conceded: 467,
-			ratio: 0.934,
-			pct: 0.6,
-			points: 9,
-		},
-	]
+	const arrRowOne = arrTables.arrRowsOne;
 
-	const arrRowTwo = [
-		{
-			title: 'БигV(3)',
-			nameOne: 'Keysborough',
-			nameAccent: true,
-			date: '02/04/23',
-			score: '99:95 (Р)',
-			scoreAccent: true,
-			nameTwo: 'Маккиннон Кугарс',
-		},
-		{
-			title: 'БигV(3)',
-			nameOne: 'Bellarine',
-			nameAccent: true,
-			date: '02/04/23',
-			score: '67:94 (Р)',
-			scoreAccent: true,
-			nameTwo: 'Хьюм Сити',
-		},
-		{
-			title: 'БигV(3)',
-			nameOne: 'Western Port Steelers',
-			nameAccent: true,
-			date: '02/04/23',
-			score: '76:112 (Р)',
-			scoreAccent: true,
-			nameTwo: 'Wyndham Basketball',
-		},
-		{
-			title: 'БигV(3)',
-			nameOne: 'Блэкберн Викингс',
-			nameAccent: true,
-			date: '02/04/23',
-			score: '67:82 (Р)',
-			scoreAccent: true,
-			nameTwo: 'Camberwell Dragons',
-		},
-		{
-			title: 'БигV(3)',
-			nameOne: 'Bellarine',
-			nameAccent: true,
-			date: '02/04/23',
-			score: '81:88 (Р)',
-			scoreAccent: true,
-			nameTwo: 'Western Port Steelers',
-		},
-		{
-			title: 'БигV(3)',
-			nameOne: 'Melbourne Uni Bball',
-			nameAccent: true,
-			date: '02/04/23',
-			score: '84:92 (Р)',
-			scoreAccent: true,
-			nameTwo: 'Sunbury Jets',
-		}
-	];
+	const dataPrevTable = arrTables.dataPrevTable;
 
-	const arrRowThree = [
-		{
-			title: 'БигV(4)',
-			nameOne: 'Western Port Steelers',
-			nameAccent: false,
-			date: '02/04/23',
-			score: '- : -',
-			scoreAccent: false,
-			nameTwo: 'Блэкберн Викингс',
-		},
-		{
-			title: 'БигV(4)',
-			nameOne: 'Wyndham Basketball',
-			nameAccent: false,
-			date: '02/04/23',
-			score: '- : -',
-			scoreAccent: false,
-			nameTwo: 'Маккиннон Кугарс',
-		},
-		{
-			title: 'БигV(4)',
-			nameOne: 'Хьюм Сити',
-			nameAccent: false,
-			date: '02/04/23',
-			score: '- : -',
-			scoreAccent: false,
-			nameTwo: 'Camberwell Dragons',
-		},
-		{
-			title: 'БигV(4)',
-			nameOne: 'Melbourne Uni Bball',
-			nameAccent: false,
-			date: '02/04/23',
-			score: '- : -',
-			scoreAccent: false,
-			nameTwo: 'Keysborought',
-		},
-		{
-			title: 'БигV(4)',
-			nameOne: 'Маккиннон Кугарс',
-			nameAccent: false,
-			date: '01/04/23',
-			score: '- : -',
-			scoreAccent: false,
-			nameTwo: 'Bellarine',
-		},
-		{
-			title: 'БигV(4)',
-			nameOne: 'Wyndham Basketball',
-			nameAccent: false,
-			date: '01/04/23',
-			score: '- : -',
-			scoreAccent: false,
-			nameTwo: 'Хьюм Сити',
-		},
-	];
+	const dataNextTable = arrTables.dataNextTable;
 
 	return (
 		<div className="statistics-seven">
@@ -279,64 +88,8 @@ function StatisticsSeven() {
 				</div>
 				<div className="statistics-seven__table-wrapper">
 					<div className="statistics-two__two-table-columns">
-						<div className="statistics-two__table-two-wrapper">
-							<h2 className="statistics-two__table-two-title">Последние матчи</h2>
-							<div className="statistics-two__table-two">
-								<div className="statistics-two__table-two-header">
-									<div className="statistics-two__table-two-header-cell">ТУ/Р</div>
-									<div className="statistics-two__table-two-header-cell">Матч</div>
-								</div>
-								{arrRowTwo.map((item, index) => (
-									<div key={index} className="statistics-two__table-two-row">
-										<div className="statistics-two__table-two-cell">{item.title}</div>
-										<div className={clsx(
-											'statistics-two__table-two-cell',
-											{'statistics-two__table-two-cell--accent': item.nameAccent}
-										)}>{item.nameOne}</div>
-										<div className="statistics-two__table-two-cell">
-											<div className="statistics-two__table-two-cell-text">{item.date}</div>
-											<div className={clsx(
-												'statistics-two__table-two-cell-text',
-												{'statistics-two__table-two-cell-text--accent': item.scoreAccent}
-											)}>{item.score}</div>
-										</div>
-										<div className="statistics-two__table-two-cell">{item.nameTwo}</div>
-									</div>
-								))}
-							</div>
-							<div className="statistics-two__table-two-btn-wrapper">
-								<button className="statistics-two__table-two-btn">Показать еще</button>
-							</div>
-						</div>
-						<div className="statistics-two__table-two-wrapper">
-							<h2 className="statistics-two__table-two-title">Следующие матчи</h2>
-							<div className="statistics-two__table-two">
-								<div className="statistics-two__table-two-header">
-									<div className="statistics-two__table-two-header-cell">ТУ/Р</div>
-									<div className="statistics-two__table-two-header-cell">Матч</div>
-								</div>
-								{arrRowThree.map((item, index) => (
-									<div key={index} className="statistics-two__table-two-row">
-										<div className="statistics-two__table-two-cell">{item.title}</div>
-										<div className={clsx(
-											'statistics-two__table-two-cell',
-											{'statistics-two__table-two-cell--accent': item.nameAccent}
-										)}>{item.nameOne}</div>
-										<div className="statistics-two__table-two-cell">
-											<div className="statistics-two__table-two-cell-text">{item.date}</div>
-											<div className={clsx(
-												'statistics-two__table-two-cell-text',
-												{'statistics-two__table-two-cell-text--accent': item.scoreAccent}
-											)}>{item.score}</div>
-										</div>
-										<div className="statistics-two__table-two-cell">{item.nameTwo}</div>
-									</div>
-								))}
-							</div>
-							<div className="statistics-two__table-two-btn-wrapper">
-								<button className="statistics-two__table-two-btn">Показать еще</button>
-							</div>
-						</div>
+						<TableNextPrevGames data={dataPrevTable} />
+						<TableNextPrevGames data={dataNextTable} />
 					</div>
 				</div>
 				<div className="statistics-six__pos">
