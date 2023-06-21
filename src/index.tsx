@@ -29,6 +29,7 @@ import HomePageGames from './pages/HomePageGames';
 import ReturnProfile from './pages/ReturnProfile';
 import StatisticsPageSix from './pages/StatisticsPageSix';
 import StatisticsPageSeven from './pages/StatisticsPageSeven';
+import StatisticsPageSearch from './pages/StatisticsPageSearch';
 import ChoiceSportPage from './pages/ChoiceSportPage';
 import ChoiceCountryPage from './pages/ChoiceCountryPage';
 import FAQPage from './pages/FAQPage';
@@ -81,6 +82,7 @@ export default function App() {
 					<Route path="detailed" element={<StatisticsPageFive />} />
 					<Route path="face-to-face" element={<StatisticsPageSix />} />
 					<Route path="standings" element={<StatisticsPageSeven />} />
+					<Route path="search" element={<StatisticsPageSearch />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

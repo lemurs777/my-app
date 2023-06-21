@@ -230,6 +230,10 @@ main {
 		overflow-y: auto;
 		padding: rem(0 20px 20px);
 	}
+
+	&--statistics-search {
+		display: block;
+	}
 }
 
 .aside {

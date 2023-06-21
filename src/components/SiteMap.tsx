@@ -109,6 +109,11 @@ function SiteMap() {
             link: '/choice-of-country',
             param: 2,
         },
+        {
+            name: 'Статистика - Поиск команды',
+            link: '/statistics/search',
+            param: 2,
+        },
 	]
 
 	return (
