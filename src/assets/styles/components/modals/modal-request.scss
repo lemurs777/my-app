@@ -1,22 +1,6 @@
-.modal-overlay {
-    z-index: 9999;
-    width: 100vw;
-    height: calc(100vh - rem(78px));
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: rem(30px 10px);
-}
-
 .modal-request {
     position: relative;
     padding: rem(30px 20px 45px);
-    background: #1B1B1B;
     width: rem(800px);
     max-width: 100%;
 
@@ -27,22 +11,6 @@
         font-size: rem(32px);
         line-height: rem(38px);
         color: #fff;
-    }
-
-    &__item-btn-close {
-        position: absolute;
-		width: rem(38px);
-		height: rem(38px);
-		top: rem(30px);
-		right: rem(16px);
-		font-size: 0;
-		background: url("../../images/svg/request-close.svg") no-repeat 50% 50% / rem(20px 20px);
-		cursor: pointer;
-		transition: .3s;
-
-		&:hover {
-			opacity: .7;
-		}
     }
 
     &__select {

@@ -1,15 +1,13 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
-import { useState } from "react";
 
 import Modal from "./Modal";
 import useModal from "../hooks/useModal";
+import ModalRequest from './Modals/ModalRequest';
 
 function Requests() {
 
 	const { isOpen, toggleModal } = useModal();
-
-	const [isTopic, setIsTopic] = useState('');
 
 	const arrRequests = [
 		{
@@ -104,24 +102,6 @@ function Requests() {
 			}
 		},
 	];
-
-	const arrTopic = [
-		{
-			topic: 'Общий вопрос 1',
-		},
-		{
-			topic: 'Общий вопрос 2',
-		},
-		{
-			topic: 'Общий вопрос 3',
-		},
-		{
-			topic: 'Общий вопрос 4',
-		},
-		{
-			topic: 'Общий вопрос 5',
-		},
-	];
 	
 	return (
 		<div className="requests">
@@ -165,24 +145,7 @@ function Requests() {
 				</div>
 			</div>
 			<Modal isOpen={isOpen} toggleModal={toggleModal}>
-				<div className="modal-request">
-					<div className="modal-request__title">Новый запрос</div>
-					<button className="modal-request__item-btn-close" onClick={toggleModal}>Close</button>
-					<div className="modal-request__select">
-						<input className="modal-request__select-input" type="text" value={isTopic} readOnly placeholder="Выберите тип запроса"/>
-						<ul className="modal-request__select-list">
-							{arrTopic.map((item, index) => (
-								<li key={index} className="modal-request__select-item" onClick={() => setIsTopic(() => item.topic)}>
-									<button className="modal-request__select-item-btn">{item.topic}</button>
-								</li>
-							))}
-						</ul>
-					</div>
-					<div className="modal-request__btn-wrapper">
-						<button className="modal-request__btn" onClick={toggleModal}>Oтмена</button>
-						<button className="modal-request__btn" disabled={isTopic === '' ? true : false } onClick={toggleModal}>Отправить запрос</button>
-					</div>
-				</div>
+				<ModalRequest toggleModal={toggleModal}/>
 			</Modal>
 		</div>
 	);

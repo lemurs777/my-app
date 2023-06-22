@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
-import { useState } from "react";
 
 import Modal from "./Modal";
+import ModalRequest from './Modals/ModalRequest';
 import useModal from "../hooks/useModal";
 
 type RequestData = {
@@ -12,8 +12,6 @@ type RequestData = {
 function Request(props: RequestData) {
 
 	const { isOpen, toggleModal } = useModal();
-
-	const [isTopic, setIsTopic] = useState('');
 
 	const arrRequests = [
 		{
@@ -110,24 +108,6 @@ function Request(props: RequestData) {
 	];
 
 	const arrRequestsFilter = arrRequests.filter((info) => info.id === props.numRequest);
-
-	const arrTopic = [
-		{
-			topic: 'Общий вопрос 1',
-		},
-		{
-			topic: 'Общий вопрос 2',
-		},
-		{
-			topic: 'Общий вопрос 3',
-		},
-		{
-			topic: 'Общий вопрос 4',
-		},
-		{
-			topic: 'Общий вопрос 5',
-		},
-	];
 	
 	return (
 		<div className="request">
@@ -141,7 +121,7 @@ function Request(props: RequestData) {
 					<div className="request__top-title">Основная информация</div>
 				</div>
 				{arrRequestsFilter.map((item, index) => (
-					<div className="request__content">
+					<div key={index} className="request__content">
 						<div key={index} className="request__content-top">
 							<p className="request__content-text">Номер обращения: {item.number}</p>
 							<p className="request__content-text">Время создания: {item.date} {item.time}</p>
@@ -184,24 +164,7 @@ function Request(props: RequestData) {
 				))}
 			</div>
 			<Modal isOpen={isOpen} toggleModal={toggleModal}>
-				<div className="modal-request">
-					<div className="modal-request__title">Новый запрос</div>
-					<button className="modal-request__item-btn-close" onClick={toggleModal}>Close</button>
-					<div className="modal-request__select">
-						<input className="modal-request__select-input" type="text" value={isTopic} readOnly placeholder="Выберите тип запроса"/>
-						<ul className="modal-request__select-list">
-							{arrTopic.map((item, index) => (
-								<li key={index} className="modal-request__select-item" onClick={() => setIsTopic(() => item.topic)}>
-									<button className="modal-request__select-item-btn">{item.topic}</button>
-								</li>
-							))}
-						</ul>
-					</div>
-					<div className="modal-request__btn-wrapper">
-						<button className="modal-request__btn" onClick={toggleModal}>Oтмена</button>
-						<button className="modal-request__btn" disabled={isTopic === '' ? true : false } onClick={toggleModal}>Отправить запрос</button>
-					</div>
-				</div>
+				<ModalRequest toggleModal={toggleModal} />
 			</Modal>
 		</div>
 	);

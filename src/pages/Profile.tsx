@@ -3,6 +3,7 @@ import {
 } from '../components/';
 
 function Profile(){
+
 	return (
 		<MyProfile />
 	);

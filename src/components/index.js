@@ -42,3 +42,4 @@ export { default as Modal } from './Modal';
 export { default as Request } from './Request';
 export { default as CategoryList } from './CategoryList';
 export { default as TableNextPrevGames } from './TableNextPrevGames';
+export { default as ModalRequest } from './Modals/ModalRequest';

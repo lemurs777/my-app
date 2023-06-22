@@ -8,6 +8,10 @@
 @import "helpers/default";
 @import "helpers/pages";
 
+@import "components/modals/modal-default";
+@import "components/modals/modal-request";
+@import "components/modals/modal-settings";
+
 @import "components/header";
 @import "components/header-top";
 @import "components/menu";
@@ -47,7 +51,6 @@
 @import "components/faq-big-list";
 @import "components/requests";
 @import "components/requests-menu";
-@import "components/modal";
 @import "components/request";
 @import "components/category-list";
 @import "components/table-next-prev-games";
