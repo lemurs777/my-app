@@ -1,0 +1,46 @@
+@import "sass-rem";
+
+.faqSmallList {
+	background: #1B1B1B;
+	border-radius: 3px;
+	margin-bottom: rem(10px);
+	padding: rem(19px 15px 0 15px);
+}
+
+.title {
+	position: relative;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: rem(21px);
+	color: #fff;
+	padding-left: rem(43px);
+	margin-bottom: rem(9px);
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: rem(28px);
+		height: rem(24px);
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		background: url("../../assets/images/svg/faq-title.svg") no-repeat 50% 50% /contain;
+	}
+}
+
+.list {
+	position: relative;
+}
+
+.item {
+	font-weight: 400;
+	font-size: rem(16px);
+	line-height: (19px);
+	color: #9A9A9A;
+	padding: rem(14px 0 13px);
+	border-bottom: 1px solid #292929;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}

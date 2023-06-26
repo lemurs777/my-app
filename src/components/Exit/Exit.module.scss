@@ -1,3 +1,5 @@
+@import "sass-rem";
+
 .exit {
     background: #1B1B1B;
     border-radius: 3px;
@@ -20,7 +22,7 @@
         width: rem(20px);
         height: rem(20px);
         transform: translateY(-50%);
-        background: url("../../images/svg/exit-btn.svg") no-repeat 50% 50% /contain;
+        background: url("../../assets/images/svg/exit-btn.svg") no-repeat 50% 50% /contain;
         opacity: .6;
         transition: .3s;
     }

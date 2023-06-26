@@ -1,6 +1,8 @@
+import styles from './Exit.module.scss';
+
 function Exit() {
 	return (
-		<button className="exit">
+		<button className={styles.exit}>
 			Выход
 		</button>
 	);
