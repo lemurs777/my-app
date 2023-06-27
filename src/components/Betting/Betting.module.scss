@@ -1,0 +1,168 @@
+@import "sass-rem";
+
+.betting {
+	width: 100%;
+}
+
+.header {
+	padding: rem(6px 0 22px);
+	display: flex;
+	align-items: center;
+}
+
+.headerBtn {
+	width: rem(34px);
+	height: rem(34px);
+	background: #3D3D3D;
+	border-radius: rem(10px);
+	position: relative;
+	cursor: pointer;
+	margin-right: rem(15px);
+	font-size: 0;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: rem(8px);
+		height: rem(12px);
+		background: url("../../assets/images/svg/profile-left.svg") no-repeat 50% 50% /contain;
+		transition: .3s;
+		opacity: .6;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.headerTitle {
+	font-weight: 500;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+}
+
+.content {
+	background: #111213;
+}
+
+.contentTop {
+	display: flex;
+	padding: rem(27px 15px 20px);
+}
+
+.contentTopTitle {
+	font-weight: 500;
+	font-size: rem(20px);
+	line-height: rem(23px);        
+	color: #fff;
+	margin-right: auto;
+}
+
+.contentTopBtn {
+	display: inline-block;
+	width: rem(34px);
+	height: rem(36px);
+	background: #323232;
+	border-radius: rem(10px);
+	cursor: pointer;
+	font-size: 0;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: rem(8px);
+		height: rem(12px);
+		background: url("../../assets/images/svg/profile-right.svg") no-repeat 50% 50% /contain;
+		transition: .3s;
+		opacity: .6;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.table {
+	padding: rem(0 25px 35px);
+}
+
+.tableHeader {
+	display: flex;
+	gap: rem(10px);
+	padding: rem(0 50px);
+	margin-bottom: rem(15px);
+}
+
+.tableHeaderCell {
+	font-weight: 400;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	color: #9A9A9A;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	&:nth-child(1) {
+		width: rem(130px);
+	}
+	&:nth-child(2) {
+		width: rem(160px);
+	}
+	&:nth-child(3) {
+		width: rem(130px);
+	}
+	&:nth-child(4) {
+		width: rem(130px);
+	}
+	&:nth-child(5) {
+		width: rem(130px);
+	}
+}
+
+.tableList {
+	display: flex;
+	flex-direction: column;
+	gap: rem(11px);
+}
+
+.tableItem {
+	display: flex;
+	gap: rem(10px);
+	padding: rem(30px 50px);
+	background: #1B1B1B;
+}
+
+.tableItemCell {
+	font-weight: 500;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	&:nth-child(1) {
+		width: rem(130px);
+	}
+	&:nth-child(2) {
+		width: rem(160px);
+	}
+	&:nth-child(3) {
+		width: rem(130px);
+	}
+	&:nth-child(4) {
+		width: rem(130px);
+	}
+	&:nth-child(5) {
+		width: rem(130px);
+	}
+}

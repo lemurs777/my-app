@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+import styles from './Modal.module.scss';
+
 interface ModalType {
 	children?: ReactNode;
 	isOpen: boolean;
@@ -11,9 +13,9 @@ function Modal(props: ModalType) {
 	return (
 		<>
 			{props.isOpen && (
-				<div className="modal" onClick={props.toggleModal}>
-					<div onClick={(e) => e.stopPropagation()} className="modal__box">
-						<button className="modal__close" onClick={props.toggleModal}>Close</button>
+				<div className={styles.modal} onClick={props.toggleModal}>
+					<div onClick={(e) => e.stopPropagation()} className={styles.overlay}>
+						<button className={styles.btnClose} onClick={props.toggleModal}>Close</button>
 						{props.children}
 					</div>
 				</div>

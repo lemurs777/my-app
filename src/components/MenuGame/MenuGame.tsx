@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
+import styles from './MenuGame.module.scss';
+
 function MenuGame() {
 
 const arrLinks = [
@@ -13,14 +15,14 @@ const arrLinks = [
 	},
 	{
 		name: 'CS:GO',
-		class: 'cs-go',
+		class: 'csgo',
 		link: '/',
 		live: true,
 		active: false,
 	},
 	{
 		name: 'Dota 2',
-		class: 'dota-2',
+		class: 'dota2',
 		link: '/',
 		live: true,
 		active: false,
@@ -48,14 +50,14 @@ const arrLinks = [
 	},
 	{
 		name: 'StarCraft I',
-		class: 'starcraft-1',
+		class: 'starcraft1',
 		link: '/',
 		live: false,
 		active: false,
 	},
 	{
 		name: 'StarCraft II',
-		class: 'starcraft-2',
+		class: 'starcraft2',
 		link: '/',
 		live: false,
 		active: false,
@@ -69,7 +71,7 @@ const arrLinks = [
 	},
 	{
 		name: 'Call Of Duty',
-		class: 'call-of-duty',
+		class: 'callOfDuty',
 		link: '/',
 		live: false,
 		active: false,
@@ -88,25 +90,24 @@ const arrLinks = [
 		live: false,
 		active: false,
 	},
-];
-
+];	
 	
 return (
-	<div className="menu">
-		<ul className="menu__list">
+	<div className={styles.menuGame}>
+		<ul className={styles.list}>
 			{arrLinks.map((item, index) => (
-            <li key={index} className="menu__item">
+            <li key={index} className={styles.item}>
                 <Link to={item.link} className={clsx(
-					'menu__item-link',
-                    'menu__item-link--game',
-					`menu__item-link--${item.class}`,
-					{'menu__item-link--live': item.live},
-					{'menu__item-link--active': item.active},
+					styles.link,
+					styles.game,
+					styles[item.class],
+					{[styles.live] : item.live},
+					{[styles.active]: item.active},
 				)}>{item.name}</Link>
             </li>
             ))}
 		</ul>
-		<Link className="menu__more" to="/">More sports</Link>
+		<Link className={styles.more} to="/">More sports</Link>
 	</div>
 );
 }

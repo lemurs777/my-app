@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
+import styles from './Menu.module.scss';
+
 function Menu() {
 
 const arrLinks = [
@@ -92,20 +94,20 @@ const arrLinks = [
 
 	
 return (
-	<div className="menu">
-		<ul className="menu__list">
+	<div className={styles.menu}>
+		<ul className={styles.list}>
 			{arrLinks.map((item, index) => (
-            <li key={index} className="menu__item">
+            <li key={index} className={styles.item}>
                 <Link to={item.link} className={clsx(
-					'menu__item-link',
-					`menu__item-link--${item.class}`,
-					{'menu__item-link--live': item.live},
-					{'menu__item-link--active': item.active},
+					styles.link,
+					styles[item.class],
+					{[styles.live] : item.live},
+					{[styles.active]: item.active},
 				)}>{item.name}</Link>
             </li>
             ))}
 		</ul>
-		<Link className="menu__more" to="/">More sports</Link>
+		<Link className={styles.more} to="/">More sports</Link>
 	</div>
 );
 }

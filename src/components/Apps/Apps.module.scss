@@ -1,0 +1,102 @@
+@import "sass-rem";
+
+.apps {
+	width: 100%;
+	max-width: rem(1308px);
+	margin: 0 auto;
+	padding: rem(108px 20px 30px);
+	display: flex;
+	justify-content: flex-end;
+}
+
+.content {
+	width: rem(535px);
+	position: relative;
+	z-index: 2;
+}
+
+.title {
+	font-weight: 700;
+	font-size: rem(48px);
+	line-height: rem(56px);
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: rem(29px);
+}
+
+.titleAccent {
+	color: #FAFE13;
+}
+
+
+.list {
+	margin-bottom: rem(54px);
+}
+
+.item {
+	position: relative;
+	padding-left: rem(38px);
+	margin-bottom: rem(33px);
+	font-weight: 700;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: rem(30px);
+		height: rem(30px);
+		transform: translateY(-55%);
+		background: url("../../assets/images/svg/apps-item.svg") no-repeat 50% 50% /contain;
+	}
+}
+
+.qrWrapper {
+	display: flex;
+	align-items: center;
+	gap: rem(29px);
+	margin-bottom: rem(50px);
+}
+
+.qrImage {
+	display: block;
+	width: rem(140px);
+	height: rem(140px);
+}
+
+.qrText {
+	font-weight: 700;
+	font-size: rem(24px);
+	line-height: rem(28px);
+	color: #fff;
+}
+
+.btnWrapper {
+	display: flex;
+	gap: rem(24px);
+}
+
+.btn {
+	display: block;
+	width: rem(130px);
+	height: rem(40px);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	font-size: 0;
+}
+
+.btnAppStore {
+	background-image: url("../../assets/images/svg/apps-btn-app-store.svg");
+}
+
+.btnGooglePlay {
+	background-image: url("../../assets/images/svg/apps-btn-google-play.svg");
+}
