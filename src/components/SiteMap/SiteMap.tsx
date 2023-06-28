@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import styles from './SiteMap.module.scss';
+
 function SiteMap() {
 
 	const arrLinks = [
@@ -117,21 +119,20 @@ function SiteMap() {
 	]
 
 	return (
-		<ul className="sitemap">
+		<ul className={styles.sitemap}>
             {arrLinks.map((item, index) => (
-            <li key={index} className="sitemap__item">
+            <li key={index} className={styles.item}>
                 { (item.param) ? 
                     (
                         <Link 
                             to={item.link}
                             state = {{ numRequest: item.param }}
-                            className="sitemap__link">
+                            className={styles.link}>
                                 {item.name}
                         </Link>
                     ) : (
-                        <Link to={item.link} className="sitemap__link">{item.name}</Link>
-                    )
-                
+                        <Link to={item.link} className={styles.link}>{item.name}</Link>
+                    )                
                 }
             </li>
             ))}

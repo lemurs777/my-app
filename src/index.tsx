@@ -8,7 +8,7 @@ import AppsLayout from "./layouts/AppsLayout";
 import PromotionsLayout from "./layouts/PromotionsLayout";
 import RequestsLayout from "./layouts/RequestsLayout";
 import HomePage from './pages/HomePage';
-import Profile from './pages/Profile';
+import ProfilePage from './pages/ProfilePage';
 import NoPage from './pages/NoPage';
 import HistoryOfConclusions from './pages/HistoryOfConclusions';
 import HistoryBetting from './pages/HistoryBetting';
@@ -51,7 +51,7 @@ export default function App() {
 					<Route path="*" element={<NoPage />} />
 				</Route>
 				<Route path="/profile/" element={<ProfileLayout />}>
-					<Route index element={<Profile />} />
+					<Route index element={<ProfilePage />} />
 					<Route path="verification" element={<VerificationPage />} />
 					<Route path="conclusions" element={<HistoryOfConclusions />} />
 					<Route path="betting" element={<HistoryBetting />} />

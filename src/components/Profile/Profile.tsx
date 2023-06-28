@@ -3,18 +3,20 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import { 
 	Modal,
-} from '../components/';
+} from '../../components/';
 
-import useModal from "../hooks/useModal";
-import ModalSettings from './Modals/ModalSettings';
+import useModal from "../../hooks/useModal";
+import ModalSettings from '../Modals/ModalSettings';
 
-function MyProfile() {
+import styles from './Profile.module.scss';
+
+function Profile() {
 
 	const arrProfileInfo = [
 		{
 			title: 'Персональные данные',
 			info: 'Персональная информация и верификация аккаунта',
-			iconClass: 'profile__header-icon--info',
+			iconClass: 'headerIconInfo',
 			infoItems: [
 				{
 					name: 'Персональная информация',
@@ -33,7 +35,7 @@ function MyProfile() {
 		{
 			title: 'Транзакции',
 			info: 'Пополнение, вывод и история транзакций',
-			iconClass: 'profile__header-icon--transactions',
+			iconClass: 'headerIconTransactions',
 			infoItems: [
 				{
 					name: 'Транзакции +',
@@ -46,7 +48,7 @@ function MyProfile() {
 		{
 			title: 'Мои ставки',
 			info: 'Ваши активные и рассчитанные ставки',
-			iconClass: 'profile__header-icon--bets',
+			iconClass: 'headerIconBets',
 			infoItems: [
 				{
 					name: 'История ставок +',
@@ -59,7 +61,7 @@ function MyProfile() {
 		{
 			title: 'Мои промокоды',
 			info: 'Промокоды, которые подходят именно вам',
-			iconClass: 'profile__header-icon--promo',
+			iconClass: 'headerIconPromo',
 			infoItems: [
 				{
 					name: 'Мои промокоды +',
@@ -72,7 +74,7 @@ function MyProfile() {
 		{
 			title: 'Настройки платформы',
 			info: 'Настройка сервиса под себя',
-			iconClass: 'profile__header-icon--settings',
+			iconClass: 'headerIconSettings',
 			infoItems: [
 				{
 					name: 'Настройки +',
@@ -85,7 +87,7 @@ function MyProfile() {
 		{
 			title: 'Помощь и информация',
 			info: 'Служба поддержки и полезная информация',
-			iconClass: 'profile__header-icon--support',
+			iconClass: 'headerIconSupport',
 			infoItems: [
 				{
 					name: 'Служба поддержки',
@@ -104,23 +106,23 @@ function MyProfile() {
 	];
 
 	return (
-		<div className="profile">
-			<div className="profile__title-wrapper">
-				<h2 className="profile__title">Мой профиль</h2>
-				<button className="profile__title-btn">More</button>
+		<div className={styles.profile}>
+			<div className={styles.titleWrapper}>
+				<h2 className={styles.title}>Мой профиль</h2>
+				<button className={styles.titleBtn}>More</button>
 			</div>
-			<ul className="profile__list">
+			<ul className={styles.list}>
 				{arrProfileInfo.map((profileInfo, index) => (
-					<MyProfileItem key={index} data={profileInfo}/>
+					<ProfileItem key={index} data={profileInfo}/>
 				))}
 			</ul>
 		</div>
 	);
 }
 
-export default MyProfile;
+export default Profile;
 
-function MyProfileItem(
+function ProfileItem(
 	{ data } : 
 	{ data: {
 		title: string,
@@ -142,31 +144,31 @@ function MyProfileItem(
 		setIsOpenTab(current => !current);
 	}
 	return (
-		<li className="profile__item">
-			<div className="profile__header">
+		<li className={styles.item}>
+			<div className={styles.header}>
 				<div className={clsx(
-				'profile__header-icon',
-				data.iconClass,
-				{'profile__header-icon--open': isOpenTab}
+				styles.headerIcon,
+				styles[data.iconClass],
+				{[styles.headerIconOpen]: isOpenTab },
 			)}></div>
-				<h3 className="profile__header-title">{data.title}</h3>
-				<button className="profile__header-btn-more" onClick={handleClick}>More</button>
+				<h3 className={styles.title}>{data.title}</h3>
+				<button className={styles.headerBtnMore} onClick={handleClick}>More</button>
 			</div>
 			<div className={clsx(
-				'profile__item-info',
-				{'profile__item-info--open': !isOpenTab}
+				styles.itemInfo,
+				{[styles.itemInfoOpen]: !isOpenTab}
 			)}>{data.info}</div>
 			<ul className={clsx(
-				'profile__sublist',
-				{'profile__sublist--open': isOpenTab}
+				styles.subList,
+				{[styles.subListOpen]: isOpenTab}
 			)}>
 				{data.infoItems.map((infoItem, index) => (
-					<li key={index} className="profile__subitem">
+					<li key={index} className={styles.subItem}>
 						{infoItem.isModal ? (
 							<>
 							<button className={clsx(
-								'profile__link',
-								{'profile__link--problem': infoItem.isProblem}
+								styles.link,
+								{[styles.linkProblem] : infoItem.isProblem}
 							)} 
 							onClick={toggleModal}>{infoItem.name}</button>
 							<Modal isOpen={isOpen} toggleModal={toggleModal}>
@@ -175,8 +177,8 @@ function MyProfileItem(
 							</>
 						) : (
 							<Link className={clsx(
-								'profile__link',
-								{'profile__link--problem': infoItem.isProblem}
+								styles.link,
+								{[styles.linkProblem] : infoItem.isProblem}
 							)} to={infoItem.link}>{infoItem.name}</Link>
 						)}
 					</li>
