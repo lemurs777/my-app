@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import { 
 	Modal,
+	ModalSettings,
 } from '../../components/';
 
 import useModal from "../../hooks/useModal";
-import ModalSettings from '../Modals/ModalSettings';
 
 import styles from './Profile.module.scss';
 

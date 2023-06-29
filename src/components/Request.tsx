@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 
 import Modal from "./Modal";
-import ModalRequest from './Modals/ModalRequest';
+import ModalRequest from './ModalRequest';
 import useModal from "../hooks/useModal";
 
 type RequestData = {

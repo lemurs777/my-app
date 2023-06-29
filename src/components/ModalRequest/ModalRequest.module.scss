@@ -1,0 +1,85 @@
+@import "sass-rem";
+
+.modalRequest {
+	position: relative;
+	padding: rem(30px 20px 45px);
+	width: rem(800px);
+	max-width: 100%;
+}
+
+.title {
+	padding-left: rem(50px);
+	margin-bottom: rem(30px);
+	font-weight: 700;
+	font-size: rem(32px);
+	line-height: rem(38px);
+	color: #fff;
+}
+
+.select {
+	max-width: rem(634px);
+	margin: 0 auto rem(30px);
+}
+
+.selectInput {
+	display: inline-block;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: rem(20px);
+	background: rgba(255, 255, 255, 0.14);
+	color: #fff;
+	font-weight: 700;
+	font-size: rem(24px);
+	line-height: rem(28px);
+
+	&::placeholder {
+		color: #898989;
+	}
+}
+
+.selectList {
+	background: #2B2B2B;
+}
+
+.selectItemBtn {
+	display: inline;
+	width: 100%;
+	padding: rem(13px 20px);
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	cursor: pointer;
+	transition: .3s;
+
+	&:hover {
+		opacity: .7;
+	}
+}
+
+.btnWrapper {
+	display: flex;
+	justify-content: center;
+	gap: rem(60px);
+}
+
+.btn {
+	display: inline-block;
+	min-width: rem(140px);
+	background: #FAFE13;
+	font-weight: 700;
+	font-size: rem(17px);
+	line-height: rem(20px);
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: rem(12px);
+
+	&[disabled] {
+		color: #fff;
+		background: rgba(250, 254, 19, 0.15);
+		pointer-events: none;
+	}
+}

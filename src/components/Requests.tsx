@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Modal from "./Modal";
 import useModal from "../hooks/useModal";
-import ModalRequest from './Modals/ModalRequest';
+import ModalRequest from './ModalRequest';
 
 function Requests() {
 
