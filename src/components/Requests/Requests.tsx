@@ -1,9 +1,14 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 
-import Modal from "./Modal";
-import useModal from "../hooks/useModal";
-import ModalRequest from './ModalRequest';
+import { 
+	Modal,
+	ModalRequest,
+} from '../../components/';
+
+import useModal from "../../hooks/useModal";
+
+import styles from './Requests.module.scss';
 
 function Requests() {
 
@@ -104,39 +109,45 @@ function Requests() {
 	];
 	
 	return (
-		<div className="requests">
-			<div className="requests__wrapper">
-				<div className="requests__header">
-					<h1 className="requests__header-title">Запросы</h1>
-					<button className="requests__header-btn" onClick={toggleModal}>+ Новый запрос</button>
+		<div className={styles.requests}>
+			<div className={styles.wrapper}>
+				<div className={styles.header}>
+					<h1 className={styles.headerTitle}>Запросы</h1>
+					<button className={styles.headerBtn} onClick={toggleModal}>+ Новый запрос</button>
 				</div>
 				<div className={clsx(
-						'requests__content',
-						{'requests__content--empty': Object.values(arrRequests).filter(el=>el.show).length === 0}
+						styles.content,
+						{[styles.contentEmpty] : Object.values(arrRequests).filter(el=>el.show).length === 0}
 					)}>
 					{ (Object.values(arrRequests).filter(el=>el.show).length === 0) ? (
-						<div className="requests__empty">Список текущих запросов пуст</div>
+						<div className={styles.empty}>Список текущих запросов пуст</div>
 					) : (
-						<ul className="requests__list">
+						<ul className={styles.list}>
 							{arrRequests.map((request, index) => (
 								(request.show === true) ? (
-								<li key={index} className="requests__item">
-									<button className="requests__item-btn-close">Close</button>
+								<li key={index} className={styles.item}>
+									<button className={styles.itemBtnClose}>Close</button>
 									<Link
 										to = "/requests/request"
 										state = {{ numRequest: request.id }}
-        								className="requests__item-link">
-										<div className="requests__item-header">
-											<div className="requests__item-header-topic">{request.topic}</div>
-											<div className="requests__item-header-info">{request.date} {request.time}</div>
+        								className={styles.itemLink}>
+										<div className={styles.itemHeader}>
+											<div className={styles.itemHeaderTopic}>{request.topic}</div>
+											<div className={styles.itemHeaderInfo}>{request.date} {request.time}</div>
 											{ (request.label === 'progress') ? (
-												<div className="requests__item-header-label requests__item-header-label--progress">вВработе</div>
+												<div className={clsx(
+													styles.itemHeaderLabel,
+													styles.itemHeaderLabelProgress
+												)}>В работе</div>
 												) : (request.label === 'done') ? (
-													<div className="requests__item-header-label requests__item-header-label--done">Решено</div>
+													<div className={clsx(
+														styles.itemHeaderLabel,
+														styles.itemHeaderLabelDone
+													)}>Решено</div>
 												) : null
 											}	
 										</div>
-										<div className="requests__item-content">Опишите вашу проблему: {request.request}</div>
+										<div className={styles.itemContent}>Опишите вашу проблему: {request.request}</div>
 									</Link>
 								</li> ) : null
 							))}

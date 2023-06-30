@@ -1,5 +1,7 @@
 import clsx from 'clsx';
 
+import styles from './CategoryList.module.scss';
+
 function CategoryList(
 	{
 		categoryList
@@ -12,13 +14,13 @@ function CategoryList(
 ) {
 
 return (	
-	<div className="categoty-list scroll-horizontal">
-		<ul className="categoty-list__list">
+	<div className={styles.categotyList}>
+		<ul className={styles.list}>
 			{categoryList.map((category, index) => (
-				<li key={index} className="categoty-list__item">
+				<li key={index} className={styles.item}>
 					<button className={clsx(
-						'categoty-list__item-btn',
-						{'categoty-list__item-btn--active': category.active}
+						styles.itemBtn,
+						{[styles.itemBtnActive]: category.active}
 					)}>{category.name}</button>
 				</li>
 			))}

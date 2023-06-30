@@ -1,0 +1,46 @@
+@import "sass-rem";
+
+.categotyList {
+	overflow-x: auto;
+	background: linear-gradient(180deg, #000000 0%, #121212 37.5%, #262626 100%);
+	max-width: 100%;
+	padding: rem(13px 10px 12px);
+	margin-bottom: 2px;
+
+	&::-webkit-scrollbar {
+		height: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+		cursor: pointer;
+	}
+}
+
+.list {
+	display: flex;
+	gap: rem(10px);
+}
+
+.itemBtn {
+	font-weight: 500;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	padding: rem(10px);
+	color: #676767;
+	text-transform: uppercase;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: .3s;
+
+	&:hover,
+	.itemBtnActive {
+		color: #F7FF13;
+	}
+}

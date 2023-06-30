@@ -1,0 +1,81 @@
+@import "sass-rem";
+
+.choiceCountry {
+	width: 100%;
+	padding: rem(25px);
+}
+
+.wrapper {
+	max-width: rem(1484px);
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(25px);
+}
+
+.headerBtn {
+	width: rem(34px);
+	height: rem(34px);
+	background: #3D3D3D;
+	border-radius: rem(10px);
+	position: relative;
+	cursor: pointer;
+	margin-right: rem(15px);
+	font-size: 0;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: rem(8px);
+		height: rem(12px);
+		background: url("../../assets/images/svg/profile-left.svg") no-repeat 50% 50% /contain;
+		transition: .3s;
+		opacity: .6;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.headerTitle {
+	font-weight: 500;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+}
+
+.list {
+	background: rgba(255, 255, 255, 0.07);
+}
+
+.itemLink {
+	display: flex;
+	align-items: center;
+	padding: rem(17px 40px);
+	gap: rem(8px);
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	transition: .3s;
+
+	&:hover {
+		color: #000;
+		background: #F7FF13;
+	}
+}
+
+.itemFlag {
+	display: block;
+	width: rem(24px);
+	height: rem(24px);
+}

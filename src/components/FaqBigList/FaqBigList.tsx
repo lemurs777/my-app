@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import clsx from 'clsx';
 
+import styles from './FaqBigList.module.scss';
+
 type FaqListData = {
 	activeIndex: number,
 	activeCategory: string
@@ -551,46 +553,46 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 	];
 
 	return (
-	<div className="faq-big-list">
-		<label className="faq-big-list__search-label">
-			<input className="faq-big-list__search" type="text" placeholder="Поиск по вопросам"/>
-			<svg className="faq-big-list__search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path className="faq-big-list__search-icon-path" d="M15.7 14.3L11.5 10.1C11.3 9.9 11 9.8 10.7 9.8C11.5 8.8 12 7.4 12 6C12 2.7 9.3 0 6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C7.4 12 8.8 11.5 9.8 10.6C9.8 10.9 9.8 11.2 10.1 11.4L14.3 15.6C14.5 15.8 14.8 15.9 15 15.9C15.2 15.9 15.5 15.8 15.7 15.6C16.1 15.3 16.1 14.7 15.7 14.3ZM6 10.5C3.5 10.5 1.5 8.5 1.5 6C1.5 3.5 3.5 1.5 6 1.5C8.5 1.5 10.5 3.5 10.5 6C10.5 8.5 8.5 10.5 6 10.5Z" fill="#898989"/>
+	<div className={styles.faqBigList}>
+		<label className={styles.searchLabel}>
+			<input className={styles.search} type="text" placeholder="Поиск по вопросам"/>
+			<svg className={styles.searchIcon} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path className={styles.searchIconPath} d="M15.7 14.3L11.5 10.1C11.3 9.9 11 9.8 10.7 9.8C11.5 8.8 12 7.4 12 6C12 2.7 9.3 0 6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C7.4 12 8.8 11.5 9.8 10.6C9.8 10.9 9.8 11.2 10.1 11.4L14.3 15.6C14.5 15.8 14.8 15.9 15 15.9C15.2 15.9 15.5 15.8 15.7 15.6C16.1 15.3 16.1 14.7 15.7 14.3ZM6 10.5C3.5 10.5 1.5 8.5 1.5 6C1.5 3.5 3.5 1.5 6 1.5C8.5 1.5 10.5 3.5 10.5 6C10.5 8.5 8.5 10.5 6 10.5Z" fill="#898989"/>
 			</svg>
 		</label>
-		<div className="faq-big-list__main-nav">
-			<h1 className="faq-big-list__main-nav-title">Вопрос-ответ</h1>
-			<Link className="faq-big-list__main-nav-link" to="/sitemap">Задать вопрос</Link>
+		<div className={styles.mainNav}>
+			<h1 className={styles.mainNavTitle}>Вопрос-ответ</h1>
+			<Link className={styles.mainNavLink} to="/sitemap">Задать вопрос</Link>
 		</div>
-		<ul className="faq-big-list__filters">
+		<ul className={styles.filters}>
 			{categoryList.map((categoryItem, index) =>( 
-				<li key={index} className="faq-big-list__filter">
+				<li key={index} className={styles.filter}>
 					<button className={clsx(
-						'faq-big-list__filter-btn',
-						{'faq-big-list__filter-btn--active': categoryItem.category === isCategory}
+						styles.filterBtn,
+						{[styles.filterBtnActive]: categoryItem.category === isCategory}
 					)} onClick={() => updateCategory(categoryItem.category)}>{categoryItem.name}</button>
 				</li>
 			))}
 		</ul>
-		<div className="faq-big-list__wrapper">
-			<ul className="faq-big-list__list">
+		<div className={styles.wrapper}>
+			<ul className={styles.list}>
 				{faqList.map((faqItem, index) => (faqItem.category === isCategory) ? ( 
-					<li key={index}className="faq-big-list__item">
+					<li key={index}className={styles.item}>
 						<button className={clsx(
-							'faq-big-list__item-btn',
-							{'faq-big-list__item-btn--active': index === showContent}
+							styles.itemBtn,
+							{[styles.itemBtnActive] : index === showContent}
 						)} onClick={() => updateContent(index)}>
-							<div className="faq-big-list__item-btn-title">{faqItem.question}</div>
-							<div className="faq-big-list__item-btn-icon"></div>
+							<div className={styles.itemBtnTitle}>{faqItem.question}</div>
+							<div className={styles.itemBtnIcon}></div>
 						</button>
 					</li>
 					) : null
 				)}
 			</ul>
 			{(showContent !== -1) ? 
-				<div className="faq-big-list__content-wrapper"> 
+				<div className={styles.contentWrapper}> 
 					{faqList.map((faqItem, index) => (index === showContent) ? ( 
-						<div key={index} className="faq-big-list__content" dangerouslySetInnerHTML={createContent(faqItem.content)}></div>
+						<div key={index} className={styles.content} dangerouslySetInnerHTML={createContent(faqItem.content)}></div>
 					) : null
 					)}
 				</div> 

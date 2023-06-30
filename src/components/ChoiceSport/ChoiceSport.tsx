@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
+import styles from './ChoiceSport.module.scss';
+
 function ChoiceSport() {
 
 	const arrSports = [
@@ -8,165 +10,165 @@ function ChoiceSport() {
             id: 1,
 			name : 'Футбол',
             link : '/choice-of-country',
-            icon: 'football'
+            icon: 'linkIconFootball'
         },
         {
             id: 2,
 			name : 'Баскетбол',
             link : '/choice-of-country',
-            icon: 'basketball'
+            icon: 'linkIconBasketball'
         },
         {
             id: 3,
 			name : 'Хоккей',
             link : '/choice-of-country',
-            icon: 'hockey'
+            icon: 'linkIconHockey'
         },
         {
             id: 4,
 			name : 'Гандбол',
             link : '/choice-of-country',
-            icon: 'handball'
+            icon: 'linkIconHandball'
         },
         {
             id: 5,
 			name : 'Волейбол',
             link : '/choice-of-country',
-            icon: 'volleyball'
+            icon: 'linkIconVolleyball'
         },
         {
             id: 6,
 			name : 'Бадминтон',
             link : '/choice-of-country',
-            icon: 'badminton'
+            icon: 'linkIconBadminton'
         },
         {
             id: 7,
 			name : 'Бейсбол',
             link : '/choice-of-country',
-            icon: 'baseball'
+            icon: 'linkIconBaseball'
         },
         {
             id: 8,
 			name : 'Австралийский футбол',
             link : '/choice-of-country',
-            icon: 'australian-football'
+            icon: 'linkIconAustralianFootball'
         },
         {
             id: 9,
 			name : 'Автоспорт',
             link : '/choice-of-country',
-            icon: 'autosport'
+            icon: 'linkIconAutosport'
         },
         {
             id: 10,
 			name : 'Американский футбол',
             link : '/choice-of-country',
-            icon: 'american-football'
+            icon: 'linkIconAmericanFootball'
         },
         {
             id: 11,
 			name : 'Водное поло',
             link : '/choice-of-country',
-            icon: 'water-polo'
+            icon: 'linkIconWaterPolo'
         },
         {
             id: 12,
 			name : 'Дартс',
             link : '/choice-of-country',
-            icon: 'darts'
+            icon: 'linkIconDarts'
         },
         {
             id: 13,
 			name : 'Кёрлинг',
             link : '/choice-of-country',
-            icon: 'curling'
+            icon: 'linkIconCurling'
         },
         {
             id: 14,
 			name : 'Настольный теннис',
             link : '/choice-of-country',
-            icon: 'table-tennis'
+            icon: 'linkIconTableTennis'
         },
         {
             id: 15,
 			name : 'Песапалло',
             link : '/choice-of-country',
-            icon: 'pesapallo'
+            icon: 'linkIconPesapallo'
         },
         {
             id: 16,
 			name : 'Пляжный футбол',
             link : '/choice-of-country',
-            icon: 'beach-soccer'
+            icon: 'linkIconBeachSoccer'
         },
         {
             id: 17,
 			name : 'Регби',
             link : '/choice-of-country',
-            icon: 'rugby'
+            icon: 'linkIconRugby'
         },
         {
             id: 18,
 			name : 'Сквош',
             link : '/choice-of-country',
-            icon: 'squash'
+            icon: 'linkIconSquash'
         },
         {
             id: 19,
 			name : 'Снукер',
             link : '/choice-of-country',
-            icon: 'snooker'
+            icon: 'linkIconSnooker'
         },
         {
             id: 20,
 			name : 'Теннис',
             link : '/choice-of-country',
-            icon: 'tennis'
+            icon: 'linkIconTennis'
         },
         {
             id: 21,
 			name : 'Флорбол',
             link : '/choice-of-country',
-            icon: 'floorball'
+            icon: 'linkIconFloorball'
         },
         {
             id: 22,
 			name : 'Футзал',
             link : '/choice-of-country',
-            icon: 'futsal'
+            icon: 'linkIconFutsal'
         },
         {
             id: 23,
 			name : 'Хоккей на траве',
             link : '/choice-of-country',
-            icon: 'field-hockey'
+            icon: 'linkIconFieldHockey'
         },
         {
             id: 24,
 			name : 'Хоккей с мячом',
             link : '/choice-of-country',
-            icon: 'bandy'
+            icon: 'linkIconBandy'
         },
     ];
     
 
 	return (
-		<div className="choice-sport">
-            <div className="choice-sport__wrapper">
-                <h1 className="choice-sport__title">Статистика PARI</h1>
-                <ul className="choice-sport__list">
+		<div className={styles.choiceSport}>
+            <div className={styles.wrapper}>
+                <h1 className={styles.title}>Статистика PARI</h1>
+                <ul className={styles.list}>
                     {arrSports.map((sport, index) => (
-                    <li key={index} className="choice-sport__item">
+                    <li key={index} className={styles.item}>
                         <Link 
                             to={sport.link} 
                             state ={{numRequest: sport.id}} 
-                            className="choice-sport__link">
+                            className={styles.link}>
                             <div className={clsx(
-                                'choice-sport__link-icon',
-                                `choice-sport__link-icon--${sport.icon}`
+                                styles.linkIcon,
+                                styles[sport.icon]
                             )}></div>
-                            <div className="choice-sport__link-name">{sport.name}</div>
+                            <div className={styles.linkName}>{sport.name}</div>
                         </Link>
                     </li>
                 ))}

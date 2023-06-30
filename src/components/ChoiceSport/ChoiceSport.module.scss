@@ -1,0 +1,278 @@
+@import "sass-rem";
+
+.choiceSport {
+	width: 100%;
+	padding: rem(25px);
+}
+
+.wrapper {
+	width: 100%;
+	max-width: rem(1250px);
+	margin: 0 auto;
+	padding-top: rem(25px);
+}
+
+.title {
+	font-weight: 500;
+	font-size: rem(20px);
+	line-height: rem(32px);
+	color: #fff;
+	margin-bottom: rem(50px);
+}
+
+.list {
+	display: flex;
+	gap: rem(10px);
+	flex-wrap: wrap;
+}
+
+.item {
+	width: rem(130px);
+	height: rem(120px);
+}
+
+.link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: rem(130px);
+	height: rem(130px);
+	padding: rem(20px 10px 10px);
+
+	&:hover {
+		background: #F7FF13;
+
+		.linkName {
+			color: #000;
+		}
+
+		.linkIcon {
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.linkIcon {
+	width: rem(40px);
+	height: rem(40px);
+	margin-bottom: rem(21px);
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+		opacity: 0;
+	}
+}
+
+.linkIconFootball {
+	background-image: url("../../assets/images/svg/sports/football.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/football-hover.svg");
+	}
+}
+
+.linkIconBasketball {
+	background-image: url("../../assets/images/svg/sports/basketball.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/basketball-hover.svg");
+	}
+}
+
+.linkIconHockey {
+	background-image: url("../../assets/images/svg/sports/hockey.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/hockey-hover.svg");
+	}
+}
+
+.linkIconHandball {
+	background-image: url("../../assets/images/svg/sports/handball.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/handball-hover.svg");
+	}
+}
+
+.linkIconVolleyball {
+	background-image: url("../../assets/images/svg/sports/volleyball.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/volleyball-hover.svg");
+	}
+}
+
+.linkIconBadminton {
+	background-image: url("../../assets/images/svg/sports/badminton.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/badminton-hover.svg");
+	}
+}
+
+.linkIconBaseball {
+	background-image: url("../../assets/images/svg/sports/baseball.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/baseball-hover.svg");
+	}
+}
+
+.linkIconAustralianFootball {
+	background-image: url("../../assets/images/svg/sports/australian-football.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/australian-football-hover.svg");
+	}
+}
+
+.linkIconAutosport {
+	background-image: url("../../assets/images/svg/sports/autosport.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/autosport-hover.svg");
+	}
+}
+
+.linkIconAmericanFootball {
+	background-image: url("../../assets/images/svg/sports/american-football.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/american-football-hover.svg");
+	}
+}
+
+.linkIconWaterPolo {
+	background-image: url("../../assets/images/svg/sports/water-polo.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/water-polo-hover.svg");
+	}
+}
+
+.linkIconDarts {
+	background-image: url("../../assets/images/svg/sports/darts.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/darts-hover.svg");
+	}
+}
+
+.linkIconCurling {
+	background-image: url("../../assets/images/svg/sports/curling.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/curling-hover.svg");
+	}
+}
+
+.linkIconTableTennis {
+	background-image: url("../../assets/images/svg/sports/table-tennis.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/table-tennis-hover.svg");
+	}
+}
+
+.linkIconPesapallo {
+	background-image: url("../../assets/images/svg/sports/pesapallo.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/pesapallo-hover.svg");
+	}
+}
+
+.linkIconBeachSoccer {
+	background-image: url("../../assets/images/svg/sports/beach-soccer.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/beach-soccer-hover.svg");
+	}
+}
+
+.linkIconRugby {
+	background-image: url("../../assets/images/svg/sports/rugby.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/rugby-hover.svg");
+	}
+}
+
+.linkIconSquash {
+	background-image: url("../../assets/images/svg/sports/squash.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/squash-hover.svg");
+	}
+}
+
+.linkIconSnooker {
+	background-image: url("../../assets/images/svg/sports/snooker.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/snooker-hover.svg");
+	}
+}
+
+.linkIconTennis {
+	background-image: url("../../assets/images/svg/sports/tennis.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/tennis-hover.svg");
+	}
+}
+
+.linkIconFloorball {
+	background-image: url("../../assets/images/svg/sports/floorball.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/floorball-hover.svg");
+	}
+}
+
+.linkIconFutsal {
+	background-image: url("../../assets/images/svg/sports/futsal.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/futsal-hover.svg");
+	}
+}
+
+.linkIconFieldHockey {
+	background-image: url("../../assets/images/svg/sports/field-hockey.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/field-hockey-hover.svg");
+	}
+}
+
+.linkIconBandy {
+	background-image: url("../../assets/images/svg/sports/bandy.svg");
+
+	&:before {
+		background-image: url("../../assets/images/svg/sports/bandy-hover.svg");
+	}
+}
+
+.linkName {
+	text-align: center;
+	font-weight: 400;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	color: #fff;
+}

@@ -1,37 +1,39 @@
 import { Link } from 'react-router-dom';
 
-import Au from '../assets/images/flags/au.png';
-import At from '../assets/images/flags/at.png';
-import Az from '../assets/images/flags/az.png';
-import Al from '../assets/images/flags/al.png';
-import Dz from '../assets/images/flags/dz.png';
-import En from '../assets/images/flags/en.png';
-import Ao from '../assets/images/flags/ao.png';
-import Ad from '../assets/images/flags/ad.png';
-import Ar from '../assets/images/flags/ar.png';
-import Am from '../assets/images/flags/am.png';
-import Bd from '../assets/images/flags/bd.png';
-import Bh from '../assets/images/flags/bh.png';
-import By from '../assets/images/flags/by.png';
-import Be from '../assets/images/flags/be.png';
-import Bg from '../assets/images/flags/bg.png';
-import Bo from '../assets/images/flags/bo.png';
-import Ba from '../assets/images/flags/ba.png';
-import Bw from '../assets/images/flags/bw.png';
-import Br from '../assets/images/flags/br.png';
-import Bi from '../assets/images/flags/bi.png';
-import Hu from '../assets/images/flags/hu.png';
-import Ve from '../assets/images/flags/ve.png';
-import Vn from '../assets/images/flags/vn.png';
-import Gh from '../assets/images/flags/gh.png';
-import Gt from '../assets/images/flags/gt.png';
-import De from '../assets/images/flags/de.png';
-import Gi from '../assets/images/flags/gi.png';
-import Nl from '../assets/images/flags/nl.png';
-import Hn from '../assets/images/flags/hn.png';
-import Hk from '../assets/images/flags/hk.png';
-import Gr from '../assets/images/flags/gr.png';
-import Ge from '../assets/images/flags/ge.png';
+import styles from './ChoiceCountry.module.scss';
+
+import Au from '../../assets/images/flags/au.png';
+import At from '../../assets/images/flags/at.png';
+import Az from '../../assets/images/flags/az.png';
+import Al from '../../assets/images/flags/al.png';
+import Dz from '../../assets/images/flags/dz.png';
+import En from '../../assets/images/flags/en.png';
+import Ao from '../../assets/images/flags/ao.png';
+import Ad from '../../assets/images/flags/ad.png';
+import Ar from '../../assets/images/flags/ar.png';
+import Am from '../../assets/images/flags/am.png';
+import Bd from '../../assets/images/flags/bd.png';
+import Bh from '../../assets/images/flags/bh.png';
+import By from '../../assets/images/flags/by.png';
+import Be from '../../assets/images/flags/be.png';
+import Bg from '../../assets/images/flags/bg.png';
+import Bo from '../../assets/images/flags/bo.png';
+import Ba from '../../assets/images/flags/ba.png';
+import Bw from '../../assets/images/flags/bw.png';
+import Br from '../../assets/images/flags/br.png';
+import Bi from '../../assets/images/flags/bi.png';
+import Hu from '../../assets/images/flags/hu.png';
+import Ve from '../../assets/images/flags/ve.png';
+import Vn from '../../assets/images/flags/vn.png';
+import Gh from '../../assets/images/flags/gh.png';
+import Gt from '../../assets/images/flags/gt.png';
+import De from '../../assets/images/flags/de.png';
+import Gi from '../../assets/images/flags/gi.png';
+import Nl from '../../assets/images/flags/nl.png';
+import Hn from '../../assets/images/flags/hn.png';
+import Hk from '../../assets/images/flags/hk.png';
+import Gr from '../../assets/images/flags/gr.png';
+import Ge from '../../assets/images/flags/ge.png';
 
 type RequestData = {
 	numRequest: number
@@ -368,18 +370,18 @@ function ChoiceCountry(props: RequestData) {
 	const sport = arrSports.filter((sport) => sport.id === props.numRequest);
 
 	return (
-		<div className="choice-country">
-			<div className="choice-country__wrapper">
-				<div className="choice-country__header">
-					<Link className="choice-country__header-btn" to="/choice-of-sport">Choise of Sports</Link>
-					<h1 className="choice-country__header-title">{sport[0].name}</h1>
+		<div className={styles.choiceCountry}>
+			<div className={styles.wrapper}>
+				<div className={styles.header}>
+					<Link className={styles.headerBtn} to="/choice-of-sport">Choise of Sports</Link>
+					<h1 className={styles.headerTitle}>{sport[0].name}</h1>
 				</div>
-				<ul className="choice-country__list">
+				<ul className={styles.list}>
 					{arrCountry.map((country, index) => (
-						<li key={index} className="choice-country__item">
-							<Link className="choice-country__item-link" rel="stylesheet" to="/">
-								<img className="choice-country__item-flag" src={country.flag} alt={country.name} />
-								<div className="choice-country__item-name">{country.name}</div>
+						<li key={index} className={styles.item}>
+							<Link className={styles.itemLink} to="/">
+								<img className={styles.itemFlag} src={country.flag} alt={country.name} />
+								<div className={styles.itemName}>{country.name}</div>
 							</Link>
 						</li>
 					))}
