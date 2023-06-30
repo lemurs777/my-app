@@ -121,12 +121,12 @@
 	line-height: rem(20px);
 	text-transform: uppercase;
 
-	.itemHeaderLabelProgress {
+	&.itemHeaderLabelProgress {
 		background: #535353;
 		color: #fff;
 	}
 
-	.itemHeaderLabelDone {
+	&.itemHeaderLabelDone {
 		background: #F7FF13;
 		color: #000;
 	}

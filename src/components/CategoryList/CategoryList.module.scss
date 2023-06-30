@@ -40,7 +40,7 @@
 	transition: .3s;
 
 	&:hover,
-	.itemBtnActive {
+	&.itemBtnActive {
 		color: #F7FF13;
 	}
 }
