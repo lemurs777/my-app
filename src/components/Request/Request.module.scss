@@ -1,0 +1,250 @@
+@import "sass-rem";
+
+.request {
+	min-height: 100%;
+	background: #1B1B1B;
+	padding: rem(50px 20px 20px);
+	overflow: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	max-width: rem(1180px);
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: rem(40px);
+}
+
+.headerTitle {
+	font-weight: 700;
+	font-size: rem(32px);
+	line-height: rem(38px);
+	color: #fff;
+	padding-left: rem(55px);
+	position: relative;
+	margin-right: auto;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		height: rem(48px);
+		width: rem(48px);
+		background: url("../../assets/images/svg/requests-menu/request.svg") no-repeat 50% 50% /contain;
+		transform: translateY(-50%);
+	}
+}
+
+.headerBtn {
+	font-weight: 700;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	padding: rem(7px 12px);
+	background: #FAFE13;
+	border-radius: rem(3px);
+	cursor: pointer;
+}
+
+.top {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(24px);
+}
+
+.topBtn {
+	width: rem(48px);
+	height: rem(48px);
+	background: #3D3D3D;
+	border-radius: rem(10px);
+	position: relative;
+	cursor: pointer;
+	margin-right: rem(15px);
+	font-size: 0;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: rem(9px);
+		height: rem(16px);
+		background: url("../../assets/images/svg/profile-left.svg") no-repeat 50% 50% /contain;
+		transition: .3s;
+		opacity: .6;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.topTitle {
+	font-weight: 700;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+}
+
+.content {
+	flex-grow: 1;
+}
+
+.contentTop {
+	position: relative;
+	padding-bottom: rem(20px);
+	color: #fff;
+
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: -100%;
+		right: -100%;
+		height: 1px;
+		background: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.contentText {
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: 1.4;
+	margin-bottom: rem(10px);
+	max-width: rem(774px);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contentLabelWrapper {
+	display: flex;
+	gap: rem(20px);
+	margin-bottom: rem(10px);
+	align-items: center;
+}
+
+.contentLabelText {
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: 1.4;
+}
+
+.label {
+	min-width: rem(120px);
+	background: #535353;
+	border-radius: rem(3px);
+	padding: rem(5px 15px);
+	text-align: center;
+	font-weight: 700;
+	font-size: rem(17px);
+	line-height: rem(20px);
+	text-transform: uppercase;
+}
+
+.labelProgress {
+	background: #535353;
+	color: #fff;
+}
+
+.labelDone {
+	background: #F7FF13;
+	color: #000;
+}
+
+.contentPhotoWrapper {
+	display: flex;
+	gap: rem(10px);
+	margin-bottom: rem(10px);
+}
+
+.contentPhoto {
+	width: rem(80px);
+	height: rem(80px);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+
+	&.contentPhotoOne {
+		background-image: url("../../assets/images/requests/photo-1.jpg");
+	}
+	
+	&.contentPhotoTwo {
+		background-image: url("../../assets/images/requests/photo-2.jpg");
+	}
+	
+	&.contentPhotoThree {
+		background-image: url("../../assets/images/requests/photo-3.jpg");
+	}
+}
+
+.messagesWrapper {
+	max-width: rem(1100px);
+	padding: rem(10px);
+	margin: 0 auto;
+}
+
+.messagesDate {
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: 1.4;
+	color: #9E9E9E;
+	text-align: center;
+	margin-bottom: rem(30px);
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	gap: rem(40px);
+	padding-right: rem(70px);
+}
+	
+.message {
+	display: flex;
+	padding-right: rem(50px);
+
+	&.messageAnswer {
+		justify-content: flex-end;
+		padding-right: rem(0);
+		padding-left: rem(50px);
+	}
+}
+
+.messageContent {
+	max-width: rem(528px);
+}
+
+.messageText {
+	background: #535353;
+	border-radius: rem(8px);
+	padding: rem(20px);
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: 1.4;
+	color: #fff;
+	margin-bottom: rem(5px);
+}
+
+.messageTime {
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: 1.4;
+	color: #fff;
+	text-align: right;
+}

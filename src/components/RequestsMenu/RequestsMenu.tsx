@@ -1,66 +1,68 @@
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
+import styles from './RequestsMenu.module.scss';
+
 function RequestsMenu() {
 
 	const arrLinks = [
 		{
 			name: 'Мой профиль',
 			link: '/',
-			icon: 'profile',
+			icon: 'linkIconProfile',
 			active: false,
 		},
 		{
 			name: 'Пополнение и выплаты',
 			link: '/',
-			icon: 'wallet',
+			icon: 'linkIconWallet',
 			active: false,
 		},
 		{
 			name: 'История операций',
 			link: '/',
-			icon: 'story',
+			icon: 'linkIconStory',
 			active: false,
 		},
 		{
 			name: 'Запросы',
 			link: '/requests/',
-			icon: 'requests',
+			icon: 'linkIconRequests',
 			active: true,
 		},
 		{
 			name: 'Бонусы и акции',
 			link: '/',
-			icon: 'bonus',
+			icon: 'linkIconBonus',
 			active: false,
 		},
 		{
 			name: 'Идентификация',
 			link: '/',
-			icon: 'identification',
+			icon: 'linkIconIdentification',
 			active: false,
 		},
 		{
 			name: 'Ответственная игра',
 			link: '/',
-			icon: 'responsibility',
+			icon: 'linkIconResponsibility',
 			active: false,
 		},
 	];
 	
 	return (
-		<ul className="requests-menu">
+		<ul className={styles.requestsMenu}>
 			{arrLinks.map((item, index) => (
-			<li key={index} className="requests-menu__item">
+			<li key={index} className={styles.item}>
 				<Link to={item.link} className={clsx(
-					'requests-menu__link',
-					{'requests-menu__link--active': item.active}
+					styles.link,
+					{[styles.linkActive] : item.active}
 				)}>
 					<div className={clsx(
-						'requests-menu__link-icon',
-						`requests-menu__link-icon--${item.icon}`
+						styles.linkIcon,
+						styles[item.icon]
 					)}></div>
-					<div className="requests-menu__link-text">{item.name}</div>
+					<div className={styles.linkText}>{item.name}</div>
 				</Link>
 			</li>
 			))}

@@ -1,0 +1,117 @@
+@import "sass-rem";
+
+.requestsMenu {
+	background: rgba(255, 255, 255, 0.21);
+	display: flex;
+	flex-direction: column;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	padding: rem(5px 10px);
+	gap: rem(20px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #ADADAD;
+
+	&:hover,
+	&.linkActive {
+		color: #F7FF13;
+
+		.linkIcon {
+			background: #F7FF13;
+
+			&:before {
+				opacity: 1; 
+			}
+		}
+	}
+
+	&.linkActive {
+		font-weight: 700;
+		pointer-events: none;
+	}
+}
+
+.linkIcon {
+	width: rem(48px);
+	height: rem(48px);
+	border-radius: rem(13px);
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+		opacity: 0;
+	}
+
+	&.linkIconProfile {
+		background-image: url("../../assets/images/svg/requests-menu/profile.svg");
+
+		&:before {
+			background-image: url("../../assets/images/svg/requests-menu/profile-hover.svg");
+		}
+	}
+
+	&.linkIconWallet {
+		background-image: url("../../assets/images/svg/requests-menu/wallet.svg");
+
+		&:before {
+			background-image: url("../../assets/images/svg/requests-menu/wallet-hover.svg");
+		}
+	}
+
+	&.linkIconStory {
+		background-image: url("../../assets/images/svg/requests-menu/story.svg");
+
+		&:before {
+			background-image: url("../../assets/images/svg/requests-menu/story-hover.svg");
+		}
+	}
+
+	&.linkIconRequests {
+		background-image: url("../../assets/images/svg/requests-menu/request.svg");
+
+		&:before {
+			background-image: url("../../assets/images/svg/requests-menu/request-hover.svg");
+		}
+	}
+
+	&.linkIconBonus {
+		background-image: url("../../assets/images/svg/requests-menu/bonus.svg");
+
+		&:before {
+			background-image: url("../../assets/images/svg/requests-menu/bonus-hover.svg");
+		}
+	}
+
+	&.linkIconIdentification {
+		background-image: url("../../assets/images/svg/requests-menu/identification.svg");
+
+		&:before {
+			background-image: url("../../assets/images/svg/requests-menu/identification-hover.svg");
+		}
+	}
+
+	&.linkIconResponsibility {
+		background-image: url("../../assets/images/svg/requests-menu/responsibility.svg");
+
+		&:before {
+			background-image: url("../../assets/images/svg/requests-menu/responsibility-hover.svg");
+		}
+	}
+}

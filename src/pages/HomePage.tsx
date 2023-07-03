@@ -1,5 +1,5 @@
 import { 
-	MainBanner, 
+	MainSlider, 
 	Sports,
 	Broadcast,
 	Multiple, 
@@ -11,7 +11,7 @@ function HomePage(){
 		<>
 			<Menu />
 			<main className="page page--index scroll">
-				<MainBanner />
+				<MainSlider />
 				<Sports />
 			</main>
 			<aside className="aside aside--index scroll">

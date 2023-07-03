@@ -6,7 +6,9 @@ import "swiper/css/navigation";
 
 import { Autoplay, Navigation } from "swiper";
 
-import HelloBanner1 from '../assets/images/hello-banner-x2.min.png';
+import HelloBanner1 from '../../assets/images/hello-banner-x2.min.png';
+
+import styles from './MainSlider.module.scss';
 
 function MainSlider() {
 
@@ -41,7 +43,7 @@ function MainSlider() {
 	];
 
 	return (
-		<section className="main-slider">
+		<section className={styles.mainSlider}>
 			<Swiper
 				slidesPerView={1}
 				loop={true} 
@@ -53,23 +55,23 @@ function MainSlider() {
                 navigation={true}
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}
-				className="main-slider__swiper"
+				className={clsx(styles.swiper, 'main-slider')}
 			>
 				{banners.map((banner, index) => (
 					<SwiperSlide key={index}>
-						<div className="main-slider__img-wrapper">
-							<img className="main-slider__img" src={banner.img} alt={banner.alt} />
+						<div className={styles.imgWrapper}>
+							<img className={styles.img} src={banner.img} alt={banner.alt} />
 						</div>
-						<div className="main-slider__info-wrapper">
-							<ul className="main-slider__info-list">
+						<div className={styles.infoWrapper}>
+							<ul className={styles.infoList}>
 								{banner.infoItems.map((infoItem, index) => (
-									<li key={index} className="main-slider__info-item">
+									<li key={index} className={styles.infoItem}>
 										<button className={clsx(
-											'main-slider__info-btn',
-											{'main-slider__info-btn--active': infoItem.isActive}
+											styles.infoBtn,
+											{[styles.infoBtnActive] : infoItem.isActive}
 										)}>
-											<span className="main-slider__info-name">{infoItem.name}</span>
-											<span className="main-slider__info-coefficient">{infoItem.coefficient}</span>
+											<span className={styles.infoName}>{infoItem.name}</span>
+											<span className={styles.infoCoefficient}>{infoItem.coefficient}</span>
 										</button>
 									</li>
 								))}

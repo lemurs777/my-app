@@ -1,9 +1,11 @@
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 
-import Modal from "./Modal";
-import ModalRequest from './ModalRequest';
-import useModal from "../hooks/useModal";
+import Modal from "../Modal";
+import ModalRequest from '../ModalRequest';
+import useModal from "../../hooks/useModal";
+
+import styles from './Request.module.scss';
 
 type RequestData = {
 	numRequest: number
@@ -110,51 +112,51 @@ function Request(props: RequestData) {
 	const arrRequestsFilter = arrRequests.filter((info) => info.id === props.numRequest);
 	
 	return (
-		<div className="request">
-			<div className="request__wrapper">
-				<div className="request__header">
-					<h1 className="request__header-title">Запросы</h1>
-					<button className="request__header-btn" onClick={toggleModal}>+ Новый запрос</button>
+		<div className={styles.request}>
+			<div className={styles.wrapper}>
+				<div className={styles.header}>
+					<h1 className={styles.headerTitle}>Запросы</h1>
+					<button className={styles.headerBtn} onClick={toggleModal}>+ Новый запрос</button>
 				</div>
-				<div className="request__top">
-					<Link className="request__top-btn" to="/requests/">Requests</Link>
-					<div className="request__top-title">Основная информация</div>
+				<div className={styles.top}>
+					<Link className={styles.topBtn} to="/requests/">Requests</Link>
+					<div className={styles.topTitle}>Основная информация</div>
 				</div>
 				{arrRequestsFilter.map((item, index) => (
-					<div key={index} className="request__content">
-						<div key={index} className="request__content-top">
-							<p className="request__content-text">Номер обращения: {item.number}</p>
-							<p className="request__content-text">Время создания: {item.date} {item.time}</p>
-							<div className="request__content-label-wrapper">
-								<p className="request__content-label-text">Статус:</p>
+					<div key={index} className={styles.content}>
+						<div key={index} className={styles.contentTop}>
+							<p className={styles.contentText}>Номер обращения: {item.number}</p>
+							<p className={styles.contentText}>Время создания: {item.date} {item.time}</p>
+							<div className={styles.contentLabelWrapper}>
+								<p className={styles.contentLabelText}>Статус:</p>
 								{ (item.label === 'progress') ? (
-									<div className="request__label request__label--progress">В работе</div>
+									<div className={clsx(styles.label, styles.labelProgress)}>В работе</div>
 									) : (item.label === 'done') ? (
-										<div className="request__label request__label--done">Решено</div>
+										<div className={clsx(styles.label, styles.labelDone)}>Решено</div>
 									) : null
 								}
 							</div>
-							<p className="request__content-text">Электронная почта: {item.email}</p>
-							<p className="request__content-text">Опишите вашу проблему: {item.request}</p>
-							<p className="request__content-text">Приклепленные фото:</p>
-							<div className="request__content-photo-wrapper">
-								<div className="request__content-photo request__content-photo--one"></div>
-								<div className="request__content-photo request__content-photo--two"></div>
-								<div className="request__content-photo request__content-photo--three"></div>
+							<p className={styles.contentText}>Электронная почта: {item.email}</p>
+							<p className={styles.contentText}>Опишите вашу проблему: {item.request}</p>
+							<p className={styles.contentText}>Приклепленные фото:</p>
+							<div className={styles.contentPhotoWrapper}>
+								<div className={clsx(styles.contentPhoto, styles.contentPhotoOne)}></div>
+								<div className={clsx(styles.contentPhoto, styles.contentPhotoTwo)}></div>
+								<div className={clsx(styles.contentPhoto, styles.contentPhotoThree)}></div>
 							</div>
-							<p className="request__content-text">История разговора:</p>
+							<p className={styles.contentText}>История разговора:</p>
 						</div>
-						<div className="request__messages-wrapper">
-							<div className="request__messages-date">{item.messagesInfo.date} {item.messagesInfo.time}</div>
-							<div className="request__messages">
+						<div className={styles.messagesWrapper}>
+							<div className={styles.messagesDate}>{item.messagesInfo.date} {item.messagesInfo.time}</div>
+							<div className={styles.messages}>
 								{item.messagesInfo.messages.map((message, index) => (
 									<div key={index} className={clsx(
-										'request__message',
-										{'request__message--answer': !message.user}
+										styles.message,
+										{[styles.messageAnswer]: !message.user}
 									)}>
-										<div className="request__message-content">
-											<div className="request__message-text">{message.message}</div>
-											<div className="request__message-time">{message.time}</div>
+										<div className={styles.messageContent}>
+											<div className={styles.messageText}>{message.message}</div>
+											<div className={styles.messageTime}>{message.time}</div>
 										</div>
 									</div>
 								))}
