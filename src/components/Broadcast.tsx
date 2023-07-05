@@ -15,41 +15,6 @@ function Broadcast() {
 		},
 	];
 
-	/*const liveBestArr = [
-		{
-			img: broadcastLiveBest1,
-			alt: 'Best Moment',
-		},
-		{
-			img: broadcastLiveBest2,
-			alt: 'Best Moment',
-		},
-		{
-			img: broadcastLiveBest3,
-			alt: 'Best Moment',
-		},
-		{
-			img: broadcastLiveBest2,
-			alt: 'Best Moment',
-		},
-		{
-			img: broadcastLiveBest1,
-			alt: 'Best Moment',
-		},
-		{
-			img: broadcastLiveBest3,
-			alt: 'Best Moment',
-		},
-		{
-			img: broadcastLiveBest2,
-			alt: 'Best Moment',
-		},
-		{
-			img: broadcastLiveBest3,
-			alt: 'Best Moment',
-		},
-	];*/
-
 	return (
 		<div className="broadcast">
 			<div className="broadcast__header">

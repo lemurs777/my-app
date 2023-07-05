@@ -9,7 +9,9 @@ type MyComponentProps = React.PropsWithChildren<{}>
 function AppsLayout( {children}:  MyComponentProps) {
 	return (
 		<>
-			<HeaderTop />
+			<header className="header">
+				<HeaderTop />
+			</header>
             <main className="page page--apps scroll">
                 {children}
                 <Outlet />

@@ -7,10 +7,9 @@
 @import "helpers/typography";
 @import "helpers/default";
 @import "helpers/pages";
+@import "helpers/sliders";
 
 @import "components/header";
-@import "components/header-top";
-@import "components/main-slider";
 @import "components/sports";
 @import "components/broadcast";
 @import "components/multiple";
@@ -27,7 +26,6 @@
 @import "components/statistics-six";
 @import "components/statistics-seven";
 @import "components/game-info";
-@import "components/game-banner";
 @import "components/return";
 @import "components/positions-chart";
 @import "components/requests-menu";
