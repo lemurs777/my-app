@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from "react-router-dom";
 import { 
-	HeaderTop,
+	Header,
 } from '../components/';
 
 type MyComponentProps = React.PropsWithChildren<{}>
@@ -9,9 +9,7 @@ type MyComponentProps = React.PropsWithChildren<{}>
 function AppsLayout( {children}:  MyComponentProps) {
 	return (
 		<>
-			<header className="header">
-				<HeaderTop />
-			</header>
+			<Header showBottom={false}/>
             <main className="page page--apps scroll">
                 {children}
                 <Outlet />

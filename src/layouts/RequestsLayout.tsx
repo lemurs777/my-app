@@ -11,7 +11,7 @@ type MyComponentProps = React.PropsWithChildren<{}>
 function RequestsLayout( {children}:  MyComponentProps) {
 	return (
 		<>
-			<Header />
+			<Header showBottom={true} />
             <main className="page page--requests">
 				<div className="column-left column-left--requests">
 					<Balance />

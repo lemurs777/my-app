@@ -9,7 +9,7 @@ type MyComponentProps = React.PropsWithChildren<{}>
 function PromotionsLayout( {children}:  MyComponentProps) {
 	return (
 		<>
-			<Header />
+			<Header showBottom={true} />
 			<main className="page page--promotions scroll">
 				{children}
 				<Outlet />

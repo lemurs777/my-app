@@ -1,0 +1,300 @@
+@import "sass-rem";
+
+.eventsInfo {
+	max-width: rem(1100px);
+	width: 100%;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+}
+
+.live {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.top {
+	width: 100%;
+	position: relative;
+	padding: rem(15px 20px 17px);
+	background: #177d51 url("../../assets/images/events-info-live-top-bg-x2.min.jpg") no-repeat 50% 50% /cover;
+	height: rem(200px);
+	display: flex;
+	justify-content: center;
+	gap: rem(50px);
+}
+
+.topLink {
+	display: inline-block;
+	position: absolute;
+	top: rem(20px);
+	width: rem(48px);
+	height: rem(48px);
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(8.5px);
+	border-radius: rem(16px);
+	font-size: 0;
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: rem(18px);
+		height: rem(18px);
+		transform: translate(-50%, -50%);
+		transition: .3s;
+		opacity: .6;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+
+	&.topLinkHome {
+		left: rem(20px);
+		&:before {
+			background-image: url("../../assets/images/svg/events-info-left.svg");
+		}
+	}
+
+	&.topLinkAdd {
+		right: rem(20px);
+		&:before {
+			background-image: url("../../assets/images/svg/events-info-add.svg");
+		}
+	}
+}
+
+.topLeft,
+.topRight {
+	width: 100%;
+	max-width: rem(300px);
+	display: flex;
+	flex-direction: column;
+}
+
+.topLeft {
+	align-items: flex-end;
+}
+
+.topRight {
+	align-items: flex-start;
+}
+
+.topCenter {
+	width: 100%;
+	max-width: rem(70px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: rem(13px);
+}
+
+.topCenterTime {
+	padding: rem(5px 15px 3px);
+	background: #E02020;
+	border-radius: rem(20px);
+	font-weight: 500;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	color: #fff;
+	margin-bottom: rem(21px);
+}
+
+.topCenterScore {
+	font-weight: 500;
+	font-size: rem(29px);
+	line-height: rem(34px);
+	color: #fff;
+	margin-bottom: rem(10px);
+}
+
+.topCenterHalf {
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #ACACAC;
+}
+
+.topLogo {
+	display: block;
+	width: rem(52px);
+	height: rem(52px);
+	margin-bottom: rem(10px);
+}
+
+.topName {
+	font-weight: 500;
+	font-size: rem(24px);
+	line-height: rem(28px);
+	color: #fff;
+	margin-bottom: rem(10px);
+}
+
+.topStatistics {
+	display: flex;
+	gap: rem(16px);
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #B3B3B3;
+	text-align: center;
+}
+
+.topStatistic {
+	padding-top: rem(28px);
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: rem(50%);
+		width: rem(24px);
+		height: rem(24px);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+		transform: translateX(-50%);
+	}
+
+	&.topStatisticYellow {
+		&:before {
+			background-image: url("../../assets/images/svg/events-info-yellow.svg");
+		}
+	}
+
+	&.topStatisticRed {
+		&:before {
+			background-image: url("../../assets/images/svg/events-info-red.svg");
+		}
+	}
+
+	&.topStatisticCorner {
+		&:before {
+			background-image: url("../../assets/images/svg/events-info-corner.svg");
+		}
+	}
+
+	&.topStatisticShotOnGoal {
+		&:before {
+			background-image: url("../../assets/images/svg/events-info-shot-on-goal.svg");
+		}
+	}
+}
+
+.bottom {
+	display: flex;
+	background: #222222;
+}
+
+.bottomUniforms {
+	width: rem(124px);
+	border-right: 1px solid #2E2E2E;
+	display: flex;
+	flex-direction: column;
+	gap: rem(27px);
+	padding: rem(24px 30px 24px 51px);
+}
+
+.bottomUniformName {
+	font-weight: 500;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #8D8D8D;
+	text-transform: uppercase;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: rem(-36px);
+		transform: translateY(-50%);
+		width: rem(24px);
+		height: rem(24px);
+		background: url("../../assets/images/svg/events-info-uniform.svg") no-repeat 50% 50% /contain;
+	}
+}
+
+.bottomTimelineWrapper {
+	width: calc(100% - 124rem);
+	flex-grow: 1;
+	overflow-x: auto;
+
+	&::-webkit-scrollbar {
+		height: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+		cursor: pointer;
+	}
+}
+
+.bottomTimeline {
+	width: rem(966px);
+	height: rem(120px);
+	position: relative;
+	background: url("../../assets/images/svg/events-time.svg") no-repeat 50% 50% /contain;
+}
+
+.bottomGoal {
+	content: "";
+	position: absolute;
+	top: rem(12px);
+	width: rem(30px);
+	height: rem(48px);
+	background: url("../../assets/images/svg/events-goal.svg") no-repeat 50% 50% /contain;
+
+	&:nth-child(1) {
+		left: rem(100px);
+	}
+	&:nth-child(2) {
+		left: rem(430px);
+	}
+	&:nth-child(3) {
+		left: rem(730px);
+	}
+	&:nth-child(4) {
+		left: rem(220px);
+	}
+	&:nth-child(5) {
+		left: rem(550px);
+	}
+	&:nth-child(6) {
+		left: rem(880px);
+	}
+
+	&.bottomGoalBottom {
+		transform-origin: 50% 100%;
+		transform: rotate(180deg);
+	}
+}

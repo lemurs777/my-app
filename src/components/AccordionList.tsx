@@ -25,16 +25,16 @@ function AccordionList (
     };
 
 return (
-	<ul className="events-info__accordion">
-			{dataItems.map((item, idx) => (
-				<AccordionItem
-					key={idx}
-					data={item}
-					isOpen={idx === currentIdx}
-					btnOnClick={() => btnOnClick(idx)}
-				/>
-			))}
-	  	</ul>
+	<ul className="accordion">
+        {dataItems.map((item, idx) => (
+            <AccordionItem
+                key={idx}
+                data={item}
+                isOpen={idx === currentIdx}
+                btnOnClick={() => btnOnClick(idx)}
+            />
+        ))}
+    </ul>
 );
 }
 

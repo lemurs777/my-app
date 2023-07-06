@@ -15,6 +15,7 @@ export { default as SiteMap } from './SiteMap';
 
 export { default as Header } from './Header';
 export { default as HeaderTop } from './HeaderTop';
+export { default as HeaderBottom } from './HeaderBottom';
 export { default as MainSlider } from './MainSlider';
 export { default as Sports } from './Sports';
 export { default as Broadcast } from './Broadcast';
