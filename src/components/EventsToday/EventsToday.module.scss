@@ -1,0 +1,173 @@
+@import "sass-rem";
+
+.eventsToday {
+	max-width: rem(332px);
+	width: 100%;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+}
+
+.content {
+	background: #000;
+	padding: rem(30px 0);
+}
+
+.title {
+	padding: rem(0 15px);
+	font-weight: 700;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.leagueHeader {
+	display: flex;
+	align-items: center;
+	padding: rem(0 15px);
+	margin-bottom: rem(15px);
+	margin-top: rem(30px);
+}
+
+.leagueName {
+	position: relative;
+	padding-left: rem(37px);
+	font-weight: 500;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	margin-right: auto;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: rem(24px);
+		height: rem(16px);
+		transform: translateY(-50%);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+	}
+
+	&.leagueNameBundesliga {
+		&:before {
+			background-image: url("../../assets/images/svg/events-flag-bundesliga.svg");
+		}
+	}
+
+	&.leagueNameChampionsLeague {
+		&:before {
+			background-image: url("../../assets/images/svg/events-flag-champions-league.svg");
+		}
+	}
+}
+
+.leagueCount {
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #838383;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	color: #969696;
+	padding: rem(15px);
+	border-bottom: 2px solid #181818;
+	cursor: pointer;
+	transition: .3s;
+
+	&:hover,
+	&.itemActive {
+		border-bottom: 2px solid transparent;
+		background: linear-gradient(90deg, #262626 0%, #000000 100%);
+		color: #fff;
+
+		.events-today__coefficient {
+			background: #343434;
+		}
+	}
+}
+
+.about {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(13px);
+}
+
+.aboutNames {
+	display: flex;
+	flex-direction: column;
+	gap: rem(6px);
+	font-weight: 400;
+	font-size: rem(19px);
+	line-height: rem(22px);
+	margin-right: auto;
+}
+
+.aboutInfo {
+	display: flex;
+	flex-direction: column;
+	gap: rem(6px);
+	text-align: right;
+	margin-left: rem(15px);
+}
+
+.aboutScore {
+	font-weight: 500;
+	font-size: rem(20px);
+	line-height: rem(23px);
+}
+
+.aboutWrapper {
+	font-weight: 400;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	display: flex;
+	gap: rem(5px);
+}
+
+.aboutHalf {
+	color: #969696;
+}
+
+.coefficients {
+	display: flex;
+	gap: rem(4px);
+}
+
+.coefficient {
+	width: 32%;
+	display: flex;
+	background: #202020;
+	padding: rem(9px 12px 9px 10px);
+	font-weight: 700;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+}
+
+.coefficientName {
+	color: #8C8C8C;
+	margin-right: auto;
+	font-weight: 500;
+}

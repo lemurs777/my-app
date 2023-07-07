@@ -38,6 +38,10 @@ function SiteMap() {
             link : '/events',
         },
         {
+            name: 'Событие - Детали',
+            link: '/events/detailed'
+        },
+        {
             name: 'Акции - разводящая',
             link: '/promotions',
         },
@@ -97,10 +101,6 @@ function SiteMap() {
             name: 'Отдельный запрос',
             link: '/requests/request',
             param: 1
-        },
-        {
-            name: 'Событие - Детали',
-            link: '/events/detailed'
         },
         {
             name: 'Выбор вида спорта',

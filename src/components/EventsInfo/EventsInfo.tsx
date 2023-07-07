@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import {  
 	CategoryList,
-    AccordionList,
+    EventsList,
 } from '../';
 
 import Logo1 from '../../assets/images/events-info-live-logo-fc-bayern-x2.min.png';
@@ -27,7 +27,8 @@ function EventsInfo(
 					name: string,
 					countOne: string,
 					countTwo: string | null,
-					class: string,
+					up: boolean,
+					down: boolean,
 				}>,
 			}>,
 		}>,
@@ -84,7 +85,7 @@ return (
 			</div>
 			<CategoryList categoryList={dataCategory}/>
 		</div>
-		<AccordionList dataItems={dataItems}/>
+		<EventsList dataList={{dataItems}}/>
 	</div>
 );
 }
