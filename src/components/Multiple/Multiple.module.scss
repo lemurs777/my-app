@@ -1,0 +1,387 @@
+@import "sass-rem";
+
+.multiple {
+	background: #0D0D0D;
+	padding-bottom: rem(15px);
+}
+
+.lightBg {
+	background: #1A1A1A;
+	padding: rem(15px 7px 54px);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	background: #1A1A1A;
+	padding: rem(0 8px);
+}
+
+.headerTitle {
+	font-weight: 500;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.headerBtn {
+	display: inline-block;
+	position: relative;
+	font-size: 0;
+	width: rem(16px);
+	height: rem(20px);
+	cursor: pointer;
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-repeat: no-repeat;
+		background-size: contain;
+		transition: .3s;
+		opacity: .6;
+	}
+
+	&.headerBtnSettings {
+		&:before {
+			width: rem(20px);
+			height: rem(20px);
+			background-image: url("../../assets/images/svg/multiple-settings.svg");
+		}
+	}
+
+	&.headerBtnDelete {
+		&:before {
+			width: rem(20px);
+			height: rem(20px);
+			background-image: url("../../assets/images/svg/multiple-delete.svg");
+		}
+	}
+}
+
+.list {
+	margin-top: rem(38px);
+	display: flex;
+	flex-direction: column;
+	gap: rem(5px);
+}
+
+.item {
+	background: #262626;
+}
+
+.itemTop {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #303030;
+	padding: rem(11px 12px);
+	gap: rem(10px);
+}
+
+.itemTopBtn {
+	display: inline-block;
+	position: relative;
+	font-size: 0;
+	cursor: pointer;
+	border-radius: 2px;
+	width: rem(20px);
+	height: rem(20px);
+
+	&:before {
+		content :"";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		transform: translate(-50%, -50%);
+		transition: .3s;
+		opacity: .4;
+	}
+
+	&.itemTopBtnCheck {
+		background: #9E9E9E;
+		&:before {
+			width: rem(10px);
+			height: rem(8px);
+			background-image: url("../../assets/images/svg/multiple-go.svg");
+		}
+	}
+
+	&.itemTopBtnClose {
+		&:before {
+			width: rem(14px);
+			height: rem(14px);
+			background-image: url("../../assets/images/svg/multiple-close.svg");
+		}
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.itemTopNames {
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: rem(16px);        
+	color: #fff;
+	margin-right: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.itemBottom {
+	display: flex;
+	align-items: center;
+	gap: rem(25px);
+	padding: rem(12px 12px 12px 42px);
+}
+
+.itemBottomLeft {
+	display: flex;
+	flex-direction: column;
+	gap: rem(3px);
+	max-width: calc(100% - rem(85px));
+}
+
+.itemBottomLeftTitle {
+	font-weight: 500;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	color: #fff;
+	max-width: 100%;
+
+	&.itemBottomLeftTitleLive {
+		position: relative;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: rem(-28px);
+			transform: translateY(-50%);
+			width: rem(16px);
+			height: rem(16px);
+			border-radius: 50%;
+			background: #E71E30;
+			border: rem(4px) solid #77222A;
+		}
+	}
+}
+
+.itemBottomLeftInfo {
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	color: #909090;
+	max-width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.itemBottomRight {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: rem(60px);
+	gap: rem(3px);
+	margin-left: auto;
+	text-align: right;
+}
+
+.itemBottomRightCoefficient {
+	font-weight: 500;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	position: relative;
+
+	&.up {
+		&:before {
+			content: "";
+			position: absolute;
+			top: rem(-2px);
+			left: rem(-20px);
+			height: 0;
+			width: 0;
+			border: rem(7px) solid transparent;
+			border-bottom-color: #1D7E3A;
+		}
+	}
+
+	&.down {
+		&:before {
+			content: "";
+			position: absolute;
+			top: rem(8px);
+			left: rem(-20px);
+			height: 0;
+			width: 0;
+			border: rem(7px) solid transparent;
+			border-top-color: #D60019;
+		}
+	}
+}
+
+.itemBottomRightOldCoefficient {
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	color: #909090;
+	text-decoration-line: line-through;
+}
+
+.totalWrapper {
+	padding: rem(0 7px);
+	margin: rem( -38px 0 16px);
+}
+
+.totalContent {
+	background: #1C1C1C;
+}
+
+.totalBonus {
+	display: flex;
+	align-items: center;
+	padding: rem(10px 12px 10px 41px);
+}
+
+.totalBonusText {
+	font-weight: 400;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	color: #999;
+	position: relative;
+	margin-right: auto;
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: rem(18px);
+		height: rem(18px);
+		left: rem(-30px);
+		top: 50%;
+		transform: translateY(-50%);
+		background: url("../../assets/images/svg/multiple-bonus.svg") no-repeat 50% 50% /contain;
+	}
+}
+
+.totalBonusCount {
+	font-weight: 500;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	color: #fff;
+}
+
+.total {
+	display: flex;
+	align-items: center;
+	padding: rem(10px 12px);
+}
+
+.totalText {
+	font-weight: 400;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	color: #999;
+	margin-right: auto;
+}
+
+.totalCount {
+	font-weight: 500;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	color: #fff;
+}
+
+.betPayout {
+	margin-bottom: rem(21px);
+	display: flex;
+	gap: rem(4px);
+	padding: rem(0 15px);
+}
+
+.bet {
+	width: calc(50%);
+}
+
+.payout {
+	width: calc(50%);
+}
+
+.betText,
+.payoutText {
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	text-align: center;
+	color: #9E9E9E;
+	margin-bottom: rem(13px);
+}
+
+.betCount,
+.payoutCount {
+	font-weight: 700;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	text-align: center;
+	padding: rem(11px 15px);
+	background: #1C1C1C;
+	position: relative;
+}
+
+.payoutCount {
+	color: #fff;
+	border: 1px solid #1C1C1C;
+}
+
+.betCount {
+	color: #F7FF13;
+	border: 1px solid #2E2E2E;
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: rem(24px);
+		height: rem(24px);
+		top: 50%;
+		right: rem(-14px);
+		transform: translateY(-50%);
+		background: url("../../assets/images/svg/multiple-bet.svg") no-repeat 50% 50% /contain;
+		z-index: 2;
+	}
+}
+
+.btnBetWrapper {
+	padding: rem(0 15px);
+}
+
+.btnBet {
+	display: inline-block;
+	width: 100%;
+	padding: rem(13px 20px);
+	font-weight: 700;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	text-align: center;
+	color: #1A1A1A;
+	text-transform: uppercase;
+	cursor: pointer;
+	background: #F7FF13;
+	border-radius: rem(2px);
+}

@@ -17,27 +17,27 @@ function MainSlider() {
 			img: HelloBanner1,
 			alt: 'Banner 1',
 			infoItems: [
-				{ name: 'ARSENAL LONDON', coefficient: 2.65 },
-				{ name: 'DRAW', coefficient: 3.65 },
-				{ name: 'LIVERPOOL', coefficient: 1.65, isActive: true },
+				{ name: 'Арсенал Лондон', coefficient: 2.65 },
+				{ name: 'Ничья', coefficient: 3.65 },
+				{ name: 'Ливерпуль', coefficient: 1.65, isActive: true },
 			],
 		},
 		{
 			img: HelloBanner1,
 			alt: 'Banner 2',
 			infoItems: [
-				{ name: 'ARSENAL LONDON', coefficient: 2.65 },
-				{ name: 'DRAW', coefficient: 3.65 },
-				{ name: 'LIVERPOOL', coefficient: 1.65, isActive: true },
+				{ name: 'Арсенал Лондон', coefficient: 2.65 },
+				{ name: 'Ничья', coefficient: 3.65 },
+				{ name: 'Ливерпуль', coefficient: 1.65, isActive: true },
 			],
 		},
 		{
 			img: HelloBanner1,
 			alt: 'Banner 3',
 			infoItems: [
-				{ name: 'ARSENAL LONDON', coefficient: 2.65 },
-				{ name: 'DRAW', coefficient: 3.65 },
-				{ name: 'LIVERPOOL', coefficient: 1.65, isActive: true },
+				{ name: 'Арсенал Лондон', coefficient: 2.65 },
+				{ name: 'Ничья', coefficient: 3.65 },
+				{ name: 'Ливерпуль', coefficient: 1.65, isActive: true },
 			],
 		},
 	];

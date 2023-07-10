@@ -1,13 +1,16 @@
 .sports {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
     max-width: rem(1442px);
 
     &__list {
+        width: 100%;
         display: flex;
         align-items: center;
         gap: rem(40px);
         background: linear-gradient(180deg, #000000 0%, #121212 37.5%, #262626 100%);
         padding: rem(22px 20px);
-        margin-bottom: 2px;
     }
 
     &__item {
@@ -114,154 +117,8 @@
         }
     }
 
-    &__best {
-        padding: rem(20px 15px);
-        background: #262626;
-        position: relative;
-        margin-bottom: 2px;
-
-        .swiper-button-next,
-        .swiper-button-prev {
-            opacity: .3;
-            transition: .3s;
-            top: 0;
-            margin: 0;
-            &:after {
-                display: none;
-            }
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-
-        .swiper-button-next {
-            position: absolute;
-            right: rem(20px);
-            width: rem(30px);
-            height: rem(40px);
-            &:before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: rem(8px);
-                height: rem(14px);
-                transform: translate(-50%, -50%);
-                background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
-                background-size: rem(8px) rem(14px);
-            }
-        }
-
-        .swiper-button-prev {
-            position: absolute;
-            left: auto;
-            right: rem(60px);
-            width: rem(30px);
-            height: rem(40px);
-            &:before {
-                content: "";
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: rem(8px);
-                height: rem(14px);
-                transform: translate(-50%, -50%);
-                background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
-            }
-        }
-    }
-
-    &__best-title {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: rem(18px);
-        line-height: rem(21px);
-        color: #fff;
-        margin-bottom: rem(-30px);
-    }
-
-    &__best-list.swiper {
-        display: flex;
-        gap: rem(10px);
-        padding-top: rem(60px);
-        margin-right: rem(-15px);
-        position: relative;
-    }
-
-    &__best-item.swiper-slide {
-        width: rem(198px);
-        padding-right: rem(10px);
-    }
-
-    &__best-link {
-        display: flex;
-        flex-direction: column;
-        min-width: rem(188px);
-        width: rem(188px);
-        background: #000;
-        border-radius: 12px;
-        padding: rem(10px);
-        color: #fff;
-
-        &--soccet {
-            background: #1D7E3A;
-        }
-
-        &--hockey {
-            background: #0E7AFF;
-        }
-
-        &--basketball {
-            background: #EA7E29;;
-        }
-
-        &--tennis {
-            background: #C9BF08;
-        }
-    }
-
-    &__best-link-title {
-        font-size: rem(18px);
-        line-height: rem(21px);
-        margin-bottom: rem(21px);
-    }
-
-    &__best-link-title-one {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: rem(6px);
-    }
-
-    &__best-link-live {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: rem(14px);
-        line-height: rem(16px);
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-        padding-left: rem(30px);
-        position: relative;
-
-        &:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: rem(24px);
-            height: rem(24px);
-            transform: translateY(-50%);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            opacity: .6;
-            transition: .3s;
-            background-image: url("../../images/svg/sports-best-live.svg");
-        }
-    }
-
     &__games-list {
-        margin-bottom: 2px;
+        width: 100%;
     }
 
     &__games-item {

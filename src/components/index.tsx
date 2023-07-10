@@ -18,6 +18,7 @@ export { default as HeaderTop } from './HeaderTop';
 export { default as HeaderBottom } from './HeaderBottom';
 export { default as MainSlider } from './MainSlider';
 export { default as Sports } from './Sports';
+export { default as BestMoments } from './BestMoments';
 export { default as Broadcast } from './Broadcast';
 export { default as Multiple } from './Multiple';
 export { default as Promo } from './Promo';
