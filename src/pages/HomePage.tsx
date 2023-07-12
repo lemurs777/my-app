@@ -1,6 +1,6 @@
 import { 
 	MainSlider, 
-	Sports,
+	Sport,
 	Broadcast,
 	Multiple, 
 	Menu, 
@@ -12,7 +12,7 @@ function HomePage(){
 			<Menu />
 			<main className="page page--index scroll">
 				<MainSlider />
-				<Sports />
+				<Sport />
 			</main>
 			<aside className="aside aside--index scroll">
 				<Broadcast />

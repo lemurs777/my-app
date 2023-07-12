@@ -2,23 +2,49 @@ import clsx from 'clsx';
 
 import { useState } from 'react';
 
-import styles from './SportTables.module.scss';
+import styles from './CyberSportTables.module.scss';
 
-function SportTables() {
+function CyberSportTables() {
 
 	const arrTables = [
 		{
-			sport: 'Футбол',
-			class: 'soccer',
+			sport: 'Counter Strike',
+			class: 'cs',
 			arrRows : [
 				{
-					name: 'Испания. Примера',
-					time: '18:15',
-					date: '21 Aug',
-					nameOne: 'Севилья',
-					nameTwo: 'Атлетико Мадрид',
+					name: 'ESL Pro League',
+					time: 32,
+					date: 'Map1',
+					nameOne: 'Astralis',
+					nameTwo: 'Gambit',
+					scoreOne: 23,
+					scoreTwo: 19,
 					lastNumber: '+21',
 					arrNumbers: [
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 10.2,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'disable',
+						},
+						{
+							number: 8.7,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'empty',
+						},
 						{
 							number: 9.1,
 							class: 'upp',
@@ -26,49 +52,43 @@ function SportTables() {
 						{
 							number: 9.1,
 							class: 'down',
-						},
-						{
-							number: 9.1,
-							class: 'disable',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
 						},
 					],
 				},
 				{
-					name: 'Испания. Примера',
-					time: '18:15',
-					date: '21 Aug',
-					nameOne: 'Севилья',
-					nameTwo: 'Атлетико Мадрид',
+					name: 'ESL Pro League',
+					time: 32,
+					date: 'Map1',
+					nameOne: 'Astralis',
+					nameTwo: 'Gambit',
+					scoreOne: 23,
+					scoreTwo: 19,
 					lastNumber: '+21',
 					arrNumbers: [
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 10.2,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'disable',
+						},
+						{
+							number: 8.7,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'empty',
+						},
 						{
 							number: 9.1,
 							class: 'upp',
@@ -76,49 +96,43 @@ function SportTables() {
 						{
 							number: 9.1,
 							class: 'down',
-						},
-						{
-							number: 9.1,
-							class: 'disable',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
 						},
 					],
 				},
 				{
-					name: 'Испания. Примера',
-					time: '18:15',
-					date: '21 Aug',
-					nameOne: 'Севилья',
-					nameTwo: 'Атлетико Мадрид',
+					name: 'ESL Pro League',
+					time: 32,
+					date: 'Map1',
+					nameOne: 'Astralis',
+					nameTwo: 'Gambit',
+					scoreOne: 23,
+					scoreTwo: 19,
 					lastNumber: '+21',
 					arrNumbers: [
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 10.2,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'disable',
+						},
+						{
+							number: 8.7,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'empty',
+						},
 						{
 							number: 9.1,
 							class: 'upp',
@@ -126,49 +140,43 @@ function SportTables() {
 						{
 							number: 9.1,
 							class: 'down',
-						},
-						{
-							number: 9.1,
-							class: 'disable',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
 						},
 					],
 				},
 				{
-					name: 'Испания. Примера',
-					time: '18:15',
-					date: '21 Aug',
-					nameOne: 'Севилья',
-					nameTwo: 'Атлетико Мадрид',
+					name: 'ESL Pro League',
+					time: 32,
+					date: 'Map1',
+					nameOne: 'Astralis',
+					nameTwo: 'Gambit',
+					scoreOne: 23,
+					scoreTwo: 19,
 					lastNumber: '+21',
 					arrNumbers: [
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 10.2,
+							class: 'disable',
+						},
+						{
+							number: 2.5,
+							class: 'empty',
+						},
+						{
+							number: 8.7,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'empty',
+						},
 						{
 							number: 9.1,
 							class: 'upp',
@@ -176,55 +184,49 @@ function SportTables() {
 						{
 							number: 9.1,
 							class: 'down',
-						},
-						{
-							number: 9.1,
-							class: 'disable',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
 						},
 					],
 				},
 			],
 		},
 		{
-			sport: 'Хоккей',
-			class: 'hockey',
+			sport: 'Dota 2',
+			class: 'dota2',
 			arrRows : [
 				{
-					name: 'Испания. Примера',
-					time: '18:15',
-					date: '21 Aug',
-					nameOne: 'Севилья',
-					nameTwo: 'Атлетико Мадрид',
+					name: 'ESL Pro League',
+					time: 32,
+					date: 'Map1',
+					nameOne: 'Astralis',
+					nameTwo: 'Gambit',
+					scoreOne: 23,
+					scoreTwo: 19,
 					lastNumber: '+21',
 					arrNumbers: [
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 10.2,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'disable',
+						},
+						{
+							number: 8.7,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'empty',
+						},
 						{
 							number: 9.1,
 							class: 'upp',
@@ -232,49 +234,43 @@ function SportTables() {
 						{
 							number: 9.1,
 							class: 'down',
-						},
-						{
-							number: 9.1,
-							class: 'disable',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
 						},
 					],
 				},
 				{
-					name: 'Испания. Примера',
-					time: '18:15',
-					date: '21 Aug',
-					nameOne: 'Севилья',
-					nameTwo: 'Атлетико Мадрид',
+					name: 'ESL Pro League',
+					time: 32,
+					date: 'Map1',
+					nameOne: 'Astralis',
+					nameTwo: 'Gambit',
+					scoreOne: 23,
+					scoreTwo: 19,
 					lastNumber: '+21',
 					arrNumbers: [
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 9.1,
+							class: 'empty',
+						},
+						{
+							number: 10.2,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'disable',
+						},
+						{
+							number: 8.7,
+							class: 'empty',
+						},
+						{
+							number: 2.5,
+							class: 'empty',
+						},
 						{
 							number: 9.1,
 							class: 'upp',
@@ -282,38 +278,6 @@ function SportTables() {
 						{
 							number: 9.1,
 							class: 'down',
-						},
-						{
-							number: 9.1,
-							class: 'disable',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
-						},
-						{
-							number: 9.1,
-							class: 'empty',
 						},
 					],
 				},
@@ -322,25 +286,27 @@ function SportTables() {
 	];
 
 	return (
-		<div className={styles.sportTables}>
+		<div className={styles.cyberSportTables}>
 			{arrTables.map((item, index) => (
-				<SportTable key={index} data={item}/>
+				<CyberSportTable key={index} data={item}/>
 			))}
 		</div>
 	);
 }
 
-export default SportTables;
+export default CyberSportTables;
 
-type SportTableData = {
+type CyberSportTableData = {
 	sport: string,
 	class: string,
 	arrRows: Array<{ 
 		name: string, 
-		time: string, 
+		time: number, 
 		date: string,
 		nameOne: string,
 		nameTwo: string,
+		scoreOne: number,
+		scoreTwo: number,
 		lastNumber: string,
 		arrNumbers: Array<{
 			number: number,
@@ -349,8 +315,8 @@ type SportTableData = {
 	}>
 };
 
-function SportTable (
-	{ data } : { data: SportTableData }
+function CyberSportTable (
+	{ data } : { data: CyberSportTableData }
 ){
 
 	const [showAllTable, setShowAllTable] = useState(false);
@@ -358,7 +324,7 @@ function SportTable (
 	const defaultShowRows = 1;
 
 	return (
-		<div className={styles.sportTable}>
+		<div className={styles.cyberSportTable}>
 			<div className={clsx(
 					styles.header,
 					styles[data.class],
@@ -368,15 +334,13 @@ function SportTable (
 				</h3>
 				<div className={styles.headerInfoWrapper}>
 					<div className={styles.headerInfo}>1</div>
-					<div className={styles.headerInfo}>X</div>
+					<div className={styles.headerInfo}>2</div>
+					<div className={styles.headerInfo}>1</div>
+					<div className={styles.headerInfo}>H</div>
 					<div className={styles.headerInfo}>2</div>
 					<div className={styles.headerInfo}>Т</div>
 					<div className={styles.headerInfo}>Б</div>
 					<div className={styles.headerInfo}>М</div>
-					<div className={styles.headerInfo}>OVER</div>
-					<div className={styles.headerInfo}>UNDER</div>
-					<div className={styles.headerInfo}>HAND.</div>
-					<div className={styles.headerInfo}>ODD</div>
 				</div>
 			</div>
 			{data.arrRows.map((item, index) => (index <= defaultShowRows || (index > defaultShowRows && showAllTable)) ? (
@@ -386,21 +350,35 @@ function SportTable (
 					</div>
 					<div className={styles.tableWrapper}>
 						<div className={styles.tableDateTime}>
-							<div className={styles.tableTime}>{item.time}</div>
+							<div className={styles.tableTime}>{item.time}’</div>
 							<div className={styles.tableDate}>{item.date}</div>
 						</div>
 						<div className={styles.tableNames}>
 							<div className={styles.tableName}>{item.nameOne}</div>
 							<div className={styles.tableName}>{item.nameTwo}</div>
 						</div>
+						<button className={styles.tableBtn}></button>
+						<div className={styles.tableScores}>
+							<div className={styles.tableScore}>{item.scoreOne}</div>
+							<div className={styles.tableScore}>{item.scoreTwo}</div>
+						</div>
 						<div className={styles.tableNumbers}>
 							{item.arrNumbers.map((item, index) => (
-								<div key={index} className={clsx(
-									styles.tableNumber,
-									styles[item.class]
-								)}>
-									{item.number}
-								</div>
+								(index !== 3) ? (
+									<div key={index} className={clsx(
+										styles.tableNumber,
+										styles[item.class]
+									)}>
+										{item.number}
+									</div>
+								) : (
+									<div key={index} className={clsx(
+										styles.tableNumber,
+										styles[item.class]
+									)}>
+										+ {item.number} -
+									</div>
+								)
 							))}
 							<div className={styles.tableNumber}>{item.lastNumber}</div>
 						</div>

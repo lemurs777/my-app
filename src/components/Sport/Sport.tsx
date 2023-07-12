@@ -1,11 +1,11 @@
 import { BestMoments, SportList, SportTables } from '../'
 
-import styles from './Sports.module.scss';
+import styles from './Sport.module.scss';
 
-function Sports() {
+function Sport() {
 
     return (
-    <section className={styles.sports}>
+    <section className={styles.sport}>
 
         <SportList />
 
@@ -17,4 +17,4 @@ function Sports() {
     );
 }
 
-export default Sports;
+export default Sport;

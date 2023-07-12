@@ -1,6 +1,6 @@
 @import "sass-rem";
 
-.sportTables {
+.cyberSportTables {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -8,7 +8,7 @@
 	padding-bottom: rem(10px);
 }
 
-.sportTable {
+.cyberSportTable {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -33,27 +33,15 @@
 		background: #fff;
 	}
 
-	&.soccer {
+	&.cs {
 		&:before {
-			background: #1D7E3A;
+			background: #DE9B35;
 		}
 	}
 
-	&.hockey {
+	&.dota2 {
 		&:before {
-			background: #0E7AFF;
-		}
-	}
-
-	&.basketball {
-		&:before {
-			background: #EA7E29;
-		}
-	}
-
-	&.tennis {
-		&:before {
-			background: #C9BF08;
+			background: #E44728;
 		}
 	}
 }
@@ -88,9 +76,14 @@
 	margin-right: 2px;
 	text-transform: uppercase;
 
-	&:nth-child(3),
-	&:nth-child(6),
-	&:nth-child(8) {
+	&:nth-child(4) {
+		width: rem(58px);
+		max-width: rem(58px);
+		min-width: rem(58px);
+	}
+
+	&:nth-child(2),
+	&:nth-child(5) {
 		margin-right: rem(20px);
 	}
 
@@ -151,7 +144,7 @@
 	font-weight: 500;
 	font-size: rem(16px);
 	line-height: rem(19px);
-	color: #FFFFFF;
+	color: #D60019;
 }
 
 .tableDate {
@@ -169,6 +162,36 @@
 }
 
 .tableName {
+	font-weight: 400;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	color: #FFFFFF;
+}
+
+.tableBtn {
+	width: rem(30px);
+	height: rem(30px);
+	border-radius: 50%;
+	background: url("../../assets/images/svg/table-play.svg") no-repeat 50% 50% / rem(20px 20px);
+	transition: .3s;
+	cursor: pointer;
+	margin-right: rem(5px);
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+.tableScores {
+	display: flex;
+	width: rem(26px);
+	flex-direction: column;
+	align-items: center;
+	gap: rem(5px);
+	margin-right: rem(20px);
+}
+
+.tableScore {
 	font-weight: 400;
 	font-size: rem(16px);
 	line-height: rem(19px);
@@ -197,9 +220,14 @@
 	cursor: pointer;
 	position: relative;
 
-	&:nth-child(3),
-	&:nth-child(6),
-	&:nth-child(8) {
+	&:nth-child(4) {
+		width: rem(58px);
+		max-width: rem(58px);
+		min-width: rem(58px);
+	}
+
+	&:nth-child(2),
+	&:nth-child(5) {
 		margin-right: rem(20px);
 	}
 
