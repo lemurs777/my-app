@@ -1,3 +1,10 @@
+.promotions {
+    max-width: rem(1460px);
+    width: 100%;
+    padding: rem(0 20px);
+    margin: 0 auto;
+}
+
 .game-wrapper {
     width: rem(1110px);
     height: calc(100vh - #{rem(146px)});

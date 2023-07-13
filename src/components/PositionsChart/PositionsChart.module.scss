@@ -1,0 +1,152 @@
+@import "sass-rem";
+
+.positionsChart {
+	width: 100%;
+	padding: rem(40px 50px 0);
+	margin-bottom: rem(40px);
+}
+
+
+.wrapper {
+	position: relative;
+	height: rem(620px);
+	margin-bottom: rem(80px);
+}
+
+.content {
+	width: rem(1780px) !important;
+	height: rem(680px) !important;
+	position: relative;
+	z-index: 2;
+}
+
+.bg {
+	position: absolute;
+	background: url("../../assets/images/svg/pos-chart-bg.svg") no-repeat 50% 50%;
+	background-size: rem(1765px) rem(620px);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.line {
+	width: rem(1770px);
+	height: 1px;
+	background: url("../../assets/images/svg/pos-chart-line.svg") no-repeat 0% 50%;
+	background-size: rem(1770px) 1px;
+	position: absolute;
+}
+
+.numbersBottom {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: rem(-50px);
+	font-weight: 700;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.numberBottom {
+	width: rem(15px);
+}
+
+.numbers {
+	position: absolute;
+	width: rem(20px);
+	height: calc(100% - rem(35px));
+	top: rem(50px);
+	font-weight: 700;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&.numbersOne {
+		left: rem(-30px);
+	}
+
+	&.numbersTwo {
+		right: rem(-40px);
+	}
+}
+
+.info {
+	display: flex;
+	gap: rem(100px);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: rem(24px);
+}
+
+.item {
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	position: relative;
+
+	&.itemPlayoff,
+	&.itemQualification {
+		padding-left: rem(15px);
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: rem(5px);
+			height: rem(30px);
+			transform: translateY(-50%);
+		}
+	}
+
+	&.itemPlayoff {
+		&:before {
+			background: #1D7E3A;
+		}
+	}
+
+	&.itemQualification {
+		&:before {
+			background: #D60019;
+		}
+	}
+
+	&.itemTeamOne,
+	&.itemTeamTwo {
+		padding-left: rem(24px);
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: rem(12px);
+			height: rem(12px);
+			transform: translateY(-50%);
+			border-radius: 50%;
+			border: 2px solid #F7FF13;
+		}
+	}
+
+	&.itemTeamOne {
+		&:before {
+			background: #000;
+		}
+	}
+
+	&.itemTeamTwo {
+		&:before {
+			background: #F7FF13;
+		}
+	}
+}

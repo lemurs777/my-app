@@ -110,3 +110,92 @@
 		}
 	}
 }
+
+.promo-slider {
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		bottom: 0;
+		top: auto;
+		margin: 0;
+		background: #262626;
+		&:after {
+			display: none;
+		}
+
+		&:hover {
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+
+	.swiper-button-next {
+		position: absolute;
+		right: rem(13px);
+		width: rem(36px);
+		height: rem(36px);
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: rem(8px);
+			height: rem(14px);
+			transform: translate(-50%, -50%);
+			background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
+			background-size: rem(8px) rem(14px);
+			opacity: .3;
+			transition: .3s;
+		}
+	}
+
+	.swiper-button-prev {
+		position: absolute;
+		left: 0;
+		width: rem(36px);
+		height: rem(36px);
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: rem(8px);
+			height: rem(14px);
+			transform: translate(-50%, -50%);
+			background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
+			opacity: .3;
+			transition: .3s;
+		}
+	}
+
+	.swiper-pagination-bullets.swiper-pagination-horizontal {
+		left: rem(56px);
+		right: rem(69px);
+		bottom: 0;
+		top: auto;
+		height: rem(36px);
+		width: calc(100% - rem(125px));
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: rem(6px);
+
+		.swiper-pagination-bullet {
+			margin: 0;
+			width: rem(6px);
+			height: rem(6px);
+			background: #2D2D2D;
+			transition: .3s;
+			border-radius: 50%;
+			opacity: 1;
+			
+			&.swiper-pagination-bullet-active {
+				width: rem(10px);
+				height: rem(10px);
+				background: #F7FF13;
+				border-radius: 0;
+			}
+		}
+	}
+}
