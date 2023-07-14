@@ -1,12 +1,12 @@
 import {
-     StatisticsThree,
+	TableCalendar,
 } from '../components/';
 
 function StatisticsPageOne(){
 	return (
 		<>
 			<main className="page page--statistics-three scroll">
-                <StatisticsThree />
+                <TableCalendar />
 			</main>
 		</>	
 	);

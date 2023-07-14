@@ -1,6 +1,6 @@
 import { 
     Menu,
-    StatisticsFive,
+    TableLeagues,
 } from '../components/';
 
 function StatisticsPageFive(){
@@ -8,7 +8,7 @@ function StatisticsPageFive(){
        <>
            <Menu />
            <main className="page page--statistics-five scroll">
-               <StatisticsFive />
+               <TableLeagues />
            </main>
        </>	
    );
