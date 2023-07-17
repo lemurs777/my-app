@@ -1,0 +1,106 @@
+@import "sass-rem";
+
+.limitSelf {
+	display: flex;
+}
+
+.hand {
+	width: rem(87px);
+	height: rem(87px);
+	margin-top: rem(20px);
+	margin-left: rem(40px);
+	margin-right: rem(80px);
+	background: url("../../assets/images/svg/return-hand.svg") no-repeat 50% 50% /contain;
+}
+
+.info {
+	max-width: rem(594px);
+}
+
+.infoText {
+	padding: rem(24px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	margin-bottom: rem(25px);
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+}
+
+.infoLabel {
+	font-weight: 500;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	padding-left: rem(34px);
+	cursor: pointer;
+	margin-bottom: rem(40px);
+	position: relative;
+	display: inline-block;
+
+	&:before {
+		content: "";
+		width: rem(24px);
+		height: rem(24px);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		background: url("../../assets/images/svg/return-checkbox.svg") no-repeat 50% 50% /contain;
+	}
+
+	&.infoLabelActive {
+		&:before {
+			background-image: url("../../assets/images/svg/return-checkbox-active.svg");
+		}
+	}
+}
+
+.infoName {
+	font-weight: 500;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #F7FF13;
+	margin-bottom: rem(10px);
+}
+
+.infoSelect {
+	padding: rem(15px 16px 14px);
+	border: 1px solid #fff;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: rgba(255, 255, 255, 0.5);
+	transition: .3s;
+	position: relative;
+	margin-bottom: rem(24px);
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: rem(15px);
+		width: rem(12px);
+		height: rem(7px);
+		background: url("../../assets/images/svg/return-select-arrow.svg") no-repeat 50% 50% /contain;
+		transform: translateY(-50%);
+	}
+}
+
+.btn {
+	padding: rem(12px 27px);
+	background: #FAFE13;
+	border-radius: rem(3px);
+	cursor: pointer;
+	font-weight: 700;
+	font-size: rem(17px);
+	line-height: rem(20px);
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+}

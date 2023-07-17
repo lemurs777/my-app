@@ -30,6 +30,12 @@ function Profile() {
 					isProblem: true,
 					isModal: false,
 				},
+				{
+					name: 'Ограничения +',
+					link: '/profile/limits',
+					isProblem: false,
+					isModal: false,
+				},
 			],
 		},
 		{
@@ -78,7 +84,7 @@ function Profile() {
 			infoItems: [
 				{
 					name: 'Настройки +',
-					link: '/profile/',
+					link: '/profile/setting',
 					isProblem: false,
 					isModal: true,
 				},

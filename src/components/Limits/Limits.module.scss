@@ -1,0 +1,57 @@
+@import "sass-rem";
+
+.limits {
+	padding: rem(10px 10px 30px 20px);
+}
+
+.title {
+	font-weight: 500;
+	font-size: rem(24px);
+	line-height: rem(28px);
+	color: #fff;
+	margin-bottom: rem(40px);
+}
+	
+.tabList {
+	display: flex;
+	margin-bottom: rem(24px);
+	gap: rem(40px);
+	margin-bottom: rem(27px);
+}
+
+.tabItemBtn {
+	font-weight: 500;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+	position: relative;
+	cursor: pointer;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: rem(-5px);
+		left: 0;
+		right: 0;
+		height: rem(3px);
+		width: 100%;
+		transition: .3s;
+	}
+
+	&:hover,
+	&.tabItemBtnActive {
+		&:before {
+			background: #fff;
+		}
+	}
+}
+
+.tabContent {
+	background: #1B1B1B;
+	padding: rem(16px 20px 20px);
+	display: none;
+
+	&.tabContentActive {
+		display: block;
+	}
+}

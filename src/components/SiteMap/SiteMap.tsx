@@ -34,6 +34,10 @@ function SiteMap() {
             link : '/profile/deposit',
         },
         {
+            name: 'Профиль - Ограничения',
+            link: '/profile/limits',
+        },
+        {
 			name : 'События',
             link : '/events',
         },
@@ -72,10 +76,6 @@ function SiteMap() {
         {
             name: 'Киберспорт',
             link: '/cybersport',
-        },
-        {
-            name: 'Ответная игра - Самоограничения, Лимиты на пополнение, Лимиты игровой сессии',
-            link: '/profile/return',
         },
         {
             name: 'Статистика - Детали',

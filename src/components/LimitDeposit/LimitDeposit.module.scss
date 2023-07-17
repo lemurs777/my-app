@@ -1,0 +1,112 @@
+@import "sass-rem";
+
+.limitDeposit {
+	padding-bottom: rem(30px);
+}
+
+.title {
+	font-weight: 500;
+	font-size: rem(24px);
+	line-height: rem(28px);
+	color: #fff;
+	margin-bottom: rem(24px);
+}
+
+.info {
+	font-weight: 400;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+	margin-bottom: rem(40px);
+}
+
+.titleTwo {
+	font-weight: 500;
+	font-size: rem(24px);
+	line-height: rem(28px);
+	color: #fff;
+	margin-bottom: rem(15px);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: rem(10px);
+}
+
+.item {
+	display: flex;
+	align-items: center;
+}
+
+.itemLabel {
+	box-sizing: border-box;
+	display: inline-block;
+	width: rem(190px);
+	min-width: rem(190px);
+	margin-right: rem(40px);
+	padding-left: rem(46px);
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: rgba(255, 255, 255, 0.7);
+	transition: .3s;
+	cursor: pointer;
+	position: relative;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:before {
+		position: absolute;
+		display: inline-block;
+		content: "";
+		width: rem(36px);
+		height: rem(21px);
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		background: url("../../assets/images/svg/return-select-two.svg") no-repeat 50% 50% /contain;
+	}
+
+	&:after {
+		position: absolute;
+		display: inline-block;
+		content: "";
+		width: rem(10px);
+		height: rem(10px);
+		border-radius: 50%;
+		background: #B8B8B8;
+		top: 50%;
+		left: rem(6px);
+		transform: translateY(-50%);
+	}
+
+	&.itemLabelActive {
+		&:after {
+			background: #fff;
+			transform: translate(rem(12px), -50%);
+		}
+	}
+}
+
+.itemInput {
+	display: inline-block;
+	width: rem(150px);
+	padding: rem(12px);
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: rem(16px);
+
+	&:hover,
+	&:focus {
+		border-color: #fff;
+	}
+
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}

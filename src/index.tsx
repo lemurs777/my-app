@@ -26,7 +26,7 @@ import StatisticsPageFour from './pages/StatisticsPageFour';
 import StatisticsPageFive from './pages/StatisticsPageFive';
 import SiteMapPage from './pages/SiteMapPage';
 import HomePageGames from './pages/HomePageGames';
-import ReturnProfile from './pages/ReturnProfile';
+import LimitsProfile from './pages/LimitsProfile';
 import StatisticsPageSix from './pages/StatisticsPageSix';
 import StatisticsPageSeven from './pages/StatisticsPageSeven';
 import StatisticsPageSearch from './pages/StatisticsPageSearch';
@@ -57,7 +57,7 @@ export default function App() {
 					<Route path="betting" element={<HistoryBetting />} />
 					<Route path="promo" element={<MyPromo />} />
 					<Route path="deposit" element={<DepositPage />} />
-					<Route path="return" element={<ReturnProfile />} />
+					<Route path="limits" element={<LimitsProfile />} />
 				</Route>
 				<Route path="/requests/" element={<RequestsLayout />}>
 					<Route index element={<RequestsPage />} />
