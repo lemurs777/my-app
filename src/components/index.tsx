@@ -56,3 +56,4 @@ export { default as RequestsMenu } from './RequestsMenu';
 export { default as Request } from './Request';
 export { default as CategoryList } from './CategoryList';
 export { default as TableNextPrevGames } from './TableNextPrevGames';
+export { default as OverviewInfo } from './OverviewInfo';

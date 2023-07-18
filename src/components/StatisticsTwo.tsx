@@ -1,5 +1,6 @@
 import { 
 	TableNextPrevGames,
+	OverviewInfo,
 } from '../components';
 
 import arrTables from '../data/dataStatisticsTwo';
@@ -13,6 +14,34 @@ function StatisticsTwo() {
 	const dataNextTable = arrTables.dataNextTable;
 
 	const arrRowsFour = arrTables.arrRowsFour;
+
+	const overviewInfoOne = {
+		title: 'Последние матчи',
+		leftNum: '35.00%',
+		leftText: 'Хозяева',
+		centerNum: '0.00%',
+		centerText: 'Ничья',
+		rightNum: '65.00%',
+		rightText: 'Гости',
+		allNum: '20',
+		allText: 'Сыгранные матчи',
+		percentLeft: 35,
+		percentRight: 65,
+	}
+
+	const overviewInfoTwo = {
+		title: 'Очки за матч',
+		leftNum: '83.75',
+		leftText: 'Хозяева',
+		centerNum: '179.15',
+		centerText: 'Все',
+		rightNum: '95.40',
+		rightText: 'Гости',
+		allNum: '3583',
+		allText: 'Всего очков',
+		percentLeft: 45,
+		percentRight: 55,
+	}
 
 	return (
 		<div className="statistics-two">
@@ -74,52 +103,8 @@ function StatisticsTwo() {
 					</ul>
 				</div>
 				<div className="statistics-two__two-columns">
-					<div className="statistics-two__info">
-						<h2 className="statistics-two__info-title">Последние матчи</h2>
-						<div className="statistics-two__info-content">
-							<div className="statistics-two__info-content-column">
-								<div className="statistics-two__info-content-num">35.00%</div>
-								<div className="statistics-two__info-content-text">Хозяева</div>
-							</div>
-							<div className="statistics-two__info-content-column">
-								<div className="statistics-two__info-content-text">Ничья</div>
-								<div className="statistics-two__info-content-num">0.00%</div>
-								<div className="statistics-two__info-content-percent-left"></div>
-								<div className="statistics-two__info-content-percent-right"></div>
-							</div>
-							<div className="statistics-two__info-content-column">
-								<div className="statistics-two__info-content-num">65.00%</div>
-								<div className="statistics-two__info-content-text">Гости</div>
-							</div>
-							<div className="statistics-two__info-content-column">
-								<div className="statistics-two__info-content-text">Сыгранные матчи</div>
-								<div className="statistics-two__info-content-num">20</div>
-							</div>
-						</div>
-					</div>
-					<div className="statistics-two__info">
-						<h2 className="statistics-two__info-title">Очки за матч</h2>
-						<div className="statistics-two__info-content">
-						<div className="statistics-two__info-content-column">
-								<div className="statistics-two__info-content-num">83.75%</div>
-								<div className="statistics-two__info-content-text">Хозяева</div>
-							</div>
-							<div className="statistics-two__info-content-column">
-								<div className="statistics-two__info-content-text">Все</div>
-								<div className="statistics-two__info-content-num">179.15</div>
-								<div className="statistics-two__info-content-percent-left"></div>
-								<div className="statistics-two__info-content-percent-right"></div>
-							</div>
-							<div className="statistics-two__info-content-column">
-								<div className="statistics-two__info-content-num">95.40%</div>
-								<div className="statistics-two__info-content-text">Гости</div>
-							</div>
-							<div className="statistics-two__info-content-column">
-								<div className="statistics-two__info-content-text">Всего очков</div>
-								<div className="statistics-two__info-content-num">3583</div>
-							</div>
-						</div>
-					</div>
+					<OverviewInfo data={overviewInfoOne}/>
+					<OverviewInfo data={overviewInfoTwo}/>
 				</div>
 				<div className="statistics-two__two-table-columns">
 					<TableNextPrevGames data={dataPrevTable} />
