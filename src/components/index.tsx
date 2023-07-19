@@ -56,4 +56,8 @@ export { default as RequestsMenu } from './RequestsMenu';
 export { default as Request } from './Request';
 export { default as CategoryList } from './CategoryList';
 export { default as TableNextPrevGames } from './TableNextPrevGames';
+export { default as TableLeague } from './TableLeague';
+export { default as TableLeagueFilter } from './TableLeagueFilter';
+export { default as TableLeagueCustom } from './TableLeagueCustom';
+export { default as TableLeagueCustomFilter } from './TableLeagueCustomFilter';
 export { default as OverviewInfo } from './OverviewInfo';

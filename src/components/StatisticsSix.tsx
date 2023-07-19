@@ -1,16 +1,14 @@
-import { useState } from 'react';
 import clsx from 'clsx';
 
 import { 
 	TableNextPrevGames,
 	PositionsChart,
+	TableLeague,
 } from '../components';
 
 import arrTables from '../data/dataStatisticsSix';
 
 function StatisticsSix() {
-
-	const [showTable, setShowTable] = useState(false);
 
 	const Score = {
 		win: 4,
@@ -34,7 +32,7 @@ function StatisticsSix() {
 
 	const dataNextTableTwo = arrTables.dataNextTableTwo;
 
-	const arrRowsSix = arrTables.arrRowsSix;
+	const dataLeagueTable = arrTables.dataLeagueTable;
 
 	const arrRowsSeven = arrTables.arrRowsSeven;
 
@@ -279,71 +277,8 @@ function StatisticsSix() {
 					<h2 className="statistics-six__name-accent">Позиция команды</h2>
 					<PositionsChart props={PositionsChartData}/>
 				</div>
-				<div className="statistics-two__two-table-columns-wrapper">
-					<h2 className="statistics-six__name-accent">Биг V (Викториан Стейт Чемпионшип)</h2>
-					<div className="statistics-two__table-one">
-						<div className="statistics-two__table-one-header">
-							<div className="statistics-two__table-one-header-cell">Поз.</div>
-							<div className="statistics-two__table-one-header-cell">Команда</div>
-							<div className="statistics-two__table-one-header-cell">И</div>
-							<div className="statistics-two__table-one-header-cell">В</div>
-							<div className="statistics-two__table-one-header-cell">П</div>
-							<div className="statistics-two__table-one-header-cell">ГЗа/ГПр</div>
-							<div className="statistics-two__table-one-header-cell">Разн.</div>
-							<div className="statistics-two__table-one-header-cell">Соотношение корзин</div>
-							<div className="statistics-two__table-one-header-cell">pct</div>
-							<div className="statistics-two__table-one-header-cell">Очки</div>
-							<div className="statistics-two__table-one-header-cell">Форма</div>
-						</div>
-						{arrRowsSix.map((item, index) => (item.show || (!item.show && showTable)) ? (
-							<div key={index} className="statistics-two__table-one-row">
-								<div className={`statistics-two__table-one-cell statistics-two__table-one-cell--number ${item.playTournamentClass} ${item.directionClass}`}>{item.number}</div>
-								<div className="statistics-two__table-one-cell">{item.name}</div>
-								<div className="statistics-two__table-one-cell">{item.game}</div>
-								<div className="statistics-two__table-one-cell">{item.win}</div>
-								<div className="statistics-two__table-one-cell">{item.loss}</div>
-								<div className="statistics-two__table-one-cell">{item.scored}-{item.conceded}</div>
-								<div className="statistics-two__table-one-cell">{item.scored - item.conceded}</div>
-								<div className="statistics-two__table-one-cell">{item.ratio}</div>
-								<div className="statistics-two__table-one-cell">{item.pct}</div>
-								<div className="statistics-two__table-one-cell">{item.points}</div>
-								<div className="statistics-two__table-one-cell statistics-two__table-one-cell--forms">
-									{ item.forms.length > 0
-										? <div className="statistics-two__table-one-forms">
-											{item.forms.map((form, index) => (
-												<div key={`key-${index}`} className={`statistics-two__table-one-form statistics-two__table-one-form--${form.form}`}>
-													{ form.form === 'win'? 'В' : 'П' }
-												</div>
-											))} 
-										</div>
-										: ''
-									}
-								</div>
-							</div>
-							) : null )
-						}
-					</div>
-					<div className={clsx(
-						'statistics-two__table-one-info',
-						{'statistics-two__table-one-info--hidden': !showTable},
-					)}>
-						<p className="statistics-two__table-one-info-text">Если две (или более) команды имеют одинаковое количество очков, следующие факторы помогут выявить победителя:</p>
-						<p className="statistics-two__table-one-info-text">1. Процент побед и поражений</p>
-						<p className="statistics-two__table-one-info-text">2. Очные встречи</p>
-						<ul className="statistics-two__table-one-info-list">
-							<li className="statistics-two__table-one-info-item">Плей-офф</li>
-							<li className="statistics-two__table-one-info-item">Квалификация, Плей-офф</li>
-						</ul>
-					</div>
-					<div className="statistics-six__table-two-btn-wrapper">
-						<button 
-							className="statistics-two__table-two-btn"
-							onClick={() => setShowTable((showTable) => !showTable)}
-						>{ showTable
-							? 'Скрыть таблицу'
-							: 'Показать всю таблицу'
-						}</button>
-					</div>
+				<div className="statistics-six__table-wrapper">
+					<TableLeague data={dataLeagueTable} />
 				</div>   
 				<div className="statistics-two__two-table-columns-wrapper">
 					<h2 className="statistics-two__title">бол/мен</h2>
