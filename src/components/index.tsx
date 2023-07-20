@@ -60,4 +60,7 @@ export { default as TableLeague } from './TableLeague';
 export { default as TableLeagueFilter } from './TableLeagueFilter';
 export { default as TableLeagueCustom } from './TableLeagueCustom';
 export { default as TableLeagueCustomFilter } from './TableLeagueCustomFilter';
+export { default as TableBigSmall } from './TableBigSmall';
+export { default as TableBigSmallFilter } from './TableBigSmallFilter';
+export { default as TableBigSmallCustomFilter } from './TableBigSmallCustomFilter';
 export { default as OverviewInfo } from './OverviewInfo';
