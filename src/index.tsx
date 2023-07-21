@@ -20,7 +20,7 @@ import PromotionsPage from './pages/PromotionsPage';
 import PromotionPage from './pages/PromotionPage';
 import EventsPage from './pages/EventsPage';
 import StatisticsPageOne from './pages/StatisticsPageOne';
-import StatisticsPageTwo from './pages/StatisticsPageTwo';
+import StatisticsPageOverview from './pages/StatisticsPageOverview';
 import StatisticsPageThree from './pages/StatisticsPageThree';
 import StatisticsPageFour from './pages/StatisticsPageFour';
 import StatisticsPageFive from './pages/StatisticsPageFive';
@@ -76,7 +76,7 @@ export default function App() {
 				</Route>
 				<Route path="/statistics/" element={<MainLayout />}>
 					<Route index element={<StatisticsPageOne />} />
-					<Route path="big-v-2023" element={<StatisticsPageTwo />} />
+					<Route path="overview" element={<StatisticsPageOverview />} />
 					<Route path="calendar" element={<StatisticsPageThree />} />
 					<Route path="table" element={<StatisticsPageFour />} />
 					<Route path="detailed" element={<StatisticsPageFive />} />

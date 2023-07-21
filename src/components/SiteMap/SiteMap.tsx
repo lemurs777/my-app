@@ -62,8 +62,8 @@ function SiteMap() {
             link : '/statistics',
         },
         {
-			name : 'Статистика - Big V 2023',
-            link : '/statistics/big-v-2023',
+			name : 'Статистика - Обзор',
+            link : '/statistics/overview',
         },
         {
 			name : 'Статистика - Календарь',

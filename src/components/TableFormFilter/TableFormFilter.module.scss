@@ -1,0 +1,102 @@
+@import "sass-rem";
+
+.title {
+	text-align: center;
+	background: rgba(247, 255, 19, 0.15);
+	font-weight: 500;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	padding: rem(15px 10px 14px);
+}
+
+.wrapper {
+	background: #F7FF13;
+	display: flex;
+	justify-content: center;
+	gap: rem(70px);
+}
+
+.filterWrapper {
+	display: flex;
+	gap: rem(20px);
+}
+
+.filterBtn {
+	font-weight: 400;
+	font-size: rem(20px);
+	line-height: rem(23px);      
+	color: #0B0B0B;
+	padding: rem(10px 50px);
+	position: relative;
+	cursor: pointer;
+
+	&:before {
+		opacity: 0;
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: rem(6px);
+		background: #1D7E3A;
+		border-radius: rem(4px);
+		transition: .3s;
+	}
+
+	&:hover,
+	&.filterBtnActive {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.selectWrapper {
+	font-weight: 400;
+	font-size: rem(20px);
+	line-height: rem(23px);      
+	color: #0B0B0B;
+	padding: rem(10px);
+}
+
+.select {
+	display: inline-block;
+	padding: rem(5px 30px 5px 5px);
+	border: 1px solid #000;
+	position: relative;
+	cursor: pointer;
+	margin-left: rem(10px);
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: rem(6px);
+		width: rem(16px);
+		height: rem(17px);
+		transform: translateY(-55%);
+		background: url("../../assets/images/svg/statistics-select.svg") no-repeat 50% 50% /contain;
+	}
+}
+
+.bottomWrapper {
+	display: flex;
+	justify-content: center;
+	gap: rem(220px);
+	padding: rem(4px 20px);
+	background: rgba(247, 255, 19, 0.15);
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+}
+
+.text {
+	padding: rem(10px);
+}
+
+.btn {
+	padding: rem(10px);
+	cursor: pointer;
+}

@@ -1,0 +1,195 @@
+@import "sass-rem";
+
+.tableForm {
+	background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
+}
+
+.header {
+	display: flex;
+	background: rgba(255, 255, 255, 0.14);
+	padding: rem(0 22px);
+}
+
+.headerCell {
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	padding: rem(19px 5px 18px);
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+	&:nth-child(1) { width: rem(80px); border-right: none; }
+	&:nth-child(2) { width: rem(230px); flex-grow: 1; padding-left: rem(50px);}
+	&:nth-child(3) {
+		width: rem(60px);
+		padding-right: rem(10px);
+		padding-left: rem(25px);
+		border-right: none;
+	}
+
+	&:nth-child(4) {
+		width: rem(60px);
+		padding-right: rem(10px);
+		padding-left: rem(10px);
+		text-align: center;
+		border-right: none;
+	}
+
+	&:nth-child(5) {
+		width: rem(70px);
+		padding-right: rem(25px);
+		padding-left: rem(10px);
+	}
+
+	&:nth-child(6) { 
+		width: rem(100px);
+		text-align: center;
+		padding-left: rem(10px);
+		padding-right: rem(10px);
+	}
+
+	&:nth-child(7) { 
+		width: rem(290px);
+		text-align: center;
+		padding-left: rem(15px);
+		padding-right: rem(15px);
+	}
+
+	&:nth-child(8) { 
+		width: rem(220px);
+		text-align: center;
+		padding-left: rem(15px);
+		padding-right: rem(15px);
+	}
+	&:nth-child(9) { 
+		width: rem(190px);
+		padding-left: rem(15px);
+		border-right: none;
+	}
+}
+
+.row {
+	display: flex;
+	background: rgba(255, 255, 255, 0.07);
+	padding: rem(0 22px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cell {
+	font-weight: 400;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	padding: rem(19px 5px 18px);
+	border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+	&:nth-child(1) { width: rem(80px); border-right: none;}
+	&:nth-child(2) { width: rem(230px); flex-grow: 1;}
+	&:nth-child(3) {
+		width: rem(60px);
+		padding-right: rem(10px);
+		padding-left: rem(25px);
+		border-right: none;
+	}
+
+	&:nth-child(4) {
+		width: rem(60px);
+		padding-right: rem(10px);
+		padding-left: rem(10px);
+		text-align: center;
+		border-right: none;
+	}
+
+	&:nth-child(5) {
+		width: rem(70px);
+		padding-right: rem(25px);
+		padding-left: rem(10px);
+	}
+
+	&:nth-child(6) { 
+		width: rem(100px);
+		text-align: center;
+		padding-left: rem(10px);
+		padding-right: rem(10px);
+	}
+
+	&:nth-child(7) { 
+		width: rem(290px);
+		padding-left: rem(20px);
+		padding-right: rem(20px);
+	}
+
+	&:nth-child(8) { 
+		width: rem(220px);
+		text-align: center;
+		padding-left: rem(15px);
+		padding-right: rem(15px);
+	}
+
+	&:nth-child(9) { 
+		width: rem(190px);
+		padding-left: rem(15px);
+		border-right: none;
+	}
+
+	&.cellPoints {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: rem(5px);
+	}
+
+	&.cellForms {
+		display: flex;
+		justify-content: center;
+		padding: rem(14px 0);
+	}
+}
+
+.points {
+	width: rem(210px);
+	height: rem(10px);
+	background: url("../../assets/images/svg/statistics-arrow-points.svg") no-repeat 0% 50% /contain;
+	position: relative;
+}
+
+.pointsPercent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: #F7FF13;
+}
+
+.pointsText {
+	width: rem(15px);
+}
+
+.forms {
+	display: flex;
+	gap: rem(10px);
+	overflow: hidden;
+	padding-left: rem(15px);
+	background: url("../../assets/images/svg/statistics-arrow.svg") no-repeat 0% 50%;
+	background-size: rem(300px) rem(16px);
+}
+
+.form {
+	width: rem(30px);
+	height: rem(30px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	z-index: 2;
+
+	&.formWin {
+		color: #000;
+		background: #F7FF13;
+	}
+
+	&.formLoss {
+		color: #fff;
+		background: #1D7E3A;
+	}
+}

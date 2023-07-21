@@ -186,7 +186,7 @@ const arrTables = {
         ]
     },
 
-    arrRowTwo: [
+    dataFormTable: [
 		{
 			number: 1,
 			name: 'Wyndham Basketball',

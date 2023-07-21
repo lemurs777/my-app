@@ -5,11 +5,13 @@ import {
 	OverviewInfo,
 	TableBigSmall,
 	TableBigSmallFilter,
-} from '../components';
+} from '../';
 
-import arrTables from '../data/dataStatisticsTwo';
+import styles from './StatisticsOverview.module.scss';
 
-function StatisticsTwo() {
+import arrTables from '../../data/dataStatisticsTwo';
+
+function StatisticsOverview() {
 
 	const dataLeagueTable = arrTables.dataLeagueTable;
 
@@ -48,17 +50,17 @@ function StatisticsTwo() {
 	}
 
 	return (
-		<div className="statistics-two">
-			<div className="statistics-two__wrapper">
-				<div className="statistics-two__table-league-wrapper">
+		<div className={styles.statisticsOverview}>
+			<div className={styles.wrapper}>
+				<div className={styles.tableLeagueWrapper}>
 					<TableLeagueFilter />
 					<TableLeague data={dataLeagueTable}/>
 				</div>
-				<div className="statistics-two__two-columns">
+				<div className={styles.overviewInfoWrapper}>
 					<OverviewInfo data={overviewInfoOne}/>
 					<OverviewInfo data={overviewInfoTwo}/>
 				</div>
-				<div className="statistics-two__two-table-columns">
+				<div className={styles.tableNextPrevGamesWrapper}>
 					<TableNextPrevGames data={dataPrevTable} />
 					<TableNextPrevGames data={dataNextTable} />
 				</div>
@@ -69,4 +71,4 @@ function StatisticsTwo() {
 	);
 }
 
-export default StatisticsTwo;
+export default StatisticsOverview;
