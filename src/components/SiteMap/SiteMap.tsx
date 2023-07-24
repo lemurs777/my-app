@@ -70,8 +70,8 @@ function SiteMap() {
             link : '/statistics/calendar',
         },
         {
-			name : 'Статистика - Таблица',
-            link : '/statistics/table',
+			name : 'Статистика - Таблицы',
+            link : '/statistics/tables',
         },
         {
             name: 'Киберспорт',

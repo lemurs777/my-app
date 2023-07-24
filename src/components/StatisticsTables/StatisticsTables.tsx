@@ -3,20 +3,22 @@ import {
 	TableLeagueCustom,
 	TableFormFilter,
 	TableForm,
-} from '../components';
+} from '../';
 
-import arrTables from '../data/dataStatisticsFour';
+import arrTables from '../../data/dataStatisticsFour';
 
-function StatisticsFour() {
+import styles from './StatisticsTables.module.scss';
+
+function StatisticsTables() {
 
 	const dataLeagueTable = arrTables.dataLeagueTable;
 
 	const dataFormTable = arrTables.dataFormTable;
 
 	return (
-		<div className="statistics-four">
-			<div className="statistics-four__wrapper">
-				<div className="statistics-four__table-league-wrapper">
+		<div className={styles.statisticsTables}>
+			<div className={styles.wrapper}>
+				<div className={styles.tableLeagueWrapper}>
 					<TableLeagueCustomFilter />
 					<TableLeagueCustom data={dataLeagueTable}/>
 				</div>
@@ -27,4 +29,4 @@ function StatisticsFour() {
 	);
 }
 
-export default StatisticsFour;
+export default StatisticsTables;

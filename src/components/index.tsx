@@ -36,7 +36,7 @@ export { default as EventsList } from './EventsList';
 export { default as StatisticsOne } from './StatisticsOne';
 export { default as StatisticsOverview } from './StatisticsOverview';
 export { default as TableCalendar } from './TableCalendar';
-export { default as StatisticsFour } from './StatisticsFour';
+export { default as StatisticsTables } from './StatisticsTables';
 export { default as TableLeagues } from './TableLeagues';
 export { default as StatisticsSix } from './StatisticsSix';
 export { default as StatisticsSeven } from './StatisticsSeven';
@@ -66,3 +66,5 @@ export { default as TableBigSmallCustomFilter } from './TableBigSmallCustomFilte
 export { default as TableForm } from './TableForm';
 export { default as TableFormFilter } from './TableFormFilter';
 export { default as OverviewInfo } from './OverviewInfo';
+export { default as InPersonMain } from './InPersonMain';
+export { default as InPersonScore } from './InPersonScore';

@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 
 import { 
+	InPersonMain,
+	InPersonScore,
 	TableNextPrevGames,
 	PositionsChart,
 	TableLeague,
@@ -12,9 +14,22 @@ import arrTables from '../data/dataStatisticsSix';
 
 function StatisticsSix() {
 
-	const Score = {
-		win: 4,
-		game: 5,
+	const MainData = {
+		title: 'Биг V (Викториан Стейт Чемпионшип) Раунд 4',
+		nameOne: 'Western Port Steelers',
+		nameTwo: 'Блэкберн Викингс',
+		date: '15/04/23',
+		time: '12:00',
+	}
+
+	const ScoreData = {
+		title: 'Общий счёт',
+		winOne: 4,
+		percentOne: 80,
+		nameOne: 'Western Port Steelers',
+		winTwo: 1,
+		percentTwo: 20,
+		nameTwo: 'Блэкберн Викингс',
 	};
 
 	const PositionsChartData = {
@@ -41,14 +56,8 @@ function StatisticsSix() {
 	return (
 		<div className="statistics-six">
 			<div className="statistics-six__wrapper">
-				<h1 className="statistics-six__title">Биг V (Викториан Стейт Чемпионшип) Раунд 4</h1>
-				<div className="statistics-six__info">
-					<div className="statistics-six__info-name">Western Port Steelers</div>
-					<div className="statistics-six__info-date-wrapper">
-						<div className="statistics-six__info-date">15/04/23 - 12:00</div>
-						<button className="statistics-six__info-btn-date-update">Update</button>
-					</div>
-					<div className="statistics-six__info-name">Блэкберн Викингс</div>
+				<div className="statistics-six__main-wrapper">
+					<InPersonMain data={MainData}/>
 				</div>
 				<h2 className="statistics-six__name-accent">Следующие матчи</h2>
 				<div className="statistics-six__table">
@@ -243,22 +252,8 @@ function StatisticsSix() {
 						</div>
 					))}
 				</div>
-				<div className="statistics-six__score">
-					<h2 className="statistics-six__score-title">Общий счёт</h2>
-					<div className="statistics-six__score-wrapper">
-						<div className="statistics-six__score-colors">
-							<div className="statistics-six__score-color" style={{width: `${Score.win/Score.game*100}%`}}></div>
-							<div className="statistics-six__score-color" style={{width: `${100 - (Score.win/Score.game*100)}%`}}></div>
-						</div>
-						<div className="statistics-six__score-percent">
-							<div className="statistics-six__score-percent-text">
-								<span className="statistics-six__score-percent-text-win">{Score.win} ({Score.win/Score.game*100}%)</span>
-							</div>
-							<div className="statistics-six__score-percent-text">
-								<span className="statistics-six__score-percent-text-win">{Score.game - Score.win} ({100 - (Score.win/Score.game*100)}%)</span>
-							</div>
-						</div>
-					</div>
+				<div className="statistics-six__score-wrapper">
+					<InPersonScore data={ScoreData}/>
 				</div>
 				<h2 className="statistics-six__name-accent">Последние матчи</h2>
 				<div className="statistics-two__two-table-columns-wrapper">

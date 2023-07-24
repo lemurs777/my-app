@@ -22,7 +22,7 @@ import EventsPage from './pages/EventsPage';
 import StatisticsPageOne from './pages/StatisticsPageOne';
 import StatisticsPageOverview from './pages/StatisticsPageOverview';
 import StatisticsPageThree from './pages/StatisticsPageThree';
-import StatisticsPageFour from './pages/StatisticsPageFour';
+import StatisticsPageTables from './pages/StatisticsPageTables';
 import StatisticsPageFive from './pages/StatisticsPageFive';
 import SiteMapPage from './pages/SiteMapPage';
 import HomePageGames from './pages/HomePageGames';
@@ -78,7 +78,7 @@ export default function App() {
 					<Route index element={<StatisticsPageOne />} />
 					<Route path="overview" element={<StatisticsPageOverview />} />
 					<Route path="calendar" element={<StatisticsPageThree />} />
-					<Route path="table" element={<StatisticsPageFour />} />
+					<Route path="tables" element={<StatisticsPageTables />} />
 					<Route path="detailed" element={<StatisticsPageFive />} />
 					<Route path="face-to-face" element={<StatisticsPageSix />} />
 					<Route path="standings" element={<StatisticsPageSeven />} />

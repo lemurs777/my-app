@@ -1,0 +1,71 @@
+@import "sass-rem"; 
+
+.inPersonScore {
+	width: 100%;
+}
+
+.title {
+	font-weight: 500;
+	font-size: rem(48px);
+	line-height: rem(56px);
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: rem(24px);
+}
+
+.wrapper {
+	position: relative;
+	margin-bottom: rem(10px);
+}
+
+.colors {
+	display: flex;
+	height: rem(50px);
+}
+
+.color {
+	height: 100%;
+
+	&:nth-child(1) {
+		background: #1D7E3A;
+	}
+
+	&:nth-child(2) {
+		background: #52B205;
+	}
+}
+
+.percent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	padding: rem(0 60px);
+	justify-content: space-between;
+}
+
+.percentText {
+	font-weight: 500;
+	font-size: rem(24px);
+	line-height: rem(28px);
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.names {
+	display: flex;
+	justify-content: space-between;
+}
+
+.name {
+	text-transform: uppercase;
+	color: #F7FF13;
+	font-size: rem(24px);
+	line-height: rem(28px);
+	font-weight: 500;
+}

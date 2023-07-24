@@ -1,0 +1,16 @@
+@import "sass-rem";
+
+.statisticsTables {
+	width: 100%;
+	padding: rem(26px 0);
+}
+
+.wrapper {
+	max-width: rem(1376px);
+	padding: rem(0 15px 50px);
+	margin: 0 auto;
+}
+
+.tableLeagueWrapper {
+	margin-bottom: rem(40px);
+}

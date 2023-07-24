@@ -1,15 +1,15 @@
 import {
-    StatisticsFour,
+    StatisticsTables,
 } from '../components/';
 
-function StatisticsPageFour(){
+function StatisticsPageTables(){
    return (
        <>
            <main className="page page--statistics-four scroll">
-               <StatisticsFour />
+               <StatisticsTables />
            </main>
        </>	
    );
 };
 
-export default StatisticsPageFour;
+export default StatisticsPageTables;
