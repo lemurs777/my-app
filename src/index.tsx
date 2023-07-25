@@ -27,7 +27,7 @@ import StatisticsPageFive from './pages/StatisticsPageFive';
 import SiteMapPage from './pages/SiteMapPage';
 import HomePageGames from './pages/HomePageGames';
 import LimitsProfile from './pages/LimitsProfile';
-import StatisticsPageSix from './pages/StatisticsPageSix';
+import StatisticsPageInPerson from './pages/StatisticsPageInPerson';
 import StatisticsPageSeven from './pages/StatisticsPageSeven';
 import StatisticsPageSearch from './pages/StatisticsPageSearch';
 import ChoiceSportPage from './pages/ChoiceSportPage';
@@ -80,7 +80,7 @@ export default function App() {
 					<Route path="calendar" element={<StatisticsPageThree />} />
 					<Route path="tables" element={<StatisticsPageTables />} />
 					<Route path="detailed" element={<StatisticsPageFive />} />
-					<Route path="face-to-face" element={<StatisticsPageSix />} />
+					<Route path="in-person" element={<StatisticsPageInPerson />} />
 					<Route path="standings" element={<StatisticsPageSeven />} />
 					<Route path="search" element={<StatisticsPageSearch />} />
 				</Route>

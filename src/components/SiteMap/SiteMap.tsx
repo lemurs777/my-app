@@ -83,7 +83,7 @@ function SiteMap() {
         },
         {
             name: 'Статистика - Очные',
-            link: '/statistics/face-to-face',
+            link: '/statistics/in-person',
         },
         {
             name: 'Статистика - Положение команды',

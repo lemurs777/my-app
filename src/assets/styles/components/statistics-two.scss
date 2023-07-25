@@ -1,28 +1,4 @@
 .statistics-two {
-    width: 100%;
-    padding: rem(26px 0);
-
-    &__wrapper {
-        max-width: rem(1376px);
-        padding: rem(0 15px 50px);
-        margin: 0 auto;
-    }
-
-    &__table-league-wrapper {
-        margin-bottom: rem(40px);
-    }
-
-    &__two-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: rem(10px);
-        margin-bottom: rem(24px);
-    }
-
-    &__two-table-columns-wrapper {
-        max-width: rem(1346px);
-        margin: 0 auto;
-    }
 
     &__two-table-columns {
         display: grid;

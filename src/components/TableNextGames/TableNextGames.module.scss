@@ -1,0 +1,110 @@
+@import "sass-rem";
+
+.title {
+	font-weight: 400;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #000;
+	padding: rem(13px 20px);
+	background: #F7FF13;
+	text-align: center;
+}
+
+.table {
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	background: rgba(255, 255, 255, .14);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	padding: rem(0 20px);
+}
+
+.headerCell {
+	padding: rem(18px 10px 19px);
+	font-weight: 400;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+
+	&:nth-child(1) {
+		padding-left: rem(45px);
+		width: rem(340px);
+	}
+
+	&:nth-child(2) {
+		width: rem(200px);
+	}
+
+	&:nth-child(3) {
+		text-align: center;
+		width: rem(950px);
+	}
+
+	&:nth-child(4) {
+		width: rem(330px);
+		padding-right: 0;
+	}
+}
+
+.row {
+	display: flex;
+	background: rgba(255, 255, 255, .07);
+	padding: rem(0 20px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cell {
+	padding: rem(18px 10px 17px);
+	font-weight: 400;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+
+	&:nth-child(1) {
+		padding-left: rem(45px);
+		width: rem(340px);
+	}
+
+	&:nth-child(2) {
+		width: rem(200px);
+	}
+
+	&:nth-child(3) {
+		display: flex;
+		gap: rem(20px);
+		width: rem(950px);
+	}
+
+	&:nth-child(4) {
+		width: rem(330px);
+		padding-right: 0;
+	}
+}
+
+.cellText {
+	
+	&:nth-child(1) {
+		width: rem(280px);
+	}
+
+	&:nth-child(2) {
+		flex-grow: 1;
+		text-align: center;
+	}
+
+	&:nth-child(3) {
+		width: rem(280px);
+	}
+
+	&.cellTextAccent {
+		color: #F7FF13;
+	}
+}
+
+.cellTextSmall {
+	&.cellTextSmallAccent {
+		color: #F7FF13;
+	}
+}

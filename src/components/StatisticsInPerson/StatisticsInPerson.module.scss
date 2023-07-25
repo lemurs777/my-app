@@ -1,0 +1,58 @@
+@import "sass-rem";
+
+.statisticsInPerson {
+	width: 100%;
+	padding: rem(25px);
+}
+
+.title {
+	font-weight: 400;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #000;
+	padding: rem(13px 20px);
+	background: #F7FF13;
+	text-align: center;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.mainWrapper {
+	margin-bottom: rem(24px);
+}
+
+.infoWrapper {
+	margin-bottom: rem(58px);
+}
+
+.nextWrapper {
+	margin-bottom: rem(40px);
+}
+
+.scoreWrapper {
+	margin-bottom: rem(40px);
+}
+
+.posWrapper {
+	margin-bottom: rem(40px);
+}
+
+.tableWrapper {
+	max-width: rem(1346px);
+	margin: 0 auto rem(40px);
+}
+
+.twoTableColumnsWrapper {
+	max-width: rem(1346px);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: rem(10px);
+	margin: 0 auto rem(40px);
+}
+
+.tableBottomWrapper {
+	max-width: rem(1346px);
+	margin: 0 auto;
+}

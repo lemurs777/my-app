@@ -1,15 +1,15 @@
 import { 
-    StatisticsSix,
+    StatisticsInPerson,
 } from '../components/';
 
-function StatisticsPageSix(){
+function StatisticsPageInPerson(){
    return (
        <>
            <main className="page page--statistics-six scroll">
-               <StatisticsSix />
+               <StatisticsInPerson />
            </main>
        </>	
    );
 };
 
-export default StatisticsPageSix;
+export default StatisticsPageInPerson;
