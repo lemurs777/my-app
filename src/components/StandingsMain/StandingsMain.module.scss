@@ -1,0 +1,136 @@
+@import "sass-rem";
+
+.filter {
+	display: flex;
+	justify-content: center;
+	gap: rem(40px);
+	padding: rem(15px 20px 14px);
+	background: rgba(247, 255, 19, 0.15);
+	margin-bottom: rem(24px);
+	font-weight: 400;
+	font-size: rem(20px);
+	line-height: rem(23px);
+	color: #fff;
+}
+
+.filterName {
+	padding: rem(9px 20px);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.filterTeam {
+	padding: rem(9px 46px 9px 20px);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		right: rem(15px);
+		top: 50%;
+		width: rem(16px);
+		height: rem(16px);
+		background: url("../../assets/images/svg/statistics-name-arrow.svg") no-repeat 50% 50% /contain;
+		transform: translateY(-50%);
+	}
+}
+
+.tittle {
+	font-weight: 700;
+	font-size: rem(36px);
+	line-height: rem(42px);
+	color: #fff;
+	padding-bottom: rem(24px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-bottom: rem(24px);
+}
+
+.info {
+	max-width: rem(1346px);
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.infoGame {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: rem(10px);
+}
+
+.infoTitle {
+	font-weight: 500;
+	font-size: rem(24px);
+	line-height: rem(28px);
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.forms {
+	display: flex;
+	gap: rem(10px);
+	overflow: hidden;
+	padding-left: rem(15px);
+	background: url(../../assets/images/svg/statistics-arrow.svg) no-repeat 0% 50%;
+	background-size: rem(300px) rem(16px);
+}
+
+.form {
+	width: rem(30px);
+	height: rem(30px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	z-index: 2;
+
+	&.formWin {
+		color: #000;
+		background: #F7FF13;
+	}
+
+	&.formLoss {
+		color: #fff;
+		background: #1D7E3A;
+	}
+}
+
+.win {
+	display: flex;
+	gap: rem(24px);
+	align-items: flex-end;
+}
+
+.winWrapper {
+	width: rem(50px);
+	height: rem(94px);
+	position: relative;
+}
+
+.winShow {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #F7FF13;
+}
+
+.winPercentWrapper {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.winPercent {
+	font-weight: 700;
+	font-size: rem(48px);
+	line-height: rem(56px);
+}
+
+.winPercentText {
+	font-weight: 500;
+	font-size: rem(24px);
+	line-height: rem(28px);
+}

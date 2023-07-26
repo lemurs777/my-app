@@ -28,7 +28,7 @@ import SiteMapPage from './pages/SiteMapPage';
 import HomePageGames from './pages/HomePageGames';
 import LimitsProfile from './pages/LimitsProfile';
 import StatisticsPageInPerson from './pages/StatisticsPageInPerson';
-import StatisticsPageSeven from './pages/StatisticsPageSeven';
+import StatisticsPageStandings from './pages/StatisticsPageStandings';
 import StatisticsPageSearch from './pages/StatisticsPageSearch';
 import ChoiceSportPage from './pages/ChoiceSportPage';
 import ChoiceCountryPage from './pages/ChoiceCountryPage';
@@ -81,7 +81,7 @@ export default function App() {
 					<Route path="tables" element={<StatisticsPageTables />} />
 					<Route path="detailed" element={<StatisticsPageFive />} />
 					<Route path="in-person" element={<StatisticsPageInPerson />} />
-					<Route path="standings" element={<StatisticsPageSeven />} />
+					<Route path="standings" element={<StatisticsPageStandings />} />
 					<Route path="search" element={<StatisticsPageSearch />} />
 				</Route>
 			</Routes>
