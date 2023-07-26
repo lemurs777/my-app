@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.b42897d9.css",
-    "main.js": "/my-app/static/js/main.51ab7711.js",
+    "main.css": "/my-app/static/css/main.9cd0d458.css",
+    "main.js": "/my-app/static/js/main.8b733263.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -203,12 +203,12 @@
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-mini-table-line.svg": "/my-app/static/media/statistics-mini-table-line.72268d04cde6db52e453.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.b42897d9.css.map": "/my-app/static/css/main.b42897d9.css.map",
-    "main.51ab7711.js.map": "/my-app/static/js/main.51ab7711.js.map",
+    "main.9cd0d458.css.map": "/my-app/static/css/main.9cd0d458.css.map",
+    "main.8b733263.js.map": "/my-app/static/js/main.8b733263.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b42897d9.css",
-    "static/js/main.51ab7711.js"
+    "static/css/main.9cd0d458.css",
+    "static/js/main.8b733263.js"
   ]
 }
