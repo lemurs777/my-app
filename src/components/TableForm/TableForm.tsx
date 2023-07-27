@@ -1,20 +1,8 @@
 import clsx from 'clsx';
 
-import styles from './TableForm.module.scss';
+import { TableFormData } from './types';
 
-type TableFormData = Array<{
-	number: number,
-	name: string,
-	scored: number,
-	conceded: number,
-	game: number,
-	points: number,
-	percent: number,
-	forms: Array<{
-		form: string,
-	}>,
-	next: string,
-}>;
+import styles from './TableForm.module.scss';
 
 function TableLeague(
 	{ data } : {data : TableFormData }

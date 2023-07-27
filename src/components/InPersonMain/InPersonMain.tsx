@@ -1,12 +1,6 @@
-import styles from './InPersonMain.module.scss';
+import { InPersonMainData } from './types';
 
-type InPersonMainData = {
-	title: string,
-	nameOne: string,
-	nameTwo: string,
-	date: string,
-	time: string,
-};
+import styles from './InPersonMain.module.scss';
 
 function InPersonMain(
 	{ data } : {data : InPersonMainData}

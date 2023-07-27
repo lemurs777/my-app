@@ -1,25 +1,9 @@
 import { useState } from 'react';
 import clsx from 'clsx';
 
+import { dataItemsType, dataItemType } from './types';
+
 import styles from './EventsList.module.scss';
-
-interface dataItemType {
-	title: string,
-	favourite: boolean,
-	arrInfo: Array<{
-		arrRow: Array<{
-			name: string,
-			countOne: string,
-			countTwo: string | null,
-			up: boolean,
-			down: boolean,
-		}>, 
-	}>
-}
-
-interface dataItemsType {
-	dataItems: Array<dataItemType>,
-}
 
 function EventsList ( {dataList} : {dataList: dataItemsType} ){
 

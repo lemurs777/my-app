@@ -1,38 +1,8 @@
 import clsx from 'clsx';
 
-import styles from './InPersonInfo.module.scss';
+import { InPersonInfoData } from './types';
 
-type InPersonInfoData = {
-	title: string,
-	date: string,
-	tournament: string,
-	round: number,
-	mainPercent: number,
-	nameOne: string,
-	scoreOne: number,
-	tablePercentOne: number,
-	tablePositionOne: number,
-	winOne: number,
-	bigWinOne: string,
-	pointsOne: number,
-	mediumPointsOne: number,
-	efficiencyOne: number,
-	formsOne: Array<{
-		form: string,
-	}>,
-	nameTwo: string,
-	scoreTwo: number,
-	tablePercentTwo: number,
-	tablePositionTwo: number,
-	winTwo: number,
-	bigWinTwo: string,
-	pointsTwo: number,
-	mediumPointsTwo: number,
-	efficiencyTwo: number,
-	formsTwo: Array<{
-		form: string,
-	}>,
-};
+import styles from './InPersonInfo.module.scss';
 
 function InPersonMain(
 	{ data } : {data : InPersonInfoData}

@@ -3,11 +3,9 @@ import {
 	HeaderBottom,
 } from '../';
 
-import styles from './Header.module.scss';
+import { HeaderSettings } from './types';
 
-interface HeaderSettings {
-	showBottom: boolean;
-}
+import styles from './Header.module.scss';
 
 function Header(props: HeaderSettings) {
 

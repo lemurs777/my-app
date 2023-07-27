@@ -1,13 +1,11 @@
 import clsx from 'clsx';
 import { useState } from 'react';
 
+import { ModalType, ModalSettingsType } from './types';
+
 import styles from './ModalSettings.module.scss';
 
-interface ModalType {
-	toggleModal: () => void;
-}
-
-function ModalSettings (props: ModalType) {
+function ModalSettings (data: ModalType) {
 
 	const [showSettings, setShowSettings] = useState(0);
 
@@ -138,14 +136,6 @@ function ModalSettings (props: ModalType) {
 }
 
 export default ModalSettings;
-
-interface ModalSettingsType {
-	item: {
-		name: string;
-		sum: string;
-		check: boolean;
-	}
-}
 
 function SettingsItem ( data: ModalSettingsType ) {
 

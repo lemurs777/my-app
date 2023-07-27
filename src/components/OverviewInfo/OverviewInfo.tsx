@@ -1,18 +1,6 @@
-import styles from './OverviewInfo.module.scss';
+import { OverviewInfoData } from './types';
 
-type OverviewInfoData = {
-	title: string,
-	leftNum: string,
-	leftText: string,
-	centerNum: string,
-	centerText: string,
-	rightNum: string,
-	rightText: string,
-	allNum: string,
-	allText: string,
-	percentLeft: number,
-	percentRight: number,
-};
+import styles from './OverviewInfo.module.scss';
 
 function OverviewInfo({ data } : { data: OverviewInfoData }) {
 

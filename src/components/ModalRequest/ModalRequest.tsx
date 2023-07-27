@@ -1,10 +1,8 @@
 import { useState } from "react";
 
-import styles from './ModalRequest.module.scss';
+import { ModalType } from './types';
 
-interface ModalType {
-	toggleModal: () => void;
-}
+import styles from './ModalRequest.module.scss';
 
 function ModalRequest (props: ModalType) {
 	const [isTopic, setIsTopic] = useState('');

@@ -1,14 +1,6 @@
-import styles from './InPersonScore.module.scss';
+import { InPersonScoreData } from './types';
 
-type InPersonScoreData = {
-	title: string,
-	winOne: number,
-	percentOne: number,
-	nameOne: string,
-	winTwo: number,
-	percentTwo: number,
-	nameTwo: string,
-};
+import styles from './InPersonScore.module.scss';
 
 function InPersonScore(
 	{ data } : {data : InPersonScoreData}

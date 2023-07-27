@@ -125,7 +125,7 @@ function StatisticsInPerson() {
 				</div>
 				<div className={styles.posWrapper}>
 					<h2 className={styles.title}>Позиция команды</h2>
-					<PositionsChart props={PositionsChartData}/>
+					<PositionsChart data={PositionsChartData}/>
 				</div>
 				<div className={styles.tableWrapper}>
 					<TableLeague data={dataLeagueTable} />

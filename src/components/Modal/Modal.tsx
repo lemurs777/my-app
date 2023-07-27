@@ -1,12 +1,6 @@
-import { ReactNode } from "react";
+import { ModalType } from './types';
 
 import styles from './Modal.module.scss';
-
-interface ModalType {
-	children?: ReactNode;
-	isOpen: boolean;
-	toggleModal: () => void;
-}
 
 function Modal(props: ModalType) {
 	

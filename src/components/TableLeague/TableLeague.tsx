@@ -1,32 +1,9 @@
 import { useState } from 'react';
 import clsx from 'clsx';
 
-import styles from './TableLeague.module.scss';
+import { TableLeagueData } from './types';
 
-type TableLeagueData = {
-	title: string | null,
-	info: boolean,
-	btnShowTable: boolean,
-	forms: boolean,
-	dataTable: Array<{
-		show: boolean,
-		number: number,
-		playTournamentClass: string,
-		directionClass: string,
-		name: string,
-		game: number,
-		win: number,
-		loss: number,
-		scored: number,
-		conceded: number,
-		ratio: number,
-		pct: number,
-		points: number,
-		forms: Array<{
-			form: string,
-		}>
-	}>	
-};
+import styles from './TableLeague.module.scss';
 
 function TableLeague(
 	{ data } : {data : TableLeagueData }

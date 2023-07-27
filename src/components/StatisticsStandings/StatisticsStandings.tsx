@@ -51,7 +51,7 @@ function StatisticsStandings() {
 				<TableNextPrevGames data={dataPrevTable} />
 				<TableNextPrevGames data={dataNextTable} />
 			</div>
-			<PositionsChart props={PositionsChartData}/>
+			<PositionsChart data={PositionsChartData}/>
 		</div>
 	);
 }

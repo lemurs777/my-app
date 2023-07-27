@@ -1,20 +1,9 @@
 import { useState } from 'react';
 import clsx from 'clsx';
 
-import styles from './TableBigSmall.module.scss';
+import { TableBigSmallData } from './types';
 
-type TableBigSmallData = {
-	btnShowTable: boolean,
-	dataTable: Array<{
-		show: boolean,
-		number: number,
-		name: string,
-		game: number,
-		win: number,
-		percent: number,
-		points: number,
-	}>	
-};
+import styles from './TableBigSmall.module.scss';
 
 function TableBigSmall(
 	{ data } : { data : TableBigSmallData }

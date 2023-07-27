@@ -2,12 +2,9 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import clsx from 'clsx';
 
-import styles from './FaqBigList.module.scss';
+import { FaqListData } from './types';
 
-type FaqListData = {
-	activeIndex: number,
-	activeCategory: string
-};
+import styles from './FaqBigList.module.scss';
 
 export function createContent(content: string) {
 	return {__html: content};

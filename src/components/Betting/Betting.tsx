@@ -2,83 +2,83 @@ import styles from './Betting.module.scss';
 
 import { Link } from 'react-router-dom';
 
-
-const arrRows = [
-	{
-		result: 'Проигрыш',
-		number: '29847938',
-		date: '2023-03-31',
-		time: '20:31:41',
-		sum: '500',
-		currency: 'руб.',
-		status: 'Линия',
-	},
-	{
-		result: 'Проигрыш',
-		number: '29847938',
-		date: '2023-03-31',
-		time: '20:31:41',
-		sum: '500',
-		currency: 'руб.',
-		status: 'Линия',
-	},
-	{
-		result: 'Проигрыш',
-		number: '29847938',
-		date: '2023-03-31',
-		time: '20:31:41',
-		sum: '500',
-		currency: 'руб.',
-		status: 'Линия',
-	},
-	{
-		result: 'Проигрыш',
-		number: '29847938',
-		date: '2023-03-31',
-		time: '20:31:41',
-		sum: '500',
-		currency: 'руб.',
-		status: 'Линия',
-	},
-	{
-		result: 'Проигрыш',
-		number: '29847938',
-		date: '2023-03-31',
-		time: '20:31:41',
-		sum: '500',
-		currency: 'руб.',
-		status: 'Линия',
-	},
-	{
-		result: 'Проигрыш',
-		number: '29847938',
-		date: '2023-03-31',
-		time: '20:31:41',
-		sum: '500',
-		currency: 'руб.',
-		status: 'Линия',
-	},
-	{
-		result: 'Проигрыш',
-		number: '29847938',
-		date: '2023-03-31',
-		time: '20:31:41',
-		sum: '500',
-		currency: 'руб.',
-		status: 'Линия',
-	},
-	{
-		result: 'Проигрыш',
-		number: '29847938',
-		date: '2023-03-31',
-		time: '20:31:41',
-		sum: '500',
-		currency: 'руб.',
-		status: 'Линия',
-	},
-];
-
 function Betting() {
+
+	const arrRows = [
+		{
+			result: 'Проигрыш',
+			number: '29847938',
+			date: '2023-03-31',
+			time: '20:31:41',
+			sum: '500',
+			currency: 'руб.',
+			status: 'Линия',
+		},
+		{
+			result: 'Проигрыш',
+			number: '29847938',
+			date: '2023-03-31',
+			time: '20:31:41',
+			sum: '500',
+			currency: 'руб.',
+			status: 'Линия',
+		},
+		{
+			result: 'Проигрыш',
+			number: '29847938',
+			date: '2023-03-31',
+			time: '20:31:41',
+			sum: '500',
+			currency: 'руб.',
+			status: 'Линия',
+		},
+		{
+			result: 'Проигрыш',
+			number: '29847938',
+			date: '2023-03-31',
+			time: '20:31:41',
+			sum: '500',
+			currency: 'руб.',
+			status: 'Линия',
+		},
+		{
+			result: 'Проигрыш',
+			number: '29847938',
+			date: '2023-03-31',
+			time: '20:31:41',
+			sum: '500',
+			currency: 'руб.',
+			status: 'Линия',
+		},
+		{
+			result: 'Проигрыш',
+			number: '29847938',
+			date: '2023-03-31',
+			time: '20:31:41',
+			sum: '500',
+			currency: 'руб.',
+			status: 'Линия',
+		},
+		{
+			result: 'Проигрыш',
+			number: '29847938',
+			date: '2023-03-31',
+			time: '20:31:41',
+			sum: '500',
+			currency: 'руб.',
+			status: 'Линия',
+		},
+		{
+			result: 'Проигрыш',
+			number: '29847938',
+			date: '2023-03-31',
+			time: '20:31:41',
+			sum: '500',
+			currency: 'руб.',
+			status: 'Линия',
+		},
+	];
+	
 	return (
 		<div className={styles.betting}>
 			<div className={styles.header}>

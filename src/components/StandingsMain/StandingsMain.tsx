@@ -1,15 +1,8 @@
 import clsx from 'clsx';
 
-import styles from './StandingsMain.module.scss';
+import { StandingsMainData } from './types';
 
-type StandingsMainData = {
-	tournament: string,
-	team: string,
-	percent: number,
-	forms: Array<{
-		form: string
-	}>
-};
+import styles from './StandingsMain.module.scss';
 
 function StandingsMain(
 	{ data } : {data : StandingsMainData}

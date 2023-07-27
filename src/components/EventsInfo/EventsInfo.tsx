@@ -5,6 +5,8 @@ import {
     EventsList,
 } from '../';
 
+import { CategoryData, ItemsData } from './types';
+
 import Logo1 from '../../assets/images/events-info-live-logo-fc-bayern-x2.min.png';
 import Logo2 from '../../assets/images/events-info-live-logo-fc-frankfurt-x2.min.png';
 
@@ -15,23 +17,8 @@ function EventsInfo(
 		dataCategory,
 		dataItems,
 	}: {
-		dataCategory: Array<{
-			name: string,
-			active: boolean,
-		}>,
-		dataItems: Array<{
-			title: string,
-			favourite: boolean,
-			arrInfo: Array<{
-				arrRow: Array<{
-					name: string,
-					countOne: string,
-					countTwo: string | null,
-					up: boolean,
-					down: boolean,
-				}>,
-			}>,
-		}>,
+		dataCategory: CategoryData,
+		dataItems: ItemsData,
 	}
 ) {
 
@@ -83,7 +70,7 @@ return (
 					</div>
 				</div>
 			</div>
-			<CategoryList categoryList={dataCategory}/>
+			<CategoryList data={dataCategory}/>
 		</div>
 		<EventsList dataList={{dataItems}}/>
 	</div>

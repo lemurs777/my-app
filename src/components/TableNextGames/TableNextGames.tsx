@@ -1,21 +1,8 @@
 import clsx from 'clsx';
 
-import styles from './TableNextGames.module.scss';
+import { NextGamesData } from './types';
 
-type NextGamesData = {
-	title: string,
-	dataTable: Array<{
-		date: string,
-		round: number,
-		nameOne: string,
-		winOne: boolean,
-		scoreOne: number,
-		scoreTwo: number,
-		scoreInfo: string,
-		nameTwo: string,
-		tournament: string,
-	}>;
-};
+import styles from './TableNextGames.module.scss';
 
 function TableNextGames(
 	{ data } : {data : NextGamesData}
@@ -23,7 +10,7 @@ function TableNextGames(
 
 	return (
 		<>
-			<h2 className={styles.title}>{data.title}</h2>
+			<h2 className={styles.title}>{data.title}!</h2>
 			<div className={styles.table}>
 				<div className={styles.header}>
 					<div className={styles.headerCell}>Дата</div>

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import { RequestData } from './types';
+
 import styles from './ChoiceCountry.module.scss';
 
 import Au from '../../assets/images/flags/au.png';
@@ -34,10 +36,6 @@ import Hn from '../../assets/images/flags/hn.png';
 import Hk from '../../assets/images/flags/hk.png';
 import Gr from '../../assets/images/flags/gr.png';
 import Ge from '../../assets/images/flags/ge.png';
-
-type RequestData = {
-	numRequest: number
-};
 
 function ChoiceCountry(props: RequestData) {
 

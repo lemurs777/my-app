@@ -5,13 +5,11 @@ import Modal from "../Modal";
 import ModalRequest from '../ModalRequest';
 import useModal from "../../hooks/useModal";
 
+import { RequestData } from './types';
+
 import styles from './Request.module.scss';
 
-type RequestData = {
-	numRequest: number
-};
-
-function Request(props: RequestData) {
+function Request(data: RequestData) {
 
 	const { isOpen, toggleModal } = useModal();
 
@@ -109,7 +107,7 @@ function Request(props: RequestData) {
 		},
 	];
 
-	const arrRequestsFilter = arrRequests.filter((info) => info.id === props.numRequest);
+	const arrRequestsFilter = arrRequests.filter((info) => info.id === data.numRequest);
 	
 	return (
 		<div className={styles.request}>

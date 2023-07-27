@@ -1,22 +1,15 @@
 import clsx from 'clsx';
 
+import { CategoryListData } from './types';
+
 import styles from './CategoryList.module.scss';
 
-function CategoryList(
-	{
-		categoryList
-	}: {
-		categoryList: Array<{
-			name: string,
-			active: boolean,
-		}>;
-	}
-) {
+function CategoryList({ data } : { data: CategoryListData }) {
 
 return (	
 	<div className={styles.categotyList}>
 		<ul className={styles.list}>
-			{categoryList.map((category, index) => (
+			{data.map((category, index) => (
 				<li key={index} className={styles.item}>
 					<button className={clsx(
 						styles.itemBtn,

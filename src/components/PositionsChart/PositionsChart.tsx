@@ -8,6 +8,8 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 
+import { PositionsChartData } from './types';
+
 import styles from './PositionsChart.module.scss';
 
 ChartJS.register(
@@ -20,7 +22,7 @@ ChartJS.register(
 const arrPosVertically: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const arrPosHorizontally: number[] = [1, 3, 5, 6, 9, 11, 13, 15, 17, 19, 21];
 
-export const options = {
+const options = {
 	responsive: true,
 	drawTicks: true,
 	scales: {
@@ -43,21 +45,14 @@ export const options = {
 
 const labels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
 
-type PositionsChartData = {
-	nameOne: string,
-	arrOne: Array<number>,
-	nameTwo: string,
-	arrTwo: Array<number>,
-};
+function PositionsChart({ data } : { data: PositionsChartData }) {
 
-function PositionsChart({ props } : { props: PositionsChartData }) {
+	const arrPosOne: number[] = data.arrOne;
+	const arrPosTwo: number[] = data.arrTwo;
+	const nameOne: string = data.nameOne;
+	const nameTwo: string = data.nameTwo;
 
-	const arrPosOne: number[] = props.arrOne;
-	const arrPosTwo: number[] = props.arrTwo;
-	const nameOne: string = props.nameOne;
-	const nameTwo: string = props.nameTwo;
-
-	const data = {
+	const info = {
 		labels,
 		datasets: [
 			{
@@ -91,7 +86,7 @@ function PositionsChart({ props } : { props: PositionsChartData }) {
 						<div key={index} className={styles.numberBottom}>{posHorizontally}</div>
 					))}
 				</div>
-				<Line className={styles.content} options={options} data={data} />
+				<Line className={styles.content} options={options} data={info} />
 				<div className={styles.bg}>
 					{ (arrPosOne.length !== 0) ? (
 						<div className={styles.line} style={{top: `${((arrPosOne[arrPosOne.length - 1]) / 10) * 99}%`, left: `${(100 / (labels.length - 1)) * (arrPosOne.length - 1)}%`}}></div>

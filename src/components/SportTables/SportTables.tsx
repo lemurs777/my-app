@@ -1,6 +1,7 @@
 import clsx from 'clsx';
-
 import { useState } from 'react';
+
+import { SportTableData } from './types';
 
 import styles from './SportTables.module.scss';
 
@@ -331,23 +332,6 @@ function SportTables() {
 }
 
 export default SportTables;
-
-type SportTableData = {
-	sport: string,
-	class: string,
-	arrRows: Array<{ 
-		name: string, 
-		time: string, 
-		date: string,
-		nameOne: string,
-		nameTwo: string,
-		lastNumber: string,
-		arrNumbers: Array<{
-			number: number,
-			class: string,
-		}>	
-	}>
-};
 
 function SportTable (
 	{ data } : { data: SportTableData }
