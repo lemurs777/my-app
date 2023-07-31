@@ -10,6 +10,10 @@ function SiteMap() {
             link : '/',
         },
         {
+			name : 'Модальные окна',
+            link : '/modals',
+        },
+        {
 			name : 'Профиль',
             link : '/profile',
         },

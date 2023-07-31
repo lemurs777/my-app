@@ -9,7 +9,7 @@ function useModal() {
 
   return {
     isOpen,
-    toggleModal
+    toggleModal,
   };
 }
 

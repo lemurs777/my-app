@@ -1,0 +1,23 @@
+@import "sass-rem";
+
+.btnWrapper {
+    padding: rem(30px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(30px);
+}
+
+.btn {
+	font-weight: 700;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	padding: rem(7px 12px);
+	background: #FAFE13;
+	border-radius: rem(3px);
+	cursor: pointer;
+}

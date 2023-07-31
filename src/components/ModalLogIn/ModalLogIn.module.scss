@@ -1,0 +1,138 @@
+@import "sass-rem";
+
+.modalLogIn {
+	position: relative;
+	padding: rem(19px 90px 25px);
+	width: rem(370px);
+	max-width: 100%;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	padding-bottom: rem(36px);
+}
+
+.btnWrapper {
+	display: flex;
+	border-radius: rem(3px);
+	background: #2E2E2E;
+	margin-bottom: rem(20px);
+}
+
+.tabBtn {
+	display: inline-block;
+	width: 50%;
+	border-radius: rem(3px);
+	background: #2E2E2E;
+	color: #737373;
+	text-align: center;
+	font-size: rem(15px);
+	font-weight: 700;
+	padding: rem(11px 21px);
+	cursor: pointer;
+
+	&.tabBtnActive {
+		color: #000;
+		background: #F7FF13;
+	}
+}
+
+.tab {
+	display: none;
+
+	&.tabActive {
+		display: block;
+	}
+}
+
+.label {
+	display: flex;
+	flex-direction: column;
+	gap: rem(5px);
+}
+
+.labelInfo {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	font-weight: 400;
+	line-height: rem(15px);
+}
+
+.labelInput {
+	width: 100%;
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(14px 11px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+
+	&::placeholder {
+		color: #898989;
+		opacity: 1;
+	}
+}
+
+.inputWrapper {
+	display: flex;
+}
+
+.labelInputPhone {
+	display: inline-block;
+	width: calc(100% - rem(61px));
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(14px 11px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+
+	&::placeholder {
+		color: #898989;
+		opacity: 1;
+	}
+}
+
+.selectCode {
+	display: flex;
+	gap: rem(8px);
+	border: 1px solid #2E2E2E;
+	border-right: transparent;
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+	padding: rem(14px 10px);
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		display: inline-block;
+		width: rem(18px);
+		height: rem(18px);
+		background: url("../../assets/images/svg/header-flag-ru.svg") no-repeat 50% 50% /contain;
+		border-radius: 50%;
+	}
+}
+
+.btn {
+	margin-top: rem(25px);
+	padding: rem(13px 20px);
+	display: inline-block;
+	width: 100%;
+	border-radius: rem(3px);
+	background: #FAFE13;
+	text-align: center;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}

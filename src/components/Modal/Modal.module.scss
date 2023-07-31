@@ -12,7 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: rem(30px 10px);}
+    padding: rem(30px 10px);
+}
+
+.modalFull {
+    height: 100vh;
+}
 
 .overlay {
     position: relative;

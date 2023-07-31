@@ -71,3 +71,5 @@ export { default as InPersonInfo } from './InPersonInfo';
 export { default as InPersonScore } from './InPersonScore';
 export { default as TableNextGames } from './TableNextGames';
 export { default as StandingsMain } from './StandingsMain';
+export { default as Modals } from './Modals';
+export { default as ModalLogIn } from './ModalLogIn';

@@ -177,7 +177,7 @@ function ProfileItem(
 								{[styles.linkProblem] : infoItem.isProblem}
 							)} 
 							onClick={toggleModal}>{infoItem.name}</button>
-							<Modal isOpen={isOpen} toggleModal={toggleModal}>
+							<Modal isOpen={isOpen} toggleModal={toggleModal} full={false}>
 								<ModalSettings toggleModal={toggleModal}/>
 							</Modal>
 							</>

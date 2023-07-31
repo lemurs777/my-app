@@ -155,7 +155,7 @@ function Requests() {
 					) }
 				</div>
 			</div>
-			<Modal isOpen={isOpen} toggleModal={toggleModal}>
+			<Modal isOpen={isOpen} toggleModal={toggleModal} full={false}>
 				<ModalRequest toggleModal={toggleModal}/>
 			</Modal>
 		</div>

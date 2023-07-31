@@ -36,6 +36,7 @@ import FAQPage from './pages/FAQPage';
 import RequestsPage from './pages/RequestsPage';
 import RequestPage from './pages/RequestPage';
 import EventsDetailedPage from './pages/EventsDetailedPage';
+import ModalsPage from './pages/ModalsPage';
 
 export default function App() {
 	return (
@@ -48,6 +49,7 @@ export default function App() {
 					<Route path="/choice-of-country" element={<ChoiceCountryPage/>} />
 					<Route path="/faq" element={<FAQPage/>} />
 					<Route path="/sitemap" element={<SiteMapPage/>} />
+					<Route path="/modals" element={<ModalsPage/>} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 				<Route path="/profile/" element={<ProfileLayout />}>
