@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-
 import styles from './Promo.module.scss';
 
 import PromoBanner1 from '../../assets/images/profile-promo-banner-1-x2.min.jpg';
