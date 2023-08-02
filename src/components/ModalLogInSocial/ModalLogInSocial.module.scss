@@ -1,6 +1,6 @@
 @import "sass-rem";
 
-.modalLogIn {
+.modalLogInSocial {
 	position: relative;
 	padding: rem(19px 90px 25px);
 	width: rem(370px);
@@ -123,9 +123,51 @@
 	}
 }
 
+.socialText {
+	margin-top: rem(15px);
+	color: #9E9E9E;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: rem(10px);
+}
+
+.socialWrapper {
+	display: flex;
+	justify-content: center;
+	gap: rem(7px);
+}
+
+.socialBtn {
+	display: inline-block;
+	width: rem(42px);
+	height: rem(42px);
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	&.socialBtnGoogle {
+		background-image: url("../../assets/images/svg/modals/social-google.svg");
+	}
+
+	&.socialBtnTg {
+		background-image: url("../../assets/images/svg/modals/social-tg.svg");
+	}
+
+	&.socialBtnTw {
+		background-image: url("../../assets/images/svg/modals/social-tw.svg");
+	}
+
+	&.socialBtnFb {
+		background-image: url("../../assets/images/svg/modals/social-fb.svg");
+	}
+}
+
 .btn {
 	color: #000;
-	margin-top: rem(25px);
+	margin-top: rem(20px);
 	padding: rem(13px 20px);
 	display: inline-block;
 	width: 100%;

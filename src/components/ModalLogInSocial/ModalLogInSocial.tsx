@@ -3,14 +3,14 @@ import { useState } from "react";
 
 import { ModalType } from './types';
 
-import styles from './ModalLogIn.module.scss';
+import styles from './ModalLogInSocial.module.scss';
 
-function ModalLogIn (props: ModalType) {
+function ModalLogInSocial (props: ModalType) {
 
 	const [isTab, setIsTab] = useState('email');
 
 	return (
-		<div className={styles.modalLogIn}>
+		<div className={styles.modalLogInSocial}>
 			<h2 className={styles.title}>Вход</h2>
 			<div className={styles.btnWrapper}>
 				<button 
@@ -49,9 +49,16 @@ function ModalLogIn (props: ModalType) {
 					</div>
 				</div>
 			</div>
+			<div className={styles.socialText}>или используйте соц. сети</div>
+			<div className={styles.socialWrapper}>
+				<button className={clsx(styles.socialBtn, styles.socialBtnGoogle)}></button>
+				<button className={clsx(styles.socialBtn, styles.socialBtnTg)}></button>
+				<button className={clsx(styles.socialBtn, styles.socialBtnTw)}></button>
+				<button className={clsx(styles.socialBtn, styles.socialBtnFb)}></button>
+			</div>
 			<button className={styles.btn}>Продолжить</button>
 		</div>
 	);
 }
 
-export default ModalLogIn;
+export default ModalLogInSocial;

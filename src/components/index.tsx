@@ -73,3 +73,6 @@ export { default as TableNextGames } from './TableNextGames';
 export { default as StandingsMain } from './StandingsMain';
 export { default as Modals } from './Modals';
 export { default as ModalLogIn } from './ModalLogIn';
+export { default as ModalLogInSocial } from './ModalLogInSocial';
+export { default as ModalRegistration } from './ModalRegistration';
+export { default as ModalVerification } from './ModalVerification';

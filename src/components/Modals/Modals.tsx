@@ -1,6 +1,9 @@
 	import { 
 		Modal,
 		ModalLogIn,
+		ModalLogInSocial,
+		ModalRegistration,
+		ModalVerification,
 		ModalSettings
 	} from '../../components/';
 
@@ -25,12 +28,24 @@
 		return (
 			<>
 				<div className={styles.btnWrapper}>
-					<button className={styles.btn} onClick={() => { CurrentModal('login', true)}}>Вход</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('login', true)}}>Вход (телефон, почта)</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('login-social', true)}}>Вход (телефон, почта, соцсети)</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('registration', true)}}>Регистрация</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('verification', false) }}>Проверка личности</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('settings', false) }}>Настройки</button>
 				</div>
 				<Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>
 					{ (isName === 'login') ? (
 						<ModalLogIn toggleModal={toggleModal}/>
+					) : null}
+					{ (isName === 'login-social') ? (
+						<ModalLogInSocial toggleModal={toggleModal}/>
+					) : null}
+					{ (isName === 'registration') ? (
+						<ModalRegistration toggleModal={toggleModal}/>
+					) : null}
+					{ (isName === 'verification') ? (
+						<ModalVerification toggleModal={toggleModal}/>
 					) : null}
 					{ (isName === 'settings') ? (
 						<ModalSettings toggleModal={toggleModal}/>
