@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.fdc498b5.css",
-    "main.js": "/my-app/static/js/main.c6cb088b.js",
+    "main.css": "/my-app/static/css/main.53162bae.css",
+    "main.js": "/my-app/static/js/main.4c6aa13c.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/promo-main-banner-1-x2.min.jpg": "/my-app/static/media/promo-main-banner-1-x2.min.c1775e1874a823f08040.jpg",
     "static/media/events-info-live-top-bg-x2.min.jpg": "/my-app/static/media/events-info-live-top-bg-x2.min.05f63d27f9ae3000b9ef.jpg",
     "static/media/game-banner-icon-2.svg": "/my-app/static/media/game-banner-icon-2.f14b2cc0d3851f06c72c7e9f5b78309c.svg",
+    "static/media/verification-x2.min.png": "/my-app/static/media/verification-x2.min.8c15aa9c213ba277b293.png",
     "static/media/profile-promo-banner-1-x2.min.jpg": "/my-app/static/media/profile-promo-banner-1-x2.min.ce3788d41d6610fc23a8.jpg",
     "static/media/promo-banner-2-x2.min.jpg": "/my-app/static/media/promo-banner-2-x2.min.da71f4581461e23eeb07.jpg",
     "static/media/promo-banner-1-x2.min.jpg": "/my-app/static/media/promo-banner-1-x2.min.dc0d5703a94afef6cd79.jpg",
@@ -85,6 +86,7 @@
     "static/media/settings-checkbox-check.svg": "/my-app/static/media/settings-checkbox-check.cc0495a50f5edff33854.svg",
     "static/media/darts-hover.svg": "/my-app/static/media/darts-hover.175277ce0cb790f32fb5.svg",
     "static/media/darts.svg": "/my-app/static/media/darts.75abd9964bf200d8b682.svg",
+    "static/media/social-google.svg": "/my-app/static/media/social-google.434ac401d8b8ba6d07b6.svg",
     "static/media/request-hover.svg": "/my-app/static/media/request-hover.3c9666e7407b4edfe26e.svg",
     "static/media/request.svg": "/my-app/static/media/request.2c7732c0a7c76f960c23.svg",
     "static/media/top.svg": "/my-app/static/media/top.990ab1556f46dfc38d75.svg",
@@ -114,8 +116,10 @@
     "static/media/events-favourite.svg": "/my-app/static/media/events-favourite.de9068140ed4b5d3bc9a.svg",
     "static/media/tennis-hover.svg": "/my-app/static/media/tennis-hover.4ad129b9ff28f4565555.svg",
     "static/media/tennis.svg": "/my-app/static/media/tennis.6f5dacd00a2b4cdce485.svg",
+    "static/media/social-tw.svg": "/my-app/static/media/social-tw.5882708ba9dd5281a2e5.svg",
     "static/media/sports-list-tennis.svg": "/my-app/static/media/sports-list-tennis.5656c9dea0be83bfe909.svg",
     "static/media/menu-tennis.svg": "/my-app/static/media/menu-tennis.a4de555741d18c75527d.svg",
+    "static/media/social-tg.svg": "/my-app/static/media/social-tg.c25ce50a8fbdabb607cb.svg",
     "static/media/menu-racing.svg": "/my-app/static/media/menu-racing.0d62810c344ff2ce64dd.svg",
     "static/media/faq-add-question-icon.svg": "/my-app/static/media/faq-add-question-icon.c4ef7a20769fd541a271.svg",
     "static/media/snooker-hover.svg": "/my-app/static/media/snooker-hover.8f59d602292c14aecce2.svg",
@@ -163,10 +167,12 @@
     "index.html": "/my-app/index.html",
     "static/media/balance-copy.svg": "/my-app/static/media/balance-copy.9aee55472046126f1cf1.svg",
     "static/media/statistics-time.svg": "/my-app/static/media/statistics-time.b8fe80015c5bf0448e9e.svg",
+    "static/media/social-fb.svg": "/my-app/static/media/social-fb.73bb439133f0cd759fd8.svg",
     "static/media/return-select-two.svg": "/my-app/static/media/return-select-two.dc2ae55477fa111e23c0.svg",
     "static/media/statistics-arrow-points.svg": "/my-app/static/media/statistics-arrow-points.8200ae3b17bb37ab4086.svg",
     "static/media/apps-item.svg": "/my-app/static/media/apps-item.293af6e7860c2465a567.svg",
     "static/media/events-info-add.svg": "/my-app/static/media/events-info-add.726930180810a7accc94.svg",
+    "static/media/check.svg": "/my-app/static/media/check.46e0e4be1fae2328bcbb.svg",
     "static/media/statistics-arrow.svg": "/my-app/static/media/statistics-arrow.cef789403575dc1857cb.svg",
     "static/media/header-flag-ru.svg": "/my-app/static/media/header-flag-ru.5f67b7152dac327143aa.svg",
     "static/media/return-checkbox-active.svg": "/my-app/static/media/return-checkbox-active.032f5488191d3058168f.svg",
@@ -196,6 +202,7 @@
     "static/media/statistics-name-arrow.svg": "/my-app/static/media/statistics-name-arrow.5d9418d2f85a5660323b.svg",
     "static/media/statistics-triangle-up.svg": "/my-app/static/media/statistics-triangle-up.0339edb4ef4ab2831f7e.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
+    "static/media/select-more.svg": "/my-app/static/media/select-more.f086863ed2e4af14ebdd.svg",
     "static/media/game-info-arrow.svg": "/my-app/static/media/game-info-arrow.cb60faf595c72e49b446.svg",
     "static/media/return-select-arrow.svg": "/my-app/static/media/return-select-arrow.2bff5e935ed92475455a.svg",
     "static/media/events-info-red.svg": "/my-app/static/media/events-info-red.199da5addbcf084339aa.svg",
@@ -203,12 +210,12 @@
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-mini-table-line.svg": "/my-app/static/media/statistics-mini-table-line.72268d04cde6db52e453.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.fdc498b5.css.map": "/my-app/static/css/main.fdc498b5.css.map",
-    "main.c6cb088b.js.map": "/my-app/static/js/main.c6cb088b.js.map",
+    "main.53162bae.css.map": "/my-app/static/css/main.53162bae.css.map",
+    "main.4c6aa13c.js.map": "/my-app/static/js/main.4c6aa13c.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdc498b5.css",
-    "static/js/main.c6cb088b.js"
+    "static/css/main.53162bae.css",
+    "static/js/main.4c6aa13c.js"
   ]
 }
