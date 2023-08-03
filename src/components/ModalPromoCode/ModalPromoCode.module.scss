@@ -1,0 +1,88 @@
+@import "sass-rem";
+
+.modalPromoCode  {
+	position: relative;
+	padding: rem(19px 46px 19px);
+	width: rem(370px);
+	max-width: 100%;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	margin-bottom: rem(24px);
+}
+
+.wrapper {
+	border-radius: rem(51px);
+	justify-content: space-between;
+	padding: rem(3px);
+	background: #1F1F1F;
+	display: flex;
+	gap: rem(10px);
+	border: 1px solid transparent;
+
+	&.wrapperError {
+		border-color: #A92C2C;
+
+		.codeInput {
+			color: #A92C2C;
+		}
+	}
+
+	&.wrapperGood {
+		border-color: #FAFE13;
+
+		.codeInput {
+			color: #FAFE13;
+		}
+	}
+}
+
+.codeInput {
+	display: block;
+	width: rem(140px);
+	font-size: rem(15px);
+	line-height: rem(16px);
+	color: #fff;
+	padding: rem(8px 12px);
+	&::placeholder {
+		color: #898989;
+		opacity: 1;
+	}
+}
+
+.codeBtn {
+	display: block;
+	padding: rem(8px 14px);
+	color: #F7FF13;
+	text-align: center;
+	font-size: rem(14px);
+	font-weight: 700;
+	line-height: rem(16px);
+	text-transform: uppercase;
+	border-radius: rem(41px);
+	background: rgba(250, 254, 19, 0.15);
+	cursor: pointer;
+}
+
+.text {
+	margin-top: rem(6px);
+	color: #FFF;
+	font-size: rem(14px);
+	font-weight: 400;
+	line-height: rem(19px);
+	text-align: center;
+
+	.textError {
+		color: #A92C2C;
+	}
+
+	.textGood {
+		color: #FAFE13;
+	}
+}
