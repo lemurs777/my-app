@@ -5,6 +5,7 @@
 		ModalRegistration,
 		ModalVerification,
 		ModalPromoCode,
+		ModalPaymentStatus,
 		ModalSettings,
 	} from '../../components/';
 
@@ -34,6 +35,7 @@
 					<button className={styles.btn} onClick={() => { CurrentModal('registration', true)}}>Регистрация</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('verification', false) }}>Проверка личности</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('promocode', false) }}>Промокод</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('payment-status', false) }}>Статус оплаты</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('settings', false) }}>Настройки</button>
 				</div>
 				<Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>
@@ -51,6 +53,9 @@
 					) : null}
 					{ (isName === 'promocode') ? (
 						<ModalPromoCode toggleModal={toggleModal}/>
+					) : null}
+					{ (isName === 'payment-status') ? (
+						<ModalPaymentStatus toggleModal={toggleModal}/>
 					) : null}
 					{ (isName === 'settings') ? (
 						<ModalSettings toggleModal={toggleModal}/>
