@@ -78,3 +78,4 @@ export { default as ModalRegistration } from './ModalRegistration';
 export { default as ModalVerification } from './ModalVerification';
 export { default as ModalPromoCode } from './ModalPromoCode';
 export { default as ModalPaymentStatus } from './ModalPaymentStatus';
+export { default as ModalCheckCode } from './ModalCheckCode';

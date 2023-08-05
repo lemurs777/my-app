@@ -1,0 +1,182 @@
+@import "sass-rem";
+
+.modalCheckCode {
+	position: relative;
+	padding: rem(19px 85px 25px);
+	width: rem(370px);
+	max-width: 100%;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	margin-bottom: rem(25px);
+}
+
+.info {
+	margin-bottom: rem(25px);
+}
+
+.infoText {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	margin-bottom: rem(12px);
+}
+
+.infoWrapper {
+	display: flex;
+	gap: rem(20px);
+}
+
+.infoData {
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+
+	span {
+		color: #777;
+	}
+}
+
+.infoBtn {
+	color: #595959;
+	font-size: rem(14px);
+	line-height: rem(18px);
+	font-weight: 400;
+	transition: .3s;
+	cursor: pointer;
+
+	&:hover {
+		color: #FAFE13;
+	}
+}
+
+.name {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	margin-bottom: rem(7px);	
+}
+
+.codeContainer {
+	position: relative;
+	display: flex;
+	gap: rem(5px);
+	justify-content: space-between;
+	margin-bottom: rem(15px);
+
+	&.codeContainerError {
+		.input {
+			border: 1px solid #602727;
+			background: #2F1E1E;
+		}
+	}
+	
+	&.codeContainerErrorMessage {
+		.codeMessage {
+			display: block;
+		}
+	}
+}
+
+.codeMessage {
+	display: none;
+	position: absolute;
+	top: rem(-46px);
+	left: 0;
+	right: 0;
+	background: #A92C2C;
+	padding: rem(13px 8px);
+	color: #FFF;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	font-weight: 500;
+}
+
+.input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: rem(19px);
+	line-height: rem(22px);
+	color: #fff;
+	text-align: center;
+	width: rem(28px);
+	height: rem(46px);
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+}
+
+.btnSend {
+	color: #000;
+	padding: rem(13px 20px);
+	display: inline-block;
+	width: 100%;
+	border-radius: rem(3px);
+	background: #FAFE13;
+	text-align: center;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-bottom: rem(10px);
+
+	&:disabled {
+		color: #5B5B5B;
+		background: #303030;
+		pointer-events: none;
+	}
+}
+
+.time {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	margin-bottom: rem(25px);
+}
+
+.btn {
+	color: #000;
+	padding: rem(13px 20px);
+	display: inline-block;
+	width: 100%;
+	border-radius: rem(3px);
+	background: #FAFE13;
+	text-align: center;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.more {
+	margin-top: rem(20px);
+	padding: rem(15px 12px);
+	background: #232323;
+}
+
+.moreTitle {
+	color: #999;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+	margin-bottom: rem(5px);
+}
+
+.moreText {
+	color: #DADADA;
+	font-size: rem(13px);
+	font-weight: 400;
+	line-height: rem(17px);
+}

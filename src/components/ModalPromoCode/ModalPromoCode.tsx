@@ -13,8 +13,8 @@ function ModalPromoCode (props: ModalType) {
 
 	const handleChange = (e: any) => {
 		const regex = /^[0-9\b]+$/;
-			if (e.target.value === "" || regex.test(e.target.value)) {
-				setCode(e.target.value);
+		if (e.target.value === "" || regex.test(e.target.value)) {
+			setCode(e.target.value);
 		}
 	};
   
