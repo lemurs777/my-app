@@ -3,6 +3,8 @@ import { useState } from "react";
 
 import { ModalType } from './types';
 
+import { registration as registrationApi, Registration as RegistrationData } from '../../services/api'
+
 import styles from './ModalRegistration.module.scss';
 
 function ModalRegistration (props: ModalType) {
@@ -25,6 +27,17 @@ function ModalRegistration (props: ModalType) {
 	const [isСurrencyOpen, setIsСurrencyOpen] = useState(false);
 	const [isСurrency, setIsСurrency] = useState(0);
 	const [isApprove, setIsApprove] = useState(false);
+
+	const [email, setEmail] = useState('');
+	const [phone, setPhone] = useState('');
+
+	function handleEmail(event: any) {
+		setEmail(event.target.value);
+	}
+
+	function handlePhone(event: any) {
+		setPhone(event.target.value);
+	}
 
 	const toggeSelect = () => {
 		setIsСurrencyOpen(current => !current);
@@ -62,7 +75,7 @@ function ModalRegistration (props: ModalType) {
 			)}>
 				<label className={styles.label}>
 					<div className={styles.labelInfo}>Почта</div>
-					<input className={styles.labelInput} type='email' placeholder='test@yandex.ru'/>
+					<input className={styles.labelInput} type='email' value={email} onChange={handleEmail} placeholder='test@yandex.ru'/>
 				</label>
 			</div>
 			<div className={clsx(
@@ -73,7 +86,7 @@ function ModalRegistration (props: ModalType) {
 					<div className={styles.labelInfo}>Номер телефона</div>
 					<div className={styles.inputWrapper}>
 						<div className={styles.selectCode}>+7</div>
-						<input className={styles.labelInputPhone} type='text' placeholder='950–046–14–87'/>
+						<input className={styles.labelInputPhone} type='text' value={phone} onChange={handlePhone} placeholder='950–046–14–87'/>
 					</div>
 				</div>
 			</div>
@@ -117,7 +130,15 @@ function ModalRegistration (props: ModalType) {
 			<button className={clsx(
 				styles.btn,
 				{ [styles.btnActive] : isApprove},
-			)}>Продолжить</button>
+			)} onClick={async () => {
+				const data = {
+					Email: email,
+					Phone: phone,
+					Currency: ArrСurrency[isСurrency].code
+				}
+				const reply = await registrationApi(data as RegistrationData);
+				console.log(reply);
+			}}>Продолжить</button>
 		</div>
 	);
 }

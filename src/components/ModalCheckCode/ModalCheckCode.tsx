@@ -3,6 +3,8 @@ import { useState, useCallback } from "react";
 
 import { ModalType } from './types';
 
+import { code as codeApi, Code as CodeData } from '../../services/api';
+
 import styles from './ModalCheckCode.module.scss';
 
 function ModalCheckCode (props: ModalType) {
@@ -42,7 +44,7 @@ function ModalCheckCode (props: ModalType) {
 		}
 	};
 
-	//const pinToString = pin.map((num) => num.value).join("");
+	const code = pin.map((num) => num.value).join("");
 
 	return (
 		<div className={styles.modalCheckCode}>
@@ -83,9 +85,21 @@ function ModalCheckCode (props: ModalType) {
 					/>
 				))}
 			</div>
-			<button className={styles.btnSend} disabled={true}>Отправить повторно</button>
+			<button className={styles.btnSend} disabled={true} onClick={async () => {
+				const data = {
+					Code: code,
+				}
+				const reply = await codeApi(data as CodeData);
+				console.log(reply);
+			}}>Отправить повторно</button>
 			<div className={styles.time}>Отправка доступна через 32 с</div>
-			<button className={styles.btn}>Продолжить</button>
+			<button className={styles.btn} onClick={async () => {
+				const data = {
+					Code: code,
+				}
+				const reply = await codeApi(data as CodeData);
+				console.log(reply);
+			}}>Продолжить</button>
 			{type === 'email' ? (
 				<div className={styles.more}>
 					<div className={styles.moreTitle}>Совет</div>

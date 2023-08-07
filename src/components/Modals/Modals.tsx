@@ -1,7 +1,6 @@
 	import { 
 		Modal,
 		ModalLogIn,
-		ModalLogInSocial,
 		ModalRegistration,
 		ModalVerification,
 		ModalPromoCode,
@@ -31,8 +30,7 @@
 		return (
 			<>
 				<div className={styles.btnWrapper}>
-					<button className={styles.btn} onClick={() => { CurrentModal('login', true)}}>Вход (телефон, почта)</button>
-					<button className={styles.btn} onClick={() => { CurrentModal('login-social', true)}}>Вход (телефон, почта, соцсети)</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('login', true)}}>Вход (телефон, почта, соцсети)</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('registration', true)}}>Регистрация</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('verification', false) }}>Проверка личности</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('promocode', false) }}>Промокод</button>
@@ -43,9 +41,6 @@
 				<Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>
 					{ (isName === 'login') ? (
 						<ModalLogIn toggleModal={toggleModal}/>
-					) : null}
-					{ (isName === 'login-social') ? (
-						<ModalLogInSocial toggleModal={toggleModal}/>
 					) : null}
 					{ (isName === 'registration') ? (
 						<ModalRegistration toggleModal={toggleModal}/>

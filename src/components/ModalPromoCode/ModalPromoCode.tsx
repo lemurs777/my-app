@@ -3,18 +3,20 @@ import { useState } from "react";
 
 import { ModalType } from './types';
 
+import { promocode as promocodeApi, Promocode as PromocodeData } from '../../services/api';
+
 import styles from './ModalPromoCode.module.scss';
 
 function ModalPromoCode (props: ModalType) {
 
 	let status = 0;
 
-	const [code, setCode] = useState("");
+	const [promocode, setPromocode] = useState("");
 
-	const handleChange = (e: any) => {
+	const handlePromocode = (e: any) => {
 		const regex = /^[0-9\b]+$/;
 		if (e.target.value === "" || regex.test(e.target.value)) {
-			setCode(e.target.value);
+			setPromocode(e.target.value);
 		}
 	};
   
@@ -31,11 +33,17 @@ function ModalPromoCode (props: ModalType) {
 					className={styles.codeInput} 
 					type="text" 
 					placeholder="Введите промокод"
-					value={code}
-        			onChange={handleChange}
+					value={promocode}
+        			onChange={handlePromocode}
 					maxLength={6}
 				/>
-				<button className={styles.codeBtn}>Применить</button>
+				<button className={styles.codeBtn} onClick={async () => {
+					const data = {
+						Promocode: promocode,
+					}
+					const reply = await promocodeApi(data as PromocodeData);
+					console.log(reply);
+				}}>Применить</button>
 			</div>
 			{ status === 1 ? (
 				<div className={styles.text}>
