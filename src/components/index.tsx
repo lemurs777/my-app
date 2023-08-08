@@ -78,3 +78,5 @@ export { default as ModalVerification } from './ModalVerification';
 export { default as ModalPromoCode } from './ModalPromoCode';
 export { default as ModalPaymentStatus } from './ModalPaymentStatus';
 export { default as ModalCheckCode } from './ModalCheckCode';
+export { default as ModalOtherCountry } from './ModalOtherCountry';
+export { default as ModalNotifications } from './ModalNotifications';

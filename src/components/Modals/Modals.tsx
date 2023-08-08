@@ -6,6 +6,8 @@
 		ModalPromoCode,
 		ModalPaymentStatus,
 		ModalCheckCode,
+		ModalOtherCountry,
+		ModalNotifications,
 		ModalSettings,
 	} from '../../components/';
 
@@ -19,7 +21,7 @@
 
 		const { isOpen, toggleModal} = useModal();
 		const [ isName, setIsName ] = useState('login');
-		const [ isFull, setIsFull ] = useState(false);
+		const [ isFull, setIsFull ] = useState(true);
 
 		function CurrentModal(name: string, full: boolean) {
 			setIsFull(full);
@@ -32,10 +34,12 @@
 				<div className={styles.btnWrapper}>
 					<button className={styles.btn} onClick={() => { CurrentModal('login', true)}}>Вход (телефон, почта, соцсети)</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('registration', true)}}>Регистрация</button>
-					<button className={styles.btn} onClick={() => { CurrentModal('verification', false) }}>Проверка личности</button>
-					<button className={styles.btn} onClick={() => { CurrentModal('promocode', false) }}>Промокод</button>
-					<button className={styles.btn} onClick={() => { CurrentModal('payment-status', false) }}>Статус оплаты</button>
-					<button className={styles.btn} onClick={() => { CurrentModal('check-code', false) }}>Подтверждение</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('verification', true) }}>Проверка личности</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('promocode', true) }}>Промокод</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('payment-status', true) }}>Статус оплаты</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('check-code', true) }}>Подтверждение</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('other-country', true) }}>Предупреждение</button>
+					<button className={styles.btn} onClick={() => { CurrentModal('notifications', true) }}>Уведомления</button>
 					<button className={styles.btn} onClick={() => { CurrentModal('settings', false) }}>Настройки</button>
 				</div>
 				<Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>
@@ -56,6 +60,12 @@
 					) : null}
 					{ (isName === 'check-code') ? (
 						<ModalCheckCode toggleModal={toggleModal}/>
+					) : null}
+					{ (isName === 'other-country') ? (
+						<ModalOtherCountry toggleModal={toggleModal}/>
+					) : null}
+					{ (isName === 'notifications') ? (
+						<ModalNotifications toggleModal={toggleModal}/>
 					) : null}
 					{ (isName === 'settings') ? (
 						<ModalSettings toggleModal={toggleModal}/>
