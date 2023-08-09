@@ -2,12 +2,14 @@
 
 .promo {
 	width: 100%;
+	background: #1B1B1B;
 }
 
 .header {
 	padding: rem(6px 0 27px);
 	display: flex;
 	align-items: center;
+	background: #000;
 }
 
 .headerBtn {
@@ -47,13 +49,90 @@
 	color: #fff;
 }
 
-.contentEmpty {
-	background: #1B1B1B;
+.contentPromo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: rem(126px 50px);
+	padding: 0;
+	background: #111213;
+
+	&.contentPromoEmpty {
+		padding: rem(126px 50px);
+	}
+}
+
+.table {
+	width: 100%;
+	padding: rem(25px 35px);
+	background: #111213;
+}
+
+.tableHeader {
+	display: flex;
+	gap: rem(10px);
+	padding: rem(0 15px 0 50px);
+	margin-bottom: rem(15px);
+}
+
+.tableHeaderCell {
+	font-weight: 400;
+	font-size: rem(16px);
+	line-height: rem(19px);
+	color: #9A9A9A;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	&:nth-child(1) {
+		width: rem(130px);
+	}
+	&:nth-child(2) {
+		width: rem(200px);
+	}
+	&:nth-child(3) {
+		width: rem(530px);
+	}
+}
+
+.tableRows {
+	display: flex;
+	flex-direction: column;
+	gap: rem(11px);
+}
+
+.tableRow {
+	display: flex;
+	align-items: center;
+	gap: rem(10px);
+	padding: rem(19px 15px 18px 50px);
+	background: #1B1B1B;
+}
+
+.tableCell {
+	font-weight: 500;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	color: #fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	&:nth-child(1) {
+		width: rem(130px);
+	}
+	&:nth-child(2) {
+		width: rem(200px);
+	}
+	&:nth-child(3) {
+		width: rem(530px);
+	}
+}
+
+.tableCellTop {
+	margin-bottom: rem(4px);
+}
+
+.tableCellBottom {
+	color: #838383;
 }
 
 .title {
@@ -71,11 +150,27 @@
 	line-height: rem(19px);
 	color: #919191;
 	text-align: center;
+	margin-bottom: rem(14px);
+}
+
+.btn {
+	display: inline-block;
+	min-width: rem(156px);
+	background: #FAFE13;
+	border-radius: rem(3px);
+	padding: rem(12px);
+	font-weight: 700;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
 }
 
 .content {
-	background: #1B1B1B;
 	padding: rem(24px);
+	background: #111213;
 }
 
 .list {
@@ -166,8 +261,8 @@
 	border-radius: rem(3px);
 	padding: rem(12px);
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
+	font-size: rem(14px);
+	line-height: rem(16px);
 	text-align: center;
 	text-transform: uppercase;
 	color: #000;
