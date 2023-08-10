@@ -34,6 +34,18 @@ export interface Code {
 	Code: string;
 }
 
+export interface Verification {
+	Phone: string;
+	Code: string;
+	FirstName: string;
+	LastName: string;
+	FatherName: string;
+	Passport: string;
+	Country: string;
+	Address: string;
+	Photo: any;
+}
+
 export async function registration(data: Registration): Promise<UserReply> {
 	const res = await fetch('http://localhost:8000/api/registration', {
 		method: 'POST',
@@ -78,6 +90,20 @@ export async function promocode(data: Promocode): Promise<UserReply> {
 
 export async function code(data: Code): Promise<UserReply> {
 	const res = await fetch('http://localhost:8000/api/code', {
+		method: 'POST',
+		headers: {
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		},
+		credentials: 'include',
+		body: JSON.stringify(data)
+	});
+	const reply = await res.json();
+	return reply as UserReply;
+}
+
+export async function verification(data: Verification): Promise<UserReply> {
+	const res = await fetch('http://localhost:8000/api/verification', {
 		method: 'POST',
 		headers: {
 			'Accept': 'application/json',
