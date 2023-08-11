@@ -2,6 +2,7 @@ import {
 	Modal,
 	ModalLogIn,
 	ModalRegistration,
+	ModalRegistrationFull,
 	ModalVerification,
 	ModalPromoCode,
 	ModalPaymentStatus,
@@ -34,6 +35,7 @@ function Modals() {
 			<div className={styles.btnWrapper}>
 				<button className={styles.btn} onClick={() => { CurrentModal('login', true)}}>Вход (телефон, почта, соцсети)</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('registration', true)}}>Регистрация</button>
+				<button className={styles.btn} onClick={() => { CurrentModal('registration-full', true)}}>Регистрация (полная)</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('verification', true) }}>Проверка личности</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('promocode', true) }}>Промокод</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('payment-status', true) }}>Статус оплаты</button>
@@ -48,6 +50,9 @@ function Modals() {
 				) : null}
 				{ (isName === 'registration') ? (
 					<ModalRegistration toggleModal={toggleModal}/>
+				) : null}
+				{ (isName === 'registration-full') ? (
+					<ModalRegistrationFull toggleModal={toggleModal}/>
 				) : null}
 				{ (isName === 'verification') ? (
 					<ModalVerification toggleModal={toggleModal}/>

@@ -1,0 +1,351 @@
+@import "sass-rem";
+
+.ModalRegistrationFull {
+	position: relative;
+	padding: rem(19px 80px 25px);
+	width: rem(370px);
+	max-width: 100%;
+	max-height: calc(100vh - rem(100px));
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	padding-bottom: rem(26px);
+}
+
+.label {
+	display: flex;
+	flex-direction: column;
+	gap: rem(5px);
+	margin-bottom: rem(20px);
+
+	&.labelCode {
+		margin-bottom: rem(15px);
+	}
+}
+
+.codeWrapper {
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 1px;
+		right: 0;
+		bottom: 1px;
+		width: rem(44px);
+		background: #1D7E3A url("../../assets/images/svg/modals/check-code.svg") no-repeat 50% 50% / rem(10px 8px);
+	}
+}
+
+.labelInfo {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	font-weight: 400;
+	line-height: rem(15px);
+	margin-bottom: rem(5px);
+}
+
+.labelInput {
+	width: 100%;
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(14px 11px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+
+	&::placeholder {
+		color: #898989;
+		opacity: 1;
+	}
+}
+
+.inputWrapper {
+	display: flex;
+}
+
+.selectCode {
+	display: flex;
+	gap: rem(8px);
+	border: 1px solid #2E2E2E;
+	border-right: transparent;
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+	padding: rem(14px 10px);
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		display: inline-block;
+		width: rem(18px);
+		height: rem(18px);
+		background: url("../../assets/images/svg/header-flag-ru.svg") no-repeat 50% 50% /contain;
+		border-radius: 50%;
+	}
+}
+
+.text {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	font-weight: 400;
+	line-height: rem(15px);
+	margin-bottom: rem(5px);
+}
+
+.selectСurrencyWrapper {
+	position: relative;
+}
+
+.selectСurrency {
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(14px 30px 14px 40px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: rem(10px);
+		width: rem(18px);
+		height: rem(18px);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		transform: translateY(-50%);
+	}
+
+	&.selectСurrencyRu {
+		&:before {
+			background-image: url("../../assets/images/svg/header-flag-ru.svg");
+		}
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: rem(10px);
+		width: rem(12px);
+		height: rem(8px);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+		transform: translateY(-50%);
+		background-image: url("../../assets/images/svg/modals/select-more.svg");
+	}
+}
+
+.selectСurrencyList {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	transform: translateY(-1px);
+	height: rem(94px);
+	overflow-y: auto;
+	z-index: 2;
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+
+	&.selectСurrencyListOpen {
+		display: block;
+	}
+}
+
+.selectСurrencyItem {
+	height: rem(47px);
+	border-bottom: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(14px 30px 14px 40px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: rem(10px);
+		width: rem(18px);
+		height: rem(18px);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		transform: translateY(-50%);
+	}
+
+	&.selectСurrencyItemRu {
+		&:before {
+			background-image: url("../../assets/images/svg/header-flag-ru.svg");
+		}
+	}
+}
+
+.selectСountryWrapper {
+	position: relative;
+	margin-bottom: rem(25px);
+}
+
+.selectСountry {
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(14px 30px 14px 11px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: rem(10px);
+		width: rem(12px);
+		height: rem(8px);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;
+		transform: translateY(-50%);
+		background-image: url("../../assets/images/svg/modals/select-more.svg");
+	}
+}
+
+.selectСountryList {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	transform: translateY(-1px);
+	height: rem(94px);
+	overflow-y: auto;
+	z-index: 2;
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+
+	&.selectСountryListOpen {
+		display: block;
+	}
+}
+
+.selectСountryItem {
+	height: rem(47px);
+	border-bottom: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(14px 11px 14px 11px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.btn {
+	color: #000;
+	padding: rem(13px 20px);
+	display: inline-block;
+	width: 100%;
+	border-radius: rem(3px);
+	background: #FAFE13;
+	text-align: center;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-bottom: rem(10px);
+}
+
+.btnText {
+	color: #5F5F5F;
+	text-align: center;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	margin-bottom: rem(20px);
+}

@@ -74,6 +74,7 @@ export { default as StandingsMain } from './StandingsMain';
 export { default as Modals } from './Modals';
 export { default as ModalLogIn } from './ModalLogIn';
 export { default as ModalRegistration } from './ModalRegistration';
+export { default as ModalRegistrationFull } from './ModalRegistrationFull';
 export { default as ModalVerification } from './ModalVerification';
 export { default as ModalPromoCode } from './ModalPromoCode';
 export { default as ModalPaymentStatus } from './ModalPaymentStatus';
