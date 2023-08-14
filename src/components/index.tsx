@@ -81,3 +81,4 @@ export { default as ModalPaymentStatus } from './ModalPaymentStatus';
 export { default as ModalCheckCode } from './ModalCheckCode';
 export { default as ModalOtherCountry } from './ModalOtherCountry';
 export { default as ModalNotifications } from './ModalNotifications';
+export { default as ModalTicketInfo } from './ModalTicketInfo';

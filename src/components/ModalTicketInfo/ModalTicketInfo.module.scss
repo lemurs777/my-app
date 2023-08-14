@@ -1,0 +1,176 @@
+@import "sass-rem";
+
+.modalTicketInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding: rem(19px 45px 25px);
+	width: rem(370px);
+	max-width: 100%;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	margin-bottom: rem(24px);
+}
+
+.infoWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: rem(6px);
+	margin-bottom: rem(24px);
+}
+
+.info {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: rem(11px);
+	background: #2B2B2B;
+}
+
+.infoName {
+	color: rgba(255, 255, 255, 0.50);
+	font-size: rem(14px);
+	line-height: rem(16px);
+	font-weight: 400;
+	margin-right: auto;
+}
+
+.infoBtn {
+	padding-right: rem(20px);
+	color: #fff;
+	position: relative;
+	font-size: rem(16px);
+	font-weight: 500;
+	line-height: rem(19px);
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: rem(14px);
+		height: rem(14px);
+		top: 50%;
+		right: 0;
+		background: url("../../assets/images/svg/modals/copy.svg") no-repeat 50% 50% /contain;
+		transform: translateY(-50%);
+	}
+}
+
+.infoText {
+	color: #fff;
+	font-size: rem(16px);
+	font-weight: 500;
+	line-height: rem(19px);
+
+	&.infoTextAccent {
+		color: #1D7E3A;
+	}
+}
+
+.aboutTitle {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	margin-bottom: rem(16px);
+}
+
+.about {
+	width: 100%;
+	padding: rem(14px 10px 13px 11px);
+	background: #2B2B2B;
+}
+
+.aboutTop {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(6px);
+}
+
+.aboutTopText {
+	color: rgba(255, 255, 255, 0.50);
+	font-size: rem(12px);
+	line-height: rem(14px);
+	font-weight: 400;
+	margin-right: auto;
+}
+
+.aboutTopInfo {
+	color: #1D7E3A;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+}
+
+.aboutMain {
+	display: flex;
+	margin-bottom: rem(12px);
+}
+
+.aboutMainTeams {
+	margin-right: auto;
+}
+
+.aboutMainTeam {
+	color: #fff;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	font-weight: 500;
+	margin-bottom: rem(6px);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.aboutMainInfo {
+	color: #fff;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	font-weight: 500;
+}
+
+.aboutInfo {
+	color: rgba(255, 255, 255, 0.50);
+	font-size: rem(12px);
+	line-height: rem(14px);
+	font-weight: 400;
+	margin-bottom: rem(6px);
+}
+
+.aboutBottom {
+	width: 100%;
+	display: flex;
+}
+
+.aboutBottomWin {
+	color: #fff;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	font-weight: 500;
+	margin-right: auto;
+}
+
+.aboutBottomWinAccent {
+	color: #1D7E3A;
+}
+
+.aboutBottomInfo {
+	color: #fff;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	font-weight: 500;
+}
+
+.aboutBottomInfoAccent {
+	color: #1D7E3A;
+}

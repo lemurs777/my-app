@@ -9,6 +9,7 @@ import {
 	ModalCheckCode,
 	ModalOtherCountry,
 	ModalNotifications,
+	ModalTicketInfo,
 	ModalSettings,
 } from '../../components/';
 
@@ -42,6 +43,7 @@ function Modals() {
 				<button className={styles.btn} onClick={() => { CurrentModal('check-code', true) }}>Подтверждение</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('other-country', true) }}>Предупреждение</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('notifications', true) }}>Уведомления</button>
+				<button className={styles.btn} onClick={() => { CurrentModal('ticket-info', true) }}>Информация о билете</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('settings', false) }}>Настройки</button>
 			</div>
 			<Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>
@@ -71,6 +73,9 @@ function Modals() {
 				) : null}
 				{ (isName === 'notifications') ? (
 					<ModalNotifications toggleModal={toggleModal}/>
+				) : null}
+				{ (isName === 'ticket-info') ? (
+					<ModalTicketInfo toggleModal={toggleModal}/>
 				) : null}
 				{ (isName === 'settings') ? (
 					<ModalSettings toggleModal={toggleModal}/>
