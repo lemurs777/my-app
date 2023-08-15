@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.a361b2d0.css",
-    "main.js": "/my-app/static/js/main.93c3c1c5.js",
+    "main.css": "/my-app/static/css/main.f3aedd9e.css",
+    "main.js": "/my-app/static/js/main.ca316097.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
-    "static/media/notifications.svg": "/my-app/static/media/notifications.f9bb16767b1039b94f9bea627f4b89ad.svg",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
     "static/media/promo-main-banner-1-x2.min.jpg": "/my-app/static/media/promo-main-banner-1-x2.min.c1775e1874a823f08040.jpg",
@@ -19,6 +18,7 @@
     "static/media/profile-promo-banner-2-x2.min.jpg": "/my-app/static/media/profile-promo-banner-2-x2.min.87d806a7c667f332d94d.jpg",
     "static/media/events-time.svg": "/my-app/static/media/events-time.3e4d03bea481ca035291.svg",
     "static/media/game-banner-icon-1.svg": "/my-app/static/media/game-banner-icon-1.cd59887ed6d8e13e47314f2520a0f0c6.svg",
+    "static/media/notifications-x2.min.png": "/my-app/static/media/notifications-x2.min.1fe7ecbe99966e2001fc.png",
     "static/media/apps-qr-x2.min.png": "/my-app/static/media/apps-qr-x2.min.dec78dbd11842cc2788f.png",
     "static/media/photo-2.jpg": "/my-app/static/media/photo-2.479c9c488389cb9ece84.jpg",
     "static/media/photo-3.jpg": "/my-app/static/media/photo-3.780bf80c30ea891d05bc.jpg",
@@ -185,6 +185,8 @@
     "static/media/profile-hover.svg": "/my-app/static/media/profile-hover.91b00e0476bba8dbd9c3.svg",
     "static/media/profile.svg": "/my-app/static/media/profile.9b01221961bfeaa2ae8d.svg",
     "static/media/profile-arrow-right.svg": "/my-app/static/media/profile-arrow-right.eeabfb75d757e44c5b8f.svg",
+    "static/media/send.svg": "/my-app/static/media/send.22e44089f7618a3d1814.svg",
+    "static/media/send-active.svg": "/my-app/static/media/send-active.88ceeaaaadfe1fadae0d.svg",
     "static/media/return-checkbox.svg": "/my-app/static/media/return-checkbox.a468cad133282fb761e2.svg",
     "static/media/statistics-select.svg": "/my-app/static/media/statistics-select.dbdb485ffa9c7eb7b84d.svg",
     "static/media/multiple-close.svg": "/my-app/static/media/multiple-close.da0cbcb05217167eca00.svg",
@@ -219,12 +221,12 @@
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-mini-table-line.svg": "/my-app/static/media/statistics-mini-table-line.72268d04cde6db52e453.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.a361b2d0.css.map": "/my-app/static/css/main.a361b2d0.css.map",
-    "main.93c3c1c5.js.map": "/my-app/static/js/main.93c3c1c5.js.map",
+    "main.f3aedd9e.css.map": "/my-app/static/css/main.f3aedd9e.css.map",
+    "main.ca316097.js.map": "/my-app/static/js/main.ca316097.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a361b2d0.css",
-    "static/js/main.93c3c1c5.js"
+    "static/css/main.f3aedd9e.css",
+    "static/js/main.ca316097.js"
   ]
 }
