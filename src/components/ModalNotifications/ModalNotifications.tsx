@@ -2,7 +2,7 @@ import { ModalType } from './types';
 
 import clsx from 'clsx';
 
-import Notifications from '../../assets/images/svg/modals/notifications.svg';
+import Notifications from '../../assets/images/notifications-x2.min.png';
 
 import styles from './ModalNotifications.module.scss';
 
