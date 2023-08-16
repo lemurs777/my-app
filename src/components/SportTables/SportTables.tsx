@@ -18,7 +18,7 @@ function SportTables() {
 					date: '21 Aug',
 					nameOne: 'Севилья',
 					nameTwo: 'Атлетико Мадрид',
-					lastNumber: '+21',
+					lastNumber: 21,
 					arrNumbers: [
 						{
 							number: 9.1,
@@ -68,7 +68,7 @@ function SportTables() {
 					date: '21 Aug',
 					nameOne: 'Севилья',
 					nameTwo: 'Атлетико Мадрид',
-					lastNumber: '+21',
+					lastNumber: 21,
 					arrNumbers: [
 						{
 							number: 9.1,
@@ -118,7 +118,7 @@ function SportTables() {
 					date: '21 Aug',
 					nameOne: 'Севилья',
 					nameTwo: 'Атлетико Мадрид',
-					lastNumber: '+21',
+					lastNumber: 21,
 					arrNumbers: [
 						{
 							number: 9.1,
@@ -168,7 +168,7 @@ function SportTables() {
 					date: '21 Aug',
 					nameOne: 'Севилья',
 					nameTwo: 'Атлетико Мадрид',
-					lastNumber: '+21',
+					lastNumber: 21,
 					arrNumbers: [
 						{
 							number: 9.1,
@@ -224,7 +224,7 @@ function SportTables() {
 					date: '21 Aug',
 					nameOne: 'Севилья',
 					nameTwo: 'Атлетико Мадрид',
-					lastNumber: '+21',
+					lastNumber: 21,
 					arrNumbers: [
 						{
 							number: 9.1,
@@ -274,7 +274,7 @@ function SportTables() {
 					date: '21 Aug',
 					nameOne: 'Севилья',
 					nameTwo: 'Атлетико Мадрид',
-					lastNumber: '+21',
+					lastNumber: 21,
 					arrNumbers: [
 						{
 							number: 9.1,
@@ -386,7 +386,7 @@ function SportTable (
 									{item.number}
 								</div>
 							))}
-							<div className={styles.tableNumber}>{item.lastNumber}</div>
+							<div className={styles.tableNumber}>+{item.lastNumber}</div>
 						</div>
 					</div>
 				</div>

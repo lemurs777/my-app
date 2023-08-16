@@ -9,6 +9,7 @@ import {
 
 function EventsPage() {
 
+
 	const arrCategory = [
 		{
 			name: 'Все',

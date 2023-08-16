@@ -46,6 +46,79 @@ export interface Verification {
 	Photo: any;
 }
 
+export interface EventsTeamsInfo {
+	TeamOne : {
+		Name: string,
+		Logo: string,
+		Yellow: number,
+		Red: number,
+		Corner: number,
+		ShotOnGoal: number,
+		UniformName: string,
+		Goals: Array<
+			{goal: number}
+		>
+	},
+	TeamTwo : {
+		Name: string,
+		Logo: string,
+		Yellow: number,
+		Red: number,
+		Corner: number,
+		ShotOnGoal: number,
+		UniformName: string,
+		Goals: Array<
+			{goal: number}
+		>
+	},
+	Time: number,
+	Score: string,
+	Info: string,
+}
+
+interface EventsCategoryDataItem {
+	Name: string,
+	Active: boolean,
+}
+
+export interface EventsCategoryData extends Array<EventsCategoryDataItem>{}
+
+interface EventsDataItem {
+	Title: string,
+	Favourite: boolean,
+	ArrInfo: Array<{
+		ArrRow: Array<{
+			Name: string,
+			CountOne: string,
+			CountTwo: string | null,
+			Up: boolean,
+			Down: boolean,
+		}>,
+	}>,
+}
+
+export interface EventsData extends Array<EventsDataItem>{}
+
+interface EventsSportTablesDataItem {
+	Sport: string,
+	Class: string,
+	ArrRows: Array<{
+		Name: string,
+		Time: string,
+		Date: string,
+		NameOne: string,
+		NameTwo: string,
+		LastNumber: number,
+		ArrNumbers: Array<{
+			Number: number,
+			Class: string, //upp/down/disable/empty
+		}>,
+	}>
+}
+
+export interface EventsSportTablesData extends Array<EventsSportTablesDataItem>{}
+
+
 export async function registration(data: Registration): Promise<UserReply> {
 	const res = await fetch('http://localhost:8000/api/registration', {
 		method: 'POST',
@@ -114,4 +187,36 @@ export async function verification(data: Verification): Promise<UserReply> {
 	});
 	const reply = await res.json();
 	return reply as UserReply;
+}
+
+export async function eventsTeamsInfo(): Promise<EventsTeamsInfo> {
+	const res = await fetch('http://localhost:8000/api/events-teams', {
+		credentials: 'include',
+	});
+	const reply = await res.json();
+	return reply as EventsTeamsInfo;
+}
+
+export async function eventsCategoryData(): Promise<EventsCategoryData> {
+	const res = await fetch('http://localhost:8000/api/events-category', {
+		credentials: 'include',
+	});
+	const reply = await res.json();
+	return reply as EventsCategoryData;
+}
+
+export async function eventsData(): Promise<EventsData> {
+	const res = await fetch('http://localhost:8000/api/events', {
+		credentials: 'include',
+	});
+	const reply = await res.json();
+	return reply as EventsData;
+}
+
+export async function eventsSportTablesData(): Promise<EventsSportTablesData> {
+	const res = await fetch('http://localhost:8000/api/events-sport-tables', {
+		credentials: 'include',
+	});
+	const reply = await res.json();
+	return reply as EventsSportTablesData;
 }

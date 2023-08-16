@@ -22,6 +22,40 @@ function EventsInfo(
 	}
 ) {
 
+	const TeamsInfo = {
+		teamOne : {
+			name: 'Бавария',
+			logo: Logo1,
+			yellow: 0,
+			red: 0,
+			corner: 0,
+			shotOnGoal: 0,
+			uniformName: 'BMU',
+			goals: [
+				{goal: 15},
+				{goal: 42},
+				{goal: 68},
+			]
+		},
+		teamTwo : {
+			name: 'Айнтрахт Франкфурт',
+			logo: Logo2,
+			yellow: 5,
+			red: 2,
+			corner: 18,
+			shotOnGoal: 12,
+			uniformName: 'FRA',
+			goals: [
+				{goal: 22},
+				{goal: 52},
+				{goal: 82},
+			]
+		},
+		time: 89,
+		score: '3 : 2',
+		info: '2-й тайм',
+	}
+
 return (
 	<div className={styles.eventsInfo}>
 		<div className={styles.live}>
@@ -29,44 +63,44 @@ return (
 				<Link className={clsx(styles.topLink, styles.topLinkHome)} to="/">Home</Link>
 				<button className={clsx(styles.topLink, styles.topLinkAdd)}>Add</button>
 				<div className={styles.topLeft}>
-					<img className={styles.topLogo} src={Logo1} alt="Логотип" />
-					<div className={styles.topName}>Бавария</div>
+					<img className={styles.topLogo} src={TeamsInfo.teamOne.logo} alt={TeamsInfo.teamOne.name} />
+					<div className={styles.topName}>{TeamsInfo.teamOne.name}</div>
 					<div className={styles.topStatistics}>
-						<div className={clsx(styles.topStatistic, styles.topStatisticYellow)}>0</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticRed)}>0</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticCorner)}>0</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticShotOnGoal)}>0</div>
+						<div className={clsx(styles.topStatistic, styles.topStatisticYellow)}>{TeamsInfo.teamOne.yellow}</div>
+						<div className={clsx(styles.topStatistic, styles.topStatisticRed)}>{TeamsInfo.teamOne.red}</div>
+						<div className={clsx(styles.topStatistic, styles.topStatisticCorner)}>{TeamsInfo.teamOne.corner}</div>
+						<div className={clsx(styles.topStatistic, styles.topStatisticShotOnGoal)}>{TeamsInfo.teamOne.shotOnGoal}</div>
 					</div>
 				</div>
 				<div className={styles.topCenter}>
-					<div className={styles.topCenterTime}>89’</div>
-					<div className={styles.topCenterScore}>3 : 2</div>
-					<div className={styles.topCenterHalf}>2-й тайм</div>
+					<div className={styles.topCenterTime}>{TeamsInfo.time}’</div>
+					<div className={styles.topCenterScore}>{TeamsInfo.score}</div>
+					<div className={styles.topCenterHalf}>{TeamsInfo.info}</div>
 				</div>
 				<div className={styles.topRight}>
-					<img className={styles.topLogo} src={Logo2} alt="Логотип" />
-					<div className={styles.topName}>Айнтрахт Франкфурт</div>
+					<img className={styles.topLogo} src={TeamsInfo.teamTwo.logo} alt={TeamsInfo.teamTwo.name} />
+					<div className={styles.topName}>{TeamsInfo.teamTwo.name}</div>
 					<div className={styles.topStatistics}>
-						<div className={clsx(styles.topStatistic, styles.topStatisticYellow)}>5</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticRed)}>2</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticCorner)}>18</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticShotOnGoal)}>12</div>
+						<div className={clsx(styles.topStatistic, styles.topStatisticYellow)}>{TeamsInfo.teamTwo.yellow}</div>
+						<div className={clsx(styles.topStatistic, styles.topStatisticRed)}>{TeamsInfo.teamTwo.red}</div>
+						<div className={clsx(styles.topStatistic, styles.topStatisticCorner)}>{TeamsInfo.teamTwo.corner}</div>
+						<div className={clsx(styles.topStatistic, styles.topStatisticShotOnGoal)}>{TeamsInfo.teamTwo.shotOnGoal}</div>
 					</div>
 				</div>
 			</div>
 			<div className={styles.bottom}>
 				<div className={styles.bottomUniforms}>
-					<div className={styles.bottomUniformName}>BMU</div>
-					<div className={styles.bottomUniformName}>FRA</div>
+					<div className={styles.bottomUniformName}>{TeamsInfo.teamOne.uniformName}</div>
+					<div className={styles.bottomUniformName}>{TeamsInfo.teamTwo.uniformName}</div>
 				</div>
 				<div className={styles.bottomTimelineWrapper}>
 					<div className={styles.bottomTimeline}>
-						<div className={styles.bottomGoal}></div>
-						<div className={styles.bottomGoal}></div>
-						<div className={styles.bottomGoal}></div>
-						<div className={clsx(styles.bottomGoal, styles.bottomGoalBottom)}></div>
-						<div className={clsx(styles.bottomGoal, styles.bottomGoalBottom)}></div>
-						<div className={clsx(styles.bottomGoal, styles.bottomGoalBottom)}></div>
+						{TeamsInfo.teamOne.goals.map((item, index) => (
+							<div key={index} className={styles.bottomGoal} style={{left: `calc(${item.goal}% / .9)`}}></div>
+						))}
+						{TeamsInfo.teamTwo.goals.map((item, index) => (
+							<div key={index} className={clsx(styles.bottomGoal, styles.bottomGoalBottom)} style={{left: `calc(${item.goal}% / .9)`}}></div>
+						))}
 					</div>
 				</div>
 			</div>

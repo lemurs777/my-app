@@ -7,7 +7,7 @@ export type SportTableData = {
 		date: string,
 		nameOne: string,
 		nameTwo: string,
-		lastNumber: string,
+		lastNumber: number,
 		arrNumbers: Array<{
 			number: number,
 			class: string,
