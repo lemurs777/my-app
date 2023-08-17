@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.006d9ebf.css",
-    "main.js": "/my-app/static/js/main.2ece4102.js",
+    "main.css": "/my-app/static/css/main.8d317421.css",
+    "main.js": "/my-app/static/js/main.bc7a4910.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -143,6 +143,7 @@
     "static/media/responsibility-hover.svg": "/my-app/static/media/responsibility-hover.b4edd4a4b30e7e7e34b0.svg",
     "static/media/responsibility.svg": "/my-app/static/media/responsibility.02f4b72870ae34f1785c.svg",
     "static/media/events-info-uniform.svg": "/my-app/static/media/events-info-uniform.b624f81d884887a10702.svg",
+    "static/media/support-more.svg": "/my-app/static/media/support-more.6c96f2bd16a1ea43601c.svg",
     "static/media/hos.svg": "/my-app/static/media/hos.97d9fc71c5fa4ece8e38.svg",
     "static/media/profile-bets.svg": "/my-app/static/media/profile-bets.ea09fed0778f7945b42a.svg",
     "static/media/menu-volleyball.svg": "/my-app/static/media/menu-volleyball.a9d93dd1649172f24c50.svg",
@@ -221,12 +222,12 @@
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-mini-table-line.svg": "/my-app/static/media/statistics-mini-table-line.72268d04cde6db52e453.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.006d9ebf.css.map": "/my-app/static/css/main.006d9ebf.css.map",
-    "main.2ece4102.js.map": "/my-app/static/js/main.2ece4102.js.map",
+    "main.8d317421.css.map": "/my-app/static/css/main.8d317421.css.map",
+    "main.bc7a4910.js.map": "/my-app/static/js/main.bc7a4910.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.006d9ebf.css",
-    "static/js/main.2ece4102.js"
+    "static/css/main.8d317421.css",
+    "static/js/main.bc7a4910.js"
   ]
 }
