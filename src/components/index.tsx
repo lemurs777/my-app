@@ -83,3 +83,4 @@ export { default as ModalOtherCountry } from './ModalOtherCountry';
 export { default as ModalNotifications } from './ModalNotifications';
 export { default as ModalTicketInfo } from './ModalTicketInfo';
 export { default as ModalChat } from './ModalChat';
+export { default as ModalSupport } from './ModalSupport';

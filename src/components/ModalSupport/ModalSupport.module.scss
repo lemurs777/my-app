@@ -1,0 +1,110 @@
+@import "sass-rem";
+
+.modalSupport {
+	position: relative;
+	padding: rem(19px 30px 19px);
+	width: rem(370px);
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #151515;
+	max-height: calc(100vh - rem(100px));
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	margin-bottom: rem(24px);
+}
+
+.text {
+	text-align: center;
+	color: #9E9E9E;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	margin-bottom: rem(40px);
+}
+
+.supportList {
+	display: flex;
+	flex-direction: column;
+	gap: rem(6px);
+	width: 100%;
+}
+
+.supportItem {
+	width: 100%;
+	background: #1B1B1B;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	position: relative;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	color: #fff;
+	padding: rem(18px 55px 18px 16px);
+	cursor: pointer;
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: rem(19px);
+		right: rem(16px);
+		width: rem(14px);
+		height: rem(12px);
+		background: url(../../assets/images/svg/modals/support-more.svg) no-repeat 50% 50% /contain;
+		opacity: .5;
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+
+	&.btnActive {
+		&:before {
+			transform: rotate(90deg);
+		}
+	}
+}
+
+.content {
+	width: 100%;
+	padding: rem(0 16px 19px);
+	color: rgba(255, 255, 255, 0.50);
+	font-size: rem(12px);
+	line-height: rem(14px);
+	margin-top: rem(-6px);
+
+	p {
+		margin-bottom: rem(14px);
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

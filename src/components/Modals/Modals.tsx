@@ -11,6 +11,7 @@ import {
 	ModalNotifications,
 	ModalTicketInfo,
 	ModalChat,
+	ModalSupport,
 	ModalSettings,
 } from '../../components/';
 
@@ -46,6 +47,7 @@ function Modals() {
 				<button className={styles.btn} onClick={() => { CurrentModal('notifications', true) }}>Уведомления</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('ticket-info', true) }}>Информация о билете</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('chat', true) }}>Чат с поддержкой</button>
+				<button className={styles.btn} onClick={() => { CurrentModal('support', true) }}>Поддержка</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('settings', false) }}>Настройки</button>
 			</div>
 			<Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>
@@ -81,6 +83,9 @@ function Modals() {
 				) : null}
 				{ (isName === 'chat') ? (
 					<ModalChat toggleModal={toggleModal}/>
+				) : null}
+				{ (isName === 'support') ? (
+					<ModalSupport toggleModal={toggleModal}/>
 				) : null}
 				{ (isName === 'settings') ? (
 					<ModalSettings toggleModal={toggleModal}/>
