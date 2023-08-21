@@ -1,0 +1,168 @@
+@import "sass-rem";
+
+.modalRefillFinish {
+	position: relative;
+	padding: rem(19px 14px 29px);
+	width: rem(370px);
+	max-width: 100%;
+	background: #151515;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	margin-bottom: rem(12px);
+}
+
+.wrapper {
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(13px 7px 27px);
+	margin-bottom: rem(23px);
+}
+
+.qr {
+	display: block;
+	margin: 0 auto rem(15px);
+	width: rem(135px);
+	height: rem(135px);
+}
+
+.text {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: rem(4px);
+}
+
+.wallet {
+	display: block;
+	width: 100%;
+	padding: rem(7px 9px 6px);
+	color: #FFF;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+	border: 1px solid #2E2E2E;
+	margin-bottom: rem(12px);
+}
+
+.sumWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #FFF;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+	margin-bottom: rem(7px);
+}
+
+.sumInput {
+	display: block;
+	border: 1px solid #2E2E2E;
+	padding: rem(14px);
+	width: calc(50% - rem(8px));
+}
+
+.infoAboutWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: rem(9px);
+	margin-bottom: rem(37px);
+}
+
+.infoAbout {
+	width: 100%;
+	display: flex;
+}
+
+.infoText {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	font-weight: 400;
+	margin-right: auto;
+}
+
+.infoTime {
+	color: #FFF;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+	padding-right: rem(35px);
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: rem(27px);
+		height: rem(22px);
+		transform: translateY(-50%);
+		background: url("../../assets/images/svg/modals/time.svg") no-repeat 50% 50% /contain;
+	}
+}
+
+.infoMoney {
+	color: #FFF;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+	padding-right: rem(35px);
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: rem(25px);
+		height: rem(20px);
+		transform: translateY(-50%);
+		background: url("../../assets/images/money-x2.min.png") no-repeat 50% 50% /contain;
+	}
+}
+
+.btnWrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btnInfo {
+	color: #fff;
+	padding: rem(13px 20px);
+	display: block;
+	width: calc(50% - rem(2.5px));
+	border-radius: rem(3px);
+	background: rgba(0, 0, 0, 0.54);
+	text-align: center;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn {
+	color: #000;
+	padding: rem(13px 20px);
+	display: block;
+	width: rrem(228px);
+	margin: 0 auto;
+	border-radius: rem(3px);
+	background: #FAFE13;
+	text-align: center;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
