@@ -25,7 +25,7 @@ function ModalWithdrawMoney (props: ModalType) {
 			<div className={styles.moneyWrapper}>
 				<div className={styles.moneyContent}>
 					<div className={styles.header}>
-						<button className={styles.btnCopy} onClick={() => window.navigator.clipboard.writeText('ID 537073408')}>
+						<button className={styles.btnCopy} onClick={() => window.navigator.clipboard.writeText('537073408')}>
 							ID 537073408
 						</button>
 						<button className={styles.btnUpdate}>
@@ -52,7 +52,7 @@ function ModalWithdrawMoney (props: ModalType) {
 				</div>
 				<div className={styles.moneyContent}>
 					<div className={styles.header}>
-						<button className={styles.btnCopy} onClick={() => window.navigator.clipboard.writeText('ID 673130422')}>
+						<button className={styles.btnCopy} onClick={() => window.navigator.clipboard.writeText('673130422')}>
 							ID 673130422
 						</button>
 						<button className={styles.btnUpdate}>

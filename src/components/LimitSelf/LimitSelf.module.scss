@@ -49,9 +49,21 @@
 		background: url("../../assets/images/svg/return-checkbox.svg") no-repeat 50% 50% /contain;
 	}
 
+	&:after {
+		content: "";
+		width: rem(24px);
+		height: rem(24px);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		background: url("../../assets/images/svg/return-checkbox-active.svg") no-repeat 50% 50% /contain;
+		opacity: 0;
+	}
+
 	&.infoLabelActive {
-		&:before {
-			background-image: url("../../assets/images/svg/return-checkbox-active.svg");
+		&:after {
+			opacity: 1;
 		}
 	}
 }

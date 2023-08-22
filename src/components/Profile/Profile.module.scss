@@ -62,6 +62,20 @@
 	padding: rem(13px 15px);
 }
 
+.btnTab {
+	cursor: pointer;
+
+	&:hover {
+		.headerIcon {
+			background: #F7FF13;
+		
+			&:before {
+				opacity: 1;
+			}
+		}
+	}
+}
+
 .header {
 	margin-bottom: rem(2px);
 	display: flex;

@@ -149,13 +149,14 @@
 
 .info {
 	display: flex;
-	gap: rem(45px);
+	gap: rem(25px);
 }
 
 .infoGame {
 	display: flex;
 	flex-direction: column;
 	gap: rem(5px);
+	min-width: rem(90px);
 }
 
 .infoCount {

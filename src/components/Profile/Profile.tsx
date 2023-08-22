@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import { 
 	Modal,
+	ModalChat,
+	ModalSupport,
 	ModalSettings,
 } from '../../components/';
 
@@ -84,7 +86,7 @@ function Profile() {
 			infoItems: [
 				{
 					name: 'Настройки +',
-					link: '/profile/setting',
+					link: 'settings',
 					isProblem: false,
 					isModal: true,
 				},
@@ -97,15 +99,15 @@ function Profile() {
 			infoItems: [
 				{
 					name: 'Служба поддержки',
-					link: '/profile/',
+					link: 'chat',
 					isProblem: false,
-					isModal: false,
+					isModal: true,
 				},
 				{
 					name: 'Полезная информация',
-					link: '/profile/',
+					link: 'support',
 					isProblem: false,
-					isModal: false,
+					isModal: true,
 				},
 			],
 		},
@@ -146,24 +148,34 @@ function ProfileItem(
 	const [isOpenTab, setIsOpenTab] = useState(false);
 	const { isOpen, toggleModal } = useModal();
 
+	const [ isName, setIsName ] = useState('');
+
+	function CurrentModal(name: string) {
+		setIsName(name);
+		toggleModal();
+	};
+
 	const handleClick = () => {
 		setIsOpenTab(current => !current);
 	}
+	
 	return (
 		<li className={styles.item}>
-			<div className={styles.header}>
+			<div className={styles.btnTab} onClick={handleClick}>
+				<div className={styles.header}>
+					<div className={clsx(
+						styles.headerIcon,
+						styles[data.iconClass],
+						{[styles.headerIconOpen]: isOpenTab },
+					)}></div>
+					<h3 className={styles.title}>{data.title}</h3>
+					<div className={styles.headerBtnMore}></div>
+				</div>
 				<div className={clsx(
-				styles.headerIcon,
-				styles[data.iconClass],
-				{[styles.headerIconOpen]: isOpenTab },
-			)}></div>
-				<h3 className={styles.title}>{data.title}</h3>
-				<button className={styles.headerBtnMore} onClick={handleClick}>More</button>
+					styles.itemInfo,
+					{[styles.itemInfoOpen]: !isOpenTab}
+				)}>{data.info}</div>
 			</div>
-			<div className={clsx(
-				styles.itemInfo,
-				{[styles.itemInfoOpen]: !isOpenTab}
-			)}>{data.info}</div>
 			<ul className={clsx(
 				styles.subList,
 				{[styles.subListOpen]: isOpenTab}
@@ -176,9 +188,17 @@ function ProfileItem(
 								styles.link,
 								{[styles.linkProblem] : infoItem.isProblem}
 							)} 
-							onClick={toggleModal}>{infoItem.name}</button>
-							<Modal isOpen={isOpen} toggleModal={toggleModal} full={false}>
-								<ModalSettings toggleModal={toggleModal}/>
+							onClick={() => { CurrentModal(infoItem.link)}}>{infoItem.name}</button>
+							<Modal isOpen={isOpen} toggleModal={toggleModal} full={true}>
+								{ (isName === 'chat') ? (
+									<ModalChat toggleModal={toggleModal}/>
+								) : null}
+								{ (isName === 'support') ? (
+									<ModalSupport toggleModal={toggleModal}/>
+								) : null}
+								{ (isName === 'settings') ? (
+									<ModalSettings toggleModal={toggleModal}/>
+								) : null}
 							</Modal>
 							</>
 						) : (
