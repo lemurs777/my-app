@@ -9,6 +9,33 @@ function LimitDeposit() {
 	const [isWeeklyLimit, setIsWeeklyLimit] = useState(false);
 	const [isMonthlyLimit, setIsMonthlyLimit] = useState(false);
 
+	const [daylyLimit, setDaylyLimit] = useState("");
+
+	const updateDaylyLimit = (e: any) => {
+		const regex = /^[\D0]+|\D/;
+		if (e.target.value === "" || !regex.test(e.target.value)) {
+			setDaylyLimit(e.target.value);
+		}
+	};
+
+	const [weeklyLimit, setWeeklyLimit] = useState("");
+
+	const updateWeeklyLimit = (e: any) => {
+		const regex = /^[\D0]+|\D/;
+		if (e.target.value === "" || !regex.test(e.target.value)) {
+			setWeeklyLimit(e.target.value);
+		}
+	};
+
+	const [monthlyLimit, setMonthlyLimit] = useState("");
+
+	const updateMonthlyLimit = (e: any) => {
+		const regex = /^[\D0]+|\D/;
+		if (e.target.value === "" || !regex.test(e.target.value)) {
+			setMonthlyLimit(e.target.value);
+		}
+	};
+
 	return (
 		
 		<div className={styles.limitDeposit}>
@@ -29,7 +56,7 @@ function LimitDeposit() {
 						/>
 						Дневной лимит
 					</label>
-					<input className={styles.itemInput} type="text" placeholder="Введите сумму"/>
+					<input className={styles.itemInput} type="text" placeholder="Введите сумму" value={daylyLimit} onChange={updateDaylyLimit}/>
 				</li>
 				<li className={styles.item}>
 					<label className={clsx(
@@ -44,7 +71,7 @@ function LimitDeposit() {
 						/>
 						Недельный лимит
 					</label>
-					<input className={styles.itemInput} type="text" placeholder="Введите сумму"/>
+					<input className={styles.itemInput} type="text" placeholder="Введите сумму" value={weeklyLimit} onChange={updateWeeklyLimit}/>
 				</li>
 				<li className={styles.item}>
 					<label className={clsx(
@@ -55,11 +82,11 @@ function LimitDeposit() {
 							className={styles.itemCheckbox} 
 							type="checkbox" 
 							checked={isMonthlyLimit} 
-							onChange={() => setIsMonthlyLimit((monthly) => !monthly)} 
+							onChange={() => setIsMonthlyLimit((monthly) => !monthly)}
 						/>
 						Месячный лимит
 					</label>
-					<input className={styles.itemInput} type="text" placeholder="Введите сумму"/>
+					<input className={styles.itemInput} type="text" placeholder="Введите сумму" value={monthlyLimit} onChange={updateMonthlyLimit}/>
 				</li>
 			</ul>
 		</div>
