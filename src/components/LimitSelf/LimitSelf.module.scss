@@ -76,6 +76,11 @@
 	margin-bottom: rem(10px);
 }
 
+.infoSelectWrapper {
+	position: relative;
+	margin-bottom: rem(24px);
+}
+
 .infoSelect {
 	padding: rem(15px 16px 14px);
 	border: 1px solid #fff;
@@ -86,7 +91,6 @@
 	color: rgba(255, 255, 255, 0.5);
 	transition: .3s;
 	position: relative;
-	margin-bottom: rem(24px);
 
 	&:hover {
 		color: #fff;
@@ -101,6 +105,58 @@
 		height: rem(7px);
 		background: url("../../assets/images/svg/return-select-arrow.svg") no-repeat 50% 50% /contain;
 		transform: translateY(-50%);
+	}
+}
+
+.selectLimitList {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	border: 1px solid #fff;
+	background: #1C1C1C;
+	transform: translateY(-1px);
+	height: rem(150px);
+	overflow-y: auto;
+	z-index: 2;
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+
+	&.selectLimitListOpen {
+		display: block;
+	}
+}
+
+.selectLimitItem {
+	height: rem(50px);
+	border-bottom: 1px solid #fff;
+	background: #1C1C1C;
+	padding: rem(15px 16px 14px);
+	color: #fff;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+
+	&:last-child {
+		border-bottom: none;
 	}
 }
 
