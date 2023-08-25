@@ -1,6 +1,7 @@
 import {  
 	HeaderTop,
 	HeaderBottom,
+	HeaderBottomProfile,
 } from '../';
 
 import { HeaderSettings } from './types';
@@ -14,6 +15,9 @@ function Header(props: HeaderSettings) {
 			<HeaderTop />
 			{props.showBottom && (
 				<HeaderBottom />
+			)}
+			{props.showBottomProfile && (
+				<HeaderBottomProfile />
 			)}
 		</header>
 	);

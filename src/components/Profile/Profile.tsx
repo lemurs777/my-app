@@ -27,13 +27,13 @@ function Profile() {
 					isModal: false,
 				},
 				{
-					name: 'Верификация аккаунта +',
+					name: 'Верификация аккаунта',
 					link: '/profile/verification',
 					isProblem: true,
 					isModal: false,
 				},
 				{
-					name: 'Ограничения +',
+					name: 'Ограничения',
 					link: '/profile/limits',
 					isProblem: false,
 					isModal: false,
@@ -46,7 +46,7 @@ function Profile() {
 			iconClass: 'headerIconTransactions',
 			infoItems: [
 				{
-					name: 'Транзакции +',
+					name: 'Транзакции',
 					link: '/profile/conclusions',
 					isProblem: false,
 					isModal: false,
@@ -59,7 +59,7 @@ function Profile() {
 			iconClass: 'headerIconBets',
 			infoItems: [
 				{
-					name: 'История ставок +',
+					name: 'История ставок',
 					link: '/profile/betting',
 					isProblem: false,
 					isModal: false,
@@ -72,7 +72,7 @@ function Profile() {
 			iconClass: 'headerIconPromo',
 			infoItems: [
 				{
-					name: 'Мои промокоды +',
+					name: 'Мои промокоды',
 					link: '/profile/promo',
 					isProblem: false,
 					isModal: false,
@@ -85,7 +85,7 @@ function Profile() {
 			iconClass: 'headerIconSettings',
 			infoItems: [
 				{
-					name: 'Настройки +',
+					name: 'Настройки',
 					link: 'settings',
 					isProblem: false,
 					isModal: true,
