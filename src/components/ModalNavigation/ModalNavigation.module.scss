@@ -1,0 +1,49 @@
+@import "sass-rem";
+
+.modalNavigation {
+	position: relative;
+	padding: rem(19px 20px 25px);
+	width: rem(370px);
+	max-width: 100%;
+	max-height: calc(100vh - rem(100px));
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	margin-bottom: rem(24px);
+}
+
+.item {
+	margin-bottom: rem(10px);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.link {
+	font-weight: 700;
+	font-size: rem(16px);
+	line-height: rem(18px);
+	color: #fff;
+}

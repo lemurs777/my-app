@@ -87,3 +87,4 @@ export { default as ModalChat } from './ModalChat';
 export { default as ModalSupport } from './ModalSupport';
 export { default as ModalWithdrawMoney } from './ModalWithdrawMoney';
 export { default as ModalRefillFinish } from './ModalRefillFinish';
+export { default as ModalNavigation } from './ModalNavigation';

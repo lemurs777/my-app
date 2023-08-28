@@ -14,6 +14,7 @@ import {
 	ModalSupport,
 	ModalWithdrawMoney,
 	ModalRefillFinish,
+	ModalNavigation,
 	ModalSettings,
 } from '../../components/';
 
@@ -52,6 +53,7 @@ function Modals() {
 				<button className={styles.btn} onClick={() => { CurrentModal('support', true) }}>Поддержка</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('withdraw-money', true) }}>Вывод средств</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('refill-finish', true) }}>Пополнение счёта (итог)</button>
+				<button className={styles.btn} onClick={() => { CurrentModal('navigation', true) }}>Навигация</button>
 				<button className={styles.btn} onClick={() => { CurrentModal('settings', false) }}>Настройки</button>
 			</div>
 			<Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>
@@ -96,6 +98,9 @@ function Modals() {
 				) : null}
 				{ (isName === 'refill-finish') ? (
 					<ModalRefillFinish toggleModal={toggleModal}/>
+				) : null}
+				{ (isName === 'navigation') ? (
+					<ModalNavigation toggleModal={toggleModal}/>
 				) : null}
 				{ (isName === 'settings') ? (
 					<ModalSettings toggleModal={toggleModal}/>
