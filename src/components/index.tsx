@@ -66,6 +66,7 @@ export { default as TableBigSmallFilter } from './TableBigSmallFilter';
 export { default as TableBigSmallCustomFilter } from './TableBigSmallCustomFilter';
 export { default as TableForm } from './TableForm';
 export { default as TableFormFilter } from './TableFormFilter';
+export { default as Archive } from './Archive';
 export { default as OverviewInfo } from './OverviewInfo';
 export { default as InPersonMain } from './InPersonMain';
 export { default as InPersonInfo } from './InPersonInfo';

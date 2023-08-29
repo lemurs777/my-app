@@ -24,6 +24,7 @@ import StatisticsPageOverview from './pages/StatisticsPageOverview';
 import StatisticsPageThree from './pages/StatisticsPageThree';
 import StatisticsPageTables from './pages/StatisticsPageTables';
 import StatisticsPageFive from './pages/StatisticsPageFive';
+import StatisticsPageArchive from './pages/StatisticsPageArchive';
 import SiteMapPage from './pages/SiteMapPage';
 import HomePageGames from './pages/HomePageGames';
 import LimitsProfile from './pages/LimitsProfile';
@@ -85,6 +86,7 @@ export default function App() {
 					<Route path="in-person" element={<StatisticsPageInPerson />} />
 					<Route path="standings" element={<StatisticsPageStandings />} />
 					<Route path="search" element={<StatisticsPageSearch />} />
+					<Route path="archive" element={<StatisticsPageArchive />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

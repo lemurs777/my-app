@@ -1,0 +1,83 @@
+@import "sass-rem";
+
+.archive {
+	padding: rem(89px 20px 50px);
+	max-width: rem(1346px);
+	margin: 0 auto;
+}
+
+.title {
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+	background: rgba(247, 255, 19, 0.15);
+	padding: rem(18px 20px 19px);
+	font-size: rem(18px);
+	font-weight: 400;
+	line-height: rem(21px);
+	color: #fff;
+}
+
+.top {
+	display: flex;
+	background: rgba(255, 255, 255, 0.21);
+	font-size: rem(18px);
+	font-weight: 400;
+	line-height: rem(21px);
+	color: #fff;
+}
+
+.topCell {
+	padding: rem(19px 20px 18px);
+
+	&:nth-child(1) {
+		padding-left: rem(27px);
+		width: rem(400px);
+	}
+
+	&:nth-child(2) {
+		width: rem(400px);
+	}
+
+	&:nth-child(3) {
+		width: rem(320px);
+	}
+}
+
+.link {
+	display: flex;
+	background: rgba(255, 255, 255, 0.14);
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	font-size: rem(18px);
+	font-weight: 400;
+	line-height: rem(21px);
+	color: #fff;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: rem(100px);
+		width: rem(24px);
+		height: rem(24px);
+		background: url("../../assets/images/svg/archive-arrow.svg") no-repeat 50% 50% /contain;
+		transform: translateY(-50%);
+	}
+}
+
+.linkCell {
+	padding: rem(19px 20px 18px);
+
+	&:nth-child(1) {
+		padding-left: rem(27px);
+		width: rem(400px);
+	}
+
+	&:nth-child(2) {
+		width: rem(400px);
+	}
+
+	&:nth-child(3) {
+		width: rem(320px);
+	}
+}

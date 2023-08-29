@@ -88,6 +88,10 @@ const arrLinks = [
         link: '/statistics/standings',
     },
     {
+        name: 'Статистика - Архив',
+        link: '/statistics/archive',
+    },
+    {
         name: 'Вопросы и ответы',
         link: '/faq',
     },
