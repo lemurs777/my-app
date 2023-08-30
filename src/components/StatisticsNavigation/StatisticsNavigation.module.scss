@@ -1,0 +1,87 @@
+@import "sass-rem";
+
+.statisticsNavigation {
+	width: 100%;
+	background: rgba(247, 255, 19, 0.15);
+	height: rem(124px);
+	padding: rem(13px 26px 2px);
+}
+
+.info {
+	position: relative;
+	padding-left: rem(40px);
+	margin-bottom: rem(23px);
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: rem(30px);
+		height: rem(20px);
+		top: 50%;
+		left: 0;
+		background: url("../../assets/images/svg/statistics-nav.svg") no-repeat 50% 50% /contain;
+		transform: translateY(-50%);
+	}
+}
+
+.infoTop {
+	display: flex;
+	gap: rem(27px);
+	color: #FFF;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: rem(5px);
+}
+
+.infoText {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: "/";
+		top: 50%;
+		left: calc(100% + rem(10px));
+		transform: translateY(-55%);
+	}
+
+	&:last-child {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.infoName {
+	color: #FFF;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	font-weight: 400;
+}
+
+.list {
+	display: flex;
+	gap: rem(15px);
+}
+
+.link {
+	display: inline-block;
+	padding: rem(9px 20px);
+	color: #fff;
+	font-size: rem(18px);
+	line-height: rem(21px);
+	font-weight: 400;
+	transition: .3s;
+
+	&.linkActive {
+		color: #000;
+		background: #F7FF13;
+		pointer-events: none;
+	}
+
+	&:hover {
+		color: #000;
+		background: #F7FF13;
+	}
+}

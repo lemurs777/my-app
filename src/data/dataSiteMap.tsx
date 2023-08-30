@@ -60,36 +60,12 @@ const arrLinks = [
         link : '/statistics',
     },
     {
-        name : 'Статистика - Обзор',
-        link : '/statistics/overview',
-    },
-    {
-        name : 'Статистика - Календарь',
-        link : '/statistics/calendar',
-    },
-    {
-        name : 'Статистика - Таблицы',
-        link : '/statistics/tables',
-    },
-    {
-        name: 'Киберспорт',
-        link: '/cybersport',
-    },
-    {
         name: 'Статистика - Детали',
         link: '/statistics/detailed',
     },
     {
-        name: 'Статистика - Очные',
-        link: '/statistics/in-person',
-    },
-    {
-        name: 'Статистика - Положение команды',
-        link: '/statistics/standings',
-    },
-    {
-        name: 'Статистика - Архив',
-        link: '/statistics/archive',
+        name: 'Киберспорт',
+        link: '/cybersport',
     },
     {
         name: 'Вопросы и ответы',
@@ -114,9 +90,33 @@ const arrLinks = [
         param: 2,
     },
     {
+        name : 'Статистика - Обзор',
+        link : '/statistics/overview',
+    },
+    {
+        name: 'Статистика - Очные',
+        link: '/statistics/in-person',
+    },
+    {
+        name : 'Статистика - Календарь',
+        link : '/statistics/calendar',
+    },
+    {
+        name : 'Статистика - Таблицы',
+        link : '/statistics/tables',
+    },
+    {
         name: 'Статистика - Поиск команды',
         link: '/statistics/search',
         param: 2,
+    },
+    {
+        name: 'Статистика - Положение команды',
+        link: '/statistics/standings',
+    },
+    {
+        name: 'Статистика - Архив',
+        link: '/statistics/archive',
     },
 ]
 

@@ -5,7 +5,7 @@ import {
 function StatisticsPageArchive(){
    return (
        <>
-           <main className="page page--statistics-search">
+           <main className="page page--statistics-main">
                <Archive />
            </main>
        </>	

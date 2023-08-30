@@ -1,4 +1,5 @@
 import { 
+	StatisticsNavigation,
 	TableLeagueFilter,
 	TableLeague,
 	TableNextPrevGames,
@@ -51,6 +52,7 @@ function StatisticsOverview() {
 
 	return (
 		<div className={styles.statisticsOverview}>
+			<StatisticsNavigation name="overview"/>
 			<div className={styles.wrapper}>
 				<div className={styles.tableLeagueWrapper}>
 					<TableLeagueFilter />

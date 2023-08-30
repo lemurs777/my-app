@@ -5,7 +5,7 @@ import {
 function StatisticsPageInPerson(){
    return (
        <>
-           <main className="page page--statistics-six scroll">
+           <main className="page page--statistics-main scroll">
                <StatisticsInPerson />
            </main>
        </>	

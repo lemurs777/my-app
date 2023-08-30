@@ -1,4 +1,5 @@
 import { 
+	StatisticsNavigation,
 	StandingsMain,
 	TableNextPrevGames,
 	PositionsChart,
@@ -40,18 +41,21 @@ function StatisticsStandings() {
 
 	return (
 		<div className={styles.statisticsStandings}>
-			<div className={styles.mainWrapper}>
-				<StandingsMain data={DataMain}/>
+			<StatisticsNavigation name="standings"/>
+			<div className={styles.wrapper}>
+				<div className={styles.mainWrapper}>
+					<StandingsMain data={DataMain}/>
+				</div>
+				<h2 className={styles.title}>Биг V (Викториан Стейт Чемпионшип)</h2>
+				<div className={styles.tableWrapper}>
+					<TableLeague data={dataLeagueTable}/>
+				</div>
+				<div className={styles.twoTableColumns}>
+					<TableNextPrevGames data={dataPrevTable} />
+					<TableNextPrevGames data={dataNextTable} />
+				</div>
+				<PositionsChart data={PositionsChartData}/>
 			</div>
-			<h2 className={styles.title}>Биг V (Викториан Стейт Чемпионшип)</h2>
-			<div className={styles.tableWrapper}>
-				<TableLeague data={dataLeagueTable}/>
-			</div>
-			<div className={styles.twoTableColumns}>
-				<TableNextPrevGames data={dataPrevTable} />
-				<TableNextPrevGames data={dataNextTable} />
-			</div>
-			<PositionsChart data={PositionsChartData}/>
 		</div>
 	);
 }

@@ -5,7 +5,7 @@ import {
 function StatisticsPageOverview(){
    return (
        <>
-           <main className="page page--statistics-two scroll">
+           <main className="page page--statistics-main scroll">
                <StatisticsOverview />
            </main>
        </>	

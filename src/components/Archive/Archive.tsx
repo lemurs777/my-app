@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 
+import { 
+	StatisticsNavigation,
+} from '../';
+
 import styles from './Archive.module.scss';
 
 function Archive() {
@@ -51,23 +55,28 @@ function Archive() {
 
 	return (
 		<div className={styles.archive}>
-			<div className={styles.title}>Архив</div>
-			<div className={styles.top}>
-				<div className={styles.topCell}>Сезон</div>
-				<div className={styles.topCell}>Чемпион</div>
-				<div className={styles.topCell}>Второе место</div>
+			<StatisticsNavigation name="archive"/>
+			<div className={styles.wrapper}>
+				<div className={styles.mainWrapper}>
+					<div className={styles.title}>Архив</div>
+					<div className={styles.top}>
+						<div className={styles.topCell}>Сезон</div>
+						<div className={styles.topCell}>Чемпион</div>
+						<div className={styles.topCell}>Второе место</div>
+					</div>
+					{arrChampionship.map((item, index) => (
+						<Link 
+							key={index}
+							to={item.link}
+							className={styles.link}
+						>
+							<div className={styles.linkCell}>{item.name}</div>
+							<div className={styles.linkCell}>{item.first}</div>
+							<div className={styles.linkCell}>{item.second}</div>
+						</Link>
+					))}
+				</div>
 			</div>
-			{arrChampionship.map((item, index) => (
-				<Link 
-					key={index}
-					to={item.link}
-					className={styles.link}
-				>
-					<div className={styles.linkCell}>{item.name}</div>
-					<div className={styles.linkCell}>{item.first}</div>
-					<div className={styles.linkCell}>{item.second}</div>
-				</Link>
-			))}
 		</div>
 	);
 }

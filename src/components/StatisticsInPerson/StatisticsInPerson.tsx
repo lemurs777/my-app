@@ -1,4 +1,5 @@
 import { 
+	StatisticsNavigation,
 	InPersonMain,
 	InPersonInfo,
 	InPersonScore,
@@ -99,6 +100,7 @@ function StatisticsInPerson() {
 
 	return (
 		<div className={styles.statisticsInPerson}>
+			<StatisticsNavigation name="in-person"/>
 			<div className={styles.wrapper}>
 				<div className={styles.mainWrapper}>
 					<InPersonMain data={MainData}/>

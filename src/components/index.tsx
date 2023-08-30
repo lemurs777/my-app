@@ -34,6 +34,7 @@ export { default as Deposit } from './Deposit';
 export { default as EventsToday } from './EventsToday';
 export { default as EventsInfo } from './EventsInfo';
 export { default as EventsList } from './EventsList';
+export { default as StatisticsNavigation } from './StatisticsNavigation';
 export { default as StatisticsOne } from './StatisticsOne';
 export { default as StatisticsOverview } from './StatisticsOverview';
 export { default as TableCalendar } from './TableCalendar';

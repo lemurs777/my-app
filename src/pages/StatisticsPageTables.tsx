@@ -5,7 +5,7 @@ import {
 function StatisticsPageTables(){
    return (
        <>
-           <main className="page page--statistics-four scroll">
+           <main className="page page--statistics-main scroll">
                <StatisticsTables />
            </main>
        </>	

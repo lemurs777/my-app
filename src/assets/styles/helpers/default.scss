@@ -235,6 +235,12 @@ main {
 	&--statistics-search {
 		display: block;
 	}
+
+	&--statistics-main {
+		display: block;
+		top: rem(79px);
+		max-height: calc(100vh - #{rem(78px)});
+	}
 }
 
 .aside {

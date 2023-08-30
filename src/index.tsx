@@ -7,6 +7,7 @@ import ProfileLayout from "./layouts/ProfileLayout";
 import AppsLayout from "./layouts/AppsLayout";
 import PromotionsLayout from "./layouts/PromotionsLayout";
 import RequestsLayout from "./layouts/RequestsLayout";
+import StatisticsLayout from "./layouts/StatisticsLayout";
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
 import NoPage from './pages/NoPage';
@@ -21,7 +22,7 @@ import PromotionPage from './pages/PromotionPage';
 import EventsPage from './pages/EventsPage';
 import StatisticsPageOne from './pages/StatisticsPageOne';
 import StatisticsPageOverview from './pages/StatisticsPageOverview';
-import StatisticsPageThree from './pages/StatisticsPageThree';
+import StatisticsPageCalendar from './pages/StatisticsPageCalendar';
 import StatisticsPageTables from './pages/StatisticsPageTables';
 import StatisticsPageFive from './pages/StatisticsPageFive';
 import StatisticsPageArchive from './pages/StatisticsPageArchive';
@@ -77,16 +78,18 @@ export default function App() {
 					<Route index element={<EventsPage />} />
 					<Route path="detailed" element={<EventsDetailedPage />} />
 				</Route>
+				<Route path="/statistics/" element={<StatisticsLayout />}>
+					<Route path="overview" element={<StatisticsPageOverview />} />
+					<Route path="in-person" element={<StatisticsPageInPerson />} />
+					<Route path="calendar" element={<StatisticsPageCalendar />} />
+					<Route path="tables" element={<StatisticsPageTables />} />
+					<Route path="search" element={<StatisticsPageSearch />} />
+					<Route path="standings" element={<StatisticsPageStandings />} />
+					<Route path="archive" element={<StatisticsPageArchive />} />
+				</Route>
 				<Route path="/statistics/" element={<MainLayout />}>
 					<Route index element={<StatisticsPageOne />} />
-					<Route path="overview" element={<StatisticsPageOverview />} />
-					<Route path="calendar" element={<StatisticsPageThree />} />
-					<Route path="tables" element={<StatisticsPageTables />} />
 					<Route path="detailed" element={<StatisticsPageFive />} />
-					<Route path="in-person" element={<StatisticsPageInPerson />} />
-					<Route path="standings" element={<StatisticsPageStandings />} />
-					<Route path="search" element={<StatisticsPageSearch />} />
-					<Route path="archive" element={<StatisticsPageArchive />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

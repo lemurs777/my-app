@@ -1,4 +1,5 @@
 import { 
+	StatisticsNavigation,
 	TableLeagueCustomFilter,
 	TableLeagueCustom,
 	TableFormFilter,
@@ -17,6 +18,7 @@ function StatisticsTables() {
 
 	return (
 		<div className={styles.statisticsTables}>
+			<StatisticsNavigation name="tables"/>
 			<div className={styles.wrapper}>
 				<div className={styles.tableLeagueWrapper}>
 					<TableLeagueCustomFilter />

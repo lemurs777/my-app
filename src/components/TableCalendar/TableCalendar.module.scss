@@ -2,7 +2,6 @@
 
 .tableCalendar {
     width: 100%;
-    padding: rem(24px 0);
 }
 
 .title {
@@ -13,6 +12,10 @@
 	font-size: rem(18px);
 	line-height: rem(21px);
 	color: #FFFFFF;
+}
+
+.wrapper {
+	padding: rem(25px);
 }
 
 .filterWrapper {

@@ -1,7 +1,14 @@
 @import "sass-rem";
 
 .archive {
+	width: 100%;
+}
+
+.wrapper {
 	padding: rem(89px 20px 50px);
+}
+
+.mainWrapper {
 	max-width: rem(1346px);
 	margin: 0 auto;
 }
