@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.04a330d9.css",
-    "main.js": "/my-app/static/js/main.5d90e746.js",
+    "main.css": "/my-app/static/css/main.dd0f3e89.css",
+    "main.js": "/my-app/static/js/main.08452e19.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -152,6 +152,7 @@
     "static/media/profile-bets.svg": "/my-app/static/media/profile-bets.ea09fed0778f7945b42a.svg",
     "static/media/menu-volleyball.svg": "/my-app/static/media/menu-volleyball.a9d93dd1649172f24c50.svg",
     "static/media/promotions-time.svg": "/my-app/static/media/promotions-time.c1da82090587499a9f84.svg",
+    "static/media/promotion-arrow.svg": "/my-app/static/media/promotion-arrow.b876193b19963fb3d3c0.svg",
     "static/media/payment-good.svg": "/my-app/static/media/payment-good.6a44be80951ed52a6fcff740645dad30.svg",
     "static/media/faq-arrow.svg": "/my-app/static/media/faq-arrow.cef857d572d17b6e0216.svg",
     "static/media/profile-left.svg": "/my-app/static/media/profile-left.2767e368f3506b5b42af.svg",
@@ -227,12 +228,12 @@
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
     "static/media/statistics-mini-table-line.svg": "/my-app/static/media/statistics-mini-table-line.72268d04cde6db52e453.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.04a330d9.css.map": "/my-app/static/css/main.04a330d9.css.map",
-    "main.5d90e746.js.map": "/my-app/static/js/main.5d90e746.js.map",
+    "main.dd0f3e89.css.map": "/my-app/static/css/main.dd0f3e89.css.map",
+    "main.08452e19.js.map": "/my-app/static/js/main.08452e19.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04a330d9.css",
-    "static/js/main.5d90e746.js"
+    "static/css/main.dd0f3e89.css",
+    "static/js/main.08452e19.js"
   ]
 }
