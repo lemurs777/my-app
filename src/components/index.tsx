@@ -30,6 +30,7 @@ export { default as Multiple } from './Multiple';
 export { default as Promo } from './Promo';
 export { default as PromoSlider } from './PromoSlider';
 export { default as PromoList } from './PromoList';
+export { default as Promotion } from './Promotion';
 export { default as Deposit } from './Deposit';
 export { default as EventsToday } from './EventsToday';
 export { default as EventsInfo } from './EventsInfo';

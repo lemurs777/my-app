@@ -1,0 +1,215 @@
+@import "sass-rem";
+
+.promotion {
+    max-width: rem(1420px);
+    margin: 0 auto;
+}
+
+.bannner {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	height: rem(552px);
+}
+
+.infoWrapper {
+	padding: rem(30px 150px);
+	display: flex;
+	gap: rem(20px);
+	margin: 0 auto;
+	background: #191919;
+}
+
+.tasks {
+	width: rem(450px);
+	margin-right: rem(-100px);
+	background: #0D0D0D;
+	transform: translateY(rem(-110px));
+	padding-bottom: rem(13px);
+	align-self: flex-start;
+}
+
+.tasksTitle {
+	font-weight: 500;
+	font-size: rem(24px);
+	line-height: rem(28px);        
+	color: #fff;
+	padding: rem(28px 30px 24px);
+	background: linear-gradient(90deg, #272727 0%, #000000 100%);
+}
+
+.tasksName {
+	padding: rem(27px 30px 22px);
+	font-weight: 400;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	color: #848484;
+}
+
+.tasksList {
+	display: flex;
+	flex-direction: column;
+	padding: rem(0 15px 10px);
+	gap: 1px;
+}
+
+.tasksItem {
+	background: #222222;
+	padding: rem(15px);
+	display: flex;
+
+	&:first-child {
+		border-radius: rem(8px 8px 0 0);
+	}
+
+	&:last-child {
+		border-radius: rem(0 0 8px 8px);
+	}
+}
+
+.tasksBtn {
+	display: block;
+	width: 100%;
+	max-width: calc(100% - rem(30px));
+	margin: 0 auto;
+	font-weight: 700;
+	font-size: rem(18px);
+	line-height: rem(21px);        
+	text-align: center;
+	color: #000;
+	text-transform: uppercase;
+	background: #F8FF13;
+	border-radius: rem(6px);
+	padding: rem(15px 20px);
+	cursor: pointer;
+
+	&.tasksBtnDisable {
+		cursor: default;
+		color: #343434;
+		background: #171717;
+	}
+}
+
+.info {
+	max-width: rem(700px);
+	width: 100%;
+}
+
+.top {
+	max-width: rem(640px);
+}
+
+.topDates {
+	margin-bottom: rem(25px);
+	font-weight: 400;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	color: #9C9C9C;
+	padding-left: rem(28px);
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 35%;
+		left: 0;
+		width: rem(18px);
+		height: rem(18px);
+		background: url("../../assets/images/svg/promotions-time.svg") no-repeat 50% 50% /contain;
+		transform: translateY(-50%);
+	}
+}
+
+.topTitle {
+	font-weight: 500;
+	font-size: rem(28px);
+	line-height: rem(33px);
+	color: #fff;
+	margin-bottom: rem(15px);
+}
+
+.topContent {
+	margin-bottom: rem(28px);
+}
+
+.topText {
+	font-weight: 400;
+	font-size: rem(16px);
+	line-height: rem(28px);
+	color: #fff;
+}
+
+.topLink {
+	color: #F7FF13;
+}
+
+.about {
+	margin-bottom: rem(47px);
+}
+
+.aboutText {
+	font-weight: 400;
+	font-size: rem(16px);
+	line-height: rem(28px);
+	color: #fff;
+	margin-bottom: rem(15px);
+}
+
+.aboutList {
+	display: flex;
+	gap: rem(2px);
+	margin-right: rem(-78px);
+}
+
+.aboutItem {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: rem(10px 10px 20px);
+	width: 33%;
+	background: #222222;
+	height: rem(286px);
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: rem(-22px);
+		width: rem(42px);
+		height: rem(42px);
+		background: url("../../assets/images/svg/promotion-arrow.svg") no-repeat 50% 50% /contain;
+		transform: translateY(-50%);
+		z-index: 2;
+	}
+
+	&:first-child  {
+		border-radius: rem(8px 0 0 8px);
+	}
+
+	&:last-child  {
+		border-radius: rem(0 8px 8px 0);
+
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.aboutItemImg {
+	display: block;
+	width: rem(90px);
+	height: rem(90px);
+	margin-bottom: auto;
+}
+
+.aboutItemText {
+	padding: rem(0 10px);
+	color: #fff;
+	font-size: rem(24px);
+	font-weight: 500;
+	line-height: rem(32px); 
+}
+
+.aboutItemTextAccent {
+	color: #F7FF13;
+}
