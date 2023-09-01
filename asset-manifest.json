@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.dd0f3e89.css",
-    "main.js": "/my-app/static/js/main.08452e19.js",
+    "main.css": "/my-app/static/css/main.cca99e66.css",
+    "main.js": "/my-app/static/js/main.0f33a5d7.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/apps-bg-x2.min.png": "/my-app/static/media/apps-bg-x2.min.c11102b8a0e1e8f70d77.png",
     "static/media/hello-banner-x2.min.png": "/my-app/static/media/hello-banner-x2.min.a797631dee2208a5ff6a.png",
@@ -177,6 +177,7 @@
     "index.html": "/my-app/index.html",
     "static/media/balance-copy.svg": "/my-app/static/media/balance-copy.9aee55472046126f1cf1.svg",
     "static/media/statistics-time.svg": "/my-app/static/media/statistics-time.b8fe80015c5bf0448e9e.svg",
+    "static/media/promotion-task-half.svg": "/my-app/static/media/promotion-task-half.088f8ebbec55681b2e60.svg",
     "static/media/social-fb.svg": "/my-app/static/media/social-fb.73bb439133f0cd759fd8.svg",
     "static/media/return-select-two.svg": "/my-app/static/media/return-select-two.dc2ae55477fa111e23c0.svg",
     "static/media/statistics-arrow-points.svg": "/my-app/static/media/statistics-arrow-points.8200ae3b17bb37ab4086.svg",
@@ -185,6 +186,7 @@
     "static/media/check.svg": "/my-app/static/media/check.46e0e4be1fae2328bcbb.svg",
     "static/media/statistics-arrow.svg": "/my-app/static/media/statistics-arrow.cef789403575dc1857cb.svg",
     "static/media/copy.svg": "/my-app/static/media/copy.0d1fc8874eda97dc96c6.svg",
+    "static/media/promotion-done.svg": "/my-app/static/media/promotion-done.8925f119cb4df8e2c4a6.svg",
     "static/media/header-flag-ru.svg": "/my-app/static/media/header-flag-ru.5f67b7152dac327143aa.svg",
     "static/media/return-checkbox-active.svg": "/my-app/static/media/return-checkbox-active.032f5488191d3058168f.svg",
     "static/media/header-search.svg": "/my-app/static/media/header-search.651e6073bab417e33b4f.svg",
@@ -216,24 +218,27 @@
     "static/media/multiple-bet.svg": "/my-app/static/media/multiple-bet.f57af6ca0a15c003103a.svg",
     "static/media/events-flag-champions-league.svg": "/my-app/static/media/events-flag-champions-league.200b7e2b3c9f9ca4245d.svg",
     "static/media/menu-live.svg": "/my-app/static/media/menu-live.1aec8f27e5023ba36e40.svg",
+    "static/media/promotion-task-all.svg": "/my-app/static/media/promotion-task-all.2a54761bd5d4e04e2e45.svg",
     "static/media/statistics-triangle-down.svg": "/my-app/static/media/statistics-triangle-down.967a7c1c1cd96c981407.svg",
     "static/media/statistics-name-arrow.svg": "/my-app/static/media/statistics-name-arrow.5d9418d2f85a5660323b.svg",
     "static/media/statistics-triangle-up.svg": "/my-app/static/media/statistics-triangle-up.0339edb4ef4ab2831f7e.svg",
     "static/media/broadcast-arrow.svg": "/my-app/static/media/broadcast-arrow.a2852c8960e4ff61eeef.svg",
+    "static/media/promotion-task-arrow.svg": "/my-app/static/media/promotion-task-arrow.f086863ed2e4af14ebdd.svg",
     "static/media/select-more.svg": "/my-app/static/media/select-more.f086863ed2e4af14ebdd.svg",
     "static/media/game-info-arrow.svg": "/my-app/static/media/game-info-arrow.cb60faf595c72e49b446.svg",
     "static/media/return-select-arrow.svg": "/my-app/static/media/return-select-arrow.2bff5e935ed92475455a.svg",
     "static/media/events-info-red.svg": "/my-app/static/media/events-info-red.199da5addbcf084339aa.svg",
     "static/media/events-info-yellow.svg": "/my-app/static/media/events-info-yellow.b698b4f852d6530195f1.svg",
     "static/media/game-banner-play.svg": "/my-app/static/media/game-banner-play.fa25518edac8676854c9.svg",
+    "static/media/promotion-task-default.svg": "/my-app/static/media/promotion-task-default.222b1a97b0f3c17eeb43.svg",
     "static/media/statistics-mini-table-line.svg": "/my-app/static/media/statistics-mini-table-line.72268d04cde6db52e453.svg",
     "static/media/statistics-zero.svg": "/my-app/static/media/statistics-zero.37926442c8fa06ce9d7b.svg",
-    "main.dd0f3e89.css.map": "/my-app/static/css/main.dd0f3e89.css.map",
-    "main.08452e19.js.map": "/my-app/static/js/main.08452e19.js.map",
+    "main.cca99e66.css.map": "/my-app/static/css/main.cca99e66.css.map",
+    "main.0f33a5d7.js.map": "/my-app/static/js/main.0f33a5d7.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd0f3e89.css",
-    "static/js/main.08452e19.js"
+    "static/css/main.cca99e66.css",
+    "static/js/main.0f33a5d7.js"
   ]
 }
