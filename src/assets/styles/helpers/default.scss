@@ -241,6 +241,10 @@ main {
 		top: rem(79px);
 		max-height: calc(100vh - #{rem(78px)});
 	}
+
+	&--promotions {
+		display: block;
+	}
 }
 
 .aside {

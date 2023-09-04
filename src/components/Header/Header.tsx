@@ -2,6 +2,7 @@ import {
 	HeaderTop,
 	HeaderBottom,
 	HeaderBottomProfile,
+	HeaderBottomPromotion,
 } from '../';
 
 import { HeaderSettings } from './types';
@@ -18,6 +19,9 @@ function Header(props: HeaderSettings) {
 			)}
 			{props.showBottomProfile && (
 				<HeaderBottomProfile />
+			)}
+			{props.showBottomPromotion && (
+				<HeaderBottomPromotion />
 			)}
 		</header>
 	);

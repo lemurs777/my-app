@@ -50,7 +50,7 @@ function HeaderTop() {
 					<Link className={clsx(styles.navLink, styles.navLinkActive)} to="/"> Спорт</Link>
 				</li>
 				<li className={styles.navItem}>
-					<Link className={styles.navLink} to="/">Киберспорт</Link>
+					<Link className={styles.navLink} to="/cybersport">Киберспорт</Link>
 				</li>
 				<li className={styles.navItem}>
 					<Link className={styles.navLink} to="/">Казино</Link>

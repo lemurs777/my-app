@@ -12,7 +12,7 @@ function PromotionsPage() {
 		title: 'Акции',
 		items: [
 			{
-				link: '/promotions/',
+				link: '/promotions/promo',
 				image: PromoBanner1,
 				alt: 'Promotion',
 				dateStart: '02.07.2020',
@@ -21,7 +21,7 @@ function PromotionsPage() {
 				info: 'Покупка бронежилетов в каждом раунде CS:GO – важная инвестиция в игру, которая повысит ваши шансы на победу.'
 			},
 			{
-				link: '/promotions/',
+				link: '/promotions/promo',
 				image: PromoBanner2,
 				alt: 'Promotion',
 				dateStart: '02.07.2020',
@@ -30,7 +30,7 @@ function PromotionsPage() {
 				info: 'Вам знакомо то сильное чувство, которое вы испытываете, когда едете быстро, чувствуете прилив адреналина, и ваше сердце начинает биться намного быстрее?'
 			},
 			{
-				link: '/promotions/',
+				link: '/promotions/promo',
 				image: PromoBanner1,
 				alt: 'Promotion',
 				dateStart: '02.07.2020',
@@ -45,7 +45,7 @@ function PromotionsPage() {
 		title: 'Бонусы',
 		items: [
 			{
-				link: '/promotions/',
+				link: '/promotions/promo',
 				image: PromoBanner2,
 				alt: 'Promotion',
 				dateStart: '02.07.2020',
@@ -54,7 +54,7 @@ function PromotionsPage() {
 				info: 'Вам знакомо то сильное чувство, которое вы испытываете, когда едете быстро, чувствуете прилив адреналина, и ваше сердце начинает биться намного быстрее?'
 			},
 			{
-				link: '/promotions/',
+				link: '/promotions/promo',
 				image: PromoBanner1,
 				alt: 'Promotion',
 				dateStart: '02.07.2020',
@@ -63,7 +63,7 @@ function PromotionsPage() {
 				info: 'Покупка бронежилетов в каждом раунде CS:GO – важная инвестиция в игру, которая повысит ваши шансы на победу.'
 			},
 			{
-				link: '/promotions/',
+				link: '/promotions/promo',
 				image: PromoBanner2,
 				alt: 'Promotion',
 				dateStart: '02.07.2020',
@@ -75,15 +75,17 @@ function PromotionsPage() {
 	}
 
 	return (
-		<div className="promotions">
+		<main className="page page--promotions scroll">
+			<div className="promotions">
 
-			<PromoSlider />
+				<PromoSlider />
 
-			<PromoList data={promoList}/>
+				<PromoList data={promoList}/>
 
-			<PromoList data={bonusList}/>
+				<PromoList data={bonusList}/>
 
-		</div>
+			</div>
+		</main>
 	);
 };
 

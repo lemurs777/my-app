@@ -5,7 +5,9 @@ import {
 function PromotionPage(){
 
 	return (
-		<Promotion />
+		<main className="page page--promotions scroll">
+			<Promotion />
+		</main>
 	);
 };
 

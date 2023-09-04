@@ -17,6 +17,7 @@ export { default as Header } from './Header';
 export { default as HeaderTop } from './HeaderTop';
 export { default as HeaderBottom } from './HeaderBottom';
 export { default as HeaderBottomProfile } from './HeaderBottomProfile';
+export { default as HeaderBottomPromotion } from './HeaderBottomPromotion';
 export { default as MainSlider } from './MainSlider';
 export { default as Sport } from './Sport';
 export { default as SportList } from './SportList';
