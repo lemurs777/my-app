@@ -1,0 +1,250 @@
+@import "sass-rem";
+
+.modalRefill {
+	position: relative;
+	padding: rem(19px 70px 25px);
+	width: rem(370px);
+	max-width: 100%;
+	background: #151515;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	margin-bottom: rem(26px);
+}
+
+.text {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	font-weight: 400;
+	line-height: rem(15px);
+	margin-bottom: rem(5px);
+}
+
+.selectMethodWrapper {
+	position: relative;
+	margin-bottom: rem(15px);
+}
+
+.selectMethod {
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(11px 10px 17px 10px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 500;
+
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: rem(6px);
+		left: 50%;
+		width: rem(10px);
+		height: rem(6px);
+		transform: translateX(-50%);
+		background: url("../../assets/images/svg/modals/refill-down-arrow.svg") no-repeat 50% 50% /contain;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		background: #2E2E2E;
+		left: rem(18px);
+		right: rem(18px);
+		bottom: rem(14px);
+		height: 1px;
+	}
+}
+
+.selectMethodList {
+	display: none;
+	position: absolute;
+	top: calc(100% + rem(7px));
+	left: 0;
+	right: 0;
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	transform: translateY(-1px);
+	height: rem(194px);
+	overflow-y: auto;
+	z-index: 2;
+	padding: rem(10px);
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+
+	&.selectMethodListOpen {
+		display: block;
+	}
+}
+
+.selectMethodItem {
+	border: 1px solid #2E2E2E;
+	padding: rem(9px 8px 8px 8px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+	background: #2E2E2E;
+	margin-bottom: rem(6px);
+	text-align: center;
+	font-weight: 500;
+	border-radius: rem(2px);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.selectСurrencyBigWrapper {
+	display: flex;
+	margin-bottom: rem(15px);
+}
+
+.selectСurrencyWrapper {
+	position: relative;
+	width: rem(30px);
+}
+
+.selectСurrency {
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(14px 5px 14px 5px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	position: relative;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 500;
+
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: rem(6px);
+		left: 50%;
+		width: rem(10px);
+		height: rem(6px);
+		transform: translateX(-50%);
+		background: url("../../assets/images/svg/modals/refill-down-arrow.svg") no-repeat 50% 50% /contain;
+	}
+}
+
+.selectСurrencyList {
+	display: none;
+	position: absolute;
+	top: calc(100% + rem(7px));
+	left: 0;
+	width: rem(52px);
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	transform: translateY(-1px);
+	height: rem(194px);
+	overflow-y: auto;
+	z-index: 2;
+	padding: rem(7px 5px);
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+
+	&.selectСurrencyListOpen {
+		display: block;
+	}
+}
+
+.selectСurrencyItem {
+	border: 1px solid #2E2E2E;
+	padding: rem(4px 5px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+	background: #2E2E2E;
+	margin-bottom: rem(6px);
+	text-align: center;
+	font-weight: 500;
+	border-radius: rem(2px);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.itemInput {
+	display: block;
+	flex-grow: 1;
+	background: #1C1C1C;
+	padding: rem(14px 10px);
+	color: #fff;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 500;
+	border: 1px solid #2E2E2E;
+	border-left: none;
+
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+.btn {
+	color: #000;
+	padding: rem(13px 20px);
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: rem(3px);
+	background: #FAFE13;
+	text-align: center;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
