@@ -1,0 +1,350 @@
+@import "sass-rem";
+
+.modalRefillCripto {
+	position: relative;
+	padding: rem(19px 70px 25px);
+	width: rem(370px);
+	max-width: 100%;
+	background: #151515;
+}
+
+.title {
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+	line-height: rem(21px);
+	margin-bottom: rem(26px);
+}
+
+.text {
+	color: #9E9E9E;
+	font-size: rem(13px);
+	font-weight: 400;
+	line-height: rem(15px);
+	margin-bottom: rem(5px);
+}
+
+.selectMethodWrapper {
+	position: relative;
+	margin-bottom: rem(25px);
+}
+
+.selectMethod {
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	padding: rem(17px 10px 14px 10px);
+	color: #fff;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 400;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: rem(30px);
+		width: rem(28px);
+		height: rem(28px);
+		transform: translateY(-50%);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;	
+	}
+
+	&.selectMethodUsdt {
+		border-color: #25A27A;
+		background: #315046;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/usdt.svg");
+		}
+	}
+
+	&.selectMethodTron {
+		border-color: #C53027;
+		background: #592724;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/tron.svg");
+		}
+	}
+
+	&.selectMethodBitcoin {
+		border-color: #B0864E;
+		background: #846230;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/bitcoin.svg");
+		}
+	}
+
+	&.selectMethodSolana {
+		border-color: #0E0238;
+		background: #170F35;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/solana.svg");
+		}
+	}
+
+	&.selectMethodEthereum {
+		border-color: #282138;
+		background: #534D5F;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/ethereum.svg");
+		}
+	}
+
+	&.selectMethodBnb {
+		border-color: #F0B90B;
+		background: #18212B;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/bnb.svg");
+		}
+	}
+
+	&.selectMethodUsdc {
+		border-color: #2775C9;
+		background: #273849;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/usdc.svg");
+		}
+	}
+
+	&.selectMethodMatic {
+		border-color: #8347E6;
+		background: #402E5C;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/matic.svg");
+		}
+	}
+
+	&.selectMethodDai {
+		border-color: #FABF40;
+		background: #745922;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/dai.svg");
+		}
+	}
+
+	&.selectMethodToncoin {
+		border-color: #0080FD;
+		background: #285264;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/toncoin.svg");
+		}
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: rem(4px);
+		left: 50%;
+		width: rem(66px);
+		height: rem(10px);
+		transform: translateX(-50%);
+		background: url("../../assets/images/svg/modals/refill-down-line-arrow.svg") no-repeat 50% 50% /contain;
+	}
+}
+
+.selectMethodList {
+	display: none;
+	position: absolute;
+	top: calc(100% + rem(7px));
+	left: rem(-10px);
+	right: rem(-10px);
+	border: 1px solid #2E2E2E;
+	background: #1C1C1C;
+	transform: translateY(-1px);
+	height: rem(194px);
+	overflow-y: auto;
+	z-index: 2;
+	padding: rem(10px);
+
+	&::-webkit-scrollbar {
+		width: rem(5px);
+	}
+	 
+	&::-webkit-scrollbar-track {
+		background-color: #28293e;
+		border-radius: rem(5px);
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(5px);
+		background: #8b8b97;
+	}
+
+	&.selectMethodListOpen {
+		display: block;
+	}
+}
+
+.selectMethodItem {
+	border: 1px solid #2E2E2E;
+	padding: rem(17px 10px 14px 10px);
+	color: #fff;
+	font-size: rem(13px);
+	line-height: rem(15px);
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	cursor: pointer;
+	background: #2E2E2E;
+	margin-bottom: rem(6px);
+	text-align: center;
+	font-weight: 400;
+	border-radius: rem(2px);
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: rem(30px);
+		width: rem(28px);
+		height: rem(28px);
+		transform: translateY(-50%);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50% 50%;	
+	}
+
+	&.selectMethodItemUsdt {
+		border-color: #25A27A;
+		background: #315046;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/usdt.svg");
+		}
+	}
+
+	&.selectMethodItemTron {
+		border-color: #C53027;
+		background: #592724;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/tron.svg");
+		}
+	}
+
+	&.selectMethodItemBitcoin {
+		border-color: #B0864E;
+		background: #846230;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/bitcoin.svg");
+		}
+	}
+
+	&.selectMethodItemSolana {
+		border-color: #0E0238;
+		background: #170F35;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/solana.svg");
+		}
+	}
+
+	&.selectMethodItemEthereum {
+		border-color: #282138;
+		background: #534D5F;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/ethereum.svg");
+		}
+	}
+
+	&.selectMethodItemBnb {
+		border-color: #F0B90B;
+		background: #18212B;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/bnb.svg");
+		}
+	}
+
+	&.selectMethodItemUsdc {
+		border-color: #2775C9;
+		background: #273849;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/usdc.svg");
+		}
+	}
+
+	&.selectMethodItemMatic {
+		border-color: #8347E6;
+		background: #402E5C;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/matic.svg");
+		}
+	}
+
+	&.selectMethodItemDai {
+		border-color: #FABF40;
+		background: #745922;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/dai.svg");
+		}
+	}
+
+	&.selectMethodItemToncoin {
+		border-color: #0080FD;
+		background: #285264;
+
+		&:before {
+			background-image: url("../../assets/images/svg/cripto/toncoin.svg");
+		}
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		background: #2E2E2E;
+		left: 50%;
+		width: rem(66px);
+		height: rem(2px);
+		transform: translateX(-50%);
+		bottom: rem(12px);
+		background: url("../../assets/images/svg/modals/refill-down-line.svg") no-repeat 50% 50% /contain;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.btn {
+	color: #000;
+	padding: rem(13px 20px);
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: rem(3px);
+	background: #FAFE13;
+	text-align: center;
+	font-size: rem(15px);
+	line-height: rem(18px);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+}
