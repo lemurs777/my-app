@@ -129,6 +129,7 @@
 	color: #939393;
 	background: #151515;
 	padding: rem(0 16px 0 25px);
+	white-space: nowrap;
 }
 
 .tableWrapper {
@@ -181,6 +182,23 @@
 	font-size: rem(16px);
 	line-height: rem(19px);
 	color: #fff;
+
+	@media(max-width: 1024px) {
+		.tableNumber:nth-child(n + 7) {
+			display: none;
+		}
+		.tableNumber:last-child{
+			display: flex;
+		}
+	}
+	@media(max-width: 768px) {
+		.tableNumber:nth-child(n + 4) {
+			display: none;
+		}
+		.tableNumber:last-child{
+			display: flex;
+		}
+	}
 }
 
 .tableNumber {
@@ -260,7 +278,7 @@
 			border-right: rem(5px) solid #D60019;
 			border-bottom: rem(5px) solid #D60019;
 		}
-	} 
+	}
 }
 
 .btnMore {

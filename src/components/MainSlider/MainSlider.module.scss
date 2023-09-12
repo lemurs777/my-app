@@ -3,6 +3,10 @@
 .mainSlider {
 	max-width: rem(1442px);
 	margin-bottom: rem(20px);
+
+	@media(max-width:768px) {
+		display: none;
+	}
 }
 
 .swiper {
@@ -32,6 +36,10 @@
 	height: 100%;
 	width: 100%;
 	object-position: 0 50%;
+
+	@media(max-width:1024px) {
+		object-position: center;
+	}
 }
 
 .infoWrapper {
@@ -48,7 +56,7 @@
 .infoItem {
 	position: relative;
 
-	&:before{
+	&:before {
 		content: "";
 		position: absolute;
 		width: 1px;
@@ -97,6 +105,7 @@
 		&:before {
 			background: #F7FF13;
 		}
+
 		color: #000;
 
 		& .infoName {

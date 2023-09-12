@@ -21,11 +21,16 @@
     justify-content: space-between;
     padding: rem(14px 25px);
     z-index: 2;
+    overflow-x: auto;
 }
 
 .searchLabel {
     position: relative;
     width: rem(280px);
+
+    @media(max-width:768px) {
+        display: none;
+    }
 }
 
 .searchIcon {
@@ -59,7 +64,7 @@
     }
 
     &:focus {
-        & + .searchIcon .searchIconPath {
+        &+.searchIcon .searchIconPath {
             fill: #fff;
         }
     }
@@ -75,9 +80,10 @@
     display: inline-block;
     position: relative;
     font-size: rem(14px);
-    line-height: rem(16px);        
+    line-height: rem(16px);
     color: #696969;
     padding: rem(10px);
+    white-space: nowrap;
 
     &:before {
         content: "";
@@ -95,6 +101,7 @@
     &:hover,
     &.linkActive {
         color: #fff;
+
         &:before {
             background: #1f1f1f;
         }
@@ -108,9 +115,11 @@
         border-radius: rem(30px);
         font-style: italic;
         font-weight: 700;
+
         &:hover {
             color: #B7181B;
         }
+
         &:before {
             display: none;
         }
@@ -126,6 +135,7 @@
 .time {
     font-size: rem(14px);
     line-height: rem(16px);
+    white-space: nowrap;
     color: #696969;
 }
 
@@ -156,7 +166,7 @@
 
     &.linkAppIphone {
         background: #fff;
-        
+
         &:before {
             width: rem(18px);
             height: rem(21px);
@@ -210,5 +220,5 @@
 
     &:hover {
         border-color: #fff;
-    }   
+    }
 }
