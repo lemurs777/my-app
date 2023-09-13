@@ -93,7 +93,7 @@
 
  	@media (max-width: 768px) {
  		// font-size: calc(100vw / 60);
- 		font-size: 16px;
+ 		font-size: 14px;
  	}
 
  	@media (max-width: 480px) {
@@ -161,7 +161,8 @@
  	overflow-x: hidden;
 
  	&--index {
- 		max-width: rem(1542px);
+ 		max-width: 81vw;
+ 		// max-width: rem(1542px);
  		padding-left: rem(100px);
  		padding-right: rem(5px);
  		flex-direction: column;
@@ -172,6 +173,7 @@
 
  		@media(max-width:768px) {
  			max-width: none;
+ 			padding-left: 0;
  		}
  	}
 
@@ -181,6 +183,13 @@
  		padding-right: rem(10px);
  		margin: 0 auto;
  		gap: rem(31px);
+
+ 		@media(max-width:768px) {
+ 			flex-direction: column;
+ 			padding: 0;
+ 			gap: 0;
+ 			// background-color: #111213;
+ 		}
  	}
 
  	&--apps {
@@ -275,10 +284,15 @@
 
 
  	&--index {
- 		width: rem(373px);
+ 		// width: rem(373px);
+ 		width: 19vw;
  		display: flex;
  		flex-direction: column;
  		gap: rem(20px);
+
+ 		@media(max-width:1024px) {
+ 			width: 27vw;
+ 		}
  	}
 
  	&--events {
@@ -329,5 +343,3 @@
  		cursor: pointer;
  	}
  }
-
- 

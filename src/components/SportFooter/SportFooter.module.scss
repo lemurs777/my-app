@@ -1,0 +1,86 @@
+.sport {
+  // border: 1px solid #171717;
+  background: #000;
+  color: #fff;
+
+  @media(min-width:768px) {
+    display: none;
+  }
+
+  &__inner {
+    padding: 11px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    font-size: 16px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1;
+
+    &::after,
+    &::before {
+      position: absolute;
+      left: 0;
+      height: 2px;
+      background-color: #fff;
+      content: '';
+    }
+
+    &::after {
+      top: 2px;
+      width: 20px;
+    }
+
+    &::before {
+      width: 10px;
+      bottom: 2px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__coupon {
+    position: relative;
+    margin-top: auto;
+
+    span {
+      bottom: calc(100% + 6px);
+      position: absolute;
+      display: inline-block;
+      border-radius: 10px;
+      background: #F7FF13;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.sportItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 32px;
+  background: #1F1F1F;
+  padding: 8px 12px;
+
+
+
+  svg {
+    vertical-align: middle;
+    fill: #555555;
+  }
+}

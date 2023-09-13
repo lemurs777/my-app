@@ -3,6 +3,7 @@
 .headerBottomProfile {
     position: relative;
 
+
     &:before {
         content: "";
         position: absolute;
@@ -59,7 +60,7 @@
     }
 
     &:focus {
-        & + .searchIcon .searchIconPath {
+        &+.searchIcon .searchIconPath {
             fill: #fff;
         }
     }
@@ -69,6 +70,11 @@
     display: flex;
     align-items: center;
     gap: rem(15px);
+
+    @media(max-width:768px) {
+        display: none;
+    }
+
 }
 
 .time {
@@ -104,7 +110,7 @@
 
     &.linkAppIphone {
         background: #fff;
-        
+
         &:before {
             width: rem(18px);
             height: rem(21px);
@@ -158,5 +164,5 @@
 
     &:hover {
         border-color: #fff;
-    }   
+    }
 }

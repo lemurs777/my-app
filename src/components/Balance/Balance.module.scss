@@ -16,7 +16,22 @@
 		bottom: 0;
 		background: radial-gradient(50% 50% at 50% 50%, #F7FF13 0%, rgba(0, 0, 0, 0) 100%);
 	}
-}    
+}
+
+.mobile {
+	@media(min-width:768px) {
+		display: none !important;
+	}
+}
+
+.inner {
+	display: flex;
+	gap: rem(45px);
+}
+
+.item {
+	display: inline-block;
+}
 
 .header {
 	display: flex;
@@ -91,6 +106,7 @@
 .btnUpdate {
 	margin-right: rem(10px);
 	margin-left: auto;
+
 	&:before {
 		background-image: url("../../assets/images/svg/balance-update.svg");
 	}
@@ -98,6 +114,7 @@
 
 .btnShow {
 	margin-left: rem(5px);
+
 	&:before {
 		background-image: url("../../assets/images/svg/balance-show.svg");
 	}

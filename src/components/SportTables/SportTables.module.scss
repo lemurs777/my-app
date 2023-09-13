@@ -6,6 +6,10 @@
 	flex-direction: column;
 	gap: rem(10px);
 	padding-bottom: rem(10px);
+
+	@media(max-width:768px) {
+		padding-bottom: 0;
+	}
 }
 
 .sportTable {
@@ -22,6 +26,10 @@
 	background: #262626;
 	padding-right: rem(84px);
 	margin-bottom: 1px;
+
+	@media(max-width:768px) {
+		padding-right: 0;
+	}
 
 	&:before {
 		content: "";
@@ -97,6 +105,12 @@
 	&:last-child {
 		margin-right: 0;
 	}
+
+	@media(max-width:768px) {
+		&:nth-child(n + 4) {
+			display: none;
+		}
+	}
 }
 
 .table {
@@ -130,12 +144,22 @@
 	background: #151515;
 	padding: rem(0 16px 0 25px);
 	white-space: nowrap;
+
+	@media(max-width:768px) {
+		// padding: 0;
+
+	}
 }
 
 .tableWrapper {
 	padding: rem(0 36px 23px 27px);
 	display: flex;
 	align-items: center;
+
+	@media(max-width:768px) {
+
+		padding: rem(0 12px 23px 27px);
+	}
 }
 
 .tableDateTime {
@@ -146,6 +170,10 @@
 	width: rem(45px);
 	min-width: rem(45px);
 	max-width: rem(45px);
+
+	@media(max-width:768px) {
+		margin-right: 0;
+	}
 }
 
 .tableTime {
@@ -174,6 +202,11 @@
 	font-size: rem(16px);
 	line-height: rem(19px);
 	color: #FFFFFF;
+
+	@media(max-width:768px) {
+		font-size: 1rem;
+		line-height: 1;
+	}
 }
 
 .tableNumbers {
@@ -187,16 +220,19 @@
 		.tableNumber:nth-child(n + 7) {
 			display: none;
 		}
-		.tableNumber:last-child{
+
+		.tableNumber:last-child {
 			display: flex;
 		}
 	}
+
 	@media(max-width: 768px) {
 		.tableNumber:nth-child(n + 4) {
 			display: none;
 		}
-		.tableNumber:last-child{
-			display: flex;
+
+		.tableNumber:last-child {
+			// display: flex;
 		}
 	}
 }
@@ -219,6 +255,10 @@
 	&:nth-child(6),
 	&:nth-child(8) {
 		margin-right: rem(20px);
+
+		@media(max-width:768px) {
+			margin-right: 0;
+		}
 	}
 
 	&:last-child {

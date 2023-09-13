@@ -19,6 +19,11 @@
         width: rem(390px);
         position: relative;
 
+        @media(max-width:768px) {
+            width: auto;
+            max-width: none;
+        }
+
         &:before {
             content: "";
             position: absolute;
@@ -39,10 +44,15 @@
 }
 
 .column-right {
+
     &--requests,
     &--profile {
         width: 100%;
         overflow-x: hidden;
         padding-right: rem(10px);
+
+        @media(max-width:768px) {
+            padding-right: 0;
+        }
     }
 }

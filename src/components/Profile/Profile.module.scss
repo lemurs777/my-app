@@ -11,6 +11,10 @@
 	position: relative;
 	display: flex;
 	align-items: center;
+
+	@media(max-width:768px) {
+		background-color: #111213;
+	}
 }
 
 .title {
@@ -68,7 +72,7 @@
 	&:hover {
 		.headerIcon {
 			background: #F7FF13;
-		
+
 			&:before {
 				opacity: 1;
 			}
@@ -81,9 +85,9 @@
 	display: flex;
 	align-items: center;
 }
-	
 
-	
+
+
 .headerIcon {
 	width: rem(34px);
 	height: rem(34px);
@@ -141,7 +145,7 @@
 
 .headerIconSupport {
 	&:before {
-		background-image: url("../../assets/images/svg/profile-support.svg"); 
+		background-image: url("../../assets/images/svg/profile-support.svg");
 	}
 }
 
@@ -195,7 +199,7 @@
 	display: none;
 	font-weight: 400;
 	font-size: rem(14px);
-	line-height: rem(16px);        
+	line-height: rem(16px);
 	color: #636363;
 	padding-left: rem(46px);
 }
@@ -208,7 +212,7 @@
 	display: none;
 	flex-direction: column;
 	gap: 1px;
-	padding: rem(20px 0 13px);	
+	padding: rem(20px 0 13px);
 }
 
 .subListOpen {

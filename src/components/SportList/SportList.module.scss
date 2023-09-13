@@ -9,12 +9,12 @@
 	&::-webkit-scrollbar {
 		height: rem(5px);
 	}
-	 
+
 	&::-webkit-scrollbar-track {
 		background-color: #28293e;
 		border-radius: rem(5px);
 	}
-	
+
 	&::-webkit-scrollbar-thumb {
 		border-radius: rem(5px);
 		background: #8b8b97;
@@ -34,6 +34,7 @@
 			padding: 0;
 			font-size: 0;
 			width: rem(24px);
+
 			&:hover {
 				&:before {
 					opacity: 1;
@@ -55,6 +56,10 @@
 	display: flex;
 	align-items: center;
 
+	@media(max-width:768px) {
+		font-size: rem(16px);
+	}
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -72,6 +77,7 @@
 
 	&:hover {
 		color: #fff;
+
 		&:before {
 			opacity: 1;
 		}
@@ -109,19 +115,19 @@
 
 	&.tennis {
 		&:before {
-			background-image: url("../../assets/images/svg/sports-list-tennis.svg"); 
+			background-image: url("../../assets/images/svg/sports-list-tennis.svg");
 		}
 	}
 
 	&.regby {
 		&:before {
-			background-image: url("../../assets/images/svg/sports-list-regby.svg");  
+			background-image: url("../../assets/images/svg/sports-list-regby.svg");
 		}
 	}
 
 	&.volleyball {
 		&:before {
-			background-image: url("../../assets/images/svg/sports-list-volleyball.svg");  
+			background-image: url("../../assets/images/svg/sports-list-volleyball.svg");
 		}
 	}
 

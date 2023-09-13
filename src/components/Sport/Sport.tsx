@@ -1,20 +1,21 @@
 import { BestMoments, SportList, SportTables } from '../'
+import SportFooter from '../SportFooter'
 
-import styles from './Sport.module.scss';
+import styles from './Sport.module.scss'
 
 function Sport() {
 
     return (
-    <section className={styles.sport}>
+        <section className={styles.sport}>
 
-        <SportList />
+            <SportList />
 
-        <BestMoments />
+            <BestMoments />
 
-        <SportTables />
-
-    </section>
-    );
+            <SportTables />
+            <SportFooter />
+        </section>
+    )
 }
 
-export default Sport;
+export default Sport

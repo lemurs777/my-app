@@ -98,7 +98,7 @@
 	height: rem(20px);
 
 	&:before {
-		content :"";
+		content: "";
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -112,6 +112,7 @@
 
 	&.itemTopBtnCheck {
 		background: #9E9E9E;
+
 		&:before {
 			width: rem(10px);
 			height: rem(8px);
@@ -137,7 +138,7 @@
 .itemTopNames {
 	font-weight: 400;
 	font-size: rem(14px);
-	line-height: rem(16px);        
+	line-height: rem(16px);
 	color: #fff;
 	margin-right: auto;
 	overflow: hidden;
@@ -248,7 +249,7 @@
 
 .totalWrapper {
 	padding: rem(0 7px);
-	margin: rem( -38px 0 16px);
+	margin: rem(-38px 0 16px);
 }
 
 .totalContent {
@@ -318,6 +319,9 @@
 
 .bet {
 	width: calc(50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .payout {

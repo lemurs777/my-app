@@ -14,6 +14,10 @@
     color: #9A9A9A;
     transition: .3s;
 
+    @media(max-width:768px) {
+        display: none;
+    }
+
     &:before {
         content: "";
         position: absolute;

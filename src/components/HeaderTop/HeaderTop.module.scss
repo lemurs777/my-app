@@ -5,6 +5,9 @@
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid #212121;
+	@media(max-width:768px){
+		padding: rem(12px 17px);
+	}
 }
 
 .burger {
@@ -130,9 +133,11 @@
 
 	}
 }
+
 .show {
 	left: 0;
 }
+
 .navMenu {
 	display: flex;
 	gap: rem(15px);
@@ -211,7 +216,8 @@
 }
 
 .signInWrapper {
-	margin-left: rem-calc(20);
+	// margin-left: rem-calc(20);
+	margin-left: auto;
 	display: flex;
 	gap: 1px;
 }
@@ -224,6 +230,10 @@
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: rem(17px);
+
+	@media(max-width:768px) {
+		padding: rem(12px 10px);
+	}
 
 	&.signInBtnRegistration {
 		border-radius: rem(0 3px 3px 0);
