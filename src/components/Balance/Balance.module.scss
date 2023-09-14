@@ -17,9 +17,13 @@
 		background: radial-gradient(50% 50% at 50% 50%, #F7FF13 0%, rgba(0, 0, 0, 0) 100%);
 	}
 }
-
+.desktop{
+	@media(max-width:767.98px) {
+		display: none !important;
+	}
+}
 .mobile {
-	@media(min-width:768px) {
+	@media(min-width:767.98px) {
 		display: none !important;
 	}
 }

@@ -343,3 +343,33 @@
  		cursor: pointer;
  	}
  }
+
+ button {
+ 	cursor: pointer;
+ }
+
+ .button {
+ 	color: #000;
+ 	text-align: center;
+ 	font-size: 17px;
+ 	font-weight: 700;
+ 	text-transform: uppercase;
+ 	border-radius: 3px;
+ 	padding: rem(12px 18px);
+ }
+
+ .button--sm {
+ 	font-size: 14px;
+ }
+
+ .button--accent {
+ 	background: var(--accentColor);
+
+
+ }
+
+ .mobile {
+ 	@media(min-width:767.98px) {
+ 		display: none !important;
+ 	}
+ }

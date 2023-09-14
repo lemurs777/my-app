@@ -8,12 +8,14 @@ import {
 import { HeaderSettings } from './types';
 
 import styles from './Header.module.scss';
+import HeaderTopProfile from '../HeaderTopProfile'
 
 function Header(props: HeaderSettings) {
 
 	return (
 		<header className={styles.header}>
-			<HeaderTop />
+			{/* <HeaderTop /> */}
+			<HeaderTopProfile />
 			{props.showBottom && (
 				<HeaderBottom />
 			)}

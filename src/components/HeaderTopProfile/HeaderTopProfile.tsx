@@ -8,13 +8,13 @@ import {
 
 import HeaderBest from '../../assets/images/header-best.png'
 
-import styles from './HeaderTop.module.scss'
+import styles from './HeaderTopProfile.module.scss'
 
 import useModal from "../../hooks/useModal"
 import { useState } from 'react'
 import AreaHeaderTop from '../AreaHeaderTop'
 
-function HeaderTop() {
+function HeaderTopProfile() {
 
 	const { isOpen, toggleModal } = useModal()
 	const [menuOpen, setMenuOpen] = useState(false)
@@ -85,11 +85,7 @@ function HeaderTop() {
 					</li>
 				</menu>
 			</nav>
-			<div className={styles.signInWrapper}>
-				<Link className={styles.signInBtn} to="/">Войти</Link>
-				<Link className={clsx(styles.signInBtn, styles.signInBtnRegistration)} to="/">Регистрация</Link>
-			</div>
-			{/* <AreaHeaderTop/> */}
+			<AreaHeaderTop/>
 			<Modal isOpen={isOpen} toggleModal={toggleModal} full={true}>
 				<ModalNavigation toggleModal={toggleModal} />
 			</Modal>
@@ -97,4 +93,4 @@ function HeaderTop() {
 	)
 }
 
-export default HeaderTop
+export default HeaderTopProfile

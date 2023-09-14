@@ -52,7 +52,7 @@ function Balance() {
 					Начать верификацию
 				</Link>
 			</div>
-			<div className={styles.info}>
+			<div className={`${styles.info} ${styles.desktop}`}>
 				<div className={styles.infoGame}>
 					<div className={styles.infoCount}>{isShow ? '1850.00₽' : '••••••••'}</div>
 					<div className={styles.infoText}>В игре</div>

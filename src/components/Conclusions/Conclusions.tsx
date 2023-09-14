@@ -111,14 +111,22 @@ function Conclusions() {
                     <ul className={styles.tableRows}>
                         {arrRows.map((item, index) => (
                             <li key={index} className={styles.tableRow}>
-                                <div className={styles.tableCell}>{item.number}</div>
+                                {/* <div className={styles.tableCell}>{item.number}</div> */}
+                                <div className={styles.tableCell}>
+                                    <div className={styles.tableCellTop}>{item.number}</div>
+                                    <div className={`${styles.tableCellBottom} mobile`}>{item.date}</div>
+                                </div>
                                 <div className={styles.tableCell}>
                                     <div className={styles.tableCellTop}>{item.cardName}</div>
                                     <div className={styles.tableCellBottom}>{item.cardNumber}</div>
                                 </div>
                                 <div className={styles.tableCell}>{item.date}</div>
                                 <div className={styles.tableCell}>{item.time}</div>
-                                <div className={styles.tableCell}>{item.sum} {item.currency}</div>
+                                {/* <div className={styles.tableCell}>{item.sum} {item.currency}</div> */}
+                                <div className={styles.tableCell}>
+                                    <div className={styles.tableCellTop}>{item.sum} {item.currency}</div>
+                                    <div className={`${styles.tableCellBottom} mobile`}>{item.status}</div>
+                                </div>
                                 <div className={styles.tableCell}>{item.status}</div>
                             </li>
                         ))}
