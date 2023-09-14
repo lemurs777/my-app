@@ -8,6 +8,10 @@
 	padding: rem(6px 0 27px);
 	display: flex;
 	align-items: center;
+
+	@media(max-width:767.98px) {
+		padding: 26px 15px;
+	}
 }
 
 .headerBtn {
@@ -19,6 +23,8 @@
 	cursor: pointer;
 	margin-right: rem(15px);
 	font-size: 0;
+
+
 
 	&:before {
 		content: "";
@@ -54,20 +60,42 @@
 	align-items: center;
 	justify-content: center;
 
+	@media(max-width:767.98px) {
+		margin: 0 8px 68px;
+	}
+
 	&.contentOne {
 		padding: rem(126px 50px 200px);
+
+		@media(max-width:767.98px) {
+			padding: rem(20px 13px 50px);
+		}
 	}
 
 	&.contentTwo {
 		padding: rem(155px 50px 187px);
+
+		@media(max-width:767.98px) {
+			padding: rem(20px 13px 50px);
+		}
+
 	}
 
 	&.contentThree {
 		padding: rem(239px 50px 167px);
+
+		@media(max-width:767.98px) {
+			padding: rem(20px 13px 50px);
+		}
 	}
 
 	&.contentFour {
 		padding: rem(203px 50px 117px);
+
+		@media(max-width:767.98px) {
+			padding: rem(20px 13px 50px);
+		}
+
 	}
 
 	&.contentActive {
@@ -77,11 +105,15 @@
 
 .contentTitle {
 	font-weight: 500;
-	font-size: rem(20px);
-	line-height: rem(23px);        
+	font-size: 20px;
+	line-height: 1.15;
 	color: #fff;
 	margin-bottom: rem(162px);
 	text-align: center;
+
+	@media(max-width:767.98px) {
+		margin-bottom: 45px;
+	}
 }
 
 .label {
@@ -93,11 +125,11 @@
 	&.labelPhone {
 		margin-bottom: rem(15px);
 	}
-	
+
 	&.labelCode {
 		margin-bottom: rem(34px);
 	}
-	
+
 	&.labelPassport {
 		margin-bottom: rem(40px);
 	}
@@ -109,10 +141,10 @@
 
 .labelText {
 	font-weight: 400;
-	font-size: rem(14px);
-	line-height: rem(16px);
+	font-size: 14px;
+	line-height: 1.15;
 	color: #fff;
-	margin-bottom: rem(5px);
+	margin-bottom: 5px;
 	padding-left: rem(10px);
 }
 
@@ -125,10 +157,14 @@
 	width: 100%;
 	padding: rem(8px 13px);
 	font-weight: 400;
-	font-size: rem(14px);
+	font-size: 14px;
 	line-height: rem(16px);
 	color: #fff;
 	background: #2B2B2B;
+
+	@media(max-width:767.98px) {
+		padding: 13px 8px;
+	}
 
 	&::placeholder {
 		color: #9E9E9E;
@@ -194,6 +230,11 @@
 	align-items: center;
 	padding: rem(115px 50px 96px);
 	background: #2B2B2B;
+
+	@media(max-width:767.98px) {
+		width: rem(335px);
+		padding: rem(83px 48px);
+	}
 }
 
 .finishImg {
@@ -201,6 +242,9 @@
 	width: rem(100px);
 	height: rem(100px);
 	margin-bottom: rem(52px);
+	@media(max-width:767.98px){
+		margin-bottom: 34px;
+	}
 }
 
 .finishText {

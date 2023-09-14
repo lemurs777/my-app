@@ -34,9 +34,13 @@
 
   &__infoTitle {
     font-size: 14px;
-
+    max-width: 97px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     @media(max-width:767.98px) {
       font-size: 12px;
+      max-width: 87px;
     }
   }
 
