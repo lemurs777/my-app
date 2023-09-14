@@ -2,9 +2,61 @@
 
 .modalSettings {
 	position: relative;
-    width: rem(1460px);
-    max-width: 100%;
-    display: flex;
+	// width: rem(1460px);
+	width: 75vw;
+	max-width: 100%;
+	display: flex;
+
+	@media(max-width:1400px) {
+		width: 90vw;
+	}
+
+	@media(max-width:1024px) {
+		width: 99vw;
+	}
+}
+
+.counterInner {
+	// padding-left: rem(55px);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: #fff;
+	font-size: rem(18px);
+	font-weight: 500;
+
+
+}
+
+.counter {
+	&__btn {
+		position: relative;
+		width: rem(48px);
+		height: rem(42px);
+		border-radius: rem(8px);
+		background-color: #3d3d3d;
+		transition: background-color .2s ease-in-out;
+
+		&:hover {
+			background-color: var(--accentColor);
+
+			&::before {
+				filter: invert(100%);
+			}
+		}
+
+		&::before {
+			filter: invert(0);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			content: url('../../assets/images/svg/plus.svg');
+			width: 40px;
+			height: 40px;
+			transition: filter;
+		}
+	}
 }
 
 .menu {
@@ -12,6 +64,17 @@
 	max-width: rem(370px);
 	background: #262525;
 	padding: rem(54px 30px);
+}
+
+.checkboxListHorizontal {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+
+	@media(max-width:991.98px) {
+		grid-template-columns: auto;
+
+	}
 }
 
 .menuTitle {
@@ -189,6 +252,7 @@
 	&:before {
 		opacity: 0;
 	}
+
 	&:after {
 		opacity: 1;
 	}

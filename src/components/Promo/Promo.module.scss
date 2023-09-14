@@ -10,6 +10,10 @@
 	display: flex;
 	align-items: center;
 	background: #000;
+
+	@media(max-width:767.98px) {
+		padding: rem(8px 12px 21px);
+	}
 }
 
 .headerBtn {
@@ -66,6 +70,10 @@
 	width: 100%;
 	padding: rem(25px 35px);
 	background: #111213;
+
+	@media(max-width:767.98px) {
+		padding: rem(0 12px 35px);
+	}
 }
 
 .tableHeader {
@@ -73,6 +81,10 @@
 	gap: rem(10px);
 	padding: rem(0 15px 0 50px);
 	margin-bottom: rem(15px);
+
+	@media(max-width:767.98px) {
+		display: none;
+	}
 }
 
 .tableHeaderCell {
@@ -86,9 +98,11 @@
 	&:nth-child(1) {
 		width: rem(130px);
 	}
+
 	&:nth-child(2) {
 		width: rem(200px);
 	}
+
 	&:nth-child(3) {
 		width: rem(530px);
 	}
@@ -106,6 +120,12 @@
 	gap: rem(10px);
 	padding: rem(19px 15px 18px 50px);
 	background: #1B1B1B;
+
+	@media(max-width:767.98px) {
+		padding: 18px 18px 18px 16px;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
 }
 
 .tableCell {
@@ -118,10 +138,13 @@
 
 	&:nth-child(1) {
 		width: rem(130px);
+
 	}
+
 	&:nth-child(2) {
 		width: rem(200px);
 	}
+
 	&:nth-child(3) {
 		width: rem(530px);
 	}
@@ -138,7 +161,7 @@
 .title {
 	font-weight: 500;
 	font-size: rem(20px);
-	line-height: rem(23px);        
+	line-height: rem(23px);
 	color: #fff;
 	margin-bottom: rem(14px);
 	text-align: center;
@@ -212,7 +235,7 @@
 .itemTitle {
 	font-weight: 700;
 	font-size: rem(20px);
-	line-height: rem(23px);    
+	line-height: rem(23px);
 	color: #fff;
 	padding: rem(10px 11px);
 	background: rgba(255, 255, 255, 0.1);

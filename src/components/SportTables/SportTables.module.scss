@@ -100,6 +100,10 @@
 	&:nth-child(6),
 	&:nth-child(8) {
 		margin-right: rem(20px);
+
+		@media(max-width:767.98px) {
+			margin-right: 10px;
+		}
 	}
 
 	&:last-child {
@@ -111,6 +115,7 @@
 			display: none;
 		}
 	}
+
 }
 
 .table {
@@ -147,6 +152,7 @@
 
 	@media(max-width:768px) {
 		// padding: 0;
+		padding-left: rem(20px);
 
 	}
 }
@@ -173,6 +179,9 @@
 
 	@media(max-width:768px) {
 		margin-right: 0;
+		width: rem(35px);
+		min-width: rem(35px);
+		max-width: rem(35px);
 	}
 }
 
@@ -181,13 +190,22 @@
 	font-size: rem(16px);
 	line-height: rem(19px);
 	color: #FFFFFF;
+
+	@media(max-width:767.98px) {
+		font-size: rem(14px);
+	}
 }
 
 .tableDate {
 	font-weight: 400;
 	font-size: rem(14px);
-	line-height: rem(16px);
+	line-height: 1.15;
 	color: #777777;
+
+	@media(max-width:767.98px) {
+		font-size: rem(12px);
+
+	}
 }
 
 .tableNames {
@@ -204,7 +222,7 @@
 	color: #FFFFFF;
 
 	@media(max-width:768px) {
-		font-size: 1rem;
+		font-size: rem(14px);
 		line-height: 1;
 	}
 }

@@ -5,7 +5,7 @@ export type ModalType = {
 export type ModalSettingsType = {
 	item: {
 		name: string;
-		sum: string;
+		sum?: string;
 		check: boolean;
 	}
 }

@@ -102,7 +102,7 @@
 	padding: rem(0 25px 35px);
 
 	@media(max-width:767.98px) {
-		padding: 0 0 35px;
+		padding: rem(0 12px 35px);
 	}
 }
 
@@ -160,7 +160,7 @@
 	background: #1B1B1B;
 
 	@media(max-width:767.98px) {
-		padding: 18px 18px 18px 24px;
+		padding: 18px 18px 18px 16px;
 		justify-content: space-between;
 	}
 }
@@ -214,15 +214,24 @@
 	&:nth-child(2),
 	&:nth-child(5) {
 		@media(max-width:767.98px) {
-			width: auto;
+			// width: auto;
 		}
 	}
 }
 
 .tableCellTop {
 	margin-bottom: rem(4px);
+
 }
+
 
 .tableCellBottom {
 	color: #838383;
+}
+
+.tableCellBottom,
+.tableCellTop {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }

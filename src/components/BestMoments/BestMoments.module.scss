@@ -49,7 +49,8 @@
     }
 
     &.basketball {
-        background: #EA7E29;;
+        background: #EA7E29;
+        ;
     }
 
     &.tennis {
@@ -59,25 +60,35 @@
 
 .linkTitle {
     font-size: rem(18px);
-    line-height: rem(21px);
+    line-height: 1.15;
     margin-bottom: rem(21px);
+
+    @media(max-width:767.98px) {
+        font-size: rem(14px);
+    }
 }
 
 .linkTitleOne {
     display: inline-block;
     width: 100%;
     margin-bottom: rem(6px);
+
+
 }
 
 .live {
     text-transform: uppercase;
     font-weight: 700;
     font-size: rem(14px);
-    line-height: rem(16px);
+    line-height: 1.15;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     padding-left: rem(30px);
     position: relative;
+
+    @media(max-width:767.98px) {
+        font-size: rem(14px);
+    }
 
     &:before {
         content: "";

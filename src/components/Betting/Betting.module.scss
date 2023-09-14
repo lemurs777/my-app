@@ -8,6 +8,9 @@
 	padding: rem(6px 0 22px);
 	display: flex;
 	align-items: center;
+	@media(max-width:767.98px){
+		padding: rem(8px 12px 21px);
+	}
 }
 
 .headerBtn {
@@ -59,7 +62,7 @@
 .contentTopTitle {
 	font-weight: 500;
 	font-size: rem(20px);
-	line-height: rem(23px);        
+	line-height: rem(23px);
 	color: #fff;
 	margin-right: auto;
 }
@@ -73,6 +76,7 @@
 	cursor: pointer;
 	font-size: 0;
 	position: relative;
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -95,6 +99,10 @@
 
 .table {
 	padding: rem(0 25px 35px);
+
+	@media(max-width:767.98px) {
+		padding: rem(0 12px 35px);
+	}
 }
 
 .tableHeader {
@@ -115,15 +123,19 @@
 	&:nth-child(1) {
 		width: rem(130px);
 	}
+
 	&:nth-child(2) {
 		width: rem(160px);
 	}
+
 	&:nth-child(3) {
 		width: rem(130px);
 	}
+
 	&:nth-child(4) {
 		width: rem(130px);
 	}
+
 	&:nth-child(5) {
 		width: rem(130px);
 	}
@@ -140,6 +152,11 @@
 	gap: rem(10px);
 	padding: rem(30px 50px);
 	background: #1B1B1B;
+
+	@media(max-width:767.98px) {
+		padding: rem(18px 18px 18px 24px);
+		justify-content: space-between;
+	}
 }
 
 .tableItemCell {
@@ -153,16 +170,48 @@
 	&:nth-child(1) {
 		width: rem(130px);
 	}
+
 	&:nth-child(2) {
 		width: rem(160px);
 	}
+
 	&:nth-child(3) {
 		width: rem(130px);
 	}
+
 	&:nth-child(4) {
 		width: rem(130px);
 	}
+
 	&:nth-child(5) {
 		width: rem(130px);
+	}
+
+	&__bottom {
+		color: #838383;
+	}
+
+	&__top {
+		@media(max-width:767.98px) {
+			margin-bottom: rem(4px);
+		}
+
+		span {
+			@media(min-width:767.98px) {
+				display: none;
+			}
+		}
+	}
+
+	@media(max-width:767.98px) {
+		&:nth-child(2) {
+			order: -1;
+		}
+
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(6) {
+			display: none;
+		}
 	}
 }
