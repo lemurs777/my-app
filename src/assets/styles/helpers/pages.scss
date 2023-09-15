@@ -3,6 +3,9 @@
     width: 100%;
     padding: rem(0 20px);
     margin: 0 auto;
+    @media(max-width:767.98px){
+        padding: 0;
+    }
 }
 
 .game-wrapper {

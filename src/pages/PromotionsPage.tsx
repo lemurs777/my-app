@@ -1,10 +1,11 @@
-import { 
-	PromoSlider, 
+import {
+	PromoSlider,
 	PromoList,
-} from '../components';
+} from '../components'
 
-import PromoBanner1 from '../assets/images/promo-banner-1-x2.min.jpg';
-import PromoBanner2 from '../assets/images/promo-banner-2-x2.min.jpg';
+import PromoBanner1 from '../assets/images/promo-banner-1-x2.min.jpg'
+import PromoBanner2 from '../assets/images/promo-banner-2-x2.min.jpg'
+import SportFooter from '../components/SportFooter'
 
 function PromotionsPage() {
 
@@ -80,13 +81,13 @@ function PromotionsPage() {
 
 				<PromoSlider />
 
-				<PromoList data={promoList}/>
+				<PromoList data={promoList} />
 
-				<PromoList data={bonusList}/>
-
+				<PromoList data={bonusList} />
+				<SportFooter />
 			</div>
 		</main>
-	);
+	)
 };
 
-export default PromotionsPage;
+export default PromotionsPage

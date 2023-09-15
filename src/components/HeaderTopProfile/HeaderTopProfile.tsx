@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 import clsx from 'clsx'
 
 import {
@@ -56,22 +56,23 @@ function HeaderTopProfile() {
 			<nav className={` ${menuOpen ? [styles.nav, styles.show].join(' ') : [styles.nav]}`} onClick={() => { setMenuOpen(false) }}>
 				<menu className={styles.navMenu}>
 					<li className={styles.navItem}>
-						<Link className={clsx(styles.navLink, styles.navLinkActive)} to="/"> Спорт</Link>
+						{/* <NavLink className={clsx(styles.navLink, styles.navLinkActive)} to="/"> Спорт</NavLink> */}
+						<NavLink className={styles.navLink} end to="/"> Спорт</NavLink>
 					</li>
 					<li className={styles.navItem}>
-						<Link className={styles.navLink} to="/cybersport">Киберспорт</Link>
+						<NavLink className={styles.navLink} to="/cybersport">Киберспорт</NavLink>
 					</li>
 					<li className={styles.navItem}>
-						<Link className={styles.navLink} to="/">Казино</Link>
+						<NavLink className={styles.navLink} to="/casino">Казино</NavLink>
 					</li>
 					<li className={styles.navItem}>
-						<Link className={styles.navLink} to="/">TV Ставки</Link>
+						<NavLink className={styles.navLink} to="/betting">TV Ставки</NavLink>
 					</li>
 					<li className={styles.navItem}>
-						<Link className={styles.navLink} to="/">Виртуальный спорт</Link>
+						<NavLink className={styles.navLink} to="/sport">Виртуальный спорт</NavLink>
 					</li>
 					<li className={styles.navItem}>
-						<Link className={styles.navLink} to="/promotions/">Акции</Link>
+						<NavLink className={styles.navLink} to="/promotions/">Акции</NavLink>
 					</li>
 					<li className={styles.navItem}>
 						<button className={styles.navBtnShowMoreLink} onClick={() => toggleModal()}>

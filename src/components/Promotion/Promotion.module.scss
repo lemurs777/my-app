@@ -1,8 +1,8 @@
 @import "sass-rem";
 
 .promotion {
-    max-width: rem(1420px);
-    margin: 0 auto;
+	max-width: rem(1420px);
+	margin: 0 auto;
 }
 
 .bannner {
@@ -10,6 +10,10 @@
 	max-width: 100%;
 	display: block;
 	height: rem(552px);
+
+	@media(max-width:767.98px) {
+		height: rem(177px);
+	}
 }
 
 .infoWrapper {
@@ -18,32 +22,65 @@
 	gap: rem(20px);
 	margin: 0 auto;
 	background: #191919;
+
+	@media(max-width:1200px) {
+		padding: rem(50px 30px);
+		justify-content: space-between;
+	}
+
+	@media(max-width:767.98px) {
+		padding: rem(17px 15px);
+		flex-direction: column;
+		gap: rem(128px);
+	}
 }
 
 .tasks {
 	width: rem(450px);
+	flex: 0 0 rem(450px);
 	margin-right: rem(-100px);
 	background: #0D0D0D;
 	transform: translateY(rem(-110px));
 	padding-bottom: rem(13px);
 	align-self: flex-start;
+
+	@media(max-width:1200px) {
+		margin-right: 0;
+		flex: 0 0 47%;
+	}
+
+	@media(max-width:767.98px) {
+		width: 100%;
+		flex: 1;
+	}
 }
 
 .tasksTitle {
 	font-weight: 500;
 	font-size: rem(24px);
-	line-height: rem(28px);        
+	line-height: 1.167;
 	color: #fff;
 	padding: rem(28px 30px 24px);
 	background: linear-gradient(90deg, #272727 0%, #000000 100%);
+
+	@media(max-width:767.98px) {
+		padding: rem(22px 30px);
+		font-size: rem(22px);
+	}
 }
 
 .tasksName {
 	padding: rem(27px 30px 22px);
 	font-weight: 400;
 	font-size: rem(14px);
-	line-height: rem(16px);
+	line-height: 1.142;
+	text-transform: uppercase;
 	color: #848484;
+
+	@media(max-width:767.98px) {
+
+		padding: rem(17px 30px 22px);
+	}
 }
 
 .tasksList {
@@ -60,6 +97,10 @@
 	align-items: center;
 	gap: rem(10px);
 	position: relative;
+
+	@media(max-width:767.98px) {
+		padding: rem(15px 46px);
+	}
 
 	&:first-child {
 		border-top-left-radius: rem(8px);
@@ -81,6 +122,11 @@
 		transform: translateY(-50%);
 		width: rem(30px);
 		height: rem(30px);
+
+		@media(max-width:767.98px) {
+			width: rem(22px);
+			height: rem(22px);
+		}
 	}
 
 	&.tasksItemDone {
@@ -101,15 +147,22 @@
 		height: rem(8px);
 		background: url("../../assets/images/svg/promotion-task-arrow.svg") no-repeat 50% 50% /contain;
 		transform: translateY(-50%);
+
 	}
+
+
 }
 
 .tasksItemText {
 	color: #A9A9A9;
 	font-size: rem(15px);
-	line-height: rem(18px);
+	line-height: 1.2;
 	font-weight: 400;
 	margin-right: auto;
+
+	@media(max-width:767.98px) {
+		// margin-right: 0;
+	}
 }
 
 .tasksItemInfo {
@@ -148,7 +201,7 @@
 	margin: 0 auto;
 	font-weight: 700;
 	font-size: rem(18px);
-	line-height: rem(21px);        
+	line-height: rem(21px);
 	text-align: center;
 	color: #000;
 	text-transform: uppercase;
@@ -167,21 +220,37 @@
 .info {
 	max-width: rem(700px);
 	width: 100%;
+
+	@media(max-width:1200px) {
+		max-width: rem(460px);
+	}
+
+	@media(max-width:940px) {
+		max-width: rem(370px);
+	}
 }
 
 .top {
 	padding-top: rem(23px);
 	max-width: rem(640px);
+
+	@media(max-width:767.98px) {
+		padding-top: 0;
+	}
 }
 
 .topDates {
 	margin-bottom: rem(25px);
 	font-weight: 400;
 	font-size: rem(13px);
-	line-height: rem(15px);
+	line-height: 1.154;
 	color: #9C9C9C;
 	padding-left: rem(28px);
 	position: relative;
+
+	@media(max-width:767.98px) {
+		margin-bottom: rem(15px);
+	}
 
 	&:before {
 		content: "";
@@ -210,8 +279,16 @@
 .topText {
 	font-weight: 400;
 	font-size: rem(16px);
-	line-height: rem(28px);
+	line-height: 1.75;
 	color: #fff;
+
+	@media(max-width:767.98px) {
+		font-size: rem(13px);
+	}
+
+	a {
+		color: var(--accentColor);
+	}
 }
 
 .topLink {
@@ -220,30 +297,62 @@
 
 .about {
 	margin-bottom: rem(47px);
+
+	@media(max-width:767.98px) {
+		margin-bottom: rem(30px);
+	}
 }
 
 .aboutText {
 	font-weight: 400;
 	font-size: rem(16px);
-	line-height: rem(28px);
+	line-height: 1.75;
 	color: #fff;
 	margin-bottom: rem(15px);
+
+	@media(max-width:767.98px) {
+		font-size: rem(13px);
+	}
 }
 
 .aboutList {
 	display: flex;
-	gap: rem(2px);
+	gap: rem(1px 2px);
 	margin-right: rem(-78px);
+
+	@media(max-width:767.98px) {
+		flex-direction: column;
+		margin-right: 0;
+		// width: 100%;
+
+	}
 }
 
 .aboutItem {
 	position: relative;
 	display: flex;
-	flex-direction: column;
 	padding: rem(10px 10px 20px);
 	width: 33%;
 	background: #222222;
-	height: rem(286px);
+
+	@media(min-width:767.98px) {
+		height: rem(286px);
+		flex-direction: column;
+
+
+	}
+
+	@media(max-width:1200px) {
+		min-width: rem(238px);
+	}
+
+	@media(max-width:767.98px) {
+		width: 100%;
+		align-items: center;
+		padding: rem(15px 10px 9px);
+
+
+	}
 
 	&:before {
 		content: "";
@@ -255,14 +364,30 @@
 		background: url("../../assets/images/svg/promotion-arrow.svg") no-repeat 50% 50% /contain;
 		transform: translateY(-50%);
 		z-index: 2;
+
+		@media(max-width:767.98px) {
+
+			top: 100%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(90deg);
+
+		}
 	}
 
-	&:first-child  {
+	&:first-child {
 		border-radius: rem(8px 0 0 8px);
+
+		@media(max-width:767.98px) {
+			border-radius: rem(8px 8px 0 0);
+		}
 	}
 
-	&:last-child  {
+	&:last-child {
 		border-radius: rem(0 8px 8px 0);
+
+		@media(max-width:767.98px) {
+			border-radius: rem(0 0 8px 8px);
+		}
 
 		&:before {
 			display: none;
@@ -282,7 +407,7 @@
 	color: #fff;
 	font-size: rem(24px);
 	font-weight: 500;
-	line-height: rem(32px); 
+	line-height: rem(32px);
 }
 
 .aboutItemTextAccent {
@@ -296,7 +421,7 @@
 .rulesTitle {
 	font-weight: 500;
 	font-size: rem(24px);
-	line-height: rem(32px);        
+	line-height: rem(32px);
 	color: #fff;
 	margin-bottom: rem(20px);
 }
@@ -320,9 +445,13 @@
 	padding: rem(15px 15px 15px 63px);
 	color: #fff;
 	font-size: rem(16px);
-	line-height: rem(19px);
+	line-height: 1.1875;
 	font-weight: 400;
 	border-bottom: 1px solid #252525;
+
+	@media(max-width:767.98px) {
+		font-size: rem(14px);
+	}
 
 	&:before {
 		position: absolute;
