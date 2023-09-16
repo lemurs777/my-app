@@ -1,420 +1,434 @@
 @import "sass-rem";
 
 .gameBanner {
-	padding-bottom: rem(4px);
-	margin-bottom: rem(15px);
-	position: relative;
-	background: #0F0F0F;
+  padding-bottom: rem(4px);
+  position: relative;
+  background: #0F0F0F;
+  @media(min-width: 1200px) {
+    margin-bottom: rem(15px);
 
-	&:before {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: rem(4px);
-		background: radial-gradient(50% 50% at 50% 50%, #F7FF13 0%, rgba(0, 0, 0, 0) 100%);
-	}
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: rem(4px);
+    background: radial-gradient(50% 50% at 50% 50%, #F7FF13 0%, rgba(0, 0, 0, 0) 100%);
+  }
 }
 
 .top {
-	display: flex;
+  display: flex;
+  position: relative;
 }
 
 .streamWrapper {
-	width: rem(690px);
-	height: rem(390px);
-	position: relative;
+  width: rem(690px);
+  height: rem(390px);
+  position: relative;
+  @media(max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .stream {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .streamPlay {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: rem(54px);
-	height: rem(54px);
-	border-radius: 50%;
-	background: #F7FF13 url("../../assets/images/svg/game-banner-play.svg") no-repeat 50% 50%;
-	background-size: rem(24px) rem(24px);
-	transition: .3s;
-	font-size: 0;
-	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(54px);
+  height: rem(54px);
+  border-radius: 50%;
+  background: #F7FF13 url("../../assets/images/svg/game-banner-play.svg") no-repeat 50% 50%;
+  background-size: rem(24px) rem(24px);
+  transition: .3s;
+  font-size: 0;
+  cursor: pointer;
 
-	&:hover {
-		transform: translate(-50%, -50%) scale(1.05);
-	}
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
 }
 
 .infoWrapper {
-	flex-grow: 1;
-	position: relative;
-	z-index: 2;
-	&:before {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		right: 0;
-		background: radial-gradient(63.59% 100% at 50% 0%, #494B02 0%, rgba(69, 71, 13, 0.571) 41.15%, rgba(49, 50, 9, 0.34) 72.92%, rgba(79, 82, 10, 0) 100%);
-		height: rem(256px);
-		z-index: -1;
-	}	
+  flex-grow: 1;
+  position: relative;
+  z-index: 2;
+  @media(max-width: 1200px) {
+    display: none;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(63.59% 100% at 50% 0%, #494B02 0%, rgba(69, 71, 13, 0.571) 41.15%, rgba(49, 50, 9, 0.34) 72.92%, rgba(79, 82, 10, 0) 100%);
+    height: rem(256px);
+    z-index: -1;
+  }
 }
 
 .info {
-	display: flex;
-	gap: rem(15px);
-	padding: rem(62px 66px 35px);
+  display: flex;
+  gap: rem(15px);
+  padding: rem(62px 66px 35px);
 }
 
 .infoIconWrapper {
-	width: rem(80px);
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	gap: rem(10px);
+  width: rem(80px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(10px);
 }
 
 .infoIcon {
-	width: rem(80px);
-	height: rem(80px);
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 50%;
-	position: relative;
+  width: rem(80px);
+  height: rem(80px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: relative;
 }
 
 .infoIconInner {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: rem(50px);
-	height: rem(50px);
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: rem(50px);
+  height: rem(50px);
+  transform: translate(-50%, -50%);
 }
 
 .infoIconImg {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .infoContentWrapper {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .infoIconText {
-	margin-left: rem(-10px);
-	margin-right: rem(-10px);
-	text-align: center;
-	font-weight: 500;
-	font-size: rem(18px);
-	line-height: rem(21px);
-	color: #fff;
+  margin-left: rem(-10px);
+  margin-right: rem(-10px);
+  text-align: center;
+  font-weight: 500;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  color: #fff;
 }
 
 .infoContentName {
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: rem(16px);
-	color: #8E8E8E;
-	margin-bottom: rem(18px);
-	margin-left: rem(-10px);
-	margin-right: rem(-10px);
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: rem(16px);
+  color: #8E8E8E;
+  margin-bottom: rem(18px);
+  margin-left: rem(-10px);
+  margin-right: rem(-10px);
 }
 
 .infoContentTime {
-	font-weight: 500;
-	font-size: rem(16px);
-	line-height: rem(19px);
-	color: #fff;
-	margin-bottom: rem(11px);
-	padding: rem(5px 15px 3px);
-	background: #E02020;
-	border-radius: 20px;
-	margin-bottom: rem(8px);
+  font-weight: 500;
+  font-size: rem(16px);
+  line-height: rem(19px);
+  color: #fff;
+  margin-bottom: rem(11px);
+  padding: rem(5px 15px 3px);
+  background: #E02020;
+  border-radius: 20px;
+  margin-bottom: rem(8px);
 }
 
 .infoContentDate {
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: rem(16px);
-	color: #8E8E8E;
-	margin-bottom: rem(20px);
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: rem(16px);
+  color: #8E8E8E;
+  margin-bottom: rem(20px);
 }
 
 .infoContentScore {
-	font-weight: 500;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	text-align: center;
-	color: #fff;
+  font-weight: 500;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  text-align: center;
+  color: #fff;
 }
 
 .infoDates {
-	display: flex;
-	justify-content: center;
-	gap: rem(20px);
-	border-top: 2px solid  #2B2B2B;
-	border-bottom: 2px solid  #2B2B2B;
-	padding: rem(13px 20px);
-	margin-bottom: rem(20px);
+  display: flex;
+  justify-content: center;
+  gap: rem(20px);
+  border-top: 2px solid #2B2B2B;
+  border-bottom: 2px solid #2B2B2B;
+  padding: rem(13px 20px);
+  margin-bottom: rem(20px);
 }
 
 .infoDate {
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: rem(17px);
-	text-align: center;
-	color: #7C7C7C;
-	
-	&:nth-child(2) {
-		color: #FFFFFF;
-	}
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: rem(17px);
+  text-align: center;
+  color: #7C7C7C;
+
+  &:nth-child(2) {
+    color: #FFFFFF;
+  }
 }
 
 .infoDatesMore {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: rem(13px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: rem(13px);
 }
 
 .infoDatesMoreRow {
-	display: flex;
-	justify-content: center;
-	gap: rem(59px);
+  display: flex;
+  justify-content: center;
+  gap: rem(59px);
 }
 
 .table {
-	background: #0F0F0F;
+  background: #0F0F0F;
+  @media(max-width: 1200px) {
+    display: none;
+  }
 }
 
 .tableNameWrapper {
-	padding: rem(16px 0 17px);
-	position: relative;
-	z-index: 1;
-	display: flex;
+  padding: rem(16px 0 17px);
+  position: relative;
+  z-index: 1;
+  display: flex;
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 1px;
-		background: #262626;
-		transform: translateY(-50%);
-		z-index: -1;
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #262626;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
 }
 
 .tableName {
-	font-weight: 400;
-	font-size: rem(16px);
-	line-height: rem(19px);
-	color: #939393;
-	background: #0F0F0F;
-	padding: rem(0 16px 0 25px);
-	margin-right: auto;
+  font-weight: 400;
+  font-size: rem(16px);
+  line-height: rem(19px);
+  color: #939393;
+  background: #0F0F0F;
+  padding: rem(0 16px 0 25px);
+  margin-right: auto;
 }
 
 .tableInfoWrapper {
-	margin-left: auto;
-	margin-right: rem(68px);
-	background: #0F0F0F;
-	padding: rem(0 16px);
-	display: flex;
+  margin-left: auto;
+  margin-right: rem(68px);
+  background: #0F0F0F;
+  padding: rem(0 16px);
+  display: flex;
 }
 
 .tableInfo {
-	color: #7E7E7E;
-	font-size: rem(14px);
-	width: rem(48px);
-	max-width: rem(48px);
-	min-width: rem(48px);
-	overflow: hidden;
-	text-align: center;
-	margin-right: 2px;
-	text-transform: uppercase;
+  color: #7E7E7E;
+  font-size: rem(14px);
+  width: rem(48px);
+  max-width: rem(48px);
+  min-width: rem(48px);
+  overflow: hidden;
+  text-align: center;
+  margin-right: 2px;
+  text-transform: uppercase;
 
-	&:nth-child(4) {
-		width: rem(58px);
-		max-width: rem(58px);
-		min-width: rem(58px);
-	}
+  &:nth-child(4) {
+    width: rem(58px);
+    max-width: rem(58px);
+    min-width: rem(58px);
+  }
 
-	&:nth-child(2),
-	&:nth-child(5) {
-		margin-right: rem(20px);
-	}
+  &:nth-child(2),
+  &:nth-child(5) {
+    margin-right: rem(20px);
+  }
 
-	&:last-child {
-		margin-right: 0;
-	}
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .tableWrapper {
-	padding: rem(0 36px 23px 27px);
-	display: flex;
-	align-items: center;
+  padding: rem(0 36px 23px 27px);
+  display: flex;
+  align-items: center;
 }
 
 .tableDateTime {
-	display: flex;
-	flex-direction: column;
-	gap: rem(7px);
-	margin-right: rem(20px);
-	width: rem(45px);
-	min-width: rem(45px);
-	max-width: rem(45px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(7px);
+  margin-right: rem(20px);
+  width: rem(45px);
+  min-width: rem(45px);
+  max-width: rem(45px);
 }
 
 .tableTime {
-	font-weight: 500;
-	font-size: rem(16px);
-	line-height: rem(19px);
-	color: #D60019;
+  font-weight: 500;
+  font-size: rem(16px);
+  line-height: rem(19px);
+  color: #D60019;
 }
 
 .tableDate {
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: rem(16px);
-	color: #777777;
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: rem(16px);
+  color: #777777;
 }
 
 .tableNames {
-	display: flex;
-	flex-direction: column;
-	gap: rem(5px);
-	margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: rem(5px);
+  margin-right: auto;
 }
 
 .tableName {
-	font-weight: 400;
-	font-size: rem(16px);
-	line-height: rem(19px);
-	color: #FFFFFF;
+  font-weight: 400;
+  font-size: rem(16px);
+  line-height: rem(19px);
+  color: #FFFFFF;
 }
 
 .tableScores {
-	display: flex;
-	width: rem(26px);
-	flex-direction: column;
-	align-items: center;
-	gap: rem(5px);
-	margin-right: rem(20px);
+  display: flex;
+  width: rem(26px);
+  flex-direction: column;
+  align-items: center;
+  gap: rem(5px);
+  margin-right: rem(20px);
 }
 
 .tableScore {
-	font-weight: 400;
-	font-size: rem(16px);
-	line-height: rem(19px);
-	color: #FFFFFF;
+  font-weight: 400;
+  font-size: rem(16px);
+  line-height: rem(19px);
+  color: #FFFFFF;
 }
 
 .tableNumbers {
-	display: flex;
-	font-weight: 700;
-	font-size: rem(16px);
-	line-height: rem(19px);
-	color: #fff;
+  display: flex;
+  font-weight: 700;
+  font-size: rem(16px);
+  line-height: rem(19px);
+  color: #fff;
 }
 
 .tableNumber {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	width: rem(48px);
-	min-width: rem(48px);
-	max-width: rem(48px);
-	height: rem(38px);
-	background: #262626;
-	margin-right: 2px;
-	cursor: pointer;
-	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: rem(48px);
+  min-width: rem(48px);
+  max-width: rem(48px);
+  height: rem(38px);
+  background: #262626;
+  margin-right: 2px;
+  cursor: pointer;
+  position: relative;
 
-	&:nth-child(4) {
-		width: rem(58px);
-		max-width: rem(58px);
-		min-width: rem(58px);
-	}
+  &:nth-child(4) {
+    width: rem(58px);
+    max-width: rem(58px);
+    min-width: rem(58px);
+  }
 
-	&:nth-child(2),
-	&:nth-child(5) {
-		margin-right: rem(20px);
-	}
+  &:nth-child(2),
+  &:nth-child(5) {
+    margin-right: rem(20px);
+  }
 
-	&:last-child {
-		margin-right: 0;
-		font-weight: 400;
-		font-size: rem(16px);
-		line-height: rem(19px);
-		text-align: right;
-		justify-content: flex-end;
-		color: #9E9E9E;
-		background: transparent;
-		pointer-events: none;
-	}
+  &:last-child {
+    margin-right: 0;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(19px);
+    text-align: right;
+    justify-content: flex-end;
+    color: #9E9E9E;
+    background: transparent;
+    pointer-events: none;
+  }
 
-	&.disable {
-		color: #A7A7A7;
-		pointer-events: none;
-		background: #1F1F1F;
+  &.disable {
+    color: #A7A7A7;
+    pointer-events: none;
+    background: #1F1F1F;
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			height: 100%;
-			background: #2E2E2E;
-			width: 1px;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      background: #2E2E2E;
+      width: 1px;
+    }
+  }
 
-	&.upp {
-		&:before {
-			content: "";
-			position: absolute;
-			width: 0;
-			height: 0;
-			top: rem(2px);
-			left: rem(2px);
-			border-top: rem(5px) solid #52B205;
-			border-left: rem(5px) solid #52B205;
-			border-right: rem(5px) solid transparent;
-			border-bottom: rem(5px) solid transparent;
-		}
-	}
+  &.upp {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: rem(2px);
+      left: rem(2px);
+      border-top: rem(5px) solid #52B205;
+      border-left: rem(5px) solid #52B205;
+      border-right: rem(5px) solid transparent;
+      border-bottom: rem(5px) solid transparent;
+    }
+  }
 
-	&.down {
-		&:before {
-			content: "";
-			position: absolute;
-			width: 0;
-			height: 0;
-			bottom: rem(2px);
-			right: rem(2px);
-			border-top: rem(5px) solid transparent;
-			border-left: rem(5px) solid transparent;
-			border-right: rem(5px) solid #D60019;
-			border-bottom: rem(5px) solid #D60019;
-		}
-	} 
+  &.down {
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: rem(2px);
+      right: rem(2px);
+      border-top: rem(5px) solid transparent;
+      border-left: rem(5px) solid transparent;
+      border-right: rem(5px) solid #D60019;
+      border-bottom: rem(5px) solid #D60019;
+    }
+  }
 }

@@ -10,6 +10,7 @@ function CyberSportList() {
 			name: 'Топ',
 			className: 'top',
 			link: '/',
+
 		},
 		{
 			name: 'Закладки',
