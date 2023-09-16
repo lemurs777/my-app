@@ -207,6 +207,15 @@ main {
     background-repeat: no-repeat;
     background-size: rem(1225px) rem(786px);
     background-position: 0 rem(100px);
+    max-width: none !important;
+    @media(max-width:1199px){
+      background-position-x: rem(-150px);
+    }
+    @media(max-width:992px){
+      background-size:auto rem(420px);
+      background-position-x: -5%;
+      background-position-y: 0;
+    }
   }
 
   &--events {
