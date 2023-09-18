@@ -166,13 +166,13 @@ main {
   z-index: 2;
   overflow-x: hidden;
 
-  max-width: 81vw;
 
   &--index {
     // max-width: rem(1542px);
     padding-left: rem(100px);
     padding-right: rem(5px);
     flex-direction: column;
+    max-width: 81vw;
 
     @media(max-width: 1024px) {
       max-width: 74vw;
@@ -192,7 +192,7 @@ main {
     margin: 0 auto;
     gap: rem(31px);
 
-    @media(max-width: 768px) {
+    @media(max-width: 991.98px) {
       flex-direction: column;
       padding: 0;
       gap: 0;
@@ -208,11 +208,11 @@ main {
     background-size: rem(1225px) rem(786px);
     background-position: 0 rem(100px);
     max-width: none !important;
-    @media(max-width:1199px){
+    @media(max-width: 1199px) {
       background-position-x: rem(-150px);
     }
-    @media(max-width:992px){
-      background-size:auto rem(420px);
+    @media(max-width: 992px) {
+      background-size: auto rem(420px);
       background-position-x: -5%;
       background-position-y: 0;
     }
