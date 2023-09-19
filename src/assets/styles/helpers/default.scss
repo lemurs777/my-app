@@ -287,6 +287,11 @@ main {
     gap: rem(20px);
     overflow-y: auto;
     padding: rem(0 20px 20px);
+    @media(max-width: 800px) {
+      flex-direction: column;
+      padding: rem(0 12px 12px);
+      //height: 100%;
+    }
   }
 
   &--statistics-search {

@@ -11,6 +11,10 @@
     left: 0;
     width: rem(535px);
     background: linear-gradient(90deg, #262626 0%, #1A1A1A 56.77%, #000000 100%);
+    @media(max-width: 1024px) {
+      width: 100%;
+      max-width: rem(289px);
+    }
   }
 }
 
@@ -75,6 +79,9 @@
   display: flex;
   gap: rem(5px);
   align-items: center;
+  @media(max-width: 1024px) {
+    display: none;
+  }
 }
 
 .link {
@@ -131,6 +138,7 @@
   display: flex;
   align-items: center;
   gap: rem(15px);
+  margin-left: auto;
 }
 
 .time {

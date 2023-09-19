@@ -1,250 +1,372 @@
 @import "sass-rem";
 
 .request {
-	min-height: 100%;
-	background: #1B1B1B;
-	padding: rem(50px 20px 20px);
-	overflow: hidden;
+  min-height: 100%;
+  background: #1B1B1B;
+  padding: rem(50px 20px 20px);
+  overflow: hidden;
+  @media(max-width: 1024px) {
+    padding: rem(0 20px 20px);
+  }
+  @media(max-width: 767.98px) {
+    padding: rem(0 10px 21px);
+  }
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	min-height: 100%;
-	max-height: 100%;
-	max-width: rem(1180px);
-	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: rem(1180px);
+  margin: 0 auto;
 }
 
 .header {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: rem(40px);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(40px);
+  position: relative;
+  @media(max-width: 1024px) {
+    background-color: #000;
+    margin-bottom: 0;
+    padding-top: rem(4px);
+    padding-bottom: rem(24px);
+    &::before {
+      position: absolute;
+      left: rem(-20px);
+      right: rem(-20px);
+      width: auto;
+      content: "";
+      top: 0;
+
+      height: 100%;
+      background-color: #000;
+    }
+  }
+  @media(max-width: 767.98px) {
+    align-items: center;
+  }
 }
 
 .headerTitle {
-	font-weight: 700;
-	font-size: rem(32px);
-	line-height: rem(38px);
-	color: #fff;
-	padding-left: rem(55px);
-	position: relative;
-	margin-right: auto;
+  font-weight: 700;
+  font-size: rem(32px);
+  line-height: rem(38px);
+  color: #fff;
+  padding-left: rem(55px);
+  position: relative;
+  margin-right: auto;
+  @media(max-width: 1024px) {
+    font-size: rem(24px);
+    padding-left: rem(68px);
+  }
+  @media(max-width: 767.98px) {
+    font-size: rem(16px);
+    padding-left: rem(50px);
+  }
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 0;
-		height: rem(48px);
-		width: rem(48px);
-		background: url("../../assets/images/svg/requests-menu/request.svg") no-repeat 50% 50% /contain;
-		transform: translateY(-50%);
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: rem(48px);
+    border-radius: rem(13px);
+    width: rem(48px);
+    background: url("../../assets/images/svg/requests-menu/request.svg") no-repeat 50% 50% /contain, #1B1B1B;
+    transform: translateY(-50%);
+    @media(max-width: 767.98px) {
+      width: rem(40px);
+      height: rem(40px);
+    }
+  }
+}
+
+.close {
+  margin-left: auto;
+  width: rem(38px);
+  height: rem(38px);
+  flex: 0 0 rem(38px);
 }
 
 .headerBtn {
-	font-weight: 700;
-	font-size: rem(14px);
-	line-height: rem(16px);
-	text-align: center;
-	text-transform: uppercase;
-	color: #000;
-	padding: rem(7px 12px);
-	background: #FAFE13;
-	border-radius: rem(3px);
-	cursor: pointer;
+  font-weight: 700;
+  font-size: rem(14px);
+  line-height: rem(16px);
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  padding: rem(12px 7px);
+  background: #FAFE13;
+  border-radius: rem(3px);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
 }
 
 .top {
-	display: flex;
-	align-items: center;
-	margin-bottom: rem(24px);
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(24px);
+  @media(max-width: 1024px) {
+    padding-top: rem(20px);
+  }
 }
 
 .topBtn {
-	width: rem(48px);
-	height: rem(48px);
-	background: #3D3D3D;
-	border-radius: rem(10px);
-	position: relative;
-	cursor: pointer;
-	margin-right: rem(15px);
-	font-size: 0;
+  width: rem(48px);
+  height: rem(48px);
+  background: #3D3D3D;
+  border-radius: rem(10px);
+  position: relative;
+  cursor: pointer;
+  margin-right: rem(15px);
+  font-size: 0;
+  @media(max-width: 767.98px) {
+    width: rem(34px);
+    height: rem(34px);
+  }
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: rem(9px);
-		height: rem(16px);
-		background: url("../../assets/images/svg/profile-left.svg") no-repeat 50% 50% /contain;
-		transition: .3s;
-		opacity: .6;
-		transform: translate(-50%, -50%);
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: rem(9px);
+    height: rem(16px);
+    background: url("../../assets/images/svg/profile-left.svg") no-repeat 50% 50% /contain;
+    transition: .3s;
+    opacity: .6;
+    transform: translate(-50%, -50%);
+  }
 
-	&:hover {
-		&:before {
-			opacity: 1;
-		}
-	}
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
 }
 
 .topTitle {
-	font-weight: 700;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	color: #fff;
+  font-weight: 700;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  color: #fff;
+  @media(max-width: 767.98px) {
+    font-size: rem(16px);
+  }
 }
 
 .content {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .contentTop {
-	position: relative;
-	padding-bottom: rem(20px);
-	color: #fff;
+  position: relative;
+  padding-bottom: rem(20px);
+  color: #fff;
+  @media(max-width: 767.98px) {
+    padding-bottom: 0;
+  }
 
-	&:before {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: -100%;
-		right: -100%;
-		height: 1px;
-		background: rgba(255, 255, 255, 0.3);
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    right: -100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    @media(max-width: 767.98px) {
+      bottom: rem(-10px);
+    }
+  }
 }
 
 .contentText {
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: 1.4;
-	margin-bottom: rem(10px);
-	max-width: rem(774px);
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: 1.4;
+  margin-bottom: rem(10px);
+  max-width: rem(774px);
 
-	&:last-child {
-		margin-bottom: 0;
-	}
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media(max-width: 767.98px) {
+    font-size: rem(12px);
+    margin-bottom: rem(5px);
+  }
 }
 
+
 .contentLabelWrapper {
-	display: flex;
-	gap: rem(20px);
-	margin-bottom: rem(10px);
-	align-items: center;
+  display: flex;
+  gap: rem(20px);
+  margin-bottom: rem(10px);
+  align-items: center;
+  @media(max-width: 767.98px) {
+    margin-bottom: rem(5px);
+  }
 }
 
 .contentLabelText {
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: 1.4;
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: 1.4;
 }
 
 .label {
-	min-width: rem(120px);
-	background: #535353;
-	border-radius: rem(3px);
-	padding: rem(5px 15px);
-	text-align: center;
-	font-weight: 700;
-	font-size: rem(17px);
-	line-height: rem(20px);
-	text-transform: uppercase;
+  min-width: rem(120px);
+  background: #535353;
+  border-radius: rem(3px);
+  padding: rem(5px 15px);
+  text-align: center;
+  font-weight: 700;
+  font-size: rem(17px);
+  line-height: rem(20px);
+  text-transform: uppercase;
+  @media(max-width: 767.98px) {
+    padding: 0 rem(9px);
+    height: rem(20px);
+    min-width: auto;
+  }
 }
 
 .labelProgress {
-	background: #535353;
-	color: #fff;
+  background: #535353;
+  color: #fff;
 }
 
 .labelDone {
-	background: #F7FF13;
-	color: #000;
+  background: #F7FF13;
+  color: #000;
 }
 
 .contentPhotoWrapper {
-	display: flex;
-	gap: rem(10px);
-	margin-bottom: rem(10px);
+  display: flex;
+  gap: rem(10px);
+  margin-bottom: rem(10px);
+  @media (max-width: 767.98px) {
+    margin-bottom: rem(5px);
+  }
 }
 
 .contentPhoto {
-	width: rem(80px);
-	height: rem(80px);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 50% 50%;
+  width: rem(80px);
+  height: rem(80px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  @media(max-width: 1024px) {
+    width: rem(60px);
+    height: rem(60px);
+  }
 
-	&.contentPhotoOne {
-		background-image: url("../../assets/images/requests/photo-1.jpg");
-	}
-	
-	&.contentPhotoTwo {
-		background-image: url("../../assets/images/requests/photo-2.jpg");
-	}
-	
-	&.contentPhotoThree {
-		background-image: url("../../assets/images/requests/photo-3.jpg");
-	}
+  &.contentPhotoOne {
+    background-image: url("../../assets/images/requests/photo-1.jpg");
+  }
+
+  &.contentPhotoTwo {
+    background-image: url("../../assets/images/requests/photo-2.jpg");
+  }
+
+  &.contentPhotoThree {
+    background-image: url("../../assets/images/requests/photo-3.jpg");
+  }
 }
 
 .messagesWrapper {
-	max-width: rem(1100px);
-	padding: rem(10px);
-	margin: 0 auto;
+  max-width: rem(1100px);
+  padding: rem(10px);
+  margin: 0 auto;
+  @media(max-width: 767.98px) {
+    padding: rem(5px 0 0);
+  }
 }
 
 .messagesDate {
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: 1.4;
-	color: #9E9E9E;
-	text-align: center;
-	margin-bottom: rem(30px);
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: 1.4;
+  color: #9E9E9E;
+  text-align: center;
+  margin-bottom: rem(30px);
+  @media(max-width: 1024px) {
+    margin-bottom: rem(14px);
+  }
 }
 
 .messages {
-	display: flex;
-	flex-direction: column;
-	gap: rem(40px);
-	padding-right: rem(70px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+  padding-right: rem(70px);
+  @media(max-width: 1024px) {
+    gap: rem(24px);
+    padding-right: 0;
+  }
+  @media(max-width: 767.98px) {
+    gap: rem(20px);
+  }
 }
-	
-.message {
-	display: flex;
-	padding-right: rem(50px);
 
-	&.messageAnswer {
-		justify-content: flex-end;
-		padding-right: rem(0);
-		padding-left: rem(50px);
-	}
+.message {
+  display: flex;
+  padding-right: rem(50px);
+  @media(max-width: 1024px) {
+    padding-right: 0;
+  }
+
+  &.messageAnswer {
+    justify-content: flex-end;
+    padding-right: rem(0);
+    padding-left: rem(50px);
+    @media(max-width: 1024px) {
+      padding-left: 0;
+    }
+  }
 }
 
 .messageContent {
-	max-width: rem(528px);
+  max-width: rem(528px);
 }
 
 .messageText {
-	background: #535353;
-	border-radius: rem(8px);
-	padding: rem(20px);
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: 1.4;
-	color: #fff;
-	margin-bottom: rem(5px);
+  background: #535353;
+  border-radius: rem(8px);
+  padding: rem(20px);
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: rem(5px);
+  @media(max-width: 1024px) {
+    max-width: rem(324px);
+    padding: rem(20px 10.5px);
+  }
+  @media(max-width: 767.98px) {
+    max-width: rem(293px);
+    font-size: rem(12px);
+  }
 }
 
 .messageTime {
-	font-weight: 400;
-	font-size: rem(14px);
-	line-height: 1.4;
-	color: #fff;
-	text-align: right;
+  font-weight: 400;
+  font-size: rem(14px);
+  line-height: 1.4;
+  color: #fff;
+  text-align: right;
+}
+
+.contentTextTitle {
+  @media(max-width: 767.98px) {
+    font-size: rem(14px) !important;
+    margin-bottom: rem(10px) !important;
+  }
 }

@@ -1,85 +1,109 @@
 @import "sass-rem";
 
 .modalRequest {
-	position: relative;
-	padding: rem(30px 20px 45px);
-	width: rem(800px);
-	max-width: 100%;
+  position: relative;
+  padding: rem(30px 20px 45px);
+  width: rem(800px);
+  max-width: 100%;
+  @media(max-width: 830px) {
+    width: auto;
+    padding: rem(25px 10px 17px);
+  }
+  @media(max-width: 576px) {
+    max-width: rem(366px);
+  }
 }
 
 .title {
-	padding-left: rem(50px);
-	margin-bottom: rem(30px);
-	font-weight: 700;
-	font-size: rem(32px);
-	line-height: rem(38px);
-	color: #fff;
+  margin-bottom: rem(30px);
+  font-weight: 700;
+  font-size: rem(32px);
+  line-height: 1.1875;
+  color: #fff;
+  @media(min-width: 767.98px) {
+    padding-left: rem(50px);
+
+  }
+  @media(max-width: 767.98px) {
+    font-size: rem(24px);
+    margin-bottom: rem(25px);
+  }
 }
 
 .select {
-	max-width: rem(634px);
-	margin: 0 auto rem(30px);
+  max-width: rem(634px);
+  margin: 0 auto rem(30px);
+  @media(max-width: 767.98px) {
+    padding: rem(0 3px);
+    margin-bottom: rem(24px);
+  }
 }
 
 .selectInput {
-	display: inline-block;
-	width: 100%;
-	max-width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	padding: rem(20px);
-	background: rgba(255, 255, 255, 0.14);
-	color: #fff;
-	font-weight: 700;
-	font-size: rem(24px);
-	line-height: rem(28px);
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: rem(20px);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  //font-weight: 700;
+  font-size: rem(24px);
+  line-height: 1.1666;
 
-	&::placeholder {
-		color: #898989;
-	}
+  &::placeholder {
+    color: #898989;
+    font-weight: 700;
+  }
 }
 
 .selectList {
-	background: #2B2B2B;
+  background: #2B2B2B;
 }
 
 .selectItemBtn {
-	display: inline;
-	width: 100%;
-	padding: rem(13px 20px);
-	font-weight: 400;
-	font-size: rem(18px);
-	line-height: rem(21px);
-	color: #fff;
-	cursor: pointer;
-	transition: .3s;
+  display: inline;
+  width: 100%;
+  padding: rem(13px 20px);
+  font-weight: 400;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
 
-	&:hover {
-		opacity: .7;
-	}
+  &:hover {
+    opacity: .7;
+  }
 }
 
 .btnWrapper {
-	display: flex;
-	justify-content: center;
-	gap: rem(60px);
+  display: flex;
+  justify-content: center;
+  gap: rem(60px);
+  @media(max-width: 767.98px) {
+    gap: rem(17px);
+    justify-content: space-between;
+  }
 }
 
 .btn {
-	display: inline-block;
-	min-width: rem(140px);
-	background: #FAFE13;
-	font-weight: 700;
-	font-size: rem(17px);
-	line-height: rem(20px);
-	text-align: center;
-	text-transform: uppercase;
-	cursor: pointer;
-	padding: rem(12px);
+  display: inline-block;
+  min-width: rem(140px);
+  background: #FAFE13;
+  font-weight: 700;
+  font-size: rem(17px);
+  line-height: rem(20px);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: rem(12px);
+  border-radius: rem(0 3px 3px 0);
 
-	&[disabled] {
-		color: #fff;
-		background: rgba(250, 254, 19, 0.15);
-		pointer-events: none;
-	}
+  &[disabled] {
+    color: #fff;
+    background: rgba(250, 254, 19, 0.15);
+    pointer-events: none;
+  }
 }
