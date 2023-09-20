@@ -1,90 +1,146 @@
 @import "sass-rem";
 
 .archive {
-	width: 100%;
+  width: 100%;
 }
 
 .wrapper {
-	padding: rem(89px 20px 50px);
+  padding: rem(89px 37px 50px);
+  @media(max-width: 1200px) {
+    padding: rem(42px 37px 25px);
+  }
+  @media(max-width: 767.98px) {
+    padding: rem(28px 0 15px);
+  }
 }
 
 .mainWrapper {
-	max-width: rem(1346px);
-	margin: 0 auto;
+  max-width: rem(1346px);
+  margin: 0 auto;
 }
 
 .title {
-	text-align: center;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.30);
-	background: rgba(247, 255, 19, 0.15);
-	padding: rem(18px 20px 19px);
-	font-size: rem(18px);
-	font-weight: 400;
-	line-height: rem(21px);
-	color: #fff;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(247, 255, 19, 0.15);
+  padding: rem(18px 20px 19px);
+  font-size: rem(18px);
+  font-weight: 400;
+  line-height: rem(21px);
+  color: #fff;
+  padding: rem(13px);
 }
 
 .top {
-	display: flex;
-	background: rgba(255, 255, 255, 0.21);
-	font-size: rem(18px);
-	font-weight: 400;
-	line-height: rem(21px);
-	color: #fff;
+  display: flex;
+  background: rgba(255, 255, 255, 0.21);
+  font-size: rem(18px);
+  font-weight: 400;
+  line-height: 1.1666;
+  color: #fff;
+  align-items: center;
+  @media(max-width: 767.98px) {
+    font-size: rem(16px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .topCell {
-	padding: rem(19px 20px 18px);
+  padding: rem(19px 20px 18px);
+  white-space: nowrap;
 
-	&:nth-child(1) {
-		padding-left: rem(27px);
-		width: rem(400px);
-	}
+  &:nth-child(1) {
+    padding-left: rem(27px);
+    width: rem(400px);
+    @media(max-width: 767.98px) {
+      padding-left: rem(12px);
+      width: auto;
+    }
+  }
 
-	&:nth-child(2) {
-		width: rem(400px);
-	}
+  &:nth-child(2) {
+    width: rem(400px);
+    @media(max-width: 1200px) {
+      width: rem(300px);
+    }
+    @media(max-width: 767.98px) {
+      width: auto;
+    }
+  }
 
-	&:nth-child(3) {
-		width: rem(320px);
-	}
+  &:nth-child(3) {
+    width: rem(320px);
+    @media(max-width: 1200px) {
+      text-align: right;
+      padding-right: rem(35px);
+    }
+    @media(max-width: 767.98px) {
+      width: auto;
+      padding-right: rem(17px);
+    }
+  }
 }
 
 .link {
-	display: flex;
-	background: rgba(255, 255, 255, 0.14);
-	border-bottom: 1px solid rgba(255, 255, 255, .3);
-	font-size: rem(18px);
-	font-weight: 400;
-	line-height: rem(21px);
-	color: #fff;
-	position: relative;
+  display: flex;
+  background: rgba(255, 255, 255, 0.14);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  font-size: rem(18px);
+  font-weight: 400;
+  line-height: 1.666;
+  color: #fff;
+  position: relative;
+  align-items: center;
+  @media(max-width: 767.98px) {
+    font-size: rem(14px);
+  }
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		right: rem(100px);
-		width: rem(24px);
-		height: rem(24px);
-		background: url("../../assets/images/svg/archive-arrow.svg") no-repeat 50% 50% /contain;
-		transform: translateY(-50%);
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(100px);
+    width: rem(24px);
+    height: rem(24px);
+    background: url("../../assets/images/svg/archive-arrow.svg") no-repeat 50% 50% /contain;
+    transform: translateY(-50%);
+    @media(max-width: 1200px) {
+      right: rem(35px);
+    }
+    @media(max-width: 767.98px) {
+      width: rem(16px);
+      height: rem(16px);
+      right: rem(12px);
+    }
+  }
 }
 
 .linkCell {
-	padding: rem(19px 20px 18px);
+  padding: rem(19px 20px 18px);
+  @media(max-width: 767.98px) {
+    padding: rem(4px 30px 4px 12px) !important;
+  }
 
-	&:nth-child(1) {
-		padding-left: rem(27px);
-		width: rem(400px);
-	}
+  &:nth-child(1) {
+    padding-left: rem(27px);
+    width: rem(400px);
+    @media(max-width: 1200px) {
+      width: rem(304px);
+    }
+  }
 
-	&:nth-child(2) {
-		width: rem(400px);
-	}
+  &:nth-child(2) {
+    width: rem(400px);
+  }
 
-	&:nth-child(3) {
-		width: rem(320px);
-	}
+  &:nth-child(3) {
+    width: rem(320px);
+    @media(max-width: 1200px) {
+      padding-right: 60px;
+      width: rem(350px);
+    }
+    @media(max-width: 767.98px) {
+    }
+  }
 }
