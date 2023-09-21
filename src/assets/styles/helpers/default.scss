@@ -308,7 +308,11 @@ main {
     display: block;
   }
 }
-
+.tabsGame {
+  .tableHeaderGames {
+    display: none !important;
+  }
+}
 .aside {
   position: fixed;
   top: 9.125rem;

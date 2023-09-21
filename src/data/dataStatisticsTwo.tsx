@@ -214,7 +214,7 @@ const arrTables = {
 		title: 'Последние матчи',
 		dataTable: [
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Keysborough',
 				winOne: true,
 				date: '02/04/23',
@@ -222,7 +222,7 @@ const arrTables = {
 				nameTwo: 'Маккиннон Кугарс',
 			},
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Bellarine',
 				winOne: true,
 				date: '02/04/23',
@@ -230,7 +230,7 @@ const arrTables = {
 				nameTwo: 'Хьюм Сити',
 			},
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Western Port Steelers',
 				winOne: true,
 				date: '02/04/23',
@@ -238,7 +238,7 @@ const arrTables = {
 				nameTwo: 'Wyndham Basketball',
 			},
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Блэкберн Викингс',
 				winOne: true,
 				date: '02/04/23',
@@ -246,7 +246,7 @@ const arrTables = {
 				nameTwo: 'Camberwell Dragons',
 			},
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Bellarine',
 				winOne: true,
 				date: '02/04/23',
@@ -254,7 +254,7 @@ const arrTables = {
 				nameTwo: 'Western Port Steelers',
 			},
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Melbourne Uni Bball',
 				winOne: true,
 				date: '02/04/23',
@@ -262,7 +262,7 @@ const arrTables = {
 				nameTwo: 'Sunbury Jets',
 			},
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Bellarine',
 				winOne: true,
 				date: '02/04/23',
@@ -270,7 +270,7 @@ const arrTables = {
 				nameTwo: 'Western Port Steelers',
 			},
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Melbourne Uni Bball',
 				winOne: true,
 				date: '02/04/23',
@@ -284,7 +284,7 @@ const arrTables = {
 		title: 'Следующие матчи',
 		dataTable: [
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Western Port Steelers',
 				winOne: false,
 				date: '02/04/23',
@@ -292,7 +292,7 @@ const arrTables = {
 				nameTwo: 'Блэкберн Викингс',
 			},
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Wyndham Basketball',
 				winOne: false,
 				date: '02/04/23',
@@ -300,7 +300,7 @@ const arrTables = {
 				nameTwo: 'Маккиннон Кугарс',
 			},
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Хьюм Сити',
 				winOne: false,
 				date: '02/04/23',
@@ -308,7 +308,7 @@ const arrTables = {
 				nameTwo: 'Camberwell Dragons',
 			},
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Melbourne Uni Bball',
 				winOne: false,
 				date: '02/04/23',
@@ -316,7 +316,7 @@ const arrTables = {
 				nameTwo: 'Keysborought',
 			},
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Маккиннон Кугарс',
 				winOne: false,
 				date: '02/04/23',
@@ -324,7 +324,7 @@ const arrTables = {
 				nameTwo: 'Bellarine',
 			},
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Wyndham Basketball',
 				winOne: false,
 				date: '02/04/23',
@@ -332,7 +332,7 @@ const arrTables = {
 				nameTwo: 'Хьюм Сити',
 			},
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Маккиннон Кугарс',
 				winOne: false,
 				date: '02/04/23',
@@ -340,7 +340,7 @@ const arrTables = {
 				nameTwo: 'Bellarine',
 			},
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Wyndham Basketball',
 				winOne: false,
 				date: '02/04/23',

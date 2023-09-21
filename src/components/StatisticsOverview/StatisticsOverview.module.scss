@@ -8,6 +8,9 @@
   max-width: rem(1376px);
   padding: rem(26px 15px);
   margin: 0 auto;
+  @media(max-width: 1199.98px) {
+    padding: rem(26px 0 44px);
+  }
   @media(max-width: 767.98px) {
     padding: rem(10px 0px);
 
@@ -21,8 +24,64 @@
 .overviewInfoWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: rem(10px);
+  gap: rem(20px 10px);
   margin-bottom: rem(24px);
+  @media(max-width: 767.98px) {
+    grid-template-columns: auto;
+  }
+}
+
+
+
+.tabs {
+
+  &__list {
+    display: flex;
+    background: #F7FF13;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: rem(8px);
+  }
+
+  &__btn {
+    //flex: 0 0 50%;
+    font-weight: 400;
+    font-size: rem(20px);
+    line-height: 1.15;
+    color: #000000;
+    text-align: center;
+    padding: rem(11px 13px 15px);
+    background: #F7FF13;
+    position: relative;
+
+    &:nth-child(1) {
+      text-align: left;
+    }
+
+    &:nth-child(2) {
+      text-align: right;
+    }
+
+    &::after {
+      opacity: 0;
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 26px);
+      bottom: 0;
+      height: rem(6px);
+      background: #1D7E3A;
+      border-radius: 0.25rem;
+      transition: 0.3s;
+    }
+  }
+
+  &__btnActive {
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .tableNextPrevGamesWrapper {
@@ -30,4 +89,7 @@
   grid-template-columns: 1fr 1fr;
   gap: rem(10px);
   margin-bottom: rem(40px);
+  @media(max-width: 1199.98px) {
+    grid-template-columns: auto;
+  }
 }

@@ -16,7 +16,7 @@ function TableNextPrevGames(
 	return (
 		<div className={styles.nextPrevGameTable}>
 			{data.title !== null ? (
-				<h2 className={styles.title}>{data.title}</h2>
+				<h2 className={clsx(styles.title,'tableHeaderGames')}>{data.title}</h2>
 			) : null }
 			<div className={styles.table}>
 				<div className={styles.header}>

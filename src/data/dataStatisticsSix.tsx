@@ -65,7 +65,7 @@ const arrTables = {
 		title: null,
 		dataTable: [
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Western Port Steelers',
 				winOne: false,
 				date: '02/04/23',
@@ -73,7 +73,7 @@ const arrTables = {
 				nameTwo: 'Wyndham Basketball',
 			},
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Bellarine',
 				winOne: false,
 				date: '01/04/23',
@@ -135,7 +135,7 @@ const arrTables = {
 		title: null,
 		dataTable: [
 			{
-				title: 'БигV(3)',
+				title: 'БигV (3)',
 				nameOne: 'Блэкберн Викингс',
 				winOne: false,
 				date: '01/04/23',
@@ -205,7 +205,7 @@ const arrTables = {
 		title: null,
 		dataTable: [
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Western Port Steelers',
 				winOne: false,
 				date: '15/04/23',
@@ -275,7 +275,7 @@ const arrTables = {
 		title: null,
 		dataTable: [
 			{
-				title: 'БигV(4)',
+				title: 'БигV (4)',
 				nameOne: 'Western Port Steelers',
 				winOne: false,
 				date: '02/04/23',

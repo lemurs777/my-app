@@ -2,178 +2,230 @@
 
 
 .tableBigSmall {
-	background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
+  background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
 }
 
 .header {
-	display: flex;
-	background: rgba(255, 255, 255, 0.14);
-	padding: rem(0 22px);
+  display: flex;
+  background: rgba(255, 255, 255, 0.14);
+  padding: rem(0 22px);
+  display: grid;
+  grid-template-columns: rem(100px) rem(300px) rem(100px) rem(115px) 1fr rem(210px);
+  @media(max-width: 1199.98px) {
+    grid-template-columns: rem(60px) rem(105px) rem(100px) rem(115px) 1fr rem(140px);
+  }
 }
 
 .headerCell {
-	font-weight: 400;
-	font-size: rem(18px);
-	line-height: rem(21px);
-	color: #fff;
-	padding: rem(19px 5px 18px);
-	border-right: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  color: #fff;
+  padding: rem(19px 5px 18px);
+  @media(min-width: 1199.98px) {
 
-	&:nth-child(1) { width: rem(100px); border-right: none; }
-	&:nth-child(2) { flex-grow: 1; }
-	&:nth-child(3) {
-		width: rem(100px);
-		padding-right: rem(20px);
-		padding-left: rem(20px);
-	}
-	&:nth-child(4) {
-		width: rem(115px);
-		padding-left: rem(20px);
-		padding-right: rem(55px);
-		position: relative;
-	}
-	&:nth-child(5) {
-		width: rem(400px);
-		padding-left: rem(20px);
-		padding-right: rem(55px);
-		position: relative;
-		text-align: right;
-	}
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
 
-	&:nth-child(6) { 
-		width: rem(210px);
-		border-right: none;
-		padding-left: rem(15px);
-		padding-right: rem(15px);
-	}
 
-	&.headerCellUpp {
-		&:before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			right: rem(15px);
-			width: rem(18px);
-			height: rem(18px);
-			transform: translateY(-50%);
-			background: url("../../assets/images/svg/statistics-arrow-down-small.svg") no-repeat 50% 50% /contain;
-		}
-	}
+  &:nth-child(1) {
+    //width: rem(100px);
+    border-right: none;
+    @media(max-width: 1199.98px) {
+      //width: rem(80px);
+    }
+  }
 
-	&.headerCellUppDown {
-		&:before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			right: rem(30px);
-			width: rem(18px);
-			height: rem(18px);
-			transform: translateY(-50%);
-			background: url("../../assets/images/svg/statistics-arrow-down-small.svg") no-repeat 50% 50% /contain;
-		}
+  &:nth-child(2) {
+    //flex-grow: 1;
+  }
 
-		&:after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			right: rem(15px);
-			width: rem(18px);
-			height: rem(18px);
-			transform: translateY(-50%);
-			background: url("../../assets/images/svg/statistics-arrow-up-small.svg") no-repeat 50% 50% /contain;
-		}
-	}
+  &:nth-child(3) {
+    //width: rem(100px);
+    padding-right: rem(20px);
+    padding-left: rem(20px);
+  }
+
+  &:nth-child(4) {
+    //width: rem(115px);
+    padding-left: rem(20px);
+    padding-right: rem(55px);
+    position: relative;
+  }
+
+  &:nth-child(5) {
+    //width: rem(400px);
+    min-width: rem(340px);
+    padding-left: rem(20px);
+    padding-right: rem(55px);
+    position: relative;
+    text-align: right;
+    @media(max-width:1199.98px){
+      justify-content: flex-end;
+    }
+  }
+
+  &:nth-child(6) {
+    //width: rem(210px);
+    border-right: none;
+    padding-left: rem(15px);
+    padding-right: rem(15px);
+  }
+
+  &.headerCellUpp {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: rem(15px);
+      width: rem(18px);
+      height: rem(18px);
+      transform: translateY(-50%);
+      background: url("../../assets/images/svg/statistics-arrow-down-small.svg") no-repeat 50% 50% /contain;
+    }
+  }
+
+  &.headerCellUppDown {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: rem(30px);
+      width: rem(18px);
+      height: rem(18px);
+      transform: translateY(-50%);
+      background: url("../../assets/images/svg/statistics-arrow-down-small.svg") no-repeat 50% 50% /contain;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: rem(15px);
+      width: rem(18px);
+      height: rem(18px);
+      transform: translateY(-50%);
+      background: url("../../assets/images/svg/statistics-arrow-up-small.svg") no-repeat 50% 50% /contain;
+    }
+  }
 }
 
 .row {
-	display: flex;
-	background: rgba(255, 255, 255, 0.07);
-	padding: rem(0 22px);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  background: rgba(255, 255, 255, 0.07);
+  padding: rem(0 22px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: grid;
+  grid-template-columns: rem(100px) rem(300px) rem(100px) rem(115px) 1fr rem(210px);
+  @media(max-width: 1198.98px){
+    grid-template-columns: rem(60px) rem(105px) rem(100px) rem(115px) 1fr rem(140px);
+    align-items: center;
+  }
 }
 
 .cell {
-	font-weight: 400;
-	font-size: rem(18px);
-	line-height: rem(21px);
-	color: #fff;
-	padding: rem(19px 5px 18px);
-	border-right: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 400;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  color: #fff;
+  height: 100%;
+  padding: rem(19px 5px 18px);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+@media(max-width: 1199.98px){
+  padding: rem(12px 5px 4px);
+}
+  &:nth-child(1) {
+    //width: rem(100px);
+    border-right: none;
+    @media(max-width: 1199px) {
+      width: rem(80px);
+    }
+  }
 
-	&:nth-child(1) { width: rem(100px); border-right: none; }
-	&:nth-child(2) { flex-grow: 1; }
-	&:nth-child(3) {
-		width: rem(100px);
-		padding-right: rem(20px);
-		padding-left: rem(20px);
-	}
-	&:nth-child(4) {
-		width: rem(115px);
-		padding-left: rem(20px);
-		padding-right: rem(30px);
-		padding-left: rem(30px);
-		position: relative;
-	}
+  &:nth-child(2) {
+    //flex-grow: 1;
+    @media(max-width: 1199.98px) {
+      //width: rem(100px);
+      //padding-right: rem(5px);
+    }
+  }
 
-	&:nth-child(5) {
-		display: flex;
-		width: rem(400px);
-		position: relative;
-		padding-right: rem(20px);
-		padding-left: rem(20px);
-	}
+  &:nth-child(3) {
+    //width: rem(100px);
+    padding-right: rem(20px);
+    padding-left: rem(20px);
+  }
 
-	&:nth-child(6) { 
-		width: rem(210px);
-		border-right: none;
-		padding-left: rem(15px);
-		padding-right: rem(15px);
-	}
+  &:nth-child(4) {
+    //width: rem(115px);
+    padding-left: rem(20px);
+    padding-right: rem(30px);
+    padding-left: rem(30px);
+    position: relative;
+  }
+
+  &:nth-child(5) {
+    display: flex;
+    //width: rem(400px);
+    position: relative;
+    padding-right: rem(20px);
+    padding-left: rem(20px);
+  }
+
+  &:nth-child(6) {
+    //width: rem(210px);
+    border-right: none;
+    padding-left: rem(15px);
+    padding-right: rem(15px);
+  }
 }
 
 .percentOne {
-	padding-right: rem(10px);
-	width: rem(80px);
+  padding-right: rem(10px);
+  width: rem(80px);
 }
 
 .percent {
-	width: rem(100px);
-	background: rgba(247, 255, 19, 0.5);
-	margin-right: rem(40px);
-	margin-top: rem(-5px);
-	margin-bottom: rem(-5px);
-	position: relative;
+  width: rem(100px);
+  height: rem(30px);
+  background: rgba(247, 255, 19, 0.5);
+  margin-right: rem(40px);
+  margin-top: rem(-5px);
+  margin-bottom: rem(-5px);
+  position: relative;
 }
 
 .percentShow {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	background: #F7FF13;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #F7FF13;
 }
 
 .percentTwo {
-	width: rem(70px);
+  width: rem(70px);
 }
 
 .btnWrapper {
-	margin-top: rem(24px);
-	display: flex;
-	justify-content: center;
+  margin-top: rem(24px);
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
-	display: inline-block;
-	background: #FAFE13;
-	border-radius: rem(3px);
-	padding: rem(12px 20px);
-	font-weight: 700;
-	font-size: rem(14px);
-	line-height: rem(16px);
-	text-align: center;
-	text-transform: uppercase;
-	color: #000;
-	cursor: pointer;
-	min-width: rem(156px);
+  display: inline-block;
+  background: #FAFE13;
+  border-radius: rem(3px);
+  padding: rem(12px 20px);
+  font-weight: 700;
+  font-size: rem(14px);
+  line-height: rem(16px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  min-width: rem(156px);
 }
