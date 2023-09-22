@@ -3,6 +3,7 @@
 
 .tableBigSmall {
   background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
+  overflow-x: auto;
 }
 
 .header {
@@ -13,6 +14,11 @@
   grid-template-columns: rem(100px) rem(300px) rem(100px) rem(115px) 1fr rem(210px);
   @media(max-width: 1199.98px) {
     grid-template-columns: rem(60px) rem(105px) rem(100px) rem(115px) 1fr rem(140px);
+    width: fit-content;
+  }
+  @media(max-width: 767.98px) {
+    grid-template-columns: rem(40px) rem(90px) rem(70px) rem(80px) 1fr rem(140px);
+
   }
 }
 
@@ -29,12 +35,19 @@
     border-right: 1px solid rgba(255, 255, 255, 0.3);
   }
 
+  @media(max-width: 767.98px) {
+    font-size: rem(14px);
+    padding-left: 0 !important;
+  }
 
   &:nth-child(1) {
     //width: rem(100px);
     border-right: none;
     @media(max-width: 1199.98px) {
       //width: rem(80px);
+    }
+    @media(max-width: 767.98px){
+      width: rem(40px);
     }
   }
 
@@ -62,7 +75,7 @@
     padding-right: rem(55px);
     position: relative;
     text-align: right;
-    @media(max-width:1199.98px){
+    @media(max-width: 1199.98px) {
       justify-content: flex-end;
     }
   }
@@ -119,28 +132,42 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: grid;
   grid-template-columns: rem(100px) rem(300px) rem(100px) rem(115px) 1fr rem(210px);
-  @media(max-width: 1198.98px){
+  @media(max-width: 1198.98px) {
     grid-template-columns: rem(60px) rem(105px) rem(100px) rem(115px) 1fr rem(140px);
     align-items: center;
+    width: fit-content;
+  }
+  @media(max-width: 767.98px) {
+    grid-template-columns: rem(40px) rem(90px) rem(70px) rem(80px) 1fr rem(140px);
   }
 }
 
 .cell {
   font-weight: 400;
   font-size: rem(18px);
-  line-height: rem(21px);
+  line-height: 1.1666;
   color: #fff;
   height: 100%;
   padding: rem(19px 5px 18px);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
-@media(max-width: 1199.98px){
-  padding: rem(12px 5px 4px);
-}
+  @media(max-width: 1199.98px) {
+    padding: rem(12px 5px 4px);
+  }
+  @media(max-width: 767.98px) {
+    font-size: rem(14px);
+    padding-left: 0 !important;
+    border-right: none;
+    padding-right: 10px !important;
+  }
+
   &:nth-child(1) {
     //width: rem(100px);
     border-right: none;
     @media(max-width: 1199px) {
       width: rem(80px);
+    }
+    @media(max-width: 767.98px){
+      width: rem(40px);
     }
   }
 
@@ -172,6 +199,8 @@
     position: relative;
     padding-right: rem(20px);
     padding-left: rem(20px);
+    min-width: rem(340px);
+
   }
 
   &:nth-child(6) {
@@ -179,12 +208,18 @@
     border-right: none;
     padding-left: rem(15px);
     padding-right: rem(15px);
+    @media(max-width:767.98px){
+      //text-align: right;
+    }
   }
 }
 
 .percentOne {
   padding-right: rem(10px);
   width: rem(80px);
+  @media(max-width:767.98px){
+    width: auto;
+  }
 }
 
 .percent {

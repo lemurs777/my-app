@@ -1,110 +1,210 @@
 @import "sass-rem";
 
 .title {
-	font-weight: 400;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	color: #000;
-	padding: rem(13px 20px);
-	background: #F7FF13;
-	text-align: center;
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  color: #000;
+  padding: rem(13px 20px);
+  background: #F7FF13;
+  text-align: center;
 }
 
 .table {
-	width: 100%;
+  width: 100%;
+  @media(max-width: 1199.98px) {
+    overflow-x: auto;
+  }
 }
 
 .header {
-	display: flex;
-	background: rgba(255, 255, 255, .14);
-	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-	padding: rem(0 20px);
+  display: flex;
+  background: rgba(255, 255, 255, .14);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding: rem(0 20px);
+  @media(max-width: 1199.98px) {
+    width: fit-content;
+    padding: rem(0 30px);
+    max-width: rem(1350px);
+  }
+  @media(max-width: 767.98px) {
+    padding: rem(0 7px);
+    max-width: rem(650px);
+  }
 }
 
 .headerCell {
-	padding: rem(18px 10px 19px);
-	font-weight: 400;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	color: #fff;
+  padding: rem(18px 10px 19px);
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: 1.1666;
+  color: #fff;
+  @media(max-width: 1199.98px) {
+    padding-left: 0 !important;
+  }
+  @media(max-width: 767.98px) {
+    padding: rem(20px 7px 19px);
+  }
+  @media(max-width: 767.98px) {
+    font-size: rem(16px);
 
-	&:nth-child(1) {
-		padding-left: rem(45px);
-		width: rem(340px);
-	}
+  }
 
-	&:nth-child(2) {
-		width: rem(200px);
-	}
+  &:nth-child(1) {
+    padding-left: rem(45px);
+    width: rem(340px);
+    @media(max-width: 1199.98px) {
+      flex: 0 0 180px;
+    }
+    @media(max-width: 767.98px) {
+      flex: 0 0 70px;
+    }
+  }
 
-	&:nth-child(3) {
-		text-align: center;
-		width: rem(950px);
-	}
+  &:nth-child(2) {
+    width: rem(200px);
+    @media(max-width: 1199.98px) {
+      flex: 0 0 350px;
+    }
+    @media(max-width: 767.98px) {
+    flex: 0 0 rem(110px);
+    }
+  }
 
-	&:nth-child(4) {
-		width: rem(330px);
-		padding-right: 0;
-	}
+  &:nth-child(3) {
+    text-align: center;
+    width: rem(950px);
+    @media(max-width: 1199.98px) {
+      flex: 0 0 rem(440px);
+      text-align: left;
+      padding-left: rem(60px) !important;
+    }
+    @media(max-width: 767.98px) {
+    flex: 0 0 210px;
+    }
+  }
+
+  &:nth-child(4) {
+    width: rem(330px);
+    padding-right: 0;
+
+  }
 }
 
 .row {
-	display: flex;
-	background: rgba(255, 255, 255, .07);
-	padding: rem(0 20px);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  //background: rgba(255, 255, 255, .07);
+  padding: rem(0 20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), rgba(255, 255, 255, 0.07);
+  @media(max-width: 1199.98px) {
+    padding: rem(0 30px);
+    width: fit-content;
+    max-width: rem(1350px);
+  }
+  @media(max-width: 767.98px) {
+    padding: rem(0 7px);
+    max-width: rem(650px);
+  }
 }
 
 .cell {
-	padding: rem(18px 10px 17px);
-	font-weight: 400;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	color: #fff;
+  padding: rem(18px 10px 17px);
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: 1.15;
+  color: #fff;
+  @media(max-width: 1199.98px) {
+    font-size: rem(18px);
+    padding-left: 0 !important;
+  }
+  @media(max-width: 767.98px) {
+    font-size: rem(12px);
+  }
 
-	&:nth-child(1) {
-		padding-left: rem(45px);
-		width: rem(340px);
-	}
+  &:nth-child(1) {
+    padding-left: rem(45px);
+    width: rem(340px);
+    @media(max-width: 1199.98px) {
+      flex: 0 0 180px;
+    }
+    @media(max-width: 767.98px) {
+      flex: 0 0 70px;
+    }
+  }
 
-	&:nth-child(2) {
-		width: rem(200px);
-	}
+  &:nth-child(2) {
+    width: rem(200px);
+    @media(max-width: 1199.98px) {
+      flex: 0 0 105px;
+    }
+    @media(max-width: 767.98px) {
+      flex: 0 0 70px;
+    }
+  }
 
-	&:nth-child(3) {
-		display: flex;
-		gap: rem(20px);
-		width: rem(950px);
-	}
+  &:nth-child(3) {
+    display: flex;
+    gap: rem(20px);
+    width: rem(950px);
+    @media(max-width: 1199.98px) {
+      flex: 0 0 rem(680px);
+      width: 680px;
+    }
+    @media(max-width: 767.98px) {
+      flex: 0 0 rem(225px);
+      width: rem(250px);
+    }
+  }
 
-	&:nth-child(4) {
-		width: rem(330px);
-		padding-right: 0;
-	}
+  &:nth-child(4) {
+    width: rem(330px);
+    padding-right: 0;
+
+  }
 }
 
 .cellText {
-	
-	&:nth-child(1) {
-		width: rem(280px);
-	}
 
-	&:nth-child(2) {
-		flex-grow: 1;
-		text-align: center;
-	}
+  &:nth-child(1) {
+    width: rem(280px);
+    @media(max-width: 1199.98px) {
+      flex: 0 0 rem(200px);
+    }
+    @media(max-width: 767.98px) {
+      flex: 0 0 rem(65px);
+    }
+  }
 
-	&:nth-child(3) {
-		width: rem(280px);
-	}
+  &:nth-child(2) {
+    flex-grow: 1;
+    text-align: center;
+    @media(max-width: 1199.98px) {
+      flex: 0 0 rem(200px);
+    }
+    @media(max-width: 767.98px) {
+      flex: 0 0 rem(65px);
+    }
+  }
 
-	&.cellTextAccent {
-		color: #F7FF13;
-	}
+  &:nth-child(3) {
+    width: rem(280px);
+    //text-align: left;
+    @media(max-width: 1199.98px) {
+      flex: 0 0 rem(200px);
+    }
+    @media(max-width: 767.98px) {
+      flex: 0 0 rem(65px);
+    }
+  }
+
+  &.cellTextAccent {
+    color: #F7FF13;
+  }
 }
 
 .cellTextSmall {
-	&.cellTextSmallAccent {
-		color: #F7FF13;
-	}
+  &.cellTextSmallAccent {
+    color: #F7FF13;
+  }
 }

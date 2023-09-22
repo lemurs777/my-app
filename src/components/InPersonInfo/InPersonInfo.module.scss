@@ -1,229 +1,240 @@
 @import "sass-rem";
 
 .title {
-    font-weight: 400;
-    font-size: rem(20px);
-    line-height: rem(23px);
-    color: #000;
-    padding: rem(13px 20px);
-    background: #F7FF13;
-    text-align: center;
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  color: #000;
+  padding: rem(13px 20px);
+  background: #F7FF13;
+  text-align: center;
 }
 
 .info {
-    width: 100%;
+  width: 100%;
 }
 
 .header {
-    padding: rem(17px 20px);
-    display: flex;
-    gap: rem(20px);
-    background: rgba(255, 255, 255, 0.14);
-    color: #fff;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding: rem(17px 20px);
+  display: flex;
+  gap: rem(20px);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .headerName {
-    font-weight: 400;
-    font-size: rem(20px);
-    line-height: rem(23px);
-    text-align: center;
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  text-align: center;
 
-    &:nth-child(1) {
-        width: rem(115px);
-    }
+  &:nth-child(1) {
+    width: rem(115px);
+  }
 
-    &:nth-child(2) {
-        width: rem(400px);
-    }
-    &:nth-child(3) {
-        width: rem(720px);
-    }
-    &:nth-child(4) {
-        width: rem(525px);
-    }
+  &:nth-child(2) {
+    width: rem(400px);
+  }
+
+  &:nth-child(3) {
+    width: rem(720px);
+  }
+
+  &:nth-child(4) {
+    width: rem(525px);
+  }
 }
 
 .content {
-    padding: rem(20px 20px 45px);
-    background: #121212;
-    display: flex;
-    gap: rem(20px);
-    position: relative;
+  padding: rem(20px 20px 45px);
+  background: #121212;
+  display: flex;
+  gap: rem(20px);
+  position: relative;
+  @media(max-width: 1199.98px) {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), rgba(255, 255, 255, 0.07);
+    padding: rem(12px 11px);
+
+  }
 }
 
 .contentNames {
-    position: absolute;
-    top: rem(10px);
-    right: rem(20px);
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    gap: rem(17px);
+  position: absolute;
+  top: rem(10px);
+  right: rem(20px);
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: rem(17px);
 }
 
 .contentName {
-    font-size: rem(20px);
-    line-height: rem(23px);
-    font-weight: 500;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &:nth-child(1),
-    &:nth-child(3) {
-        width: rem(210px);
-    }
+  &:nth-child(1),
+  &:nth-child(3) {
+    width: rem(210px);
+  }
 
-    &:nth-child(2) {
-        width: rem(80px);
-    }
+  &:nth-child(2) {
+    width: rem(80px);
+  }
 }
 
 .colOne {
-    width: rem(115px);
+  width: rem(115px);
 
-    &.colOneRight {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding-top: rem(43px);
-    }
+  &.colOneRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: rem(43px);
+  }
 }
 
 .colOneDate {
-    font-weight: 400;
-    font-size: rem(20px);
-    line-height: rem(23px);
-    color: #fff;
-    text-align: center;
-    margin-bottom: rem(20px);
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: 1.15;
+  color: #fff;
+  text-align: center;
+  margin-bottom: rem(20px);
+  @media(max-width: 1199.98px) {
+    font-size: rem(16px);
+  }
 }
 
 .colOneName {
-    font-weight: 500;
-    font-size: rem(20px);
-    line-height: rem(23px);
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: rem(10px);
+  font-weight: 500;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: rem(10px);
 }
 
 .colOneMiniTable {
-    position: relative;
-    width: rem(80px);
-    height: rem(37px);
-    background: url("../../assets/images/svg/statistics-mini-table-bg.svg") no-repeat 0% 50%;
-    background-size: rem(20px 37px);
-    margin-bottom: rem(10px);
-    &.colOneMiniTableRight {
-        background-position: 100% 50%;
-    }
+  position: relative;
+  width: rem(80px);
+  height: rem(37px);
+  background: url("../../assets/images/svg/statistics-mini-table-bg.svg") no-repeat 0% 50%;
+  background-size: rem(20px 37px);
+  margin-bottom: rem(10px);
+
+  &.colOneMiniTableRight {
+    background-position: 100% 50%;
+  }
 }
 
 .colOneMiniTableNum {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transform: translateY(50%);
+  font-weight: 500;
+  font-size: rem(14px);
+  line-height: rem(16px);
+  text-transform: uppercase;
+  color: #F7FF13;
+  padding-left: rem(46px);
+
+  &:before {
+    content: "";
     position: absolute;
+    top: 50%;
     left: 0;
-    width: 100%;
-    transform: translateY(50%);
-    font-weight: 500;
-    font-size: rem(14px);
-    line-height: rem(16px);
-    text-transform: uppercase;
-    color: #F7FF13;
-    padding-left: rem(46px);
+    width: rem(42px);
+    height: rem(1px);
+    background: url("../../assets/images/svg/statistics-mini-table-line.svg") no-repeat 50% 50% /cover;
+  }
+
+  &.colOneMiniTableNumRight {
+    left: auto;
+    right: 0;
+    padding-left: 0;
+    padding-right: rem(46px);
+    text-align: right;
 
     &:before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: rem(42px);
-        height: rem(1px);
-        background: url("../../assets/images/svg/statistics-mini-table-line.svg") no-repeat 50% 50% /cover;
+      left: auto;
+      right: 0;
     }
-
-    &.colOneMiniTableNumRight {
-        left: auto;
-        right: 0;
-        padding-left: 0;
-        padding-right: rem(46px);
-        text-align: right;
-
-        &:before {
-            left: auto;
-            right: 0;
-        }
-    }
+  }
 }
 
 .colOneInfo {
-    font-size: rem(16px);
-    line-height: rem(19px);
-    text-transform: uppercase;
-    color: #fff;
+  font-size: rem(16px);
+  line-height: 1.1875;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .colTwo {
-    width: rem(400px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: rem(400px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .colTwoTitle {
-    font-weight: 500;
-    font-size: rem(20px);
-    line-height: rem(23px);
-    color: #fff;
-    margin-bottom: rem(20px);
-    height: rem(23px);
+  font-weight: 500;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  color: #fff;
+  margin-bottom: rem(20px);
+  height: rem(23px);
 }
 
 .colTwoInfoWrapper,
 .colThreeInfoWrapper {
-    position: relative;
-    width: rem(200px);
-    height: rem(200px);
-    margin-bottom: rem(80px);
+  position: relative;
+  width: rem(200px);
+  height: rem(200px);
+  margin-bottom: rem(80px);
 }
 
 .colThreeInfoWrapper {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .colTwoInfoContent,
 .colThreeInfoContent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: rem(10px);
-    z-index: 2;
-    color: #F7FF13;
-    padding-bottom: rem(15px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(10px);
+  z-index: 2;
+  color: #F7FF13;
+  padding-bottom: rem(15px);
 }
 
 .colTwoInfoContentNum,
-.colThreeInfoContentNum  {
-    font-weight: 400;
-    font-size: rem(48px);
-    line-height: rem(56px);
-    text-decoration-line: underline;
+.colThreeInfoContentNum {
+  font-weight: 400;
+  font-size: rem(48px);
+  line-height: rem(56px);
+  text-decoration-line: underline;
 }
 
 .colTwoInfoContentText,
 .colThreeInfoContentText {
-    font-weight: 400;
-    font-size: rem(20px);
-    line-height: rem(23px);
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: rem(23px);
 }
 
 .colTwoInfoChart,
@@ -232,143 +243,143 @@
 .colThreeInfoCircle,
 .colThreeInfoCircleOne,
 .colThreeInfoCircleTwo {
-    position: absolute;
-    top: rem(-8px);
-    left: rem(-8px);
-    right: rem(-8px);
-    bottom: rem(-8px);
-    z-index: 1;
+  position: absolute;
+  top: rem(-8px);
+  left: rem(-8px);
+  right: rem(-8px);
+  bottom: rem(-8px);
+  z-index: 1;
 }
 
 .colTwoInfoCircleOne {
-    stroke: #fff;
-      fill: none;
-      stroke-width: rem(.5px);
+  stroke: #fff;
+  fill: none;
+  stroke-width: rem(.5px);
 }
 
 .colThreeInfoCircleOne {
-    stroke: #1D7E3A;
-      fill: none;
-      stroke-width: rem(2px);
+  stroke: #1D7E3A;
+  fill: none;
+  stroke-width: rem(2px);
 }
 
 .colTwoInfoCircleTwo {
-    stroke: #1D7E3A;
-      fill: none;
-      stroke-width: rem(2px);
+  stroke: #1D7E3A;
+  fill: none;
+  stroke-width: rem(2px);
 }
 
 .colThreeInfoCircleTwo {
-    stroke: #52B205;
-      fill: none;
-      stroke-width: rem(2px);
+  stroke: #52B205;
+  fill: none;
+  stroke-width: rem(2px);
 }
 
 .colThreeInfoCircleTwoMore {
-    stroke: #121212;
-    fill: none;
-    stroke-width: rem(3px);
-    transform-origin: 50% 50%;
-    transform: rotate(-3.34deg);
+  stroke: #121212;
+  fill: none;
+  stroke-width: rem(3px);
+  transform-origin: 50% 50%;
+  transform: rotate(-3.34deg);
 }
 
 .colTwoName {
-    font-weight: 500;
-    font-size: rem(32px);
-    line-height: rem(38px);
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: rem(10px);
+  font-weight: 500;
+  font-size: rem(32px);
+  line-height: rem(38px);
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: rem(10px);
 }
 
 .forms {
-    display: flex;
-    gap: rem(10px);
-    overflow: hidden;
-    padding-left: rem(15px);
-    background: url(../../assets/images/svg/statistics-arrow.svg) no-repeat 0% 50%;
-    background-size: rem(300px) rem(16px);
+  display: flex;
+  gap: rem(10px);
+  overflow: hidden;
+  padding-left: rem(15px);
+  background: url(../../assets/images/svg/statistics-arrow.svg) no-repeat 0% 50%;
+  background-size: rem(300px) rem(16px);
 }
 
 .form {
-    width: rem(30px);
-    height: rem(30px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
+  width: rem(30px);
+  height: rem(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
 
-    &.formWin {
-        color: #000;
-        background: #F7FF13;
-    }
+  &.formWin {
+    color: #000;
+    background: #F7FF13;
+  }
 
-    &.formLoss {
-        color: #fff;
-        background: #1D7E3A;
-    }
+  &.formLoss {
+    color: #fff;
+    background: #1D7E3A;
+  }
 }
 
 .colThree {
-    display: flex;
-    gap: rem(20px);
-    width: rem(720px);
+  display: flex;
+  gap: rem(20px);
+  width: rem(720px);
 }
 
 .colThreeAbout {
-    padding-top: rem(60px);
-    width: rem(200px);
+  padding-top: rem(60px);
+  width: rem(200px);
 }
 
 .colThreeAboutWin {
-    width: rem(180px);
-    padding: rem(20px 40px);
-    text-align: center;
-    font-weight: 400;
-    font-size: rem(24px);
-    line-height: rem(28px);
-    color: #111;
-    background: #F7FF13;
-    margin-bottom: rem(107px);
+  width: rem(180px);
+  padding: rem(20px 40px);
+  text-align: center;
+  font-weight: 400;
+  font-size: rem(24px);
+  line-height: rem(28px);
+  color: #111;
+  background: #F7FF13;
+  margin-bottom: rem(107px);
 }
 
 .colThreeAboutList {
-    display: flex;
-    flex-direction: column;
-    gap: rem(24px);
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: rem(24px);
+  color: #fff;
 }
 
 .colThreeAboutItem {
-    width: 100%;
+  width: 100%;
 }
 
 .colThreeAboutItemText {
-    font-weight: 400;
-    font-size: rem(20px);
-    line-height: rem(23px);
-    margin-bottom: rem(10px);
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  margin-bottom: rem(10px);
 }
 
 .colThreeAboutItemCount {
-    font-weight: 500;
-    font-size: rem(20px);
-    line-height: rem(23px);
+  font-weight: 500;
+  font-size: rem(20px);
+  line-height: rem(23px);
 }
 
 .colThreeInfo {
-    width: rem(280px);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: rem(60px);
+  width: rem(280px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(60px);
 }
 
 .colThreeInfoText {
-    font-weight: 500;
-    font-size: rem(20px);
-    line-height: rem(23px);
-    color: #fff;
-    text-align: center;
+  font-weight: 500;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  color: #fff;
+  text-align: center;
 }

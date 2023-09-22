@@ -1,58 +1,71 @@
 @import "sass-rem";
 
 .statisticsInPerson {
-	width: 100%;
+  width: 100%;
 }
 
 .title {
-	font-weight: 400;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	color: #000;
-	padding: rem(13px 20px);
-	background: #F7FF13;
-	text-align: center;
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  color: #000;
+  padding: rem(13px 20px);
+  background: #F7FF13;
+  text-align: center;
+
 }
 
 .wrapper {
-	padding: rem(25px);
-	width: 100%;
+  padding: rem(25px);
+  width: 100%;
+  @media(max-width: 1199.98px) {
+    padding: rem(25px 0);
+  }
 }
 
 .mainWrapper {
-	margin-bottom: rem(24px);
+  margin-bottom: rem(24px);
 }
 
 .infoWrapper {
-	margin-bottom: rem(58px);
+  margin-bottom: rem(58px);
 }
 
 .nextWrapper {
-	margin-bottom: rem(40px);
+  margin-bottom: rem(40px);
+  @media(max-width: 767.98px) {
+    margin-bottom: rem(24px);
+  }
 }
 
 .scoreWrapper {
-	margin-bottom: rem(40px);
+  margin-bottom: rem(40px);
+  @media(max-width: 1199.98px) {
+    margin-bottom: rem(34px);
+  }
+  @media(max-width: 767.98px) {
+    margin-bottom: rem(24px);
+  }
 }
 
 .posWrapper {
-	margin-bottom: rem(40px);
+  margin-bottom: rem(40px);
 }
 
 .tableWrapper {
-	max-width: rem(1346px);
-	margin: 0 auto rem(40px);
+  max-width: rem(1346px);
+  margin: 0 auto rem(40px);
 }
 
 .twoTableColumnsWrapper {
-	max-width: rem(1346px);
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: rem(10px);
-	margin: 0 auto rem(40px);
+  max-width: rem(1346px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(10px);
+  margin: 0 auto rem(40px);
 }
 
 .tableBottomWrapper {
-	max-width: rem(1346px);
-	margin: 0 auto;
+  max-width: rem(1346px);
+  margin: 0 auto;
 }
