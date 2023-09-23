@@ -280,6 +280,10 @@ main {
     display: block;
     overflow-y: auto;
     padding: rem(60px 20px 20px);
+    @media(max-width: 767.98px){
+      background: #191919;
+      padding: rem(30px 16px);
+    }
   }
 
   &--requests {
@@ -426,4 +430,14 @@ button {
   @media(min-width: 767.98px) {
     display: none !important;
   }
+}
+.MuiButtonBase-root,
+.MuiAccordionDetails-root{
+  padding: 0 !important;
+}
+.MuiAccordionDetails-root{
+  padding-top: rem(16px) !important;
+}
+.MuiAccordionSummary-content{
+  margin: 0 !important;
 }

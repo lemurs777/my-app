@@ -1,52 +1,58 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import {Link} from 'react-router-dom';
+import React, {useState} from 'react';
 import clsx from 'clsx';
 
-import { FaqListData } from './types';
+
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+
+import {FaqListData} from './types';
 
 import styles from './FaqBigList.module.scss';
 
 export function createContent(content: string) {
-	return {__html: content};
+  return {__html: content};
 }
 
-function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
+function FaqBigList({infoFaqList}: { infoFaqList: FaqListData }) {
 
-	const [isCategory, setIsCategory] = useState(infoFaqList.activeCategory);
-	const [showContent, setShowContent] = useState(infoFaqList.activeIndex);
+  const [isCategory, setIsCategory] = useState(infoFaqList.activeCategory);
+  const [showContent, setShowContent] = useState(infoFaqList.activeIndex);
 
-	const updateCategory = (category: string) => {
-		setIsCategory((currentValue) => (currentValue = category));
-	};
+  const updateCategory = (category: string) => {
+    setIsCategory((currentValue) => (currentValue = category));
+  };
 
-	const updateContent = (index: number) => {
-		setShowContent((currentIndex) => 
-			(currentIndex === -1 && currentIndex !== index)
-			? currentIndex = index
-			: (currentIndex === index) ? currentIndex = -1 :  currentIndex = index
-		);
-	}
+  const updateContent = (index: number) => {
+    setShowContent((currentIndex) =>
+      (currentIndex === -1 && currentIndex !== index)
+        ? currentIndex = index
+        : (currentIndex === index) ? currentIndex = -1 : currentIndex = index
+    );
+  }
 
-	const categoryList = [
-		{
-			name: 'Ставки',
-			category: 'bet',
-		},
-		{
-			name: 'Технические вопросы',
-			category: 'technical',
-		},
-		{
-			name: 'Личные данные',
-			category: 'personal',
-		},
-	];
+  const categoryList = [
+    {
+      name: 'Ставки',
+      category: 'bet',
+    },
+    {
+      name: 'Технические вопросы',
+      category: 'technical',
+    },
+    {
+      name: 'Личные данные',
+      category: 'personal',
+    },
+  ];
 
-	const faqList = [
-		{
-			question: 'Как сделать ставку?',
-			category: 'bet',
-			content: `
+  const faqList = [
+    {
+      question: 'Как сделать ставку?',
+      category: 'bet',
+      content: `
 			<h2>Как сделать ставку?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -84,11 +90,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'На что можно ставить в PARI?',
-			category: 'bet',
-			content: `
+    },
+    {
+      question: 'На что можно ставить в PARI?',
+      category: 'bet',
+      content: `
 			<h2>На что можно ставить в PARI?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -126,11 +132,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Как выбирать тип ставки?',
-			category: 'bet',
-			content: `
+    },
+    {
+      question: 'Как выбирать тип ставки?',
+      category: 'bet',
+      content: `
 			<h2>Как выбирать тип ставки?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -168,11 +174,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Как продать ставку?',
-			category: 'bet',
-			content: `
+    },
+    {
+      question: 'Как продать ставку?',
+      category: 'bet',
+      content: `
 			<h2>Как продать ставку?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -210,11 +216,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Можно ли отменить ставку?',
-			category: 'bet',
-			content: `
+    },
+    {
+      question: 'Можно ли отменить ставку?',
+      category: 'bet',
+      content: `
 			<h2>Можно ли отменить ставку?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -252,11 +258,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Каков минимальный и максимальный размер ставки?',
-			category: 'bet',
-			content: `
+    },
+    {
+      question: 'Каков минимальный и максимальный размер ставки?',
+      category: 'bet',
+      content: `
 			<h2>Каков минимальный и максимальный размер ставки?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -294,11 +300,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Как задать технический вопрос 1?',
-			category: 'technical',
-			content: `
+    },
+    {
+      question: 'Как задать технический вопрос 1?',
+      category: 'technical',
+      content: `
 			<h2>Как задать технический вопрос 1?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -336,11 +342,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Как задать технический вопрос 2?',
-			category: 'technical',
-			content: `
+    },
+    {
+      question: 'Как задать технический вопрос 2?',
+      category: 'technical',
+      content: `
 			<h2>Как задать технический вопрос 2?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -378,11 +384,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Как задать технический вопрос 3?',
-			category: 'technical',
-			content: `
+    },
+    {
+      question: 'Как задать технический вопрос 3?',
+      category: 'technical',
+      content: `
 			<h2>Как задать технический вопрос 3?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -420,11 +426,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Как изменить личные данные 1?',
-			category: 'personal',
-			content: `
+    },
+    {
+      question: 'Как изменить личные данные 1?',
+      category: 'personal',
+      content: `
 			<h2>Как изменить личные данные 1?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -462,11 +468,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Как изменить личные данные 2?',
-			category: 'personal',
-			content: `
+    },
+    {
+      question: 'Как изменить личные данные 2?',
+      category: 'personal',
+      content: `
 			<h2>Как изменить личные данные 2?</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -504,11 +510,11 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-		{
-			question: 'Как изменить личные данные 3?',
-			category: 'personal',
-			content: `
+    },
+    {
+      question: 'Как изменить личные данные 3?',
+      category: 'personal',
+      content: `
 			<h2>Как изменить личные данные 3?'</h2>
 			<ol>
 				<li>Зарегистрируйся на сайте. Понадобятся твои паспортные данные и ИНН.</li>
@@ -546,58 +552,92 @@ function FaqBigList({ infoFaqList } : { infoFaqList: FaqListData }) {
 				<li>Введи сумму пари.</li>
 				<li>Нажми «Заключить пари».</li>
 			</ol>`,
-		},
-	];
+    },
+  ];
+  const [expanded, setExpanded] = useState<string | false>(false);
 
-	return (
-	<div className={styles.faqBigList}>
-		<label className={styles.searchLabel}>
-			<input className={styles.search} type="text" placeholder="Поиск по вопросам"/>
-			<svg className={styles.searchIcon} width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path className={styles.searchIconPath} d="M15.7 14.3L11.5 10.1C11.3 9.9 11 9.8 10.7 9.8C11.5 8.8 12 7.4 12 6C12 2.7 9.3 0 6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C7.4 12 8.8 11.5 9.8 10.6C9.8 10.9 9.8 11.2 10.1 11.4L14.3 15.6C14.5 15.8 14.8 15.9 15 15.9C15.2 15.9 15.5 15.8 15.7 15.6C16.1 15.3 16.1 14.7 15.7 14.3ZM6 10.5C3.5 10.5 1.5 8.5 1.5 6C1.5 3.5 3.5 1.5 6 1.5C8.5 1.5 10.5 3.5 10.5 6C10.5 8.5 8.5 10.5 6 10.5Z" fill="#898989"/>
-			</svg>
-		</label>
-		<div className={styles.mainNav}>
-			<h1 className={styles.mainNavTitle}>Вопрос-ответ</h1>
-			<Link className={styles.mainNavLink} to="/sitemap">Задать вопрос</Link>
-		</div>
-		<ul className={styles.filters}>
-			{categoryList.map((categoryItem, index) =>( 
-				<li key={index} className={styles.filter}>
-					<button className={clsx(
-						styles.filterBtn,
-						{[styles.filterBtnActive]: categoryItem.category === isCategory}
-					)} onClick={() => updateCategory(categoryItem.category)}>{categoryItem.name}</button>
-				</li>
-			))}
-		</ul>
-		<div className={styles.wrapper}>
-			<ul className={styles.list}>
-				{faqList.map((faqItem, index) => (faqItem.category === isCategory) ? ( 
-					<li key={index}className={styles.item}>
-						<button className={clsx(
-							styles.itemBtn,
-							{[styles.itemBtnActive] : index === showContent}
-						)} onClick={() => updateContent(index)}>
-							<div className={styles.itemBtnTitle}>{faqItem.question}</div>
-							<div className={styles.itemBtnIcon}></div>
-						</button>
-					</li>
-					) : null
-				)}
-			</ul>
-			{(showContent !== -1) ? 
-				<div className={styles.contentWrapper}> 
-					{faqList.map((faqItem, index) => (index === showContent) ? ( 
-						<div key={index} className={styles.content} dangerouslySetInnerHTML={createContent(faqItem.content)}></div>
-					) : null
-					)}
-				</div> 
-				: null
-			}
-		</div>
-	</div>
-	);
+  const handleChange =
+    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
+  return (
+    <div className={styles.faqBigList}>
+      <label className={styles.searchLabel}>
+        <input className={styles.search} type="text" placeholder="Поиск по вопросам"/>
+        <svg className={styles.searchIcon} width="16" height="16" viewBox="0 0 16 16" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path className={styles.searchIconPath}
+                d="M15.7 14.3L11.5 10.1C11.3 9.9 11 9.8 10.7 9.8C11.5 8.8 12 7.4 12 6C12 2.7 9.3 0 6 0C2.7 0 0 2.7 0 6C0 9.3 2.7 12 6 12C7.4 12 8.8 11.5 9.8 10.6C9.8 10.9 9.8 11.2 10.1 11.4L14.3 15.6C14.5 15.8 14.8 15.9 15 15.9C15.2 15.9 15.5 15.8 15.7 15.6C16.1 15.3 16.1 14.7 15.7 14.3ZM6 10.5C3.5 10.5 1.5 8.5 1.5 6C1.5 3.5 3.5 1.5 6 1.5C8.5 1.5 10.5 3.5 10.5 6C10.5 8.5 8.5 10.5 6 10.5Z"
+                fill="#898989"/>
+        </svg>
+      </label>
+      <div className={styles.mainNav}>
+        <h1 className={styles.mainNavTitle}>Вопрос-ответ</h1>
+        <Link className={styles.mainNavLink} to="/sitemap">Задать вопрос</Link>
+      </div>
+      <ul className={styles.filters}>
+        {categoryList.map((categoryItem, index) => (
+          <li key={index} className={styles.filter}>
+            <button className={clsx(
+              styles.filterBtn,
+              {[styles.filterBtnActive]: categoryItem.category === isCategory}
+            )} onClick={() => updateCategory(categoryItem.category)}>{categoryItem.name}</button>
+          </li>
+        ))}
+      </ul>
+      <div className={clsx(styles.wrapper, 'desktop')}>
+        <ul className={styles.list}>
+          {faqList.map((faqItem, index) => (faqItem.category === isCategory) ? (
+              <li key={index} className={styles.item}>
+                <button className={clsx(
+                  styles.itemBtn,
+                  {[styles.itemBtnActive]: index === showContent}
+                )} onClick={() => updateContent(index)}>
+                  <div className={styles.itemBtnTitle}>{faqItem.question}</div>
+                  <div className={styles.itemBtnIcon}></div>
+                </button>
+              </li>
+            ) : null
+          )}
+        </ul>
+        {(showContent !== -1) ?
+          <div className={styles.contentWrapper}>
+            {faqList.map((faqItem, index) => (index === showContent) ? (
+                <div key={index} className={styles.content}
+                     dangerouslySetInnerHTML={createContent(faqItem.content)}></div>
+              ) : null
+            )}
+          </div>
+          : null
+        }
+      </div>
+      <div className={styles.list}>
+        {faqList.map((faqItem, index) => (
+          <Accordion key={index} className={clsx(styles.accordion, 'mobile')}
+                     expanded={expanded === faqItem.question} onChange={handleChange(faqItem.question)}
+          >
+            <AccordionSummary
+              className={styles.itemBtnTitle}
+              aria-controls="panel1a-content"
+              id={faqItem.question}
+            >
+              <div className={styles.itemBtn}>
+
+                {faqItem.question}
+                <div className={styles.itemBtnIcon}></div>
+              </div>
+            </AccordionSummary>
+            <AccordionDetails
+              className={styles.content}
+              dangerouslySetInnerHTML={createContent(faqItem.content)}
+            >
+
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default FaqBigList;
