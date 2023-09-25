@@ -1,57 +1,89 @@
 @import "sass-rem";
 
 .limits {
-	padding: rem(10px 10px 30px 20px);
+  @media(min-width: 1199.98px) {
+
+    padding: rem(10px 10px 30px 20px);
+  }
+  @media(max-width: 767.98px) {
+    padding: rem(14px 12px);
+  }
 }
 
 .title {
-	font-weight: 500;
-	font-size: rem(24px);
-	line-height: rem(28px);
-	color: #fff;
-	margin-bottom: rem(40px);
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: 1.1666;
+  color: #fff;
+  margin-bottom: rem(40px);
+  @media(max-width: 1199.98px) {
+    margin-bottom: rem(24px);
+  }
+  @media(max-width: 767.98px) {
+    font-size: rem(20px);
+    margin-bottom: rem(10px);
+  }
 }
-	
+
 .tabList {
-	display: flex;
-	margin-bottom: rem(24px);
-	gap: rem(40px);
-	margin-bottom: rem(27px);
+  display: flex;
+  //margin-bottom: rem(24px);
+  margin-bottom: rem(27px);
+  gap: rem(40px);
+  @media(max-width: 1199.98px) {
+    gap: rem(14px);
+    justify-content: space-between;
+    margin-bottom: rem(15px);
+  }
 }
 
 .tabItemBtn {
-	font-weight: 500;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	color: #fff;
-	position: relative;
-	cursor: pointer;
-	
-	&:before {
-		content: "";
-		position: absolute;
-		bottom: rem(-5px);
-		left: 0;
-		right: 0;
-		height: rem(3px);
-		width: 100%;
-		transition: .3s;
-	}
+  font-weight: 500;
+  font-size: rem(20px);
+  line-height: 1.15;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  @media(max-width: 1199.98px) {
+    font-size: rem(18px);
+  }
+  @media(max-width: 767.98px) {
+    font-size: rem(12px);
+    text-align: center;
+  }
 
-	&:hover,
-	&.tabItemBtnActive {
-		&:before {
-			background: #fff;
-		}
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: rem(-5px);
+    left: 0;
+    right: 0;
+    height: rem(3px);
+    width: 100%;
+    transition: .3s;
+  }
+
+  &:hover,
+  &.tabItemBtnActive {
+    &:before {
+      background: #fff;
+    }
+  }
 }
 
 .tabContent {
-	background: #1B1B1B;
-	padding: rem(16px 20px 20px);
-	display: none;
+  background: #1B1B1B;
+  padding: rem(16px 20px 20px);
+  display: none;
+  @media(max-width: 1199.98px) {
+    padding: rem(20px 23px);
+  }
+  @media(max-width: 767.98px) {
+    padding: rem(10px 10px 178px);
+    position: relative;
+  }
 
-	&.tabContentActive {
-		display: block;
-	}
+  &.tabContentActive {
+    display: block;
+  }
 }

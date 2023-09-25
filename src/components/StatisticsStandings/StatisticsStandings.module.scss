@@ -6,6 +6,9 @@
 
 .wrapper {
 	padding: rem(25px);
+	@media(max-width: 1199.98px){
+		padding: rem(25px 0);
+	}
 }
 
 .mainWrapper {
@@ -16,11 +19,12 @@
 	padding: rem(14px 20px 13px);
 	font-weight: 500;
 	font-size: rem(20px);
-	line-height: rem(23px);
+	line-height: 1.15;
 	color: #000;
 	background: #F7FF13;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	text-align: center;
+
 }
 
 .tableWrapper {
@@ -34,4 +38,57 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: rem(10px);
+	@media(max-width: 767.98px){
+		display: block;
+	}
+}
+.tabs {
+
+	&__list {
+		display: flex;
+		background: #F7FF13;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: rem(8px);
+	}
+
+	&__btn {
+		//flex: 0 0 50%;
+		font-weight: 400;
+		font-size: rem(20px);
+		line-height: 1.15;
+		color: #000000;
+		text-align: center;
+		padding: rem(11px 13px 15px);
+		background: #F7FF13;
+		position: relative;
+
+		&:nth-child(1) {
+			text-align: left;
+		}
+
+		&:nth-child(2) {
+			text-align: right;
+		}
+
+		&::after {
+			opacity: 0;
+			content: "";
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% - 26px);
+			bottom: 0;
+			height: rem(6px);
+			background: #1D7E3A;
+			border-radius: 0.25rem;
+			transition: 0.3s;
+		}
+	}
+
+	&__btnActive {
+		&::after {
+			opacity: 1;
+		}
+	}
 }

@@ -9,6 +9,8 @@ import {
 import styles from './StatisticsStandings.module.scss';
 
 import arrTables from '../../data/dataStatisticsSeven';
+import clsx from "clsx";
+import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 
 function StatisticsStandings() {
 
@@ -50,9 +52,24 @@ function StatisticsStandings() {
 				<div className={styles.tableWrapper}>
 					<TableLeague data={dataLeagueTable}/>
 				</div>
-				<div className={styles.twoTableColumns}>
-					<TableNextPrevGames data={dataPrevTable} />
-					<TableNextPrevGames data={dataNextTable} />
+
+				<div className={clsx(styles.twoTableColumns, 'desktop')}>
+					<TableNextPrevGames data={dataPrevTable}/>
+					<TableNextPrevGames data={dataNextTable}/>
+				</div>
+				<div className={clsx(styles.twoTableColumns, 'mobile')}>
+					<Tabs className={clsx(styles.tabs,'tabsGame')}>
+						<TabList className={styles.tabs__list}>
+							<Tab className={styles.tabs__btn} selectedClassName={styles.tabs__btnActive} >Последние матчи</Tab>
+							<Tab className={styles.tabs__btn} selectedClassName={styles.tabs__btnActive}>Следующие матчи</Tab>
+						</TabList>
+						<TabPanel className={styles.tabs__panel}>
+							<TableNextPrevGames data={dataPrevTable}/>
+						</TabPanel>
+						<TabPanel className={styles.tabs__panel}>
+							<TableNextPrevGames data={dataNextTable}/>
+						</TabPanel>
+					</Tabs>
 				</div>
 				<PositionsChart data={PositionsChartData}/>
 			</div>

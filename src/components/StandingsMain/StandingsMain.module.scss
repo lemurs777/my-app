@@ -1,136 +1,192 @@
 @import "sass-rem";
 
 .filter {
-	display: flex;
-	justify-content: center;
-	gap: rem(40px);
-	padding: rem(15px 20px 14px);
-	background: rgba(247, 255, 19, 0.15);
-	margin-bottom: rem(24px);
-	font-weight: 400;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: rem(15px 40px);
+  padding: rem(15px 20px 14px);
+  background: rgba(247, 255, 19, 0.15);
+  margin-bottom: rem(24px);
+  font-weight: 400;
+  font-size: rem(20px);
+  line-height: 1.15;
+  color: #fff;
+  @media (max-width: 767.98px) {
+    padding: rem(15px 45px);
+    flex-direction: column;
+    font-size: rem(16px);
+
+  }
 }
 
 .filterName {
-	padding: rem(9px 20px);
-	border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: rem(9px 20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  @media(max-width: 767.98px) {
+    text-align: center;
+  }
 }
 
 .filterTeam {
-	padding: rem(9px 46px 9px 20px);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	cursor: pointer;
-	position: relative;
+  padding: rem(9px 46px 9px 20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  position: relative;
+  @media (max-width: 767.98px) {
+    width: fit-content;
+    margin: 0 auto;
 
-	&:before {
-		content: "";
-		position: absolute;
-		right: rem(15px);
-		top: 50%;
-		width: rem(16px);
-		height: rem(16px);
-		background: url("../../assets/images/svg/statistics-name-arrow.svg") no-repeat 50% 50% /contain;
-		transform: translateY(-50%);
-	}
+
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: rem(15px);
+    top: 50%;
+    width: rem(16px);
+    height: rem(16px);
+    background: url("../../assets/images/svg/statistics-name-arrow.svg") no-repeat 50% 50% /contain;
+    transform: translateY(-50%);
+  }
 }
 
 .tittle {
-	font-weight: 700;
-	font-size: rem(36px);
-	line-height: rem(42px);
-	color: #fff;
-	padding-bottom: rem(24px);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-	margin-bottom: rem(24px);
+  font-weight: 700;
+  font-size: rem(36px);
+  line-height: 1.166;
+  color: #fff;
+  padding-bottom: rem(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: rem(24px);
+  @media (max-width: 1199.98px) {
+    padding-left: rem(45px);
+  }
+  @media(max-width: 767.98px) {
+    font-size: rem(24px);
+    padding-left: rem(12px);
+    padding-bottom: rem(10px);
+  }
 }
 
 .info {
-	max-width: rem(1346px);
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+  max-width: rem(1346px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  @media (max-width: 1199.98px) {
+    max-width: rem(840px);
+    padding: rem(0 12px);
+  }
 }
 
 .infoGame {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: rem(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(10px);
+  @media (max-width: 767.98px) {
+    justify-content: center;
+  }
 }
 
 .infoTitle {
-	font-weight: 500;
-	font-size: rem(24px);
-	line-height: rem(28px);
-	text-transform: uppercase;
-	color: #fff;
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: rem(28px);
+  text-transform: uppercase;
+  color: #fff;
+  @media (max-width: 767.98px) {
+    font-size: rem(16px);
+  }
 }
 
 .forms {
-	display: flex;
-	gap: rem(10px);
-	overflow: hidden;
-	padding-left: rem(15px);
-	background: url(../../assets/images/svg/statistics-arrow.svg) no-repeat 0% 50%;
-	background-size: rem(300px) rem(16px);
+  display: flex;
+  gap: rem(10px);
+  overflow: hidden;
+  padding-left: rem(15px);
+  background: url(../../assets/images/svg/statistics-arrow.svg) no-repeat 0% 50%;
+  background-size: rem(300px) rem(16px);
 }
 
 .form {
-	width: rem(30px);
-	height: rem(30px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	z-index: 2;
+  width: rem(30px);
+  height: rem(30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  @media (max-width: 767.98px) {
+    width: rem(20px);
+    height: rem(20px);
+  }
 
-	&.formWin {
-		color: #000;
-		background: #F7FF13;
-	}
+  &.formWin {
+    color: #000;
+    background: #F7FF13;
+  }
 
-	&.formLoss {
-		color: #fff;
-		background: #1D7E3A;
-	}
+  &.formLoss {
+    color: #fff;
+    background: #1D7E3A;
+  }
 }
 
 .win {
-	display: flex;
-	gap: rem(24px);
-	align-items: flex-end;
+  display: flex;
+  gap: rem(24px);
+  align-items: flex-end;
+  @media(max-width: 1199.98px) {
+    gap: rem(13px);
+  }
+  @media (max-width: 767.98px) {
+    align-items: center;
+  }
 }
 
 .winWrapper {
-	width: rem(50px);
-	height: rem(94px);
-	position: relative;
+  width: rem(50px);
+  height: rem(94px);
+  position: relative;
+  @media (max-width: 1199.98px) {
+    width: rem(27px);
+  }
+  @media (max-width: 767.98px) {
+    width: rem(20px);
+    height: rem(52px);
+  }
 }
 
 .winShow {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: #F7FF13;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F7FF13;
 }
 
 .winPercentWrapper {
-	text-transform: uppercase;
-	color: #fff;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .winPercent {
-	font-weight: 700;
-	font-size: rem(48px);
-	line-height: rem(56px);
+  font-weight: 700;
+  font-size: rem(48px);
+  line-height: 1.166;
+  @media (max-width: 767.98px) {
+    font-size: rem(16px);
+  }
 }
 
 .winPercentText {
-	font-weight: 500;
-	font-size: rem(24px);
-	line-height: rem(28px);
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: 1.166;
+  @media (max-width: 767.98px) {
+    font-size: rem(14px);
+  }
 }
