@@ -1,81 +1,104 @@
-@import "sass-rem"; 
+@import "sass-rem";
 
 .title {
-	padding: rem(14px 20px 13px);
-	background: rgba(247, 255, 19, 0.15);
-	font-weight: 500;
-	font-size: rem(20px);
-	line-height: rem(23px);
-	color: #fff;
+  padding: rem(14px 20px 13px);
+  background: rgba(247, 255, 19, 0.15);
+  font-weight: 500;
+  font-size: rem(20px);
+  line-height: rem(23px);
+  color: #fff;
 }
 
 .info {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: rem(20px);
-	padding: rem(19px 20px 14px);
-	background: #1D7E3A;
-	color: #fff;
-	margin-bottom: rem(24px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(20px);
+  padding: rem(19px 20px 14px);
+  background: #1D7E3A;
+  color: #fff;
+  margin-bottom: rem(24px);
+  @media (max-width: 767.98px) {
+    padding: rem(22px 12px);
+  }
 }
 
 .name {
-	width: rem(320px);
-	font-weight: 500;
-	font-size: rem(24px);
-	line-height: rem(28px);
-	position: relative;
-	cursor: pointer;
-	padding: rem(5px);
+  width: rem(320px);
+  font-weight: 500;
+  font-size: rem(24px);
+  line-height: 1.166;
+  position: relative;
+  cursor: pointer;
+  padding: rem(5px);
+  @media (max-width: 767.98px) {
+    font-size: rem(16px);
+    width: auto;
+  }
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		width: rem(22px);
-		height: rem(18px);
-		background: url("../../assets/images/svg/statistics-name-arrow.svg") no-repeat 50% 50% /contain;
-		transform: translateY(-50%);
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: rem(22px);
+    height: rem(18px);
+    background: url("../../assets/images/svg/statistics-name-arrow.svg") no-repeat 50% 50% /contain;
+    transform: translateY(-50%);
+  }
 
-	&:first-child {
-		text-align: right;
-		padding-right: rem(35px);
-		
-		&:before {
-			right: 0;
-		}
-	}
+  &:first-child {
+    text-align: right;
+    padding-right: rem(35px);
+    @media (max-width: 767.98px) {
+      text-align: left;
+      padding-right: rem(26px);
+    }
 
-	&:last-child {
-		padding-left: rem(35px);
+    &:before {
+      right: 0;
+    }
+  }
 
-		&:before {
-			left: 0;
-		}
-	}
+  &:last-child {
+    padding-left: rem(35px);
+    @media (max-width: 767.98px) {
+      padding-left: rem(26px);
+      text-align: right;
+    }
+
+    &:before {
+      left: 0;
+    }
+  }
 }
 
 .dateWrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: rem(180px);
-	gap: rem(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: rem(180px);
+  gap: rem(5px);
 }
 
 .date {
-	font-weight: 400;
-	font-size: rem(24px);
-	line-height: rem(28px);
+  font-weight: 400;
+  font-size: rem(24px);
+  line-height: 1.166;
+  @media (max-width: 767.98px) {
+    font-size: rem(16px);
+  }
 }
 
 .btn {
-	width: rem(50px);
-	height: rem(34px);
-	background: url("../../assets/images/svg/statistics-date-update.svg") no-repeat 50% 50%;
-	background-size: rem(24px 24px);
-	font-size: 0;
-	cursor: pointer;
+  width: rem(50px);
+  height: rem(34px);
+  background: url("../../assets/images/svg/statistics-date-update.svg") no-repeat 50% 50%;
+  background-size: rem(24px 24px);
+  font-size: 0;
+  cursor: pointer;
+  @media (max-width: 767.98px) {
+    width: rem(16px);
+    height: rem(16px);
+    background-size: rem(16px 16px);
+  }
 }

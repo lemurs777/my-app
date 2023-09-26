@@ -111,7 +111,7 @@ function InPersonMain(
                 </div>
               </div>
             </div>
-            <div className={styles.colThreeAbout}>
+            <div className={clsx(styles.colThreeAbout,styles.colThreeAboutLast)}>
               <div className={styles.colThreeAboutWin}>
                 <div className={styles.colThreeAboutWinCount}>{data.winTwo}</div>
                 <div className={styles.colThreeAboutWinText}>ПОБЕДЫ</div>
