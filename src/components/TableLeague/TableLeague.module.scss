@@ -1,7 +1,7 @@
 @import "sass-rem";
 
 .tableLeague {
-  background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
+  //background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
 }
 
 .tableBody {
@@ -23,12 +23,15 @@
 
 .header {
   display: flex;
-  background: rgba(255, 255, 255, 0.14);
+  //background: rgba(255, 255, 255, 0.14);
+  background: #333;
+  position: relative;
   padding: rem(0 22px);
   height: rem(58px);
   align-items: center;
+
   @media(max-width: 1100px) {
-    width: fit-content;
+    //width: fit-content;
   }
 }
 
@@ -43,6 +46,7 @@
   //white-space: nowrap;
   //overflow: hidden;
   //text-overflow: ellipsis;
+  //background: rgba(255, 255, 255, 0.14);
   @media(max-width: 767.98px) {
     font-size: rem(14px);
   }
@@ -221,16 +225,45 @@
 .row {
   display: flex;
   padding: rem(0 22px);
-  background: rgba(255, 255, 255, 0.07);
-  align-items: center;
+  background: #232323;
+  //align-items: center;
   min-height: rem(58px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  //border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100%;
+    content: '';
+    height: rem(1px);
+    z-index: 1;
+    background: #707070;
+  }
+
   @media(max-width: 1250px) {
 
     padding: rem(0 8px 0 22px);
   }
   @media(max-width: 1100px) {
-    width: fit-content;
+    //width: fit-content;
+
+  }
+
+  .cell:last-child {
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: rem(12px);
+      height: 100%;
+      content: '';
+      background: inherit;
+    }
   }
 }
 
@@ -346,4 +379,24 @@
       background: #D60019;
     }
   }
+}
+
+.cell {
+  background: #232323;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  //margin-left: rem(-1px);
+  border-bottom: 1px solid #707070;
+  @media(max-width: 767.98px) {
+
+    border-right: 1px solid #232323;
+  }
+}
+
+.headerCell {
+  background: #333;
+  height: inherit;
+  display: flex;
+  align-items: center;
 }

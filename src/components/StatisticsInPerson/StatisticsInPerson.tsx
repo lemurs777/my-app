@@ -14,6 +14,8 @@ import {
 import styles from './StatisticsInPerson.module.scss';
 
 import arrTables from '../../data/dataStatisticsSix';
+import clsx from "clsx";
+import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 
 function StatisticsInPerson() {
 
@@ -115,15 +117,43 @@ function StatisticsInPerson() {
 					<InPersonScore data={ScoreData}/>
 				</div>
 				<h2 className={styles.title}>Последние матчи</h2>
-				<div className={styles.twoTableColumnsWrapper}>
+				<div className={clsx(styles.twoTableColumnsWrapper,'desktop')}>
 					<TableNextPrevGames data={dataPrevTableOne} />
 					<TableNextPrevGames data={dataPrevTableTwo} />
 				</div>
 
+				<div className={clsx(styles.mobileTable, 'mobile')}>
+					<Tabs className={clsx(styles.tabs,'tabsGame')}>
+						<TabList className={styles.tabs__list}>
+							<Tab className={styles.tabs__btn} selectedClassName={styles.tabs__btnActive} >Western Port Steelers</Tab>
+							<Tab className={styles.tabs__btn} selectedClassName={styles.tabs__btnActive}>Блэкберн Викингс</Tab>
+						</TabList>
+						<TabPanel className={styles.tabs__panel}>
+							<TableNextPrevGames data={dataPrevTableOne}/>
+						</TabPanel>
+						<TabPanel className={styles.tabs__panel}>
+							<TableNextPrevGames data={dataPrevTableTwo}/>
+						</TabPanel>
+					</Tabs>
+				</div>
 				<h2 className={styles.title}>Следующие матчи</h2>
-				<div className={styles.twoTableColumnsWrapper}>
+				<div className={clsx(styles.twoTableColumnsWrapper,'desktop')}>
 					<TableNextPrevGames data={dataNextTableOne} />
 					<TableNextPrevGames data={dataNextTableTwo} />
+				</div>
+				<div className={clsx(styles.mobileTable, 'mobile')}>
+					<Tabs className={clsx(styles.tabs,'tabsGame')}>
+						<TabList className={styles.tabs__list}>
+							<Tab className={styles.tabs__btn} selectedClassName={styles.tabs__btnActive} >Western Port Steelers</Tab>
+							<Tab className={styles.tabs__btn} selectedClassName={styles.tabs__btnActive}>Блэкберн Викингс</Tab>
+						</TabList>
+						<TabPanel className={styles.tabs__panel}>
+							<TableNextPrevGames data={dataNextTableOne}/>
+						</TabPanel>
+						<TabPanel className={styles.tabs__panel}>
+							<TableNextPrevGames data={dataNextTableTwo}/>
+						</TabPanel>
+					</Tabs>
 				</div>
 				<div className={styles.posWrapper}>
 					<h2 className={styles.title}>Позиция команды</h2>

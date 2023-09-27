@@ -2,19 +2,42 @@
 
 
 .tableBigSmall {
-  background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
+  //background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
   overflow-x: auto;
 }
 
 .header {
-  display: flex;
-  background: rgba(255, 255, 255, 0.14);
+  //display: flex;
+  //background: rgba(255, 255, 255, 0.14);
   padding: rem(0 22px);
   display: grid;
   grid-template-columns: rem(100px) rem(300px) rem(100px) rem(115px) 1fr rem(210px);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    width: rem(22px);
+    height: 100%;
+    content: '';
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), rgba(255, 255, 255, 0.07);
+  }
+
+  &::before {
+
+    position: absolute;
+    right: 0%;
+    width: rem(22px);
+    content: '';
+    height: 100%;
+    @media (min-width: 1260px) {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), rgba(255, 255, 255, 0.07);
+    }
+  }
+
   @media(max-width: 1199.98px) {
     grid-template-columns: rem(60px) rem(105px) rem(100px) rem(115px) 1fr rem(140px);
-    width: fit-content;
+    //width: fit-content;
   }
   @media(max-width: 767.98px) {
     grid-template-columns: rem(40px) rem(90px) rem(70px) rem(80px) 1fr rem(140px);
@@ -30,6 +53,8 @@
   line-height: rem(21px);
   color: #fff;
   padding: rem(19px 5px 18px);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), rgba(255, 255, 255, 0.07);
+  //background: #FFFFFF23;
   @media(min-width: 1199.98px) {
 
     border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -46,7 +71,7 @@
     @media(max-width: 1199.98px) {
       //width: rem(80px);
     }
-    @media(max-width: 767.98px){
+    @media(max-width: 767.98px) {
       width: rem(40px);
     }
   }
@@ -127,15 +152,39 @@
 
 .row {
   display: flex;
-  background: rgba(255, 255, 255, 0.07);
+  //background: rgba(255, 255, 255, 0.07);
   padding: rem(0 22px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    width: rem(22px);
+    content: '';
+    height: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), rgba(255, 255, 255, 0.07);
+  }
+
+  &::after {
+    position: absolute;
+    right: 0%;
+    width: rem(22px);
+    content: '';
+    height: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    @media (min-width: 1260px) {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), rgba(255, 255, 255, 0.07);
+    }
+  }
+
+  //border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: grid;
   grid-template-columns: rem(100px) rem(300px) rem(100px) rem(115px) 1fr rem(210px);
   @media(max-width: 1198.98px) {
     grid-template-columns: rem(60px) rem(105px) rem(100px) rem(115px) 1fr rem(140px);
     align-items: center;
-    width: fit-content;
+    //width: fit-content;
   }
   @media(max-width: 767.98px) {
     grid-template-columns: rem(40px) rem(90px) rem(70px) rem(80px) 1fr rem(140px);
@@ -143,6 +192,7 @@
 }
 
 .cell {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   font-weight: 400;
   font-size: rem(18px);
   line-height: 1.1666;
@@ -150,6 +200,7 @@
   height: 100%;
   padding: rem(19px 5px 18px);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%), rgba(255, 255, 255, 0.07);
   @media(max-width: 1199.98px) {
     padding: rem(12px 5px 4px);
   }
@@ -166,7 +217,7 @@
     @media(max-width: 1199px) {
       width: rem(80px);
     }
-    @media(max-width: 767.98px){
+    @media(max-width: 767.98px) {
       width: rem(40px);
     }
   }
@@ -208,7 +259,7 @@
     border-right: none;
     padding-left: rem(15px);
     padding-right: rem(15px);
-    @media(max-width:767.98px){
+    @media(max-width: 767.98px) {
       //text-align: right;
     }
   }
@@ -217,7 +268,7 @@
 .percentOne {
   padding-right: rem(10px);
   width: rem(80px);
-  @media(max-width:767.98px){
+  @media(max-width: 767.98px) {
     width: auto;
   }
 }
@@ -225,7 +276,7 @@
 .percent {
   width: rem(100px);
   height: rem(30px);
-  background: rgba(247, 255, 19, 0.5);
+  //background: rgba(247, 255, 19, 0.5);
   margin-right: rem(40px);
   margin-top: rem(-5px);
   margin-bottom: rem(-5px);
