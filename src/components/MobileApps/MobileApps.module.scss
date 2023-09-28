@@ -1,0 +1,54 @@
+@import "sass-rem";
+
+
+.apps {
+  display: flex;
+  align-items: center;
+  gap: rem(15px);
+}
+
+.linkApp {
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 0;
+  width: rem(40px);
+  height: rem(40px);
+  position: relative;
+  transform: scale(1);
+  transition: transform .3s ease-in-out;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.linkAppIphone {
+    background: #fff;
+
+    &:before {
+      width: rem(18px);
+      height: rem(21px);
+      background-image: url("../../assets/images/svg/header-app-iphone.svg");
+    }
+  }
+
+  &.linkAppAndroid {
+    background: #7EA152;
+
+    &:before {
+      width: rem(22px);
+      height: rem(16px);
+      background-image: url("../../assets/images/svg/header-app-android.svg");
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,16 @@
+@import "sass-rem";
+
+.headerBottom {
+  display: flex;
+  align-items: center;
+  padding-right: rem(18px);
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  &__col {
+    display: flex;
+    align-items: center;
+    gap: rem(15px);
+  }
+}

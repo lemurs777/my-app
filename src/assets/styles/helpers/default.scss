@@ -17,7 +17,7 @@
 }
 
 html {
-  overflow-x: hidden;
+  //overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -84,9 +84,9 @@ input:-webkit-autofill {
 
 html,
 body {
-  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   background: #000;
-  overflow-x: hidden;
+  //overflow-x: hidden;
   max-width: 100%;
   // font-size: calc(100vw / 120);
 

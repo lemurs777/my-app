@@ -1,0 +1,15 @@
+@import "sass-rem";
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: rem(15px);
+  margin-left: auto;
+}
+
+.time {
+  font-size: rem(14px);
+  line-height: rem(16px);
+  white-space: nowrap;
+  color: #696969;
+}

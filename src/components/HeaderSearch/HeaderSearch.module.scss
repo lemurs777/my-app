@@ -1,0 +1,47 @@
+@import "sass-rem";
+
+
+.searchLabel {
+  position: relative;
+  max-width: rem(535px);
+  width: 100%;
+  padding: rem(25px 28px);
+  display: inline-flex;
+  align-items: center;
+  gap: rem(15px);
+  background: linear-gradient(90deg, #262626 0%, #1A1A1A 56.77%, #000 100%);
+  @media(max-width: 768px) {
+    display: none;
+  }
+}
+
+.searchIcon {
+  width: rem(16px);
+  height: rem(16px);
+  background: url("../../assets/images/svg/header-search.svg") no-repeat 50% 50% /contain;
+}
+
+.searchIconPath {
+  fill: #898989;
+  transition: .3s;
+}
+
+.search {
+  width: 100%;
+  font-size: rem(16px);
+  color: #fff;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &::placeholder {
+    color: #898989;
+    opacity: 1;
+  }
+
+  &:focus {
+    & + .searchIcon .searchIconPath {
+      fill: #fff;
+    }
+  }
+}
