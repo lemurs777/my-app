@@ -283,7 +283,7 @@ main {
     display: block;
     overflow-y: auto;
     padding: rem(60px 20px 20px);
-    @media(max-width: 767.98px){
+    @media(max-width: 767.98px) {
       background: #191919;
       padding: rem(30px 16px);
     }
@@ -315,11 +315,13 @@ main {
     display: block;
   }
 }
+
 .tabsGame {
   .tableHeaderGames {
     display: none !important;
   }
 }
+
 .aside {
   position: fixed;
   top: 9.125rem;
@@ -434,13 +436,21 @@ button {
     display: none !important;
   }
 }
+
 .MuiButtonBase-root,
-.MuiAccordionDetails-root{
+.MuiAccordionDetails-root {
   padding: 0 !important;
 }
-.MuiAccordionDetails-root{
+
+.MuiAccordionDetails-root {
   padding-top: rem(16px) !important;
 }
-.MuiAccordionSummary-content{
+
+.MuiAccordionSummary-content {
   margin: 0 !important;
 }
+
+.danger {
+  color: #C21717;
+}
+

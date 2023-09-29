@@ -1,5 +1,7 @@
 export type HeaderSettings = {
-	showBottom: boolean;
-	showBottomProfile?: boolean;
-	showBottomPromotion?: boolean;
+  showTop?: boolean,
+  showTopProfile?: boolean,
+  showBottom: boolean;
+  showBottomProfile?: boolean;
+  showBottomPromotion?: boolean;
 }

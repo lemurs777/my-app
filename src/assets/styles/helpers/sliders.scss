@@ -1,214 +1,246 @@
 .main-slider {
 
-	.swiper-button-next,
-	.swiper-button-prev {
-		bottom: 0;
-		top: auto;
-		margin: 0;
-		background: #262626;
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 0;
+    top: auto;
+    margin: 0;
+    background: #262626;
 
-		&:after {
-			display: none;
-		}
+    &:after {
+      display: none;
+    }
 
-		&:hover {
-			&:before {
-				opacity: 1;
-			}
-		}
-	}
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
 
-	.swiper-button-next {
-		position: absolute;
-		right: 0;
-		width: rem(42px);
-		height: rem(42px);
+  .swiper-button-next {
+    position: absolute;
+    right: 0;
+    width: rem(42px);
+    height: rem(42px);
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: rem(8px);
-			height: rem(14px);
-			transform: translate(-50%, -50%);
-			background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
-			background-size: rem(8px) rem(14px);
-			opacity: .3;
-			transition: .3s;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(8px);
+      height: rem(14px);
+      transform: translate(-50%, -50%);
+      background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
+      background-size: rem(8px) rem(14px);
+      opacity: .3;
+      transition: .3s;
+    }
+  }
 
-	.swiper-button-prev {
-		position: absolute;
-		left: 0;
-		width: rem(42px);
-		height: rem(42px);
+  .swiper-button-prev {
+    position: absolute;
+    left: 0;
+    width: rem(42px);
+    height: rem(42px);
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: rem(8px);
-			height: rem(14px);
-			transform: translate(-50%, -50%);
-			background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
-			opacity: .3;
-			transition: .3s;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(8px);
+      height: rem(14px);
+      transform: translate(-50%, -50%);
+      background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
+      opacity: .3;
+      transition: .3s;
+    }
+  }
 }
 
 .best-slider {
 
-	.swiper-button-next,
-	.swiper-button-prev {
-		opacity: .3;
-		transition: .3s;
-		top: 0;
-		margin: 0;
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: .3;
+    transition: .3s;
+    top: 0;
+    margin: 0;
 
-		&:after {
-			display: none;
-		}
+    &:after {
+      display: none;
+    }
 
-		&:hover {
-			opacity: 1;
-		}
-	}
+    &:hover {
+      opacity: 1;
+    }
+  }
 
-	.swiper-button-next {
-		position: absolute;
-		right: rem(20px);
-		width: rem(30px);
-		height: rem(40px);
+  .swiper-button-next {
+    position: absolute;
+    right: rem(20px);
+    width: rem(30px);
+    height: rem(40px);
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: rem(8px);
-			height: rem(14px);
-			transform: translate(-50%, -50%);
-			background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
-			background-size: rem(8px) rem(14px);
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(8px);
+      height: rem(14px);
+      transform: translate(-50%, -50%);
+      background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
+      background-size: rem(8px) rem(14px);
+    }
+  }
 
-	.swiper-button-prev {
-		position: absolute;
-		left: auto;
-		right: rem(60px);
-		width: rem(30px);
-		height: rem(40px);
+  .swiper-button-prev {
+    position: absolute;
+    left: auto;
+    right: rem(60px);
+    width: rem(30px);
+    height: rem(40px);
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: rem(8px);
-			height: rem(14px);
-			transform: translate(-50%, -50%);
-			background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(8px);
+      height: rem(14px);
+      transform: translate(-50%, -50%);
+      background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
+    }
+  }
+}
+
+.bestNext,
+.bestPrev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: rem(16px);
+  height: rem(16px);
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: url('../../images/svg/arrow.svg') center/contain no-repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover{
+
+
+    filter: invert(1);
+
+  }
+  &.swiper-button-disabled:hover{
+    filter: none ;
+  }
+}
+.bestPrev {
+  transform: rotate(180deg);
 }
 
 .promo-slider {
 
-	.swiper-button-next,
-	.swiper-button-prev {
-		bottom: 0;
-		top: auto;
-		margin: 0;
-		background: #262626;
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 0;
+    top: auto;
+    margin: 0;
+    background: #262626;
 
-		&:after {
-			display: none;
-		}
+    &:after {
+      display: none;
+    }
 
-		&:hover {
-			&:before {
-				opacity: 1;
-			}
-		}
-	}
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
 
-	.swiper-button-next {
-		position: absolute;
-		right: rem(13px);
-		width: rem(36px);
-		height: rem(36px);
+  .swiper-button-next {
+    position: absolute;
+    right: rem(13px);
+    width: rem(36px);
+    height: rem(36px);
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: rem(8px);
-			height: rem(14px);
-			transform: translate(-50%, -50%);
-			background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
-			background-size: rem(8px) rem(14px);
-			opacity: .3;
-			transition: .3s;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(8px);
+      height: rem(14px);
+      transform: translate(-50%, -50%);
+      background: url("../../images/svg/sports-next.svg") no-repeat 50% 50% /contain;
+      background-size: rem(8px) rem(14px);
+      opacity: .3;
+      transition: .3s;
+    }
+  }
 
-	.swiper-button-prev {
-		position: absolute;
-		left: 0;
-		width: rem(36px);
-		height: rem(36px);
+  .swiper-button-prev {
+    position: absolute;
+    left: 0;
+    width: rem(36px);
+    height: rem(36px);
 
-		@media(max-width:767.98px) {
-			left: rem(15px);
-		}
+    @media(max-width: 767.98px) {
+      left: rem(15px);
+    }
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: rem(8px);
-			height: rem(14px);
-			transform: translate(-50%, -50%);
-			background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
-			opacity: .3;
-			transition: .3s;
-		}
-	}
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: rem(8px);
+      height: rem(14px);
+      transform: translate(-50%, -50%);
+      background: url("../../images/svg/sports-prev.svg") no-repeat 50% 50% /contain;
+      opacity: .3;
+      transition: .3s;
+    }
+  }
 
-	.swiper-pagination-bullets.swiper-pagination-horizontal {
-		left: rem(56px);
-		right: rem(69px);
-		bottom: 0;
-		top: auto;
-		height: rem(36px);
-		width: calc(100% - rem(125px));
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: rem(6px);
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: rem(56px);
+    right: rem(69px);
+    bottom: 0;
+    top: auto;
+    height: rem(36px);
+    width: calc(100% - rem(125px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(6px);
 
-		.swiper-pagination-bullet {
-			margin: 0;
-			width: rem(6px);
-			height: rem(6px);
-			background: #2D2D2D;
-			transition: .3s;
-			border-radius: 50%;
-			opacity: 1;
+    .swiper-pagination-bullet {
+      margin: 0;
+      width: rem(6px);
+      height: rem(6px);
+      background: #2D2D2D;
+      transition: .3s;
+      border-radius: 50%;
+      opacity: 1;
 
-			&.swiper-pagination-bullet-active {
-				width: rem(10px);
-				height: rem(10px);
-				background: #F7FF13;
-				border-radius: 0;
-			}
-		}
-	}
+      &.swiper-pagination-bullet-active {
+        width: rem(10px);
+        height: rem(10px);
+        background: #F7FF13;
+        border-radius: 0;
+      }
+    }
+  }
 }

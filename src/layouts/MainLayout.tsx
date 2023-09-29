@@ -9,7 +9,7 @@ type MyComponentProps = React.PropsWithChildren<{}>
 function MainLayout( {children}:  MyComponentProps) {
 	return (
 		<>
-			<Header showBottom={true} />
+			<Header showBottom={true}  showTop={true}/>
 			{children}
 			<Outlet />
 		</>

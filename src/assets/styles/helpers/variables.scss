@@ -4,8 +4,8 @@ $clr-gray: rgba(255, 255, 255, .45);
 $clr-gray-blue: rgba(153, 163, 201, 1);
 $clr-accent: rgba(68, 126, 247, 1);
 $clr-bg-dark: rgb(30, 34, 52, 1);
-
 :root {
+  --transition: .2s;
   --accentColor: #fafe13;
   --mobile: 767.98px;
 }
