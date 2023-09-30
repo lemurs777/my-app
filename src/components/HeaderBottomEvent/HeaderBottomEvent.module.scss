@@ -5,12 +5,30 @@
   align-items: center;
   padding-right: rem(18px);
   justify-content: space-between;
-
+  overflow-x: auto;
   gap: 1rem;
+
+  @media(max-width:1199.98px) {
+    justify-content: flex-start;
+  }
 
   &__col {
     display: flex;
     align-items: center;
     gap: rem(15px);
+
+    @media(max-width:1024px) {
+      // overflow-x: auto;
+    }
+  }
+
+}
+
+.search,
+.apps,
+.info,
+.language {
+  @media(max-width:1199.98px) {
+    display: none;
   }
 }

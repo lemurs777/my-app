@@ -10,15 +10,23 @@ const HeaderBottomEvent = () => {
   return (
     <div className={styles.headerBottom}>
       <div className={styles.headerBottom__col}>
-        <HeaderSearch/>
+        <div className={styles.search}>
+          <HeaderSearch />
+        </div>
       </div>
       <div className={styles.headerBottom__col}>
-        <HeaderBreadCrumb/>
+        <HeaderBreadCrumb />
       </div>
       <div className={styles.headerBottom__col}>
-        <HeaderInfo/>
-        <MobileApps/>
-        <Language/>
+        <div className={styles.info}>
+          <HeaderInfo />
+        </div>
+        <div className={styles.apps}>
+          <MobileApps />
+        </div>
+        <div className={styles.language}>
+          <Language />
+        </div>
       </div>
     </div>
   );

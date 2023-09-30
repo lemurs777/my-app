@@ -5,7 +5,7 @@
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid #212121;
-
+overflow: hidden;
 	@media(max-width:768px) {
 		padding: rem(12px 17px);
 	}

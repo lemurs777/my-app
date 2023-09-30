@@ -11,6 +11,10 @@
     background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
     position: relative;
 
+    @media(max-width:1199.98px) {
+        background: #333333;
+    }
+
     &.itemOpen {
         .container {
             height: auto;
@@ -58,6 +62,7 @@
     font-size: rem(20px);
     line-height: rem(23px);
     color: #fff;
+
 }
 
 .btn {
@@ -82,9 +87,11 @@
     &.row1 {
         grid-template-columns: 1fr;
     }
+
     &.row2 {
         grid-template-columns: 1fr 1fr;
     }
+
     &.row3 {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -125,7 +132,7 @@
             border-right: rem(5px) solid #D60019;
             border-bottom: rem(5px) solid #D60019;
         }
-    } 
+    }
 }
 
 .name {

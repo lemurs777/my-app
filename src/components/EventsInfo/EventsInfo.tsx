@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
-import {  
+import {
 	CategoryList,
-    EventsList,
+	EventsList,
 } from '../';
 
 import { CategoryData, ItemsData } from './types';
@@ -11,6 +11,7 @@ import Logo1 from '../../assets/images/events-info-live-logo-fc-bayern-x2.min.pn
 import Logo2 from '../../assets/images/events-info-live-logo-fc-frankfurt-x2.min.png';
 
 import styles from './EventsInfo.module.scss';
+import BestMomentProfile from '../BestMomentProfile';
 
 function EventsInfo(
 	{
@@ -23,7 +24,7 @@ function EventsInfo(
 ) {
 
 	const TeamsInfo = {
-		teamOne : {
+		teamOne: {
 			name: 'Бавария',
 			logo: Logo1,
 			yellow: 0,
@@ -32,12 +33,12 @@ function EventsInfo(
 			shotOnGoal: 0,
 			uniformName: 'BMU',
 			goals: [
-				{goal: 15},
-				{goal: 42},
-				{goal: 68},
+				{ goal: 15 },
+				{ goal: 42 },
+				{ goal: 68 },
 			]
 		},
-		teamTwo : {
+		teamTwo: {
 			name: 'Айнтрахт Франкфурт',
 			logo: Logo2,
 			yellow: 5,
@@ -46,9 +47,9 @@ function EventsInfo(
 			shotOnGoal: 12,
 			uniformName: 'FRA',
 			goals: [
-				{goal: 22},
-				{goal: 52},
-				{goal: 82},
+				{ goal: 22 },
+				{ goal: 52 },
+				{ goal: 82 },
 			]
 		},
 		time: 89,
@@ -56,59 +57,63 @@ function EventsInfo(
 		info: '2-й тайм',
 	}
 
-return (
-	<div className={styles.eventsInfo}>
-		<div className={styles.live}>
-			<div className={styles.top}>
-				<Link className={clsx(styles.topLink, styles.topLinkHome)} to="/">Home</Link>
-				<button className={clsx(styles.topLink, styles.topLinkAdd)}>Add</button>
-				<div className={styles.topLeft}>
-					<img className={styles.topLogo} src={TeamsInfo.teamOne.logo} alt={TeamsInfo.teamOne.name} />
-					<div className={styles.topName}>{TeamsInfo.teamOne.name}</div>
-					<div className={styles.topStatistics}>
-						<div className={clsx(styles.topStatistic, styles.topStatisticYellow)}>{TeamsInfo.teamOne.yellow}</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticRed)}>{TeamsInfo.teamOne.red}</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticCorner)}>{TeamsInfo.teamOne.corner}</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticShotOnGoal)}>{TeamsInfo.teamOne.shotOnGoal}</div>
+	return (
+		<div className={styles.eventsInfo}>
+			<div className={styles.live}>
+				<div className={styles.top}>
+					<Link className={clsx(styles.topLink, styles.topLinkHome)} to="/">Home</Link>
+					<button className={clsx(styles.topLink, styles.topLinkAdd)}>Add</button>
+					<div className={styles.topLeft}>
+						<img className={styles.topLogo} src={TeamsInfo.teamOne.logo} alt={TeamsInfo.teamOne.name} />
+						<div className={styles.topName}>{TeamsInfo.teamOne.name}</div>
+						<div className={styles.topStatistics}>
+							<div className={clsx(styles.topStatistic, styles.topStatisticYellow)}>{TeamsInfo.teamOne.yellow}</div>
+							<div className={clsx(styles.topStatistic, styles.topStatisticRed)}>{TeamsInfo.teamOne.red}</div>
+							<div className={clsx(styles.topStatistic, styles.topStatisticCorner)}>{TeamsInfo.teamOne.corner}</div>
+							<div className={clsx(styles.topStatistic, styles.topStatisticShotOnGoal)}>{TeamsInfo.teamOne.shotOnGoal}</div>
+						</div>
+					</div>
+
+					<div className={styles.topCenter}>
+						<div className={styles.topCenterTime}>{TeamsInfo.time}’</div>
+						<div className={styles.topCenterScore}>{TeamsInfo.score}</div>
+						<div className={styles.topCenterHalf}>{TeamsInfo.info}</div>
+					</div>
+					<div className={styles.topRight}>
+						<img className={styles.topLogo} src={TeamsInfo.teamTwo.logo} alt={TeamsInfo.teamTwo.name} />
+						<div className={styles.topName}>{TeamsInfo.teamTwo.name}</div>
+						<div className={styles.topStatistics}>
+							<div className={clsx(styles.topStatistic, styles.topStatisticYellow)}>{TeamsInfo.teamTwo.yellow}</div>
+							<div className={clsx(styles.topStatistic, styles.topStatisticRed)}>{TeamsInfo.teamTwo.red}</div>
+							<div className={clsx(styles.topStatistic, styles.topStatisticCorner)}>{TeamsInfo.teamTwo.corner}</div>
+							<div className={clsx(styles.topStatistic, styles.topStatisticShotOnGoal)}>{TeamsInfo.teamTwo.shotOnGoal}</div>
+						</div>
 					</div>
 				</div>
-				<div className={styles.topCenter}>
-					<div className={styles.topCenterTime}>{TeamsInfo.time}’</div>
-					<div className={styles.topCenterScore}>{TeamsInfo.score}</div>
-					<div className={styles.topCenterHalf}>{TeamsInfo.info}</div>
-				</div>
-				<div className={styles.topRight}>
-					<img className={styles.topLogo} src={TeamsInfo.teamTwo.logo} alt={TeamsInfo.teamTwo.name} />
-					<div className={styles.topName}>{TeamsInfo.teamTwo.name}</div>
-					<div className={styles.topStatistics}>
-						<div className={clsx(styles.topStatistic, styles.topStatisticYellow)}>{TeamsInfo.teamTwo.yellow}</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticRed)}>{TeamsInfo.teamTwo.red}</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticCorner)}>{TeamsInfo.teamTwo.corner}</div>
-						<div className={clsx(styles.topStatistic, styles.topStatisticShotOnGoal)}>{TeamsInfo.teamTwo.shotOnGoal}</div>
+				<div className={styles.bottom}>
+					<div className={styles.bottomUniforms}>
+						<div className={styles.bottomUniformName}>{TeamsInfo.teamOne.uniformName}</div>
+						<div className={styles.bottomUniformName}>{TeamsInfo.teamTwo.uniformName}</div>
+					</div>
+					<div className={styles.bottomTimelineWrapper}>
+						<div className={styles.bottomTimeline}>
+							{TeamsInfo.teamOne.goals.map((item, index) => (
+								<div key={index} className={styles.bottomGoal} style={{ left: `calc(${item.goal}% / .9)` }}></div>
+							))}
+							{TeamsInfo.teamTwo.goals.map((item, index) => (
+								<div key={index} className={clsx(styles.bottomGoal, styles.bottomGoalBottom)} style={{ left: `calc(${item.goal}% / .9)` }}></div>
+							))}
+						</div>
 					</div>
 				</div>
+				<div className={styles.best}>
+					<BestMomentProfile />
+				</div>
+				<CategoryList data={dataCategory} />
 			</div>
-			<div className={styles.bottom}>
-				<div className={styles.bottomUniforms}>
-					<div className={styles.bottomUniformName}>{TeamsInfo.teamOne.uniformName}</div>
-					<div className={styles.bottomUniformName}>{TeamsInfo.teamTwo.uniformName}</div>
-				</div>
-				<div className={styles.bottomTimelineWrapper}>
-					<div className={styles.bottomTimeline}>
-						{TeamsInfo.teamOne.goals.map((item, index) => (
-							<div key={index} className={styles.bottomGoal} style={{left: `calc(${item.goal}% / .9)`}}></div>
-						))}
-						{TeamsInfo.teamTwo.goals.map((item, index) => (
-							<div key={index} className={clsx(styles.bottomGoal, styles.bottomGoalBottom)} style={{left: `calc(${item.goal}% / .9)`}}></div>
-						))}
-					</div>
-				</div>
-			</div>
-			<CategoryList data={dataCategory}/>
+			<EventsList dataList={{ dataItems }} />
 		</div>
-		<EventsList dataList={{dataItems}}/>
-	</div>
-);
+	);
 }
 
 export default EventsInfo;

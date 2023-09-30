@@ -1,12 +1,12 @@
-import {  
+import {
 	Menu,
-    EventsToday,
+	EventsToday,
 	EventsInfo,
 	Multiple,
 	Broadcast
 } from '../components/';
 
-function EventsDetailedPage(){
+function EventsDetailedPage() {
 
 	const arrCategory = [
 		{
@@ -113,7 +113,7 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: null,
 							up: false,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'Тотал 1.0',
@@ -131,7 +131,7 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: null,
 							up: false,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'Тотал 1.5',
@@ -149,7 +149,7 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: null,
 							up: false,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'Тотал 2.0',
@@ -191,7 +191,7 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: null,
 							up: false,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'Фора 0.5',
@@ -209,7 +209,7 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: null,
 							up: false,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'Фора 1.0',
@@ -245,7 +245,7 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: null,
 							up: false,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'Фора 2.0',
@@ -263,7 +263,7 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: null,
 							up: false,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'Фора 2.5',
@@ -287,7 +287,7 @@ function EventsDetailedPage(){
 							countOne: 'БОЛЬШЕ',
 							countTwo: 'МЕНЬШЕ',
 							up: false,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'НАПОЛЛИ',
@@ -305,25 +305,7 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: '2.4',
 							up: false,
-							down: false, 
-						},
-						{
-							name: 'Победа и ж/карт у соперника < 1.5',
-							countOne: '2.4',
-							countTwo: '2.4',
-							up: false,
 							down: false,
-						},
-					],
-				},
-				{
-					arrRow: [
-						{
-							name: 'Победа и ж/карт у соперника < 1.5',
-							countOne: '2.4',
-							countTwo: '2.4',
-							up: false,
-							down: false, 
 						},
 						{
 							name: 'Победа и ж/карт у соперника < 1.5',
@@ -359,7 +341,25 @@ function EventsDetailedPage(){
 							countOne: '2.4',
 							countTwo: '2.4',
 							up: false,
-							down: false, 
+							down: false,
+						},
+						{
+							name: 'Победа и ж/карт у соперника < 1.5',
+							countOne: '2.4',
+							countTwo: '2.4',
+							up: false,
+							down: false,
+						},
+					],
+				},
+				{
+					arrRow: [
+						{
+							name: 'Победа и ж/карт у соперника < 1.5',
+							countOne: '2.4',
+							countTwo: '2.4',
+							up: false,
+							down: false,
 						},
 						{
 							name: 'Победа и ж/карт у соперника < 1.5',
@@ -393,7 +393,7 @@ function EventsDetailedPage(){
 						{
 							name: 'Победа и ж/карт у соперника < 1.5',
 							countOne: '2.4',
-							countTwo: '2.4', 
+							countTwo: '2.4',
 							up: false,
 							down: false,
 						},
@@ -411,17 +411,17 @@ function EventsDetailedPage(){
 	];
 
 	return (
-        <>
+		<>
 			<Menu />
 			<main className="page page--events">
-                <EventsToday />
-				<EventsInfo dataCategory={arrCategory} dataItems={eventItems}/>
+				<EventsToday />
+				<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />
 			</main>
 			<aside className="aside aside--events scroll">
 				<Broadcast />
 				<Multiple />
 			</aside>
-		</>	
+		</>
 	);
 };
 

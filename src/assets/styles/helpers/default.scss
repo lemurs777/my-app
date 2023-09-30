@@ -124,7 +124,7 @@ main {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  clipPath: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -138,7 +138,7 @@ main {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    clipPath: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
@@ -156,6 +156,12 @@ main {
   @media(max-width: 767.98px) {
     padding-left: 15px !important;
   }
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
 }
 
 .page {
@@ -211,9 +217,11 @@ main {
     background-size: rem(1225px) rem(786px);
     background-position: 0 rem(100px);
     max-width: none !important;
+
     @media(max-width: 1199px) {
       background-position-x: rem(-150px);
     }
+
     @media(max-width: 992px) {
       background-size: auto rem(420px);
       background-position-x: -5%;
@@ -222,10 +230,16 @@ main {
   }
 
   &--events {
-    padding-left: rem(86px);
+    position: static;
     overflow: hidden;
     gap: rem(20px);
+    flex: 1;
     max-width: rem(1540px);
+
+    @media(min-width:768px) {
+      padding-left: rem(86px);
+
+    }
   }
 
   &--statistics-one,
@@ -257,6 +271,7 @@ main {
     //max-width: rem(1542px);
     padding-left: rem(86px);
     gap: rem(20px);
+
     //max-width: 81vw;
     @media(max-width: 1360px) {
       position: relative;
@@ -264,10 +279,12 @@ main {
       padding-right: rem(268px);
       max-width: none;
     }
+
     @media(max-width: 1200px) {
       //max-width: rem(640px);
 
     }
+
     @media(max-width: 767.98px) {
       padding-right: 0;
       padding-left: 0;
@@ -283,6 +300,7 @@ main {
     display: block;
     overflow-y: auto;
     padding: rem(60px 20px 20px);
+
     @media(max-width: 767.98px) {
       background: #191919;
       padding: rem(30px 16px);
@@ -294,6 +312,7 @@ main {
     gap: rem(20px);
     overflow-y: auto;
     padding: rem(0 20px 20px);
+
     @media(max-width: 800px) {
       flex-direction: column;
       padding: rem(0 12px 12px);
@@ -345,9 +364,14 @@ main {
   }
 
   &--events {
+    position: static;
     width: rem(380px);
     display: flex;
     flex-direction: column;
+
+    @media(max-width:1199.98px) {
+      display: none;
+    }
   }
 
   @media(max-width: 768px) {
@@ -453,4 +477,3 @@ button {
 .danger {
   color: #C21717;
 }
-

@@ -18,6 +18,9 @@
 		border-radius: rem(5px);
 		background: #8b8b97;
 	}
+	@media(max-width:1199.98px){
+		display: none;
+	}
 }
 
 .content {

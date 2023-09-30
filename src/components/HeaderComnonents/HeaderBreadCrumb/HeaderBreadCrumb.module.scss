@@ -2,14 +2,14 @@
 
 .breadcrumb {
   position: relative;
-  z-index: 3;
-
+  z-index: 6;
   &__list {
+    // overflow-x: auto;
     display: flex;
     align-items: center;
     gap: rem(47px);
 
-    & > li {
+    &>li {
       height: rem(53px);
       position: relative;
 
@@ -91,9 +91,10 @@
 .select {
   position: relative;
 
+
   &__contentCountry {
     max-height: rem(369px);
-    overflow-y: auto;
+    // overflow-y: auto;
 
     &::-webkit-scrollbar {
       width: rem(5px);
@@ -115,6 +116,7 @@
     align-items: center;
     position: relative;
     padding-right: rem(22px);
+    white-space: nowrap;
 
     &::after {
       position: absolute;
@@ -153,6 +155,14 @@
     background: #1A1A1A;
     min-width: rem(283px);
     color: #fff;
+
+    &::-webkit-scrollbar {
+      height: 2px;
+    }
+
+    @media(max-width:1199.98px) {
+      max-width: 750px;
+    }
   }
 
   &__contentTable {

@@ -1,10 +1,12 @@
-import {  
+import {
 	Menu,
-    EventsToday,
+	EventsToday,
 	EventsInfo,
 	Multiple,
 	Broadcast
 } from '../components/';
+import BestMomentProfile from '../components/BestMomentProfile';
+import SportFooter from '../components/SportFooter';
 
 
 function EventsPage() {
@@ -65,7 +67,7 @@ function EventsPage() {
 							countOne: '2.4',
 							countTwo: null,
 							up: true,
-							down: false, 
+							down: false,
 						},
 						{
 							name: 'Ничья',
@@ -144,7 +146,7 @@ function EventsPage() {
 							down: true,
 						},
 					],
-				},			
+				},
 			],
 		},
 		{
@@ -240,7 +242,7 @@ function EventsPage() {
 							down: false,
 						},
 					],
-				},		
+				},
 			],
 		},
 		{
@@ -346,23 +348,29 @@ function EventsPage() {
 							down: true,
 						},
 					],
-				},		
+				},
 			],
 		},
 	];
 
 	return (
-        <>
+		<>
 			<Menu />
-			<main className="page page--events">
-                <EventsToday />
-				<EventsInfo dataCategory={arrCategory} dataItems={eventItems}/>
-			</main>
-			<aside className="aside aside--events scroll">
-				<Broadcast />
-				<Multiple />
-			</aside>
-		</>	
+			<div className="main">
+
+				<main className="page page--events">
+					<EventsToday />
+
+					<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />
+				</main>
+				<aside className="aside aside--events scroll">
+					<Broadcast />
+					<Multiple />
+				</aside>
+		
+			</div>
+			<SportFooter />
+		</>
 	);
 };
 
