@@ -3,11 +3,10 @@ import {
 	EventsToday,
 	EventsInfo,
 	Multiple,
-	Broadcast
-} from '../components/';
+	Broadcast,
+} from '../components/'
 
 function EventsDetailedPage() {
-
 	const arrCategory = [
 		{
 			name: 'Исходы',
@@ -25,7 +24,7 @@ function EventsDetailedPage() {
 			name: 'Инд.тоталы',
 			active: false,
 		},
-	];
+	]
 
 	const eventItems = [
 		{
@@ -408,21 +407,23 @@ function EventsDetailedPage() {
 				},
 			],
 		},
-	];
+	]
 
 	return (
 		<>
 			<Menu />
-			<main className="page page--events">
-				<EventsToday />
-				<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />
-			</main>
-			<aside className="aside aside--events scroll">
-				<Broadcast />
-				<Multiple />
-			</aside>
+			<div className='main'>
+				<main className='page page--events'>
+					<EventsToday />
+					<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />
+				</main>
+				<aside className='aside aside--events scroll'>
+					<Broadcast />
+					<Multiple />
+				</aside>
+			</div>
 		</>
-	);
-};
+	)
+}
 
-export default EventsDetailedPage;
+export default EventsDetailedPage

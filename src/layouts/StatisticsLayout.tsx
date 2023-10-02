@@ -1,19 +1,17 @@
-import React from 'react';
-import { Outlet } from "react-router-dom";
-import { 
-	Header,
-} from '../components/';
+import React from 'react'
+import { Outlet } from 'react-router-dom'
+import { Header } from '../components/'
 
 type MyComponentProps = React.PropsWithChildren<{}>
 
-function StatisticsLayout( {children}:  MyComponentProps) {
+function StatisticsLayout({ children }: MyComponentProps) {
 	return (
 		<>
-			<Header showBottom={false} />
+			{/*<Header showBottom={false} />*/}
 			{children}
 			<Outlet />
 		</>
-	);
-};
+	)
+}
 
-export default StatisticsLayout;
+export default StatisticsLayout

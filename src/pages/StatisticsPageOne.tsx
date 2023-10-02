@@ -1,17 +1,18 @@
-import { 
-	 Menu,
-     StatisticsOne,
-} from '../components/';
+import { Header, Menu, StatisticsOne } from '../components/'
+import LiveEventTime from '../components/LiveEventTime'
+import MenuMobile from '../components/MenuMobile'
 
-function StatisticsPageOne(){
+function StatisticsPageOne() {
 	return (
 		<>
+			<LiveEventTime />
 			<Menu />
-			<main className="page page--statistics-one scroll">
-                <StatisticsOne />
+			<MenuMobile />
+			<main className='page page--statistics-one scroll'>
+				<StatisticsOne />
 			</main>
-		</>	
-	);
-};
+		</>
+	)
+}
 
-export default StatisticsPageOne;
+export default StatisticsPageOne

@@ -1,0 +1,65 @@
+@import 'sass-rem';
+.list {
+	display: flex;
+	gap: rem(10px);
+	padding: rem(10px);
+	align-items: center;
+	justify-content: center;
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+.link {
+	display: inline-block;
+	position: relative;
+	font-size: rem(14px);
+	line-height: rem(16px);
+	color: #696969;
+	padding: rem(10px);
+	white-space: nowrap;
+	border-radius: 20px;
+	span {
+		position: relative;
+		z-index: 1;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: rem(-5px);
+		right: rem(-5px);
+		background: rgba(255, 255, 255, 0);
+		transition: 0.3s;
+		border-radius: rem(20px);
+		//z-index: -1;
+	}
+
+	&:hover,
+	&.linkActive {
+		color: #fff;
+
+		&:before {
+			background: rgba(255, 255, 255, 0.12);
+		}
+	}
+
+	&.linkCustom {
+		text-transform: uppercase;
+		color: #b7181b;
+		padding: rem(5px 13px);
+		border: 1px solid #b7181b;
+		border-radius: rem(30px);
+		font-style: italic;
+		font-weight: 700;
+
+		&:hover {
+			color: #b7181b;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+}
