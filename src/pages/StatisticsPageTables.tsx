@@ -1,15 +1,14 @@
-import {
-    StatisticsTables,
-} from '../components/';
+import { Header, StatisticsTables } from '../components/'
 
-function StatisticsPageTables(){
-   return (
-       <>
-           <main className="page page--statistics-main scroll">
-               <StatisticsTables />
-           </main>
-       </>	
-   );
-};
+function StatisticsPageTables() {
+	return (
+		<>
+			<Header showBottom={true} showTopProfile={true} />
+			<main className='page page--statistics-main scroll'>
+				<StatisticsTables />
+			</main>
+		</>
+	)
+}
 
-export default StatisticsPageTables;
+export default StatisticsPageTables
