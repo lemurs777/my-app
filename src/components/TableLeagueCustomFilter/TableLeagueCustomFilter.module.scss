@@ -95,6 +95,7 @@
 	white-space: nowrap;
 	display: flex;
 	align-items: center;
+	gap: rem(10px);
 	@media (max-width: 767.98px) {
 		display: none;
 	}
@@ -119,4 +120,41 @@
 		background: url('../../assets/images/svg/statistics-select.svg') no-repeat
 			50% 50% / contain;
 	}
+}
+.selectDesktop {
+	display: block;
+	@media (max-width: 767.98px) {
+		display: none;
+	}
+}
+.selectMobile {
+	display: none;
+	padding: rem(10px 13px);
+	.selectWrapper {
+		@media (max-width: 767.98px) {
+			display: flex;
+			color: #fff;
+			font-size: rem(16px);
+			font-weight: 700;
+			//max-width: rem(245px);
+			flex: 0 1 rem(245px);
+			padding: rem(8px);
+			justify-content: center;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+		}
+	}
+	@media (max-width: 767.98px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__arrow {
+		flex: 0 0 rem(30px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.selectMob {
+	flex: 0 1 rem(245px);
 }

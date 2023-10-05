@@ -1,0 +1,64 @@
+@import 'sass-rem';
+.selectR {
+	z-index: 4;
+	&__indicator,
+	&__value-container {
+		cursor: pointer !important;
+		padding: 0 !important;
+	}
+	&__indicator {
+		svg {
+			fill: #000;
+		}
+		@media (max-width: 767.98px) {
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+	&__menu {
+		z-index: 3 !important;
+		background-color: #f7ff13 !important;
+		border: rem(1px) solid #000 !important;
+		border-radius: 0 !important;
+	}
+	&__menu-list {
+		padding: 0 !important;
+	}
+	&__single-value {
+		@media (max-width: 767.98px) {
+			color: #fff !important;
+			font-weight: 700 !important;
+			padding: rem(8px) !important;
+		}
+	}
+	&__control {
+		color: #000 !important;
+		background-color: transparent !important;
+		font-size: rem(20px) !important;
+		border: 1px solid #000 !important;
+		border-radius: 0 !important;
+		padding: rem(5px) !important;
+		@media (max-width: 767.98px) {
+			border: none !important;
+			//color: #fff !important;
+			font-weight: 700 !important;
+			padding: rem(0px) !important;
+		}
+		&--is-focused {
+			box-shadow: none !important;
+		}
+	}
+	&__indicator-separator {
+		display: none !important;
+	}
+	&__option {
+		cursor: pointer !important;
+		color: #000 !important;
+		&--is-selected,
+		&--is-focused {
+			background-color: #000 !important;
+			color: #fff !important;
+		}
+	}
+}

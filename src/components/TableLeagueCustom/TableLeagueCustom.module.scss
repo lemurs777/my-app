@@ -20,6 +20,13 @@
 	display: flex;
 	background: rgba(255, 255, 255, 0.14);
 	padding: rem(0 22px);
+	@media (max-width: 767.98px) {
+		.headerCell {
+			&:last-child {
+				padding-right: rem(10px);
+			}
+		}
+	}
 }
 
 .headerCell,
@@ -166,6 +173,13 @@
 	padding: rem(0 22px);
 	background: rgba(255, 255, 255, 0.07);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	@media (max-width: 767.98px) {
+		.cell {
+			&:last-child {
+				padding-right: rem(10px);
+			}
+		}
+	}
 }
 
 .forms {
@@ -224,14 +238,21 @@
 
 .info {
 	margin-top: rem(24px);
+	@media (max-width: 767.98px) {
+		margin: rem(10px 12px 0);
+	}
 }
 
 .infoText {
 	font-weight: 400;
 	font-size: rem(18px);
-	line-height: rem(21px);
+	line-height: 1.166;
 	color: #fff;
 	margin-bottom: 2px;
+	@media (max-width: 767.98px) {
+		font-size: rem(16px);
+		margin-bottom: rem(10px);
+	}
 }
 
 .infoList {
@@ -249,7 +270,7 @@
 	position: relative;
 	font-weight: 400;
 	font-size: rem(18px);
-	line-height: rem(21px);
+	line-height: 1.166;
 	color: #fff;
 
 	&:before {
@@ -259,6 +280,12 @@
 		bottom: 0;
 		left: 0;
 		width: rem(5px);
+		@media (max-width: 767.98px) {
+			height: rem(16px);
+			top: 50%;
+			bottom: auto;
+			transform: translateY(-50%);
+		}
 	}
 
 	&:nth-child(1) {

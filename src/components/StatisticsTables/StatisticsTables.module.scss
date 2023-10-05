@@ -11,8 +11,14 @@
 	@media (max-width: 1199.98px) {
 		padding: rem(42px 0 26px);
 	}
+	@media (max-width: 767.98px) {
+		padding-top: 0;
+	}
 }
 
 .tableLeagueWrapper {
 	margin-bottom: rem(40px);
+	@media (max-width: 767.98px) {
+		margin-bottom: rem(24px);
+	}
 }
