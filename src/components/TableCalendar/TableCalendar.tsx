@@ -1,13 +1,10 @@
-import clsx from 'clsx';
+import clsx from 'clsx'
 
-import { 
-	StatisticsNavigation,
-} from '../';
+import { StatisticsNavigation } from '../'
 
-import styles from './TableCalendar.module.scss';
+import styles from './TableCalendar.module.scss'
 
 function TableCalendar() {
-
 	const arrRows = [
 		{
 			date: '15/04/23',
@@ -72,7 +69,7 @@ function TableCalendar() {
 					points: null,
 					overtime: null,
 				},
-			]
+			],
 		},
 		{
 			date: '16/04/23',
@@ -137,18 +134,19 @@ function TableCalendar() {
 					points: null,
 					overtime: null,
 				},
-			]
+			],
 		},
-		
 	]
 
 	return (
 		<div className={styles.tableCalendar}>
-			<StatisticsNavigation name="calendar"/>
+			<StatisticsNavigation name='calendar' />
 			<div className={styles.wrapper}>
 				<h1 className={styles.title}>Big V 2023</h1>
 				<div className={styles.filterWrapper}>
-					<button className={clsx(styles.filterBtn, styles.filterBtnActive)}>Раунды</button>
+					<button className={clsx(styles.filterBtn, styles.filterBtnActive)}>
+						Раунды
+					</button>
 					<button className={styles.filterBtn}>Недели</button>
 					<button className={styles.filterBtn}>Месяцы</button>
 					<button className={styles.filterBtn}>Полный список</button>
@@ -157,7 +155,9 @@ function TableCalendar() {
 					<button className={styles.roundBtn}>1</button>
 					<button className={styles.roundBtn}>2</button>
 					<button className={styles.roundBtn}>3</button>
-					<button className={clsx(styles.roundBtn, styles.roundBtnActive)}>4</button>
+					<button className={clsx(styles.roundBtn, styles.roundBtnActive)}>
+						4
+					</button>
 					<button className={styles.roundBtn}>5</button>
 					<button className={styles.roundBtn}>6</button>
 					<button className={styles.roundBtn}>7</button>
@@ -178,56 +178,83 @@ function TableCalendar() {
 					<div key={index} className={styles.table}>
 						<div className={styles.header}>
 							<div className={styles.headerCell}>{item.date}</div>
-							<div className={styles.headerCell}></div>
-							<div className={styles.headerCell}>1</div>
-							<div className={styles.headerCell}>2</div>
-							<div className={styles.headerCell}>3</div>
-							<div className={styles.headerCell}>4</div>
-							<div className={styles.headerCell}>P</div>
-							<div className={styles.headerCell}>OT</div>
+							<div
+								className={clsx(styles.headerCell, styles.headerCell__empty)}
+							></div>
+							<div className={styles.headerCell__right}>
+								<div className={styles.headerCell}>1</div>
+								<div className={styles.headerCell}>2</div>
+								<div className={styles.headerCell}>3</div>
+								<div className={styles.headerCell}>4</div>
+								<div className={styles.headerCell}>P</div>
+								<div className={styles.headerCell}>OT</div>
+							</div>
 						</div>
 						{item.rows.map((row, index) => (
-						<div key={index} className={styles.row}>
-							<div className={styles.cell}>{row.time}</div>
-							<div className={clsx(styles.cell, styles.cellInfo)}>
-								<span className={styles.cellName}>{row.nameOne}</span>
-								<span className={clsx(
-									styles.cellScore,
-									{ [styles.cellScoreEmpty] : !row.score}
-								)}>{row.score}</span>
-								<span className={styles.cellName}>{row.nameTwo}</span>
+							<div key={index} className={styles.row}>
+								<div className={styles.cell}>{row.time}</div>
+								<div className={clsx(styles.cell, styles.cellInfo)}>
+									<span className={styles.cellName}>{row.nameOne}</span>
+									<span
+										className={clsx(styles.cellScore, {
+											[styles.cellScoreEmpty]: !row.score,
+										})}
+									>
+										{row.score}
+									</span>
+									<span className={styles.cellName}>{row.nameTwo}</span>
+								</div>
+								<div className={styles.cell__right}>
+									<div
+										className={clsx(styles.cell, {
+											[styles.cellEmpty]: !row.one,
+										})}
+									>
+										{row.one}
+									</div>
+									<div
+										className={clsx(styles.cell, {
+											[styles.cellEmpty]: !row.two,
+										})}
+									>
+										{row.two}
+									</div>
+									<div
+										className={clsx(styles.cell, {
+											[styles.cellEmpty]: !row.three,
+										})}
+									>
+										{row.three}
+									</div>
+									<div
+										className={clsx(styles.cell, {
+											[styles.cellEmpty]: !row.four,
+										})}
+									>
+										{row.four}
+									</div>
+									<div
+										className={clsx(styles.cell, {
+											[styles.cellEmpty]: !row.points,
+										})}
+									>
+										{row.points}
+									</div>
+									<div
+										className={clsx(styles.cell, {
+											[styles.cellEmpty]: !row.overtime,
+										})}
+									>
+										{row.overtime}
+									</div>
+								</div>
 							</div>
-							<div className={clsx(
-								styles.cell,
-								{ [styles.cellEmpty] : !row.one }
-							)}>{row.one}</div>
-							<div className={clsx(
-								styles.cell,
-								{ [styles.cellEmpty] : !row.two }
-							)}>{row.two}</div>
-							<div className={clsx(
-								styles.cell,
-								{ [styles.cellEmpty] : !row.three }
-							)}>{row.three}</div>
-							<div className={clsx(
-								styles.cell,
-								{ [styles.cellEmpty] : !row.four }
-							)}>{row.four}</div>
-							<div className={clsx(
-								styles.cell,
-								{ [styles.cellEmpty] : !row.points }
-							)}>{row.points}</div>
-							<div className={clsx(
-								styles.cell,
-								{ [styles.cellEmpty] : !row.overtime }
-							)}>{row.overtime}</div>
-						</div>
 						))}
 					</div>
 				))}
 			</div>
 		</div>
-	);
+	)
 }
 
-export default TableCalendar;
+export default TableCalendar

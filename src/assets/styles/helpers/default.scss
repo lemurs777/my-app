@@ -343,6 +343,7 @@ main {
 	&--statistics-main {
 		display: block;
 		//top: rem(79px);
+		position: static;
 		max-height: calc(100vh - #{rem(78px)});
 	}
 

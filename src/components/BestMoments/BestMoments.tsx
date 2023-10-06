@@ -1,16 +1,15 @@
-import { Link } from 'react-router-dom';
-import clsx from 'clsx';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom'
+import clsx from 'clsx'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
-import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/css'
+import 'swiper/css/navigation'
 
-import styles from './BestMoments.module.scss';
+import styles from './BestMoments.module.scss'
 
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation } from 'swiper'
 
 function BestSlider() {
-
 	const bestList = [
 		{
 			nameOne: 'Манчестер Юнайтед',
@@ -96,47 +95,41 @@ function BestSlider() {
 			className: 'soccet',
 			link: '/',
 		},
-	];
+	]
 
 	return (
 		<div className={styles.bestMoments}>
 			<h2 className={styles.title}>Лучшие моменты дня</h2>
 			<Swiper
-				slidesPerView={'auto'} 
-				loop={true} 
+				slidesPerView={'auto'}
+				loop={true}
 				autoplay={{
 					delay: 2500,
-				}} 
+				}}
 				speed={300}
 				modules={[Autoplay, Navigation]}
 				navigation={true}
-				onSlideChange={() => console.log('slide change')}
-				onSwiper={(swiper) => console.log(swiper)}
+				//onSlideChange={() => console.log('slide change')}
+				//onSwiper={(swiper) => console.log(swiper)}
 				className={clsx(styles.list, 'best-slider')}
 			>
 				{bestList.map((item, index) => (
 					<SwiperSlide className={styles.item} key={index}>
-						<Link className={clsx(
-							styles.link,
-							styles[item.className]
-						)} to={item.link}>
+						<Link
+							className={clsx(styles.link, styles[item.className])}
+							to={item.link}
+						>
 							<h3 className={styles.linkTitle}>
-								<span className={styles.linkTitleOne}>
-									{item.nameOne}
-								</span>
-								<span className={styles.linkTitleTwo}>
-									{item.nameTwo}
-								</span>
+								<span className={styles.linkTitleOne}>{item.nameOne}</span>
+								<span className={styles.linkTitleTwo}>{item.nameTwo}</span>
 							</h3>
-							<div className={styles.live}>
-								live
-							</div>
+							<div className={styles.live}>live</div>
 						</Link>
 					</SwiperSlide>
 				))}
 			</Swiper>
 		</div>
-	);
+	)
 }
 
-export default BestSlider;
+export default BestSlider

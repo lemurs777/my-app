@@ -1,15 +1,14 @@
-import {
-	TableCalendar,
-} from '../components/';
+import { TableCalendar, Header } from '../components/'
 
-function StatisticsPageCalendar(){
+function StatisticsPageCalendar() {
 	return (
 		<>
-			<main className="page page--statistics-main scroll">
-                <TableCalendar />
+			<Header showTop={true} showBottom={false} />
+			<main className='page page--statistics-main scroll'>
+				<TableCalendar />
 			</main>
-		</>	
-	);
-};
+		</>
+	)
+}
 
-export default StatisticsPageCalendar;
+export default StatisticsPageCalendar
