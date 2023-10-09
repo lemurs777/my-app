@@ -5,8 +5,10 @@
   background: rgba(247, 255, 19, 0.15);
   height: rem(124px);
   padding: rem(13px 26px 2px);
-  @media(max-width:767.98px){
+
+  @media(max-width:767.98px) {
     padding: rem(5px 13px);
+    margin-top: rem(5px);
   }
 }
 
@@ -40,6 +42,7 @@
 
 .infoText {
   position: relative;
+
   @media(max-width: 767.98px) {
     font-size: rem(16px);
   }
@@ -64,6 +67,7 @@
   font-size: rem(18px);
   line-height: 1.166;
   font-weight: 400;
+
   @media(max-width: 767.98px) {
     font-size: rem(16px);
   }
@@ -72,6 +76,10 @@
 .list {
   display: flex;
   gap: rem(15px);
+
+  @media(max-width:767.98px) {
+    display: none;
+  }
 }
 
 .link {
@@ -93,4 +101,14 @@
     color: #000;
     background: #F7FF13;
   }
+}
+
+.infoMobileSelect {
+  display: none;
+  background-color: rgba(247, 255, 19, 0.15);
+
+  @media(max-width:767.98px) {
+    display: block;
+  }
+
 }

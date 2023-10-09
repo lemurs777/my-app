@@ -1,4 +1,4 @@
-import { 
+import {
 	Modal,
 	ModalLogIn,
 	ModalRegistration,
@@ -18,106 +18,234 @@ import {
 	ModalRefillCripto,
 	ModalNavigation,
 	ModalSettings,
-} from '../../components/';
+	ModalCheck,
+} from '../../components/'
+import { useState } from 'react'
 
-import { useState } from 'react';
+import styles from './Modals.module.scss'
 
-import styles from './Modals.module.scss';
-
-import useModal from "../../hooks/useModal";
+import useModal from '../../hooks/useModal'
 
 function Modals() {
-
-	const { isOpen, toggleModal} = useModal();
-	const [ isName, setIsName ] = useState('login');
-	const [ isFull, setIsFull ] = useState(true);
+	const { isOpen, toggleModal } = useModal()
+	const [isName, setIsName] = useState('login')
+	const [isFull, setIsFull] = useState(true)
 
 	function CurrentModal(name: string, full: boolean) {
-		setIsFull(full);
-		setIsName(name);
-		toggleModal();
-	};
+		setIsFull(full)
+		setIsName(name)
+		toggleModal()
+	}
 
 	return (
 		<>
 			<div className={styles.btnWrapper}>
-				<button className={styles.btn} onClick={() => { CurrentModal('login', true)}}>Вход (телефон, почта, соцсети)</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('registration', true)}}>Регистрация</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('registration-full', true)}}>Регистрация (полная)</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('verification', true) }}>Проверка личности</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('promocode', true) }}>Промокод</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('payment-status', true) }}>Статус оплаты</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('check-code', true) }}>Подтверждение</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('other-country', true) }}>Предупреждение</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('notifications', true) }}>Уведомления</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('ticket-info', true) }}>Информация о билете</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('chat', true) }}>Чат с поддержкой</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('support', true) }}>Поддержка</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('withdraw-money', true) }}>Вывод средств</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('refill', true) }}>Пополнение счёта</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('refill-cripto', true) }}>Пополнение счёта (крипта)</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('refill-finish', true) }}>Пополнение счёта (итог)</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('navigation', true) }}>Навигация</button>
-				<button className={styles.btn} onClick={() => { CurrentModal('settings', false) }}>Настройки</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('login', true)
+					}}
+				>
+					Вход (телефон, почта, соцсети)
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('registration', true)
+					}}
+				>
+					Регистрация
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('registration-full', true)
+					}}
+				>
+					Регистрация (полная)
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('verification', true)
+					}}
+				>
+					Проверка личности
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('promocode', true)
+					}}
+				>
+					Промокод
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('payment-status', true)
+					}}
+				>
+					Статус оплаты
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('check-code', true)
+					}}
+				>
+					Подтверждение
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('other-country', true)
+					}}
+				>
+					Предупреждение
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('notifications', true)
+					}}
+				>
+					Уведомления
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('ticket-info', true)
+					}}
+				>
+					Информация о билете
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('chat', true)
+					}}
+				>
+					Чат с поддержкой
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('support', true)
+					}}
+				>
+					Поддержка
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('withdraw-money', true)
+					}}
+				>
+					Вывод средств
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('refill', true)
+					}}
+				>
+					Пополнение счёта
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('refill-cripto', true)
+					}}
+				>
+					Пополнение счёта (крипта)
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('refill-finish', true)
+					}}
+				>
+					Пополнение счёта (итог)
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('navigation', true)
+					}}
+				>
+					Навигация
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('settings', false)
+					}}
+				>
+					Настройки
+				</button>
+				<button
+					className={styles.btn}
+					onClick={() => {
+						CurrentModal('check', true)
+					}}
+				>
+					Проверка
+				</button>
 			</div>
 			<Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>
-				{ (isName === 'login') ? (
-					<ModalLogIn toggleModal={toggleModal}/>
+				{isName === 'login' ? <ModalLogIn toggleModal={toggleModal} /> : null}
+				{isName === 'registration' ? (
+					<ModalRegistration toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'registration') ? (
-					<ModalRegistration toggleModal={toggleModal}/>
+				{isName === 'registration-full' ? (
+					<ModalRegistrationFull toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'registration-full') ? (
-					<ModalRegistrationFull toggleModal={toggleModal}/>
+				{isName === 'verification' ? (
+					<ModalVerification toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'verification') ? (
-					<ModalVerification toggleModal={toggleModal}/>
+				{isName === 'promocode' ? (
+					<ModalPromoCode toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'promocode') ? (
-					<ModalPromoCode toggleModal={toggleModal}/>
+				{isName === 'payment-status' ? (
+					<ModalPaymentStatus toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'payment-status') ? (
-					<ModalPaymentStatus toggleModal={toggleModal}/>
+				{isName === 'check-code' ? (
+					<ModalCheckCode toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'check-code') ? (
-					<ModalCheckCode toggleModal={toggleModal}/>
+				{isName === 'other-country' ? (
+					<ModalOtherCountry toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'other-country') ? (
-					<ModalOtherCountry toggleModal={toggleModal}/>
+				{isName === 'notifications' ? (
+					<ModalNotifications toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'notifications') ? (
-					<ModalNotifications toggleModal={toggleModal}/>
+				{isName === 'ticket-info' ? (
+					<ModalTicketInfo toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'ticket-info') ? (
-					<ModalTicketInfo toggleModal={toggleModal}/>
+				{isName === 'chat' ? <ModalChat toggleModal={toggleModal} /> : null}
+				{isName === 'support' ? (
+					<ModalSupport toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'chat') ? (
-					<ModalChat toggleModal={toggleModal}/>
+				{isName === 'withdraw-money' ? (
+					<ModalWithdrawMoney toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'support') ? (
-					<ModalSupport toggleModal={toggleModal}/>
+				{isName === 'refill' ? <ModalRefill toggleModal={toggleModal} /> : null}
+				{isName === 'refill-cripto' ? (
+					<ModalRefillCripto toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'withdraw-money') ? (
-					<ModalWithdrawMoney toggleModal={toggleModal}/>
+				{isName === 'refill-finish' ? (
+					<ModalRefillFinish toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'refill') ? (
-					<ModalRefill toggleModal={toggleModal}/>
+				{isName === 'navigation' ? (
+					<ModalNavigation toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'refill-cripto') ? (
-					<ModalRefillCripto toggleModal={toggleModal}/>
+				{isName === 'settings' ? (
+					<ModalSettings toggleModal={toggleModal} />
 				) : null}
-				{ (isName === 'refill-finish') ? (
-					<ModalRefillFinish toggleModal={toggleModal}/>
-				) : null}
-				{ (isName === 'navigation') ? (
-					<ModalNavigation toggleModal={toggleModal}/>
-				) : null}
-				{ (isName === 'settings') ? (
-					<ModalSettings toggleModal={toggleModal}/>
-				) : null}
+				{isName === 'check' ? <ModalCheck toggleModal={toggleModal} /> : null}
 			</Modal>
 		</>
-	);
-};
+	)
+}
 
-export default Modals;
+export default Modals

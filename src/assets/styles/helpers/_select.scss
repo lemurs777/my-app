@@ -1,0 +1,61 @@
+.statisticsNavigationSelect {
+  &__control {
+    background-color: #252603 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: rem(12px);
+      height: rem(8px);
+      border-style: solid;
+      border-width: 8px 6px 0 6px;
+      border-color: #FFFFFF transparent transparent transparent;
+      transform: rotate(0deg);
+      right: rem(14px);
+    }
+  }
+
+  &__value-container {
+    padding-right: 0 !important;
+    padding-left: rem(20px) !important;
+  }
+
+  &__single-value {
+    color: #fff !important;
+
+  }
+
+  &__indicators {
+    display: none !important;
+  }
+
+  &__menu {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  &__menu-list {
+    background-color: #252603;
+  }
+
+  &__option {
+    color: #fff !important;
+    padding-left: rem(20px) !important;
+
+    &--is-disabled {
+      background: transparent !important;
+    }
+
+    &--is-focused {
+      background: transparent !important;
+    }
+
+    &--is-selected {
+      background: #333 !important;
+
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "sass-rem";
+
+.modalOtherCountry {
+  position: relative;
+  padding: rem(19px 58px 25px);
+  width: rem(370px);
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: rem(18px);
+  font-weight: 500;
+  line-height: rem(21px);
+  margin-bottom: rem(30px);
+}
+
+.img {
+  display: block;
+  margin-bottom: rem(30px);
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: rem(15px);
+}
+
+.btnDisable {
+  color: #737373;
+  padding: rem(13px 20px);
+  display: inline-block;
+  width: 100%;
+  border-radius: rem(3px);
+  background: #303030;
+  text-align: center;
+  font-size: rem(15px);
+  line-height: rem(18px);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &.btnActive {
+    color: #000;
+    background: #FAFE13;
+  }
+}
+
+.btn {
+  max-width: rem(192px);
+  color: #000;
+  padding: rem(13px 20px);
+  display: inline-block;
+  width: 100%;
+  border-radius: rem(3px);
+  background: #FAFE13;
+  text-align: center;
+  font-size: rem(15px);
+  line-height: rem(18px);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}

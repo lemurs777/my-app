@@ -1,19 +1,26 @@
+import clsx from 'clsx'
+import { Link } from 'react-router-dom'
 
-import clsx from 'clsx';
-import { Link } from 'react-router-dom';
+import { Settings } from './types'
 
-import { Settings } from './types';
-
-import styles from './StatisticsNavigation.module.scss';
+import styles from './StatisticsNavigation.module.scss'
+import Select from 'react-select'
 
 function StatisticsNavigation(props: Settings) {
-
+	const select = [
+		{ value: 'Обзор', label: 'Обзор' },
+		{ value: 'Очные', label: 'Очные' },
+		{ value: 'Календарь', label: 'Календарь' },
+		{ value: 'Таблица', label: 'Таблица' },
+		{ value: 'Команды', label: 'Команды' },
+		{ value: 'Архив', label: 'Архив' },
+	]
 	const info = {
 		sport: 'Баскетбол',
 		region: 'Океания',
 		country: 'Австралия',
-		tournament: 'Big V 2023'
-	};
+		tournament: 'Big V 2023',
+	}
 
 	const arrLinks = [
 		{
@@ -46,11 +53,11 @@ function StatisticsNavigation(props: Settings) {
 			link: '/statistics/archive',
 			name: 'archive',
 		},
-	];
+	]
 
 	return (
 		<div className={styles.statisticsNavigation}>
-            <div className={styles.info}>
+			<div className={styles.info}>
 				<div className={styles.infoTop}>
 					<div className={styles.infoText}>{info.sport}</div>
 					<div className={styles.infoText}>{info.region}</div>
@@ -58,22 +65,29 @@ function StatisticsNavigation(props: Settings) {
 				</div>
 				<div className={styles.infoName}>{info.tournament}</div>
 			</div>
+			<div className={styles.infoMobileSelect}>
+				<Select
+					options={select}
+					defaultValue={select[0]}
+					classNamePrefix='statisticsNavigationSelect'
+				/>
+			</div>
 			<ul className={styles.list}>
 				{arrLinks.map((item, index) => (
 					<li key={index} className={styles.item}>
 						<Link
-							className={clsx(
-								styles.link,
-								{[styles.linkActive]: item.name === props.name}
-							)} 
-							to={item.link}>
+							className={clsx(styles.link, {
+								[styles.linkActive]: item.name === props.name,
+							})}
+							to={item.link}
+						>
 							{item.text}
 						</Link>
 					</li>
 				))}
 			</ul>
 		</div>
-	);
+	)
 }
 
-export default StatisticsNavigation;
+export default StatisticsNavigation
