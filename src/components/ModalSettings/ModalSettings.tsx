@@ -6,7 +6,6 @@ import { ModalType, ModalSettingsType } from './types'
 import styles from './ModalSettings.module.scss'
 
 function ModalSettings(data: ModalType) {
-
 	const [showSettings, setShowSettings] = useState(0)
 
 	const arrSettings = [
@@ -45,12 +44,10 @@ function ModalSettings(data: ModalType) {
 				},
 				{
 					name: 'Пари в один клик. Сумма пари:',
-					sum: '150 Ꝑ',
 					check: false,
 				},
 				{
 					name: 'Пари в один клик. Сумма пари:',
-					sum: '1200 Ꝑ',
 					check: false,
 				},
 			],
@@ -61,17 +58,14 @@ function ModalSettings(data: ModalType) {
 			list: [
 				{
 					name: 'Пари в один клик. Сумма пари:',
-					sum: '50 Ꝑ',
 					check: false,
 				},
 				{
 					name: 'Пари в один клик. Сумма пари:',
-					sum: '150 Ꝑ',
 					check: true,
 				},
 				{
 					name: 'Пари в один клик. Сумма пари:',
-					sum: '1200 Ꝑ',
 					check: false,
 				},
 			],
@@ -105,9 +99,9 @@ function ModalSettings(data: ModalType) {
 				{
 					name: 'Пари в один клик. Сумма пари:',
 					check: true,
-				}
+				},
 			],
-		}
+		},
 	]
 	const counterList = ['50', '500', '1000']
 	return (
@@ -117,28 +111,36 @@ function ModalSettings(data: ModalType) {
 				<ul className={styles.menuList}>
 					{arrSettings.map((item, index) => (
 						<li key={index} className={styles.menuItem}>
-							<button className={clsx(
-								styles.menuItemBtn,
-								{ [styles.menuItemBtnActive]: index === showSettings }
-							)} onClick={() => setShowSettings(() => index)}>
-								<div className={clsx(
-									styles.menuItemBtnIcon,
-									{ [styles.menuItemBtnIconActive]: index === showSettings }
-								)}></div>
+							<button
+								className={clsx(styles.menuItemBtn, {
+									[styles.menuItemBtnActive]: index === showSettings,
+								})}
+								onClick={() => setShowSettings(() => index)}
+							>
+								<div
+									className={clsx(styles.menuItemBtnIcon, {
+										[styles.menuItemBtnIconActive]: index === showSettings,
+									})}
+								></div>
 								<div className={styles.menuItemBtnIconText}>{item.name}</div>
 							</button>
 						</li>
 					))}
 				</ul>
-				<button className={styles.menuBtn}>Вернуть настройки по умолчанию</button>
+				<button className={styles.menuBtn}>
+					Вернуть настройки по умолчанию
+				</button>
 			</div>
 			<div className={styles.content}>
 				{arrSettingsList.map((item, index) => (
 					<div key={index} className={styles.contentInner}>
-						<div className={clsx(
-							styles.contentTitle,
-							{ [styles.contentTitleSmall]: item.titleSmall }
-						)}>{item.title}</div>
+						<div
+							className={clsx(styles.contentTitle, {
+								[styles.contentTitleSmall]: item.titleSmall,
+							})}
+						>
+							{item.title}
+						</div>
 						<ul className={styles.checkboxList}>
 							{item.list.map((item, index) => (
 								<SettingsItem key={index} item={item} />
@@ -148,10 +150,13 @@ function ModalSettings(data: ModalType) {
 				))}
 				{arrSettingsListHorizontal.map((item, index) => (
 					<div key={index} className={styles.contentInner}>
-						<div className={clsx(
-							styles.contentTitle,
-							{ [styles.contentTitleSmall]: item.titleSmall }
-						)}>{item.title}</div>
+						<div
+							className={clsx(styles.contentTitle, {
+								[styles.contentTitleSmall]: item.titleSmall,
+							})}
+						>
+							{item.title}
+						</div>
 						<ul className={styles.checkboxListHorizontal}>
 							{item.list.map((item, index) => (
 								<SettingsItem key={index} item={item} />
@@ -161,7 +166,10 @@ function ModalSettings(data: ModalType) {
 				))}
 				<div className={styles.counterInner}>
 					{counterList.map(props => (
-						<div className={styles.counter} key={props}>{props}<span>x</span></div>
+						<div className={styles.counter} key={props}>
+							{props}
+							<span>x</span>
+						</div>
 					))}
 					<button className={styles.counter__btn} type='button'></button>
 				</div>
@@ -173,7 +181,6 @@ function ModalSettings(data: ModalType) {
 export default ModalSettings
 
 function SettingsItem(data: ModalSettingsType) {
-
 	const [isCheck, setIsCheck] = useState(data.item.check)
 
 	const handleCheck = () => {
@@ -182,11 +189,15 @@ function SettingsItem(data: ModalSettingsType) {
 	return (
 		<li className={styles.checkboxItem}>
 			<label className={styles.checkboxLabel}>
-				<input className={styles.checkbox} type="checkbox" checked={data.item.check} onChange={handleCheck} />
-				<div className={clsx(
-					styles.check,
-					{ [styles.checkActive]: isCheck }
-				)}></div>
+				<input
+					className={styles.checkbox}
+					type='checkbox'
+					checked={data.item.check}
+					onChange={handleCheck}
+				/>
+				<div
+					className={clsx(styles.check, { [styles.checkActive]: isCheck })}
+				></div>
 				<div className={styles.checkboxText}>{data.item.name}</div>
 			</label>
 			{data.item.sum && (
@@ -194,4 +205,4 @@ function SettingsItem(data: ModalSettingsType) {
 			)}
 		</li>
 	)
-};
+}

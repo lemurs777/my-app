@@ -1,12 +1,7 @@
-import { 
-	Profile,
-} from '../components/';
+import { Profile } from '../components/'
 
-function ProfilePage(){
+function ProfilePage() {
+	return <Profile />
+}
 
-	return (
-		<Profile />
-	);
-};
-
-export default ProfilePage;
+export default ProfilePage

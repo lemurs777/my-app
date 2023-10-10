@@ -1,19 +1,18 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import clsx from 'clsx';
-import { 
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import clsx from 'clsx'
+import {
 	Modal,
 	ModalChat,
 	ModalSupport,
 	ModalSettings,
-} from '../../components/';
+} from '../../components/'
 
-import useModal from "../../hooks/useModal";
+import useModal from '../../hooks/useModal'
 
-import styles from './Profile.module.scss';
+import styles from './Profile.module.scss'
 
 function Profile() {
-
 	const arrProfileInfo = [
 		{
 			title: 'Персональные данные',
@@ -111,7 +110,7 @@ function Profile() {
 				},
 			],
 		},
-	];
+	]
 
 	return (
 		<div className={styles.profile}>
@@ -121,95 +120,104 @@ function Profile() {
 			</div>
 			<ul className={styles.list}>
 				{arrProfileInfo.map((profileInfo, index) => (
-					<ProfileItem key={index} data={profileInfo}/>
+					<ProfileItem key={index} data={profileInfo} />
 				))}
 			</ul>
 		</div>
-	);
+	)
 }
 
-export default Profile;
+export default Profile
 
-function ProfileItem(
-	{ data } : 
-	{ data: {
-		title: string,
-		info: string,
-		iconClass: string,
-		infoItems: Array<{ 
-			name: string, 
-			link: string, 
-			isProblem: boolean,
-			isModal: boolean,
+function ProfileItem({
+	data,
+}: {
+	data: {
+		title: string
+		info: string
+		iconClass: string
+		infoItems: Array<{
+			name: string
+			link: string
+			isProblem: boolean
+			isModal: boolean
 		}>
 	}
-	}) {
+}) {
+	const [isOpenTab, setIsOpenTab] = useState(false)
+	const { isOpen, toggleModal } = useModal()
 
-	const [isOpenTab, setIsOpenTab] = useState(false);
-	const { isOpen, toggleModal } = useModal();
-
-	const [ isName, setIsName ] = useState('');
+	const [isName, setIsName] = useState('')
 
 	function CurrentModal(name: string) {
-		setIsName(name);
-		toggleModal();
-	};
+		setIsName(name)
+		toggleModal()
+	}
 
 	const handleClick = () => {
-		setIsOpenTab(current => !current);
+		setIsOpenTab(current => !current)
 	}
-	
+
 	return (
 		<li className={styles.item}>
 			<div className={styles.btnTab} onClick={handleClick}>
 				<div className={styles.header}>
-					<div className={clsx(
-						styles.headerIcon,
-						styles[data.iconClass],
-						{[styles.headerIconOpen]: isOpenTab },
-					)}></div>
+					<div
+						className={clsx(styles.headerIcon, styles[data.iconClass], {
+							[styles.headerIconOpen]: isOpenTab,
+						})}
+					></div>
 					<h3 className={styles.title}>{data.title}</h3>
 					<div className={styles.headerBtnMore}></div>
 				</div>
-				<div className={clsx(
-					styles.itemInfo,
-					{[styles.itemInfoOpen]: !isOpenTab}
-				)}>{data.info}</div>
+				<div
+					className={clsx(styles.itemInfo, {
+						[styles.itemInfoOpen]: !isOpenTab,
+					})}
+				>
+					{data.info}
+				</div>
 			</div>
-			<ul className={clsx(
-				styles.subList,
-				{[styles.subListOpen]: isOpenTab}
-			)}>
+			<ul className={clsx(styles.subList, { [styles.subListOpen]: isOpenTab })}>
 				{data.infoItems.map((infoItem, index) => (
 					<li key={index} className={styles.subItem}>
 						{infoItem.isModal ? (
 							<>
-							<button className={clsx(
-								styles.link,
-								{[styles.linkProblem] : infoItem.isProblem}
-							)} 
-							onClick={() => { CurrentModal(infoItem.link)}}>{infoItem.name}</button>
-							<Modal isOpen={isOpen} toggleModal={toggleModal} full={true}>
-								{ (isName === 'chat') ? (
-									<ModalChat toggleModal={toggleModal}/>
-								) : null}
-								{ (isName === 'support') ? (
-									<ModalSupport toggleModal={toggleModal}/>
-								) : null}
-								{ (isName === 'settings') ? (
-									<ModalSettings toggleModal={toggleModal}/>
-								) : null}
-							</Modal>
+								<button
+									className={clsx(styles.link, {
+										[styles.linkProblem]: infoItem.isProblem,
+									})}
+									onClick={() => {
+										CurrentModal(infoItem.link)
+									}}
+								>
+									{infoItem.name}
+								</button>
+								<Modal isOpen={isOpen} toggleModal={toggleModal} full={true}>
+									{isName === 'chat' ? (
+										<ModalChat toggleModal={toggleModal} />
+									) : null}
+									{isName === 'support' ? (
+										<ModalSupport toggleModal={toggleModal} />
+									) : null}
+									{isName === 'settings' ? (
+										<ModalSettings toggleModal={toggleModal} />
+									) : null}
+								</Modal>
 							</>
 						) : (
-							<Link className={clsx(
-								styles.link,
-								{[styles.linkProblem] : infoItem.isProblem}
-							)} to={infoItem.link}>{infoItem.name}</Link>
+							<Link
+								className={clsx(styles.link, {
+									[styles.linkProblem]: infoItem.isProblem,
+								})}
+								to={infoItem.link}
+							>
+								{infoItem.name}
+							</Link>
 						)}
 					</li>
 				))}
 			</ul>
 		</li>
-	);
-};
+	)
+}

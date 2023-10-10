@@ -2,7 +2,7 @@
 
 .modal {
   z-index: 9999;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - rem(78px));
   position: fixed;
   left: 0;
@@ -16,7 +16,7 @@
 }
 
 .modalFull {
-  height: 100vh;
+  height: 100%;
 }
 
 .overlay {
@@ -35,6 +35,7 @@
   cursor: pointer;
   transition: .3s;
   z-index: 2;
+
   @media(max-width: 767.98px) {
     top: rem(20px);
     right: rem(9px);

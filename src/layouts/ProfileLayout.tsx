@@ -7,7 +7,7 @@ type MyComponentProps = React.PropsWithChildren<{}>
 function ProfileLayout({ children }: MyComponentProps) {
 	return (
 		<>
-			<Header showBottom={false} showBottomProfile={true} />
+			<Header showBottom={false} showBottomProfile={true} showTop={true} />
 			<main className='page page--profile'>
 				<div className='column-left column-left--profile'>
 					<Balance />

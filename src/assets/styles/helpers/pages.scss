@@ -3,6 +3,7 @@
   width: 100%;
   padding: rem(0 20px);
   margin: 0 auto;
+
   @media(max-width: 767.98px) {
     padding: 0;
   }
@@ -23,8 +24,9 @@
     position: relative;
 
     @media(max-width: 991.98px) {
-      width: auto;
+      width: 100%;
       max-width: none;
+      min-width: auto;
     }
 
     &:before {
@@ -43,6 +45,7 @@
     max-width: rem(390px);
     width: rem(390px);
     position: relative;
+
     @media(max-width: 800px) {
       min-width: auto;
       max-width: none;

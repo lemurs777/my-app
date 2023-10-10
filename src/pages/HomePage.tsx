@@ -1,25 +1,21 @@
-import { 
-	MainSlider, 
-	Sport,
-	Broadcast,
-	Multiple, 
-	Menu, 
-} from '../components/';
+import { MainSlider, Sport, Broadcast, Multiple, Menu } from '../components/'
+import Search from '../components/Search'
 
-function HomePage(){
+function HomePage() {
 	return (
 		<>
 			<Menu />
-			<main className="page page--index scroll">
+			<Search />
+			<main className='page page--index scroll'>
 				<MainSlider />
 				<Sport />
 			</main>
-			<aside className="aside aside--index scroll">
+			<aside className='aside aside--index scroll'>
 				<Broadcast />
 				<Multiple />
 			</aside>
-		</>	
-	);
-};
+		</>
+	)
+}
 
-export default HomePage;
+export default HomePage
