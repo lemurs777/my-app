@@ -1,10 +1,9 @@
-import { Link, NavLink } from 'react-router-dom';
-import clsx from 'clsx';
+import { Link, NavLink } from 'react-router-dom'
+import clsx from 'clsx'
 
-import styles from './Menu.module.scss';
+import styles from './Menu.module.scss'
 
 function Menu() {
-
 	const arrLinks = [
 		{
 			name: 'Топ',
@@ -90,31 +89,35 @@ function Menu() {
 			live: false,
 			active: false,
 		},
-	];
-
+	]
 
 	return (
 		<div className={styles.menu}>
 			<ul className={styles.list}>
 				{arrLinks.map((item, index) => (
 					<li key={index} className={styles.item}>
-						<NavLink to={item.link}
-							className={
-								({ isActive, isPending }) =>
-									clsx(
-										isActive ? styles.active : null,
-										styles.link,
-										styles[item.class],
-										{ [styles.live]: item.live },
-										// { [styles.active]: item.active },
-									)}
-						>{item.name}</NavLink>
+						<NavLink
+							to={item.link}
+							className={({ isActive, isPending }) =>
+								clsx(
+									isActive ? styles.active : null,
+									styles.link,
+									styles[item.class],
+									{ [styles.live]: item.live }
+									//{ [styles.active]: item.active }
+								)
+							}
+						>
+							{item.name}
+						</NavLink>
 					</li>
 				))}
 			</ul>
-			<Link className={styles.more} to="/">More sports</Link>
+			<Link className={styles.more} to='/'>
+				More sports
+			</Link>
 		</div>
-	);
+	)
 }
 
-export default Menu;
+export default Menu

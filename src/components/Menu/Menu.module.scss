@@ -1,215 +1,215 @@
 @import "sass-rem";
 
 .menu {
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	top: rem(146px);
-	bottom: 0;
-	left: 0;
-	padding: rem(26px 17px 66px);
-	background: #000;
-	border-width: 0px 1px 1px 0px;
-	border-style: solid;
-	border-color: #232323;
-	width: rem(86px);
-	max-height: calc(100vh - #{rem(146px)});
-	overflow-y: scroll;
-	z-index: 5;
+  display: flex;
+  flex-direction: column;
+  //position: fixed;
+  //top: rem(146px);
+  //bottom: 0;
+  //left: 0;
+  padding: rem(26px 17px 66px);
+  background: #000;
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-color: #232323;
+  width: rem(86px);
+  max-height: calc(100vh - #{rem(146px)});
+  overflow-y: scroll;
+  z-index: 5;
 
-	@media(max-width:768px) {
-		display: none;
-	}
+  @media(max-width:768px) {
+    display: none;
+  }
 
-	&::-webkit-scrollbar {
-		width: rem(5px);
-	}
+  &::-webkit-scrollbar {
+    width: rem(5px);
+  }
 
-	&::-webkit-scrollbar-track {
-		background-color: #28293e;
-		border-radius: rem(5px);
-	}
+  &::-webkit-scrollbar-track {
+    background-color: #28293e;
+    border-radius: rem(5px);
+  }
 
-	&::-webkit-scrollbar-thumb {
-		border-radius: rem(5px);
-		background: #8b8b97;
-	}
+  &::-webkit-scrollbar-thumb {
+    border-radius: rem(5px);
+    background: #8b8b97;
+  }
 }
 
 .list {
-	display: flex;
-	flex-direction: column;
-	gap: rem(20px);
-	max-width: rem(55px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+  max-width: rem(55px);
 }
 
 .item {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .link {
-	display: flex;
-	justify-content: center;
-	color: #8A8A8A;
-	font-weight: 500;
-	font-size: rem(12px);
-	line-height: rem(14px);
-	text-align: center;
-	margin-left: rem(-5px);
-	margin-right: rem(-5px);
-	width: calc(100% + rem(10px));
-	padding-top: rem(55px);
-	position: relative;
+  display: flex;
+  justify-content: center;
+  color: #8A8A8A;
+  font-weight: 500;
+  font-size: rem(12px);
+  line-height: rem(14px);
+  text-align: center;
+  margin-left: rem(-5px);
+  margin-right: rem(-5px);
+  width: calc(100% + rem(10px));
+  padding-top: rem(55px);
+  position: relative;
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		width: rem(52px);
-		left: 50%;
-		height: rem(52px);
-		border-radius: rem(16px);
-		background-color: #161616;
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: 50% 50%;
-		opacity: .6;
-		transition: .3s;
-		border: 2px solid transparent;
-		transform: translateX(-50%);
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: rem(52px);
+    left: 50%;
+    height: rem(52px);
+    border-radius: rem(16px);
+    background-color: #161616;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    opacity: .6;
+    transition: .3s;
+    border: 2px solid transparent;
+    transform: translateX(-50%);
+  }
 
-	&:hover,
-	&.active {
-		color: #fff;
+  &:hover,
+  &.active {
+    color: #fff;
 
-		&:before {
-			background-color: #000;
-			border-color: #F7FF13;
-			border-radius: rem(13px);
-			opacity: 1;
-		}
-	}
+    &:before {
+      background-color: #000;
+      border-color: #F7FF13;
+      border-radius: rem(13px);
+      opacity: 1;
+    }
+  }
 }
 
 .game {
-	&:before {
-		background-size: rem(34px), rem(34px);
-		opacity: 1;
-	}
+  &:before {
+    background-size: rem(34px), rem(34px);
+    opacity: 1;
+  }
 }
 
 .top {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-top.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-top.svg");
+  }
 }
 
 .soccer {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-soccer.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-soccer.svg");
+  }
 }
 
 .hockey {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-hockey.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-hockey.svg");
+  }
 }
 
 .basketball {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-basketball.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-basketball.svg");
+  }
 }
 
 .tennis {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-tennis.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-tennis.svg");
+  }
 }
 
 .rugby {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-rugby.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-rugby.svg");
+  }
 }
 
 .volleyball {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-volleyball.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-volleyball.svg");
+  }
 }
 
 .mma {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-mma.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-mma.svg");
+  }
 }
 
 .cricket {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-cricket.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-cricket.svg");
+  }
 }
 
 .racing {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-racing.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-racing.svg");
+  }
 }
 
 .chess {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-chess.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-chess.svg");
+  }
 }
 
 .athletics {
-	&:before {
-		background-image: url("../../assets/images/svg/menu-athletics.svg");
-	}
+  &:before {
+    background-image: url("../../assets/images/svg/menu-athletics.svg");
+  }
 }
 
 .live {
-	&:after {
-		content: "";
-		width: rem(16px);
-		height: rem(16px);
-		position: absolute;
-		top: rem(-4px);
-		right: rem(-4px);
-		background: url("../../assets/images/svg/menu-live.svg") no-repeat 50% 50% /contain;
-	}
+  &:after {
+    content: "";
+    width: rem(16px);
+    height: rem(16px);
+    position: absolute;
+    top: rem(-4px);
+    right: rem(-4px);
+    background: url("../../assets/images/svg/menu-live.svg") no-repeat 50% 50% /contain;
+  }
 }
 
 .more {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: rem(40px);
-	background: #232323;
-	font-size: 0;
-	width: rem(86px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: rem(40px);
+  background: #232323;
+  font-size: 0;
+  width: rem(86px);
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: rem(24px);
-		height: rem(24px);
-		background: url("../../assets/images/svg/menu-more.svg") no-repeat 50% 50% /contain;
-		opacity: .6;
-		transition: .3s;
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(24px);
+    height: rem(24px);
+    background: url("../../assets/images/svg/menu-more.svg") no-repeat 50% 50% /contain;
+    opacity: .6;
+    transition: .3s;
+  }
 
-	&:hover {
-		&:before {
-			opacity: 1;
-		}
-	}
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
 }

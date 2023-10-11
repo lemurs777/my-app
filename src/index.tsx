@@ -41,6 +41,8 @@ import EventsDetailedPage from './pages/EventsDetailedPage'
 import ModalsPage from './pages/ModalsPage'
 import EventsLayout from './layouts/EventsLayout'
 import StatisticOneLayout from './layouts/StatisticOneLayout'
+import CyberSportEventPage from './pages/CyberSportEventPage'
+import CyberSportLayout from './layouts/CyberSportLayout'
 
 export default function App() {
 	return (
@@ -48,7 +50,7 @@ export default function App() {
 			<Routes>
 				<Route path='/' element={<MainLayout />}>
 					<Route index element={<HomePage />} />
-					<Route path='/cybersport' element={<HomePageGames />} />
+
 					<Route path='/choice-of-sport' element={<ChoiceSportPage />} />
 					<Route path='/choice-of-country' element={<ChoiceCountryPage />} />
 					<Route path='/faq' element={<FAQPage />} />
@@ -64,6 +66,10 @@ export default function App() {
 					<Route path='promo' element={<MyPromo />} />
 					<Route path='deposit' element={<DepositPage />} />
 					<Route path='limits' element={<LimitsProfile />} />
+				</Route>
+				<Route path='/cyber-sport' element={<CyberSportLayout />}>
+					<Route index element={<HomePageGames />} />
+					<Route path='event' element={<CyberSportEventPage />} />
 				</Route>
 				<Route path='/requests/' element={<RequestsLayout />}>
 					<Route index element={<RequestsPage />} />
