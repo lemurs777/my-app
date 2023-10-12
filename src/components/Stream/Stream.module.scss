@@ -1,0 +1,25 @@
+@import 'sass-rem';
+
+.stream {
+  position: relative;
+
+
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(54px);
+    height: rem(54px);
+    border-radius: 50%;
+    background: #F7FF13 url("../../assets/images/svg/game-banner-play.svg") no-repeat 50% 50%;
+    background-size: rem(24px) rem(24px);
+    transition: .3s;
+    font-size: 0;
+    cursor: pointer;
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.05);
+    }
+  }
+}

@@ -3,7 +3,7 @@ import {
 	EventsToday,
 	EventsInfo,
 	Multiple,
-	Broadcast,
+	//Broadcast,
 } from '../components/'
 
 function EventsDetailedPage() {
@@ -418,7 +418,7 @@ function EventsDetailedPage() {
 					<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />
 				</main>
 				<aside className='aside aside--events scroll'>
-					<Broadcast />
+					{/*<Broadcast />*/}
 					<Multiple />
 				</aside>
 			</div>

@@ -1,4 +1,4 @@
-import { MainSlider, Sport, Broadcast, Multiple, Menu } from '../components/'
+import { MainSlider, Sport, Multiple, Menu } from '../components/'
 import Search from '../components/Search'
 
 function HomePage() {
@@ -11,7 +11,7 @@ function HomePage() {
 				<Sport />
 			</main>
 			<aside className='aside aside--index scroll'>
-				<Broadcast />
+				{/*<Broadcast />*/}
 				<Multiple />
 			</aside>
 		</>

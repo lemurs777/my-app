@@ -161,6 +161,8 @@ main {
   display: flex;
   align-items: flex-start;
   overflow: hidden;
+
+
 }
 
 .liveBettingStatusFive {
@@ -363,18 +365,12 @@ main {
 
 .aside {
   margin-left: auto;
-  //position: fixed;
-  //top: 9.125rem;
-  //bottom: 0;
-  //right: 0;
   max-height: calc(100vh - 9.0625rem);
-  padding: rem(0 15px 15px);
   overflow-y: auto;
   min-width: rem(268px);
   max-width: rem(340px);
 
   &--index {
-    // width: rem(373px);
     width: 19vw;
     display: flex;
     flex-direction: column;

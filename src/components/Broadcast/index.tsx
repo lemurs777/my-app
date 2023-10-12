@@ -1,1 +1,1 @@
-export { default } from './Broadcast';
+export { default } from './Broadcast'

@@ -1,0 +1,18 @@
+@import 'sass-rem';
+
+.button {
+  color: #000;
+  padding: rem(10px);
+  text-align: center;
+  font-size: rem(17px);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #FAFE13;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: #e5e912;
+
+  }
+}

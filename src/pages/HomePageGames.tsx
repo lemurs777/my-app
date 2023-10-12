@@ -2,7 +2,7 @@ import {
 	GameInfo,
 	GameBanner,
 	CyberSport,
-	Broadcast,
+	//Broadcast,
 	Multiple,
 	MenuGame,
 	HeaderTop,
@@ -26,7 +26,7 @@ function HomePageGames() {
 				</div>
 			</main>
 			<aside className='aside aside--index aside--cyber scroll'>
-				<Broadcast />
+				{/*<Broadcast />*/}
 				{/*<Multiple />*/}
 				<CouponEmpty />
 			</aside>

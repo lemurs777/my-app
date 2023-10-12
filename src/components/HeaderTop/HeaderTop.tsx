@@ -112,7 +112,7 @@ function HeaderTop() {
 						</Link>
 					</li>
 					<li className={styles.navItem}>
-						<Link className={styles.navLink} to='/cybersport'>
+						<Link className={styles.navLink} to='/cyber-sport'>
 							Киберспорт
 						</Link>
 					</li>

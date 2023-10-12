@@ -3,15 +3,12 @@ import {
 	EventsToday,
 	EventsInfo,
 	Multiple,
-	Broadcast
-} from '../components/';
-import BestMomentProfile from '../components/BestMomentProfile';
-import SportFooter from '../components/SportFooter';
-
+	//Broadcast
+} from '../components/'
+import BestMomentProfile from '../components/BestMomentProfile'
+import SportFooter from '../components/SportFooter'
 
 function EventsPage() {
-
-
 	const arrCategory = [
 		{
 			name: 'Все',
@@ -53,7 +50,7 @@ function EventsPage() {
 			name: '2-й тайм: Гандикап',
 			active: false,
 		},
-	];
+	]
 
 	const eventItems = [
 		{
@@ -351,27 +348,25 @@ function EventsPage() {
 				},
 			],
 		},
-	];
+	]
 
 	return (
 		<>
 			<Menu />
-			<div className="main">
-
-				<main className="page page--events">
+			<div className='main'>
+				<main className='page page--events'>
 					<EventsToday />
 
 					<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />
 				</main>
-				<aside className="aside aside--events scroll">
-					<Broadcast />
+				<aside className='aside aside--events scroll'>
+					{/*<Broadcast />*/}
 					<Multiple />
 				</aside>
-		
 			</div>
 			<SportFooter />
 		</>
-	);
-};
+	)
+}
 
-export default EventsPage;
+export default EventsPage
