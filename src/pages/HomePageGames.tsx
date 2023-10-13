@@ -4,7 +4,7 @@ import {
 	CyberSport,
 	//Broadcast,
 	Multiple,
-	MenuGame,
+	//MenuGame,
 	HeaderTop,
 	HeaderBottom,
 } from '../components/'
@@ -16,7 +16,7 @@ function HomePageGames() {
 		<>
 			<HeaderTop />
 			<HeaderBottom />
-			<MenuGame />
+			{/*<MenuGame />*/}
 			<main className='page page--game'>
 				<GameInfo />
 				<div className='game-wrapper scroll'>

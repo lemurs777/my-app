@@ -1,0 +1,119 @@
+@import 'sass-rem';
+
+.score {
+  background-color: #111112;
+  position: relative;
+
+  &__inner {
+    position: relative;
+    height: rem(176px);
+    z-index: 1;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 77%;
+    background: radial-gradient(63.59% 100% at 50% 0%, #494B02 0%, rgba(69, 71, 13, 0.57) 41.15%, rgba(49, 50, 9, 0.34) 72.92%, rgba(79, 82, 10, 0.00) 100%);
+    content: '';
+  }
+
+  &__label {
+    background-color: #E02020;
+    color: #FFF;
+    font-style: italic;
+    font-weight: 500;
+    padding: rem(5px 8px);
+    border-radius: rem(20px);
+    color: #FFF;
+
+  }
+
+  &__central {
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__nums {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: rem(29px);
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    bottom: rem(-16px);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: rem(43px);
+    height: 100%;
+
+    .score__item {
+      &:first-child {
+        text-align: right;
+        align-items: flex-end;
+      }
+
+      &:last-child {
+        text-align: left;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10px);
+    color: #FFF;
+    font-size: rem(24px);
+    font-weight: 500;
+  }
+
+  &__img {
+    flex: 0 0 rem(52px);
+    width: rem(52px);
+    height: rem(52px);
+  }
+
+  &__btns {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    padding: rem(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    color: #D1D1D1;
+    border-radius: rem(16px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(48px);
+    height: rem(48px);
+    transform: rotate(180deg);
+    transition: color var(--transition) ease-in-out, transform var(--transition) ease-in-out;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      color: #fff;
+      transform: rotate(180deg) scale(1.05);
+    }
+  }
+}

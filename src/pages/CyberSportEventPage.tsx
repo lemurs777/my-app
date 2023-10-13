@@ -1,9 +1,10 @@
 import React from 'react'
-import { HeaderBottomProfile, HeaderTop, Menu } from '../components'
+import { GameInfo, HeaderBottomProfile, HeaderTop, Menu } from '../components'
 import CouponEmpty from '../components/CouponEmpty'
 import MenuCyberSport from '../components/MenuCyberSport'
 import Broadcast from '../components/Broadcast'
 import Stream from '../components/Stream'
+import CyberEventScore from '../components/CyberEventScore'
 
 const CyberSportEventPage = () => {
 	return (
@@ -12,7 +13,11 @@ const CyberSportEventPage = () => {
 			<HeaderBottomProfile />
 			<main className='main main--cyberSport'>
 				<MenuCyberSport />
-				<Stream />
+				{/*<GameInfo />*/}
+				<div className='central'>
+					<CyberEventScore />
+					<Stream />
+				</div>
 				<aside className='aside'>
 					<Broadcast auth={true} />
 					<CouponEmpty />

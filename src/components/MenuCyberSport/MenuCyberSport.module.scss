@@ -4,11 +4,10 @@
   border-right: 1px solid #232323;
   border-bottom: 1px solid #232323;
   background: #000;
-  max-height: 100vh;
 
   &__inner {
     padding: rem(26px 19px 0);
-
+    max-height: 80vh;
     overflow-y: auto;
 
     &::-webkit-scrollbar {
@@ -27,6 +26,7 @@
   }
 
   &__list {
+    padding-bottom: rem(90px);
 
     display: flex;
     flex-direction: column;
@@ -37,9 +37,7 @@
 
   }
 
-  &__more {
-    padding-top: rem(90px);
-  }
+  &__more {}
 
   &__showMore {
     background-color: #232323;
