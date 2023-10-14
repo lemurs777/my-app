@@ -3,6 +3,10 @@
 .stream {
   position: relative;
 
+  img,
+  iframe {
+    width: 100%;
+  }
 
   &__play {
     position: absolute;

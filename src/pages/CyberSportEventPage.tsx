@@ -13,7 +13,7 @@ const CyberSportEventPage = () => {
 			<HeaderBottomProfile />
 			<main className='main main--cyberSport'>
 				<MenuCyberSport />
-				{/*<GameInfo />*/}
+				<GameInfo />
 				<div className='central'>
 					<CyberEventScore />
 					<Stream />

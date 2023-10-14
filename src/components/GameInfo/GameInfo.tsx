@@ -1,6 +1,12 @@
 import { useState } from 'react'
 import clsx from 'clsx'
-
+import {
+	Accordion,
+	AccordionItem,
+	AccordionItemHeading,
+	AccordionItemButton,
+	AccordionItemPanel,
+} from 'react-accessible-accordion'
 import styles from './GameInfo.module.scss'
 
 function GameInfo() {
@@ -157,44 +163,57 @@ function GameInfo() {
 					/>
 				</label>
 			</div>
-			<div className={styles.listsWrapper}>
+			<Accordion
+				className={styles.listsWrapper}
+				preExpanded={[0, 1]}
+				allowMultipleExpanded
+				allowZeroExpanded
+			>
 				{arrGames.map((item, index) => (
-					<div key={index} className={styles.listWrapper}>
-						<button className={styles.listTitle}>{item.title}</button>
-						<ul className={styles.list}>
-							{item.games.map((game, index) =>
-								isChecked && game.live === true ? (
-									<li key={index} className={styles.item}>
-										<div
-											className={clsx(
-												styles.itemTextWrapper,
-												styles[game.country],
-												{ [styles.itemTextWrapperLive]: game.live }
-											)}
-										>
-											<div className={styles.itemText}>{game.name}</div>
-										</div>
-										<div className={styles.itemCount}>{game.count}</div>
-									</li>
-								) : !isChecked ? (
-									<li key={index} className={styles.item}>
-										<div
-											className={clsx(
-												styles.itemTextWrapper,
-												styles[game.country],
-												{ [styles.itemTextWrapperLive]: game.live }
-											)}
-										>
-											<div className={styles.itemText}>{game.name}</div>
-										</div>
-										<div className={styles.itemCount}>{game.count}</div>
-									</li>
-								) : null
-							)}
-						</ul>
-					</div>
+					<AccordionItem
+						uuid={index}
+						key={index}
+						className={styles.listWrapper}
+					>
+						<AccordionItemButton className={styles.listTitle}>
+							{item.title}
+						</AccordionItemButton>
+						<AccordionItemPanel>
+							<ul className={styles.list}>
+								{item.games.map((game, index) =>
+									isChecked && game.live === true ? (
+										<li key={index} className={styles.item}>
+											<div
+												className={clsx(
+													styles.itemTextWrapper,
+													styles[game.country],
+													{ [styles.itemTextWrapperLive]: game.live }
+												)}
+											>
+												<div className={styles.itemText}>{game.name}</div>
+											</div>
+											<div className={styles.itemCount}>{game.count}</div>
+										</li>
+									) : !isChecked ? (
+										<li key={index} className={styles.item}>
+											<div
+												className={clsx(
+													styles.itemTextWrapper,
+													styles[game.country],
+													{ [styles.itemTextWrapperLive]: game.live }
+												)}
+											>
+												<div className={styles.itemText}>{game.name}</div>
+											</div>
+											<div className={styles.itemCount}>{game.count}</div>
+										</li>
+									) : null
+								)}
+							</ul>
+						</AccordionItemPanel>
+					</AccordionItem>
 				))}
-			</div>
+			</Accordion>
 		</div>
 	)
 }
