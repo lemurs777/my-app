@@ -17,9 +17,9 @@ const CyberEventScore = () => {
 					<Link to={'../'} className={styles.score__btn}>
 						<ArrowIcon />
 					</Link>
-					<Link to={'../'} className={styles.score__btn}>
+					<button className={styles.score__btn}>
 						<AddIcon />
-					</Link>
+					</button>
 				</div>
 				<div className={styles.score__content}>
 					<div className={styles.score__item}>
@@ -42,7 +42,7 @@ const CyberEventScore = () => {
 						<div className={styles.score__nickname}>Winstrike</div>
 					</div>
 				</div>
-			</div>{' '}
+			</div>
 		</div>
 	)
 }

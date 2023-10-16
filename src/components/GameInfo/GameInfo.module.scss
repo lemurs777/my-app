@@ -8,6 +8,7 @@
   height: calc(100vh - #{rem(146px)});
   overflow-y: auto;
   z-index: 5;
+  flex: 0 0 rem(332px);
 
   @media(max-width: 1200px) {
     display: none;

@@ -54,6 +54,7 @@ function EventsPage() {
 
 	const eventItems = [
 		{
+			showIcon: true,
 			title: 'Результат',
 			favourite: true,
 			arrInfo: [
@@ -85,6 +86,7 @@ function EventsPage() {
 			],
 		},
 		{
+			showIcon: true,
 			title: 'Двойной исход',
 			favourite: true,
 			arrInfo: [
@@ -116,6 +118,7 @@ function EventsPage() {
 			],
 		},
 		{
+			showIcon: true,
 			title: 'Гандикап',
 			favourite: true,
 			arrInfo: [
@@ -147,6 +150,7 @@ function EventsPage() {
 			],
 		},
 		{
+			showIcon: true,
 			title: 'Тотал',
 			favourite: false,
 			arrInfo: [
@@ -243,6 +247,7 @@ function EventsPage() {
 			],
 		},
 		{
+			showIcon: true,
 			title: 'Точный счёт',
 			favourite: false,
 			arrInfo: [
