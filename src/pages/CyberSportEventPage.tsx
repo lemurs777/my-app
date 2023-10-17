@@ -11,7 +11,9 @@ import MenuCyberSport from '../components/MenuCyberSport'
 import Broadcast from '../components/Broadcast'
 import Stream from '../components/Stream'
 import CyberEventScore from '../components/CyberEventScore'
+import HeaderBottomEvent from '../components/HeaderBottomEvent'
 
+import { ReactComponent as GameIcon } from '../assets/images/svg/game.svg'
 const CyberSportEventPage = () => {
 	const arrCategory = [
 		{
@@ -56,6 +58,161 @@ const CyberSportEventPage = () => {
 		},
 	]
 
+	const arrTables = [
+		{
+			name: 'Испания. Примера',
+			time: '18:15',
+			date: '21 Aug',
+			nameOne: 'Севилья',
+			nameTwo: 'Атлетико Мадрид',
+			lastNumber: 21,
+			checkOne: 0,
+			checkTwo: 2,
+			arrNumbers: [
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+			],
+			arrNumbers2: [
+				{
+					number: 9.1,
+					class: 'upp',
+				},
+				{
+					number: 9.1,
+					class: 'down',
+				},
+				{
+					number: 2.5,
+					class: 'disableTable',
+				},
+			],
+		},
+		{
+			name: 'Испания. Примера',
+			time: '32`',
+			date: '21 Aug',
+			nameOne: 'Севилья',
+			nameTwo: 'Атлетико Мадрид',
+			lastNumber: 21,
+			class: 'danger',
+			checkOne: 0,
+			checkTwo: 1,
+			arrNumbers: [
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+			],
+			arrNumbers2: [
+				{
+					number: 9.1,
+					class: 'upp',
+				},
+				{
+					number: 9.1,
+					class: 'down',
+				},
+				{
+					number: 2.5,
+					class: 'disableTable',
+				},
+			],
+		},
+		{
+			name: 'Испания. Примера',
+			time: '18:15',
+			date: '21 Aug',
+			nameOne: 'Севилья',
+			nameTwo: 'Атлетико Мадрид',
+			lastNumber: 21,
+			checkOne: 0,
+			checkTwo: 1,
+			arrNumbers: [
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+			],
+			arrNumbers2: [
+				{
+					number: 9.1,
+					class: 'upp',
+				},
+				{
+					number: 9.1,
+					class: 'down',
+				},
+				{
+					number: 2.5,
+					class: 'disableTable',
+				},
+			],
+		},
+		{
+			name: 'Испания. Примера',
+			time: '18:15',
+			date: '21 Aug',
+			nameOne: 'Севилья',
+			nameTwo: 'Атлетико Мадрид',
+			lastNumber: 21,
+			checkOne: 0,
+			checkTwo: 1,
+			arrNumbers: [
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+			],
+			arrNumbers2: [
+				{
+					number: 9.1,
+					class: 'upp',
+				},
+				{
+					number: 9.1,
+					class: 'down',
+				},
+				{
+					number: 2.5,
+					class: 'disableTable',
+				},
+			],
+		},
+	]
 	const eventItems = [
 		{
 			title: 'Winner',
@@ -294,10 +451,17 @@ const CyberSportEventPage = () => {
 			],
 		},
 	]
+	const gameList = ['Counter-Strike', 'Counter-Strike', 'Counter-Strike']
 	return (
 		<>
 			<HeaderTop />
-			<HeaderBottomProfile />
+			<HeaderBottomEvent
+				icon={<GameIcon />}
+				link={'eSport'}
+				data={gameList}
+				dataTable={arrTables}
+				dataTableTitle={'Nemiga - Winstrike'}
+			/>
 			<main className='main main--cyberSport'>
 				<MenuCyberSport />
 				<GameInfo />

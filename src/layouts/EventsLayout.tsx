@@ -4,11 +4,12 @@ import HeaderTopProfile from '../components/HeaderTopProfile'
 import HeaderBottomEvent from '../components/HeaderBottomEvent'
 
 type MyComponentProps = React.PropsWithChildren<{}>
-const EventsLayout = ({ children }: MyComponentProps) => {
+//@ts-ignore
+const EventsLayout = ({ children, icon, link }: MyComponentProps) => {
 	return (
 		<>
 			<HeaderTopProfile />
-			<HeaderBottomEvent />
+			{/*<HeaderBottomEvent icon={icon} link={link} />*/}
 			{children}
 			<Outlet />
 		</>

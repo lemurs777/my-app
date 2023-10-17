@@ -5,6 +5,7 @@ import HeaderSearch from '../../HeaderSearch'
 import HeaderInfo from '../../HeaderInfo'
 import MobileApps from '../../MobileApps'
 import { Language } from '@mui/icons-material'
+//
 const HeaderBottom = () => {
 	return (
 		<div className={styles.headerBottom}>
@@ -13,9 +14,7 @@ const HeaderBottom = () => {
 					<HeaderSearch />
 				</div>
 			</div>
-			<div className={styles.headerBottom__col}>
-				<HeaderBreadCrumb />
-			</div>
+			<div className={styles.headerBottom__col}>{/*<HeaderBreadCrumb />*/}</div>
 			<div className={styles.headerBottom__col}>
 				<div className={styles.info}>
 					<HeaderInfo />
