@@ -4,11 +4,11 @@ import clsx from 'clsx'
 import { dataItemsType, dataItemType } from './types'
 
 import styles from './EventsList.module.scss'
-//@ts-ignore
-function EventsList({ dataList }: { dataList: dataItemsType }) {
+// @ts-ignore
+function EventsList({ dataList }) {
 	return (
 		<ul className={styles.eventList}>
-			{dataList.dataItems.map((item, idx) => (
+			{dataList.map((item: dataItemType, idx:number) => (
 				<EventsItem key={idx} data={item} />
 			))}
 		</ul>
@@ -16,18 +16,18 @@ function EventsList({ dataList }: { dataList: dataItemsType }) {
 }
 
 export default EventsList
-
+// @ts-ignore
 function EventsItem({ data }: { data: dataItemType }) {
 	const [isOpenTab, setIsOpenTab] = useState(false)
 
 	const handleClick = () => {
 		setIsOpenTab(current => !current)
 	}
-	const handleClose = () => {
-		if (isOpenTab) {
-			setIsOpenTab(false)
-		}
-	}
+	// const handleClose = () => {
+	// 	if (isOpenTab) {
+	// 		setIsOpenTab(false)
+	// 	}
+	// }
 	return (
 		<li className={clsx(styles.item, { [styles.itemOpen]: isOpenTab })}>
 			{data.showIcon && (
@@ -50,7 +50,8 @@ function EventsItem({ data }: { data: dataItemType }) {
 				>
 					{data.title}
 					{data.collapse && (
-						<div className={styles.btn__collapse} onClick={() => handleClose}>
+						<div className={styles.btn__collapse}
+						>
 							Collapse all
 							<svg
 								xmlns='http://www.w3.org/2000/svg'

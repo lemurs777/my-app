@@ -204,39 +204,39 @@
 	}
 }
 
-.selectLanguage {
-	display: flex;
-	align-items: center;
-	border: 2px solid #262626;
-	border-radius: 30px;
-	height: rem(40px);
-	padding: rem(10px 40px 9px 15px);
-	font-size: rem(18px);
-	line-height: rem(21px);
-	color: #fff;
-	position: relative;
-	cursor: pointer;
-	transition: 0.3s;
-
-	&:before {
-		content: '';
-		position: absolute;
-		top: 50%;
-		right: rem(15px);
-		transform: translateY(-50%);
-		background-repeat: no-repeat;
-		background-size: contain;
-		width: rem(18px);
-		height: rem(18px);
-	}
-
-	&.ru {
-		&:before {
-			background-image: url('../../assets/images/svg/header-flag-ru.svg');
-		}
-	}
-
-	&:hover {
-		border-color: #fff;
-	}
-}
+//.selectLanguage {
+//	display: flex;
+//	align-items: center;
+//	border: 2px solid #262626;
+//	border-radius: 30px;
+//	height: rem(40px);
+//	padding: rem(10px 40px 9px 15px);
+//	font-size: rem(18px);
+//	line-height: rem(21px);
+//	color: #fff;
+//	position: relative;
+//	cursor: pointer;
+//	transition: 0.3s;
+//
+//	&:before {
+//		content: '';
+//		position: absolute;
+//		top: 50%;
+//		right: rem(15px);
+//		transform: translateY(-50%);
+//		background-repeat: no-repeat;
+//		background-size: contain;
+//		width: rem(18px);
+//		height: rem(18px);
+//	}
+//
+//	&.ru {
+//		&:before {
+//			background-image: url('../../assets/images/svg/header-flag-ru.svg');
+//		}
+//	}
+//
+//	&:hover {
+//		border-color: #fff;
+//	}
+//}

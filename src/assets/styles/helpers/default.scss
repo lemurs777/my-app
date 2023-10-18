@@ -380,7 +380,7 @@ main {
 .aside {
   min-width: rem(268px);
   max-width: rem(340px);
-  margin-left: rem(21px);
+  margin-left: rem(20px);
   margin-right: rem(17px);
 
   &--index {
@@ -390,7 +390,7 @@ main {
     //gap: rem(20px);
 
     @media (max-width: 1024px) {
-      width: 27vw;
+      //width: 27vw;
     }
   }
 
@@ -412,8 +412,12 @@ main {
 
 .central {
   flex: 1;
-  margin-left: rem(21px);
+  margin-left: rem(20px);
   margin-bottom: rem(95px);
+  overflow: hidden;
+  @media(max-width:1200px){
+    flex: 1 1 100%;
+  }
 }
 
 section,
