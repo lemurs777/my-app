@@ -19,7 +19,7 @@ const Language = () => {
         {
             title: 'EN',
             flag: ukImg
-        }
+        } 
     ]
     const languageRef = useRef(null)
     const [isOpen, setIsOpen] = useState(false)
