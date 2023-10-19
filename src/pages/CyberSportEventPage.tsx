@@ -456,22 +456,27 @@ const CyberSportEventPage = () => {
     return (
         <>
             <HeaderTop/>
+
+
             <HeaderBottomEvent
                 icon={<GameIcon/>}
-                link={'eSport'}
+                link={window.innerWidth >= 768 ? 'eSport' : ''}
                 data={gameList}
                 dataTable={arrTables}
                 dataTableTitle={'Nemiga - Winstrike'}
             />
+
             <main className='main main--cyberSport'>
-                <MenuCyberSport/>
+                <div className="desktop">
+                    <MenuCyberSport/>
+                </div>
                 <GameInfo/>
                 <div className='central'>
                     <CyberEventScore/>
                     <Stream/>
                     <CategoryList data={arrCategory}/>
                     <EventsList dataList={eventItems}/>
-                    {/*<EventsInfo dataCategory={arrCategory} dataItems={eventItems}/>*/}
+
                 </div>
                 <aside className='aside'>
                     <Broadcast auth={true}/>

@@ -10,7 +10,7 @@
     align-items: center;
     gap: rem(47px);
 
-    &>li {
+    & > li {
       height: rem(53px);
       position: relative;
       display: flex;
@@ -42,7 +42,8 @@
   gap: rem(6px);
   line-height: 1;
 
-  &__icon {}
+  &__icon {
+  }
 
   &:hover {
     color: #fff;
@@ -163,7 +164,7 @@
       height: 2px;
     }
 
-    @media(max-width:1199.98px) {
+    @media(max-width: 1199.98px) {
       max-width: 750px;
     }
   }
@@ -187,7 +188,10 @@
 }
 
 .table {
-  min-width: rem(960px);
+  @media(min-width: 1200px) {
+    min-width: rem(960px);
+
+  }
 
   &__content {
     overflow-y: auto;
@@ -273,6 +277,7 @@
   &__row {
     display: flex;
     align-items: center;
+    gap: rem(10px);
   }
 
   &__block {

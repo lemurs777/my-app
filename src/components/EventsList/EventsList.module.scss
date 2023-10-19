@@ -11,8 +11,13 @@
   background: linear-gradient(180deg, #0B0B0B 0%, #333333 100%);
   position: relative;
 
-  @media(max-width:1199.98px) {
+  @media(max-width: 1199.98px) {
     background: #333333;
+  }
+  @media(max-width: 767.98px) {
+    &:nth-child(n + 2) {
+      background: linear-gradient(180deg, #0B0B0B 0%, #333 100%);
+    }
   }
 
   &.itemOpen {
@@ -60,9 +65,11 @@
   text-align: center;
   font-weight: 400;
   font-size: rem(20px);
-  line-height: rem(23px);
+  line-height: 1.15;
   color: #fff;
-
+@media(max-width: 767.98px){
+  padding: rem(0 5px 5px);
+}
 }
 
 .btn {
@@ -135,6 +142,9 @@
   flex-direction: column;
   gap: 1px;
   padding: rem(0 15px 15px);
+  @media(max-width: 767.98px) {
+    padding: rem(0 5px 15px);
+  }
 }
 
 .row {

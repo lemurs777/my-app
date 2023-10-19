@@ -8,6 +8,9 @@
     position: relative;
     height: rem(176px);
     z-index: 1;
+    @media(max-width: 767.98px) {
+      height: rem(104px);
+    }
   }
 
   &::before {
@@ -27,8 +30,14 @@
     font-weight: 500;
     padding: rem(5px 8px);
     border-radius: rem(20px);
-    color: #FFF;
-
+    font-size: 1rem;
+    @media(max-width: 767.98px) {
+      font-size: rem(14px);
+      padding: rem(5px 12px);
+      span {
+        display: none;
+      }
+    }
   }
 
   &__central {
@@ -47,6 +56,10 @@
     color: #fff;
     position: relative;
     bottom: rem(-16px);
+    @media(max-width: 767.98px) {
+      font-size: rem(26px);
+      bottom: rem(-12px);
+    }
   }
 
   &__content {
@@ -56,6 +69,9 @@
     position: relative;
     gap: rem(43px);
     height: 100%;
+    @media(max-width: 767.98px) {
+      gap: rem(21px);
+    }
 
     .score__item {
       &:first-child {
@@ -77,23 +93,35 @@
     color: #FFF;
     font-size: rem(24px);
     font-weight: 500;
+    @media(max-width: 767.98px) {
+      font-size: rem(18px);
+    }
   }
 
   &__img {
     flex: 0 0 rem(52px);
     width: rem(52px);
     height: rem(52px);
+    @media(max-width: 767.98px) {
+      flex: 0 0 rem(40px);
+      width: rem(40px);
+      height: rem(40px);
+    }
   }
 
   &__btns {
     position: absolute;
-    padding: 0;
     width: 100%;
     left: 0;
     padding: rem(20px);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width: 767.98px) {
+      top: 50%;
+      transform: translateY(-50%);
+      padding: rem(15px);
+    }
   }
 
   &__btn {
