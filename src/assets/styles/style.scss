@@ -10,3 +10,17 @@
 @import 'helpers/pages';
 @import 'helpers/sliders';
 @import 'helpers/other';
+
+
+
+.nav-link {
+  padding: 0;
+}
+
+.PriorityNav_Item:first-child {
+  padding: 0 15px 0 30px !important;
+}
+
+.PriorityNav_Item:first-child img {
+  max-height: 40px;
+}

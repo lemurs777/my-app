@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import clsx from "clsx";
 
 import {useClickOutside} from '../../hooks/useClickOutside'
@@ -19,11 +19,11 @@ const Language = () => {
         {
             title: 'EN',
             flag: ukImg
-        } 
+        }
     ]
     const languageRef = useRef(null)
     const [isOpen, setIsOpen] = useState(false)
-    const [language, setLanguage] = useState(languageList[1])
+    const [language, setLanguage] = useState(languageList[0])
     useClickOutside(languageRef, () => setIsOpen(false))
     return (
         <div className={styles.language} ref={languageRef}>

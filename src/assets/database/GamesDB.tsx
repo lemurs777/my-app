@@ -9,22 +9,80 @@ import hearthstoneImg from '../images/games/hearthstone.svg'
 import codImg from '../images/games/cod.svg'
 import tf2Img from '../images/games/tf2.svg'
 import hosImg from '../images/games/hos.svg'
-
+import topImg from '../images/games/top.svg'
+import { ReactComponent as TopIcon } from '..//images/svg/top.svg'
 export const GamesDB = [
-	{ title: 'CS:GO', image: csGoImg, link: '/cs-go', live: true },
-	{ title: 'Dota 2', image: dota2Img, link: '/dota2', live: true },
-	{ title: 'Overwatch', image: overwatchImg, link: '/overwatch', live: false },
-	{ title: 'LoL', image: lolImg, link: '/lol', live: true },
-	{ title: 'Valorant', image: valorantImg, link: '/valorant', live: false },
-	{ title: 'StarCraft I', image: sc1Img, link: '/sc1', live: false },
-	{ title: 'StarCraft II', image: sc2Img, link: '/sc2', live: false },
-	{
-		title: 'Hearthstone',
-		image: hearthstoneImg,
-		link: '/hearthstone',
-		live: true,
-	},
-	{ title: 'Call Of Duty', image: codImg, link: '/cod', live: false },
-	{ title: 'TF2', image: tf2Img, link: '/tf2', live: false },
-	{ title: 'HoS', image: hosImg, link: '/hos', live: false },
+    {
+
+        title: 'Топ',
+        icon: <TopIcon />,
+        		// path: '/top',
+        		live: true,
+    },
+    {
+        title: 'CS:GO',
+        image: csGoImg,
+        // link: '/cs-go',
+        live: true
+    },
+    {
+        title: 'Dota 2',
+        image: dota2Img,
+        // link: '/dota2',
+        live: true
+    },
+    {
+        title: 'Overwatch',
+        image: overwatchImg,
+        // link: '/overwatch',
+        live: false
+    },
+    {
+        title: 'LoL',
+        image: lolImg,
+        // link: '/lol',
+        live: true
+    },
+    {
+        title: 'Valorant',
+        image: valorantImg,
+        // link: '/valorant',
+        live: false
+    },
+    {
+        title: 'StarCraft I',
+        image: sc1Img,
+        // link: '/sc1',
+        live: false
+    },
+    {
+        title: 'StarCraft II',
+        image: sc2Img,
+        // link: '/sc2',
+        live: false
+    },
+    {
+        title: 'Hearthstone',
+        image: hearthstoneImg,
+        // link: '/hearthstone',
+        live: true,
+    },
+    {
+        title: 'Call Of Duty',
+        image: codImg,
+        // link: '/cod',
+        live: false
+    },
+    {
+        title: 'TF2',
+        image: tf2Img,
+        // link: '/tf2',
+        live: false
+    },
+    {
+        title: 'HoS',
+        image: hosImg,
+        // link: '/hos',
+        live: false
+    },
 ]

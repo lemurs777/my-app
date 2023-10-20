@@ -460,7 +460,7 @@ const CyberSportEventPage = () => {
 
             <HeaderBottomEvent
                 icon={<GameIcon/>}
-                link={window.innerWidth >= 768 ? 'eSport' : ''}
+                link={'eSport'}
                 data={gameList}
                 dataTable={arrTables}
                 dataTableTitle={'Nemiga - Winstrike'}

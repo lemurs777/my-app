@@ -1,21 +1,26 @@
-import { MainSlider, Sport, Multiple, Menu } from '../components/'
+import {MainSlider, Sport, Multiple, Menu, MenuCyberSport} from '../components/'
 import Search from '../components/Search'
 
 function HomePage() {
-	return (
-		<>
-			<Menu />
-			<Search />
-			<main className='page page--index scroll'>
-				<MainSlider />
-				<Sport />
-			</main>
-			<aside className='aside aside--index scroll'>
-				{/*<Broadcast />*/}
-				<Multiple />
-			</aside>
-		</>
-	)
+    return (
+        <>
+
+            <main className={'main'}>
+                {/*<Menu />*/}
+                <MenuCyberSport/>
+                <Search/>
+                {/*<main className='page page--index scroll'>*/}
+                <div className={'central'}>
+                    <MainSlider/>
+                    <Sport/>
+                </div>
+                <aside className='aside aside--index scroll'>
+                    {/*<Broadcast />*/}
+                    <Multiple/>
+                </aside>
+            </main>
+        </>
+    )
 }
 
 export default HomePage
