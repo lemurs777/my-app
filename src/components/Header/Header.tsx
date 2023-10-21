@@ -9,7 +9,7 @@ import {HeaderSettings} from './types';
 
 import styles from './Header.module.scss';
 import HeaderTopProfile from '../HeaderTopProfile'
-import PriorityNavs from '../ProrityNavs';
+// import HeaderTop from '../HeaderTop';
 
 function Header(props: HeaderSettings) {
 
@@ -19,7 +19,7 @@ function Header(props: HeaderSettings) {
             {props.showTop && (
                 <>
                     {/*<HeaderTop/>*/}
-                    <PriorityNavs/>
+                    <HeaderTop/>
                 </>
             )}
             {props.showTopProfile && (

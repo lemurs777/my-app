@@ -5,10 +5,11 @@ import clsx from 'clsx'
 interface IButtonProps {
 	className?: string
 	title: string
+	handleClick?:()=>void
 }
-const ButtonAccent = ({ className, title }: IButtonProps) => {
+const ButtonAccent = ({ className, title,handleClick }: IButtonProps) => {
 	return (
-		<button type='button' className={clsx(styles.button, className)}>
+		<button onClick={handleClick} type='button' className={clsx(styles.button, className)}>
 			{title}
 		</button>
 	)

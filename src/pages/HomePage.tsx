@@ -1,13 +1,15 @@
-import {MainSlider, Sport, Multiple, Menu, MenuCyberSport} from '../components/'
+import {MainSlider, Sport, Multiple, Menu} from '../components/'
 import Search from '../components/Search'
 
+import {SportMenuDB as sport} from '../assets/database/SportMenuDB'
+import Broadcast from "../components/Broadcast";
 function HomePage() {
     return (
         <>
 
             <main className={'main'}>
                 {/*<Menu />*/}
-                <MenuCyberSport/>
+                <Menu data={sport}/>
                 <Search/>
                 {/*<main className='page page--index scroll'>*/}
                 <div className={'central'}>
@@ -15,7 +17,7 @@ function HomePage() {
                     <Sport/>
                 </div>
                 <aside className='aside aside--index scroll'>
-                    {/*<Broadcast />*/}
+                    <Broadcast auth={false}/>
                     <Multiple/>
                 </aside>
             </main>

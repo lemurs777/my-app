@@ -6,7 +6,7 @@ import {
     HeaderTop,
 } from '../components'
 import CouponEmpty from '../components/CouponEmpty'
-import MenuCyberSport from '../components/MenuCyberSport'
+import Menu from '../components/Menu'
 import Broadcast from '../components/Broadcast'
 import Stream from '../components/Stream'
 import CyberEventScore from '../components/CyberEventScore'
@@ -15,6 +15,7 @@ import HeaderBottomEvent from '../components/HeaderBottomEvent'
 import {ReactComponent as GameIcon} from '../assets/images/svg/game.svg'
 import {CategoryData, ItemsData} from "../components/EventsInfo/types";
 
+import {GamesDB as games} from '../assets/database/GamesDB'
 const CyberSportEventPage = () => {
     const arrCategory = [
         {
@@ -468,7 +469,7 @@ const CyberSportEventPage = () => {
 
             <main className='main main--cyberSport'>
                 <div className="desktop">
-                    <MenuCyberSport/>
+                    <Menu data={games}/>
                 </div>
                 <GameInfo/>
                 <div className='central'>

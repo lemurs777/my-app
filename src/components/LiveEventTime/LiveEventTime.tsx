@@ -1,38 +1,27 @@
 import clsx from 'clsx'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 import styles from './LiveEventTime.module.scss'
 
-const LiveEventTime = () => {
-	return (
-		<ul className={styles.list}>
-			<li className={styles.item}>
-				<Link className={clsx(styles.link, styles.linkCustom)} to='/'>
-					LIVE события
-				</Link>
-			</li>
-			<li className={styles.item}>
-				<Link className={styles.link} to='/'>
-					3ч
-				</Link>
-			</li>
-			<li className={styles.item}>
-				<Link className={styles.link} to='/'>
-					6ч
-				</Link>
-			</li>
-			<li className={styles.item}>
-				<Link className={styles.link} to='/'>
-					12ч
-				</Link>
-			</li>
-			<li className={styles.item}>
-				<Link className={clsx(styles.link, styles.linkActive)} to='/'>
-					<span> Сегодня</span>
-				</Link>
-			</li>
-		</ul>
-	)
+// @ts-ignore
+const LiveEventTime = ({data}) => {
+    const [active,setActive] = useState(4)
+    return (
+        <ul className={styles.list}>
+            <li className={styles.item}>
+                <Link className={clsx(styles.link, styles.linkCustom)} to='/'>
+                    LIVE события
+                </Link>
+            </li>
+            {data.map((item:any,index:number) => (
+                <li className={styles.item} key={index} onClick={()=>setActive(index)}>
+                    <button className={clsx(styles.link,active === index ? styles.linkActive : null)}>
+                        {item}
+                    </button>
+                </li>
+            ))}
+        </ul>
+    )
 }
 
 export default LiveEventTime

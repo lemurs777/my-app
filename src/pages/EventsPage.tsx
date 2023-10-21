@@ -357,7 +357,7 @@ function EventsPage() {
 
 	return (
 		<>
-			<Menu />
+			{/*<Menu />*/}
 			<div className='main'>
 				<main className='page page--events'>
 					<EventsToday />

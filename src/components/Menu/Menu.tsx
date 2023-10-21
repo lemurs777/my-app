@@ -1,123 +1,54 @@
-import { Link, NavLink } from 'react-router-dom'
 import clsx from 'clsx'
-
+import React, {useState} from 'react'
+import {Link, NavLink} from 'react-router-dom'
 import styles from './Menu.module.scss'
+import {ReactComponent as TopIcon} from '../../assets/images/svg/top.svg'
+import {ReactComponent as MoreIcon} from '../../assets/images/svg/show-more.svg'
 
-function Menu() {
-	const arrLinks = [
-		{
-			name: 'Топ',
-			class: 'top',
-			link: '/',
-			live: false,
-			active: true,
-		},
-		{
-			name: 'Футбол',
-			class: 'soccer',
-			link: '/events',
-			live: true,
-			active: false,
-		},
-		{
-			name: 'Хоккей',
-			class: 'hockey',
-			link: '/hockey',
-			live: true,
-			active: false,
-		},
-		{
-			name: 'Баскетбол',
-			class: 'basketball',
-			link: '/basketball',
-			live: false,
-			active: false,
-		},
-		{
-			name: 'Теннис',
-			class: 'tennis',
-			link: '/tennis',
-			live: false,
-			active: false,
-		},
-		{
-			name: 'Рэгби',
-			class: 'rugby',
-			link: '/rugby',
-			live: true,
-			active: false,
-		},
-		{
-			name: 'Воллейбол',
-			class: 'volleyball',
-			link: '/volleyball',
-			live: false,
-			active: false,
-		},
-		{
-			name: 'MMA',
-			class: 'mma',
-			link: '/mma',
-			live: false,
-			active: false,
-		},
-		{
-			name: 'Крикет',
-			class: 'cricket',
-			link: '/cricket',
-			live: false,
-			active: false,
-		},
-		{
-			name: 'Гонки',
-			class: 'racing',
-			link: '/racing',
-			live: false,
-			active: false,
-		},
-		{
-			name: 'Шахматы',
-			class: 'chess',
-			link: '/chess',
-			live: false,
-			active: false,
-		},
-		{
-			name: 'Атлетика',
-			class: 'athletics',
-			link: '/athletics',
-			live: false,
-			active: false,
-		},
-	]
+// @ts-ignore
+const Menu = ({data}) => {
+    const [active, setActive] = useState(0)
 
-	return (
-		<div className={styles.menu}>
-			<ul className={styles.list}>
-				{arrLinks.map((item, index) => (
-					<li key={index} className={styles.item}>
-						<NavLink
-							to={item.link}
-							className={({ isActive, isPending }) =>
-								clsx(
-									isActive ? styles.active : null,
-									styles.link,
-									styles[item.class],
-									{ [styles.live]: item.live }
-									//{ [styles.active]: item.active }
-								)
-							}
-						>
-							{item.name}
-						</NavLink>
-					</li>
-				))}
-			</ul>
-			<Link className={styles.more} to='/'>
-				More sports
-			</Link>
-		</div>
-	)
+    return (
+        <div className={styles.menu}>
+
+
+            <div className={styles.menu__list}>
+                {data.map((item: any, index: number) => (
+                    <button
+                        className={clsx(
+                            styles.item,
+                            item.live ? styles.itemLive : null,
+                            active === index ? styles.itemCategoryActive : null
+                        )}
+                        key={item.title}
+                        // to={item.link}
+                        onClick={() => setActive(index)}
+                    >
+                        <div className={styles.item__icon}>
+                            {item.live && (
+                                <span className={styles.item__badge}>badge</span>
+                            )}
+                            {item.icon ? (
+                                <>
+                                    {item.icon}
+                                </>
+                            ) : <img src={item.image} alt={item.title}/>
+                            }
+                        </div>
+                        <div className={styles.item__title}>
+                            <span>{item.title}</span>
+                        </div>
+                    </button>
+                ))}
+            </div>
+            <div className={styles.menu__more}>
+                <Link className={styles.menu__showMore} to={'/'}>
+                    <MoreIcon/>
+                </Link>
+            </div>
+        </div>
+    )
 }
 
 export default Menu
