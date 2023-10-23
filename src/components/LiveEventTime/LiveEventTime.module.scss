@@ -5,9 +5,11 @@
 	padding: rem(10px);
 	align-items: center;
 	justify-content: center;
-	@media (min-width: 768px) {
-		//display: none;
+@media(max-width:1199.98px){
+	li:nth-child(n + 6){
+      display: none;
 	}
+}
 }
 
 .link {

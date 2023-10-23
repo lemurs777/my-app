@@ -3,13 +3,16 @@ import Search from '../components/Search'
 
 import {SportMenuDB as sport} from '../assets/database/SportMenuDB'
 import Broadcast from "../components/Broadcast";
+
 function HomePage() {
     return (
         <>
 
             <main className={'main'}>
                 {/*<Menu />*/}
-                <Menu data={sport}/>
+                <div className="desktop">
+                    <Menu data={sport}/>
+                </div>
                 <Search/>
                 {/*<main className='page page--index scroll'>*/}
                 <div className={'central'}>

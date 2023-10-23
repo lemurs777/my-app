@@ -77,9 +77,14 @@
   min-width: rem(108px);
   position: relative;
   z-index: 10;
-
-  @media(max-width: 767.98px) {
-    margin-right: auto;
+  svg{
+    max-width: 100%;
+  }
+  @media(max-width: 1024px) {
+    margin-right: rem(118px);
+  }
+  @media(max-width: 991.98px) {
+    margin-right: 10px;
   }
 }
 
@@ -93,15 +98,14 @@
   align-items: center;
   gap: rem(10px);
   margin-right: rem(115px);
-
+  @media(max-width: 1440px) {
+    margin-right: 0;
+  }
   @media(max-width: 1024px) {
     display: none;
   }
 }
 
-.dropdown {
-  //margin-left: 25px;
-}
 
 .bestImg {
   display: block;
@@ -117,8 +121,12 @@
   line-height: rem(21px);
   color: white;
 
-  &.bestTextAccent {
-    color: #F7FF13;
+  //&.bestTextAccent {
+  //  color: #F7FF13;
+  //}
+  span {
+    display: block;
+    color: var(--accentColor);
   }
 }
 
@@ -157,6 +165,12 @@
   display: flex;
   gap: rem(25px);
   max-width: rem(673px);
+  @media(max-width: 1365px) {
+    max-width: rem(500px);
+  }
+  @media(max-width: 1199.98px) {
+    max-width: rem(315px);
+  }
   @media(max-width: 768px) {
     background-color: #151515;
     flex-direction: column;
@@ -253,8 +267,9 @@
   font-weight: 700;
   font-size: rem(17px);
 
-  @media(max-width: 768px) {
+  @media(max-width: 767.98px) {
     padding: rem(12px 10px);
+    font-size: rem(15px);
   }
 
   //&.signInBtnRegistration {
@@ -262,9 +277,11 @@
   //  background: #FAFE13;
   //}
 }
+
 .signInBtnRegistration {
   border-radius: rem(0 3px 3px 0) !important;
 }
+
 .dropdown {
   &__btn {
     color: #474747;

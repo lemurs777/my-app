@@ -43,7 +43,7 @@ const Menu = ({data}) => {
                 ))}
             </div>
             <div className={styles.menu__more}>
-                <Link className={styles.menu__showMore} to={'/'}>
+                <Link className={styles.menu__showMore} to={'/choice-of-sport'}>
                     <MoreIcon/>
                 </Link>
             </div>

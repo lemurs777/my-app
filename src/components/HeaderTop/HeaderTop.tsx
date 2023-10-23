@@ -113,47 +113,97 @@ function HeaderTop() {
                     alt='Best of the best'
                 />
                 <div className={styles.bestText}>
-                    <span className={styles.bestTextAccent}>Лучший</span>{' '}
+                    <span className={styles.bestTextAccent}>Лучший</span>
                     Онлайн&nbsp;букмекер
                 </div>
             </Link>
-
-            <menu className={styles.navMenu} ref={wrapRef}>
-                <PriorityNav
-                    className={styles.priorityNav}
-                    dropdown={({dropdownItems}: Props) => (
-                        <div className={styles.dropdown}>
-                            {showDropdown && (
-                                <div className={styles.dropdown__menu}>
-                                    <ul className={styles.dropdown__list}>
-
-                                        {dropdownItems.map((item: any, i: number) => (
-                                            <li key={i} {...item.props} className={styles.dropdown__item}></li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            )}
-                            <button
-                                className={styles.navBtnShowMoreLink}
-                                onClick={() => setShowDropdown(!showDropdown)}
-                            >
-                                Показать другие ссылки
-                                <MoreIcon/>
-                            </button>
-                        </div>
-                    )}
+            <div className="mobile">
+                <nav
+                    className={` ${
+                        menuOpen ? [styles.nav, styles.show].join(' ') : [styles.nav]
+                    }`}
+                    onClick={() => {
+                        setMenuOpen(false)
+                    }}
                 >
-                    {menuList.map(item => (
-                        <li className={styles.navItem} key={item.title}>
-                            <NavLink
-                                // className={clsx(styles.navLink)}
-                                className={({isActive}) => clsx(styles.navLink, isActive ? styles.navLinkActive : null)}
-                                to={item.path}>{item.title}</NavLink>
-                        </li>
-                    ))}
-                </PriorityNav>
-            </menu>
-
+                    <menu className={styles.navMenu}>
+                        {/*<li className={styles.navItem}>*/}
+                        {/*    <NavLink className={clsx(styles.navLink, styles.navLinkActive)} to='/'>*/}
+                        {/*        Спорт*/}
+                        {/*    </NavLink>*/}
+                        {/*</li>*/}
+                        {/*<li className={styles.navItem}>*/}
+                        {/*    <Link className={styles.navLink} to='/cyber-sport'>*/}
+                        {/*        Киберспорт*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
+                        {/*<li className={styles.navItem}>*/}
+                        {/*    <Link className={styles.navLink} to='/'>*/}
+                        {/*        Казино*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
+                        {/*<li className={styles.navItem}>*/}
+                        {/*    <Link className={styles.navLink} to='/'>*/}
+                        {/*        TV Ставки*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
+                        {/*<li className={styles.navItem}>*/}
+                        {/*    <Link className={styles.navLink} to='/'>*/}
+                        {/*        Виртуальный спорт*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
+                        {/*<li className={styles.navItem}>*/}
+                        {/*    <Link className={styles.navLink} to='/promotions/'>*/}
+                        {/*        Акции*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
+                        {menuList.map(item => (
+                            <li className={styles.navItem} key={item.title}>
+                                <NavLink
+                                    // className={clsx(styles.navLink)}
+                                    className={({isActive}) => clsx(styles.navLink, isActive ? styles.navLinkActive : null)}
+                                    to={item.path}>{item.title}</NavLink>
+                            </li>
+                        ))}
+                    </menu>
+                </nav>
+            </div>
+            <div className="desktop">
+                <menu className={styles.navMenu} ref={wrapRef}>
+                    <PriorityNav
+                        className={styles.priorityNav}
+                        dropdown={({dropdownItems}: Props) => (
+                            <div className={styles.dropdown}>
+                                {showDropdown && (
+                                    <div className={styles.dropdown__menu}>
+                                        <ul className={styles.dropdown__list}>
+                                            {dropdownItems.map((item: any, i: number) => (
+                                                <li key={i} {...item.props} className={styles.dropdown__item}></li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                                <button
+                                    className={styles.navBtnShowMoreLink}
+                                    onClick={() => setShowDropdown(!showDropdown)}
+                                >
+                                    Показать другие ссылки
+                                    <MoreIcon/>
+                                </button>
+                            </div>
+                        )}
+                    >
+                        {menuList.map(item => (
+                            <li className={styles.navItem} key={item.title}>
+                                <NavLink
+                                    // className={clsx(styles.navLink)}
+                                    className={({isActive}) => clsx(styles.navLink, isActive ? styles.navLinkActive : null)}
+                                    to={item.path}>{item.title}</NavLink>
+                            </li>
+                        ))}
+                    </PriorityNav>
+                </menu>
+            </div>
             <div className={styles.signInWrapper}>
                 <button onClick={() => {
                     CurrentModal('login', true)

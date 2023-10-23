@@ -386,7 +386,7 @@ function SportTable (
 									{item.number}
 								</div>
 							))}
-							<div className={styles.tableNumber}>+{item.lastNumber}</div>
+							<div className={clsx(styles.tableNumber__last,styles.tableNumber)}>+{item.lastNumber}</div>
 						</div>
 					</div>
 				</div>

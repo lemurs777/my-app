@@ -10,6 +10,9 @@
   border-radius: 3px;
   background-color: #FAFE13;
   transition: background-color .2s ease-in-out;
+  @media(max-width: 767.98px) {
+    font-size: 15px;
+  }
 
   &:hover {
     background-color: #e5e912;

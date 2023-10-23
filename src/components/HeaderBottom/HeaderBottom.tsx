@@ -5,6 +5,7 @@ import styles from './HeaderBottom.module.scss'
 import Language from '../Language'
 import LiveEventTime from "../LiveEventTime";
 import MobileApps from "../MobileApps";
+import HeaderInfo from "../HeaderInfo";
 const timeList = [
     '3ч','6ч','12ч','Сегодня','Завтра','Суббота','Воскресенье'
 ]
@@ -78,7 +79,7 @@ function HeaderBottom() {
                 {/*</ul>*/}
                 <LiveEventTime data={timeList}/>
                 <div className={styles.info}>
-                    <div className={styles.time}>17:43 (GMT+3)</div>
+                    {/*<div className={styles.time}>17:43 (GMT+3)</div>*/}
                     {/*<div className={styles.apps}>*/}
                     {/*    <Link*/}
                     {/*        className={clsx(styles.linkApp, styles.linkAppIphone)}*/}
@@ -94,6 +95,7 @@ function HeaderBottom() {
                     {/*    </Link>*/}
                     {/*</div>*/}
                     {/*<HeaderInfo/>*/}
+                    <HeaderInfo/>
                     <MobileApps/>
 
                     <Language/>

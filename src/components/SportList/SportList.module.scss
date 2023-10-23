@@ -1,139 +1,156 @@
 @import "sass-rem";
 
 .sportList {
-	width: 100%;
-	background: linear-gradient(180deg, #000000 0%, #121212 37.5%, #262626 100%);
-	padding: rem(22px 20px);
-	overflow-x: auto;
+  width: 100%;
+  background: linear-gradient(180deg, #000000 0%, #121212 37.5%, #262626 100%);
+  overflow-x: auto;
+  position: relative;
+  @media(max-width: 1199.98px) {
 
-	&::-webkit-scrollbar {
-		height: rem(5px);
-	}
+  }
 
-	&::-webkit-scrollbar-track {
-		background-color: #28293e;
-		border-radius: rem(5px);
-	}
+  &::-webkit-scrollbar {
+    height: rem(5px);
+  }
 
-	&::-webkit-scrollbar-thumb {
-		border-radius: rem(5px);
-		background: #8b8b97;
-		cursor: pointer;
-	}
+  &::-webkit-scrollbar-track {
+    background-color: #28293e;
+    border-radius: rem(5px);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: rem(5px);
+    background: #8b8b97;
+    cursor: pointer;
+  }
 }
 
 .list {
-	display: flex;
-	align-items: center;
-	gap: rem(40px);
+  display: flex;
+  align-items: center;
+  gap: rem(40px);
+  position: relative;
+  padding: rem(22px 20px);
+  @media(max-width: 1199.98px) {
+
+  }
 }
 
 .item {
-	&:first-child {
-		.link {
-			padding: 0;
-			font-size: 0;
-			width: rem(24px);
+  &:first-child {
+    .link {
+      padding: 0;
+      font-size: 0;
+      width: rem(24px);
 
-			&:hover {
-				&:before {
-					opacity: 1;
-				}
-			}
-		}
-	}
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 .link {
-	font-weight: 500;
-	font-size: rem(18px);
-	line-height: rem(21px);
-	color: #676767;
-	text-transform: uppercase;
-	padding-left: rem(34px);
-	position: relative;
-	transition: .3s;
-	display: flex;
-	align-items: center;
+  font-weight: 500;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  color: #676767;
+  text-transform: uppercase;
+  position: relative;
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  gap: rem(10px);
 
-	@media(max-width:768px) {
-		font-size: rem(16px);
-	}
+  svg {
+    flex: 0 0 rem(24px);
+  }
 
-	&:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 0;
-		width: rem(24px);
-		height: rem(24px);
-		transform: translateY(-50%);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		opacity: .6;
-		transition: .3s;
-	}
+  &__active {
+    color: var(--accentColor);
+  }
 
-	&:hover {
-		color: #fff;
+  @media(max-width: 768px) {
+    font-size: rem(16px);
+  }
 
-		&:before {
-			opacity: 1;
-		}
-	}
+  //&:before {
+  //	content: "";
+  //	position: absolute;
+  //	top: 50%;
+  //	left: 0;
+  //	width: rem(24px);
+  //	height: rem(24px);
+  //	transform: translateY(-50%);
+  //	background-size: contain;
+  //	background-repeat: no-repeat;
+  //	background-position: 50% 50%;
+  //	opacity: .6;
+  //	transition: .3s;
+  //}
 
-	&.top {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-top.svg");
-		}
-	}
+  &:hover {
+    color: var(--accentColor);
 
-	&.bookmarks {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-bookmarks.svg");
-		}
-	}
 
-	&.soccer {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-soccer.svg");
-		}
-	}
+    //&:before {
+    //	opacity: 1;
+    //}
+  }
 
-	&.hockey {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-hockey.svg");
-		}
-	}
-
-	&.basketball {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-basketball.svg");
-		}
-	}
-
-	&.tennis {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-tennis.svg");
-		}
-	}
-
-	&.regby {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-regby.svg");
-		}
-	}
-
-	&.volleyball {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-volleyball.svg");
-		}
-	}
-
-	&.mma {
-		&:before {
-			background-image: url("../../assets/images/svg/sports-list-mma.svg");
-		}
-	}
+  //&.top {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-top.svg");
+  //	}
+  //}
+  //
+  //&.bookmarks {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-bookmarks.svg");
+  //	}
+  //}
+  //
+  //&.soccer {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-soccer.svg");
+  //	}
+  //}
+  //
+  //&.hockey {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-hockey.svg");
+  //	}
+  //}
+  //
+  //&.basketball {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-basketball.svg");
+  //	}
+  //}
+  //
+  //&.tennis {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-tennis.svg");
+  //	}
+  //}
+  //
+  //&.regby {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-regby.svg");
+  //	}
+  //}
+  //
+  //&.volleyball {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-volleyball.svg");
+  //	}
+  //}
+  //
+  //&.mma {
+  //	&:before {
+  //		background-image: url("../../assets/images/svg/sports-list-mma.svg");
+  //	}
+  //}
 }

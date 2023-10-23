@@ -4,10 +4,10 @@ import clsx from "clsx";
 
 
 // @ts-ignore
-const Items = ({data,handleRemove}) => {
+const Items = ({data, handleRemove}) => {
     // const [check, setCheck] = useState(false)
     return (
-        <ul className={styles.list}>
+        <>
             {data.map((item: any, index: number) => (
                 <li key={index} className={styles.item}>
                     <div className={styles.itemTop}>
@@ -19,7 +19,7 @@ const Items = ({data,handleRemove}) => {
                         </button>
                         <div className={styles.itemTopNames}>{item.nameOne} - {item.nameTwo}</div>
                         <button className={clsx(styles.itemTopBtn, styles.itemTopBtnClose)}
-                                onClick={()=>handleRemove(item.id)}
+                                onClick={() => handleRemove(item.id)}
                         >Удалить
                         </button>
                     </div>
@@ -52,7 +52,7 @@ const Items = ({data,handleRemove}) => {
                     </div>
                 </li>
             ))}
-        </ul>
+        </>
     );
 };
 

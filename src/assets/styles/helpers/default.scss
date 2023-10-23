@@ -392,6 +392,9 @@ main {
     @media (max-width: 1024px) {
       //width: 27vw;
     }
+    @media(max-width: 1199.98px) {
+      margin-left: rem(10px);
+    }
   }
 
   &--events {

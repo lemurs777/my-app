@@ -5,14 +5,14 @@ import styles from './LiveEventTime.module.scss'
 
 // @ts-ignore
 const LiveEventTime = ({data}) => {
-    const [active,setActive] = useState(4)
+    const [active,setActive] = useState(3)
     return (
         <ul className={styles.list}>
-            <li className={styles.item}>
-                <Link className={clsx(styles.link, styles.linkCustom)} to='/'>
+            {/*<li className={styles.item}>*/}
+                <div className={clsx(styles.link, styles.linkCustom)}>
                     LIVE события
-                </Link>
-            </li>
+                </div>
+            {/*</li>*/}
             {data.map((item:any,index:number) => (
                 <li className={styles.item} key={index} onClick={()=>setActive(index)}>
                     <button className={clsx(styles.link,active === index ? styles.linkActive : null)}>

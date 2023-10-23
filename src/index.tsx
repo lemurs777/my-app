@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client'
 import './assets/styles/style.scss'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 import ProfileLayout from './layouts/ProfileLayout'
 import AppsLayout from './layouts/AppsLayout'
@@ -44,69 +44,73 @@ import StatisticOneLayout from './layouts/StatisticOneLayout'
 import CyberSportEventPage from './pages/CyberSportEventPage'
 import CyberSportLayout from './layouts/CyberSportLayout'
 
-export default function App() {
-	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path='/' element={<MainLayout />}>
-					<Route index element={<HomePage />} />
 
-					<Route path='/choice-of-sport' element={<ChoiceSportPage />} />
-					<Route path='/choice-of-country' element={<ChoiceCountryPage />} />
-					<Route path='/faq' element={<FAQPage />} />
-					<Route path='/sitemap' element={<SiteMapPage />} />
-					<Route path='/modals' element={<ModalsPage />} />
-					<Route path='*' element={<NoPage />} />
-				</Route>
-				<Route path='/profile/' element={<ProfileLayout />}>
-					<Route index element={<ProfilePage />} />
-					<Route path='verification' element={<VerificationPage />} />
-					<Route path='conclusions' element={<HistoryOfConclusions />} />
-					<Route path='betting' element={<HistoryBetting />} />
-					<Route path='promo' element={<MyPromo />} />
-					<Route path='deposit' element={<DepositPage />} />
-					<Route path='limits' element={<LimitsProfile />} />
-				</Route>
-				<Route path='/cyber-sport' element={<CyberSportLayout />}>
-					<Route index element={<HomePageGames />} />
-					<Route path='event' element={<CyberSportEventPage />} />
-				</Route>
-				<Route path='/requests/' element={<RequestsLayout />}>
-					<Route index element={<RequestsPage />} />
-					<Route path='request' element={<RequestPage />} />
-				</Route>
-				<Route path='/apps/' element={<AppsLayout />}>
-					<Route index element={<AppsPage />} />
-				</Route>
-				<Route path='/promotions/' element={<PromotionsLayout />}>
-					<Route index element={<PromotionsPage />} />
-					<Route path='promo' element={<PromotionPage />} />
-				</Route>
-				<Route path='/events/' element={<EventsLayout />}>
-					<Route index element={<EventsPage />} />
-					<Route path='detailed' element={<EventsDetailedPage />} />
-				</Route>
-				<Route path='/statistics/' element={<StatisticsLayout />}>
-					<Route path='overview' element={<StatisticsPageOverview />} />
-					<Route path='in-person' element={<StatisticsPageInPerson />} />
-					<Route path='calendar' element={<StatisticsPageCalendar />} />
-					<Route path='tables' element={<StatisticsPageTables />} />
-					<Route path='search' element={<StatisticsPageSearch />} />
-					<Route path='standings' element={<StatisticsPageStandings />} />
-					<Route path='archive' element={<StatisticsPageArchive />} />
-				</Route>
-				<Route path='/statistics/' element={<StatisticOneLayout />}>
-					<Route index element={<StatisticsPageOne />} />
-					<Route path='detailed' element={<StatisticsPageFive />} />
-				</Route>
-			</Routes>
-		</BrowserRouter>
-	)
+
+export default function App() {
+    return (
+
+
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<MainLayout/>}>
+                        <Route index element={<HomePage/>}/>
+                        <Route path='/choice-of-sport' element={<ChoiceSportPage/>}/>
+                        <Route path='/choice-of-country' element={<ChoiceCountryPage/>}/>
+                        <Route path='/faq' element={<FAQPage/>}/>
+                        <Route path='/sitemap' element={<SiteMapPage/>}/>
+                        <Route path='/modals' element={<ModalsPage/>}/>
+                        <Route path='*' element={<NoPage/>}/>
+                    </Route>
+                    <Route path='/profile/' element={<ProfileLayout/>}>
+                        <Route index element={<ProfilePage/>}/>
+                        <Route path='verification' element={<VerificationPage/>}/>
+                        <Route path='conclusions' element={<HistoryOfConclusions/>}/>
+                        <Route path='betting' element={<HistoryBetting/>}/>
+                        <Route path='promo' element={<MyPromo/>}/>
+                        <Route path='deposit' element={<DepositPage/>}/>
+                        <Route path='limits' element={<LimitsProfile/>}/>
+                    </Route>
+                    <Route path='/cyber-sport' element={<CyberSportLayout/>}>
+                        <Route index element={<HomePageGames/>}/>
+                        <Route path='event' element={<CyberSportEventPage/>}/>
+                    </Route>
+                    <Route path='/requests/' element={<RequestsLayout/>}>
+                        <Route index element={<RequestsPage/>}/>
+                        <Route path='request' element={<RequestPage/>}/>
+                    </Route>
+                    <Route path='/apps/' element={<AppsLayout/>}>
+                        <Route index element={<AppsPage/>}/>
+                    </Route>
+                    <Route path='/promotions/' element={<PromotionsLayout/>}>
+                        <Route index element={<PromotionsPage/>}/>
+                        <Route path='promo' element={<PromotionPage/>}/>
+                    </Route>
+                    <Route path='/events/' element={<EventsLayout/>}>
+                        <Route index element={<EventsPage/>}/>
+                        <Route path='detailed' element={<EventsDetailedPage/>}/>
+                    </Route>
+                    <Route path='/statistics/' element={<StatisticsLayout/>}>
+                        <Route path='overview' element={<StatisticsPageOverview/>}/>
+                        <Route path='in-person' element={<StatisticsPageInPerson/>}/>
+                        <Route path='calendar' element={<StatisticsPageCalendar/>}/>
+                        <Route path='tables' element={<StatisticsPageTables/>}/>
+                        <Route path='search' element={<StatisticsPageSearch/>}/>
+                        <Route path='standings' element={<StatisticsPageStandings/>}/>
+                        <Route path='archive' element={<StatisticsPageArchive/>}/>
+                    </Route>
+                    <Route path='/statistics/' element={<StatisticOneLayout/>}>
+                        <Route index element={<StatisticsPageOne/>}/>
+                        <Route path='detailed' element={<StatisticsPageFive/>}/>
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+
+    )
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
-root.render(<App />)
+root.render(<App/>)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

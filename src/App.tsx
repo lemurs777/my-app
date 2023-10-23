@@ -4,6 +4,7 @@ import './assets/styles/style.scss';
 
 function App() {
   return (
+
     <div className="App">
       <HomePage />
       <ProfilePage />
