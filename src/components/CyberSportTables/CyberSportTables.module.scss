@@ -211,7 +211,7 @@
   width: rem(28px);
   height: rem(28px);
   border-radius: 50%;
-  background: url("../../assets/images/svg/table-play.svg") no-repeat 50% 50% / rem(20px 20px);
+  background: url("../../assets/images/svg/table-play.svg") no-repeat center/contain;
   transition: .3s;
   cursor: pointer;
   margin-right: rem(5px);
@@ -235,7 +235,9 @@
 }
 
 .tableScore {
-  font-weight: 400;
+
+  font-weight: 500;
+  //font-weight: 400;
   font-size: rem(16px);
   line-height: rem(19px);
   color: #FFFFFF;

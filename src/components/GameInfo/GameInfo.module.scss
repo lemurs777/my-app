@@ -4,8 +4,9 @@
   padding: rem(35px 15px 15px);
   background: #000;
   width: rem(332px);
-  max-height: calc(100vh - #{rem(146px)});
-  height: calc(100vh - #{rem(146px)});
+  //max-height: calc(100vh - #{rem(146px)});
+  max-height: rem(1149px);
+  //height: calc(100vh - #{rem(146px)});
   overflow-y: auto;
   z-index: 5;
   flex: 0 0 rem(332px);

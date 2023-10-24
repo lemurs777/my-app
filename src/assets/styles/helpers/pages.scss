@@ -74,3 +74,23 @@
     }
   }
 }
+
+.game-page {
+  &__game-info {
+    @media(max-width: 1365px) {
+      display: none;
+    }
+  }
+
+  &__stream {
+    @media(max-width: 1199.98px) {
+      display: none;
+    }
+  }
+
+  &__game-banner {
+    @media(max-width: 1199.98px) {
+      display: none;
+    }
+  }
+}
