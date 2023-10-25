@@ -8,7 +8,9 @@
   @media(max-width: 1199.98px) {
     padding: rem(10px 20px);
   }
-
+@media(max-width: 767.98px){
+  padding: rem(7.5px 20px);
+}
   &::-webkit-scrollbar {
     height: rem(5px);
   }
@@ -65,7 +67,7 @@
   white-space: nowrap;
   gap: rem(10px);
   transition: .3s;
-  @media(min-width: 1199.98px) {
+  @media(min-width: 1200px) {
     padding: 0;
     height: 100%;
     font-size: 0;
@@ -99,7 +101,9 @@
 
   }
 
-
+@media(max-width:767.98px){
+  gap: rem(7px);
+}
   &:hover {
     color: var(--accentColor);
 

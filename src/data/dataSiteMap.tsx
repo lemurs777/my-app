@@ -39,10 +39,10 @@ const arrLinks = [
         name : 'События',
         link : '/events',
     },
-    {
-        name: 'Событие - Детали',
-        link: '/events/detailed'
-    },
+    // {
+    //     name: 'Событие - Детали',
+    //     link: '/events/detailed'
+    // },
     {
         name: 'Акции - разводящая',
         link: '/promotions',
@@ -65,7 +65,11 @@ const arrLinks = [
     },
     {
         name: 'Киберспорт',
-        link: '/cybersport',
+        link: '/cyber-sport',
+    },
+    {
+        name: 'Киберспорт Евент',
+        link: '/cyber-sport/event',
     },
     {
         name: 'Вопросы и ответы',

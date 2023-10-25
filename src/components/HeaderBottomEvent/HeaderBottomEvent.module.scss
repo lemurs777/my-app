@@ -7,8 +7,8 @@
   justify-content: space-between;
   //overflow-x: auto;
   gap: 1rem;
-
-  @media(max-width:1199.98px) {
+  overflow-x: auto;
+  @media(max-width: 1199.98px) {
     justify-content: flex-start;
   }
 
@@ -17,7 +17,7 @@
     align-items: center;
     gap: rem(15px);
 
-    @media(max-width:1024px) {
+    @media(max-width: 1024px) {
       // overflow-x: auto;
     }
   }
@@ -28,7 +28,7 @@
 .apps,
 .info,
 .language {
-  @media(max-width:1199.98px) {
+  @media(max-width: 1199.98px) {
     //display: none;
   }
 }

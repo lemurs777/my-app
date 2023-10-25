@@ -3,11 +3,12 @@ import Search from '../components/Search'
 
 import {SportMenuDB as sport} from '../assets/database/SportMenuDB'
 import Broadcast from "../components/Broadcast";
+import {SupportChat} from "../components";
 
 function HomePage() {
     return (
         <>
-
+            <SupportChat/>
             <main className={'main'}>
                 {/*<Menu />*/}
                 <div className="desktop">

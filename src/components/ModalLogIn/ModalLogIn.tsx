@@ -81,7 +81,6 @@ function ModalLogIn (props: ModalType) {
 					Phone: phone
 				}
 				const reply = await loginApi(data as LoginData);
-				console.log(reply);
 			}}>Продолжить</button>
 		</div>
 	);

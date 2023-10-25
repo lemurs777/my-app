@@ -11,6 +11,9 @@
   flex: 0 0 rem(28px);
   font-weight: 0;
   font-size: 0;
+  @media(max-width: 767.98px) {
+    display: none;
+  }
 
   &:hover {
     transform: scale(1.05);
@@ -40,6 +43,9 @@
     right: 0;
     height: rem(4px);
     background: radial-gradient(50% 50% at 50% 50%, #F7FF13 0%, rgba(0, 0, 0, 0.00) 100%);
+    @media(max-width: 767.98px) {
+      display: none;
+    }
   }
 
   &:before {
@@ -50,6 +56,7 @@
     right: 0;
     height: rem(4px);
     background: radial-gradient(50% 50% at 50% 50%, #F7FF13 0%, rgba(0, 0, 0, 0) 100%);
+
   }
 }
 
@@ -71,20 +78,8 @@
 
     min-width: rem(414px);
   }
-  @media(max-width: 1200px) {
-    //display: none;
-  }
 
-  //&:before {
-  //  position: absolute;
-  //  content: "";
-  //  top: 0;
-  //  left: 0;
-  //  right: 0;
-  //  background: radial-gradient(63.59% 100% at 50% 0%, #494B02 0%, rgba(69, 71, 13, 0.571) 41.15%, rgba(49, 50, 9, 0.34) 72.92%, rgba(79, 82, 10, 0) 100%);
-  //  height: rem(256px);
-  //  z-index: -1;
-  //}
+
 }
 
 .info {
@@ -109,6 +104,11 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   position: relative;
+  @media(max-width: 767.98px) {
+    width: rem(40px);
+    height: rem(40px);
+  }
+
 }
 
 .infoIconInner {
@@ -118,6 +118,10 @@
   width: rem(50px);
   height: rem(50px);
   transform: translate(-50%, -50%);
+  @media(max-width: 767.98px) {
+    width: rem(25px);
+    height: rem(25px);
+  }
 }
 
 .infoIconImg {
@@ -169,17 +173,24 @@
 .infoContentDate {
   font-weight: 400;
   font-size: rem(14px);
-  line-height: rem(16px);
+  line-height: 1.143;
   color: #8E8E8E;
   margin-bottom: rem(20px);
+  @media(max-width: 767.98px) {
+    font-size: rem(16px);
+    margin-bottom: rem(14px);
+  }
 }
 
 .infoContentScore {
   font-weight: 500;
   font-size: rem(20px);
-  line-height: rem(23px);
+  line-height: 1.15;
   text-align: center;
   color: #fff;
+  @media(max-width: 767.98px) {
+    font-size: rem(26px);
+  }
 }
 
 .infoDates {
@@ -221,6 +232,9 @@
 .table {
   display: flex;
   gap: 1rem;
+  @media(max-width: 767.98px) {
+    gap: rem(14px);
+  }
 
   &__blocks {
     display: flex;
@@ -243,6 +257,11 @@
     position: relative;
     text-align: center;
     min-width: rem(48px);
+    @media(max-width: 767.98px) {
+      min-width: rem(43px);
+      font-size: rem(14px);
+      padding: rem(9px 0px);
+    }
   }
 
   &__numMore {
@@ -278,6 +297,7 @@
   &__numDifference {
     background-color: #1F1F1F;
     border-left: rem(1.21px) solid #2E2E2E;
+    color: #A7A7A7;
   }
 
   &__text {
