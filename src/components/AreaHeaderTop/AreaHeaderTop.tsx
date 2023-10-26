@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styles from './AreaHeaderTop.module.scss'
+import ButtonAccent from "../Buttons/ButtonAccent";
 
 function AreaHeaderTop() {
   return (

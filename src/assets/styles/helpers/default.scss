@@ -193,10 +193,10 @@ main {
   //bottom: 0;
   //right: 0;
   //left: 0;
-  max-height: calc(100vh - #{rem(145px)});
+  //max-height: calc(100vh - #{rem(145px)});
   display: flex;
   z-index: 2;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 
   &--index {
     // max-width: rem(1542px);
@@ -233,7 +233,7 @@ main {
 
   &--apps {
     top: rem(80px);
-    max-height: calc(100vh - #{rem(79px)});
+    //max-height: calc(100vh - #{rem(79px)});
     background-image: url('../../images/apps-bg-x2.min.png');
     background-repeat: no-repeat;
     background-size: rem(1225px) rem(786px);
@@ -363,7 +363,7 @@ main {
     display: block;
     //top: rem(79px);
     position: static;
-    max-height: calc(100vh - #{rem(78px)});
+    //max-height: calc(100vh - #{rem(78px)});
   }
 
   &--promotions {

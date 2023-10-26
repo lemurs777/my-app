@@ -11,8 +11,8 @@
 
 .game-wrapper {
   width: rem(1110px);
-  height: calc(100vh - #{rem(146px)});
-  max-height: calc(100vh - #{rem(146px)});
+  //height: calc(100vh - #{rem(146px)});
+  //max-height: calc(100vh - #{rem(146px)});
   overflow-y: auto;
 }
 
@@ -60,7 +60,7 @@
   &--requests,
   &--profile {
     width: 100%;
-    overflow-x: hidden;
+    //overflow-x: hidden;
     padding-right: rem(10px);
 
     @media(max-width: 768px) {

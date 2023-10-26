@@ -31,12 +31,14 @@ import {
     ModalWithdrawMoney
 } from "../index";
 import useModal from "../../hooks/useModal";
+import AreaHeaderTop from "../AreaHeaderTop";
 
 type Props = {
-    dropdownItems?: any, buttonProps?: any
+    dropdownItems?: any, buttonProps?: any, isLogIn?: boolean
 }
 
-function HeaderTop() {
+
+function HeaderTop({isLogIn}: Props) {
     const [showDropdown, setShowDropdown] = useState(false)
     const [menuOpen, setMenuOpen] = useState(false)
     const {isOpen, toggleModal} = useModal()
@@ -86,7 +88,6 @@ function HeaderTop() {
         },
     ]
     useClickOutside(wrapRef, () => setShowDropdown(false))
-    // @ts-ignore
     // @ts-ignore
     return (
         <div className={styles.headerTop}>
@@ -204,17 +205,21 @@ function HeaderTop() {
                     </PriorityNav>
                 </menu>
             </div>
-            <div className={styles.signInWrapper}>
-                <button onClick={() => {
-                    CurrentModal('login', true)
-                }} className={styles.signInBtn}>
-                    Войти
-                </button>
+            {isLogIn ? (
+                <AreaHeaderTop/>
+            ) : (
+                <div className={styles.signInWrapper}>
+                    <button onClick={() => {
+                        CurrentModal('login', true)
+                    }} className={styles.signInBtn}>
+                        Войти
+                    </button>
 
-                <ButtonAccent handleClick={() => CurrentModal('registration', true)}
-                              className={styles.signInBtnRegistration} title={'Регистрация'}/>
+                    <ButtonAccent handleClick={() => CurrentModal('registration', true)}
+                                  className={styles.signInBtnRegistration} title={'Регистрация'}/>
 
-            </div>
+                </div>
+            )}
 
 
             <Modal isOpen={isOpen} toggleModal={toggleModal} full={isFull}>

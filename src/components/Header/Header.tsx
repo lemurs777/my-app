@@ -11,28 +11,38 @@ import styles from './Header.module.scss';
 import HeaderTopProfile from '../HeaderTopProfile'
 // import HeaderTop from '../HeaderTop';
 
-function Header(props: HeaderSettings) {
+type Props = {
+    isLogIn?: boolean;
+    showTop?: boolean,
+    showTopProfile?: boolean,
+    showBottom?: boolean;
+    showBottomProfile?: boolean;
+    showBottomPromotion?: boolean;
+}
+
+// @ts-ignore
+function Header({showTop,showTopProfile,showBottom,showBottomProfile,showBottomPromotion,isLogIn}: Props) {
 
     // @ts-ignore
     return (
         <header className={styles.header}>
-            {props.showTop && (
+            {showTop && (
                 <>
                     {/*<HeaderTop/>*/}
-                    <HeaderTop/>
+                    <HeaderTop isLogIn={isLogIn}/>
                 </>
             )}
-            {props.showTopProfile && (
+            {showTopProfile && (
 
                 <HeaderTopProfile/>
             )}
-            {props.showBottom && (
+            {showBottom && (
                 <HeaderBottom/>
             )}
-            {props.showBottomProfile && (
+            {showBottomProfile && (
                 <HeaderBottomProfile/>
             )}
-            {props.showBottomPromotion && (
+            {showBottomPromotion && (
                 <HeaderBottomPromotion/>
             )}
         </header>
