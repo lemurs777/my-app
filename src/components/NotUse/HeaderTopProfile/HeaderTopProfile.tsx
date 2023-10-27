@@ -2,15 +2,15 @@ import {Link, NavLink} from 'react-router-dom'
 import clsx from 'clsx'
 import {PriorityNav, ToggleButton} from "react-priority-navigation";
 
-import HeaderBest from '../../assets/images/header-best.png'
+import HeaderBest from '../../../assets/images/header-best.png'
 
 import styles from './HeaderTopProfile.module.scss'
 import React, {useRef, useState} from 'react'
-import {ReactComponent as MoreIcon} from "../../assets/images/more.svg";
-import {useClickOutside} from "../../hooks/useClickOutside";
+import {ReactComponent as MoreIcon} from "../../../assets/images/more.svg";
+import {useClickOutside} from "../../../hooks/useClickOutside";
 
-import {ReactComponent as LogoIcon} from "../../assets/images/logo.svg";
-import ButtonAccent from "../Buttons/ButtonAccent";
+import {ReactComponent as LogoIcon} from "../../../assets/images/logo.svg";
+import ButtonAccent from "../../Buttons/ButtonAccent";
 import {
     Modal,
     ModalChat, ModalCheck,
@@ -29,9 +29,9 @@ import {
     ModalTicketInfo,
     ModalVerification,
     ModalWithdrawMoney
-} from "../index";
-import useModal from "../../hooks/useModal";
-import AreaHeaderTop from "../AreaHeaderTop";
+} from "../../index";
+import useModal from "../../../hooks/useModal";
+import AreaHeaderTop from "../../AreaHeaderTop";
 
 type Props = {
     dropdownItems?: any, buttonProps?: any

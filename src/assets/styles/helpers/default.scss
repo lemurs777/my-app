@@ -232,13 +232,17 @@ main {
   }
 
   &--apps {
-    top: rem(80px);
+    //top: rem(80px);
     //max-height: calc(100vh - #{rem(79px)});
     background-image: url('../../images/apps-bg-x2.min.png');
     background-repeat: no-repeat;
-    background-size: rem(1225px) rem(786px);
+    //background-size: rem(1225px) rem(786px);
+    background-size: contain;
     background-position: 0 rem(100px);
     max-width: none !important;
+    @media(min-width:768px){
+      min-height: rem(800px);
+    }
 
     @media (max-width: 1199px) {
       background-position-x: rem(-150px);

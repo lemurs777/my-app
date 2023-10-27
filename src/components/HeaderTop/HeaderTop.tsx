@@ -76,7 +76,7 @@ function HeaderTop({isLogIn}: Props) {
         },
         {
             title: 'акции',
-            path: '/stock'
+            path: '/promotions'
         },
         {
             title: 'Link',

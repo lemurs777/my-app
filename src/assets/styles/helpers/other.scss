@@ -85,3 +85,12 @@
 .PriorityNav_Main .PriorityNav_Item:first-child {
   padding: 0 !important;
 }
+
+.accent-btn {
+  background-color: var(--accentColor) !important;
+  color: #000 !important;
+  transition:background-color .2s ease-in-out;
+  &:hover{
+    background-color: #e5e912 !important;
+  }
+}

@@ -1,36 +1,35 @@
 @import "sass-rem";
 
 
+
 .searchLabel {
+  padding: rem(14px 25px);
   position: relative;
-  max-width: rem(535px);
-  width: 100%;
-  padding: rem(25px 28px);
-  display: inline-flex;
-  align-items: center;
-  gap: rem(15px);
-  background: linear-gradient(90deg, #262626 0%, #1A1A1A 56.77%, #000 100%);
-  @media(max-width: 768px) {
+  width: rem(290px);
+  //background: linear-gradient(90deg, #262626 0%, #1a1a1a 56.77%, #000000 100%);
+  @media (max-width: 768px) {
     display: none;
   }
 }
 
 .searchIcon {
+  position: absolute;
+  top: 50%;
+  left: rem(25px);
   width: rem(16px);
   height: rem(16px);
-  background: url("../../assets/images/svg/header-search.svg") no-repeat 50% 50% /contain;
+  color: #898989;
+  transform: translateY(-50%);
 }
 
-.searchIconPath {
-  fill: #898989;
-  transition: .3s;
-}
 
 .search {
   width: 100%;
+  min-height: rem(40px);
+  padding: rem(10px 10px 10px 35px);
   font-size: rem(16px);
   color: #fff;
-  display: inline-block;
+  position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
 

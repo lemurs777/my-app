@@ -88,7 +88,7 @@ function PromoSlider() {
 									<h2 className={styles.title}>{banner.title}</h2>
 									<p className={styles.text}>{banner.text}</p>
 									<div className={styles.btnWrapper}>
-										<Link className={clsx(styles.btn, styles.btnAccent)} to={banner.linkOne}>Участвовать</Link>
+										<Link className={clsx(styles.btn,'accent-btn')} to={banner.linkOne}>Участвовать</Link>
 										<Link className={styles.btn} to={banner.linkTwo}>Подробнее</Link>
 									</div>
 								</div>
@@ -101,8 +101,6 @@ function PromoSlider() {
 				<Swiper
 					slidesPerView={1}
 					loop={true}
-					onSlideChange={() => console.log('slide change')}
-					onSwiper={(swiper) => console.log(swiper)}
 					className={styles.promoSliderRight}
 				>
 					{arrBanners.map((banner, index) => (

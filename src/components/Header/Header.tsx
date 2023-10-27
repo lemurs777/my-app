@@ -8,8 +8,8 @@ import {
 import {HeaderSettings} from './types';
 
 import styles from './Header.module.scss';
-import HeaderTopProfile from '../HeaderTopProfile'
-// import HeaderTop from '../HeaderTop';
+import HeaderTopProfile from '../NotUse/HeaderTopProfile'
+
 
 type Props = {
     isLogIn?: boolean;
@@ -20,22 +20,14 @@ type Props = {
     showBottomPromotion?: boolean;
 }
 
-// @ts-ignore
-function Header({showTop,showTopProfile,showBottom,showBottomProfile,showBottomPromotion,isLogIn}: Props) {
+
+function Header({showTop, showTopProfile, showBottom, showBottomProfile, showBottomPromotion, isLogIn}: Props) {
 
     // @ts-ignore
     return (
         <header className={styles.header}>
-            {showTop && (
-                <>
-                    {/*<HeaderTop/>*/}
-                    <HeaderTop isLogIn={isLogIn}/>
-                </>
-            )}
-            {showTopProfile && (
+            <HeaderTop isLogIn={isLogIn}/>
 
-                <HeaderTopProfile/>
-            )}
             {showBottom && (
                 <HeaderBottom/>
             )}

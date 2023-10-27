@@ -10,79 +10,80 @@ import codImg from '../images/games/cod.svg'
 import tf2Img from '../images/games/tf2.svg'
 import hosImg from '../images/games/hos.svg'
 import topImg from '../images/games/top.svg'
-import { ReactComponent as TopIcon } from '..//images/svg/top.svg'
+import {ReactComponent as TopIcon} from '..//images/svg/top.svg'
+
 export const GamesDB = [
     {
 
         title: 'Топ',
-        icon: <TopIcon />,
-        		// path: '/top',
-        		live: true,
+        icon: <TopIcon/>,
+        link: '/cyber-sport/event',
+        live: true,
     },
     {
         title: 'CS:GO',
         image: csGoImg,
-        // link: '/cs-go',
+        link: '/cyber-sport/event',
         live: true
     },
     {
         title: 'Dota 2',
         image: dota2Img,
-        // link: '/dota2',
+        link: '/cyber-sport/event',
         live: true
     },
     {
         title: 'Overwatch',
         image: overwatchImg,
-        // link: '/overwatch',
+        link: '/cyber-sport/event',
         live: false
     },
     {
         title: 'LoL',
         image: lolImg,
-        // link: '/lol',
+        link: '/cyber-sport/event',
         live: true
     },
     {
         title: 'Valorant',
         image: valorantImg,
-        // link: '/valorant',
+        link: '/cyber-sport/event',
         live: false
     },
     {
         title: 'StarCraft I',
         image: sc1Img,
-        // link: '/sc1',
+        link: '/cyber-sport/event',
         live: false
     },
     {
         title: 'StarCraft II',
         image: sc2Img,
-        // link: '/sc2',
+        link: '/cyber-sport/event',
         live: false
     },
     {
         title: 'Hearthstone',
         image: hearthstoneImg,
-        // link: '/hearthstone',
+        link: '/cyber-sport/event',
         live: true,
     },
     {
         title: 'Call Of Duty',
         image: codImg,
-        // link: '/cod',
+        link: '/cyber-sport/event',
         live: false
     },
     {
         title: 'TF2',
         image: tf2Img,
-        // link: '/tf2',
+        link: '/cyber-sport/event',
         live: false
     },
     {
         title: 'HoS',
         image: hosImg,
-        // link: '/hos',
+        link: '/cyber-sport/event',
         live: false
     },
 ]

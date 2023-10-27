@@ -72,23 +72,14 @@ function PromotionsPage() {
 	}
 
 	return (
-		<>
-			<Header
-				showBottom={false}
-				showBottomPromotion={true}
-				showTopProfile={true}
-			/>
 			<main className='page page--promotions scroll'>
 				<div className='promotions'>
 					<PromoSlider />
-
 					<PromoList data={promoList} />
-
 					<PromoList data={bonusList} />
 					<SportFooter />
 				</div>
 			</main>
-		</>
 	)
 }
 

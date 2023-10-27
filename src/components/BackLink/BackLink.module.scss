@@ -1,0 +1,21 @@
+@import "sass-rem";
+.back {
+  color: #D1D1D1;
+  border-radius: rem(16px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(48px);
+  height: rem(48px);
+  transform: rotate(180deg);
+  transition: color var(--transition) ease-in-out, transform var(--transition) ease-in-out;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    color: #fff;
+    transform: rotate(180deg) scale(1.05);
+  }
+}

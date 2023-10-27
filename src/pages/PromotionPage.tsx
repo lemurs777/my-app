@@ -1,18 +1,11 @@
-import { Header, Promotion } from '../components'
+import {Header, Promotion} from '../components'
 
 function PromotionPage() {
-	return (
-		<>
-			<Header
-				showBottom={false}
-				showBottomPromotion={true}
-				showTopProfile={true}
-			/>
-			<main className='page page--promotions scroll'>
-				<Promotion />
-			</main>
-		</>
-	)
+    return (
+        <main className='page page--promotions scroll'>
+            <Promotion/>
+        </main>
+    )
 }
 
 export default PromotionPage

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import HeaderTopProfile from '../components/HeaderTopProfile'
+import HeaderTopProfile from '../components/NotUse/HeaderTopProfile'
 import HeaderBottomEvent from '../components/HeaderBottomEvent'
 
 type MyComponentProps = React.PropsWithChildren<{}>

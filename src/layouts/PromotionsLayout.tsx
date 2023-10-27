@@ -7,7 +7,7 @@ type MyComponentProps = React.PropsWithChildren<{}>
 function PromotionsLayout({ children }: MyComponentProps) {
 	return (
 		<>
-			{/*<Header showBottom={false} showBottomPromotion={true} />*/}
+			<Header isLogIn={true}  showBottomPromotion={true}/>
 			{children}
 			<Outlet />
 		</>

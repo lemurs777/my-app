@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './CyberEventScore.module.scss'
-import {Link} from 'react-router-dom'
-import {ReactComponent as ArrowIcon} from '../../assets/images/svg/arrow.svg'
 import {ReactComponent as AddIcon} from '../../assets/images/svg/events-info-add.svg'
 import nemigaImg from '../../assets/images/team-icons/nemiga.png'
 import winstrikeImg from '../../assets/images/team-icons/winstrike.png'
+import BackLink from "../BackLink";
 
 const CyberEventScore = () => {
     const data = [
@@ -15,9 +14,7 @@ const CyberEventScore = () => {
         <div className={styles.score}>
             <div className={styles.score__inner}>
                 <div className={styles.score__btns}>
-                    <Link to={'../'} className={styles.score__btn}>
-                        <ArrowIcon/>
-                    </Link>
+          <BackLink/>
                     <button className={styles.score__btn}>
                         <AddIcon/>
                     </button>
