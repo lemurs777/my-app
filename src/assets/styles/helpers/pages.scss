@@ -9,6 +9,15 @@
   }
 }
 
+.events {
+  &__aside,
+  &__menu {
+    @media(max-width: 1199.98px) {
+      display: none;
+    }
+  }
+}
+
 .game-wrapper {
   width: rem(1110px);
   //height: calc(100vh - #{rem(146px)});

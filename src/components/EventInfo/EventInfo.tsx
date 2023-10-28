@@ -1,22 +1,17 @@
-import {Link} from 'react-router-dom'
-import clsx from 'clsx'
-import {CategoryList, EventsList} from '../'
+import React from 'react';
+import styles from "./EventInfo.module.scss";
+import {Link} from "react-router-dom";
+import clsx from "clsx";
+import BestMomentProfile from "../BestMomentProfile";
+import {CategoryData, ItemsData} from "../EventsInfo/types";
+import Logo1 from "../../assets/images/events-info-live-logo-fc-bayern-x2.min.png";
+import Logo2 from "../../assets/images/events-info-live-logo-fc-frankfurt-x2.min.png";
+import BackLink from "../BackLink";
 
-import {CategoryData, ItemsData} from './types'
+import {ReactComponent as AddIcon} from '../../assets/images/svg/events-info-add.svg'
 
-import Logo1 from '../../assets/images/events-info-live-logo-fc-bayern-x2.min.png'
-import Logo2 from '../../assets/images/events-info-live-logo-fc-frankfurt-x2.min.png'
+const EventInfo = () => {
 
-import styles from './EventsInfo.module.scss'
-import BestMomentProfile from '../BestMomentProfile'
-
-function EventsInfo({
-                        dataCategory,
-                        dataItems,
-                    }: {
-    dataCategory: CategoryData
-    dataItems: ItemsData
-}) {
     const TeamsInfo = {
         teamOne: {
             name: 'Бавария',
@@ -47,12 +42,12 @@ function EventsInfo({
         <div className={styles.eventsInfo}>
             <div className={styles.live}>
                 <div className={styles.top}>
-                    <Link className={clsx(styles.topLink, styles.topLinkHome)} to='/'>
-                        Home
-                    </Link>
-                    <button className={clsx(styles.topLink, styles.topLinkAdd)}>
-                        Add
-                    </button>
+                    <div className={styles.top__btns}>
+                        <BackLink/>
+                        <button className={styles.btnAdd}>
+                            <AddIcon/>
+                        </button>
+                    </div>
                     <div className={styles.topLeft}>
                         <img
                             className={styles.topLogo}
@@ -154,14 +149,9 @@ function EventsInfo({
                         </div>
                     </div>
                 </div>
-                <div className={styles.best}>
-                    <BestMomentProfile/>
-                </div>
-                {/*<CategoryList data={dataCategory}/>*/}
             </div>
-            {/*<EventsList dataList={{dataItems}}/>*/}
         </div>
-    )
-}
+    );
+};
 
-export default EventsInfo
+export default EventInfo;

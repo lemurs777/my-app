@@ -14,7 +14,7 @@ const CyberEventScore = () => {
         <div className={styles.score}>
             <div className={styles.score__inner}>
                 <div className={styles.score__btns}>
-          <BackLink/>
+                    <BackLink/>
                     <button className={styles.score__btn}>
                         <AddIcon/>
                     </button>

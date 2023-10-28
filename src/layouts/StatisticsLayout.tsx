@@ -7,7 +7,7 @@ type MyComponentProps = React.PropsWithChildren<{}>
 function StatisticsLayout({ children }: MyComponentProps) {
 	return (
 		<>
-			{/*<Header showBottom={true}  />*/}
+			<Header showBottom={false}  />
 			{children}
 			<Outlet />
 		</>

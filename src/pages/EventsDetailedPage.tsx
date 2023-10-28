@@ -415,7 +415,7 @@ function EventsDetailedPage() {
 			<div className='main'>
 				<main className='page page--events'>
 					<EventsToday />
-					<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />
+					{/*<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />*/}
 				</main>
 				<aside className='aside aside--events scroll'>
 					{/*<Broadcast />*/}

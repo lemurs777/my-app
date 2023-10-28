@@ -9,9 +9,10 @@ const HeaderBottomEvent = ({ icon, link, data, dataTable, dataTableTitle }) => {
 	return (
 		<div className={styles.headerBottom}>
 			<div className={styles.headerBottom__col}>
-				<div className={styles.search}>
-					<HeaderSearch />
-				</div>
+				{/*<div className={styles.search}>*/}
+				{/*	<HeaderSearch />*/}
+				{/*</div>*/}
+				<HeaderSearch placeholder={'Найти команду, страну, лигу..'}/>
 			</div>
 			<div className={styles.headerBottom__col}>
 				<HeaderBreadCrumb

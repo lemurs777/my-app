@@ -3,7 +3,8 @@
 .bestSwiper {
   margin-right: rem(-15px);
 
-  .swiper-slide {}
+  .swiper-slide {
+  }
 }
 
 .bestSlideWrapper {
@@ -24,7 +25,7 @@
     gap: rem(10px);
 
     &.active {
-      margin-bottom: rem(0);
+      //margin-bottom: rem(0);
 
       .hide {
         transform: rotate(180deg);
@@ -96,4 +97,21 @@
   line-height: rem(19px);
   text-transform: uppercase;
   color: #fff;
+}
+
+.bestSlider {
+  &__nav {
+    display: flex;
+    align-items: center;
+
+  }
+}
+
+:global {
+  .best-prev-btn,
+  .best-next-btn {
+    width: rem(16px);
+    height: rem(16px);
+    flex: 0 0 rem(16px);
+  }
 }

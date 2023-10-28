@@ -457,8 +457,6 @@ const CyberSportEventPage = () => {
     return (
         <>
             <HeaderTop/>
-
-
             <HeaderBottomEvent
                 icon={<GameIcon/>}
                 link={'eSport'}
