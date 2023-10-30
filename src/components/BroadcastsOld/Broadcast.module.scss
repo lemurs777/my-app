@@ -1,4 +1,4 @@
-@import "sass-rem";
+@import "../../../node_modules/sass-rem/index";
 
 .broadcast {
   //background: #0D0D0D;
@@ -93,7 +93,7 @@
     &:before {
       width: rem(20px);
       height: rem(20px);
-      background-image: url("../../../assets/images/svg/broadcast-lock.svg");
+      background-image: url("../../assets/images/svg/broadcast-lock.svg");
     }
   }
 
@@ -101,7 +101,7 @@
     &:before {
       width: rem(20px);
       height: rem(6px);
-      background-image: url("../../../assets/images/svg/broadcast-arrow.svg");
+      background-image: url("../../assets/images/svg/broadcast-arrow.svg");
     }
   }
 }

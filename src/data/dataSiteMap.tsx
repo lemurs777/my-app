@@ -39,10 +39,10 @@ const arrLinks = [
         name : 'События',
         link : '/events',
     },
-    // {
-    //     name: 'Событие - Детали',
-    //     link: '/events/detailed'
-    // },
+    {
+        name: 'Событие - Детали',
+        link: '/events/detailed'
+    },
     {
         name: 'Акции - разводящая',
         link: '/promotions',

@@ -2,9 +2,17 @@ import {
 	Menu,
 	EventsToday,
 	EventsInfo,
-	Multiple,
+	Multiple, Header, CategoryList, EventsList,
 	//Broadcast,
 } from '../components/'
+import HeaderBottomEvent from "../components/HeaderBottomEvent";
+import {SportMenuDB as sports} from "../assets/database/SportMenuDB";
+import EventInfo from "../components/EventInfo";
+import Broadcast from "../components/Broadcast";
+import BestMomentProfile from "../components/BestMomentProfile";
+import Broadcasts from "../components/BroadcastsOld/Broadcasts";
+import SportFooter from "../components/SportFooter";
+import React from "react";
 
 function EventsDetailedPage() {
 	const arrCategory = [
@@ -25,7 +33,7 @@ function EventsDetailedPage() {
 			active: false,
 		},
 	]
-
+	const gameList = [' Футбол', ' Футбол', ' Футбол']
 	const eventItems = [
 		{
 			title: 'Исходы',
@@ -408,20 +416,189 @@ function EventsDetailedPage() {
 			],
 		},
 	]
-
+	const arrTables = [
+		{
+			name: 'Испания. Примера',
+			time: '18:15',
+			date: '21 Aug',
+			nameOne: 'Севилья',
+			nameTwo: 'Атлетико Мадрид',
+			lastNumber: 21,
+			checkOne: 0,
+			checkTwo: 2,
+			arrNumbers: [
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+			],
+			arrNumbers2: [
+				{
+					number: 9.1,
+					class: 'upp',
+				},
+				{
+					number: 9.1,
+					class: 'down',
+				},
+				{
+					number: 2.5,
+					class: 'disableTable',
+				},
+			],
+		},
+		{
+			name: 'Испания. Примера',
+			time: '32`',
+			date: '21 Aug',
+			nameOne: 'Севилья',
+			nameTwo: 'Атлетико Мадрид',
+			lastNumber: 21,
+			class: 'danger',
+			checkOne: 0,
+			checkTwo: 1,
+			arrNumbers: [
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+			],
+			arrNumbers2: [
+				{
+					number: 9.1,
+					class: 'upp',
+				},
+				{
+					number: 9.1,
+					class: 'down',
+				},
+				{
+					number: 2.5,
+					class: 'disableTable',
+				},
+			],
+		},
+		{
+			name: 'Испания. Примера',
+			time: '18:15',
+			date: '21 Aug',
+			nameOne: 'Севилья',
+			nameTwo: 'Атлетико Мадрид',
+			lastNumber: 21,
+			checkOne: 0,
+			checkTwo: 1,
+			arrNumbers: [
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+			],
+			arrNumbers2: [
+				{
+					number: 9.1,
+					class: 'upp',
+				},
+				{
+					number: 9.1,
+					class: 'down',
+				},
+				{
+					number: 2.5,
+					class: 'disableTable',
+				},
+			],
+		},
+		{
+			name: 'Испания. Примера',
+			time: '18:15',
+			date: '21 Aug',
+			nameOne: 'Севилья',
+			nameTwo: 'Атлетико Мадрид',
+			lastNumber: 21,
+			checkOne: 0,
+			checkTwo: 1,
+			arrNumbers: [
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+				{
+					number: 9.1,
+					class: 'empty',
+				},
+			],
+			arrNumbers2: [
+				{
+					number: 9.1,
+					class: 'upp',
+				},
+				{
+					number: 9.1,
+					class: 'down',
+				},
+				{
+					number: 2.5,
+					class: 'disableTable',
+				},
+			],
+		},
+	]
 	return (
 		<>
-			{/*<Menu />*/}
-			<div className='main'>
-				<main className='page page--events'>
-					<EventsToday />
-					{/*<EventsInfo dataCategory={arrCategory} dataItems={eventItems} />*/}
-				</main>
-				<aside className='aside aside--events scroll'>
-					{/*<Broadcast />*/}
-					<Multiple />
+			<Header isLogIn={true} showBottom={false}/>
+			<HeaderBottomEvent
+				icon={false}
+				link={'Спорт'}
+				data={gameList}
+				dataTable={arrTables}
+				dataTableTitle={'Таиланд. премьер-лига'}
+			/>
+			<main className='main'>
+				<div className="events__menu">
+					<Menu data={sports}/>
+				</div>
+				<EventsToday/>
+				<div className="central">
+					<EventInfo bottom={false}/>
+					<CategoryList data={arrCategory}/>
+					<EventsList dataList={eventItems}/>
+				</div>
+				<aside className='aside events__aside'>
+					<Broadcast auth={false}/>
+					<BestMomentProfile/>
+					<Broadcasts/>
+					<Multiple/>
 				</aside>
-			</div>
+			</main>
+			<SportFooter/>
 		</>
 	)
 }

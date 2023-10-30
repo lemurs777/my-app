@@ -9,7 +9,6 @@ function StatisticsPageFive() {
 				<LiveBetting />
 			</div>
 			<MenuMobile />
-			{/*<Menu />*/}
 			<main className='page page--statistics-five scroll'>
 				<TableLeagues />
 			</main>

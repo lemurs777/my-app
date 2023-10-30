@@ -34,7 +34,6 @@ const Language = () => {
     const changeLanguage = (item: any) => {
         setLanguage(item)
         setIsOpen(false)
-        i18n.changeLanguage(item.code)
 
     }
     useEffect(() => {

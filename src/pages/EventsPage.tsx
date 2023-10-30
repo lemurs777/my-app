@@ -12,7 +12,7 @@ import React from "react";
 import {CategoryList, Header, Multiple, StatisticsTables} from "../components";
 import EventInfo from "../components/EventInfo";
 import StatisticOneLayout from "../layouts/StatisticOneLayout";
-import Broadcasts from "../components/NotUse/BroadcastsOld";
+import Broadcasts from "../components/BroadcastsOld";
 import HeaderBottomEvent from "../components/HeaderBottomEvent";
 
 function EventsPage() {

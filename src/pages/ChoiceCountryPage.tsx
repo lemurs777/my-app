@@ -5,10 +5,9 @@ import {
 } from '../components';
 
 function ChoiceCountryPage(){
-	let data = useLocation();
 	return (
 		<main className="page page--statistics-six scroll">
-			<ChoiceCountry numRequest={data.state.numRequest}/>
+			<ChoiceCountry />
 		</main>
 	);
 };

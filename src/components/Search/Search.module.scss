@@ -1,24 +1,24 @@
 @import 'sass-rem';
 
-.search {
+.searchWrapper {
   position: fixed;
-  display: none;
-  top: 0;
+  top: rem(10px);
   background: rgba(0, 0, 0, 0.90);
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 5;
+}
 
-  @media(max-width:767.98px) {
-    z-index: 7;
-  }
+.search {
+  max-width: rem(1420px);
+  margin: 0 auto;
+  padding: rem(146px 20px 20px);
 
   &__inner {
-    padding: rem(146px 114px 20px);
 
-    @media(max-width:767.98px) {
-      padding: rem(70px 0 0);
+    @media(max-width: 767.98px) {
+      padding: 0;
     }
   }
 
@@ -29,7 +29,7 @@
     max-width: rem(1420px);
     margin: 0 auto;
 
-    @media(max-width:767.98px) {
+    @media(max-width: 767.98px) {
       background: linear-gradient(90deg, #262626 0%, #1A1A1A 56.77%, #000 100%);
       border: none;
     }
@@ -45,7 +45,7 @@
     padding: rem(20px 20px 20px 74px);
     width: 100%;
 
-    @media(max-width:767.98px) {
+    @media(max-width: 767.98px) {
       font-size: rem(16px);
       padding-left: rem(59px);
     }
@@ -64,7 +64,7 @@
     color: #898989;
     transition: .2s ease-out;
 
-    @media(max-width:767.98px) {
+    @media(max-width: 767.98px) {
       width: rem(16px);
       height: rem(16px);
     }
@@ -78,4 +78,96 @@
       height: inherit;
     }
   }
+}
+
+.tabs {
+  display: flex;
+  background-color: #1B1B1B;
+
+  &__list {
+    height: rem(480px);
+
+    @media(max-width:767.98px) {
+      display: none;
+    }
+
+    &::-webkit-scrollbar {
+      height: rem(5px);
+      background-color: #2A2A2A;
+    }
+
+    &::-webkit-scrollbar-track {
+      //background-color: #28293e;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #8b8b97;
+      cursor: pointer;
+    }
+
+    overflow-y: auto;
+  }
+
+  &__btn {
+    color: #FFF;
+    font-size: rem(18px);
+    font-weight: 500;
+    padding: rem(20px 15px);
+    cursor: pointer;
+
+    @media(max-width:767.98px) {
+      font-size: rem(14px);
+      padding: rem(13px);
+    }
+
+    &:hover {
+      color: #000;
+      background-color: var(--accentColor);
+    }
+  }
+}
+
+.tabActive {
+  color: #000;
+  background-color: var(--accentColor);
+}
+
+.tabTitle {
+  background-color: #2B2B2B;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: rem(14px);
+  color: #fff;
+  padding: rem(13px) rem(15px);
+}
+
+
+.tabPanel {
+  display: none;
+  width: 100%;
+
+  &__row {
+    padding: rem(20px) rem(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    background: #1B1B1B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    font-size: rem(18px);
+    font-weight: 500;
+
+    @media(max-width:767.98px) {
+      font-size: rem(14px);
+      padding: rem(13px);
+    }
+  }
+}
+
+.tabPanelActive {
+  display: block;
+}
+
+.tabPanelWrap {
+  flex: 1
 }

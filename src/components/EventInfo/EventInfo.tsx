@@ -10,7 +10,10 @@ import BackLink from "../BackLink";
 
 import {ReactComponent as AddIcon} from '../../assets/images/svg/events-info-add.svg'
 
-const EventInfo = () => {
+type Props = {
+    bottom?: boolean
+}
+const EventInfo = ({bottom = true}: Props) => {
 
     const TeamsInfo = {
         teamOne: {
@@ -121,34 +124,36 @@ const EventInfo = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.bottom}>
-                    <div className={styles.bottomUniforms}>
-                        <div className={styles.bottomUniformName}>
-                            {TeamsInfo.teamOne.uniformName}
+                {bottom && (
+                    <div className={styles.bottom}>
+                        <div className={styles.bottomUniforms}>
+                            <div className={styles.bottomUniformName}>
+                                {TeamsInfo.teamOne.uniformName}
+                            </div>
+                            <div className={styles.bottomUniformName}>
+                                {TeamsInfo.teamTwo.uniformName}
+                            </div>
                         </div>
-                        <div className={styles.bottomUniformName}>
-                            {TeamsInfo.teamTwo.uniformName}
+                        <div className={styles.bottomTimelineWrapper}>
+                            <div className={styles.bottomTimeline}>
+                                {TeamsInfo.teamOne.goals.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className={styles.bottomGoal}
+                                        style={{left: `calc(${item.goal}% / .9)`}}
+                                    ></div>
+                                ))}
+                                {TeamsInfo.teamTwo.goals.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className={clsx(styles.bottomGoal, styles.bottomGoalBottom)}
+                                        style={{left: `calc(${item.goal}% / .9)`}}
+                                    ></div>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                    <div className={styles.bottomTimelineWrapper}>
-                        <div className={styles.bottomTimeline}>
-                            {TeamsInfo.teamOne.goals.map((item, index) => (
-                                <div
-                                    key={index}
-                                    className={styles.bottomGoal}
-                                    style={{left: `calc(${item.goal}% / .9)`}}
-                                ></div>
-                            ))}
-                            {TeamsInfo.teamTwo.goals.map((item, index) => (
-                                <div
-                                    key={index}
-                                    className={clsx(styles.bottomGoal, styles.bottomGoalBottom)}
-                                    style={{left: `calc(${item.goal}% / .9)`}}
-                                ></div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+                )}
             </div>
         </div>
     );

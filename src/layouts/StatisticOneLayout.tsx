@@ -14,14 +14,8 @@ type MyComponentProps = React.PropsWithChildren<{}>
 const StatisticOneLayout = ({ children }: MyComponentProps) => {
 	return (
 		<>
-			{/*<Header showBottom={true} showTopProfile={true} />*/}
-			<HeaderTopProfile />
-			<div className='desktop'>
-				<HeaderBottom />
-			</div>
-			<div className='mobile'>
-				<HeaderBottomPromotion />
-			</div>
+			<Header showBottom={true} showTopProfile={true} isLogIn={true}/>
+
 
 			{children}
 			<Outlet />

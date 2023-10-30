@@ -5,6 +5,10 @@
   display: revert;
 }
 
+#root {
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -195,7 +199,7 @@ main {
   //left: 0;
   //max-height: calc(100vh - #{rem(145px)});
   display: flex;
-  z-index: 2;
+  z-index: 4;
   //overflow-x: hidden;
 
   &--index {
@@ -240,7 +244,8 @@ main {
     background-size: contain;
     background-position: 0 rem(100px);
     max-width: none !important;
-    @media(min-width:768px){
+
+    @media(min-width:768px) {
       min-height: rem(800px);
     }
 
@@ -396,6 +401,7 @@ main {
     @media (max-width: 1024px) {
       //width: 27vw;
     }
+
     @media(max-width: 1199.98px) {
       margin-left: rem(10px);
     }
@@ -421,9 +427,11 @@ main {
   flex: 1;
   margin-bottom: rem(95px);
   overflow: hidden;
+
   @media(min-width: 768px) {
     margin-left: rem(20px);
   }
+
   @media(max-width: 1200px) {
     flex: 1 1 100%;
   }

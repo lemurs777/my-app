@@ -5,8 +5,7 @@ import MenuMobile from '../components/MenuMobile'
 function StatisticsPageOne() {
 	return (
 		<>
-			{/*<LiveEventTime />*/}
-			{/*<Menu />*/}
+
 			<MenuMobile />
 			<main className='page page--statistics-one scroll'>
 				<StatisticsOne />

@@ -1,6 +1,8 @@
 @import "sass-rem";
 
 .sitemap {
+	position: relative;
+	z-index: 9999;
 	padding: rem(30px 40px);
 }
 

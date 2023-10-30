@@ -2,14 +2,14 @@ import clsx from 'clsx'
 
 import styles from './Broadcast.module.scss'
 import { Navigation } from 'swiper'
-import BroadcastLive from '../../../assets/images/broadcast-live-x2.min.jpg'
+import BroadcastLive from '../../assets/images/broadcast-live-x2.min.jpg'
 import React, { useState } from 'react'
-import { ReactComponent as SoccerIcon } from '../../../assets/images/svg/soccer.svg'
+import { ReactComponent as SoccerIcon } from '../../assets/images/svg/soccer.svg'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import broadcastLiveBest1 from '../../../assets/images/broadcast-live-best-1.min.jpg'
-import broadcastLiveBest2 from '../../../assets/images/broadcast-live-best-2.min.jpg'
-import broadcastLiveBest3 from '../../../assets/images/broadcast-live-best-3.min.jpg'
+import broadcastLiveBest1 from '../../assets/images/broadcast-live-best-1.min.jpg'
+import broadcastLiveBest2 from '../../assets/images/broadcast-live-best-2.min.jpg'
+import broadcastLiveBest3 from '../../assets/images/broadcast-live-best-3.min.jpg'
 import { Link } from 'react-router-dom'
 
 function Broadcast() {

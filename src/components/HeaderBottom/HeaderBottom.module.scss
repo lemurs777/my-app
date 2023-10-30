@@ -2,8 +2,9 @@
 
 .headerBottom {
   position: relative;
-  overflow-x: auto;
-  overflow-y: visible;
+  //overflow-x: auto;
+  //overflow-y: visible;
+  z-index: 3;
   padding-right: rem(18px);
   &:before {
     content: '';

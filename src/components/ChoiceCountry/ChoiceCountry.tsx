@@ -36,8 +36,9 @@ import Hn from '../../assets/images/flags/hn.png';
 import Hk from '../../assets/images/flags/hk.png';
 import Gr from '../../assets/images/flags/gr.png';
 import Ge from '../../assets/images/flags/ge.png';
+import {useState} from "react";
 
-function ChoiceCountry(props: RequestData) {
+function ChoiceCountry() {
 
 	const arrSports = [
 		{
@@ -365,14 +366,12 @@ function ChoiceCountry(props: RequestData) {
 
 	];
 
-	const sport = arrSports.filter((sport) => sport.id === props.numRequest);
-
 	return (
 		<div className={styles.choiceCountry}>
 			<div className={styles.wrapper}>
 				<div className={styles.header}>
 					<Link className={styles.headerBtn} to="/choice-of-sport">Choise of Sports</Link>
-					<h1 className={styles.headerTitle}>{sport[0].name}</h1>
+					<h1 className={styles.headerTitle}>{arrSports[0].name}</h1>
 				</div>
 				<ul className={styles.list}>
 					{arrCountry.map((country, index) => (
