@@ -44,7 +44,6 @@ function HeaderTop({ isLogIn }: Props) {
   const { isOpen, toggleModal } = useModal()
   const [isName, setIsName] = useState('login')
   const [isFull, setIsFull] = useState(true)
-  // const [menuOpen, setMenuOpen] = useState(false)
   const wrapRef = useRef(null)
 
   function CurrentModal(name: string, full: boolean) {

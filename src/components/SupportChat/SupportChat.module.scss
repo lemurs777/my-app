@@ -3,14 +3,13 @@
 .support {
   position: absolute;
   left: calc(50% - rem(185px));
-  //top: 50%;
-  //transform: translate(-50%, -50%);
   width: rem(370px);
   max-height: rem(692px);
   height: 100%;
-  z-index: 2;
+  z-index: 8;
   background-color: #151515;
   padding: rem(17px 30px 59px);
+
   @media(max-width: 767.98px) {
     width: rem(310px);
     left: calc(50% - rem(155px));
@@ -80,6 +79,7 @@
   font-size: rem(12px);
   line-height: rem(14px);
   margin-top: rem(-6px);
+
   @media(max-width: 767.98px) {
     padding-left: 0;
     padding-right: 0;
@@ -104,6 +104,7 @@
   max-height: rem(512px);
   gap: rem(32px);
   overflow: auto;
+
   @media(max-width: 767.98px) {
     padding-left: 0;
     padding-right: 0;
@@ -204,6 +205,7 @@
 
 .inputWrapper {
   position: relative;
+
   @media(max-width: 767.98px) {
     margin: 0 rem(-30px);
   }
@@ -219,6 +221,7 @@
   border-radius: rem(3px);
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: #1B1B1B;
+
   @media(max-width: 767.98px) {
 
     padding-left: rem(56px);
@@ -265,9 +268,11 @@
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-@media(min-width: 768px){
-  display: none;
-}
+
+  @media(min-width: 768px) {
+    display: none;
+  }
+
   input[type='file'] {
     font-size: 0;
     position: absolute;
